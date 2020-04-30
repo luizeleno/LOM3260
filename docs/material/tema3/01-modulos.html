@@ -1,0 +1,1291 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <title>LOM3260 :: Módulos</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Language" content="pt-br">
+  <link rel="shortcut icon" type="image/x-icon" href="/LOM3260/favicon.ico">
+  <link rel="stylesheet" href="/LOM3260/css/bootstrap.min.css">
+  <link href="/LOM3260/css/theme.css" rel="stylesheet" type="text/css">
+  <link href="/LOM3260/css/syntax.css" rel="stylesheet" type="text/css">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-146810112-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-146810112-1');
+</script>
+
+<!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Módulos | LOM3260</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="Módulos" />
+<meta name="author" content="Luiz T. F. Eleno" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Computação Científica em Python - uma disciplina do curso de Engenharia Física da Escola de Engenharia de Lorena da Universidade de São Paulo - EEL USP" />
+<meta property="og:description" content="Computação Científica em Python - uma disciplina do curso de Engenharia Física da Escola de Engenharia de Lorena da Universidade de São Paulo - EEL USP" />
+<link rel="canonical" href="https://computeel.org/LOM3260/material/tema3/01-modulos.html" />
+<meta property="og:url" content="https://computeel.org/LOM3260/material/tema3/01-modulos.html" />
+<meta property="og:site_name" content="LOM3260" />
+<script type="application/ld+json">
+{"@type":"WebPage","url":"https://computeel.org/LOM3260/material/tema3/01-modulos.html","headline":"Módulos","dateModified":"2020-04-29T21:06:10-03:00","author":{"@type":"Person","name":"Luiz T. F. Eleno"},"description":"Computação Científica em Python - uma disciplina do curso de Engenharia Física da Escola de Engenharia de Lorena da Universidade de São Paulo - EEL USP","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  
+
+</head>
+
+<body class="bg-light">
+  <div class="fixed-top" style="padding-top: 40px">
+<hr class="top-color-bar" style="background-color:#fcb421;">
+<hr class="top-color-bar" style="background-color:#64c4d2;">
+<hr class="top-color-bar" style="background-color:#1094ab;">
+</div>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top my-0 py-0">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="true" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="/LOM3260/">
+    <img src="/LOM3260/favicon.png" width="30" height="30" class="d-inline-block align-top" alt="">
+    <span class="menu-collapsed">LOM3260</span>
+  </a>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="nav navbar-nav mr-auto d-block d-lg-none">
+      <div class="accordion" id="top">
+  
+  
+    
+      
+        
+        <a href="/LOM3260/classes/" class=" list-group-item list-group-item-action list-group-item-primary px-2"> Classes</a>
+      
+    
+  
+    
+      
+        
+        <a href="/LOM3260/" class=" list-group-item list-group-item-action list-group-item-primary px-2"><img class="emoji" title=":house_with_garden:" alt=":house_with_garden:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f3e1.png" height="20" width="20"> Início</a>
+      
+    
+  
+    
+      
+      
+      <div class=" list-group-item list-group-item-action list-group-item-primary collapsed dropdown-toggle px-2" id="headtopsobre" data-toggle="collapse" data-target="#topsobre" aria-expanded="false" aria-controls="topsobre" style="cursor: pointer;">
+        
+          <img class="emoji" title=":mortar_board:" alt=":mortar_board:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f393.png" height="20" width="20"> <a href="/LOM3260/sobre/">Sobre a disciplina</a>
+        
+      </div>
+      <div id="topsobre" class="collapse " aria-labelledby="headtopsobre" data-parent="#top">
+        
+          
+
+          
+            <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
+<a href="/LOM3260/popularidade/">Introdução: python é popular!</a> </li>
+          
+        
+          
+
+          
+            <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
+<a href="/LOM3260/instrucoes/">Instruções</a> </li>
+          
+        
+          
+
+          
+            <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
+<a href="/LOM3260/material/sobre/03-objetivos.html">Objetivos</a> </li>
+          
+        
+          
+
+          
+            <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
+<a href="/LOM3260/material/sobre/04-ementa.html">Programa Resumido</a> </li>
+          
+        
+          
+
+          
+            <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
+<a href="/LOM3260/material/sobre/05-criterios.html">Critérios de avaliação</a> </li>
+          
+        
+          
+
+          
+            <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
+<a href="/LOM3260/material/sobre/06-cronograma.html">Cronograma</a> </li>
+          
+        
+          
+
+          
+            <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
+<a href="/LOM3260/material/sobre/07-projeto.html">Projeto de software</a> </li>
+          
+        
+          
+
+          
+            <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
+<a href="/LOM3260/popularidade/">Introdução: python é popular!</a> </li>
+          
+        
+      </div>
+    
+  
+    
+      
+      
+      <div class=" list-group-item list-group-item-action list-group-item-primary collapsed dropdown-toggle px-2" id="headtoptemaone" data-toggle="collapse" data-target="#toptemaone" aria-expanded="false" aria-controls="toptemaone" style="cursor: pointer;">
+        
+          <img class="emoji" title=":walking:" alt=":walking:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f6b6.png" height="20" width="20"> <a href="/LOM3260/material/Tema1/tema1.html">Tema 1</a>
+        
+      </div>
+      <div id="toptemaone" class="collapse " aria-labelledby="headtoptemaone" data-parent="#top">
+        
+          
+
+          
+            <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
+<a href="/LOM3260/docs/intro/">Introdução</a> <span class="badge badge-success">final</span>
+</li>
+          
+        
+          
+
+          
+            <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
+<a href="/LOM3260/material/Tema1/02-objetos-e-variaveis.html">Objetos e variáveis</a> <span class="badge badge-success">final</span>
+</li>
+          
+        
+          
+
+          
+            <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
+<a href="/LOM3260/docs/tipos/">Tipos de objetos</a> <span class="badge badge-success">final</span>
+</li>
+          
+        
+          
+
+          
+            <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
+<a href="/LOM3260/material/Tema1/04-entrada.html">Entrada com input()</a> <span class="badge badge-success">final</span>
+</li>
+          
+        
+          
+
+          
+            <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
+<a href="/LOM3260/material/Tema1/05-saida.html">Saída com print()</a> <span class="badge badge-success">final</span>
+</li>
+          
+        
+          
+
+          
+            <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
+<a href="/LOM3260/material/Tema1/06-operadores.html">Operadores</a> <span class="badge badge-success">final</span>
+</li>
+          
+        
+          
+
+          
+            <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
+<a href="/LOM3260/material/Tema1/07-condicional.html">Testando condições</a> <span class="badge badge-success">final</span>
+</li>
+          
+        
+          
+
+          
+            <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
+<a href="/LOM3260/material/Tema1/08-loop.html">Laços (loops)</a> <span class="badge badge-success">final</span>
+</li>
+          
+        
+          
+
+          
+            <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
+<a href="/LOM3260/material/Tema1/09-in-len.html">Comandos in e len()</a> <span class="badge badge-success">final</span>
+</li>
+          
+        
+          
+
+          
+            <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
+<a href="/LOM3260/material/Tema1/10-range.html">O comando range</a> <span class="badge badge-success">final</span>
+</li>
+          
+        
+      </div>
+    
+  
+    
+      
+      
+      <div class=" list-group-item list-group-item-action list-group-item-primary collapsed dropdown-toggle px-2" id="headtoptematwo" data-toggle="collapse" data-target="#toptematwo" aria-expanded="false" aria-controls="toptematwo" style="cursor: pointer;">
+        
+          <img class="emoji" title=":running:" alt=":running:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f3c3.png" height="20" width="20"> <a href="/LOM3260/material/tema2/tema2.html">Tema 2</a>
+        
+      </div>
+      <div id="toptematwo" class="collapse " aria-labelledby="headtoptematwo" data-parent="#top">
+        
+          
+
+          
+            <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
+<a href="/LOM3260/material/tema2/01-listas-e-strings.html">Strings, listas e tuplas</a> <span class="badge badge-success">final</span>
+</li>
+          
+        
+          
+
+          
+            <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
+<a href="/LOM3260/material/tema2/02-ascii.html">A Tabela ASCII</a> <span class="badge badge-success">final</span>
+</li>
+          
+        
+          
+
+          
+            <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
+<a href="/LOM3260/docs/sobrecarga/">Sobrecarga de operadores</a> <span class="badge badge-success">final</span>
+</li>
+          
+        
+          
+
+          
+            <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
+<a href="/LOM3260/material/tema2/04-criar-listas.html">Criando novas listas</a> <span class="badge badge-success">final</span>
+</li>
+          
+        
+          
+
+          
+            <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
+<a href="/LOM3260/material/tema2/05-slicing-indexing.html">Indexação e fatiamento</a> <span class="badge badge-success">final</span>
+</li>
+          
+        
+          
+
+          
+            <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
+<a href="/LOM3260/material/tema2/06-comprehension.html">List comprehension</a> <span class="badge badge-success">final</span>
+</li>
+          
+        
+          
+
+          
+            <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
+<a href="/LOM3260/material/tema2/07-dicionarios.html">Dicionários</a> <span class="badge badge-success">final</span>
+</li>
+          
+        
+      </div>
+    
+  
+    
+      
+      
+      <div class="active list-group-item list-group-item-action list-group-item-primary collapsed dropdown-toggle px-2" id="headtoptemathree" data-toggle="collapse" data-target="#toptemathree" aria-expanded="true" aria-controls="toptemathree" style="">
+        
+          <img class="emoji" title=":bicyclist:" alt=":bicyclist:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f6b4.png" height="20" width="20"> <a href="/LOM3260/material/tema3/tema3.html">Tema 3</a>
+        
+      </div>
+      <div id="toptemathree" class="collapse show" aria-labelledby="headtoptemathree" data-parent="#top">
+        
+          
+
+          
+            <li class="active list-group-item list-group-item-action list-group-item-secondary my-0">Módulos <span class="badge badge-success">final</span>
+</li>
+          
+        
+          
+
+          
+            <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
+<a href="/LOM3260/material/tema3/02-documentacao.html">Documentação</a> <span class="badge badge-success">final</span>
+</li>
+          
+        
+          
+
+          
+            <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
+<a href="/LOM3260/tema3/funcoes/">Funções</a> <span class="badge badge-success">final</span>
+</li>
+          
+        
+          
+
+          
+            <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
+<a href="/LOM3260/material/tema3/04-docstring.html">Docstrings</a> <span class="badge badge-success">final</span>
+</li>
+          
+        
+          
+
+          
+            <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
+<a href="/LOM3260/tema3/return/">Mais sobre o return</a> <span class="badge badge-success">final</span>
+</li>
+          
+        
+          
+
+          
+            <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
+<a href="/LOM3260/material/tema3/06-user-modules.html">Módulos do usuário</a> <span class="badge badge-success">final</span>
+</li>
+          
+        
+          
+
+          
+            <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
+<a href="/LOM3260/material/tema3/07-args-opcionais.html">Argumentos obrigatórios e opcionais</a> <span class="badge badge-success">final</span>
+</li>
+          
+        
+          
+
+          
+            <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
+<a href="/LOM3260/material/tema3/08-varlocais.html">Variáveis locais e globais</a> <span class="badge badge-success">final</span>
+</li>
+          
+        
+      </div>
+    
+  
+    
+      
+      
+      <div class=" list-group-item list-group-item-action list-group-item-primary collapsed dropdown-toggle px-2" id="headtoptemafour" data-toggle="collapse" data-target="#toptemafour" aria-expanded="false" aria-controls="toptemafour" style="cursor: pointer;">
+        
+          <img class="emoji" title=":car:" alt=":car:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f697.png" height="20" width="20"> <a href="/LOM3260/material/tema4/tema4.html">Tema 4</a>
+        
+      </div>
+      <div id="toptemafour" class="collapse " aria-labelledby="headtoptemafour" data-parent="#top">
+        
+          
+
+          
+            <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
+<a href="/LOM3260/material/tema4/01-numpy-scipy.html">Numpy e Scipy</a> <span class="badge badge-success">final</span>
+</li>
+          
+        
+          
+
+          
+            <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
+<a href="/LOM3260/material/tema4/02-random.html">Números aleatórios</a> <span class="badge badge-danger">criado</span>
+</li>
+          
+        
+          
+
+          
+            <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
+<a href="/LOM3260/material/tema4/03-arrays.html">Arrays</a> <span class="badge badge-danger">criado</span>
+</li>
+          
+        
+      </div>
+    
+  
+    
+      
+      
+      <div class=" list-group-item list-group-item-action list-group-item-primary collapsed dropdown-toggle px-2" id="headtoptemafive" data-toggle="collapse" data-target="#toptemafive" aria-expanded="false" aria-controls="toptemafive" style="cursor: pointer;">
+        
+          <img class="emoji" title=":helicopter:" alt=":helicopter:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f681.png" height="20" width="20"> <a href="/LOM3260/material/tema5/tema5.html">Tema 5</a>
+        
+      </div>
+      <div id="toptemafive" class="collapse " aria-labelledby="headtoptemafive" data-parent="#top">
+        
+          
+
+          
+            <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
+<a href="/LOM3260/material/tema5/01-matplotlib.html">O módulo matplotlib</a> <span class="badge badge-warning">devel</span>
+</li>
+          
+        
+      </div>
+    
+  
+    
+      
+      
+      <div class=" list-group-item list-group-item-action list-group-item-primary collapsed dropdown-toggle px-2" id="headtoptemasix" data-toggle="collapse" data-target="#toptemasix" aria-expanded="false" aria-controls="toptemasix" style="cursor: pointer;">
+        
+          <img class="emoji" title=":airplane:" alt=":airplane:" src="https://github.githubassets.com/images/icons/emoji/unicode/2708.png" height="20" width="20"> <a href="/LOM3260/material/tema6/tema6.html">Tema 6</a>
+        
+      </div>
+      <div id="toptemasix" class="collapse " aria-labelledby="headtoptemasix" data-parent="#top">
+        
+          
+
+          
+            <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
+<a href="/LOM3260/material/tema6/01-files.html">I/O com arquivos</a> <span class="badge badge-danger">criado</span>
+</li>
+          
+        
+          
+
+          
+            <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
+<a href="/LOM3260/material/tema6/02-genfromtxt.html">Ler arquivos em numpy</a> <span class="badge badge-danger">criado</span>
+</li>
+          
+        
+          
+
+          
+            <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
+<a href="/LOM3260/material/tema6/03-pandas.html">O módulo pandas</a> <span class="badge badge-danger">criado</span>
+</li>
+          
+        
+          
+
+          
+            <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
+<a href="/LOM3260/material/tema6/04-pandas-excel.html">Ler e escrever planilhas</a> <span class="badge badge-danger">criado</span>
+</li>
+          
+        
+      </div>
+    
+  
+    
+      
+      
+      <div class=" list-group-item list-group-item-action list-group-item-primary collapsed dropdown-toggle px-2" id="headtoptemaseven" data-toggle="collapse" data-target="#toptemaseven" aria-expanded="false" aria-controls="toptemaseven" style="cursor: pointer;">
+        
+          <img class="emoji" title=":rocket:" alt=":rocket:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f680.png" height="20" width="20"> <a href="/LOM3260/material/tema7/tema7.html">Tema 7</a>
+        
+      </div>
+      <div id="toptemaseven" class="collapse " aria-labelledby="headtoptemaseven" data-parent="#top">
+        
+          
+
+          
+            <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
+<a href="/LOM3260/material/tema7/01-raizes.html">Raízes de equações</a> <span class="badge badge-warning">devel</span>
+</li>
+          
+        
+          
+
+          
+            <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
+<a href="/LOM3260/material/tema7/02-integral.html">Integração numérica</a> <span class="badge badge-warning">devel</span>
+</li>
+          
+        
+          
+
+          
+            <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
+<a href="/LOM3260/material/tema7/03-sistlineares.html">Sistemas de equações lineares</a> <span class="badge badge-warning">devel</span>
+</li>
+          
+        
+      </div>
+    
+  
+    
+      
+      
+      <div class=" list-group-item list-group-item-action list-group-item-primary collapsed dropdown-toggle px-2" id="headtopexs" data-toggle="collapse" data-target="#topexs" aria-expanded="false" aria-controls="topexs" style="cursor: pointer;">
+        
+          <img class="emoji" title=":muscle:" alt=":muscle:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4aa.png" height="20" width="20"> <a href="/LOM3260/docs/exercicios/">Exercícios</a>
+        
+      </div>
+      <div id="topexs" class="collapse " aria-labelledby="headtopexs" data-parent="#top">
+        
+          
+
+          
+            <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
+<a href="/LOM3260/material/exercicios/lista1.html">Primeira Lista</a> </li>
+          
+        
+          
+
+          
+            <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
+<a href="/LOM3260/material/exercicios/lista2.html">Segunda Lista</a> </li>
+          
+        
+          
+
+          
+            <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
+<a href="/LOM3260/material/exercicios/lista3.html">Terceira Lista</a> </li>
+          
+        
+      </div>
+    
+  
+    
+      
+        
+        <a href="/LOM3260/biblio/" class=" list-group-item list-group-item-action list-group-item-primary px-2"><img class="emoji" title=":books:" alt=":books:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4da.png" height="20" width="20"> Recursos</a>
+      
+    
+  
+    
+      
+        
+        <a href="/LOM3260/search/" class=" list-group-item list-group-item-action list-group-item-primary px-2"><img class="emoji" title=":mag:" alt=":mag:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f50d.png" height="20" width="20"> Buscar no site</a>
+      
+    
+  
+    
+      
+        
+        <a href="/LOM3260/teste/" class=" list-group-item list-group-item-action list-group-item-primary px-2"><img class="emoji" title=":wrench:" alt=":wrench:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f527.png" height="20" width="20"> Teste seu código!</a>
+      
+    
+  
+    
+      
+        
+        <a href="/LOM3260/autor/" class=" list-group-item list-group-item-action list-group-item-primary px-2"><img class="emoji" title=":construction_worker:" alt=":construction_worker:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f477.png" height="20" width="20"> Sobre o autor</a>
+      
+    
+  
+</div>
+
+    </ul>
+
+    <div class="mr-2 my-lg-0">
+      <a id="no-ext-link" href="https://www5.usp.br/" title="Universidade de São Paulo - USP" target="_blank"><img src="/LOM3260/assets/images/logos/usp-2018-logo.png" height="30px"></a>
+    </div>
+
+    <div class="mr-4 my-lg-0">
+      <a id="no-ext-link" href="http://demar.eel.usp.br/" title="Escola de Engenharia de Lorena - EEL" target="_blank"><img src="/LOM3260/assets/images/logos/logo_eel_2017.png" height="30px"></a>
+    </div>
+
+  </div>
+
+</nav>
+
+  <hr class="m-0 p-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 p-0 m-0 d-none d-lg-block mt-3">
+        <div class="sticky-top">
+            <div class="accordion" id="side">
+  
+  
+    
+      
+        
+        <a href="/LOM3260/classes/" class=" list-group-item list-group-item-action list-group-item-primary px-2"> Classes</a>
+      
+    
+  
+    
+      
+        
+        <a href="/LOM3260/" class=" list-group-item list-group-item-action list-group-item-primary px-2"><img class="emoji" title=":house_with_garden:" alt=":house_with_garden:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f3e1.png" height="20" width="20"> Início</a>
+      
+    
+  
+    
+      
+      
+      <div class=" list-group-item list-group-item-action list-group-item-primary collapsed dropdown-toggle px-2" id="headsidesobre" data-toggle="collapse" data-target="#sidesobre" aria-expanded="false" aria-controls="sidesobre" style="cursor: pointer;">
+        
+          <img class="emoji" title=":mortar_board:" alt=":mortar_board:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f393.png" height="20" width="20"> <a href="/LOM3260/sobre/">Sobre a disciplina</a>
+        
+      </div>
+      <div id="sidesobre" class="collapse " aria-labelledby="headsidesobre" data-parent="#side">
+        
+          
+
+          
+            <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
+<a href="/LOM3260/popularidade/">Introdução: python é popular!</a> </li>
+          
+        
+          
+
+          
+            <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
+<a href="/LOM3260/instrucoes/">Instruções</a> </li>
+          
+        
+          
+
+          
+            <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
+<a href="/LOM3260/material/sobre/03-objetivos.html">Objetivos</a> </li>
+          
+        
+          
+
+          
+            <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
+<a href="/LOM3260/material/sobre/04-ementa.html">Programa Resumido</a> </li>
+          
+        
+          
+
+          
+            <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
+<a href="/LOM3260/material/sobre/05-criterios.html">Critérios de avaliação</a> </li>
+          
+        
+          
+
+          
+            <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
+<a href="/LOM3260/material/sobre/06-cronograma.html">Cronograma</a> </li>
+          
+        
+          
+
+          
+            <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
+<a href="/LOM3260/material/sobre/07-projeto.html">Projeto de software</a> </li>
+          
+        
+          
+
+          
+            <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
+<a href="/LOM3260/popularidade/">Introdução: python é popular!</a> </li>
+          
+        
+      </div>
+    
+  
+    
+      
+      
+      <div class=" list-group-item list-group-item-action list-group-item-primary collapsed dropdown-toggle px-2" id="headsidetemaone" data-toggle="collapse" data-target="#sidetemaone" aria-expanded="false" aria-controls="sidetemaone" style="cursor: pointer;">
+        
+          <img class="emoji" title=":walking:" alt=":walking:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f6b6.png" height="20" width="20"> <a href="/LOM3260/material/Tema1/tema1.html">Tema 1</a>
+        
+      </div>
+      <div id="sidetemaone" class="collapse " aria-labelledby="headsidetemaone" data-parent="#side">
+        
+          
+
+          
+            <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
+<a href="/LOM3260/docs/intro/">Introdução</a> <span class="badge badge-success">final</span>
+</li>
+          
+        
+          
+
+          
+            <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
+<a href="/LOM3260/material/Tema1/02-objetos-e-variaveis.html">Objetos e variáveis</a> <span class="badge badge-success">final</span>
+</li>
+          
+        
+          
+
+          
+            <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
+<a href="/LOM3260/docs/tipos/">Tipos de objetos</a> <span class="badge badge-success">final</span>
+</li>
+          
+        
+          
+
+          
+            <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
+<a href="/LOM3260/material/Tema1/04-entrada.html">Entrada com input()</a> <span class="badge badge-success">final</span>
+</li>
+          
+        
+          
+
+          
+            <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
+<a href="/LOM3260/material/Tema1/05-saida.html">Saída com print()</a> <span class="badge badge-success">final</span>
+</li>
+          
+        
+          
+
+          
+            <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
+<a href="/LOM3260/material/Tema1/06-operadores.html">Operadores</a> <span class="badge badge-success">final</span>
+</li>
+          
+        
+          
+
+          
+            <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
+<a href="/LOM3260/material/Tema1/07-condicional.html">Testando condições</a> <span class="badge badge-success">final</span>
+</li>
+          
+        
+          
+
+          
+            <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
+<a href="/LOM3260/material/Tema1/08-loop.html">Laços (loops)</a> <span class="badge badge-success">final</span>
+</li>
+          
+        
+          
+
+          
+            <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
+<a href="/LOM3260/material/Tema1/09-in-len.html">Comandos in e len()</a> <span class="badge badge-success">final</span>
+</li>
+          
+        
+          
+
+          
+            <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
+<a href="/LOM3260/material/Tema1/10-range.html">O comando range</a> <span class="badge badge-success">final</span>
+</li>
+          
+        
+      </div>
+    
+  
+    
+      
+      
+      <div class=" list-group-item list-group-item-action list-group-item-primary collapsed dropdown-toggle px-2" id="headsidetematwo" data-toggle="collapse" data-target="#sidetematwo" aria-expanded="false" aria-controls="sidetematwo" style="cursor: pointer;">
+        
+          <img class="emoji" title=":running:" alt=":running:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f3c3.png" height="20" width="20"> <a href="/LOM3260/material/tema2/tema2.html">Tema 2</a>
+        
+      </div>
+      <div id="sidetematwo" class="collapse " aria-labelledby="headsidetematwo" data-parent="#side">
+        
+          
+
+          
+            <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
+<a href="/LOM3260/material/tema2/01-listas-e-strings.html">Strings, listas e tuplas</a> <span class="badge badge-success">final</span>
+</li>
+          
+        
+          
+
+          
+            <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
+<a href="/LOM3260/material/tema2/02-ascii.html">A Tabela ASCII</a> <span class="badge badge-success">final</span>
+</li>
+          
+        
+          
+
+          
+            <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
+<a href="/LOM3260/docs/sobrecarga/">Sobrecarga de operadores</a> <span class="badge badge-success">final</span>
+</li>
+          
+        
+          
+
+          
+            <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
+<a href="/LOM3260/material/tema2/04-criar-listas.html">Criando novas listas</a> <span class="badge badge-success">final</span>
+</li>
+          
+        
+          
+
+          
+            <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
+<a href="/LOM3260/material/tema2/05-slicing-indexing.html">Indexação e fatiamento</a> <span class="badge badge-success">final</span>
+</li>
+          
+        
+          
+
+          
+            <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
+<a href="/LOM3260/material/tema2/06-comprehension.html">List comprehension</a> <span class="badge badge-success">final</span>
+</li>
+          
+        
+          
+
+          
+            <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
+<a href="/LOM3260/material/tema2/07-dicionarios.html">Dicionários</a> <span class="badge badge-success">final</span>
+</li>
+          
+        
+      </div>
+    
+  
+    
+      
+      
+      <div class="active list-group-item list-group-item-action list-group-item-primary collapsed dropdown-toggle px-2" id="headsidetemathree" data-toggle="collapse" data-target="#sidetemathree" aria-expanded="true" aria-controls="sidetemathree" style="">
+        
+          <img class="emoji" title=":bicyclist:" alt=":bicyclist:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f6b4.png" height="20" width="20"> <a href="/LOM3260/material/tema3/tema3.html">Tema 3</a>
+        
+      </div>
+      <div id="sidetemathree" class="collapse show" aria-labelledby="headsidetemathree" data-parent="#side">
+        
+          
+
+          
+            <li class="active list-group-item list-group-item-action list-group-item-secondary my-0">Módulos <span class="badge badge-success">final</span>
+</li>
+          
+        
+          
+
+          
+            <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
+<a href="/LOM3260/material/tema3/02-documentacao.html">Documentação</a> <span class="badge badge-success">final</span>
+</li>
+          
+        
+          
+
+          
+            <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
+<a href="/LOM3260/tema3/funcoes/">Funções</a> <span class="badge badge-success">final</span>
+</li>
+          
+        
+          
+
+          
+            <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
+<a href="/LOM3260/material/tema3/04-docstring.html">Docstrings</a> <span class="badge badge-success">final</span>
+</li>
+          
+        
+          
+
+          
+            <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
+<a href="/LOM3260/tema3/return/">Mais sobre o return</a> <span class="badge badge-success">final</span>
+</li>
+          
+        
+          
+
+          
+            <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
+<a href="/LOM3260/material/tema3/06-user-modules.html">Módulos do usuário</a> <span class="badge badge-success">final</span>
+</li>
+          
+        
+          
+
+          
+            <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
+<a href="/LOM3260/material/tema3/07-args-opcionais.html">Argumentos obrigatórios e opcionais</a> <span class="badge badge-success">final</span>
+</li>
+          
+        
+          
+
+          
+            <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
+<a href="/LOM3260/material/tema3/08-varlocais.html">Variáveis locais e globais</a> <span class="badge badge-success">final</span>
+</li>
+          
+        
+      </div>
+    
+  
+    
+      
+      
+      <div class=" list-group-item list-group-item-action list-group-item-primary collapsed dropdown-toggle px-2" id="headsidetemafour" data-toggle="collapse" data-target="#sidetemafour" aria-expanded="false" aria-controls="sidetemafour" style="cursor: pointer;">
+        
+          <img class="emoji" title=":car:" alt=":car:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f697.png" height="20" width="20"> <a href="/LOM3260/material/tema4/tema4.html">Tema 4</a>
+        
+      </div>
+      <div id="sidetemafour" class="collapse " aria-labelledby="headsidetemafour" data-parent="#side">
+        
+          
+
+          
+            <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
+<a href="/LOM3260/material/tema4/01-numpy-scipy.html">Numpy e Scipy</a> <span class="badge badge-success">final</span>
+</li>
+          
+        
+          
+
+          
+            <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
+<a href="/LOM3260/material/tema4/02-random.html">Números aleatórios</a> <span class="badge badge-danger">criado</span>
+</li>
+          
+        
+          
+
+          
+            <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
+<a href="/LOM3260/material/tema4/03-arrays.html">Arrays</a> <span class="badge badge-danger">criado</span>
+</li>
+          
+        
+      </div>
+    
+  
+    
+      
+      
+      <div class=" list-group-item list-group-item-action list-group-item-primary collapsed dropdown-toggle px-2" id="headsidetemafive" data-toggle="collapse" data-target="#sidetemafive" aria-expanded="false" aria-controls="sidetemafive" style="cursor: pointer;">
+        
+          <img class="emoji" title=":helicopter:" alt=":helicopter:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f681.png" height="20" width="20"> <a href="/LOM3260/material/tema5/tema5.html">Tema 5</a>
+        
+      </div>
+      <div id="sidetemafive" class="collapse " aria-labelledby="headsidetemafive" data-parent="#side">
+        
+          
+
+          
+            <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
+<a href="/LOM3260/material/tema5/01-matplotlib.html">O módulo matplotlib</a> <span class="badge badge-warning">devel</span>
+</li>
+          
+        
+      </div>
+    
+  
+    
+      
+      
+      <div class=" list-group-item list-group-item-action list-group-item-primary collapsed dropdown-toggle px-2" id="headsidetemasix" data-toggle="collapse" data-target="#sidetemasix" aria-expanded="false" aria-controls="sidetemasix" style="cursor: pointer;">
+        
+          <img class="emoji" title=":airplane:" alt=":airplane:" src="https://github.githubassets.com/images/icons/emoji/unicode/2708.png" height="20" width="20"> <a href="/LOM3260/material/tema6/tema6.html">Tema 6</a>
+        
+      </div>
+      <div id="sidetemasix" class="collapse " aria-labelledby="headsidetemasix" data-parent="#side">
+        
+          
+
+          
+            <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
+<a href="/LOM3260/material/tema6/01-files.html">I/O com arquivos</a> <span class="badge badge-danger">criado</span>
+</li>
+          
+        
+          
+
+          
+            <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
+<a href="/LOM3260/material/tema6/02-genfromtxt.html">Ler arquivos em numpy</a> <span class="badge badge-danger">criado</span>
+</li>
+          
+        
+          
+
+          
+            <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
+<a href="/LOM3260/material/tema6/03-pandas.html">O módulo pandas</a> <span class="badge badge-danger">criado</span>
+</li>
+          
+        
+          
+
+          
+            <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
+<a href="/LOM3260/material/tema6/04-pandas-excel.html">Ler e escrever planilhas</a> <span class="badge badge-danger">criado</span>
+</li>
+          
+        
+      </div>
+    
+  
+    
+      
+      
+      <div class=" list-group-item list-group-item-action list-group-item-primary collapsed dropdown-toggle px-2" id="headsidetemaseven" data-toggle="collapse" data-target="#sidetemaseven" aria-expanded="false" aria-controls="sidetemaseven" style="cursor: pointer;">
+        
+          <img class="emoji" title=":rocket:" alt=":rocket:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f680.png" height="20" width="20"> <a href="/LOM3260/material/tema7/tema7.html">Tema 7</a>
+        
+      </div>
+      <div id="sidetemaseven" class="collapse " aria-labelledby="headsidetemaseven" data-parent="#side">
+        
+          
+
+          
+            <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
+<a href="/LOM3260/material/tema7/01-raizes.html">Raízes de equações</a> <span class="badge badge-warning">devel</span>
+</li>
+          
+        
+          
+
+          
+            <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
+<a href="/LOM3260/material/tema7/02-integral.html">Integração numérica</a> <span class="badge badge-warning">devel</span>
+</li>
+          
+        
+          
+
+          
+            <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
+<a href="/LOM3260/material/tema7/03-sistlineares.html">Sistemas de equações lineares</a> <span class="badge badge-warning">devel</span>
+</li>
+          
+        
+      </div>
+    
+  
+    
+      
+      
+      <div class=" list-group-item list-group-item-action list-group-item-primary collapsed dropdown-toggle px-2" id="headsideexs" data-toggle="collapse" data-target="#sideexs" aria-expanded="false" aria-controls="sideexs" style="cursor: pointer;">
+        
+          <img class="emoji" title=":muscle:" alt=":muscle:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4aa.png" height="20" width="20"> <a href="/LOM3260/docs/exercicios/">Exercícios</a>
+        
+      </div>
+      <div id="sideexs" class="collapse " aria-labelledby="headsideexs" data-parent="#side">
+        
+          
+
+          
+            <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
+<a href="/LOM3260/material/exercicios/lista1.html">Primeira Lista</a> </li>
+          
+        
+          
+
+          
+            <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
+<a href="/LOM3260/material/exercicios/lista2.html">Segunda Lista</a> </li>
+          
+        
+          
+
+          
+            <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
+<a href="/LOM3260/material/exercicios/lista3.html">Terceira Lista</a> </li>
+          
+        
+      </div>
+    
+  
+    
+      
+        
+        <a href="/LOM3260/biblio/" class=" list-group-item list-group-item-action list-group-item-primary px-2"><img class="emoji" title=":books:" alt=":books:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4da.png" height="20" width="20"> Recursos</a>
+      
+    
+  
+    
+      
+        
+        <a href="/LOM3260/search/" class=" list-group-item list-group-item-action list-group-item-primary px-2"><img class="emoji" title=":mag:" alt=":mag:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f50d.png" height="20" width="20"> Buscar no site</a>
+      
+    
+  
+    
+      
+        
+        <a href="/LOM3260/teste/" class=" list-group-item list-group-item-action list-group-item-primary px-2"><img class="emoji" title=":wrench:" alt=":wrench:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f527.png" height="20" width="20"> Teste seu código!</a>
+      
+    
+  
+    
+      
+        
+        <a href="/LOM3260/autor/" class=" list-group-item list-group-item-action list-group-item-primary px-2"><img class="emoji" title=":construction_worker:" alt=":construction_worker:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f477.png" height="20" width="20"> Sobre o autor</a>
+      
+    
+  
+</div>
+
+        </div>
+      </div>
+      <div class="col-lg-9">
+        <div class="clear-fix">
+          <div class="well">
+            
+            
+
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="/LOM3260/">Início</a></li>
+      
+        <li class="breadcrumb-item"><a href="/LOM3260/material/tema3/tema3.html">Tema 3</a></li>
+      
+      <li class="breadcrumb-item active" aria-current="page">Módulos</li>
+    </ol>
+  </nav>
+
+
+
+
+  <h1>
+  Módulos
+  
+  <span class="badge badge-success" data-toggle="tooltip" data-placement="top" title="Página em versão final">final</span>
+  
+  </h1>
+
+  <p class="lead">Existem muitos módulos em python especializados numa imensa gama de tarefas!</p>
+
+<h2 id="a-biblioteca-padrão-de-python">A Biblioteca Padrão de Python</h2>
+
+<p>A linguagem python tem por padrão várias funções, suficientes para criar programas bastante complexos. A lista abaixo fornece praticamente todas as palavras-chaves do python padrão (<em>Standard Python</em>):</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>False      await      else       import     pass
+None       break      except     in         raise
+True       class      finally    is         return
+and        continue   for        lambda     try
+as         def        from       nonlocal   while
+assert     del        global     not        with
+async      elif       if         or         yield
+</code></pre></div></div>
+
+<p>Outras palavras, como <code class="highlighter-rouge">int</code>, <code class="highlighter-rouge">float</code>, <code class="highlighter-rouge">print</code>, <code class="highlighter-rouge">input</code>, etc.,  estão reservadas para funções, tipos de dados, operadores, etc. Consulte a documentação sobre a <strong><a href="https://docs.python.org/3/library/" target="\_blank">Biblioteca Padrão de Python</a></strong> (<em>Python Standard Library</em>) para uma lista gigante e praticamente completa.</p>
+
+<h2 id="módulos">Módulos</h2>
+
+<p>Mesmo com todos esses recursos, o python só se tornou a mais importante ferramente computacional da atualidade pela sua capacidade de extender seus poderes usando <strong>módulos,</strong> que são conjuntos (ou bibliotecas) de novos tipos de dados, métodos, operadores e funções  criados com uma finalidade específica em mente: lidar com arquivos, resolver problemas numéricos, inteligência artificial, etc, etc, etc.</p>
+
+<p>A lista de módulos disponíveis é praticamente infinita, impossível de ser listada aqui. Como o curso pretende lidar com técnicas computacionais de análise numérica de dados, vamos focar num subconjunto pequeno dos módulos python para essa finalidade. Anida assim, mesmo sem conseguir trabalhar aqui com mais do que um pequeno punhado de módulos, começaremos com comandos básicos, válidos para qualquer um deles. Com isso, você pode procurar nos <a href="/LOM3260/biblio/">Recursos</a> outros módulos que lhe interessem e testá-los para seus objetivos. Veremos também, mais adiante, como criar nosso próprio módulo personalizado!</p>
+
+<p>Para fixar as ideias, vamos usar como exemplo o módulo chamado <code class="highlighter-rouge">numpy</code>. Você pode extrapolar os conceitos e comandos mostrados abaixo para qualquer módulo.</p>
+
+<p class="alert alert-warning"><img class="emoji" title=":warning:" alt=":warning:" src="https://github.githubassets.com/images/icons/emoji/unicode/26a0.png" height="20" width="20"> O módulo <code class="highlighter-rouge">math</code> tem algumas funções parecidas com as encontradas no <code class="highlighter-rouge">numpy</code>. No entanto, o <code class="highlighter-rouge">math</code> não é atualmente recomendável para computação científica. Evite usá-lo!</p>
+
+<p>Usaremos como motivação o seguinte problema: digamos que você precise calcular a raiz quadrada de um número. O python padrão não tem uma função para isso, mas pode ser adicionada se você incluir no seu código algum módulo que contenha essa função. O módulo <code class="highlighter-rouge">numpy</code> é o mais indicado: ele contém muitas funções matemáticas, como seno, cosseno, exponential, raiz quadrada, etc.</p>
+
+<p class="alert alert-primary"><img class="emoji" title=":bulb:" alt=":bulb:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4a1.png" height="20" width="20"> Um dos exercícios da Lista 1 (<a href="/LOM3260/docs/exercicios/lista1.html#exerc%C3%ADcio-20">esse aqui</a>) ilustra uma possível maneira de calcular a raiz quadrada sem usar um módulo externo, usando uma estratégia numérica conhecida por <em>Método de Newton-Raphson</em>. Você poderia usá-la em seus próprios módulos personalizados…</p>
+
+<h2 id="importanto-módulos">Importanto módulos</h2>
+
+<p>Vejamos, então, como incluir um módulo externo no código. Isse é feito com o comando <code class="highlighter-rouge">import</code>. De forma direta, basta incluir a seguinte linha no começo do seu programa:</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">numpy</span>
+</code></pre></div></div>
+<p>Com isso, importamos <strong>todas</strong> as funções e métodos disponibilizados pelo módulo numpy. Por exemplo, a função raiz quadrada é chamada de <code class="highlighter-rouge">sqrt</code> (do inglês <em>square root</em>). Usando <code class="highlighter-rouge">import numpy</code>, a função ficará acessível ao seu programa como <code class="highlighter-rouge">numpy.sqrt</code>. Você então a chamaria assim:</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">numpy</span>
+
+<span class="n">a</span> <span class="o">=</span> <span class="mf">5.0</span>
+<span class="n">rqa</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">f</span><span class="s">'A raiz quadrada de {a} é {rqa}'</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Essa, no entanto, é apenas uma das maneiras de usar o comando <code class="highlighter-rouge">import</code>. Uma outra maneira é dar um “apelido” ao módulo com a palavra chave <code class="highlighter-rouge">as</code> (<em>como</em>):</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+</code></pre></div></div>
+<p>onde <code class="highlighter-rouge">np</code> é o apelido escolhido (é da escolha do programador). Nesse caso, acessamos a função <code class="highlighter-rouge">sqrt</code> precedida pelo apelido, <code class="highlighter-rouge">np.sqrt</code>, e não mais pelo nome (<code class="highlighter-rouge">numpy.sqrt</code>). Veja a diferença:</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+
+<span class="n">a</span> <span class="o">=</span> <span class="mf">5.0</span>
+<span class="n">rqa</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">f</span><span class="s">'A raiz quadrada de {a} é {rqa}'</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Uma terceira maneira de usar o import é a seguinte, usando o método <code class="highlighter-rouge">from</code> (<em>de</em>):</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">numpy</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="n">a</span> <span class="o">=</span> <span class="mf">5.0</span>
+<span class="n">rqa</span> <span class="o">=</span> <span class="n">sqrt</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">f</span><span class="s">'A raiz quadrada de {a} é {rqa}'</span><span class="p">)</span>
+</code></pre></div></div>
+<p>A linha <code class="highlighter-rouge">from numpy import *</code> diz, literalmente (em inglês), <em>de numpy importe tudo</em>. O caractere <code class="highlighter-rouge">*</code> (asterisco) é chamado de <strong>caractere-coringa</strong> (<em>wildcard</em>, em inglês) pois, em analogia a jogos de cartas, ele tem o valor que você quiser, ou tudo ao mesmo tempo. Repare que, usando essa maneira de importar, as funções são usadas sem nenhuma qualificação de origem, ou seja, usamos diretamente <code class="highlighter-rouge">sqrt(a)</code>, e não <code class="highlighter-rouge">numpy.sqrt(a)</code> ou <code class="highlighter-rouge">np.sqrt(a)</code>. Com a construção <code class="highlighter-rouge">from import</code>, você poderia também importar apenas a função que lhe interessa:</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">numpy</span> <span class="kn">import</span> <span class="n">sqrt</span>
+
+<span class="n">a</span> <span class="o">=</span> <span class="mf">5.0</span>
+<span class="n">rqa</span> <span class="o">=</span> <span class="n">sqrt</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">f</span><span class="s">'A raiz quadrada de {a} é {rqa}'</span><span class="p">)</span>
+</code></pre></div></div>
+<p>Isso tem um certo ganho de eficiência, pois menos funções, métodos e variáveis são criadas pelo seu programa, usando assim menos memória. Mas essa vantagem é contrabalanceada pelo seguinte problema:</p>
+
+<p class="alert alert-danger"><img class="emoji" title=":x:" alt=":x:" src="https://github.githubassets.com/images/icons/emoji/unicode/274c.png" height="20" width="20"> Fuja do uso da construção <code class="highlighter-rouge">from modulo import *</code> ou <code class="highlighter-rouge">from modulo import metodo</code>. Isso não é recomendado, pois seu programa poderia ter funções ou variáveis com o mesmo nome de funções ou variáveis do <code class="highlighter-rouge">modulo</code> importado. Esses <em>conflitos</em> levariam a erros de execução.</p>
+
+<p>Para evitar isso, você pode combinar a construção <code class="highlighter-rouge">from</code> com <code class="highlighter-rouge">as</code>, importando apenas a função <code class="highlighter-rouge">sqrt</code> do <code class="highlighter-rouge">numpy</code>, mas dando-lhe um apelido:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">numpy</span> <span class="kn">import</span> <span class="n">sqrt</span> <span class="k">as</span> <span class="n">raiz</span>
+
+<span class="n">a</span> <span class="o">=</span> <span class="mf">5.0</span>
+<span class="n">rqa</span> <span class="o">=</span> <span class="n">raiz</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">f</span><span class="s">'A raiz quadrada de {a} é {rqa}'</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>É pouco provável que exista uma função <code class="highlighter-rouge">raiz</code> no numpy, então o problema é contornado — mas sem nenhuma garantia: e se um dos desenvolvedores do <code class="highlighter-rouge">numpy</code> é lusófono e usou a palavra <code class="highlighter-rouge">raiz</code> internamente no código? Por isso, eu não recomendo usar a construção <code class="highlighter-rouge">from</code>, nem mesmo com o uso concomitante do <code class="highlighter-rouge">as</code>. É melhor, por segurança e compatibilidade, importar os módulos completos, com <code class="highlighter-rouge">import numpy</code> ou <code class="highlighter-rouge">import numpy as np</code>.</p>
+
+
+  
+    
+      <hr>
+      <h2>Teste seu código:</h2>
+  <button class="btn btn-primary btn-lg my-2 dropdown-toggle" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+    Caixa de teste
+  </button>
+<div class="collapse" id="collapseExample">
+  <iframe src="https://trinket.io/embed/python3/7fc73aa0a7" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+  <small>Cortesia: <a href="https://trinket.io/" target="_blank">trinket.io</a></small>
+</div>
+    
+  
+
+
+<hr>
+<p class="small">
+  <i>Página criada em 29/04/20.
+    </i>
+</p>
+
+
+          </div>
+        </div>
+        <footer class="footer navbar-dark bg-primary">
+    © 2020 Luiz T. F. Eleno. Contato: <a href="mailto:luizeleno@usp.br" target="_blank">luizeleno@usp.br</a><br>
+    Criado em <a href="http://jekyllrb.com" target="_blank" id="no-ext-link">Jekyll</a> / Hospedado no <a href="https://pages.github.com/" target="_blank" id="no-ext-link">Github pages</a> /
+    Código-fonte no <a href="https://github.com/luizeleno/LOM3260" target="_blank" id="no-ext-link">Github</a>
+</footer>
+
+<!-- JS -->
+<script src="/LOM3260/js/jquery.min.js"></script>
+<script src="/LOM3260/js//popper.min.js"></script>
+<script src="/LOM3260/js/bootstrap.min.js"></script>
+
+      </div>
+    </div>
+  </div>
+</body>
+</html>

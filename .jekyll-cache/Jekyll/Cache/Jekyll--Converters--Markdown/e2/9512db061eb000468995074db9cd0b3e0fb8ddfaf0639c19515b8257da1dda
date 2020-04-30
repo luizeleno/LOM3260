@@ -1,0 +1,2 @@
+I"n<p>Monte um código que imprima os números de 1 a 100 mas, para múltiplos de 3, imprime <code class="highlighter-rouge">trei</code> ao invés do número; se é múltiplo de 5, imprime <code class="highlighter-rouge">cinci</code>; mas, se é múltiplo de 3 e 5 ao mesmo tempo, imprime <code class="highlighter-rouge">cincisprezece</code> (3, 5 e 15 em romeno).</p>
+:ET

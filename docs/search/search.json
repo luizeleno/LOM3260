@@ -1,0 +1,501 @@
+
+
+[
+  
+    {
+      "title"    : "I/O com arquivos",
+      "url"      : "/LOM3260/material/tema6/01-files.html",
+      "category" : "",
+      "tags"     : "files, arquivos, entrada, saída, ler, escrever, dados, open, close, with",
+      "date"     : ""
+    } ,
+  
+    {
+      "title"    : "Introdução",
+      "url"      : "/LOM3260/docs/intro/",
+      "category" : "",
+      "tags"     : "edição, arquivos, extensão, py, sintaxe, indentação, comentário",
+      "date"     : ""
+    } ,
+  
+    {
+      "title"    : "Introdução: python é popular!",
+      "url"      : "/LOM3260/popularidade/",
+      "category" : "",
+      "tags"     : "introdução, pypl, python, popularity",
+      "date"     : ""
+    } ,
+  
+    {
+      "title"    : "Strings, listas e tuplas",
+      "url"      : "/LOM3260/material/tema2/01-listas-e-strings.html",
+      "category" : "",
+      "tags"     : "list, lista, string, caracteres, elementos, tupla, tuple, editável, imutável",
+      "date"     : ""
+    } ,
+  
+    {
+      "title"    : "O módulo matplotlib",
+      "url"      : "/LOM3260/material/tema5/01-matplotlib.html",
+      "category" : "",
+      "tags"     : "numpy, matplotlib, pyplot, plt, arrays, gráficos, plots, scatter, desvios, erro, barra, legenda, eixos",
+      "date"     : ""
+    } ,
+  
+    {
+      "title"    : "Módulos",
+      "url"      : "/LOM3260/material/tema3/01-modulos.html",
+      "category" : "",
+      "tags"     : "funções, função, módulo, module, numpy, from, as, apelido, import, raiz, sqrt, padrão, standard",
+      "date"     : ""
+    } ,
+  
+    {
+      "title"    : "Numpy e Scipy",
+      "url"      : "/LOM3260/material/tema4/01-numpy-scipy.html",
+      "category" : "",
+      "tags"     : "numpy, scipy, pandas, matplotlib, array, matlab",
+      "date"     : ""
+    } ,
+  
+    {
+      "title"    : "Raízes de equações",
+      "url"      : "/LOM3260/material/tema7/01-raizes.html",
+      "category" : "",
+      "tags"     : "cálculo, numérico, raiz, raízes, zeros, método, newton, bissecção",
+      "date"     : ""
+    } ,
+  
+    {
+      "title"    : "A Tabela ASCII",
+      "url"      : "/LOM3260/material/tema2/02-ascii.html",
+      "category" : "",
+      "tags"     : "string, caracteres, elementos, imutável, ASCII, ord, chr",
+      "date"     : ""
+    } ,
+  
+    {
+      "title"    : "Documentação",
+      "url"      : "/LOM3260/material/tema3/02-documentacao.html",
+      "category" : "",
+      "tags"     : "funções, função, módulos, help, ajuda, documentação",
+      "date"     : ""
+    } ,
+  
+    {
+      "title"    : "Ler arquivos em numpy",
+      "url"      : "/LOM3260/material/tema6/02-genfromtxt.html",
+      "category" : "",
+      "tags"     : "numpy, scipy",
+      "date"     : ""
+    } ,
+  
+    {
+      "title"    : "Instruções",
+      "url"      : "/LOM3260/instrucoes/",
+      "category" : "",
+      "tags"     : "instruções, google, classroom, sala, aula",
+      "date"     : ""
+    } ,
+  
+    {
+      "title"    : "Integração numérica",
+      "url"      : "/LOM3260/material/tema7/02-integral.html",
+      "category" : "",
+      "tags"     : "cálculo, numérico, integral, integração, método, trapézio, simpson, interpolação",
+      "date"     : ""
+    } ,
+  
+    {
+      "title"    : "Objetos e variáveis",
+      "url"      : "/LOM3260/material/Tema1/02-objetos-e-variaveis.html",
+      "category" : "",
+      "tags"     : "objeto, variável, tipo, int, float, string, lógico, boolean, atribuição, atualização",
+      "date"     : ""
+    } ,
+  
+    {
+      "title"    : "Números aleatórios",
+      "url"      : "/LOM3260/material/tema4/02-random.html",
+      "category" : "",
+      "tags"     : "numpy, scipy, arrays",
+      "date"     : ""
+    } ,
+  
+    {
+      "title"    : "Arrays",
+      "url"      : "/LOM3260/material/tema4/03-arrays.html",
+      "category" : "",
+      "tags"     : "numpy, scipy, arrays",
+      "date"     : ""
+    } ,
+  
+    {
+      "title"    : "Funções",
+      "url"      : "/LOM3260/tema3/funcoes/",
+      "category" : "",
+      "tags"     : "funções, função, def, return, modular, chamar, ferramenta, argumento",
+      "date"     : ""
+    } ,
+  
+    {
+      "title"    : "Objetivos",
+      "url"      : "/LOM3260/material/sobre/03-objetivos.html",
+      "category" : "",
+      "tags"     : "objetivos, módulos",
+      "date"     : ""
+    } ,
+  
+    {
+      "title"    : "O módulo pandas",
+      "url"      : "/LOM3260/material/tema6/03-pandas.html",
+      "category" : "",
+      "tags"     : "numpy, scipy",
+      "date"     : ""
+    } ,
+  
+    {
+      "title"    : "Sistemas de equações lineares",
+      "url"      : "/LOM3260/material/tema7/03-sistlineares.html",
+      "category" : "",
+      "tags"     : "cálculo, numérico, método, sistema, linear, cramer, gauss, pivo, escalona",
+      "date"     : ""
+    } ,
+  
+    {
+      "title"    : "Sobrecarga de operadores",
+      "url"      : "/LOM3260/docs/sobrecarga/",
+      "category" : "",
+      "tags"     : "overload, sobrecarga, operadores",
+      "date"     : ""
+    } ,
+  
+    {
+      "title"    : "Tipos de objetos",
+      "url"      : "/LOM3260/docs/tipos/",
+      "category" : "",
+      "tags"     : "tipos, objetos, int, float, string, complex, boolean, converter, notação, científica, expoente, exponenciação",
+      "date"     : ""
+    } ,
+  
+    {
+      "title"    : "Criando novas listas",
+      "url"      : "/LOM3260/material/tema2/04-criar-listas.html",
+      "category" : "",
+      "tags"     : "overload, sobrecarga, operadores, listas, strings",
+      "date"     : ""
+    } ,
+  
+    {
+      "title"    : "Docstrings",
+      "url"      : "/LOM3260/material/tema3/04-docstring.html",
+      "category" : "",
+      "tags"     : "funções, função, def, return, docstring",
+      "date"     : ""
+    } ,
+  
+    {
+      "title"    : "Programa Resumido",
+      "url"      : "/LOM3260/material/sobre/04-ementa.html",
+      "category" : "",
+      "tags"     : "programa, ementa",
+      "date"     : ""
+    } ,
+  
+    {
+      "title"    : "Entrada com input()",
+      "url"      : "/LOM3260/material/Tema1/04-entrada.html",
+      "category" : "",
+      "tags"     : "input, entrada, output, saída, print, formatação, formatada",
+      "date"     : ""
+    } ,
+  
+    {
+      "title"    : "Ler e escrever planilhas",
+      "url"      : "/LOM3260/material/tema6/04-pandas-excel.html",
+      "category" : "",
+      "tags"     : "planilha, excel, pandas, ler, escrever, open, close, write, read, dados",
+      "date"     : ""
+    } ,
+  
+    {
+      "title"    : "Critérios de avaliação",
+      "url"      : "/LOM3260/material/sobre/05-criterios.html",
+      "category" : "",
+      "tags"     : "avaliação, critério, prova, trabalho, presença, listas",
+      "date"     : ""
+    } ,
+  
+    {
+      "title"    : "Mais sobre o return",
+      "url"      : "/LOM3260/tema3/return/",
+      "category" : "",
+      "tags"     : "funções, função, def, return, chamar, ferramenta",
+      "date"     : ""
+    } ,
+  
+    {
+      "title"    : "Saída com print()",
+      "url"      : "/LOM3260/material/Tema1/05-saida.html",
+      "category" : "",
+      "tags"     : "input, entrada, output, saída, print, formatação, formatada, interpoladas, f-strings, substituição",
+      "date"     : ""
+    } ,
+  
+    {
+      "title"    : "Indexação e fatiamento",
+      "url"      : "/LOM3260/material/tema2/05-slicing-indexing.html",
+      "category" : "",
+      "tags"     : "slicing, indexing, fatiamento, indexação, índice, índices, elemento, tupla, list, dict, string, negativo",
+      "date"     : ""
+    } ,
+  
+    {
+      "title"    : "List comprehension",
+      "url"      : "/LOM3260/material/tema2/06-comprehension.html",
+      "category" : "",
+      "tags"     : "list, comprehension, dicionário, tupla, string, lista",
+      "date"     : ""
+    } ,
+  
+    {
+      "title"    : "Cronograma",
+      "url"      : "/LOM3260/material/sobre/06-cronograma.html",
+      "category" : "",
+      "tags"     : "aula, trabalho, cronograma, prova, entrega, projeto, datas, semestre",
+      "date"     : ""
+    } ,
+  
+    {
+      "title"    : "Operadores",
+      "url"      : "/LOM3260/material/Tema1/06-operadores.html",
+      "category" : "",
+      "tags"     : "operador, operadores, comparação, lógicos, incremento, operando, aritmético, lógico, comparação, atribuição",
+      "date"     : ""
+    } ,
+  
+    {
+      "title"    : "Módulos do usuário",
+      "url"      : "/LOM3260/material/tema3/06-user-modules.html",
+      "category" : "",
+      "tags"     : "funções, função, def, return, docstring, módulo, personalizado, main",
+      "date"     : ""
+    } ,
+  
+    {
+      "title"    : "Argumentos obrigatórios e opcionais",
+      "url"      : "/LOM3260/material/tema3/07-args-opcionais.html",
+      "category" : "",
+      "tags"     : "funções, função, def, return, argumentos, opcionais, obrigatórios, nome, pizza, tolerância, precisão, pre-definidos, padrão",
+      "date"     : ""
+    } ,
+  
+    {
+      "title"    : "Testando condições",
+      "url"      : "/LOM3260/material/Tema1/07-condicional.html",
+      "category" : "",
+      "tags"     : "if, elif, else, condições, condicional, decisão",
+      "date"     : ""
+    } ,
+  
+    {
+      "title"    : "Dicionários",
+      "url"      : "/LOM3260/material/tema2/07-dicionarios.html",
+      "category" : "",
+      "tags"     : "dict, dicionário, chaves, itens, elementos",
+      "date"     : ""
+    } ,
+  
+    {
+      "title"    : "Projeto de software",
+      "url"      : "/LOM3260/material/sobre/07-projeto.html",
+      "category" : "",
+      "tags"     : "projeto, trabalho, grupo, equipe",
+      "date"     : ""
+    } ,
+  
+    {
+      "title"    : "Laços (loops)",
+      "url"      : "/LOM3260/material/Tema1/08-loop.html",
+      "category" : "",
+      "tags"     : "loop, laço, for, while, iteração",
+      "date"     : ""
+    } ,
+  
+    {
+      "title"    : "Variáveis locais e globais",
+      "url"      : "/LOM3260/material/tema3/08-varlocais.html",
+      "category" : "",
+      "tags"     : "funções, função, def, return, argumentos, padrão, variável, variáveis, local, global",
+      "date"     : ""
+    } ,
+  
+    {
+      "title"    : "Comandos in e len()",
+      "url"      : "/LOM3260/material/Tema1/09-in-len.html",
+      "category" : "",
+      "tags"     : "in, range, palavras, chave",
+      "date"     : ""
+    } ,
+  
+    {
+      "title"    : "O comando range",
+      "url"      : "/LOM3260/material/Tema1/10-range.html",
+      "category" : "",
+      "tags"     : "range",
+      "date"     : ""
+    } ,
+  
+    {
+      "title"    : "Recursos",
+      "url"      : "/LOM3260/biblio/",
+      "category" : "",
+      "tags"     : "livros, sites, bibliografia",
+      "date"     : ""
+    } ,
+  
+    {
+      "title"    : "Classes",
+      "url"      : "/LOM3260/classes/",
+      "category" : "",
+      "tags"     : "",
+      "date"     : ""
+    } ,
+  
+    {
+      "title"    : "Sobre o autor",
+      "url"      : "/LOM3260/autor/",
+      "category" : "",
+      "tags"     : "livros, biografia, eleno, luiz, autor",
+      "date"     : ""
+    } ,
+  
+    {
+      "title"    : "Exercícios",
+      "url"      : "/LOM3260/docs/exercicios/",
+      "category" : "",
+      "tags"     : "",
+      "date"     : ""
+    } ,
+  
+    {
+      "title"    : "Início",
+      "url"      : "/LOM3260/",
+      "category" : "",
+      "tags"     : "",
+      "date"     : ""
+    } ,
+  
+    {
+      "title"    : "Primeira Lista",
+      "url"      : "/LOM3260/material/exercicios/lista1.html",
+      "category" : "",
+      "tags"     : "",
+      "date"     : ""
+    } ,
+  
+    {
+      "title"    : "Segunda Lista",
+      "url"      : "/LOM3260/material/exercicios/lista2.html",
+      "category" : "",
+      "tags"     : "",
+      "date"     : ""
+    } ,
+  
+    {
+      "title"    : "Terceira Lista",
+      "url"      : "/LOM3260/material/exercicios/lista3.html",
+      "category" : "",
+      "tags"     : "",
+      "date"     : ""
+    } ,
+  
+    {
+      "title"    : "Buscar no site",
+      "url"      : "/LOM3260/search/",
+      "category" : "",
+      "tags"     : "",
+      "date"     : ""
+    } ,
+  
+    {
+      "title"    : "Sobre a disciplina",
+      "url"      : "/LOM3260/sobre/",
+      "category" : "",
+      "tags"     : "EEL, USP, Demar, Universidade, São Paulo, Luiz, Eleno, LOM3260, Python, Computação",
+      "date"     : ""
+    } ,
+  
+    {
+      "title"    : "Tema 1",
+      "url"      : "/LOM3260/material/Tema1/tema1.html",
+      "category" : "",
+      "tags"     : "",
+      "date"     : ""
+    } ,
+  
+    {
+      "title"    : "Tema 2",
+      "url"      : "/LOM3260/material/tema2/tema2.html",
+      "category" : "",
+      "tags"     : "",
+      "date"     : ""
+    } ,
+  
+    {
+      "title"    : "Tema 3",
+      "url"      : "/LOM3260/material/tema3/tema3.html",
+      "category" : "",
+      "tags"     : "",
+      "date"     : ""
+    } ,
+  
+    {
+      "title"    : "Tema 4",
+      "url"      : "/LOM3260/material/tema4/tema4.html",
+      "category" : "",
+      "tags"     : "",
+      "date"     : ""
+    } ,
+  
+    {
+      "title"    : "Tema 5",
+      "url"      : "/LOM3260/material/tema5/tema5.html",
+      "category" : "",
+      "tags"     : "",
+      "date"     : ""
+    } ,
+  
+    {
+      "title"    : "Tema 6",
+      "url"      : "/LOM3260/material/tema6/tema6.html",
+      "category" : "",
+      "tags"     : "",
+      "date"     : ""
+    } ,
+  
+    {
+      "title"    : "Tema 7",
+      "url"      : "/LOM3260/material/tema7/tema7.html",
+      "category" : "",
+      "tags"     : "",
+      "date"     : ""
+    } ,
+  
+    {
+      "title"    : "Teste seu código!",
+      "url"      : "/LOM3260/teste/",
+      "category" : "",
+      "tags"     : "trinket, teste",
+      "date"     : ""
+    } ,
+  
+    {
+      "title"    : "Introdução: python é popular!",
+      "url"      : "/LOM3260/popularidade/",
+      "category" : "",
+      "tags"     : "introdução, pypl, python, popularity",
+      "date"     : ""
+    } 
+  
+]

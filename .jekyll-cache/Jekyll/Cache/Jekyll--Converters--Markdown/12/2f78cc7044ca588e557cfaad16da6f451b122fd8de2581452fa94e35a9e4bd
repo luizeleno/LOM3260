@@ -1,0 +1,3 @@
+I"L<p>Escreva um programa para gerar uma senha aleatória. A senha deve ter um comprimento aleatório entre 7 e 10 caracteres (use a função <code class="highlighter-rouge">randint()</code> do módulo <code class="highlighter-rouge">numpy.random</code>). Cada caractere deve ser aleatoriamente selecionado das posições 33 a 126 na tabela ASCII. Sua função deve retornar a senha gerada aleatoriamente como único resultado, sem necessidade de entrada do usuário.
+<strong>Dica:</strong> a função <code class="highlighter-rouge">chr()</code> é útil para resolver esse exercício.</p>
+:ET

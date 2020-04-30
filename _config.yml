@@ -1,0 +1,66 @@
+# author: "#Elenão"
+title: LOM3260
+name: Luiz T. F. Eleno
+email: luizeleno@usp.br
+description: >- # this means to ignore newlines until "baseurl:"
+  # Computação Científica em Python - uma disciplina do curso de Engenharia Física da Escola de Engenharia de Lorena da Universidade de São Paulo - EEL USP
+url: https://computeel.org
+baseurl: /LOM3260
+google_analytics: UA-146810112-1
+github: luizeleno
+
+# Build settings
+markdown: kramdown
+
+kramdown:
+input: GFM
+
+plugins:
+  - jekyll-sitemap
+  # - jekyll-feed
+  - jemoji
+  - jekyll-figure
+  - jekyll-seo-tag
+  - jekyll-last-modified-at
+
+destination: ./docs
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "page"
+      author: Luiz T. F. Eleno
+      doc: false
+
+  -
+    scope:
+      path: "material"
+      type: "pages"
+    values:
+      has_children: false
+      parent: main
+      doc: true
+      modified: DOCDATE
+
+collections_dir: exercicios
+
+collections:
+  lista1:
+    output: false
+    doc: false
+  lista2:
+    output: false
+    doc: false
+  lista3:
+    output: false
+    doc: false
+
+sass:
+  load_paths:
+    - css
+    - js
+  style: compressed
+
+exclude: ["Gemfile", "Gemfile.lock", "README.md", "Rakefile", "LICENSE.md"]

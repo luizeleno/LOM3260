@@ -1,0 +1,31 @@
+I"d<p class="lead">Três <em>tipos de objetos</em> parecidos e importantíssimos em python</p>
+
+<h2 id="definições-de-strings-listas-e-tuplas">Definições de strings, listas e tuplas</h2>
+
+<p>Strings, listas e tuplas (<em>tuples</em> em inglês) são tipos de dados muito parecidos em python. Todos são, basicamente, conjuntos de dados armazenados numa única variável. Vejamos alguns exemplos:</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># strings:
+</span><span class="n">s1</span> <span class="o">=</span> <span class="s">'eu sou uma string'</span>
+<span class="n">s2</span> <span class="o">=</span> <span class="s">"eu também! eu sou uma outra string"</span>
+
+<span class="c1"># listas
+</span><span class="n">L1</span> <span class="o">=</span> <span class="p">[</span><span class="s">'e'</span><span class="p">,</span> <span class="s">'u'</span><span class="p">,</span> <span class="s">'a'</span><span class="p">,</span> <span class="s">'dados'</span><span class="p">,</span> <span class="s">'EEL'</span><span class="p">]</span>
+<span class="n">L2</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">12</span> <span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
+<span class="n">L3</span> <span class="o">=</span> <span class="p">[</span><span class="mf">1.45</span><span class="p">,</span> <span class="mf">0.45</span><span class="p">,</span> <span class="mf">1.45</span><span class="p">]</span>
+<span class="n">n</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="n">L4</span> <span class="o">=</span> <span class="p">[</span><span class="n">n</span><span class="p">,</span> <span class="n">n</span><span class="o">*</span><span class="n">n</span><span class="p">,</span> <span class="mi">2</span><span class="o">*</span><span class="n">n</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+
+<span class="c1"># uma tupla
+</span><span class="n">T1</span> <span class="o">=</span> <span class="p">(</span><span class="s">'e'</span><span class="p">,</span> <span class="s">'u'</span><span class="p">,</span> <span class="s">'a'</span><span class="p">,</span> <span class="s">'dados'</span><span class="p">,</span> <span class="s">'EEL'</span><span class="p">)</span>
+<span class="n">T2a</span> <span class="o">=</span> <span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="s">'t'</span><span class="p">)</span>
+<span class="n">T2b</span> <span class="o">=</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="s">'t'</span>
+</code></pre></div></div>
+<p>Repare que uma string é identificada por aspas simples (<code class="highlighter-rouge">''</code>) ou duplas (<code class="highlighter-rouge">""</code>). Elas formam palavras ou frases e são simplesmente, na verdade, sequências de caracteres.</p>
+
+<p>Já listas e tuplas são conjuntos de dados agrupados formando… listas (!). Repare que listas são delimitadas por colchetes (<code class="highlighter-rouge">[]</code>) e tuplas por parênteses (<code class="highlighter-rouge">()</code>) ou por nada, apenas separando os elementos por vírgulas.</p>
+
+<h2 id="qual-a-diferença-entre-strings-listas-e-tuplas">Qual a diferença entre strings, listas e tuplas?</h2>
+
+<p>A diferença entre esses tipos de objetos é que listas são <strong>editáveis</strong>: após criadas, é possível alterar qualquer um de seus elementos. Já strings e tuplas são <strong>imutáveis</strong>: após criadas, elas não podem ser editadas, apenas sobrescritas.</p>
+
+<p><em>Como</em> editar listas será visto na próxima lição (“Indexing e Slicing”).</p>
+:ET

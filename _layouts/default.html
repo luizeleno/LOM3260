@@ -1,0 +1,28 @@
+---
+---
+<!DOCTYPE html>
+<html lang="pt-br">
+{% include head.html %}
+<body class="bg-light">
+  {% include menu-top.html %}
+  <hr class="m-0 p-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 p-0 m-0 d-none d-lg-block mt-3">
+        <div class="sticky-top">
+            {% include navigation.html id='side' %}
+        </div>
+      </div>
+      <div class="col-lg-9">
+        <div class="clear-fix">
+          <div class="well">
+            {% assign content_ = content | replace: '<table', '<table class="table table-sm table-hover"' %}
+            {{ content_ }}
+          </div>
+        </div>
+        {% include footer.html %}
+      </div>
+    </div>
+  </div>
+</body>
+</html>

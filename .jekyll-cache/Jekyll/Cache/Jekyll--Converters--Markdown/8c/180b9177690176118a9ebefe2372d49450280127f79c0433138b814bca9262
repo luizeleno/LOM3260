@@ -1,0 +1,24 @@
+I"A<p>O triângulo de Pascal é uma tabela de números construída assim: o elemento da linha $i$ e coluna $j$ (com $0 \le j \le i$ e começando de cima, onde $i=j=0$) é dado por</p>
+
+<script type="math/tex; mode=display">a_{i,j} =
+ \begin{cases}
+1 \quad \text{ se } j=0 \text{ ou }  j=i\\
+a_{i-1,j} + a_{i-1,j-1} \,, \text{ se } 1 \lt j \lt  i
+\end{cases}</script>
+
+<p>As primeiras oito linhas (ou seja, até $i=7$) são mostradas abaixo:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  1
+  1  1
+  1  2  1
+  1  3  3  1
+  1  4  6  4  1
+  1  5  10 10 5  1
+  1  6  15 20 15 6  1
+  1  7  21 35 35 21 7  1
+</code></pre></div></div>
+
+<ol>
+  <li>Implemente um algoritmo para calcular as primeiras $n$ linhas do triângulo de Pascal.</li>
+  <li>Modifique o código para substituir os números ímpares do triângulo por 1 e os pares por 0. Use um valor alto de $n$ (algo em torno de 500) e salve o resultado numa matriz. Por fim, use o comando <code class="highlighter-rouge">imshow()</code> do módulo <code class="highlighter-rouge">matplotlib.pyplot</code> para exibir graficamente o resultado, que é muito parecido com o fractal chamado de <em>Triângulo de Sierpinski</em> (clique <a href="https://pt.wikipedia.org/wiki/Tri%C3%A2ngulo_de_Sierpinski" target="blank">aqui</a> e veja na Wikipedia).</li>
+</ol>
+:ET

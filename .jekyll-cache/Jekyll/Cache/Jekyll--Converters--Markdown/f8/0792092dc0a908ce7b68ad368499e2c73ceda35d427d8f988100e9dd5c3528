@@ -1,0 +1,15 @@
+I"�<p class="lead">Numpy e scipy são módulos incrivelmente completos para praticamente qualquer atividade científica computacional</p>
+
+<p>Já sabemos como importar módulos em python, e já vimos, no primeiro tópico do Tema 3 (<em>Módulos</em>), até como usar o módulo <code class="highlighter-rouge">numpy</code>  para calcular a raiz quadrade de um <code class="highlighter-rouge">float</code>. Vamos agora ver mais detalhes sobre o <code class="highlighter-rouge">numpy</code> e seu irmão, o <code class="highlighter-rouge">scipy</code>.</p>
+
+<p><code class="highlighter-rouge">Numpy</code> é o acrônimo de <em>Numerical Python</em> e <code class="highlighter-rouge">Scipy</code>, de <em>Scientific Python</em>. Os dois formam, na verdade, um gigantesco conjunto de módulos distribuídos em conjunto sob a tutela do <a href="https://www.scipy.org/"><code class="highlighter-rouge">scipy.org</code></a> e <a href="https://numpy.org/"><code class="highlighter-rouge">numpy.org</code></a>, desenvolvidos em conjunto com outros módulos, como <code class="highlighter-rouge">matplotlib</code> e <code class="highlighter-rouge">pandas</code>, que veremos em outra ocasião.</p>
+
+<p>O objetivo principal dos módulos <code class="highlighter-rouge">numpy</code> e <code class="highlighter-rouge">scipy</code> é fornecer recursos básicos para a computaçao científica. Alguns exemplos:</p>
+<ul>
+  <li>Funções matemáticas: trigonométricas, exponenciais e logarítmicas, funções da Física Matemática, etc.</li>
+  <li>Recursos numéricos como zeros de funções, integração e derivação numérica, ajuste de curvas, etc.</li>
+  <li>Ferramentas de Álgebra Linear, como determinantes, inversas, autovalores e autovetores, etc.</li>
+</ul>
+
+<p>O recurso principal dessa família de módulos, no entanto, é um novo tipo de dado criado especificamente para lidar de modo fácil com grandes conjuntos de dados: o <strong>array</strong>, com forte inspiração em Matlab. Veremos mais detalhes sobre arrays em breve. Antes disso, porém, vamos vê-los em prática numa aplicação bem especícica mas extremamente importante: a geração de números aleatórios.</p>
+:ET

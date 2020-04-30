@@ -1,0 +1,67 @@
+I"�	<h3 id="características-do-projeto">Características do projeto:</h3>
+
+<ul>
+  <li>Utilizar recursos da linguagem Python e suas bibliotecas</li>
+  <li>Implementar <strong>técnicas numéricas</strong> para a resolução de problemas de interesse</li>
+  <li>Prover uma interface com o usuário amigável e <strong>bem documentada</strong></li>
+  <li>Apresentar resultados em forma gráfica e textual</li>
+</ul>
+
+<h3 id="método-de-trabalho--software-development-team">Método de trabalho — <em>Software development team</em></h3>
+
+<ul>
+  <li>O projeto deve ser realizado <strong>em equipe</strong> (de 4 ou 5 alunos)</li>
+  <li>Ele deve conter (pelo menos) as seguintes <strong>responsabilidades</strong>:
+    <ul>
+      <li>desenvolvimento e implementação de algoritmos</li>
+      <li>gerenciamento de documentação</li>
+      <li>criação de interfaces com o usuário</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="w-80 mx-auto">
+<div class="text-center">
+<figure class="figure">
+  
+  <a href="#" data-toggle="modal" data-target="#projeto">
+  
+    <img class="figure-img img-fluid rounded mx-auto" src="/LOM3260/assets/images/projeto-software.jpg" alt="Um mapa mental para um projeto de software" title="Um mapa mental para um projeto de software" />
+  
+  </a>
+  
+  
+  <figcaption class="figure-caption">
+    Um mapa mental para um projeto de software
+  </figcaption>
+  
+
+<!-- Modal -->
+
+<div class="modal fade" id="projeto" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-light bg-dark">
+        <h5>Um mapa mental para um projeto de software</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span class="text-light" aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <a id="no-ext-link" href="/LOM3260/assets/images/projeto-software.jpg" target="_blank">
+        <img class="figure-img img-fluid rounded w-100mx-auto" src="/LOM3260/assets/images/projeto-software.jpg" alt="Um mapa mental para um projeto de software" title="Um mapa mental para um projeto de software" />
+        </a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">OK</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</figure>
+</div>
+
+</div>
+:ET

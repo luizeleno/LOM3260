@@ -1,0 +1,159 @@
+I"2<h3 id="acesso-rápido">Acesso rápido</h3>
+
+<p><a href="#ex1" class="badge badge-primary">Ex. 1</a>
+<a href="#ex2" class="badge badge-primary">Ex. 2</a>
+<a href="#ex3" class="badge badge-primary">Ex. 3</a></p>
+
+<h3 id="instruções">Instruções</h3>
+<ul>
+  <li>use recursos dos módulos <code class="highlighter-rouge">scipy.linalg</code> à vontade</li>
+</ul>
+
+<hr />
+
+<div class="card mb-2">
+    <a name="ex1"></a><h2 class="card-title alert alert-primary">Exercício 1: Adubação</h2>
+    <div class="card-body">
+        <ul>
+            <li><i><b>dificuldade:</b></i> 10%</li>
+            <!-- <li><i><b>utiliza:</b></i> </li> -->
+        </ul>
+
+        <p>Necessita-se adubar um terreno acrescentando, a cada 10m², 140g de nitrato, 190g de fosfato e 205g de potássio. Dispõe-se de quatro qualidades de adubo com as seguintes características:</p>
+
+<ul>
+  <li>Cada quilograma do adubo I custa 5 reais e contém 10g de nitrato, 10g de fosfato e 100g de potássio;</li>
+  <li>Cada quilograma do adubo II custa 6 reais e contém 10g de nitrato, 100g de fosfato e 30g de potássio;</li>
+  <li>Cada quilograma do adubo III custa 5 reais e contém 50g de nitrato, 20g de fosfato e 20g de potássio;</li>
+  <li>Cada quilograma do adubo IV custa 15 reais e contém 20g de nitrato, 40g de fosfato e 35g de potássio;</li>
+</ul>
+
+<p>Quanto de cada adubo devemos misturar para conseguir o efeito desejado se estamos dispostos a gastar 54 reais para cada 10m² de terreno?</p>
+
+
+    </div>
+</div>
+
+<div class="card mb-2">
+    <a name="ex2"></a><h2 class="card-title alert alert-primary">Exercício 2: Circuito elétrico</h2>
+    <div class="card-body">
+        <ul>
+            <li><i><b>dificuldade:</b></i> 5%</li>
+            <!-- <li><i><b>utiliza:</b></i> </li> -->
+        </ul>
+
+        <div class="col-md-6 float-right">
+<div class="text-center">
+<figure class="figure">
+  
+  <a href="#" data-toggle="modal" data-target="#circuito">
+  
+    <img class="figure-img img-fluid rounded mx-auto" src="/LOM3260/assets/images/tikz/circuito.png" alt="" title="" />
+  
+  </a>
+  
+  
+
+<!-- Modal -->
+
+<div class="modal fade" id="circuito" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-light bg-dark">
+        <h5></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span class="text-light" aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <a id="no-ext-link" href="/LOM3260/assets/images/tikz/circuito.png" target="_blank">
+        <img class="figure-img img-fluid rounded w-100mx-auto" src="/LOM3260/assets/images/tikz/circuito.png" alt="" title="" />
+        </a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">OK</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</figure>
+</div>
+
+</div>
+
+<p>No circuito elétrico da imagem, a combinação das leis de Ohm e de Kirchhoff fornece, para as correntes $i_1$, $i_2$, …, $i_5$ (em amperes), o seguinte sistema:</p>
+
+<script type="math/tex; mode=display">5 i_1 + 5 i_2 = 5.5</script>
+
+<script type="math/tex; mode=display">i_3 - i_4 - i_5 = 0</script>
+
+<script type="math/tex; mode=display">2 i_4 - 3 i_5 = 0</script>
+
+<script type="math/tex; mode=display">i_1 - i_2 - i_3 = 0</script>
+
+<script type="math/tex; mode=display">5 i_2 - 7 i_3 -2 i_4 = 0</script>
+
+<p>Encontre todas as correntes do circuito.</p>
+
+
+    </div>
+</div>
+
+<div class="card mb-2">
+    <a name="ex3"></a><h2 class="card-title alert alert-primary">Exercício 3: vitaminas</h2>
+    <div class="card-body">
+        <ul>
+            <li><i><b>dificuldade:</b></i> 10%</li>
+            <!-- <li><i><b>utiliza:</b></i> </li> -->
+        </ul>
+
+        <div class="col-md-6 float-right">
+<div class="text-center">
+<figure class="figure">
+  
+  <a href="#" data-toggle="modal" data-target="#alimentos">
+  
+    <img class="figure-img img-fluid rounded mx-auto" src="/LOM3260/assets/images/tikz/alimentos.png" alt="" title="" />
+  
+  </a>
+  
+  
+
+<!-- Modal -->
+
+<div class="modal fade" id="alimentos" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-light bg-dark">
+        <h5></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span class="text-light" aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <a id="no-ext-link" href="/LOM3260/assets/images/tikz/alimentos.png" target="_blank">
+        <img class="figure-img img-fluid rounded w-100mx-auto" src="/LOM3260/assets/images/tikz/alimentos.png" alt="" title="" />
+        </a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">OK</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</figure>
+</div>
+
+</div>
+
+<p>Sabe-se que uma alimentação diária equilibrada em vitaminas deve constar de 170 unidades de vitamina A, 180 unidades de vitamina B, 140 unidades de vitamina C, 180 unidades de vitamina D e 350 unidades de vitamina E (valores fictícios!) Com o objetivo de determinar como deverá ser uma alimentação equilibrada, foram estudados cinco alimentos. Fixada a mesma quantidade (1g) de cada alimento, determinou-se a tabela ao lado. Quantos gramas de cada um dos alimentos acima devemos ingerir diariamente para uma alimentação equilibrada?</p>
+
+
+    </div>
+</div>
+
+:ET

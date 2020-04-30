@@ -1,0 +1,45 @@
+I"R<p class="lead">Uma construção para repetir comandos, ou um grupo de comandos, é chamada de <em>loop</em>, ou <strong>laço</strong> em português.</p>
+
+<!-- ## Nesta página:
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc} -->
+
+<h2 id="a-construção-while">A construção <code class="highlighter-rouge">while</code></h2>
+
+<p>Um dos comandos para criar laços é o <code class="highlighter-rouge">while</code>. A sintaxe do comando é a seguinte:</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">while</span> <span class="nb">bool</span><span class="p">:</span>
+    <span class="p">[</span><span class="n">comandos</span><span class="p">]</span>
+</code></pre></div></div>
+<p>onde <code class="highlighter-rouge">bool</code> é uma variável lógica, ou um teste que resulte numa variável lógica. Repare que é o mesmo tipo de construção qua a usada para testar condições (<code class="highlighter-rouge">if-elif-else</code>).</p>
+
+<p>Por exemplo, o seguinte fragmento de código imprime a soma dos números inteiros de 1 a 10:</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">n</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">soma</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">while</span> <span class="n">n</span> <span class="o">&lt;=</span> <span class="mi">10</span><span class="p">:</span>
+    <span class="n">soma</span> <span class="o">+=</span> <span class="n">n</span>
+    <span class="n">n</span> <span class="o">+=</span> <span class="mi">1</span>
+<span class="k">print</span><span class="p">(</span><span class="n">soma</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Repare que o <code class="highlighter-rouge">while</code> não sabe de antemão quantas iterações serão realizadas: ele precisa testar a condição (<code class="highlighter-rouge">n &lt;= 10</code>) a cada nova iteração (do latim <em>iter</em>: rota). Portanto, se você não tomar cuidado, o <code class="highlighter-rouge">while</code> pode entrar num <em>“loop infinito”</em>.</p>
+
+<h2 id="a-construção-for">A construção <code class="highlighter-rouge">for</code></h2>
+
+<p>Uma outra maneira de criar laços, quando sabemos exatamente quantas iterações queremos fazer, é usando a construção <code class="highlighter-rouge">for</code>. A sintaxe do comando pode ser entendida usando o mesmo exemplo acima:</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">soma</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">):</span>
+    <span class="n">soma</span> <span class="o">+=</span> <span class="n">n</span>
+<span class="k">print</span><span class="p">(</span><span class="n">soma</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Ou seja, o for gera valores de 1 a 10 usando o comando <code class="highlighter-rouge">range</code>, atribuídos sequencialmente a uma variável <code class="highlighter-rouge">n</code>.</p>
+
+<h2 id="observações">Observações</h2>
+
+<ul>
+  <li>Mais detalhes sobre o comando <code class="highlighter-rouge">range</code> no próximo material.</li>
+  <li>A palavra <code class="highlighter-rouge">in</code> no comando <code class="highlighter-rouge">for</code> é uma palavra chave. Mais detalhes em breve.</li>
+</ul>
+:ET

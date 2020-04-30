@@ -1,0 +1,17 @@
+I"�<p class="lead">Gerar números aleatórios é uma das tarefas mais importantes da computação científica</p>
+
+<h2 id="aleatoriedade-em-computação">Aleatoriedade em computação</h2>
+
+<p>Como exemplo de módulos da família <code class="highlighter-rouge">numpy/scipy</code>, vejamos um que fornece recursos importantíssimos para a computação científica. Gerar dados aleatórios  é fundamental para o teste de hipóteses e modelos e estão na base de modelos físico-estatísticos como o Método de Monte Carlo, usualmente encontrado em disciplinas como <em>Métodos computacionais da Física</em> (aqui na EEL, <a href="https://uspdigital.usp.br/jupiterweb/jupDisciplina?sgldis=LOM3227&amp;verdis=1" target="\_blank">LOM3227</a>) ou outras correlatas. Antigamente (bem antigamente mesmo, antes da era digital!), qualquer livro de Probabilidades e Estatística contava com um apêndice contendo uma tabela de números aleatórios. Podemos apenas imaginar como tais tabelas eram geradas: usando dados e moedas?</p>
+
+<p>Hoje em dia, porém (na verdade, desde a década de 1940!), a computação para a geração de números aleatórios está muito mais avançada e qualquer computador é capaz de gerar séries enormes de dados aleatórios.</p>
+
+<p>A verdade, porém, é mais complexa. Um computador é uma máquina praticamente determinística, e não consegue (ou tem grandes dificuldades) em criar informações que sejam, de fato, aleatórias. Existem, na verdade, geradores de números pseudo-aleatórios, ou seja, que apenas parecem aleatórios. Veremos mais detalhes sobre isso  na disciplina mencionada anteriormente. Por enquanto, vamos nos concentrar apenas em como usar o módulo <code class="highlighter-rouge">numpy.random</code> para gerar sequências de valores <code class="highlighter-rouge">int</code> e <code class="highlighter-rouge">float</code> que são, para todos os efeitos, aleatórias.</p>
+
+<h2 id="o-módulo-numpyrandom">O módulo <code class="highlighter-rouge">numpy.random</code></h2>
+
+<p>Em inglês <em>random</em> significa <em>aleatório</em>.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import numpy.random as rd
+</code></pre></div></div>
+:ET

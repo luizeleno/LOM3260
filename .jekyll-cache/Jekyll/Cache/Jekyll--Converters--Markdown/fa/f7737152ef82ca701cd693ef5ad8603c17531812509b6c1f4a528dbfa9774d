@@ -1,0 +1,57 @@
+I"B<p class="lead">Variáveis criadas dentro de funções são apenas locais: elas não são acessíveis fora do <strong>escopo</strong> da função</p>
+
+<h2 id="variáveis-locais">Variáveis locais</h2>
+
+<p>Rode o código abaixo:</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">teste_local</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">2</span>
+    <span class="k">return</span> <span class="n">y</span>
+
+
+<span class="n">x</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">teste_local</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+</code></pre></div></div>
+<p>O python retornará a seguinte mensagem de erro: <code class="highlighter-rouge">NameError: name 'y' is not defined</code>. Isso porque a variável <code class="highlighter-rouge">y</code> é uma <strong>variável local</strong>. Ela existe apenas dentro da função, ou seja, é criada durante a execução da função e, assim que a execução termina, ela é “esquecida”.</p>
+
+<p>Para ver se você entendeu o que acontece com variáveis locais, e não se deixar confundir, tente prever o que acontece com o seguinte código:</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">SeraQueMuda</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+  <span class="n">x</span> <span class="o">=</span> <span class="n">x</span> <span class="o">*</span> <span class="mi">2</span>
+  <span class="k">return</span> <span class="n">x</span>
+
+
+<span class="n">x</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="n">z</span><span class="o">=</span> <span class="n">SeraQueMuda</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</code></pre></div></div>
+<p>Que valor o comando <code class="highlighter-rouge">print(x)</code> imprime?</p>
+
+<h2 id="variáveis-globais">Variáveis globais</h2>
+
+<p>Você pode dizer explicitamente ao python se você deseja tratar uma variável como <strong>global</strong>. Veja o seguinte código:</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">YLocal</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="n">x</span> <span class="o">*</span> <span class="mi">2</span>
+    <span class="k">return</span> <span class="n">y</span>
+
+
+<span class="n">x</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="n">y</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="n">z</span><span class="o">=</span> <span class="n">YLocal</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+</code></pre></div></div>
+<p>Veja que a função <code class="highlighter-rouge">YLocal</code> não afeta o valor da variável <code class="highlighter-rouge">y</code> (criada fora da função), pois o que você chamou de <code class="highlighter-rouge">y</code> dentro da função só existe durante o seu escopo (ou seja, a sua execução). No entanto, diga ao python para tratá-la como uma variável global da seguinte maneira:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">YGlobal</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="k">global</span> <span class="n">y</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="n">x</span> <span class="o">*</span> <span class="mi">2</span>
+    <span class="k">return</span> <span class="n">y</span>
+
+
+<span class="n">x</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="n">y</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="n">z</span><span class="o">=</span> <span class="n">YGlobal</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+</code></pre></div></div>
+<p>Veja que agora a função <code class="highlighter-rouge">YGlobal</code> altera o valor de <code class="highlighter-rouge">y</code>, pois essa é agora uma variável tornada  <strong>global</strong>, ou seja, a função deve tratá-la como uma variável externa a si própria.</p>
+:ET

@@ -1,0 +1,12 @@
+I"<p>Escreva um programa que, dada uma duração de tempo em segundos, calcule o número equivalente de dias, horas, minutos e segundos.</p>
+
+<h3 id="dicas">Dicas:</h3>
+
+<p>Nesse exercício, use os operadores // (divisão inteira) e % (resto de divisão). Alguns exemplos:</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="mi">18</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">x</span> <span class="o">//</span> <span class="mi">3</span> <span class="c1"># retorna o int 6
+</span><span class="n">y</span> <span class="o">=</span> <span class="n">x</span> <span class="o">%</span> <span class="mi">3</span> <span class="c1"># retorna o int 0
+</span><span class="n">y</span> <span class="o">=</span> <span class="n">x</span> <span class="o">//</span> <span class="mi">4</span> <span class="c1"># retorna o int 4
+</span><span class="n">y</span> <span class="o">=</span> <span class="n">x</span> <span class="o">%</span> <span class="mi">4</span> <span class="c1"># retorna o int 2
+</span></code></pre></div></div>
+:ET

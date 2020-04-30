@@ -1,0 +1,21 @@
+I"H<p class="lead">Historicamente, é a mais importante codificação eletrônica de caracteres</p>
+
+<p><strong>ASCII</strong> significa <em>American Standard Code for Information Interchange.</em> (Código Padrão Americano para Intercâmbio de Informações).</p>
+
+<p>Hoje em dia, com a internacionalização da informática, a maioria dos computadores e <em>softwares</em> usa codificações diferentes, em geral a <em>Unicode</em>, capaz de representar praticamente todas as línguas e alfabetos do mundo, mais caracteres e símbolos para uma variedade incrível de finalidades.</p>
+
+<p>Para simplificar e focar no tema de interesse, nos exercícios vamos nos limitar a tratar <em>strings</em> compostas exclusivamente de caracteres ASCII de códigos 32 a 126. A tabela completa você encontra, por exemplo, na <a href="https://pt.wikipedia.org/wiki/ASCII" target="\_blank">Wikipedia</a>. Abaixo segue um resumo:</p>
+<ul>
+  <li>Letras maiúsculas (A-Z): 65-90</li>
+  <li>Letras minúsculas (a-z): 97-122</li>
+  <li>Algarismos (0-9): 48-57</li>
+</ul>
+
+<h2 id="como-obter-o-caractere-a-partir-do-código-numérico-e-vice-versa">Como obter o caractere a partir do código numérico (e vice-versa)</h2>
+
+<p>Os seguintes comandos em python são úteis para trabalhar com caracteres:</p>
+<ul>
+  <li><code class="highlighter-rouge">ord(c)</code>: retorna um <code class="highlighter-rouge">int</code> com a posição do caractere <code class="highlighter-rouge">c</code> na Tabela ASCII. Por exemplo, <code class="highlighter-rouge">ord('A')</code> retorna <code class="highlighter-rouge">65</code>.</li>
+  <li><code class="highlighter-rouge">chr(n)</code>: retorna o caractere correspondente ao inteiro <code class="highlighter-rouge">n</code>. Por exemplo, <code class="highlighter-rouge">chr(122)</code> retorna <code class="highlighter-rouge">'z'</code>.</li>
+</ul>
+:ET

@@ -1,0 +1,77 @@
+I"�<p>A Páscoa cai no primeiro domingo do ano após a lua cheia (mas não a lua cheia real, e sim de acordo com um antigo cômputo (computus) eclesiástico que nada mais tem a ver com a lua que vemos no céu: é apenas um <em>algoritmo</em>…) que acontece no ou imediatamente após o equinócio de março (considera-se sempre 21 de março como a data do equinócio, o que nem sempre é verdade, pois pode ser um ou dois dias antes…). Na prática, é mais fácil calcular a data da Páscoa usando o algoritmo de Meeus–Jones–Butcher:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Divida</th>
+      <th style="text-align: center">por</th>
+      <th style="text-align: center">Quociente</th>
+      <th style="text-align: center">  Resto</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">o ano $x$</td>
+      <td style="text-align: center">19</td>
+      <td style="text-align: center">—</td>
+      <td style="text-align: center">$a$</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">o ano $x$</td>
+      <td style="text-align: center">100</td>
+      <td style="text-align: center">$b$</td>
+      <td style="text-align: center">$c$</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">$b$</td>
+      <td style="text-align: center">4</td>
+      <td style="text-align: center">$d$</td>
+      <td style="text-align: center">$e$</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">$b+8$</td>
+      <td style="text-align: center">25</td>
+      <td style="text-align: center">$f$</td>
+      <td style="text-align: center">—</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">$b-f+1$</td>
+      <td style="text-align: center">3</td>
+      <td style="text-align: center">$g$</td>
+      <td style="text-align: center">—</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">$19a+b-d-g+15$</td>
+      <td style="text-align: center">30</td>
+      <td style="text-align: center">—</td>
+      <td style="text-align: center">$h$</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">$c$</td>
+      <td style="text-align: center">4</td>
+      <td style="text-align: center">$i$</td>
+      <td style="text-align: center">$k$</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">$32+2e+2i-h-k$</td>
+      <td style="text-align: center">7</td>
+      <td style="text-align: center">—</td>
+      <td style="text-align: center">$l$</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">$a+11h+22l$</td>
+      <td style="text-align: center">451</td>
+      <td style="text-align: center">$m$</td>
+      <td style="text-align: center">—</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">$h+l-7m+114$</td>
+      <td style="text-align: center">31</td>
+      <td style="text-align: center">$n$</td>
+      <td style="text-align: center">$p$</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>O domingo de Páscoa será então no dia $p+1$ do mês $n$ (3: março, 4: abril). O algoritmo é válido para qualquer ano no calendário gregoriano, ou seja, a partir de 1583. Implemente-o em python e verifique <a href="https://www.assa.org.au/edm" target="blank">aqui</a>. <strong>Dica</strong>: não use o operador <code class="highlighter-rouge">/</code>, e sim <code class="highlighter-rouge">//</code> (divisão inteira) para as divisões.</p>
+:ET

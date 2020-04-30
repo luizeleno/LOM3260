@@ -1,0 +1,182 @@
+body {
+  padding-top: 50px;
+  padding-bottom: 0px;
+  /* text-align: justify; */
+  background-color: #f4f4f4;
+  width:100%;
+}
+
+img.float-right {
+  float: right;
+  overflow: auto;
+  /* padding: 5px; */
+  /* margin: 4px 4px 4px 22px ; */
+}
+
+img.float-left {
+  float: left;
+  overflow: auto;
+  padding: 5px;
+  margin: 4px 4px 4px 22px ;
+}
+
+img.border {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  /* margin: 4px 4px 4px 4px; */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+img.centered {
+  float:none;
+  display:block;
+  margin-left: auto;
+  margin-right: auto
+}
+
+.mininav p {
+  font-size: .75em;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.footer {
+  text-align: center;
+  font-size: .8em;
+  color: #dadada;
+  position: static;
+  bottom: 0;
+  width: 100%
+}
+
+.footer a {
+  color: #5c0000;
+}
+
+/* .sidebar a {
+  color: #428bca;
+} */
+
+.sidebar li.active a {
+    color: #ee4444;
+    cursor: default;
+  }
+
+/* .sidebar li {
+  margin-top: .7em;
+  line-height: 1em;
+  text-align: left;
+} */
+
+.sidebar a:hover {
+  color: #3071a9;
+}
+
+/* .container-right {
+  margin: 0;
+} */
+
+.well {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #f5f5fa;
+  margin: 15px 0px;
+  padding: 5px 10px;
+}
+
+.well h1 {
+  color: #ee4444;
+  font-size: 2.0em;
+}
+
+.well h2 {
+  color: #ee4444;
+  font-size: 1.5em;
+}
+
+.well h3 {
+  color: #ee4444;
+  font-size: 1.2em;
+}
+
+.sidebar h1 {
+  color: #ee4444;
+  font-size: 1.3em;
+}
+
+.author {
+  color: #ee4444;
+}
+
+.author a {
+  color: #ee4444;
+}
+
+td
+{
+  padding:0 8px 0 8px;
+}
+
+.padding-0{
+  padding-right:0;
+  padding-left:0;
+}
+
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.2);
+  bottom: 0;
+  top: auto;
+  max-width: 100%;
+  width:100%;
+  left: 0;
+}
+
+hr.top-color-bar {
+  margin: 0px;
+  border-width: 0px;
+  height: 5px;
+  background-color:#1094ab;
+}
+
+nav.navbar.fixed-top {
+    max-height: 100%;
+    overflow-y: auto;
+}
+
+/* @media (min-width: 992px) {
+    nav.navbar.fixed-top {
+        overflow-y: auto;
+    }
+} */
+
+
+/* the selector matches and external link (ie. starting with http),
+not including links to the current domain
+nor links with id="no-ext-link" */
+[href^="http"]:not([href*="computeel.org"]):not([id*="no-ext-link"])::after {
+  content: '(external link)';
+  display: inline-block;
+  width: .7em;
+  height: .7em;
+  text-indent: .7em;
+  white-space: nowrap;
+  overflow: hidden;
+  background-image: url(/LOM3260/assets/images/clipart/Icon_External_Link.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  margin-left: .1em;
+}
+
+#share-buttons img {
+width: 30px;
+padding: 5px;
+border: 0;
+box-shadow: 0;
+display: inline;
+}

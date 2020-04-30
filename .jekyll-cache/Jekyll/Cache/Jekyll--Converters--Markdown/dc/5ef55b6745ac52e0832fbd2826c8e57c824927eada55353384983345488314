@@ -1,0 +1,23 @@
+I"�
+<p class="lead">O <code class="highlighter-rouge">return</code> da sua função tem algumas propriedades que o ajudam a escrever seu código</p>
+
+<p>O primeiro exercício da Lista 1 pedia para você determinar se um dado ano é ou não bissexto. À epoca, não usamos uma função e programamos o código diretamente, como você pode verificar na <a href="/LOM3260/docs/exercicios/lista1.html#ex1">solução do exercício</a>. No entanto, podemos criar uma função para fazer isso:</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">bissexto</span><span class="p">(</span><span class="n">ano</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">ano</span> <span class="o">%</span> <span class="mi">400</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">return</span> <span class="bp">True</span>
+    <span class="k">elif</span> <span class="n">ano</span> <span class="o">%</span> <span class="mi">100</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">return</span> <span class="bp">False</span>
+    <span class="k">elif</span> <span class="n">ano</span> <span class="o">%</span> <span class="mi">4</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">return</span> <span class="bp">True</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="bp">False</span>
+</code></pre></div></div>
+
+<p>Não se confunda com tantos <code class="highlighter-rouge">return</code>! A execução da função termina assim que um comando <code class="highlighter-rouge">return</code> é atingido. Em outras palavras, na função acima, assim que é executado qualquer um dos comandos <code class="highlighter-rouge">return</code>, a função termina e você tem imediatamente o resultado.</p>
+
+<p class="alert alert-primary">:bulb: Veja que a função acima não está otimizada com as dicas do exercício! Para treinar lógica de programação, recomendo que você leia as dicas encontradas com a <a href="/LOM3260/docs/exercicios/lista1.html#ex1">solução do exercício</a> e adapte a função seguindo as recomendações lá encontradas.</p>
+
+<p>Repare que, na solução do exercício sobre <a href="/LOM3260/docs/exercicios/lista1.html#ex22">senha forte</a>, usei esse conceito nas funções <code class="highlighter-rouge">verifica_senha</code> e <code class="highlighter-rouge">senha_forte</code>.</p>
+
+<p>Isso facilita e muito a criação, entendimento e uso de funções em python!</p>
+:ET

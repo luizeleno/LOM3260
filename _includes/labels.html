@@ -1,0 +1,13 @@
+{% if include.status == 'green' %}
+  {% assign label = 'final' %}
+  {% assign type = 'success' %}
+  {% assign message = 'Página em versão final' %}
+{% elsif include.status == 'yellow' %}
+  {% assign label = 'devel' %}
+  {% assign type = 'warning' %}
+  {% assign message = 'Página em desenvolvimento' %}
+{% elsif include.status == 'red' %}
+  {% assign label = 'criado' %}  
+  {% assign type = 'danger' %}
+  {% assign message = 'Página apenas criada' %}
+{% endif %}

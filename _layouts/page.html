@@ -1,0 +1,63 @@
+---
+layout: default
+---
+
+{% if page.parent == 'main' %}
+  {% assign paiurl = page.url %}
+{% else %}
+  {% assign pai = site.pages | where: 'id', page.parent %}
+  {% assign paiurl = pai[0].url %}
+  {% assign paititle = pai[0].title %}
+{% endif %}
+
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="{{site.baseurl}}/">Início</a></li>
+      {% unless page.parent == 'main' %}
+        <li class="breadcrumb-item"><a href="{{site.baseurl}}{{paiurl}}">{{paititle}}</a></li>
+      {% endunless %}
+      <li class="breadcrumb-item active" aria-current="page">{{page.title}}</li>
+    </ol>
+  </nav>
+
+{% include labels.html status=page.status %}
+
+  <h1>
+  {{page.title}}
+  {% if page.status %}
+  <span class="badge badge-{{type}}" data-toggle="tooltip" data-placement="top" title="{{message}}">{{label}}</span>
+  {% endif %}
+  </h1>
+
+  {{ content }}
+
+  {% if page.parent == 'main' %}
+    {% if page.has_children %}
+    {% assign subpages = site.pages | where: 'parent', page.id | sort: 'path' %}
+      <h3>Conteúdo:</h3>
+        {% for page in subpages %}
+          {% include labels.html status=page.status %}
+          <li class="list-group-item"><a href="{{site.baseurl}}{{page.url}}">{{page.title}}</a>{% if page.status %} <span class="badge badge-{{type}}">{{label}}</span>{%endif%}</li>
+        {% endfor %}
+    {% endif %}
+    {% elsif page.parent != 'sobre' %}
+    {% unless page.remove_trinket %}
+      <hr />
+      <h2>Teste seu código:</h2>
+  <button class="btn btn-primary btn-lg my-2 dropdown-toggle" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+    Caixa de teste
+  </button>
+<div class="collapse" id="collapseExample">
+  <iframe src="https://trinket.io/embed/python3/7fc73aa0a7" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+  <small>Cortesia: <a href="https://trinket.io/" target="_blank">trinket.io</a></small>
+</div>
+    {% endunless %}
+  {% endif %}
+
+{% if page.doc %}
+<hr>
+<p class="small">
+  <i>Página criada em {{ page.last_modified_at | date: '%d/%m/%y'}}.
+    {% if page.timestamp %} Última modificação: {{page.timestamp}}{% endif  %}</i>
+</p>
+{% endif %}

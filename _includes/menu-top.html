@@ -1,0 +1,30 @@
+<div class='fixed-top' style="padding-top: 40px">
+<hr class="top-color-bar" style="background-color:#fcb421;">
+<hr class="top-color-bar" style="background-color:#64c4d2;">
+<hr class="top-color-bar" style="background-color:#1094ab;">
+</div>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top my-0 py-0">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="true" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="{{site.baseurl}}/">
+    <img src="{{site.baseurl}}/favicon.png" width="30" height="30" class="d-inline-block align-top" alt="">
+    <span class="menu-collapsed">{{site.title}}</span>
+  </a>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="nav navbar-nav mr-auto d-block d-lg-none">
+      {% include navigation.html id='top' %}
+    </ul>
+
+    <div class="mr-2 my-lg-0">
+      <a id="no-ext-link" href="https://www5.usp.br/" title="Universidade de São Paulo - USP" target="_blank"><img src="{{site.baseurl}}/assets/images/logos/usp-2018-logo.png" height="30px"></a>
+    </div>
+
+    <div class="mr-4 my-lg-0">
+      <a id="no-ext-link" href="http://demar.eel.usp.br/" title="Escola de Engenharia de Lorena - EEL" target="_blank"><img src="{{site.baseurl}}/assets/images/logos/logo_eel_2017.png" height="30px"></a>
+    </div>
+
+  </div>
+
+</nav>

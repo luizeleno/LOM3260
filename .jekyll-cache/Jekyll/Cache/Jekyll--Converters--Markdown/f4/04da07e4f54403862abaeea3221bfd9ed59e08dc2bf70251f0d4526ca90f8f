@@ -1,0 +1,9 @@
+I"�<p>Implemente o seguinte joguinho de computador: o usuário deve adivinhar um número de 1 a 100 “pensado” pelo computador (use a função <code class="highlighter-rouge">randint()</code> do módulo <code class="highlighter-rouge">numpy.random</code>). A cada palpite do usuário, o programa vai “cercando” o número, informando o intervalo $[a,\,b]$ em que ele se encontra. Acompanhe o seguinte exemplo, em que o número secreto é 42:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Adivinhe o número:
+Está entre 1 e 100: 25
+Está entre 25 e 100: 60
+Está entre 25 e 60: 40
+Está entre 40 e 60:
+</code></pre></div></div>
+<p>E assim por diante, até o usuário acertar. Não precisa de interface gráfica! Use a função <code class="highlighter-rouge">input()</code> para pedir ao usuário seu palpite (ou seja, crie uma <strong>TUI</strong> — <em>text-based user interface</em>). Qual é a melhor estratégia para ganhar o jogo no menor número de tentativas?</p>
+:ET

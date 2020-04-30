@@ -1,0 +1,20 @@
+I"�<p>Escreva um programa para gerar uma senha aleatória. A senha deve ter um comprimento aleatório entre 7 e 10 caracteres (use a função <code class="highlighter-rouge">randint()</code> do módulo <code class="highlighter-rouge">numpy.random</code>). Cada caractere deve ser aleatoriamente selecionado das posições 33 a 126 na tabela ASCII. Sua função deve retornar a senha gerada aleatoriamente como único resultado, sem necessidade de entrada do usuário.
+<strong>Dica:</strong> a função <code class="highlighter-rouge">chr()</code> é útil para resolver esse exercício.</p>
+
+<h3 id="solução">Solução</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">numpy.random</span> <span class="k">as</span> <span class="n">rd</span>
+<span class="n">L</span> <span class="o">=</span> <span class="n">rd</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">11</span><span class="p">)</span>  <span class="c1"># tamanho da senha
+</span><span class="n">s</span> <span class="o">=</span> <span class="n">rd</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">33</span><span class="p">,</span> <span class="mi">127</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="n">L</span><span class="p">)</span>  <span class="c1"># senha com L caracteres no intervalo 33-126
+# imprime a senha:
+</span><span class="n">senha</span> <span class="o">=</span> <span class="s">''</span>
+<span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">s</span><span class="p">:</span>
+    <span class="n">senha</span> <span class="o">+=</span> <span class="nb">chr</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">senha</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p class="alert alert-success">:bulb: Observação: existe uma maneira mais rápida de imprimir a senha usando o comando <code class="highlighter-rouge">join()</code> e <em>list comprehension</em>. Troque as últimas linhas do código acima (depois do comentário <code class="highlighter-rouge"># imprime a senha</code>) pelo que segue:</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">senha</span> <span class="o">=</span> <span class="s">''</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">chr</span><span class="p">(</span><span class="n">c</span><span class="p">)</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">s</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">senha</span><span class="p">)</span>
+</code></pre></div></div>
+:ET
