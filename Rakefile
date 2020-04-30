@@ -22,7 +22,7 @@ task :commit do
   status = system("git commit -m \"#{message}\"")
   puts status ? "Success" : "Failed"
   puts "\n## Pushing commits to remote"
-  status = system("git push origin source")
+  status = system("git push origin master")
   puts status ? "Success" : "Failed"
 end
 
