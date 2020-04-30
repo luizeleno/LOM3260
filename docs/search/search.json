@@ -108,7 +108,7 @@
   
     {
       "title"    : "Objetos e variáveis",
-      "url"      : "/LOM3260/material/Tema1/02-objetos-e-variaveis.html",
+      "url"      : "/LOM3260/material/Tema1%20(Case%20Conflict)/02-objetos-e-variaveis.html",
       "category" : "",
       "tags"     : "objeto, variável, tipo, int, float, string, lógico, boolean, atribuição, atualização",
       "date"     : ""
@@ -204,7 +204,7 @@
   
     {
       "title"    : "Entrada com input()",
-      "url"      : "/LOM3260/material/Tema1/04-entrada.html",
+      "url"      : "/LOM3260/material/Tema1%20(Case%20Conflict)/04-entrada.html",
       "category" : "",
       "tags"     : "input, entrada, output, saída, print, formatação, formatada",
       "date"     : ""
@@ -236,7 +236,7 @@
   
     {
       "title"    : "Saída com print()",
-      "url"      : "/LOM3260/material/Tema1/05-saida.html",
+      "url"      : "/LOM3260/material/Tema1%20(Case%20Conflict)/05-saida.html",
       "category" : "",
       "tags"     : "input, entrada, output, saída, print, formatação, formatada, interpoladas, f-strings, substituição",
       "date"     : ""
@@ -268,7 +268,7 @@
   
     {
       "title"    : "Operadores",
-      "url"      : "/LOM3260/material/Tema1/06-operadores.html",
+      "url"      : "/LOM3260/material/Tema1%20(Case%20Conflict)/06-operadores.html",
       "category" : "",
       "tags"     : "operador, operadores, comparação, lógicos, incremento, operando, aritmético, lógico, comparação, atribuição",
       "date"     : ""
@@ -292,7 +292,7 @@
   
     {
       "title"    : "Testando condições",
-      "url"      : "/LOM3260/material/Tema1/07-condicional.html",
+      "url"      : "/LOM3260/material/Tema1%20(Case%20Conflict)/07-condicional.html",
       "category" : "",
       "tags"     : "if, elif, else, condições, condicional, decisão",
       "date"     : ""
@@ -316,7 +316,7 @@
   
     {
       "title"    : "Laços (loops)",
-      "url"      : "/LOM3260/material/Tema1/08-loop.html",
+      "url"      : "/LOM3260/material/Tema1%20(Case%20Conflict)/08-loop.html",
       "category" : "",
       "tags"     : "loop, laço, for, while, iteração",
       "date"     : ""
@@ -332,7 +332,7 @@
   
     {
       "title"    : "Comandos in e len()",
-      "url"      : "/LOM3260/material/Tema1/09-in-len.html",
+      "url"      : "/LOM3260/material/Tema1%20(Case%20Conflict)/09-in-len.html",
       "category" : "",
       "tags"     : "in, range, palavras, chave",
       "date"     : ""
@@ -340,7 +340,7 @@
   
     {
       "title"    : "O comando range",
-      "url"      : "/LOM3260/material/Tema1/10-range.html",
+      "url"      : "/LOM3260/material/Tema1%20(Case%20Conflict)/10-range.html",
       "category" : "",
       "tags"     : "range",
       "date"     : ""
@@ -428,7 +428,7 @@
   
     {
       "title"    : "Tema 1",
-      "url"      : "/LOM3260/material/Tema1/tema1.html",
+      "url"      : "/LOM3260/material/Tema1%20(Case%20Conflict)/tema1.html",
       "category" : "",
       "tags"     : "",
       "date"     : ""

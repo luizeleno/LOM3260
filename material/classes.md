@@ -1,6 +1,9 @@
 ---
 title: Classes
 permalink: /classes/
+nav_order: 202
+id: classes
+hidden: true
 mathjax: true
 ---
 
