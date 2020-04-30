@@ -1,4 +1,4 @@
-I"�L<h1 class="no_toc" id="computação-científica-em-python">Computação Científica em Python</h1>
+I"�K<h1 class="no_toc" id="computação-científica-em-python">Computação Científica em Python</h1>
 
 <p class="lead">Uma disciplina do curso de Engenharia Física da Escola de Engenharia de Lorena (<a target="\_blank" href="http://www.demar.eel.usp.br/">EEL</a>) da Universidade de São Paulo (<a target="\_blank" href="http://www.usp.br/">USP</a>)</p>
 
@@ -18,23 +18,24 @@
 <div class="accordion" id="sumario">
   
   
+  
     
       
         
         <span class="active list-group-item list-group-item-action list-group-item-primary px-2">:house_with_garden: Início</span>
       
     
+    
+  
   
     
       
        
-      
         <div class=" list-group-item list-group-item-action list-group-item-primary collapsed dropdown-toggle px-2" id="headsumariosobre" data-toggle="collapse" data-target="#sumariosobre" aria-expanded="false" aria-controls="sumariosobre" style="cursor: pointer;">
         
           :mortar_board: <a href="/LOM3260/sobre/">Sobre a disciplina</a>
         
       </div>
-      
       <div id="sumariosobre" class="collapse " aria-labelledby="headsumariosobre" data-parent="#sumario">
         
           
@@ -87,17 +88,17 @@
         
       </div>
     
+    
+  
   
     
       
        
-      
         <div class=" list-group-item list-group-item-action list-group-item-primary collapsed dropdown-toggle px-2" id="headsumariotemaone" data-toggle="collapse" data-target="#sumariotemaone" aria-expanded="false" aria-controls="sumariotemaone" style="cursor: pointer;">
         
           :walking: <a href="/LOM3260/material/Tema1%20(Case%20Conflict)/tema1.html">Tema 1</a>
         
       </div>
-      
       <div id="sumariotemaone" class="collapse " aria-labelledby="headsumariotemaone" data-parent="#sumario">
         
           
@@ -162,17 +163,17 @@
         
       </div>
     
+    
+  
   
     
       
        
-      
         <div class=" list-group-item list-group-item-action list-group-item-primary collapsed dropdown-toggle px-2" id="headsumariotematwo" data-toggle="collapse" data-target="#sumariotematwo" aria-expanded="false" aria-controls="sumariotematwo" style="cursor: pointer;">
         
           :running: <a href="/LOM3260/material/tema2/tema2.html">Tema 2</a>
         
       </div>
-      
       <div id="sumariotematwo" class="collapse " aria-labelledby="headsumariotematwo" data-parent="#sumario">
         
           
@@ -219,17 +220,17 @@
         
       </div>
     
+    
+  
   
     
       
        
-      
         <div class=" list-group-item list-group-item-action list-group-item-primary collapsed dropdown-toggle px-2" id="headsumariotemathree" data-toggle="collapse" data-target="#sumariotemathree" aria-expanded="false" aria-controls="sumariotemathree" style="cursor: pointer;">
         
           :bicyclist: <a href="/LOM3260/material/tema3/tema3.html">Tema 3</a>
         
       </div>
-      
       <div id="sumariotemathree" class="collapse " aria-labelledby="headsumariotemathree" data-parent="#sumario">
         
           
@@ -282,17 +283,17 @@
         
       </div>
     
+    
+  
   
     
       
        
-      
         <div class=" list-group-item list-group-item-action list-group-item-primary collapsed dropdown-toggle px-2" id="headsumariotemafour" data-toggle="collapse" data-target="#sumariotemafour" aria-expanded="false" aria-controls="sumariotemafour" style="cursor: pointer;">
         
           :car: <a href="/LOM3260/material/tema4/tema4.html">Tema 4</a>
         
       </div>
-      
       <div id="sumariotemafour" class="collapse " aria-labelledby="headsumariotemafour" data-parent="#sumario">
         
           
@@ -315,17 +316,17 @@
         
       </div>
     
+    
+  
   
     
       
        
-      
         <div class=" list-group-item list-group-item-action list-group-item-primary collapsed dropdown-toggle px-2" id="headsumariotemafive" data-toggle="collapse" data-target="#sumariotemafive" aria-expanded="false" aria-controls="sumariotemafive" style="cursor: pointer;">
         
           :helicopter: <a href="/LOM3260/material/tema5/tema5.html">Tema 5</a>
         
       </div>
-      
       <div id="sumariotemafive" class="collapse " aria-labelledby="headsumariotemafive" data-parent="#sumario">
         
           
@@ -336,17 +337,17 @@
         
       </div>
     
+    
+  
   
     
       
        
-      
         <div class=" list-group-item list-group-item-action list-group-item-primary collapsed dropdown-toggle px-2" id="headsumariotemasix" data-toggle="collapse" data-target="#sumariotemasix" aria-expanded="false" aria-controls="sumariotemasix" style="cursor: pointer;">
         
           :airplane: <a href="/LOM3260/material/tema6/tema6.html">Tema 6</a>
         
       </div>
-      
       <div id="sumariotemasix" class="collapse " aria-labelledby="headsumariotemasix" data-parent="#sumario">
         
           
@@ -375,17 +376,17 @@
         
       </div>
     
+    
+  
   
     
       
        
-      
         <div class=" list-group-item list-group-item-action list-group-item-primary collapsed dropdown-toggle px-2" id="headsumariotemaseven" data-toggle="collapse" data-target="#sumariotemaseven" aria-expanded="false" aria-controls="sumariotemaseven" style="cursor: pointer;">
         
           :rocket: <a href="/LOM3260/material/tema7/tema7.html">Tema 7</a>
         
       </div>
-      
       <div id="sumariotemaseven" class="collapse " aria-labelledby="headsumariotemaseven" data-parent="#sumario">
         
           
@@ -408,17 +409,17 @@
         
       </div>
     
+    
+  
   
     
       
        
-      
         <div class=" list-group-item list-group-item-action list-group-item-primary collapsed dropdown-toggle px-2" id="headsumarioexs" data-toggle="collapse" data-target="#sumarioexs" aria-expanded="false" aria-controls="sumarioexs" style="cursor: pointer;">
         
           :muscle: <a href="/LOM3260/docs/exercicios/">Exercícios</a>
         
       </div>
-      
       <div id="sumarioexs" class="collapse " aria-labelledby="headsumarioexs" data-parent="#sumario">
         
           
@@ -441,6 +442,8 @@
         
       </div>
     
+    
+  
   
     
       
@@ -448,6 +451,8 @@
         <a href="/LOM3260/biblio/" class=" list-group-item list-group-item-action list-group-item-primary px-2">:books: Recursos</a>
       
     
+    
+  
   
     
       
@@ -455,6 +460,8 @@
         <a href="/LOM3260/search/" class=" list-group-item list-group-item-action list-group-item-primary px-2">:mag: Buscar no site</a>
       
     
+    
+  
   
     
       
@@ -462,6 +469,8 @@
         <a href="/LOM3260/teste/" class=" list-group-item list-group-item-action list-group-item-primary px-2">:wrench: Teste seu código!</a>
       
     
+    
+  
   
     
       
@@ -469,18 +478,14 @@
         <a href="/LOM3260/autor/" class=" list-group-item list-group-item-action list-group-item-primary px-2">:construction_worker: Sobre o autor</a>
       
     
+    
   
-    
-      
-        
-        <a href="/LOM3260/classes/" class=" list-group-item list-group-item-action list-group-item-primary px-2"> Classes</a>
-      
-    
+  
   
 </div>
 
 <hr />
 
-<p class="small"><strong><em>Última atualização: 30/04/2020 11:19:46</em></strong></p>
+<p class="small"><strong><em>Última atualização: 30/04/2020 11:37:23</em></strong></p>
 
 :ET

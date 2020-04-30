@@ -1,9 +1,10 @@
 <div class="accordion" id="{{include.id}}">
   {% assign mainpages = site.pages | where: 'parent', 'main' | sort: 'nav_order' %}
   {% for x in mainpages %}
+  {% unless x.hidden %}
     {% if x.has_children %}
       {% assign children = site.pages | where: 'parent', x.id | sort: 'path' %}
-      {% if x.url == page.url or page.parent == x.id %}
+      {% if x.url == page.url or page.parent == x.id  %}
         {% assign active = 'active' %}
         {% assign status= 'true' %}
         {% assign show = 'show' %}
@@ -14,7 +15,6 @@
         {% assign show = '' %}
         {% assign cursor = "cursor: pointer;" %}
       {% endif %} 
-      {% unless hidden %}
         <div class="{{active}} list-group-item list-group-item-action list-group-item-primary collapsed dropdown-toggle px-2" id="head{{include.id}}{{x.id}}" data-toggle="collapse" data-target="#{{include.id}}{{x.id}}" aria-expanded="{{status}}" aria-controls="{{include.id}}{{x.id}}" style="{{ cursor }}">
         {% if page.url == x.url %}
           {% if x.icon %}:{{x.icon}}:{% endif%} {{x.title}}
@@ -22,7 +22,6 @@
           {% if x.icon %}:{{x.icon}}:{% endif%} <a href="{{site.baseurl}}{{x.url}}">{{x.title}}</a>
         {% endif %}
       </div>
-      {% endunless %}
       <div id="{{include.id}}{{x.id}}" class="collapse {{show}}" aria-labelledby="head{{include.id}}{{x.id}}" data-parent="#{{include.id}}">
         {% for child in children %}
           {% include labels.html status=child.status %}
@@ -42,5 +41,6 @@
         <a href="{{site.baseurl}}{{x.url}}" class="{{status}} list-group-item list-group-item-action list-group-item-primary px-2">{% if x.icon %}:{{x.icon}}:{% endif%} {{x.title}}</a>
       {% endif %}
     {% endif %}
+    {% endunless %}
   {% endfor %}
 </div>

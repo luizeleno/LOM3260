@@ -4,7 +4,6 @@ permalink: /classes/
 nav_order: 202
 id: classes
 hidden: true
-mathjax: true
 ---
 
 # Prof. Luiz T. F. Eleno
