@@ -47,5 +47,5 @@ O **índice PYPL** (*PopularitY of Programming Language*) é obtido analisando a
 | 27 | Haskell |          0.28  | -0.0  |
 | 28 | Delphi |          0.27  | +0.0  |
 
-***Mundialmente em junho de 2020, comparado # a um ano antes***
+***Mundialmente em junho de 2020, comparado a um ano antes***
 {: .small}
