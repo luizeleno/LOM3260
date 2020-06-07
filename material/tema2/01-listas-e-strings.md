@@ -4,6 +4,7 @@ parent: tematwo
 nav_order: 1
 status: green
 tags: [list, lista, string, caracteres, elementos, tupla, tuple, editável, imutável]
+timestamp: 07/06/20
 ---
 
 Três *tipos de objetos* parecidos e importantíssimos em python
@@ -38,3 +39,4 @@ Já listas e tuplas são conjuntos de dados agrupados formando... listas (!). Re
 A diferença entre esses tipos de objetos é que listas são **editáveis**: após criadas, é possível alterar qualquer um de seus elementos. Já strings e tuplas são **imutáveis**: após criadas, elas não podem ser editadas, apenas sobrescritas.
 
 *Como* editar listas será visto na próxima lição ("Indexing e Slicing").
+

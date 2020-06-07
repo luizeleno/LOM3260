@@ -3,6 +3,7 @@ title: Projeto de software
 parent: sobre
 nav_order: 5
 tags: [projeto, trabalho, grupo, equipe]
+timestamp: 07/06/20
 ---
 
 ### Características do projeto:
@@ -23,3 +24,4 @@ tags: [projeto, trabalho, grupo, equipe]
 <div class="w-80 mx-auto">
 {% include figure.html image='/assets/images/projeto-software.jpg' id='projeto' caption='Um mapa mental para um projeto de software' %}
 </div>
+

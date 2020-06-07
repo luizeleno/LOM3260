@@ -6,6 +6,7 @@ permalink: /sobre/
 id: sobre
 tags: [EEL, USP, Demar, Universidade, 'São Paulo', Luiz, Eleno, LOM3260, Python, Computação]
 icon: mortar_board
+timestamp: 07/06/20
 ---
 
 LOM3260 &ndash; Computação Científica em Python: uma disciplina do curso de Engenharia Física da Escola de Engenharia de Lorena ([EEL]) da Universidade de São Paulo ([USP])
@@ -25,3 +26,4 @@ LOM3260 &ndash; Computação Científica em Python: uma disciplina do curso de E
 
 [DEMAR]: http://www.demar.eel.usp.br/
 {: target="\_blank"}
+

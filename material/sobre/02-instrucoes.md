@@ -4,6 +4,7 @@ parent: sobre
 nav_order: 1
 tags: [instruções, google, classroom, sala, aula]
 permalink: /instrucoes/
+timestamp: 07/06/20
 ---
 
 Um pouco para todo tipo de usuário
@@ -54,3 +55,4 @@ SOFTWARE.
 
 [EEL::USP]: http://www.demar.eel.usp.br
 {: target="\_blank"}
+

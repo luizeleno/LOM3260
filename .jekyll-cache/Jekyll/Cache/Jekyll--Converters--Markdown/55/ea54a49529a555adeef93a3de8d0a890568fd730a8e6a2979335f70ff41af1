@@ -1,0 +1,150 @@
+I"�C<p class="lead">O melhor módulo para criar gráficos em python</p>
+
+<p>É dificílimo superestimar a qualidade do módulo <code class="highlighter-rouge">matplotlib</code>. Ele é extremamente versátil para a criação de uma imensa variedade de gráficos 2D e 3D, com uma qualidade impressionante. Apesar de não ser o único módulo para essa finalidade, ele é sem dúvida o mais difundido mundo afora.</p>
+
+<p>Além disso, é impossível (para mim, que tenho um tempo limitado e usado para muitas tarefas dentro da universidade!) deixar aqui mais do que algumas recomendações para o seu uso, na forma de alguns <em>templates</em> (modelos) de uso de alguns tipos simples de gráfico. Você encontra muitas outras informações na documentação do matplotlib (<a href="https://matplotlib.org/users/index.html">https://matplotlib.org/users/index.html</a>) e em tutoriais espalhados pela internet (recomendo este: <a href="https://github.com/rougier/matplotlib-tutorial">https://github.com/rougier/matplotlib-tutorial</a>).</p>
+
+<p>Nesse curso veremos apenas como fazer gráficos 2D com o módulo <code class="highlighter-rouge">matplotlib.pyplot</code>. Teste os exemplos abaixo na caixa do trinket.io para ver o que acontece.</p>
+
+<h2 id="gráficos-simples">Gráficos simples</h2>
+
+<p>Um gráfico de dados fornecidos em listas:</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
+<span class="n">y</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p><img src="/LOM3260/docs/tema5/fig1.png" class="mw-100" /></p>
+
+<p>Veja que, por padrão, o python apenas liga os dados com linhas, mas não identifica os pontos por símbolos. Troque o comportamento acima mudando a linha com a função <code class="highlighter-rouge">plt.plot</code> por</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="s">'o'</span><span class="p">)</span>
+</code></pre></div></div>
+<p>ou por</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="s">'-o'</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="row">
+<div class="col-md-6">
+<img src="/LOM3260/docs/tema5/fig2.png" class="mw-100" />
+</div>
+<div class="col-md-6">
+<img src="/LOM3260/docs/tema5/fig3.png" class="mw-100" />
+</div>
+</div>
+
+<p>Existem muitas outras opções de símbolos, tipos de linhas e cores, que você encontra na documentação ou em tutoriais.</p>
+
+<p class="alert alert-primary">:bulb: Você pode usar quantos comandos <code class="highlighter-rouge">plt.plot()</code> você quiser dentro de um mesmo gráfico!</p>
+
+<h2 id="formatando-o-gráfico">Formatando o gráfico</h2>
+
+<p>Vejamos agora como alterar propriedades como rótulos dos eixos, limites do gráfico e legenda. O exemplo abaixo sumariza algumas mudanças.</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
+<span class="n">y</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="s">'--o'</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s">'medidas experimentais'</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">xlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">5</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">10</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s">'valores de $x$'</span><span class="p">)</span>  <span class="c1"># veja que dá pra usar LaTeX!
+</span><span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s">'valores de $f(x)$'</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>  
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p><img src="/LOM3260/docs/tema5/fig4.png" class="mw-100" /></p>
+
+<h2 id="gráfico-de-uma-função">Gráfico de uma função</h2>
+
+<p>Você pode combinar o <code class="highlighter-rouge">matplotlib</code> com recursos do <code class="highlighter-rouge">numpy</code> para fazer gráficos de funções matemáticas:</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="mi">101</span><span class="p">)</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s">'$</span><span class="err">\</span><span class="s">cos(x)$'</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">xlim</span><span class="p">(</span><span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span><span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">)</span> 
+<span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">(</span><span class="o">-</span><span class="mf">1.2</span><span class="p">,</span> <span class="mf">1.2</span><span class="p">)</span> 
+
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s">'$x$'</span><span class="p">)</span>  <span class="c1"># veja que dá pra usar LaTeX!
+</span><span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s">'$</span><span class="err">\</span><span class="s">cos(x)$'</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">axhline</span><span class="p">(</span><span class="n">y</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s">'k'</span><span class="p">)</span>  <span class="c1"># eixo x
+</span><span class="n">plt</span><span class="o">.</span><span class="n">axvline</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s">'k'</span><span class="p">)</span>  <span class="c1"># eixo y
+</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p><img src="/LOM3260/docs/tema5/fig5.png" class="mw-100" /></p>
+
+<h2 id="gráfico-com-barras-de-erros">Gráfico com barras de erros</h2>
+
+<p>Um tipo de gráfico muito útil para apresentar medidas experimentais, e seus respectivos desvios-padrão, é o gráfico com barras de erros. Os exemplos abaixo mostram o que você deve fazer.</p>
+
+<h3 id="desvio-constante">Desvio constante</h3>
+
+<p>Quando o desvio é o mesmo para todos os pontos, faça simplesmente isso:</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
+<span class="n">y</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+
+<span class="n">desvio</span> <span class="o">=</span> <span class="mf">.5</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">errorbar</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">yerr</span><span class="o">=</span><span class="n">desvio</span><span class="p">,</span> <span class="n">fmt</span><span class="o">=</span><span class="s">'ro'</span><span class="p">,</span> <span class="n">ecolor</span><span class="o">=</span><span class="s">'black'</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">capsize</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s">'experimental'</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p><img src="/LOM3260/docs/tema5/fig6.png" class="mw-100" /></p>
+
+<h3 id="desvio-como-porcentagem">Desvio como porcentagem</h3>
+
+<p>Digamos agora que o desvio corresponde a 10% dos valores de <code class="highlighter-rouge">y</code>. Faça o seguinte: troque a definição de <code class="highlighter-rouge">desvio</code> por <code class="highlighter-rouge">desvio = .1 * np.array(y)</code>. Veja que, para facilitar a nossa vida, criamos uma versão de <code class="highlighter-rouge">y</code> como um array antes de multiplicar por 0.1. Caso contrário, teríamos que usar um laço ou list comprehension: <code class="highlighter-rouge">desvio = [.1 * v for v in y]</code></p>
+
+<p><img src="/LOM3260/docs/tema5/fig7.png" class="mw-100" /></p>
+
+<h3 id="desvio-variável">Desvio variável.</h3>
+
+<p>Digamos agora que os desvios são diferentes para cada ponto, mas não são necessariamente uma porcentagem do valor medido. Nesse caso também não é difícil de criar um gráfico com barras de erros: basta criar uma nova lista (ou array) com os desvios de cada ponto.</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
+<span class="n">y</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+
+<span class="n">desvio</span> <span class="o">=</span> <span class="p">[</span><span class="mf">.4</span><span class="p">,</span> <span class="mf">.2</span><span class="p">,</span> <span class="mf">.3</span><span class="p">,</span> <span class="mf">.4</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mf">.5</span><span class="p">]</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">errorbar</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">yerr</span><span class="o">=</span><span class="n">desvio</span><span class="p">,</span> <span class="n">fmt</span><span class="o">=</span><span class="s">'ro'</span><span class="p">,</span> <span class="n">ecolor</span><span class="o">=</span><span class="s">'black'</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">capsize</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s">'experimental'</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p><img src="/LOM3260/docs/tema5/fig8.png" class="mw-100" /></p>
+
+:ET

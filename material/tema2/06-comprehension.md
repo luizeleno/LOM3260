@@ -4,6 +4,7 @@ parent: tematwo
 nav_order: 6
 status: green
 tags: [list, comprehension, dicionário, tupla, string, lista]
+timestamp: 07/06/20
 ---
 
 Uma maneira rápida e elegante de iterar por elementos de uma lista ou string
@@ -57,3 +58,4 @@ dic = {1:'a', 2:'b', 3:'c'}
 print('valores no dicionário:')
 [print(c, dic[c]) for c in dic]
 ```
+

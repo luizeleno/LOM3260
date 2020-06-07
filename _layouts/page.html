@@ -57,7 +57,6 @@ layout: default
 {% if page.doc %}
 <hr>
 <p class="small">
-  <i>Página criada em {{ page.last_modified_at | date: '%d/%m/%y'}}.
-    {% if page.timestamp %} Última modificação: {{page.timestamp}}{% endif  %}</i>
+  {% if page.timestamp %}<i> Página atualizada em {{page.timestamp}}</i>{% endif %}
 </p>
 {% endif %}

@@ -6,6 +6,7 @@ status: green
 mathjax: true
 tags: [funções, função, def, return, modular, chamar, ferramenta, argumento]
 permalink: /tema3/funcoes/
+timestamp: 07/06/20
 ---
 
 Definir suas próprias funções -- novas ferramentas! -- torna seu código mais robusto e fácil de entender. 
@@ -122,3 +123,4 @@ Você poderia usá-la (assim como as funções anteriores!), por exemplo, assim:
 c = 2.5
 print(f'{c}² = {quadrado(c)}')
 ```
+

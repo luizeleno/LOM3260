@@ -6,6 +6,7 @@ status: green
 mathjax: true
 tags: [overload, sobrecarga, operadores]
 permalink: /docs/sobrecarga/
+timestamp: 07/06/20
 ---
 
 Um mesmo símbolo pode significar diferentes operadores em python, dependendo dos tipos de dados sobre os quais ele opera
@@ -39,3 +40,4 @@ print(c)
 O que você acha que esse comando `print` imprime? Veja que `a` e `b` são do tipo `string` e, não `int`!
 
 Na próxima seção veremos como usar operadores "sobrecarregados" para criar facilmente novas listas.
+

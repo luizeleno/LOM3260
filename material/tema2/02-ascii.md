@@ -4,6 +4,7 @@ parent: tematwo
 nav_order: 2
 status: green
 tags:  [string, caracteres, elementos, imutável, ASCII, ord, chr]
+timestamp: 07/06/20
 ---
 
 Historicamente, é a mais importante codificação eletrônica de caracteres
@@ -23,3 +24,4 @@ Para simplificar e focar no tema de interesse, nos exercícios vamos nos limitar
 Os seguintes comandos em python são úteis para trabalhar com caracteres:
 - `ord(c)`: retorna um `int` com a posição do caractere `c` na Tabela ASCII. Por exemplo, `ord('A')` retorna `65`.
 - `chr(n)`: retorna o caractere correspondente ao inteiro `n`. Por exemplo, `chr(122)` retorna `'z'`.
+

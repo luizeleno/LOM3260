@@ -4,6 +4,7 @@ id: temaseven
 nav_order: 7
 has_children: true
 icon: rocket
+timestamp: 07/06/20
 ---
 
 Finalmente chegamos ao cálculo científico propriamente dito!
@@ -11,3 +12,4 @@ Finalmente chegamos ao cálculo científico propriamente dito!
 
 
 Os tópicos deste tema estão na forma de arquivos pdf. Com o tempo, serão convertidos para o formato web.
+

@@ -5,6 +5,7 @@ nav_order: -2
 permalink: /
 id: home
 icon: house_with_garden
+timestamp: 07/06/20
 ---
 
 # Computação Científica em Python
@@ -24,10 +25,13 @@ Uma disciplina do curso de Engenharia Física da Escola de Engenharia de Lorena 
 - <span class='badge badge-pill badge-warning'>Atenção!</span> *O site ainda está em desenvolvimento!* Mas muito material já pode ser utilizado. Confira a página de [instruções]({{site.baseurl}}/instrucoes/) para mais informações.
 
 ---
-
-## Sumário
-{% include navigation.html id='sumario'%}
-
+layout: home
+title: Início
+nav_order: -2
+permalink: /
+id: home
+icon: house_with_garden
+timestamp: 07/06/20
 ---
 
 ***Última atualização: {{site.time | date: "%d/%m/%Y %T"}}***
@@ -41,3 +45,4 @@ Uma disciplina do curso de Engenharia Física da Escola de Engenharia de Lorena 
 
 [DEMAR]: http://www.demar.eel.usp.br/
 {: target="\_blank"}
+

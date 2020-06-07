@@ -1,0 +1,39 @@
+I"=<p class="lead">Dois conceitos fundamentais em programação: objetos e variáveis</p>
+
+<!-- ## Conteúdo
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc} -->
+
+<h2 id="o-que-são-objetos-e-tipos">O que são <em>objetos</em> e <em>tipos</em>?</h2>
+
+<p>O conceito de <strong>objeto</strong> em programação é um daqueles difíceis de explicar em palavras, mas fácil de entender na prática. Objetos são dados que o seu programa python manipula para realizar as tarefas necessárias para atingir o seu objetivo. Os objetos podem ser de diversos <strong>tipos</strong> (<em>types</em>): números inteiros (<code class="highlighter-rouge">int</code>), números em ponto flutuante (<code class="highlighter-rouge">float</code>), sequências de caracteres (<code class="highlighter-rouge">string</code>), listas (<strong>list</strong>), dicionários (<strong>dict</strong>), e muitos outros tipos.</p>
+
+<h2 id="e-o-que-são-variáveis">E o que são variáveis?</h2>
+
+<p>Ao criar um objeto de qualquer tipo, é preciso guardá-lo em algum lugar na memória (RAM) do computador, para que o código consiga acessá-lo sempre que necessário. A esse processo dá-se o nome de <strong>atribuição</strong> de um dado a uma <strong>variável</strong>. Por exemplo,</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">a</span> <span class="o">=</span> <span class="mi">2</span>
+</code></pre></div></div>
+<p>significa que atribuímos um dado do tipo <code class="highlighter-rouge">int</code> (e igual a 2) a uma variável que batizamos de <code class="highlighter-rouge">a</code>. Leia <code class="highlighter-rouge">a=2</code> como “<code class="highlighter-rouge">a</code> recebe <code class="highlighter-rouge">2</code>” (e não “a igual a 2”). O símbolo <code class="highlighter-rouge">=</code>, nesse contexto, é chamado de <strong>operador de atribuição</strong>, e não <em>igual</em>. Após a atribuição, o <code class="highlighter-rouge">int</code> 2 está guardado em algum lugar da memória, que chamamos de <code class="highlighter-rouge">a</code>. Seu código pode acessá-lo sempre que precisar apenas usando o nome da variável. Por exemplo, no código</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">a</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">3</span> <span class="o">*</span> <span class="n">a</span>
+</code></pre></div></div>
+<p>atribuimos o valor <code class="highlighter-rouge">3 * a</code> à variável <code class="highlighter-rouge">b</code>. Como, no ponto do código em que ocorre a linha <code class="highlighter-rouge">a = 3 * a</code>, na variável <code class="highlighter-rouge">a</code> está guardado o valor <code class="highlighter-rouge">2</code>, segue que <code class="highlighter-rouge">b</code> recebe <code class="highlighter-rouge">6</code>.</p>
+
+<p>Tome cuidado, no entanto, com o símbolo <code class="highlighter-rouge">=</code> usado para atribuição. Por exemplo, no seguinte código:</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">a</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">3</span> <span class="o">*</span> <span class="n">a</span>
+<span class="n">a</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="k">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+</code></pre></div></div>
+<p>O que você acha que será impresso pelo comando <code class="highlighter-rouge">print</code>? Ora, a última vez que o python atribuiu algum objeto à variável <code class="highlighter-rouge">b</code>, esse objeto era o <code class="highlighter-rouge">int</code> 6. Ao alterar o valor guardado em <code class="highlighter-rouge">a</code>, o que estava em <code class="highlighter-rouge">b</code> não é alterado. Portanto, o comando <code class="highlighter-rouge">print(b)</code> imprime na tela o valor <code class="highlighter-rouge">6</code>.</p>
+
+<p>Outra maneira de usar o operador de atribuição (<code class="highlighter-rouge">=</code>) que causa confusão entre iniciantes em programação é algo como o seguinte código:</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">a</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">a</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="mi">1</span>
+<span class="k">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</code></pre></div></div>
+<p>Qual o valor impresso? Bom, na primeira linha, atribuímos o <code class="highlighter-rouge">int</code> 2 à variável <code class="highlighter-rouge">a</code>. Na segunda linha, somamos 1 ao valor guardado em <code class="highlighter-rouge">a</code> (2), cujo resultado é obviamente 3. Esse valor é então atribuído novamente à variável <code class="highlighter-rouge">a</code>, ou seja, guardamos esse novo resultado no mesmo lugar da memória, atualizando seu valor. Com efeito, o que fizemos foi basicamente alterar o objeto guardado na variável <code class="highlighter-rouge">a</code>.</p>
+
+:ET

@@ -4,6 +4,7 @@ parent: temathree
 nav_order: 4
 status: green
 tags: [funções, função, def, return, docstring]
+timestamp: 07/06/20
 ---
 
 Criando documentação para suas funções!
@@ -44,3 +45,4 @@ Se você agora usar o comando `help(quadrado)`, verá a mensagem acima! Claro qu
 
 :+1: Obviamente eu espero que o seu projeto de software faça amplo uso de docstrings, além de comentários usuais ao longo do código!
 {: .alert .alert-primary }
+

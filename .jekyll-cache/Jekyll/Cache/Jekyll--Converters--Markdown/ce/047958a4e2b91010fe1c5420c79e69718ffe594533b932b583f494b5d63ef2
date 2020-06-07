@@ -1,0 +1,46 @@
+I"i<div class="w-100">
+<div class="text-center">
+<figure class="figure">
+  
+  <a href="#" data-toggle="modal" data-target="#crono">
+  
+    <img class="figure-img img-fluid rounded mx-auto" src="/LOM3260/assets/images/Cronograma.jpg" alt="Cronograma do semestre" title="Cronograma do semestre" />
+  
+  </a>
+  
+  
+  <figcaption class="figure-caption">
+    Cronograma do semestre
+  </figcaption>
+  
+
+<!-- Modal -->
+
+<div class="modal fade" id="crono" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-light bg-dark">
+        <h5>Cronograma do semestre</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span class="text-light" aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <a id="no-ext-link" href="/LOM3260/assets/images/Cronograma.jpg" target="_blank">
+        <img class="figure-img img-fluid rounded w-100mx-auto" src="/LOM3260/assets/images/Cronograma.jpg" alt="Cronograma do semestre" title="Cronograma do semestre" />
+        </a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">OK</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</figure>
+</div>
+
+</div>
+
+:ET

@@ -7,6 +7,7 @@ remove_trinket: true
 resolvidos: ['1', '5', '6', '7', '8', '11', '12', '13', '15', '16', '20', '21', '22', '23', '26']
 entrega1: ['2', '3', '4', '9', '14', '17', '19', '28']
 entrega2: ['18', '29', '30']
+timestamp: 07/06/20
 ---
 
 ### Acesso rápido
@@ -19,12 +20,16 @@ entrega2: ['18', '29', '30']
 - **Os exercícios marcados em <span class="badge badge-warning">amarelo</span> na lista acima (Acesso rápido) devem ser entregues em dupla no [Google Classroom](https://classroom.google.com){: target="\_blank"} até as 14h00 do dia 12/09/2019. São os exercícios {% for i in page.entrega1 %}{{i}}{% unless forloop.last %}, {%endunless%}{% endfor %}.**
 - **Os exercícios marcados em <span class="badge badge-danger">vermelho</span> na lista acima (Acesso rápido) devem ser entregues em dupla no [Google Classroom](https://classroom.google.com){: target="\_blank"} até as 14h00 do dia 24/10/2019. São os exercícios {% for i in page.entrega2 %}{{i}}{% unless forloop.last %}, {%endunless%}{% endfor %}.**
 - os exercícios marcados em <span class="badge badge-success">verde</span> foram resolvidos em sala de aula. Uma possível solução é fornecida aqui, junto ao exercício.
-- as porcentagens no começo de cada exercício são uma maneira de indicar o seu grau de dificuldade. Mas não se apegue muito a esses valores: talvez você ache fáceis alguns que eu julgo como difíceis --- e vice-versa!
-- Seja paciente. Se começar a encontrar muitas dificuldades, mude para outro problema e volte para o anterior depois de uma boa pausa, com a cabeça fresca.
-- Nos exercícios envolvendo *strings*, suponha que ela só contenha caracteres da [Tabela ASCII](https://pt.wikipedia.org/wiki/ASCII){: target="\_blank"} de 32 em diante. Caracteres com acentos não fazem parte do código ASCII. Hoje em dia usa-se quase sempre a codificação *unicode*, mais completa que a ASCII, com a vantagem de manter os mesmos códigos para os caracteres comuns a ambos. Portanto, para simplificar a sua vida, nos exercícios com strings suponha que o usuário sempre fornece caracteres sem nenhum acento.
-
-{% include labels-ex.html %}
-
+- as porcentagens no começo de cada exercício são uma maneira de indicar o seu grau de dificuldade. Mas não se apegue muito a esses valores: talvez você ache fáceis alguns que eu julgo como difíceis ---
+title: Primeira Lista
+parent: exs
+nav_order: 1
+mathjax: true
+remove_trinket: true
+resolvidos: ['1', '5', '6', '7', '8', '11', '12', '13', '15', '16', '20', '21', '22', '23', '26']
+entrega1: ['2', '3', '4', '9', '14', '17', '19', '28']
+entrega2: ['18', '29', '30']
+timestamp: 07/06/20
 ---
 
 {% assign n = 0 %}
@@ -49,3 +54,4 @@ entrega2: ['18', '29', '30']
 </div>
 
 {% endfor %}
+

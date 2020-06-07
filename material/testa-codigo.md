@@ -5,6 +5,7 @@ id: teste
 permalink: /teste/
 tags: [trinket, teste]
 icon: wrench
+timestamp: 07/06/20
 ---
 
 Use esta página como uma caixa de teste de ideias em python. 
@@ -14,3 +15,4 @@ Use esta página como uma caixa de teste de ideias em python.
 <small>Cortesia de <a href="https://trinket.io" target="\_blank">trinket.io</a></small>
 
 *Obs.:* ao final de todas as páginas dos **Temas** há um intérprete python parecido com o visto acima para você testar imediatamente os exemplos e instruções de cada página!
+

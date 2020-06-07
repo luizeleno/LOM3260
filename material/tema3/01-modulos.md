@@ -4,6 +4,7 @@ parent: temathree
 nav_order: 1
 status: green 
 tags: [funções, função, módulo, module, numpy, from, as, apelido, import, raiz, sqrt, padrão, standard]
+timestamp: 07/06/20
 ---
 
 Existem muitos módulos em python especializados numa imensa gama de tarefas! 
@@ -106,3 +107,4 @@ print(f'A raiz quadrada de {a} é {rqa}')
 ```
 
 É pouco provável que exista uma função `raiz` no numpy, então o problema é contornado --- mas sem nenhuma garantia: e se um dos desenvolvedores do `numpy` é lusófono e usou a palavra `raiz` internamente no código? Por isso, eu não recomendo usar a construção `from`, nem mesmo com o uso concomitante do `as`. É melhor, por segurança e compatibilidade, importar os módulos completos, com `import numpy` ou `import numpy as np`.
+

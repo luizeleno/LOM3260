@@ -5,6 +5,7 @@ nav_order: 4
 status: green
 mathjax: true
 tags: [overload, sobrecarga, operadores, listas, strings]
+timestamp: 07/06/20
 ---
 
 Usando sobrecarga de operadores, vamos ver uma maneira de criar listas e strings de maneira fácil e rápida
@@ -36,3 +37,4 @@ print(s)
 ```
 
 Concluindo: a sobrecarga do operador `*` é uma ótima maneira de **inicializar** listas e strings.
+

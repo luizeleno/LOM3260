@@ -3,6 +3,7 @@ title: Terceira Lista
 parent: exs
 mathjax: true
 remove_trinket: true
+timestamp: 07/06/20
 ---
 
 ### Acesso rápido
@@ -38,3 +39,4 @@ remove_trinket: true
 </div>
 
 {% endfor %}
+

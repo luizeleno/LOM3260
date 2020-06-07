@@ -4,6 +4,7 @@ nav_order: 1
 parent: temafour
 status: green
 tags: [numpy, scipy, pandas, matplotlib, array, matlab]
+timestamp: 07/06/20
 ---
 
 Numpy e scipy são módulos incrivelmente completos para praticamente qualquer atividade científica computacional
@@ -19,3 +20,4 @@ O objetivo principal dos módulos `numpy` e `scipy` é fornecer recursos básico
 - Ferramentas de Álgebra Linear, como determinantes, inversas, autovalores e autovetores, etc.
 
 O recurso principal dessa família de módulos, no entanto, é um novo tipo de dado criado especificamente para lidar de modo fácil com grandes conjuntos de dados: o **array**, com forte inspiração em Matlab. Veremos mais detalhes sobre arrays em breve. Antes disso, porém, vamos vê-los em prática numa aplicação bem especícica mas extremamente importante: a geração de números aleatórios.
+

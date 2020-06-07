@@ -1,0 +1,62 @@
+I"�<p class="lead">Dicas sobre a construção <code class="highlighter-rouge">if elif else</code></p>
+
+<p>A sintaxe é:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span> <span class="n">condicao</span><span class="p">:</span>
+    <span class="p">[</span><span class="n">comandos</span><span class="p">]</span>
+<span class="k">elif</span> <span class="n">condicao</span><span class="p">:</span>
+    <span class="p">[</span><span class="n">comandos</span><span class="p">]</span>
+<span class="k">elif</span> <span class="n">condicao</span><span class="p">:</span>
+    <span class="p">[</span><span class="n">comandos</span><span class="p">]</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="p">[</span><span class="n">comandos</span><span class="p">]</span>
+</code></pre></div></div>
+
+<p>onde <code class="highlighter-rouge">condicao</code> representa variáveis do tipo <code class="highlighter-rouge">bool</code> (<code class="highlighter-rouge">True</code> ou <code class="highlighter-rouge">False</code>), ou testes que resultem em variáveis <code class="highlighter-rouge">bool</code>. Se <code class="highlighter-rouge">condicao</code> resulta em <code class="highlighter-rouge">True</code>, executa os comandos sob o <code class="highlighter-rouge">if</code>; caso contrário, passa pelos comandos <code class="highlighter-rouge">elif</code> em sequência, até um deles ser <code class="highlighter-rouge">True</code>. Se isso não acontece, chega finalmente ao <code class="highlighter-rouge">else</code>. Todos os <code class="highlighter-rouge">elif</code> e o <code class="highlighter-rouge">else</code> são opcionais. Voce pode colocar quantos <code class="highlighter-rouge">elif</code> você quiser, mas apenas um <code class="highlighter-rouge">else</code> ao final.</p>
+
+<p>Assim, o seguinte fragmento de código:</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="bp">False</span>
+<span class="k">if</span> <span class="n">x</span><span class="p">:</span>
+    <span class="n">a</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="n">a</span> <span class="o">=</span> <span class="mi">2</span>
+</code></pre></div></div>
+<p>resultará em <code class="highlighter-rouge">a = 2</code>, e é equivalente a</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="bp">False</span>
+<span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="bp">True</span><span class="p">:</span>
+    <span class="n">a</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="n">a</span> <span class="o">=</span> <span class="mi">2</span>
+</code></pre></div></div>
+
+<p>Na verdade, qualquer valor positivo passado ao comando if será interpretado como True. Por exemplo,</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="mi">9</span>
+<span class="k">if</span> <span class="n">x</span> <span class="o">%</span> <span class="mi">4</span><span class="p">:</span>
+    <span class="n">a</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="n">a</span> <span class="o">=</span> <span class="mi">2</span>
+</code></pre></div></div>
+<p>resulta em <code class="highlighter-rouge">a = 1</code>, pois <code class="highlighter-rouge">9 % 4 == 1</code>, que é positivo e equivale a <code class="highlighter-rouge">True</code>. Por outro lado, qualquer valor negativo ou zero será considerado <code class="highlighter-rouge">False</code>:</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="mi">8</span>
+<span class="k">if</span> <span class="n">x</span> <span class="o">%</span> <span class="mi">4</span><span class="p">:</span>
+    <span class="n">a</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="n">a</span> <span class="o">=</span> <span class="mi">2</span>
+</code></pre></div></div>
+<p>resulta em <code class="highlighter-rouge">a = 2</code>.</p>
+
+<p>O próximo exemplo ilustra estruturas condicionais aninhadas. Analise o seguinte código para encontrar o maior dentre três inteiros:</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span> <span class="o">=</span> <span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">3</span><span class="p">,</span> <span class="mi">5</span>
+<span class="k">if</span> <span class="n">a</span> <span class="o">&gt;</span> <span class="n">b</span><span class="p">:</span>
+  <span class="k">if</span> <span class="n">a</span> <span class="o">&gt;</span> <span class="n">c</span><span class="p">:</span>
+    <span class="nb">max</span> <span class="o">=</span> <span class="n">a</span>
+  <span class="k">else</span><span class="p">:</span>
+    <span class="nb">max</span> <span class="o">=</span> <span class="n">c</span>
+<span class="k">else</span><span class="p">:</span>
+  <span class="k">if</span> <span class="n">b</span> <span class="o">&gt;</span> <span class="n">c</span><span class="p">:</span>
+    <span class="nb">max</span> <span class="o">=</span> <span class="n">b</span>
+  <span class="k">else</span><span class="p">:</span>
+    <span class="nb">max</span> <span class="o">=</span> <span class="n">c</span>
+</code></pre></div></div>
+
+:ET

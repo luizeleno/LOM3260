@@ -3,6 +3,7 @@ title: O módulo matplotlib
 parent: temafive
 status: yellow
 tags: [numpy, matplotlib, pyplot, plt, arrays, gráficos, plots, scatter, desvios, erro, barra, legenda, eixos]
+timestamp: 07/06/20
 ---
 
 O melhor módulo para criar gráficos em python 
@@ -162,3 +163,4 @@ plt.show()
 ```
 
 <img src="{{site.baseurl}}/docs/tema5/fig8.png" class="mw-100">
+

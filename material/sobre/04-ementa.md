@@ -3,6 +3,7 @@ title: Programa Resumido
 parent: sobre
 nav_order: 3
 tags: [programa, ementa]
+timestamp: 07/06/20
 ---
 
 1. Programação em Python:
@@ -16,3 +17,4 @@ tags: [programa, ementa]
   - Integração
   - Sistemas de equações lineares
   - Ajuste por mínimos quadrados
+

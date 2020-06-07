@@ -4,6 +4,7 @@ permalink: /classes/
 nav_order: 202
 id: classes
 hidden: true
+timestamp: 07/06/20
 ---
 
 # Prof. Luiz T. F. Eleno
@@ -43,3 +44,4 @@ O material de outras disciplinas (Mecânica Quântica, Diagramas de Fases, Fenô
 -   material da disciplina LOM3213 - Fenômenos de Transporte B, sobre radiação de corpo negro:
 
 [Baixar amostra de aula de LOM3213]({{site.baseurl}}/assets/classes/CorpoNegro.pdf){: .btn .btn-primary target="\_blank"}
+

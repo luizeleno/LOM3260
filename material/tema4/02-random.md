@@ -3,6 +3,7 @@ title: Números aleatórios
 parent: temafour
 status: red
 tags: [numpy, scipy, arrays]
+timestamp: 07/06/20
 ---
 
 Gerar números aleatórios é uma das tarefas mais importantes da computação científica
@@ -23,3 +24,4 @@ Em inglês *random* significa *aleatório*.
 ```
 import numpy.random as rd
 ```
+

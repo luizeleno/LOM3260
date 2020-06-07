@@ -11,6 +11,14 @@
     } ,
   
     {
+      "title"    : "Introdução",
+      "url"      : "/LOM3260/docs/intro/",
+      "category" : "",
+      "tags"     : "edição, arquivos, extensão, py, sintaxe, indentação, comentário",
+      "date"     : ""
+    } ,
+  
+    {
       "title"    : "Introdução: python é popular!",
       "url"      : "/LOM3260/popularidade/",
       "category" : "",
@@ -99,6 +107,14 @@
     } ,
   
     {
+      "title"    : "Objetos e variáveis",
+      "url"      : "/LOM3260/material/tema1/02-objetos-e-variaveis.html",
+      "category" : "",
+      "tags"     : "objeto, variável, tipo, int, float, string, lógico, boolean, atribuição, atualização",
+      "date"     : ""
+    } ,
+  
+    {
       "title"    : "Números aleatórios",
       "url"      : "/LOM3260/material/tema4/02-random.html",
       "category" : "",
@@ -155,6 +171,14 @@
     } ,
   
     {
+      "title"    : "Tipos de objetos",
+      "url"      : "/LOM3260/docs/tipos/",
+      "category" : "",
+      "tags"     : "tipos, objetos, int, float, string, complex, boolean, converter, notação, científica, expoente, exponenciação",
+      "date"     : ""
+    } ,
+  
+    {
       "title"    : "Criando novas listas",
       "url"      : "/LOM3260/material/tema2/04-criar-listas.html",
       "category" : "",
@@ -175,6 +199,14 @@
       "url"      : "/LOM3260/material/sobre/04-ementa.html",
       "category" : "",
       "tags"     : "programa, ementa",
+      "date"     : ""
+    } ,
+  
+    {
+      "title"    : "Entrada com input()",
+      "url"      : "/LOM3260/material/tema1/04-entrada.html",
+      "category" : "",
+      "tags"     : "input, entrada, output, saída, print, formatação, formatada",
       "date"     : ""
     } ,
   
@@ -203,6 +235,14 @@
     } ,
   
     {
+      "title"    : "Saída com print()",
+      "url"      : "/LOM3260/material/tema1/05-saida.html",
+      "category" : "",
+      "tags"     : "input, entrada, output, saída, print, formatação, formatada, interpoladas, f-strings, substituição",
+      "date"     : ""
+    } ,
+  
+    {
       "title"    : "Indexação e fatiamento",
       "url"      : "/LOM3260/material/tema2/05-slicing-indexing.html",
       "category" : "",
@@ -227,6 +267,14 @@
     } ,
   
     {
+      "title"    : "Operadores",
+      "url"      : "/LOM3260/material/tema1/06-operadores.html",
+      "category" : "",
+      "tags"     : "operador, operadores, comparação, lógicos, incremento, operando, aritmético, lógico, comparação, atribuição",
+      "date"     : ""
+    } ,
+  
+    {
       "title"    : "Módulos do usuário",
       "url"      : "/LOM3260/material/tema3/06-user-modules.html",
       "category" : "",
@@ -239,6 +287,14 @@
       "url"      : "/LOM3260/material/tema3/07-args-opcionais.html",
       "category" : "",
       "tags"     : "funções, função, def, return, argumentos, opcionais, obrigatórios, nome, pizza, tolerância, precisão, pre-definidos, padrão",
+      "date"     : ""
+    } ,
+  
+    {
+      "title"    : "Testando condições",
+      "url"      : "/LOM3260/material/tema1/07-condicional.html",
+      "category" : "",
+      "tags"     : "if, elif, else, condições, condicional, decisão",
       "date"     : ""
     } ,
   
@@ -259,10 +315,34 @@
     } ,
   
     {
+      "title"    : "Laços (loops)",
+      "url"      : "/LOM3260/material/tema1/08-loop.html",
+      "category" : "",
+      "tags"     : "loop, laço, for, while, iteração",
+      "date"     : ""
+    } ,
+  
+    {
       "title"    : "Variáveis locais e globais",
       "url"      : "/LOM3260/material/tema3/08-varlocais.html",
       "category" : "",
       "tags"     : "funções, função, def, return, argumentos, padrão, variável, variáveis, local, global",
+      "date"     : ""
+    } ,
+  
+    {
+      "title"    : "Comandos in e len()",
+      "url"      : "/LOM3260/material/tema1/09-in-len.html",
+      "category" : "",
+      "tags"     : "in, range, palavras, chave",
+      "date"     : ""
+    } ,
+  
+    {
+      "title"    : "O comando range",
+      "url"      : "/LOM3260/material/tema1/10-range.html",
+      "category" : "",
+      "tags"     : "range",
       "date"     : ""
     } ,
   
@@ -343,6 +423,14 @@
       "url"      : "/LOM3260/sobre/",
       "category" : "",
       "tags"     : "EEL, USP, Demar, Universidade, São Paulo, Luiz, Eleno, LOM3260, Python, Computação",
+      "date"     : ""
+    } ,
+  
+    {
+      "title"    : "Tema 1",
+      "url"      : "/LOM3260/material/tema1/tema1.html",
+      "category" : "",
+      "tags"     : "",
       "date"     : ""
     } ,
   

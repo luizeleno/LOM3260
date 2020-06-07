@@ -4,6 +4,7 @@ parent: temathree
 nav_order: 2
 status: green
 tags: [funções, função, módulos, help, ajuda, documentação]
+timestamp: 07/06/20
 ---
 
 Aprenda a navegar e entender a documentação de um módulo 
@@ -51,3 +52,4 @@ A longa mensagem fornecida provavelmente será de pouca ajuda para você que est
 A documentação oficial do `numpy` (e do `scipy`) está no site deles: <https://docs.scipy.org/doc/>{: target="\_blank"}. Vá então para a documentação específica do numpy (<https://docs.scipy.org/doc/numpy/>) e digite `sqrt` no campo de busca (*search*). Um dos primeiros resultados é o que você precisa: `numpy.sqrt`. Clicando no link vocÊ será levado para a documentação oficial da função (este é o endereço: <https://docs.scipy.org/doc/numpy/reference/generated/numpy.sqrt.html>). 
 
 Você descobrirá então que a função `numpy.sqrt` retorna a raiz quadrada não-negativa de um array, elemento por elemento (*Return the non-negative square-root of an array, element-wise*). Ainda não vimos o que é um array, mas você pode considerá-los por enquanto como uma espécie de lista turbinada. O único argumento obrigatório é `x`, o array do qual você quer a raiz quadrada. Não está dito ali, mas funciona também para ints e floats da maneira usual: `numpy.sqrt(5)` e `numpy.sqrt(5.)` vão retornar o valor esperado.
+

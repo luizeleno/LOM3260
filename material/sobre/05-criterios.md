@@ -4,6 +4,7 @@ parent: sobre
 nav_order: 4
 mathjax: true
 tags: [avaliação, critério, prova, trabalho, presença, listas]
+timestamp: 07/06/20
 ---
 
 - A **Nota Final** ($N_{f}$) na disciplina será composta da média de **Listas de exercícios** ($L$) e um **Projeto em equipe** ($P$):
@@ -25,3 +26,4 @@ tags: [avaliação, critério, prova, trabalho, presença, listas]
     - uma nota de 50 a 100 pontos atribuída a cada aluno
     - diferença mínima de 10 pontos entre duas notas consecutivas
 - Requisitos para aprovação: $N_f \ge 5$ e frequência $\ge$ 70%
+

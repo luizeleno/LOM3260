@@ -4,6 +4,7 @@ parent: temathree
 nav_order: 5
 status: green
 tags: [funções, função, def, return, docstring, módulo, personalizado, main]
+timestamp: 07/06/20
 ---
 
 Você pode agrupar suas funções e criar seus próprios módulos!
@@ -89,3 +90,4 @@ Com isso, deixamos nosso código *modularizado*, ou seja, compartimentado em uni
 ## Docstrings em módulos
 
 Repare que você pode acrescentar uma docstring no seu módulo, como eu fiz no exemplo acima. Isso é extremamente útil para usuários do seu módulo que queiram saber mais informações sobre os recursos e as aplicações que ele tem para oferecer.
+

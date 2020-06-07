@@ -6,6 +6,7 @@ status: green
 mathjax: true
 tags: [funções, função, def, return, chamar, ferramenta]
 permalink: /tema3/return/
+timestamp: 07/06/20
 ---
 
 O `return` da sua função tem algumas propriedades que o ajudam a escrever seu código 
@@ -32,3 +33,4 @@ Não se confunda com tantos `return`! A execução da função termina assim que
 Repare que, na solução do exercício sobre [senha forte]({{site.baseurl}}/docs/exercicios/lista1.html#ex22), usei esse conceito nas funções `verifica_senha` e `senha_forte`.
 
 Isso facilita e muito a criação, entendimento e uso de funções em python!
+

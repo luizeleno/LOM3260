@@ -4,6 +4,7 @@ parent: tematwo
 nav_order: 5
 status: green
 tags: [slicing, indexing, fatiamento, indexação, índice, índices, elemento, tupla, list, dict, string, negativo]
+timestamp: 07/06/20
 ---
 
 Como escolher e manipular partes de uma string ou lista usando indexação (*indexing*) e fatiamento (*slicing*)
@@ -71,3 +72,4 @@ print(L[:])
 print(L[::])
 print(L[::-1])
 ```
+

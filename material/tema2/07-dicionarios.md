@@ -4,6 +4,7 @@ parent: tematwo
 nav_order: 7
 status: green
 tags: [dict, dicionário, chaves, itens, elementos, ]
+timestamp: 07/06/20
 ---
 
 Uma poderosa ferramenta para turbinar seu código
@@ -83,3 +84,4 @@ Também é possível pesquisar no sentido contrário, apesar de ser um pouco mai
 palavra_en = 'the'
 [chave for chave, item in meu_dicio.items() if item is palavra_en]
 ```
+

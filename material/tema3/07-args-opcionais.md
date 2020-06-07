@@ -5,6 +5,7 @@ nav_order: 6
 status: green
 mathjax: true
 tags: [funções, função, def, return, argumentos, opcionais, obrigatórios, nome, pizza, tolerância, precisão, pre-definidos, padrão]
+timestamp: 07/06/20
 ---
 
 Funções podem ter argumentos opcionais com valores pré-definidos
@@ -145,3 +146,4 @@ Apedaco = area_pizza(r, theta=corte)
 Valores pré-definidos são uma excelente opção para funções mais complexas, permitindo ao usuário utilizar rapidamente suas funções confiando que você escolheu valores sensatos para os argumentos opcionais!
 
 Por exemplo, argumentos como precisão, tolerância, método de cálculo e número máximo de iterações de um procedimento numérico podem ter valores pré-definidos que sejam razoáveis para a maior parte das situações práticas. Caso o usuário deseje ou precise, ele pode alterar os argumentos opcionais por sua própria conta. Essa maneira de trabalhar será muito importante quando começarmos a ver os métodos do cálculo numérico.
+

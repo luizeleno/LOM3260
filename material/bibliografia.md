@@ -5,6 +5,7 @@ id: biblio
 permalink: /biblio/
 tags: [livros, sites, bibliografia]
 icon: books
+timestamp: 07/06/20
 ---
 
 Quase todos os recursos abaixo estão disponíveis *online* ou fisicamente pelo serviço de biblioteca da USP
@@ -35,3 +36,4 @@ Quase todos os recursos abaixo estão disponíveis *online* ou fisicamente pelo 
 - *Scipy Cookbook:* <https://scipy-cookbook.readthedocs.io/>{: target="\_blank"}
 - *learnpython.org:* <https://www.learnpython.org/>{: target="\_blank"}
 - *Matplotlib tutorial*: <https://github.com/rougier/matplotlib-tutorial>{: target="\_blank"}
+
