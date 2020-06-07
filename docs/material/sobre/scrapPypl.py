@@ -4,13 +4,13 @@ from bs4 import BeautifulSoup
 import datetime as dt
 import matplotlib.pyplot as plt
 
-#of = open('01-introdução.md', 'w')
-of = open('teste.md', 'w')
+of = open('01-introdução.md', 'w')
 
 meses = {1: 'janeiro', 2: 'fevereiro', 3: 'março', 4: 'abril', 5: 'maio',
          6: 'junho', 7: 'julho', 8: 'agosto', 9: 'setembro', 10: 'outubro',
          11: 'novembro', 12: 'dezembro'}
 data = dt.date.today()
+dia = data.day
 mes = meses[data.month]
 ano = data.year
 
@@ -31,7 +31,7 @@ Python é a linguagem mais popular e a que mais cresce mundialmente
 ![]({{site.baseurl}}/assets/images/pypl.jpeg){: .col-md-8 .my-1 }
 
 O **índice PYPL** (*PopularitY of Programming Language*) é obtido analisando \
-a frequência com que busca-se por tutoriais da linguagem no Google\
+a frequência com que busca-se por tutoriais da linguagem no Google \
 ([pypl.github.io/PYPL.html](http://pypl.github.io/PYPL.html)\
 {: target="\\_blank"})
 
@@ -41,17 +41,19 @@ a frequência com que busca-se por tutoriais da linguagem no Google\
 
 print(header, end='', file=of)
 
-
 URL = 'http://pypl.github.io/PYPL.html'
 page = requests.get(URL)
-text = page.text.split('\r\n')
+text = page.text
 
-for L in text:
-    if re.search('begin section All', L):
-        L = L.replace('\\\"', '\"')
-        break
+text = text.replace('\\', '')
+text = text.replace('table = "<!-- begin section All-->',
+                    'BEGINDADOS')
+text = text.replace('<!-- end section All-->', 'ENDDADOS')
 
-soup = BeautifulSoup(L, 'html.parser')
+pattern = "BEGINDADOS(.*)ENDDADOS"
+text = re.search(pattern, text, re.DOTALL).group(1)
+
+soup = BeautifulSoup(text, 'html.parser')
 language = soup.find_all('td', class_='')
 share = soup.find_all(lambda tag: tag.name == 'td' and
                       tag.get('class') == ['right'])
@@ -59,10 +61,10 @@ trend = soup.find_all('td', class_='optCol')
 
 for n in range(len(language)):
     print(f'| {n+1} | {language[n].string} | \
-          {share[n].string[:-1]} | {trend[n].string[:-1]} |', file=of)
+         {share[n].string[:-1]} | {trend[n].string[:-1]} |', file=of)
 
 print(f'\n***Mundialmente em {mes} de {ano}, comparado \
-      a um ano antes***', file=of)
+# a um ano antes***', file=of)
 print('{: .small}', file=of)
 
 of.close()
@@ -75,7 +77,8 @@ sizes = [n.string[:-1] for n in share[:nmax]]
 resto = [n.string[:-1] for n in share[nmax:]]
 r = sum(list(map(float, resto)))
 sizes.append(str(r))
-explode=[0] * (nmax+1)
+print(len(sizes))
+explode = [0] * (nmax+1)
 # explode[0] = .1
 
 fig1, ax1 = plt.subplots()
