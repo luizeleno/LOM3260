@@ -19,6 +19,9 @@ Quase todos os recursos abaixo estão disponíveis *online* ou fisicamente pelo 
 
 - Livros online disponibilizados pelo Serviço de Bibliotecas da USP: <https://goo.gl/HSkGmU>{: target="\_blank"}
 
+- *Como Pensar Como um Cientista da Computação - Edição interativa* <https://panda.ime.usp.br/pensepy/static/pensepy/index.html>{: target="\_blank"}
+
+
 ## Documentação online
 
 - **Documentação oficial:** <https://docs.python.org/3>{: target="\_blank"} (em inglês)
@@ -31,9 +34,9 @@ Quase todos os recursos abaixo estão disponíveis *online* ou fisicamente pelo 
 ## Sites úteis
 
 - Introdução à Ciência da Computação com Python: <https://www.coursera.org/learn/ciencia-computacao-python-conceitos>{: target="\_blank"}
+
 - *Pythonic Perambulations:* <https://jakevdp.github.io/>{: target="\_blank"}
 - *Real Python:* <https://realpython.com/>{: target="\_blank"}
 - *Scipy Cookbook:* <https://scipy-cookbook.readthedocs.io/>{: target="\_blank"}
 - *learnpython.org:* <https://www.learnpython.org/>{: target="\_blank"}
 - *Matplotlib tutorial*: <https://github.com/rougier/matplotlib-tutorial>{: target="\_blank"}
-
