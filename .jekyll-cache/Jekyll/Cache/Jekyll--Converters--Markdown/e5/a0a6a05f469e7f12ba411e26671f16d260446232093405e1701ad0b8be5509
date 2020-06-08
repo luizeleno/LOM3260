@@ -1,13 +1,13 @@
-I"=<ul>
+I"�<ul>
   <li>
     <p>A <strong>Nota Final</strong> ($N_{f}$) na disciplina será composta da média de <strong>Listas de exercícios</strong> ($L$) e um <strong>Projeto em equipe</strong> ($P$):</p>
 
-    <script type="math/tex; mode=display">N_{f} = 0.6 L + 0.4 P</script>
+\[N_{f} = 0.6 L + 0.4 P\]
   </li>
   <li>
     <p>A nota das <strong>Listas de exercícios</strong> ($L$) tem duas partes:</p>
 
-    <script type="math/tex; mode=display">L = 0.5 L_{d} + 0.5 Q</script>
+\[L = 0.5 L_{d} + 0.5 Q\]
 
     <ul>
       <li>$L_{d}$: média de três listas entregues <strong>em dupla</strong> ao longo do semestre
@@ -21,7 +21,7 @@
   <li>
     <p>A nota do <strong>Projeto em equipe</strong> ($P$) também tem duas partes:</p>
 
-    <script type="math/tex; mode=display">P = P_{e} + \frac{P_{i}}{\displaystyle\sum_{i} P_{i}}</script>
+\[P = P_{e} + \frac{P_{i}}{\displaystyle\sum_{i} P_{i}}\]
 
     <ul>
       <li>$P_e$: nota da equipe (<strong>de 4 ou 5 alunos</strong>), <strong>atribuída pelo professor</strong></li>

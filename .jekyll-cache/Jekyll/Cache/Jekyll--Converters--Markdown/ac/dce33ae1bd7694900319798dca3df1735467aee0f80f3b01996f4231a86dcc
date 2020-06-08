@@ -1,4 +1,4 @@
-I"I<p class="lead">Historicamente, é a mais importante codificação eletrônica de caracteres</p>
+I"�<p class="lead">Historicamente, é a mais importante codificação eletrônica de caracteres</p>
 
 <p><strong>ASCII</strong> significa <em>American Standard Code for Information Interchange.</em> (Código Padrão Americano para Intercâmbio de Informações).</p>
 
@@ -15,8 +15,8 @@
 
 <p>Os seguintes comandos em python são úteis para trabalhar com caracteres:</p>
 <ul>
-  <li><code class="highlighter-rouge">ord(c)</code>: retorna um <code class="highlighter-rouge">int</code> com a posição do caractere <code class="highlighter-rouge">c</code> na Tabela ASCII. Por exemplo, <code class="highlighter-rouge">ord('A')</code> retorna <code class="highlighter-rouge">65</code>.</li>
-  <li><code class="highlighter-rouge">chr(n)</code>: retorna o caractere correspondente ao inteiro <code class="highlighter-rouge">n</code>. Por exemplo, <code class="highlighter-rouge">chr(122)</code> retorna <code class="highlighter-rouge">'z'</code>.</li>
+  <li><code class="language-plaintext highlighter-rouge">ord(c)</code>: retorna um <code class="language-plaintext highlighter-rouge">int</code> com a posição do caractere <code class="language-plaintext highlighter-rouge">c</code> na Tabela ASCII. Por exemplo, <code class="language-plaintext highlighter-rouge">ord('A')</code> retorna <code class="language-plaintext highlighter-rouge">65</code>.</li>
+  <li><code class="language-plaintext highlighter-rouge">chr(n)</code>: retorna o caractere correspondente ao inteiro <code class="language-plaintext highlighter-rouge">n</code>. Por exemplo, <code class="language-plaintext highlighter-rouge">chr(122)</code> retorna <code class="language-plaintext highlighter-rouge">'z'</code>.</li>
 </ul>
 
 :ET

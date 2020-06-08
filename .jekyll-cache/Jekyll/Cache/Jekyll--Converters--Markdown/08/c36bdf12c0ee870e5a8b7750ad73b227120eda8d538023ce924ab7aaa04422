@@ -1,8 +1,8 @@
-I"�<p>Usando recursão, implemente uma função para calcular o $n$-ésimo termo da série de Fibonacci,</p>
+I"5<p>Usando recursão, implemente uma função para calcular o $n$-ésimo termo da série de Fibonacci,</p>
 
-<script type="math/tex; mode=display">0,\ 1,\ 1,\ 2,\ 3,\ 5,\ 8,\ 13,\ 21,\ \ldots</script>
+\[0,\ 1,\ 1,\ 2,\ 3,\ 5,\ 8,\ 13,\ 21,\ \ldots\]
 
 <p>que começa com $a_0=0$, $a_1=1$ e em que cada termo $a_n$ ($n \ge 2$) é calculado usando a equação recursiva</p>
 
-<script type="math/tex; mode=display">a_n = a_{n-1} + a_{n-2}\,.</script>
+\[a_n = a_{n-1} + a_{n-2}\,.\]
 :ET

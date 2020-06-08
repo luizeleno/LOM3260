@@ -22,17 +22,17 @@
 
 <!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>Entrada com input() | LOM3260</title>
-<meta name="generator" content="Jekyll v4.0.0" />
+<meta name="generator" content="Jekyll v4.1.0" />
 <meta property="og:title" content="Entrada com input()" />
 <meta name="author" content="Luiz T. F. Eleno" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Computação Científica em Python - uma disciplina do curso de Engenharia Física da Escola de Engenharia de Lorena da Universidade de São Paulo - EEL USP" />
-<meta property="og:description" content="Computação Científica em Python - uma disciplina do curso de Engenharia Física da Escola de Engenharia de Lorena da Universidade de São Paulo - EEL USP" />
+<meta name="description" content="Como iniciantes interagem com o usuário" />
+<meta property="og:description" content="Como iniciantes interagem com o usuário" />
 <link rel="canonical" href="https://computeel.org/LOM3260/material/tema1/04-entrada.html" />
 <meta property="og:url" content="https://computeel.org/LOM3260/material/tema1/04-entrada.html" />
 <meta property="og:site_name" content="LOM3260" />
 <script type="application/ld+json">
-{"@type":"WebPage","headline":"Entrada com input()","dateModified":"2020-06-07T13:06:30-03:00","url":"https://computeel.org/LOM3260/material/tema1/04-entrada.html","author":{"@type":"Person","name":"Luiz T. F. Eleno"},"description":"Computação Científica em Python - uma disciplina do curso de Engenharia Física da Escola de Engenharia de Lorena da Universidade de São Paulo - EEL USP","@context":"https://schema.org"}</script>
+{"@type":"WebPage","headline":"Entrada com input()","dateModified":"2020-06-07T13:06:30-03:00","url":"https://computeel.org/LOM3260/material/tema1/04-entrada.html","author":{"@type":"Person","name":"Luiz T. F. Eleno"},"description":"Como iniciantes interagem com o usuário","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -1212,19 +1212,19 @@
   <button type="submit" class="btn btn-primary m-1">Enviar</button>
 </form>
 
-<p>É possível criar interfaces assim em python! Infelizmente, não temos tempo de chegar a esse nível de sofisticação. Tentei fazer isso na primeira edição do curso, mas o nível de conhecimento exigido é alto demais para chegar nesse ponto em apenas um semestre! Por isso, nesse semestre, veremos apenas interfaces gráficas simplificadas usando o módulo <code class="highlighter-rouge">matplotlib.widgets</code>, bem mais adiante no curso.</p>
+<p>É possível criar interfaces assim em python! Infelizmente, não temos tempo de chegar a esse nível de sofisticação. Tentei fazer isso na primeira edição do curso, mas o nível de conhecimento exigido é alto demais para chegar nesse ponto em apenas um semestre! Por isso, nesse semestre, veremos apenas interfaces gráficas simplificadas usando o módulo <code class="language-plaintext highlighter-rouge">matplotlib.widgets</code>, bem mais adiante no curso.</p>
 
-<p>Ainda assim, é possível desde já criar uma interface com o usuário, ainda que simples, chamada <strong>TUI</strong> (<em>text-based user interface</em>, ou interface de texto com o usuário). Ela é feita basicamente usando o comando <code class="highlighter-rouge">input()</code>. Veja o exemplo abaixo:</p>
+<p>Ainda assim, é possível desde já criar uma interface com o usuário, ainda que simples, chamada <strong>TUI</strong> (<em>text-based user interface</em>, ou interface de texto com o usuário). Ela é feita basicamente usando o comando <code class="language-plaintext highlighter-rouge">input()</code>. Veja o exemplo abaixo:</p>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">'Digite um número: '</span><span class="p">)</span>
 </code></pre></div></div>
-<p>O que esse código faz é pedir um número ao usuário, que recebe como instrução a mensagem <code class="highlighter-rouge">Digite um número: </code>. O usuário digita o número que ele quiser e, assim que pressionar Enter, o python recebe a informação <strong>na forma de uma string</strong> e a atribui à variável <code class="highlighter-rouge">x</code>.</p>
+<p>O que esse código faz é pedir um número ao usuário, que recebe como instrução a mensagem <code class="language-plaintext highlighter-rouge">Digite um número: </code>. O usuário digita o número que ele quiser e, assim que pressionar Enter, o python recebe a informação <strong>na forma de uma string</strong> e a atribui à variável <code class="language-plaintext highlighter-rouge">x</code>.</p>
 
-<p class="alert alert-warning"><img class="emoji" title=":warning:" alt=":warning:" src="https://github.githubassets.com/images/icons/emoji/unicode/26a0.png" height="20" width="20"> Em Python 3, a informação recebida do usuário pelo comando <code class="highlighter-rouge">input</code> é sempre do tipo <code class="highlighter-rouge">string</code>. Esse comportamento é diferente em versões anteriores do python!</p>
+<p class="alert alert-warning"><img class="emoji" title=":warning:" alt=":warning:" src="https://github.githubassets.com/images/icons/emoji/unicode/26a0.png" height="20" width="20"> Em Python 3, a informação recebida do usuário pelo comando <code class="language-plaintext highlighter-rouge">input</code> é sempre do tipo <code class="language-plaintext highlighter-rouge">string</code>. Esse comportamento é diferente em versões anteriores do python!</p>
 
-<p>Se você quiser que o python interprete a informação recebida como uma variável numérica, é preciso convertê-la para o tipo desejado usando, por exemplo, <code class="highlighter-rouge">int()</code> ou <code class="highlighter-rouge">float()</code>:</p>
+<p>Se você quiser que o python interprete a informação recebida como uma variável numérica, é preciso convertê-la para o tipo desejado usando, por exemplo, <code class="language-plaintext highlighter-rouge">int()</code> ou <code class="language-plaintext highlighter-rouge">float()</code>:</p>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">'Digite um número: '</span><span class="p">))</span>
 </code></pre></div></div>
-<p>Além disso, veja que o python não faz automaticamente nenhum teste para ver se o que o usuário digitou é realmente um número. Se o usuário digitar, por exemplo, <code class="highlighter-rouge">três</code> (e não <code class="highlighter-rouge">3</code>), a conversão para int não vai funcionar! Existem maneiras de verificar se o que o usuário digitou faz sentido no seu programa. Veremos como fazer isso mais adiante (a construção usada para isso é a <code class="highlighter-rouge">try</code> - <code class="highlighter-rouge">except</code>).</p>
+<p>Além disso, veja que o python não faz automaticamente nenhum teste para ver se o que o usuário digitou é realmente um número. Se o usuário digitar, por exemplo, <code class="language-plaintext highlighter-rouge">três</code> (e não <code class="language-plaintext highlighter-rouge">3</code>), a conversão para int não vai funcionar! Existem maneiras de verificar se o que o usuário digitou faz sentido no seu programa. Veremos como fazer isso mais adiante (a construção usada para isso é a <code class="language-plaintext highlighter-rouge">try</code> - <code class="language-plaintext highlighter-rouge">except</code>).</p>
 
 
 

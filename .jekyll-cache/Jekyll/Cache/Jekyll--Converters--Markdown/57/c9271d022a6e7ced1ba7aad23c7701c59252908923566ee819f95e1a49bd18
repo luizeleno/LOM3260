@@ -1,4 +1,4 @@
-I"e<p class="lead">Três <em>tipos de objetos</em> parecidos e importantíssimos em python</p>
+I"�<p class="lead">Três <em>tipos de objetos</em> parecidos e importantíssimos em python</p>
 
 <h2 id="definições-de-strings-listas-e-tuplas">Definições de strings, listas e tuplas</h2>
 
@@ -19,9 +19,9 @@
 <span class="n">T2a</span> <span class="o">=</span> <span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="s">'t'</span><span class="p">)</span>
 <span class="n">T2b</span> <span class="o">=</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="s">'t'</span>
 </code></pre></div></div>
-<p>Repare que uma string é identificada por aspas simples (<code class="highlighter-rouge">''</code>) ou duplas (<code class="highlighter-rouge">""</code>). Elas formam palavras ou frases e são simplesmente, na verdade, sequências de caracteres.</p>
+<p>Repare que uma string é identificada por aspas simples (<code class="language-plaintext highlighter-rouge">''</code>) ou duplas (<code class="language-plaintext highlighter-rouge">""</code>). Elas formam palavras ou frases e são simplesmente, na verdade, sequências de caracteres.</p>
 
-<p>Já listas e tuplas são conjuntos de dados agrupados formando… listas (!). Repare que listas são delimitadas por colchetes (<code class="highlighter-rouge">[]</code>) e tuplas por parênteses (<code class="highlighter-rouge">()</code>) ou por nada, apenas separando os elementos por vírgulas.</p>
+<p>Já listas e tuplas são conjuntos de dados agrupados formando… listas (!). Repare que listas são delimitadas por colchetes (<code class="language-plaintext highlighter-rouge">[]</code>) e tuplas por parênteses (<code class="language-plaintext highlighter-rouge">()</code>) ou por nada, apenas separando os elementos por vírgulas.</p>
 
 <h2 id="qual-a-diferença-entre-strings-listas-e-tuplas">Qual a diferença entre strings, listas e tuplas?</h2>
 

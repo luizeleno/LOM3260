@@ -22,17 +22,17 @@
 
 <!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>Docstrings | LOM3260</title>
-<meta name="generator" content="Jekyll v4.0.0" />
+<meta name="generator" content="Jekyll v4.1.0" />
 <meta property="og:title" content="Docstrings" />
 <meta name="author" content="Luiz T. F. Eleno" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Computação Científica em Python - uma disciplina do curso de Engenharia Física da Escola de Engenharia de Lorena da Universidade de São Paulo - EEL USP" />
-<meta property="og:description" content="Computação Científica em Python - uma disciplina do curso de Engenharia Física da Escola de Engenharia de Lorena da Universidade de São Paulo - EEL USP" />
+<meta name="description" content="Criando documentação para suas funções!" />
+<meta property="og:description" content="Criando documentação para suas funções!" />
 <link rel="canonical" href="https://computeel.org/LOM3260/material/tema3/04-docstring.html" />
 <meta property="og:url" content="https://computeel.org/LOM3260/material/tema3/04-docstring.html" />
 <meta property="og:site_name" content="LOM3260" />
 <script type="application/ld+json">
-{"@type":"WebPage","headline":"Docstrings","dateModified":"2020-06-07T13:06:30-03:00","url":"https://computeel.org/LOM3260/material/tema3/04-docstring.html","author":{"@type":"Person","name":"Luiz T. F. Eleno"},"description":"Computação Científica em Python - uma disciplina do curso de Engenharia Física da Escola de Engenharia de Lorena da Universidade de São Paulo - EEL USP","@context":"https://schema.org"}</script>
+{"@type":"WebPage","headline":"Docstrings","dateModified":"2020-06-07T13:06:30-03:00","url":"https://computeel.org/LOM3260/material/tema3/04-docstring.html","author":{"@type":"Person","name":"Luiz T. F. Eleno"},"description":"Criando documentação para suas funções!","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -1197,18 +1197,18 @@
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">quadrado</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
   <span class="k">return</span> <span class="n">x</span> <span class="o">*</span> <span class="n">x</span>
 </code></pre></div></div>
-<p>Você pode tentar usar o comando <code class="highlighter-rouge">help()</code> para ver o que acontece:</p>
+<p>Você pode tentar usar o comando <code class="language-plaintext highlighter-rouge">help()</code> para ver o que acontece:</p>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">help</span><span class="p">(</span><span class="n">quadrado</span><span class="p">)</span>
 </code></pre></div></div>
 <p>O resultado será algo assim:</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Help on function quadrado in module __main__:
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Help on function quadrado in module __main__:
 
 quadrado(x)
 </code></pre></div></div>
 
 <p>Não é muito útil, concorda? Mas o que você esperava? O python só sabe executar a sua função, ele não sabe para que ela serve!</p>
 
-<p>Se você quiser fornecer mensagens para o comando <code class="highlighter-rouge">help()</code>, coloque uma <strong>docstring</strong> na sua função. Uma <em>docstring</em> é quanquer mensagem de texto delimitada por pares de três aspas simples (<code class="highlighter-rouge">'''</code>) ou duplas (<code class="highlighter-rouge">"""</code>) logo após o comando <code class="highlighter-rouge">def</code>, como no exemplo abaixo:</p>
+<p>Se você quiser fornecer mensagens para o comando <code class="language-plaintext highlighter-rouge">help()</code>, coloque uma <strong>docstring</strong> na sua função. Uma <em>docstring</em> é quanquer mensagem de texto delimitada por pares de três aspas simples (<code class="language-plaintext highlighter-rouge">'''</code>) ou duplas (<code class="language-plaintext highlighter-rouge">"""</code>) logo após o comando <code class="language-plaintext highlighter-rouge">def</code>, como no exemplo abaixo:</p>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">quadrado</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
   <span class="s">'''
     uma função para calcular 
@@ -1220,7 +1220,7 @@ quadrado(x)
   <span class="k">return</span> <span class="n">x</span> <span class="o">*</span> <span class="n">x</span>
 </code></pre></div></div>
 
-<p>Se você agora usar o comando <code class="highlighter-rouge">help(quadrado)</code>, verá a mensagem acima! Claro que a função acima é muito fácil, mas funções podem ter vários argumentos, alguns opcionais, é também vários valores retornados. É sempre bom, portanto, acrescentar uma docstring para auxiliar os usuários a usar corretamente as funções que você cria.</p>
+<p>Se você agora usar o comando <code class="language-plaintext highlighter-rouge">help(quadrado)</code>, verá a mensagem acima! Claro que a função acima é muito fácil, mas funções podem ter vários argumentos, alguns opcionais, é também vários valores retornados. É sempre bom, portanto, acrescentar uma docstring para auxiliar os usuários a usar corretamente as funções que você cria.</p>
 
 <p class="alert alert-primary"><img class="emoji" title=":+1:" alt=":+1:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f44d.png" height="20" width="20"> Obviamente eu espero que o seu projeto de software faça amplo uso de docstrings, além de comentários usuais ao longo do código!</p>
 

@@ -22,17 +22,17 @@
 
 <!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>Laços (loops) | LOM3260</title>
-<meta name="generator" content="Jekyll v4.0.0" />
+<meta name="generator" content="Jekyll v4.1.0" />
 <meta property="og:title" content="Laços (loops)" />
 <meta name="author" content="Luiz T. F. Eleno" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Computação Científica em Python - uma disciplina do curso de Engenharia Física da Escola de Engenharia de Lorena da Universidade de São Paulo - EEL USP" />
-<meta property="og:description" content="Computação Científica em Python - uma disciplina do curso de Engenharia Física da Escola de Engenharia de Lorena da Universidade de São Paulo - EEL USP" />
+<meta name="description" content="Uma construção para repetir comandos, ou um grupo de comandos, é chamada de loop, ou laço em português." />
+<meta property="og:description" content="Uma construção para repetir comandos, ou um grupo de comandos, é chamada de loop, ou laço em português." />
 <link rel="canonical" href="https://computeel.org/LOM3260/material/tema1/08-loop.html" />
 <meta property="og:url" content="https://computeel.org/LOM3260/material/tema1/08-loop.html" />
 <meta property="og:site_name" content="LOM3260" />
 <script type="application/ld+json">
-{"@type":"WebPage","headline":"Laços (loops)","dateModified":"2020-06-07T13:06:30-03:00","url":"https://computeel.org/LOM3260/material/tema1/08-loop.html","author":{"@type":"Person","name":"Luiz T. F. Eleno"},"description":"Computação Científica em Python - uma disciplina do curso de Engenharia Física da Escola de Engenharia de Lorena da Universidade de São Paulo - EEL USP","@context":"https://schema.org"}</script>
+{"@type":"WebPage","headline":"Laços (loops)","dateModified":"2020-06-07T13:06:30-03:00","url":"https://computeel.org/LOM3260/material/tema1/08-loop.html","author":{"@type":"Person","name":"Luiz T. F. Eleno"},"description":"Uma construção para repetir comandos, ou um grupo de comandos, é chamada de loop, ou laço em português.","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -1199,14 +1199,14 @@
 1. TOC
 {:toc} -->
 
-<h2 id="a-construção-while">A construção <code class="highlighter-rouge">while</code>
+<h2 id="a-construção-while">A construção <code class="language-plaintext highlighter-rouge">while</code>
 </h2>
 
-<p>Um dos comandos para criar laços é o <code class="highlighter-rouge">while</code>. A sintaxe do comando é a seguinte:</p>
+<p>Um dos comandos para criar laços é o <code class="language-plaintext highlighter-rouge">while</code>. A sintaxe do comando é a seguinte:</p>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">while</span> <span class="nb">bool</span><span class="p">:</span>
     <span class="p">[</span><span class="n">comandos</span><span class="p">]</span>
 </code></pre></div></div>
-<p>onde <code class="highlighter-rouge">bool</code> é uma variável lógica, ou um teste que resulte numa variável lógica. Repare que é o mesmo tipo de construção qua a usada para testar condições (<code class="highlighter-rouge">if-elif-else</code>).</p>
+<p>onde <code class="language-plaintext highlighter-rouge">bool</code> é uma variável lógica, ou um teste que resulte numa variável lógica. Repare que é o mesmo tipo de construção qua a usada para testar condições (<code class="language-plaintext highlighter-rouge">if-elif-else</code>).</p>
 
 <p>Por exemplo, o seguinte fragmento de código imprime a soma dos números inteiros de 1 a 10:</p>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">n</span> <span class="o">=</span> <span class="mi">1</span>
@@ -1217,25 +1217,25 @@
 <span class="k">print</span><span class="p">(</span><span class="n">soma</span><span class="p">)</span>
 </code></pre></div></div>
 
-<p>Repare que o <code class="highlighter-rouge">while</code> não sabe de antemão quantas iterações serão realizadas: ele precisa testar a condição (<code class="highlighter-rouge">n &lt;= 10</code>) a cada nova iteração (do latim <em>iter</em>: rota). Portanto, se você não tomar cuidado, o <code class="highlighter-rouge">while</code> pode entrar num <em>“loop infinito”</em>.</p>
+<p>Repare que o <code class="language-plaintext highlighter-rouge">while</code> não sabe de antemão quantas iterações serão realizadas: ele precisa testar a condição (<code class="language-plaintext highlighter-rouge">n &lt;= 10</code>) a cada nova iteração (do latim <em>iter</em>: rota). Portanto, se você não tomar cuidado, o <code class="language-plaintext highlighter-rouge">while</code> pode entrar num <em>“loop infinito”</em>.</p>
 
-<h2 id="a-construção-for">A construção <code class="highlighter-rouge">for</code>
+<h2 id="a-construção-for">A construção <code class="language-plaintext highlighter-rouge">for</code>
 </h2>
 
-<p>Uma outra maneira de criar laços, quando sabemos exatamente quantas iterações queremos fazer, é usando a construção <code class="highlighter-rouge">for</code>. A sintaxe do comando pode ser entendida usando o mesmo exemplo acima:</p>
+<p>Uma outra maneira de criar laços, quando sabemos exatamente quantas iterações queremos fazer, é usando a construção <code class="language-plaintext highlighter-rouge">for</code>. A sintaxe do comando pode ser entendida usando o mesmo exemplo acima:</p>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">soma</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">):</span>
     <span class="n">soma</span> <span class="o">+=</span> <span class="n">n</span>
 <span class="k">print</span><span class="p">(</span><span class="n">soma</span><span class="p">)</span>
 </code></pre></div></div>
 
-<p>Ou seja, o for gera valores de 1 a 10 usando o comando <code class="highlighter-rouge">range</code>, atribuídos sequencialmente a uma variável <code class="highlighter-rouge">n</code>.</p>
+<p>Ou seja, o for gera valores de 1 a 10 usando o comando <code class="language-plaintext highlighter-rouge">range</code>, atribuídos sequencialmente a uma variável <code class="language-plaintext highlighter-rouge">n</code>.</p>
 
 <h2 id="observações">Observações</h2>
 
 <ul>
-  <li>Mais detalhes sobre o comando <code class="highlighter-rouge">range</code> no próximo material.</li>
-  <li>A palavra <code class="highlighter-rouge">in</code> no comando <code class="highlighter-rouge">for</code> é uma palavra chave. Mais detalhes em breve.</li>
+  <li>Mais detalhes sobre o comando <code class="language-plaintext highlighter-rouge">range</code> no próximo material.</li>
+  <li>A palavra <code class="language-plaintext highlighter-rouge">in</code> no comando <code class="language-plaintext highlighter-rouge">for</code> é uma palavra chave. Mais detalhes em breve.</li>
 </ul>
 
 

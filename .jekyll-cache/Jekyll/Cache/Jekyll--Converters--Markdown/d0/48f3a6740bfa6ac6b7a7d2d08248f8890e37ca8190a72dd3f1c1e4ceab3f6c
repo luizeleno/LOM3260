@@ -1,6 +1,6 @@
-I"�<p>A <strong>função erro</strong> $(\mathrm{erf})$ é importante em Estatística, Transferência de Calor e Mecânica Quântica, entre outras áreas do conhecimento. Ela é definida pela seguinte integral:</p>
+I"�<p>A <strong>função erro</strong> $(\mathrm{erf})$ é importante em Estatística, Transferência de Calor e Mecânica Quântica, entre outras áreas do conhecimento. Ela é definida pela seguinte integral:</p>
 
-<script type="math/tex; mode=display">\mathrm{erf}\,(x) = \frac{2}{\sqrt{\pi}} \int_0^x e^{-t^2} \, dt\,,</script>
+\[\mathrm{erf}\,(x) = \frac{2}{\sqrt{\pi}} \int_0^x e^{-t^2} \, dt\,,\]
 
 <ol>
   <li>Monte uma tabela da função erro com seis casas decimais para valores de $x$ no intervalo $[0,\ 3]$ com um passo $\Delta x=0.1$.</li>
@@ -8,7 +8,7 @@
   <li>Estime graficamente o valor do limite</li>
 </ol>
 
-<script type="math/tex; mode=display">\lim_{x\to\infty} \mathrm{erf}\,(x)</script>
+\[\lim_{x\to\infty} \mathrm{erf}\,(x)\]
 
 <p>e explique o porquê do resultado encontrado.</p>
 :ET

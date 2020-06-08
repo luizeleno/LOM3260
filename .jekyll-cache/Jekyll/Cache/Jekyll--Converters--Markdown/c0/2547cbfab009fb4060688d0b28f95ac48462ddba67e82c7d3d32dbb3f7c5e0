@@ -1,4 +1,4 @@
-I"�<div class="col-md-6 float-right">
+I""<div class="col-md-6 float-right">
 <div class="text-center">
 <figure class="figure">
   
@@ -41,15 +41,15 @@
 
 <p>No circuito elétrico da imagem, a combinação das leis de Ohm e de Kirchhoff fornece, para as correntes $i_1$, $i_2$, …, $i_5$ (em amperes), o seguinte sistema:</p>
 
-<script type="math/tex; mode=display">5 i_1 + 5 i_2 = 5.5</script>
+\[5 i_1 + 5 i_2 = 5.5\]
 
-<script type="math/tex; mode=display">i_3 - i_4 - i_5 = 0</script>
+\[i_3 - i_4 - i_5 = 0\]
 
-<script type="math/tex; mode=display">2 i_4 - 3 i_5 = 0</script>
+\[2 i_4 - 3 i_5 = 0\]
 
-<script type="math/tex; mode=display">i_1 - i_2 - i_3 = 0</script>
+\[i_1 - i_2 - i_3 = 0\]
 
-<script type="math/tex; mode=display">5 i_2 - 7 i_3 -2 i_4 = 0</script>
+\[5 i_2 - 7 i_3 -2 i_4 = 0\]
 
 <p>Encontre todas as correntes do circuito.</p>
 :ET

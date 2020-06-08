@@ -1,4 +1,4 @@
-I"�<p>Um <strong>quadrado mágico</strong> é uma tabela de números em que a soma nas linhas, colunas e diagonais dá sempre o mesmo valor. Por exemplo, na gravura <em>Melencholia I</em> de Albrecht Dürer (1471–1528),</p>
+I"n<p>Um <strong>quadrado mágico</strong> é uma tabela de números em que a soma nas linhas, colunas e diagonais dá sempre o mesmo valor. Por exemplo, na gravura <em>Melencholia I</em> de Albrecht Dürer (1471–1528),</p>
 
 <table>
   <tbody>
@@ -10,7 +10,7 @@
 </table>
 
 <p>a soma dos números é sempre igual a 34 (o quadrádo mágico de Dürer serviu de inspiração para o nome e o logotipo da <a href="http://www.editora34.com.br/quemsomos.htm" target="blank">Editora 34</a>). Outro exemplo simples é o seguinte, em que estão presentes todos os inteiros de 1 a 9 num quadrado $3\times3$:</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  |---|---|---|
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  |---|---|---|
   | 8 | 1 | 6 |
   |---|---|---|
   | 3 | 5 | 7 |
@@ -54,7 +54,7 @@
 do quadrado:</li>
 </ul>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>|---|---|---|---|---|
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>|---|---|---|---|---|
 |   |   | 1 |   |   |
 |---|---|---|---|---|
 |   |   |   |   |   |
@@ -73,7 +73,7 @@ célula acima e à direita da célula anterior (1). Temos então que usar o
 passo iii:</li>
 </ul>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  |---|---|---|---|---|
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  |---|---|---|---|---|
   |   |   | 1 |   |   |
   |---|---|---|---|---|
   |   |   |   |   |   |
@@ -90,7 +90,7 @@ passo iii:</li>
   <li>Alguns passos depois, usando os passos ii e iii, o quadrado estará assim:</li>
 </ul>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>|---|---|---|---|---|
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>|---|---|---|---|---|
 |   |   | 1 |   |   |
 |---|---|---|---|---|
 |   | 5 |   |   |   |
@@ -108,7 +108,7 @@ passo iii:</li>
 próximo valor (6):</li>
 </ul>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>|---|---|---|---|---|
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>|---|---|---|---|---|
 |   |   | 1 |   |   |
 |---|---|---|---|---|
 |   | 5 |   |   |   |
@@ -125,7 +125,7 @@ próximo valor (6):</li>
   <li>Continuando por mais alguns valores, usando os passos ii, iii e v:</li>
 </ul>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>|----|----|----|----|----|
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>|----|----|----|----|----|
 |    |    | 1  | 8  | 15 |
 |----|----|----|----|----|
 |    | 5  | 7  | 14 |    |
@@ -143,7 +143,7 @@ próximo valor (6):</li>
 de acordo com o passo iv:</li>
 </ul>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>|----|----|----|----|----|
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>|----|----|----|----|----|
 |    |    | 1  | 8  | 15 |
 |----|----|----|----|----|
 |    | 5  | 7  | 14 | 16 |
@@ -161,7 +161,7 @@ de acordo com o passo iv:</li>
 quadrado:</li>
 </ul>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>|----|----|----|----|----|
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>|----|----|----|----|----|
 | 17 | 24 | 1  | 8  | 15 |
 |----|----|----|----|----|
 | 23 | 5  | 7  | 14 | 16 |

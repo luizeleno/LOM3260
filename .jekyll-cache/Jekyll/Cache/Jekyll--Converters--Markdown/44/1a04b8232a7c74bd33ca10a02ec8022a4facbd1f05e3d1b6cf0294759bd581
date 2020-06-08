@@ -1,4 +1,4 @@
-I"X
+I"�
 <p>O máximo divisor comum (MDC) de dois inteiros positivos, $n$ e $m$, é o maior número, $d$, capaz de dividir $n$ e $m$ sem deixar resto. Existem vários algoritmos para determinar $d$, incluindo o seguinte:</p>
 
 <table>
@@ -35,15 +35,15 @@
 <span class="s">'''
 comentário:
 veja que 
-while m </span><span class="si">% </span><span class="s">d or n </span><span class="si">% </span><span class="s">d:
+while m % d or n % d:
 é o mesmo que
-while m </span><span class="si">% </span><span class="s">d != 0 or n </span><span class="si">% </span><span class="s">d != 0:
+while m % d != 0 or n % d != 0:
 pois qualquer valor positivo significa True, 
 e qualquer valor zero ou negativo resulta em False
 '''</span>
 
 <span class="c1"># Saída
 </span>
-<span class="k">print</span><span class="p">(</span><span class="n">f</span><span class="s">'MDC({m}, {n}) = {d}'</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">f'MDC(</span><span class="si">{</span><span class="n">m</span><span class="si">}</span><span class="s">, </span><span class="si">{</span><span class="n">n</span><span class="si">}</span><span class="s">) = </span><span class="si">{</span><span class="n">d</span><span class="si">}</span><span class="s">'</span><span class="p">)</span>
 </code></pre></div></div>
 :ET

@@ -1,4 +1,4 @@
-I"c<p>Digamos que eu lhe forneça uma lista de números: <code class="highlighter-rouge">a = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]</code>. Escreva uma única linha em Python que gere uma nova lista apenas com os elementos pares de <code class="highlighter-rouge">a</code>.</p>
+I"�<p>Digamos que eu lhe forneça uma lista de números: <code class="language-plaintext highlighter-rouge">a = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]</code>. Escreva uma única linha em Python que gere uma nova lista apenas com os elementos pares de <code class="language-plaintext highlighter-rouge">a</code>.</p>
 
 <h3 id="solução">Solução</h3>
 

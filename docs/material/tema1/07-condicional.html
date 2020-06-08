@@ -22,17 +22,17 @@
 
 <!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>Testando condições | LOM3260</title>
-<meta name="generator" content="Jekyll v4.0.0" />
+<meta name="generator" content="Jekyll v4.1.0" />
 <meta property="og:title" content="Testando condições" />
 <meta name="author" content="Luiz T. F. Eleno" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Computação Científica em Python - uma disciplina do curso de Engenharia Física da Escola de Engenharia de Lorena da Universidade de São Paulo - EEL USP" />
-<meta property="og:description" content="Computação Científica em Python - uma disciplina do curso de Engenharia Física da Escola de Engenharia de Lorena da Universidade de São Paulo - EEL USP" />
+<meta name="description" content="Dicas sobre a construção if elif else" />
+<meta property="og:description" content="Dicas sobre a construção if elif else" />
 <link rel="canonical" href="https://computeel.org/LOM3260/material/tema1/07-condicional.html" />
 <meta property="og:url" content="https://computeel.org/LOM3260/material/tema1/07-condicional.html" />
 <meta property="og:site_name" content="LOM3260" />
 <script type="application/ld+json">
-{"@type":"WebPage","headline":"Testando condições","dateModified":"2020-06-07T13:06:30-03:00","url":"https://computeel.org/LOM3260/material/tema1/07-condicional.html","author":{"@type":"Person","name":"Luiz T. F. Eleno"},"description":"Computação Científica em Python - uma disciplina do curso de Engenharia Física da Escola de Engenharia de Lorena da Universidade de São Paulo - EEL USP","@context":"https://schema.org"}</script>
+{"@type":"WebPage","headline":"Testando condições","dateModified":"2020-06-07T13:06:30-03:00","url":"https://computeel.org/LOM3260/material/tema1/07-condicional.html","author":{"@type":"Person","name":"Luiz T. F. Eleno"},"description":"Dicas sobre a construção if elif else","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -1191,7 +1191,7 @@
   
   </h1>
 
-  <p class="lead">Dicas sobre a construção <code class="highlighter-rouge">if elif else</code></p>
+  <p class="lead">Dicas sobre a construção <code class="language-plaintext highlighter-rouge">if elif else</code></p>
 
 <p>A sintaxe é:</p>
 
@@ -1205,7 +1205,7 @@
     <span class="p">[</span><span class="n">comandos</span><span class="p">]</span>
 </code></pre></div></div>
 
-<p>onde <code class="highlighter-rouge">condicao</code> representa variáveis do tipo <code class="highlighter-rouge">bool</code> (<code class="highlighter-rouge">True</code> ou <code class="highlighter-rouge">False</code>), ou testes que resultem em variáveis <code class="highlighter-rouge">bool</code>. Se <code class="highlighter-rouge">condicao</code> resulta em <code class="highlighter-rouge">True</code>, executa os comandos sob o <code class="highlighter-rouge">if</code>; caso contrário, passa pelos comandos <code class="highlighter-rouge">elif</code> em sequência, até um deles ser <code class="highlighter-rouge">True</code>. Se isso não acontece, chega finalmente ao <code class="highlighter-rouge">else</code>. Todos os <code class="highlighter-rouge">elif</code> e o <code class="highlighter-rouge">else</code> são opcionais. Voce pode colocar quantos <code class="highlighter-rouge">elif</code> você quiser, mas apenas um <code class="highlighter-rouge">else</code> ao final.</p>
+<p>onde <code class="language-plaintext highlighter-rouge">condicao</code> representa variáveis do tipo <code class="language-plaintext highlighter-rouge">bool</code> (<code class="language-plaintext highlighter-rouge">True</code> ou <code class="language-plaintext highlighter-rouge">False</code>), ou testes que resultem em variáveis <code class="language-plaintext highlighter-rouge">bool</code>. Se <code class="language-plaintext highlighter-rouge">condicao</code> resulta em <code class="language-plaintext highlighter-rouge">True</code>, executa os comandos sob o <code class="language-plaintext highlighter-rouge">if</code>; caso contrário, passa pelos comandos <code class="language-plaintext highlighter-rouge">elif</code> em sequência, até um deles ser <code class="language-plaintext highlighter-rouge">True</code>. Se isso não acontece, chega finalmente ao <code class="language-plaintext highlighter-rouge">else</code>. Todos os <code class="language-plaintext highlighter-rouge">elif</code> e o <code class="language-plaintext highlighter-rouge">else</code> são opcionais. Voce pode colocar quantos <code class="language-plaintext highlighter-rouge">elif</code> você quiser, mas apenas um <code class="language-plaintext highlighter-rouge">else</code> ao final.</p>
 
 <p>Assim, o seguinte fragmento de código:</p>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="bp">False</span>
@@ -1214,7 +1214,7 @@
 <span class="k">else</span><span class="p">:</span>
     <span class="n">a</span> <span class="o">=</span> <span class="mi">2</span>
 </code></pre></div></div>
-<p>resultará em <code class="highlighter-rouge">a = 2</code>, e é equivalente a</p>
+<p>resultará em <code class="language-plaintext highlighter-rouge">a = 2</code>, e é equivalente a</p>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="bp">False</span>
 <span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="bp">True</span><span class="p">:</span>
     <span class="n">a</span> <span class="o">=</span> <span class="mi">1</span>
@@ -1229,14 +1229,14 @@
 <span class="k">else</span><span class="p">:</span>
     <span class="n">a</span> <span class="o">=</span> <span class="mi">2</span>
 </code></pre></div></div>
-<p>resulta em <code class="highlighter-rouge">a = 1</code>, pois <code class="highlighter-rouge">9 % 4 == 1</code>, que é positivo e equivale a <code class="highlighter-rouge">True</code>. Por outro lado, qualquer valor negativo ou zero será considerado <code class="highlighter-rouge">False</code>:</p>
+<p>resulta em <code class="language-plaintext highlighter-rouge">a = 1</code>, pois <code class="language-plaintext highlighter-rouge">9 % 4 == 1</code>, que é positivo e equivale a <code class="language-plaintext highlighter-rouge">True</code>. Por outro lado, qualquer valor negativo ou zero será considerado <code class="language-plaintext highlighter-rouge">False</code>:</p>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="mi">8</span>
 <span class="k">if</span> <span class="n">x</span> <span class="o">%</span> <span class="mi">4</span><span class="p">:</span>
     <span class="n">a</span> <span class="o">=</span> <span class="mi">1</span>
 <span class="k">else</span><span class="p">:</span>
     <span class="n">a</span> <span class="o">=</span> <span class="mi">2</span>
 </code></pre></div></div>
-<p>resulta em <code class="highlighter-rouge">a = 2</code>.</p>
+<p>resulta em <code class="language-plaintext highlighter-rouge">a = 2</code>.</p>
 
 <p>O próximo exemplo ilustra estruturas condicionais aninhadas. Analise o seguinte código para encontrar o maior dentre três inteiros:</p>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span> <span class="o">=</span> <span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">3</span><span class="p">,</span> <span class="mi">5</span>

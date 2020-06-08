@@ -1,6 +1,6 @@
-I"k<p class="lead">Você pode agrupar suas funções e criar seus próprios módulos!</p>
+I"�<p class="lead">Você pode agrupar suas funções e criar seus próprios módulos!</p>
 
-<h2 id="o-módulo-__main__">O módulo <code class="highlighter-rouge">__main__</code></h2>
+<h2 id="o-módulo-__main__">O módulo <code class="language-plaintext highlighter-rouge">__main__</code></h2>
 
 <p>Voltemos por um momento a uma função simples, aquela que calcula o quadrado de um número, que vimos nas duas últimas lições:</p>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">quadrado</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
@@ -12,8 +12,8 @@
   '''</span>
   <span class="k">return</span> <span class="n">x</span> <span class="o">*</span> <span class="n">x</span>
 </code></pre></div></div>
-<p>Use agora <code class="highlighter-rouge">help(quadrado)</code>. O resultado é, como esperávamos, nosso docstring:</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Help on function quadrado in module __main__:
+<p>Use agora <code class="language-plaintext highlighter-rouge">help(quadrado)</code>. O resultado é, como esperávamos, nosso docstring:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Help on function quadrado in module __main__:
 
 quadrado(x)
     Retorna o quadrado de um número
@@ -21,20 +21,20 @@ quadrado(x)
       - x: um int ou float
     - Output: x*x (que é o mesmo que x ao quadrado)
 </code></pre></div></div>
-<p>Mas repare na primeira linha impressa pelo <code class="highlighter-rouge">help()</code>: <em>Help on function quadrado in module <strong>main</strong></em>. Essa mensagem nos diz que a função <code class="highlighter-rouge">quadrado()</code> faz parte de um módulo chamado <code class="highlighter-rouge">__main__</code>. <em>Main</em> (“principal”) é o nome (<em>name</em>) do arquivo que você “roda” com o python. Você pode dar qualquer título para seu arquivo (por exemplo, <code class="highlighter-rouge">meu_arquivo.py</code>) e rodá-lo em python. Seja qual for o título do arquivo, o python vai considerá-lo como um módulo (<code class="highlighter-rouge">module</code>) com o nome <code class="highlighter-rouge">__main__</code>. Em outras palavras, você já vem trabalhando com módulos desde o seu primeiro contato com python!</p>
+<p>Mas repare na primeira linha impressa pelo <code class="language-plaintext highlighter-rouge">help()</code>: <em>Help on function quadrado in module <strong>main</strong></em>. Essa mensagem nos diz que a função <code class="language-plaintext highlighter-rouge">quadrado()</code> faz parte de um módulo chamado <code class="language-plaintext highlighter-rouge">__main__</code>. <em>Main</em> (“principal”) é o nome (<em>name</em>) do arquivo que você “roda” com o python. Você pode dar qualquer título para seu arquivo (por exemplo, <code class="language-plaintext highlighter-rouge">meu_arquivo.py</code>) e rodá-lo em python. Seja qual for o título do arquivo, o python vai considerá-lo como um módulo (<code class="language-plaintext highlighter-rouge">module</code>) com o nome <code class="language-plaintext highlighter-rouge">__main__</code>. Em outras palavras, você já vem trabalhando com módulos desde o seu primeiro contato com python!</p>
 
 <h1 id="criando-um-módulo">Criando um módulo</h1>
 
-<p>Qualquer outro arquivo incluído com <code class="highlighter-rouge">import</code> no arquivo <code class="highlighter-rouge">__main__</code> é um outro módulo. Você pode, portanto, criar um arquivo, digamos, <code class="highlighter-rouge">meu_modulo.py</code>, colocar lá a sua função (quantas funções você quiser, na verdade), e importá-lo no arquivo principal.</p>
+<p>Qualquer outro arquivo incluído com <code class="language-plaintext highlighter-rouge">import</code> no arquivo <code class="language-plaintext highlighter-rouge">__main__</code> é um outro módulo. Você pode, portanto, criar um arquivo, digamos, <code class="language-plaintext highlighter-rouge">meu_modulo.py</code>, colocar lá a sua função (quantas funções você quiser, na verdade), e importá-lo no arquivo principal.</p>
 
-<p class="alert alert-warning">:warning: Seus módulos só vão ser visíveis a seus arquivos <code class="highlighter-rouge">__main__</code> se estiverem na mesma pasta no computador que o arquivo principal. Existem maneiras de “instalar” seus módulos em locais específicos do computador (que não veremos aqui :cry:), de modo a ficarem acessíveis com o comando <code class="highlighter-rouge">import</code> para arquivos principais guardados em qualquer pasta.</p>
+<p class="alert alert-warning">:warning: Seus módulos só vão ser visíveis a seus arquivos <code class="language-plaintext highlighter-rouge">__main__</code> se estiverem na mesma pasta no computador que o arquivo principal. Existem maneiras de “instalar” seus módulos em locais específicos do computador (que não veremos aqui :cry:), de modo a ficarem acessíveis com o comando <code class="language-plaintext highlighter-rouge">import</code> para arquivos principais guardados em qualquer pasta.</p>
 
-<p class="alert alert-danger">:x: O título (nome do arquivo) de um módulo não pode conter caracteres especiais em python: acentos, hífens, espaços, e quase todos os demais caracteres não-alfanuméricos – o <em>underline</em> (<code class="highlighter-rouge">_</code>) é permitido.</p>
+<p class="alert alert-danger">:x: O título (nome do arquivo) de um módulo não pode conter caracteres especiais em python: acentos, hífens, espaços, e quase todos os demais caracteres não-alfanuméricos – o <em>underline</em> (<code class="language-plaintext highlighter-rouge">_</code>) é permitido.</p>
 
-<p>Vamos fazer um exemplo passo a passo para a criação e uso de um módulo com a função <code class="highlighter-rouge">quadrado()</code>.</p>
+<p>Vamos fazer um exemplo passo a passo para a criação e uso de um módulo com a função <code class="language-plaintext highlighter-rouge">quadrado()</code>.</p>
 
 <ul>
-  <li>Crie um arquivo chame-o de <code class="highlighter-rouge">meu_modulo.py</code> com o seguinte conteúdo:</li>
+  <li>Crie um arquivo chame-o de <code class="language-plaintext highlighter-rouge">meu_modulo.py</code> com o seguinte conteúdo:</li>
 </ul>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s">'''
@@ -55,7 +55,7 @@ Criado por L.T.F.E. em 11/09/2019 (que medo!).
   <span class="k">return</span> <span class="n">x</span> <span class="o">*</span> <span class="n">x</span>
 </code></pre></div></div>
 <ul>
-  <li>No seu arquivo principal (chame-o do que quiser, por exemplo, <code class="highlighter-rouge">meu_main.py</code>), importe o módulo com o comando <code class="highlighter-rouge">import</code> da maneira que achar melhor, por exemplo, usando um apelido com <code class="highlighter-rouge">as</code>:</li>
+  <li>No seu arquivo principal (chame-o do que quiser, por exemplo, <code class="language-plaintext highlighter-rouge">meu_main.py</code>), importe o módulo com o comando <code class="language-plaintext highlighter-rouge">import</code> da maneira que achar melhor, por exemplo, usando um apelido com <code class="language-plaintext highlighter-rouge">as</code>:</li>
 </ul>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">meu_modulo</span> <span class="k">as</span> <span class="n">mm</span>
@@ -67,11 +67,11 @@ Criado por L.T.F.E. em 11/09/2019 (que medo!).
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">meu_modulo</span> <span class="k">as</span> <span class="n">mm</span>
 
 <span class="n">z</span> <span class="o">=</span> <span class="mi">5</span>
-<span class="n">y</span> <span class="o">=</span> <span class="n">mm</span><span class="o">.</span><span class="n">quadrado</span><span class="p">(</span><span class="n">z</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="n">f</span><span class="s">'{z}² = {y}'</span><span class="p">)</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">mm</span><span class="p">.</span><span class="n">quadrado</span><span class="p">(</span><span class="n">z</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">f'</span><span class="si">{</span><span class="n">z</span><span class="si">}</span><span class="s">² = </span><span class="si">{</span><span class="n">y</span><span class="si">}</span><span class="s">'</span><span class="p">)</span>
 </code></pre></div></div>
 
-<p>Com isso, deixamos nosso código <em>modularizado</em>, ou seja, compartimentado em unidades menores (os módulos) que são “gerenciados” por um arquivo principal (o de nome <code class="highlighter-rouge">__main__</code>) que comanda a execução do programa.</p>
+<p>Com isso, deixamos nosso código <em>modularizado</em>, ou seja, compartimentado em unidades menores (os módulos) que são “gerenciados” por um arquivo principal (o de nome <code class="language-plaintext highlighter-rouge">__main__</code>) que comanda a execução do programa.</p>
 
 <p class="alert alert-primary">:+1: Quando seus programas começarem a ficar grandes, como dezenas ou mesmo centenas de linhas, a vantagem de subdividi-lo em vários arquivos (módulos) vai começar a ficar evidente!</p>
 

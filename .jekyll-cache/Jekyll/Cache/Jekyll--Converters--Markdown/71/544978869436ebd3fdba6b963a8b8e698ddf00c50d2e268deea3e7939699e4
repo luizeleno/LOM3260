@@ -1,2 +1,0 @@
-I"�<p>(MIT) Escreva um código para contar o número de vezes que a sequência <code class="highlighter-rouge">'bob'</code> aparece numa <em>string</em> <code class="highlighter-rouge">s</code> composta unicamente de letras minúsculas. Por exemplo, se <code class="highlighter-rouge">s = 'azcbobobegghakl'</code>, seu programa deve imprimir <code class="highlighter-rouge">Número de ocorrências de bob: 2</code>.</p>
-:ET

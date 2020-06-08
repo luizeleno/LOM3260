@@ -22,17 +22,17 @@
 
 <!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>Documentação | LOM3260</title>
-<meta name="generator" content="Jekyll v4.0.0" />
+<meta name="generator" content="Jekyll v4.1.0" />
 <meta property="og:title" content="Documentação" />
 <meta name="author" content="Luiz T. F. Eleno" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Computação Científica em Python - uma disciplina do curso de Engenharia Física da Escola de Engenharia de Lorena da Universidade de São Paulo - EEL USP" />
-<meta property="og:description" content="Computação Científica em Python - uma disciplina do curso de Engenharia Física da Escola de Engenharia de Lorena da Universidade de São Paulo - EEL USP" />
+<meta name="description" content="Aprenda a navegar e entender a documentação de um módulo" />
+<meta property="og:description" content="Aprenda a navegar e entender a documentação de um módulo" />
 <link rel="canonical" href="https://computeel.org/LOM3260/material/tema3/02-documentacao.html" />
 <meta property="og:url" content="https://computeel.org/LOM3260/material/tema3/02-documentacao.html" />
 <meta property="og:site_name" content="LOM3260" />
 <script type="application/ld+json">
-{"@type":"WebPage","headline":"Documentação","dateModified":"2020-06-07T13:06:30-03:00","url":"https://computeel.org/LOM3260/material/tema3/02-documentacao.html","author":{"@type":"Person","name":"Luiz T. F. Eleno"},"description":"Computação Científica em Python - uma disciplina do curso de Engenharia Física da Escola de Engenharia de Lorena da Universidade de São Paulo - EEL USP","@context":"https://schema.org"}</script>
+{"@type":"WebPage","headline":"Documentação","dateModified":"2020-06-07T13:06:30-03:00","url":"https://computeel.org/LOM3260/material/tema3/02-documentacao.html","author":{"@type":"Person","name":"Luiz T. F. Eleno"},"description":"Aprenda a navegar e entender a documentação de um módulo","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -1195,11 +1195,11 @@
 
 <h2 id="documentação-das-funções-do-python-básico">Documentação das funções do python básico</h2>
 
-<p>Quando você está em dúvida sobre o que um comando faz, ou quer saber mais detalhes sobre as opções de uma certa função, você pode usar o comando <code class="highlighter-rouge">help</code> antes de partir para buscas na internet. Por exemplo, para mais informações sobre o  comando <code class="highlighter-rouge">print</code>, simplesmente digite o seguinte comando em python:</p>
+<p>Quando você está em dúvida sobre o que um comando faz, ou quer saber mais detalhes sobre as opções de uma certa função, você pode usar o comando <code class="language-plaintext highlighter-rouge">help</code> antes de partir para buscas na internet. Por exemplo, para mais informações sobre o  comando <code class="language-plaintext highlighter-rouge">print</code>, simplesmente digite o seguinte comando em python:</p>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">help</span><span class="p">(</span><span class="k">print</span><span class="p">)</span>
 </code></pre></div></div>
 <p>Isso fará aparecer a seguinte mensagem na janela de saída do seu ambiente python:</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Help on built-in function print in module builtins:
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Help on built-in function print in module builtins:
 
 print(...)
     print(value, ..., sep=' ', end='\n', file=sys.stdout, flush=False)
@@ -1212,25 +1212,25 @@ print(...)
     flush: whether to forcibly flush the stream.
 </code></pre></div></div>
 
-<p>A primeira parte da mensagem (<em>“Help on built-in function print in module builtins:”</em>) nos diz que <code class="highlighter-rouge">print</code> é uma função do módulo <code class="highlighter-rouge">builtins</code> (<em>integradas</em>), à qual pertencem a maior parte das funções que vimos até aqui (<code class="highlighter-rouge">range()</code>, <code class="highlighter-rouge">str()</code> <code class="highlighter-rouge">input()</code>, e  por exemplo) e que é carregado por padrão.</p>
+<p>A primeira parte da mensagem (<em>“Help on built-in function print in module builtins:”</em>) nos diz que <code class="language-plaintext highlighter-rouge">print</code> é uma função do módulo <code class="language-plaintext highlighter-rouge">builtins</code> (<em>integradas</em>), à qual pertencem a maior parte das funções que vimos até aqui (<code class="language-plaintext highlighter-rouge">range()</code>, <code class="language-plaintext highlighter-rouge">str()</code> <code class="language-plaintext highlighter-rouge">input()</code>, e  por exemplo) e que é carregado por padrão.</p>
 
-<p>A seguir vem a definição da função, ou seja, o que ela faz e todas os argumentos que você pode fornecer ao chamá-la, incluindo os opcionais. No caso do <code class="highlighter-rouge">print</code>, vemos que o comando tem vários argumentos: <code class="highlighter-rouge">value, ..., sep=' ', end='\n', file=sys.stdout, flush=False</code>, a maior parte dos quais é opcional. O único argumento obrigatório é <code class="highlighter-rouge">value, ...</code>, ou seja, uma lista de “valores” (<code class="highlighter-rouge">values</code>) separados por virgulas — que é o que você quer imprimir, afinal de contas!</p>
+<p>A seguir vem a definição da função, ou seja, o que ela faz e todas os argumentos que você pode fornecer ao chamá-la, incluindo os opcionais. No caso do <code class="language-plaintext highlighter-rouge">print</code>, vemos que o comando tem vários argumentos: <code class="language-plaintext highlighter-rouge">value, ..., sep=' ', end='\n', file=sys.stdout, flush=False</code>, a maior parte dos quais é opcional. O único argumento obrigatório é <code class="language-plaintext highlighter-rouge">value, ...</code>, ou seja, uma lista de “valores” (<code class="language-plaintext highlighter-rouge">values</code>) separados por virgulas — que é o que você quer imprimir, afinal de contas!</p>
 
-<p>Veremos mais tarde como interpretar a sintaxe dos argumentos opcionais, quando falarmos em mais detalhes sobre funções. Por enquanto, você pode testar o comando <code class="highlighter-rouge">help</code> com outras funções.</p>
+<p>Veremos mais tarde como interpretar a sintaxe dos argumentos opcionais, quando falarmos em mais detalhes sobre funções. Por enquanto, você pode testar o comando <code class="language-plaintext highlighter-rouge">help</code> com outras funções.</p>
 
 <h2 id="documentação-de-funções-de-módulos-externos">Documentação de funções de módulos externos</h2>
 
-<p>O comando <code class="highlighter-rouge">help</code> também pode ser usado com funções de módulos externos (inclusive os seus próprios módulos personalizados, como veremos), <em>desde que os criadores do módulo tenham se preocupado em fornecer essa informação!</em> Nem sempre, porém, a informação fornecida pelos desenvolvedores de módulos ao comando <code class="highlighter-rouge">help</code> é de grande ajuda para iniciantes. Por exemplo, importe o módulo <code class="highlighter-rouge">numpy</code> e procure ajuda sobre a função <code class="highlighter-rouge">sqrt</code>:</p>
+<p>O comando <code class="language-plaintext highlighter-rouge">help</code> também pode ser usado com funções de módulos externos (inclusive os seus próprios módulos personalizados, como veremos), <em>desde que os criadores do módulo tenham se preocupado em fornecer essa informação!</em> Nem sempre, porém, a informação fornecida pelos desenvolvedores de módulos ao comando <code class="language-plaintext highlighter-rouge">help</code> é de grande ajuda para iniciantes. Por exemplo, importe o módulo <code class="language-plaintext highlighter-rouge">numpy</code> e procure ajuda sobre a função <code class="language-plaintext highlighter-rouge">sqrt</code>:</p>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
-<span class="n">help</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">)</span>
+<span class="n">help</span><span class="p">(</span><span class="n">np</span><span class="p">.</span><span class="n">sqrt</span><span class="p">)</span>
 </code></pre></div></div>
-<p>A longa mensagem fornecida provavelmente será de pouca ajuda para você que está apenas engatinhando em programação em python (e para muitos que se dizem programadores também, é bom que se diga!). Se o comando <code class="highlighter-rouge">help</code> não te auxiliar em nada, é preciso consultar a documentação específica no manual do módulo. Por sorte, vivemos na era da informação, e essa documentação pode ser facilmente encontrada na internet.</p>
+<p>A longa mensagem fornecida provavelmente será de pouca ajuda para você que está apenas engatinhando em programação em python (e para muitos que se dizem programadores também, é bom que se diga!). Se o comando <code class="language-plaintext highlighter-rouge">help</code> não te auxiliar em nada, é preciso consultar a documentação específica no manual do módulo. Por sorte, vivemos na era da informação, e essa documentação pode ser facilmente encontrada na internet.</p>
 
 <p class="alert alert-warning"><img class="emoji" title=":warning:" alt=":warning:" src="https://github.githubassets.com/images/icons/emoji/unicode/26a0.png" height="20" width="20"> Consulte sempre primeiro a documentação oficial de um módulo antes de buscar tutoriais independentes! Isso garante que você terá a informação mais correta, escrita pelos próprios criadores do módulo, além de ser uma excelente oportunidade de treinar o inglês.</p>
 
-<p>A documentação oficial do <code class="highlighter-rouge">numpy</code> (e do <code class="highlighter-rouge">scipy</code>) está no site deles: <a href="https://docs.scipy.org/doc/" target="\_blank">https://docs.scipy.org/doc/</a>. Vá então para a documentação específica do numpy (<a href="https://docs.scipy.org/doc/numpy/">https://docs.scipy.org/doc/numpy/</a>) e digite <code class="highlighter-rouge">sqrt</code> no campo de busca (<em>search</em>). Um dos primeiros resultados é o que você precisa: <code class="highlighter-rouge">numpy.sqrt</code>. Clicando no link vocÊ será levado para a documentação oficial da função (este é o endereço: <a href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.sqrt.html">https://docs.scipy.org/doc/numpy/reference/generated/numpy.sqrt.html</a>).</p>
+<p>A documentação oficial do <code class="language-plaintext highlighter-rouge">numpy</code> (e do <code class="language-plaintext highlighter-rouge">scipy</code>) está no site deles: <a href="https://docs.scipy.org/doc/" target="\_blank">https://docs.scipy.org/doc/</a>. Vá então para a documentação específica do numpy (<a href="https://docs.scipy.org/doc/numpy/">https://docs.scipy.org/doc/numpy/</a>) e digite <code class="language-plaintext highlighter-rouge">sqrt</code> no campo de busca (<em>search</em>). Um dos primeiros resultados é o que você precisa: <code class="language-plaintext highlighter-rouge">numpy.sqrt</code>. Clicando no link vocÊ será levado para a documentação oficial da função (este é o endereço: <a href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.sqrt.html">https://docs.scipy.org/doc/numpy/reference/generated/numpy.sqrt.html</a>).</p>
 
-<p>Você descobrirá então que a função <code class="highlighter-rouge">numpy.sqrt</code> retorna a raiz quadrada não-negativa de um array, elemento por elemento (<em>Return the non-negative square-root of an array, element-wise</em>). Ainda não vimos o que é um array, mas você pode considerá-los por enquanto como uma espécie de lista turbinada. O único argumento obrigatório é <code class="highlighter-rouge">x</code>, o array do qual você quer a raiz quadrada. Não está dito ali, mas funciona também para ints e floats da maneira usual: <code class="highlighter-rouge">numpy.sqrt(5)</code> e <code class="highlighter-rouge">numpy.sqrt(5.)</code> vão retornar o valor esperado.</p>
+<p>Você descobrirá então que a função <code class="language-plaintext highlighter-rouge">numpy.sqrt</code> retorna a raiz quadrada não-negativa de um array, elemento por elemento (<em>Return the non-negative square-root of an array, element-wise</em>). Ainda não vimos o que é um array, mas você pode considerá-los por enquanto como uma espécie de lista turbinada. O único argumento obrigatório é <code class="language-plaintext highlighter-rouge">x</code>, o array do qual você quer a raiz quadrada. Não está dito ali, mas funciona também para ints e floats da maneira usual: <code class="language-plaintext highlighter-rouge">numpy.sqrt(5)</code> e <code class="language-plaintext highlighter-rouge">numpy.sqrt(5.)</code> vão retornar o valor esperado.</p>
 
 
 

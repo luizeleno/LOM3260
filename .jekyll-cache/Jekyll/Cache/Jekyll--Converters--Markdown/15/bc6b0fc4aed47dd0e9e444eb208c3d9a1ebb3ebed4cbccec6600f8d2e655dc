@@ -1,7 +1,7 @@
-I"p<p>Calcule as quinze primeiras aproximações para $\pi$ de acordo com a série</p>
+I"E<p>Calcule as quinze primeiras aproximações para $\pi$ de acordo com a série</p>
 
-<script type="math/tex; mode=display">\small
-\frac{\pi-3}{4} = \frac{1}{2\cdot3\cdot4} - \frac{1}{4\cdot5\cdot6} + \frac{1}{6\cdot7\cdot8} - \ldots</script>
+\[\small
+\frac{\pi-3}{4} = \frac{1}{2\cdot3\cdot4} - \frac{1}{4\cdot5\cdot6} + \frac{1}{6\cdot7\cdot8} - \ldots\]
 
 <p>Novamente, não use uma função fatorial, é uma perda de tempo e de recursos computacionais!</p>
 

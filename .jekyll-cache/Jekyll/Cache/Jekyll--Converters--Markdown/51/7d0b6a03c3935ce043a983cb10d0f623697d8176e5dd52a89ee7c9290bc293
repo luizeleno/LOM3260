@@ -1,4 +1,4 @@
-I"A<p>(MIT) Escreva um programa que conte o número de vogais numa <em>string</em> <code class="highlighter-rouge">s</code> composta unicamente de letras minúsculas. Por exemplo, se <code class="highlighter-rouge">s = 'azcbobobegghakl'</code>, seu programa deve imprimir <code class="highlighter-rouge">Número de vogais: 5</code>.</p>
+I"�<p>(MIT) Escreva um programa que conte o número de vogais numa <em>string</em> <code class="language-plaintext highlighter-rouge">s</code> composta unicamente de letras minúsculas. Por exemplo, se <code class="language-plaintext highlighter-rouge">s = 'azcbobobegghakl'</code>, seu programa deve imprimir <code class="language-plaintext highlighter-rouge">Número de vogais: 5</code>.</p>
 
 <h3 id="solução">Solução:</h3>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">s</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">'Digite uma string de letras minúsculas: '</span><span class="p">)</span>
@@ -10,6 +10,6 @@
   <span class="k">if</span> <span class="n">letter</span> <span class="ow">in</span> <span class="n">v</span><span class="p">:</span>
     <span class="n">n</span> <span class="o">+=</span> <span class="mi">1</span>
 
-<span class="k">print</span><span class="p">(</span><span class="n">f</span><span class="s">'Número de vogais: {n}'</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">f'Número de vogais: </span><span class="si">{</span><span class="n">n</span><span class="si">}</span><span class="s">'</span><span class="p">)</span>
 </code></pre></div></div>
 :ET

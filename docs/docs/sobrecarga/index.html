@@ -22,17 +22,17 @@
 
 <!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>Sobrecarga de operadores | LOM3260</title>
-<meta name="generator" content="Jekyll v4.0.0" />
+<meta name="generator" content="Jekyll v4.1.0" />
 <meta property="og:title" content="Sobrecarga de operadores" />
 <meta name="author" content="Luiz T. F. Eleno" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Computação Científica em Python - uma disciplina do curso de Engenharia Física da Escola de Engenharia de Lorena da Universidade de São Paulo - EEL USP" />
-<meta property="og:description" content="Computação Científica em Python - uma disciplina do curso de Engenharia Física da Escola de Engenharia de Lorena da Universidade de São Paulo - EEL USP" />
+<meta name="description" content="Um mesmo símbolo pode significar diferentes operadores em python, dependendo dos tipos de dados sobre os quais ele opera" />
+<meta property="og:description" content="Um mesmo símbolo pode significar diferentes operadores em python, dependendo dos tipos de dados sobre os quais ele opera" />
 <link rel="canonical" href="https://computeel.org/LOM3260/docs/sobrecarga/" />
 <meta property="og:url" content="https://computeel.org/LOM3260/docs/sobrecarga/" />
 <meta property="og:site_name" content="LOM3260" />
 <script type="application/ld+json">
-{"@type":"WebPage","headline":"Sobrecarga de operadores","dateModified":"2020-06-07T13:06:30-03:00","url":"https://computeel.org/LOM3260/docs/sobrecarga/","author":{"@type":"Person","name":"Luiz T. F. Eleno"},"description":"Computação Científica em Python - uma disciplina do curso de Engenharia Física da Escola de Engenharia de Lorena da Universidade de São Paulo - EEL USP","@context":"https://schema.org"}</script>
+{"@type":"WebPage","headline":"Sobrecarga de operadores","dateModified":"2020-06-07T13:06:30-03:00","url":"https://computeel.org/LOM3260/docs/sobrecarga/","author":{"@type":"Person","name":"Luiz T. F. Eleno"},"description":"Um mesmo símbolo pode significar diferentes operadores em python, dependendo dos tipos de dados sobre os quais ele opera","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -1213,24 +1213,24 @@
 <span class="n">b</span> <span class="o">=</span> <span class="mi">8</span>
 <span class="n">c</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
 </code></pre></div></div>
-<p>O operador soma, indicado pelo símbolo <code class="highlighter-rouge">+</code>, é o encarregado de encontrar a soma de suas variáveis do tipo <code class="highlighter-rouge">int</code>. Repare que o resultado também é do tipo <code class="highlighter-rouge">int</code> (você pode se assegurar disso com o comando <code class="highlighter-rouge">type(c)</code> no código acima).</p>
+<p>O operador soma, indicado pelo símbolo <code class="language-plaintext highlighter-rouge">+</code>, é o encarregado de encontrar a soma de suas variáveis do tipo <code class="language-plaintext highlighter-rouge">int</code>. Repare que o resultado também é do tipo <code class="language-plaintext highlighter-rouge">int</code> (você pode se assegurar disso com o comando <code class="language-plaintext highlighter-rouge">type(c)</code> no código acima).</p>
 
 <p>Mas observe agora o código abaixo:</p>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">a</span> <span class="o">=</span> <span class="mi">3</span>
 <span class="n">b</span> <span class="o">=</span> <span class="mf">8.</span>
 <span class="n">c</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
 </code></pre></div></div>
-<p>Veja que não é a mesma coisa que no primeiro código, pois <code class="highlighter-rouge">b</code> é agora uma variável do tipo <code class="highlighter-rouge">float</code>, assim como a variável <code class="highlighter-rouge">c</code> que recebeu a soma <code class="highlighter-rouge">a+b</code>. Ou seja, o operador <code class="highlighter-rouge">+</code>, nesse caso, não fez exatamente a mesma coisa que no caso anterior. No entanto, usamos o mesmo símbolo para indicar essas duas operações diferentes (soma de dois <code class="highlighter-rouge">int</code> retornando um <code class="highlighter-rouge">int</code> $\neq$ soma de um <code class="highlighter-rouge">int</code> e um <code class="highlighter-rouge">float</code> retornando um <code class="highlighter-rouge">float</code>).</p>
+<p>Veja que não é a mesma coisa que no primeiro código, pois <code class="language-plaintext highlighter-rouge">b</code> é agora uma variável do tipo <code class="language-plaintext highlighter-rouge">float</code>, assim como a variável <code class="language-plaintext highlighter-rouge">c</code> que recebeu a soma <code class="language-plaintext highlighter-rouge">a+b</code>. Ou seja, o operador <code class="language-plaintext highlighter-rouge">+</code>, nesse caso, não fez exatamente a mesma coisa que no caso anterior. No entanto, usamos o mesmo símbolo para indicar essas duas operações diferentes (soma de dois <code class="language-plaintext highlighter-rouge">int</code> retornando um <code class="language-plaintext highlighter-rouge">int</code> $\neq$ soma de um <code class="language-plaintext highlighter-rouge">int</code> e um <code class="language-plaintext highlighter-rouge">float</code> retornando um <code class="language-plaintext highlighter-rouge">float</code>).</p>
 
 <p>Chamamos esse “abuso” de um mesmo símbolo para indicar coisas diferentes de <strong>sobrecarga</strong> (<em>overloading</em>) de operadores e métodos.</p>
 
-<p>Veja outro exemplo de uso do operador <code class="highlighter-rouge">+</code> que você pode usar para resolver muitos problemas práticos:
+<p>Veja outro exemplo de uso do operador <code class="language-plaintext highlighter-rouge">+</code> que você pode usar para resolver muitos problemas práticos:
 a = ‘3’</p>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">b</span> <span class="o">=</span> <span class="s">'8'</span>
 <span class="n">c</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
 <span class="k">print</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
 </code></pre></div></div>
-<p>O que você acha que esse comando <code class="highlighter-rouge">print</code> imprime? Veja que <code class="highlighter-rouge">a</code> e <code class="highlighter-rouge">b</code> são do tipo <code class="highlighter-rouge">string</code> e, não <code class="highlighter-rouge">int</code>!</p>
+<p>O que você acha que esse comando <code class="language-plaintext highlighter-rouge">print</code> imprime? Veja que <code class="language-plaintext highlighter-rouge">a</code> e <code class="language-plaintext highlighter-rouge">b</code> são do tipo <code class="language-plaintext highlighter-rouge">string</code> e, não <code class="language-plaintext highlighter-rouge">int</code>!</p>
 
 <p>Na próxima seção veremos como usar operadores “sobrecarregados” para criar facilmente novas listas.</p>
 

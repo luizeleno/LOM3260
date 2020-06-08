@@ -1,4 +1,4 @@
-I"�<p>A Páscoa cai no primeiro domingo do ano após a lua cheia (mas não a lua cheia real, e sim de acordo com um antigo cômputo (computus) eclesiástico que nada mais tem a ver com a lua que vemos no céu: é apenas um <em>algoritmo</em>…) que acontece no ou imediatamente após o equinócio de março (considera-se sempre 21 de março como a data do equinócio, o que nem sempre é verdade, pois pode ser um ou dois dias antes…). Na prática, é mais fácil calcular a data da Páscoa usando o algoritmo de Meeus–Jones–Butcher:</p>
+I"$<p>A Páscoa cai no primeiro domingo do ano após a lua cheia (mas não a lua cheia real, e sim de acordo com um antigo cômputo (computus) eclesiástico que nada mais tem a ver com a lua que vemos no céu: é apenas um <em>algoritmo</em>…) que acontece no ou imediatamente após o equinócio de março (considera-se sempre 21 de março como a data do equinócio, o que nem sempre é verdade, pois pode ser um ou dois dias antes…). Na prática, é mais fácil calcular a data da Páscoa usando o algoritmo de Meeus–Jones–Butcher:</p>
 
 <table>
   <thead>
@@ -73,5 +73,5 @@
   </tbody>
 </table>
 
-<p>O domingo de Páscoa será então no dia $p+1$ do mês $n$ (3: março, 4: abril). O algoritmo é válido para qualquer ano no calendário gregoriano, ou seja, a partir de 1583. Implemente-o em python e verifique <a href="https://www.assa.org.au/edm" target="blank">aqui</a>. <strong>Dica</strong>: não use o operador <code class="highlighter-rouge">/</code>, e sim <code class="highlighter-rouge">//</code> (divisão inteira) para as divisões.</p>
+<p>O domingo de Páscoa será então no dia $p+1$ do mês $n$ (3: março, 4: abril). O algoritmo é válido para qualquer ano no calendário gregoriano, ou seja, a partir de 1583. Implemente-o em python e verifique <a href="https://www.assa.org.au/edm" target="blank">aqui</a>. <strong>Dica</strong>: não use o operador <code class="language-plaintext highlighter-rouge">/</code>, e sim <code class="language-plaintext highlighter-rouge">//</code> (divisão inteira) para as divisões.</p>
 :ET

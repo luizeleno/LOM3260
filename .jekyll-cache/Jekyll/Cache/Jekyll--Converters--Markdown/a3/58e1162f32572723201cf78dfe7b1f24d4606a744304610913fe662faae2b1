@@ -1,4 +1,4 @@
-I"C<div class="float-right col-md-6">
+I"�<div class="float-right col-md-6">
 <div class="text-center">
 <figure class="figure">
   
@@ -41,11 +41,11 @@
 
 <p>Cabos usados em pontes e linhas de transmissão suportam o próprio peso uniformemente distribuído e assumem um formato conhecido por <strong>catenária</strong>, expresso por</p>
 
-<script type="math/tex; mode=display">y(x) = a \cosh\left(\frac{x}{a}\right)</script>
+\[y(x) = a \cosh\left(\frac{x}{a}\right)\]
 
 <p>sendo $a$ um comprimento definido na figura e</p>
 
-<script type="math/tex; mode=display">\cosh \theta = \frac{e^\theta+e^{-\theta}}{2}</script>
+\[\cosh \theta = \frac{e^\theta+e^{-\theta}}{2}\]
 
 <p>a função <strong>cosseno hiperbólico</strong>.</p>
 

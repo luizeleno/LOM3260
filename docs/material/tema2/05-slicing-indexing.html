@@ -22,17 +22,17 @@
 
 <!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>Indexação e fatiamento | LOM3260</title>
-<meta name="generator" content="Jekyll v4.0.0" />
+<meta name="generator" content="Jekyll v4.1.0" />
 <meta property="og:title" content="Indexação e fatiamento" />
 <meta name="author" content="Luiz T. F. Eleno" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Computação Científica em Python - uma disciplina do curso de Engenharia Física da Escola de Engenharia de Lorena da Universidade de São Paulo - EEL USP" />
-<meta property="og:description" content="Computação Científica em Python - uma disciplina do curso de Engenharia Física da Escola de Engenharia de Lorena da Universidade de São Paulo - EEL USP" />
+<meta name="description" content="Como escolher e manipular partes de uma string ou lista usando indexação (indexing) e fatiamento (slicing)" />
+<meta property="og:description" content="Como escolher e manipular partes de uma string ou lista usando indexação (indexing) e fatiamento (slicing)" />
 <link rel="canonical" href="https://computeel.org/LOM3260/material/tema2/05-slicing-indexing.html" />
 <meta property="og:url" content="https://computeel.org/LOM3260/material/tema2/05-slicing-indexing.html" />
 <meta property="og:site_name" content="LOM3260" />
 <script type="application/ld+json">
-{"@type":"WebPage","headline":"Indexação e fatiamento","dateModified":"2020-06-07T13:06:30-03:00","url":"https://computeel.org/LOM3260/material/tema2/05-slicing-indexing.html","author":{"@type":"Person","name":"Luiz T. F. Eleno"},"description":"Computação Científica em Python - uma disciplina do curso de Engenharia Física da Escola de Engenharia de Lorena da Universidade de São Paulo - EEL USP","@context":"https://schema.org"}</script>
+{"@type":"WebPage","headline":"Indexação e fatiamento","dateModified":"2020-06-07T13:06:30-03:00","url":"https://computeel.org/LOM3260/material/tema2/05-slicing-indexing.html","author":{"@type":"Person","name":"Luiz T. F. Eleno"},"description":"Como escolher e manipular partes de uma string ou lista usando indexação (indexing) e fatiamento (slicing)","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -1197,39 +1197,39 @@
 
 <h2 id="indexing">Indexing</h2>
 
-<p><strong>Indexing</strong> é a maneira pela qual nos referimos a um elemento de uma lista, string ou tupla. Por exemplo, se temos uma lista <code class="highlighter-rouge">L = [1, 8, 'EEL', 5.43]</code>, cada um dos elementos tem por <strong>índice</strong> um inteiro, começando em zero e sequencialmente aumentando de uma unidade até o último elemento. O primeiro elemento da lista <code class="highlighter-rouge">L</code> é indicado por <code class="highlighter-rouge">L[0]</code>, o segundo por <code class="highlighter-rouge">L[1]</code>, e assim por diante. Acompanhe:</p>
+<p><strong>Indexing</strong> é a maneira pela qual nos referimos a um elemento de uma lista, string ou tupla. Por exemplo, se temos uma lista <code class="language-plaintext highlighter-rouge">L = [1, 8, 'EEL', 5.43]</code>, cada um dos elementos tem por <strong>índice</strong> um inteiro, começando em zero e sequencialmente aumentando de uma unidade até o último elemento. O primeiro elemento da lista <code class="language-plaintext highlighter-rouge">L</code> é indicado por <code class="language-plaintext highlighter-rouge">L[0]</code>, o segundo por <code class="language-plaintext highlighter-rouge">L[1]</code>, e assim por diante. Acompanhe:</p>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">L</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="s">'EEL'</span><span class="p">,</span> <span class="mf">5.43</span><span class="p">]</span>
 <span class="n">nL</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">L</span><span class="p">)</span>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">nL</span><span class="p">):</span>
   <span class="k">print</span><span class="p">(</span><span class="n">L</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
 </code></pre></div></div>
-<p>Esse código vai imprimir, um a um, todos os elementos de <code class="highlighter-rouge">L</code>. Lembre que <code class="highlighter-rouge">len(L)</code> fornece o tamanho (nesse caso, o número de elementos) de <code class="highlighter-rouge">L</code>, assim como, se <code class="highlighter-rouge">s</code> é uma string, <code class="highlighter-rouge">len(s)</code> fornece o número de caracteres de <code class="highlighter-rouge">s</code> (incluindo possíveis espaços em branco). Mas repare que o código acima poderia ser simplificado fazendo uso das propriedades do operador <code class="highlighter-rouge">in</code>, já visto anteriormente:</p>
+<p>Esse código vai imprimir, um a um, todos os elementos de <code class="language-plaintext highlighter-rouge">L</code>. Lembre que <code class="language-plaintext highlighter-rouge">len(L)</code> fornece o tamanho (nesse caso, o número de elementos) de <code class="language-plaintext highlighter-rouge">L</code>, assim como, se <code class="language-plaintext highlighter-rouge">s</code> é uma string, <code class="language-plaintext highlighter-rouge">len(s)</code> fornece o número de caracteres de <code class="language-plaintext highlighter-rouge">s</code> (incluindo possíveis espaços em branco). Mas repare que o código acima poderia ser simplificado fazendo uso das propriedades do operador <code class="language-plaintext highlighter-rouge">in</code>, já visto anteriormente:</p>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">L</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="s">'EEL'</span><span class="p">,</span> <span class="mf">5.43</span><span class="p">]</span>
 <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">L</span><span class="p">:</span>
   <span class="k">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 </code></pre></div></div>
 <p>Nesse caso, nem precisamos saber o tamanho da lista!</p>
 
-<p>Na lição anterior, vimos que listas são editáveis, ou seja, é possível alterar qualquer um de seus elementos. Isso é feito usando indexação. Por exemplo, usando a mesma lista <code class="highlighter-rouge">L=[1, 8, 'EEL', 5.43]</code>, se quisermos alterar o terceiro elemento (com índice 2, não se esqueça!) para  <code class="highlighter-rouge">Demar</code>, podemos simplesmente fazer <code class="highlighter-rouge">L[2] = 'Demar'</code>. A lista entãlo passa a ser <code class="highlighter-rouge">L=[1, 8, 'Demar', 5.43]</code>.</p>
+<p>Na lição anterior, vimos que listas são editáveis, ou seja, é possível alterar qualquer um de seus elementos. Isso é feito usando indexação. Por exemplo, usando a mesma lista <code class="language-plaintext highlighter-rouge">L=[1, 8, 'EEL', 5.43]</code>, se quisermos alterar o terceiro elemento (com índice 2, não se esqueça!) para  <code class="language-plaintext highlighter-rouge">Demar</code>, podemos simplesmente fazer <code class="language-plaintext highlighter-rouge">L[2] = 'Demar'</code>. A lista entãlo passa a ser <code class="language-plaintext highlighter-rouge">L=[1, 8, 'Demar', 5.43]</code>.</p>
 
 <p class="lead alert alert-warning"><img class="emoji" title=":warning:" alt=":warning:" src="https://github.githubassets.com/images/icons/emoji/unicode/26a0.png" height="20" width="20"> Não é possível usar indexing para alterar valores de uma string ou de uma tupla! Esses são tipos imutáveis de objetos.</p>
 
-<p>É possível também adicionar e eliminar elementos de uma lista. Consulte a ajuda sobre os comandos <code class="highlighter-rouge">append</code> e <code class="highlighter-rouge">del</code> em qualquer referência sobre python. Nesse curso, não vamos precisar desses comandos, já que migraremos em breve para outros tipos de dados: os <strong>arrays</strong> que o módulo <code class="highlighter-rouge">numpy</code> fornece, muito mais poderosos que listas.</p>
+<p>É possível também adicionar e eliminar elementos de uma lista. Consulte a ajuda sobre os comandos <code class="language-plaintext highlighter-rouge">append</code> e <code class="language-plaintext highlighter-rouge">del</code> em qualquer referência sobre python. Nesse curso, não vamos precisar desses comandos, já que migraremos em breve para outros tipos de dados: os <strong>arrays</strong> que o módulo <code class="language-plaintext highlighter-rouge">numpy</code> fornece, muito mais poderosos que listas.</p>
 
 <h3 id="o-que-são-índices-negativos">O que são índices negativos?</h3>
 
-<p>Caso você queira o último elemento, a convenção é usar <strong>índices negativos</strong>: <code class="highlighter-rouge">L[-1]</code> é o último elemento de <code class="highlighter-rouge">L</code>, <code class="highlighter-rouge">L[-2]</code> o penúltimo, e assim por diante. Veja que, com isso, você não precisa necessariamente conhecer o tamanho de <code class="highlighter-rouge">L</code> para obter o seu último (ou qualquer outro) elemento.</p>
+<p>Caso você queira o último elemento, a convenção é usar <strong>índices negativos</strong>: <code class="language-plaintext highlighter-rouge">L[-1]</code> é o último elemento de <code class="language-plaintext highlighter-rouge">L</code>, <code class="language-plaintext highlighter-rouge">L[-2]</code> o penúltimo, e assim por diante. Veja que, com isso, você não precisa necessariamente conhecer o tamanho de <code class="language-plaintext highlighter-rouge">L</code> para obter o seu último (ou qualquer outro) elemento.</p>
 
 <h2 id="slicing-fatiamento">Slicing (fatiamento)</h2>
 
-<p>Se você entendeu como funciona o comando <code class="highlighter-rouge">range()</code>, vai entender o fatiamento de listas, tuplas e strings, pois são muito parecidos. A sintaxe é</p>
+<p>Se você entendeu como funciona o comando <code class="language-plaintext highlighter-rouge">range()</code>, vai entender o fatiamento de listas, tuplas e strings, pois são muito parecidos. A sintaxe é</p>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">f</span> <span class="o">=</span> <span class="n">L</span><span class="p">[</span><span class="n">start</span><span class="p">:</span><span class="n">stop</span><span class="p">:</span><span class="n">step</span><span class="p">]</span>
 </code></pre></div></div>
-<p>em que <code class="highlighter-rouge">L</code> é uma string, lista ou tupla e <code class="highlighter-rouge">f</code> é uma fatia de <code class="highlighter-rouge">L</code> (ou seja, uma parte de <code class="highlighter-rouge">L</code>) a partir do elemento <code class="highlighter-rouge">start</code> até o elemento <code class="highlighter-rouge">stop</code>, mas <strong>SEM INCLUIR <code class="highlighter-rouge">stop</code></strong>, com um passo <code class="highlighter-rouge">step</code>.</p>
+<p>em que <code class="language-plaintext highlighter-rouge">L</code> é uma string, lista ou tupla e <code class="language-plaintext highlighter-rouge">f</code> é uma fatia de <code class="language-plaintext highlighter-rouge">L</code> (ou seja, uma parte de <code class="language-plaintext highlighter-rouge">L</code>) a partir do elemento <code class="language-plaintext highlighter-rouge">start</code> até o elemento <code class="language-plaintext highlighter-rouge">stop</code>, mas <strong>SEM INCLUIR <code class="language-plaintext highlighter-rouge">stop</code></strong>, com um passo <code class="language-plaintext highlighter-rouge">step</code>.</p>
 
-<p>Se <code class="highlighter-rouge">start</code> não é fornecido, ele é por padrão <code class="highlighter-rouge">0</code>, ou seja, o primeiro elemento. Se stop não é fornecido, ele é por padrão o último elemento, ou seja, <code class="highlighter-rouge">len(L)</code>. O <code class="highlighter-rouge">step</code> é opcional e, se não for fornecido, vale <code class="highlighter-rouge">1</code> por padrão.</p>
+<p>Se <code class="language-plaintext highlighter-rouge">start</code> não é fornecido, ele é por padrão <code class="language-plaintext highlighter-rouge">0</code>, ou seja, o primeiro elemento. Se stop não é fornecido, ele é por padrão o último elemento, ou seja, <code class="language-plaintext highlighter-rouge">len(L)</code>. O <code class="language-plaintext highlighter-rouge">step</code> é opcional e, se não for fornecido, vale <code class="language-plaintext highlighter-rouge">1</code> por padrão.</p>
 
-<p>Valores negativos para <code class="highlighter-rouge">start</code> e <code class="highlighter-rouge">stop</code> são aceitos, de forma parecida com a que vimos para a indexação. Um <code class="highlighter-rouge">step</code> negativo também é possível, assim como no caso do comando <code class="highlighter-rouge">range</code>.</p>
+<p>Valores negativos para <code class="language-plaintext highlighter-rouge">start</code> e <code class="language-plaintext highlighter-rouge">stop</code> são aceitos, de forma parecida com a que vimos para a indexação. Um <code class="language-plaintext highlighter-rouge">step</code> negativo também é possível, assim como no caso do comando <code class="language-plaintext highlighter-rouge">range</code>.</p>
 
 <p>Vejamos alguns exemplos:</p>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">L</span> <span class="o">=</span> <span class="s">'Eu sou uma string'</span>

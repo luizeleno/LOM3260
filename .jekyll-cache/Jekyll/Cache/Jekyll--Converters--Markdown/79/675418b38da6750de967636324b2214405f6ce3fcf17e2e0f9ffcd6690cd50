@@ -1,4 +1,4 @@
-I"�	<p>O <strong>código Morse</strong> é um esquema de codificação que usa traços e pontos para representar números e letras. Neste exercício, você vai escrever um programa que usa um dicionário para armazenar o mapeamento de letras e números para código Morse, mostrado na tabela a seguir:</p>
+I"�	<p>O <strong>código Morse</strong> é um esquema de codificação que usa traços e pontos para representar números e letras. Neste exercício, você vai escrever um programa que usa um dicionário para armazenar o mapeamento de letras e números para código Morse, mostrado na tabela a seguir:</p>
 
 <table>
   <tbody>
@@ -97,7 +97,7 @@
 
 <p>Seu programa deve ler uma mensagem do usuário. Então deve traduzir cada
 letra e número na mensagem para o código Morse, deixando um espaço entre cada
-seqüência de traços e pontos. Seu programa deve ignorar quaisquer caracteres que não sejam letras ou números. O código Morse para <code class="highlighter-rouge">Hello, World!</code> é mostrado abaixo:</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>....  .  .-..  .-..  ---   .--  ---  .-.  .-..  -..
+seqüência de traços e pontos. Seu programa deve ignorar quaisquer caracteres que não sejam letras ou números. O código Morse para <code class="language-plaintext highlighter-rouge">Hello, World!</code> é mostrado abaixo:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>....  .  .-..  .-..  ---   .--  ---  .-.  .-..  -..
 </code></pre></div></div>
 :ET

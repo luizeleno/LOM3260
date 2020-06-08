@@ -22,17 +22,17 @@
 
 <!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>Operadores | LOM3260</title>
-<meta name="generator" content="Jekyll v4.0.0" />
+<meta name="generator" content="Jekyll v4.1.0" />
 <meta property="og:title" content="Operadores" />
 <meta name="author" content="Luiz T. F. Eleno" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Computação Científica em Python - uma disciplina do curso de Engenharia Física da Escola de Engenharia de Lorena da Universidade de São Paulo - EEL USP" />
-<meta property="og:description" content="Computação Científica em Python - uma disciplina do curso de Engenharia Física da Escola de Engenharia de Lorena da Universidade de São Paulo - EEL USP" />
+<meta name="description" content="Numa expressão como c = a op b, a e b são chamados operandos e op é um operador. Os operadores abaixo (com exceção do not) agem sobre dois operandos e produzem (retornam) um resultado, que depende dos tipos de dados dos operandos." />
+<meta property="og:description" content="Numa expressão como c = a op b, a e b são chamados operandos e op é um operador. Os operadores abaixo (com exceção do not) agem sobre dois operandos e produzem (retornam) um resultado, que depende dos tipos de dados dos operandos." />
 <link rel="canonical" href="https://computeel.org/LOM3260/material/tema1/06-operadores.html" />
 <meta property="og:url" content="https://computeel.org/LOM3260/material/tema1/06-operadores.html" />
 <meta property="og:site_name" content="LOM3260" />
 <script type="application/ld+json">
-{"@type":"WebPage","headline":"Operadores","dateModified":"2020-06-07T13:06:30-03:00","url":"https://computeel.org/LOM3260/material/tema1/06-operadores.html","author":{"@type":"Person","name":"Luiz T. F. Eleno"},"description":"Computação Científica em Python - uma disciplina do curso de Engenharia Física da Escola de Engenharia de Lorena da Universidade de São Paulo - EEL USP","@context":"https://schema.org"}</script>
+{"@type":"WebPage","headline":"Operadores","dateModified":"2020-06-07T13:06:30-03:00","url":"https://computeel.org/LOM3260/material/tema1/06-operadores.html","author":{"@type":"Person","name":"Luiz T. F. Eleno"},"description":"Numa expressão como c = a op b, a e b são chamados operandos e op é um operador. Os operadores abaixo (com exceção do not) agem sobre dois operandos e produzem (retornam) um resultado, que depende dos tipos de dados dos operandos.","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -1191,85 +1191,85 @@
   
   </h1>
 
-  <p class="lead">Numa expressão como <code class="highlighter-rouge">c = a op b</code>, <code class="highlighter-rouge">a</code> e <code class="highlighter-rouge">b</code> são chamados <em>operandos</em> e <code class="highlighter-rouge">op</code> é um <strong>operador</strong>. Os operadores abaixo (com exceção do <code class="highlighter-rouge">not</code>) agem sobre dois <em>operandos</em> e produzem (<em>retornam</em>) um resultado, que depende dos tipos de dados dos operandos.</p>
+  <p class="lead">Numa expressão como <code class="language-plaintext highlighter-rouge">c = a op b</code>, <code class="language-plaintext highlighter-rouge">a</code> e <code class="language-plaintext highlighter-rouge">b</code> são chamados <em>operandos</em> e <code class="language-plaintext highlighter-rouge">op</code> é um <strong>operador</strong>. Os operadores abaixo (com exceção do <code class="language-plaintext highlighter-rouge">not</code>) agem sobre dois <em>operandos</em> e produzem (<em>retornam</em>) um resultado, que depende dos tipos de dados dos operandos.</p>
 
 <h2 id="operadores-aritméticos">Operadores aritméticos</h2>
 
 <ul>
-  <li>adição: <code class="highlighter-rouge">+</code>
+  <li>adição: <code class="language-plaintext highlighter-rouge">+</code>
 </li>
-  <li>subtração: <code class="highlighter-rouge">-</code>
+  <li>subtração: <code class="language-plaintext highlighter-rouge">-</code>
 </li>
-  <li>multiplicação: <code class="highlighter-rouge">*</code>
+  <li>multiplicação: <code class="language-plaintext highlighter-rouge">*</code>
 </li>
-  <li>divisão: <code class="highlighter-rouge">/</code>
+  <li>divisão: <code class="language-plaintext highlighter-rouge">/</code>
 </li>
-  <li>exponenciação: <code class="highlighter-rouge">**</code>
+  <li>exponenciação: <code class="language-plaintext highlighter-rouge">**</code>
 </li>
-  <li>resto de divisão: <code class="highlighter-rouge">%</code>
+  <li>resto de divisão: <code class="language-plaintext highlighter-rouge">%</code>
 </li>
-  <li>divisão inteira: <code class="highlighter-rouge">//</code>
+  <li>divisão inteira: <code class="language-plaintext highlighter-rouge">//</code>
 </li>
 </ul>
 
-<p><strong>Regra:</strong> se <code class="highlighter-rouge">op</code> é qualquer dos operadores acima, temos que:</p>
+<p><strong>Regra:</strong> se <code class="language-plaintext highlighter-rouge">op</code> é qualquer dos operadores acima, temos que:</p>
 <ul>
   <li>
-<code class="highlighter-rouge">int op int</code> retorna <code class="highlighter-rouge">int</code>
+<code class="language-plaintext highlighter-rouge">int op int</code> retorna <code class="language-plaintext highlighter-rouge">int</code>
 </li>
   <li>
-<code class="highlighter-rouge">int op float</code> retorna <code class="highlighter-rouge">float</code>
+<code class="language-plaintext highlighter-rouge">int op float</code> retorna <code class="language-plaintext highlighter-rouge">float</code>
 </li>
   <li>
-<code class="highlighter-rouge">c op int</code> retorna <code class="highlighter-rouge">float</code>
+<code class="language-plaintext highlighter-rouge">c op int</code> retorna <code class="language-plaintext highlighter-rouge">float</code>
 </li>
   <li>
-<code class="highlighter-rouge">float op float</code> retorna <code class="highlighter-rouge">float</code>
+<code class="language-plaintext highlighter-rouge">float op float</code> retorna <code class="language-plaintext highlighter-rouge">float</code>
 </li>
 </ul>
 
-<p><strong>Obs.:</strong> Consulte a aula de <a href="/LOM3260/docs/sobrecarga/"><em>Sobrecarga de operadores</em></a> para outro uso do operador adição quando os operandos são <code class="highlighter-rouge">string</code>.</p>
+<p><strong>Obs.:</strong> Consulte a aula de <a href="/LOM3260/docs/sobrecarga/"><em>Sobrecarga de operadores</em></a> para outro uso do operador adição quando os operandos são <code class="language-plaintext highlighter-rouge">string</code>.</p>
 
 <h2 id="operadores-de-comparação">Operadores de comparação</h2>
 
-<p>Se a comparação é satisfeita, os operadores de comparação retornam <code class="highlighter-rouge">True</code> (tipo booleanno, ver aula sobre <a href="/LOM3260/docs/tipos/">tipos de dados</a>). Caso contrário, retornam <code class="highlighter-rouge">False</code>.</p>
+<p>Se a comparação é satisfeita, os operadores de comparação retornam <code class="language-plaintext highlighter-rouge">True</code> (tipo booleanno, ver aula sobre <a href="/LOM3260/docs/tipos/">tipos de dados</a>). Caso contrário, retornam <code class="language-plaintext highlighter-rouge">False</code>.</p>
 <ul>
-  <li>igualdade: <code class="highlighter-rouge">==</code>
+  <li>igualdade: <code class="language-plaintext highlighter-rouge">==</code>
 </li>
-  <li>não igualdade: <code class="highlighter-rouge">!=</code> ou <code class="highlighter-rouge">&lt;&gt;</code> contrário</li>
-  <li>maior que: <code class="highlighter-rouge">&gt;</code>
+  <li>não igualdade: <code class="language-plaintext highlighter-rouge">!=</code> ou <code class="language-plaintext highlighter-rouge">&lt;&gt;</code> contrário</li>
+  <li>maior que: <code class="language-plaintext highlighter-rouge">&gt;</code>
 </li>
-  <li>maior ou igual a: <code class="highlighter-rouge">&gt;=</code>
+  <li>maior ou igual a: <code class="language-plaintext highlighter-rouge">&gt;=</code>
 </li>
-  <li>menor ou igual a: <code class="highlighter-rouge">&lt;=</code>
+  <li>menor ou igual a: <code class="language-plaintext highlighter-rouge">&lt;=</code>
 </li>
 </ul>
 
 <h2 id="operadores-de-atribuição">Operadores de atribuição</h2>
 
 <ul>
-  <li>atribuir à variável: <code class="highlighter-rouge">=</code>
+  <li>atribuir à variável: <code class="language-plaintext highlighter-rouge">=</code>
 </li>
-  <li>somar e atribuir à variável: <code class="highlighter-rouge">+=</code> (<code class="highlighter-rouge">a += b</code> equivale a <code class="highlighter-rouge">a = a + b</code>)</li>
-  <li>subtrair e atribuir à variável: <code class="highlighter-rouge">-=</code> (<code class="highlighter-rouge">a -= b</code> equivale a <code class="highlighter-rouge">a = a - b</code>)</li>
-  <li>multiplicar e atribuir à variável: <code class="highlighter-rouge">*=</code> (<code class="highlighter-rouge">a *= b</code> equivale a <code class="highlighter-rouge">a = a * b</code>)</li>
-  <li>dividir e atribuir à variável: <code class="highlighter-rouge">/=</code> (<code class="highlighter-rouge">a /= b</code> equivale a <code class="highlighter-rouge">a = a / b</code>)</li>
-  <li>exponenciar e atribuir à variável: <code class="highlighter-rouge">**=</code> (<code class="highlighter-rouge">a **= b</code> equivale a <code class="highlighter-rouge">a = a ** b</code>)</li>
-  <li>achar o resto e atribuir à variável: <code class="highlighter-rouge">%=</code> (<code class="highlighter-rouge">a %= b</code> equivale a <code class="highlighter-rouge">a = a % b</code>)</li>
-  <li>achar a divisão inteira e atribuir à variável: <code class="highlighter-rouge">//=</code> (<code class="highlighter-rouge">a //= b</code> equivale a <code class="highlighter-rouge">a = a // b</code>)</li>
+  <li>somar e atribuir à variável: <code class="language-plaintext highlighter-rouge">+=</code> (<code class="language-plaintext highlighter-rouge">a += b</code> equivale a <code class="language-plaintext highlighter-rouge">a = a + b</code>)</li>
+  <li>subtrair e atribuir à variável: <code class="language-plaintext highlighter-rouge">-=</code> (<code class="language-plaintext highlighter-rouge">a -= b</code> equivale a <code class="language-plaintext highlighter-rouge">a = a - b</code>)</li>
+  <li>multiplicar e atribuir à variável: <code class="language-plaintext highlighter-rouge">*=</code> (<code class="language-plaintext highlighter-rouge">a *= b</code> equivale a <code class="language-plaintext highlighter-rouge">a = a * b</code>)</li>
+  <li>dividir e atribuir à variável: <code class="language-plaintext highlighter-rouge">/=</code> (<code class="language-plaintext highlighter-rouge">a /= b</code> equivale a <code class="language-plaintext highlighter-rouge">a = a / b</code>)</li>
+  <li>exponenciar e atribuir à variável: <code class="language-plaintext highlighter-rouge">**=</code> (<code class="language-plaintext highlighter-rouge">a **= b</code> equivale a <code class="language-plaintext highlighter-rouge">a = a ** b</code>)</li>
+  <li>achar o resto e atribuir à variável: <code class="language-plaintext highlighter-rouge">%=</code> (<code class="language-plaintext highlighter-rouge">a %= b</code> equivale a <code class="language-plaintext highlighter-rouge">a = a % b</code>)</li>
+  <li>achar a divisão inteira e atribuir à variável: <code class="language-plaintext highlighter-rouge">//=</code> (<code class="language-plaintext highlighter-rouge">a //= b</code> equivale a <code class="language-plaintext highlighter-rouge">a = a // b</code>)</li>
 </ul>
 
 <h2 id="operadores-lógicos">Operadores lógicos</h2>
 
 <ul>
   <li>
-<code class="highlighter-rouge">and</code>: retorna <code class="highlighter-rouge">True</code> se (e somente se) ambos os operandos são <code class="highlighter-rouge">True</code>, senão retorna <code class="highlighter-rouge">False</code>
+<code class="language-plaintext highlighter-rouge">and</code>: retorna <code class="language-plaintext highlighter-rouge">True</code> se (e somente se) ambos os operandos são <code class="language-plaintext highlighter-rouge">True</code>, senão retorna <code class="language-plaintext highlighter-rouge">False</code>
 </li>
   <li>
-<code class="highlighter-rouge">or</code>: retorna <code class="highlighter-rouge">True</code> se qualquer um dos operandos é <code class="highlighter-rouge">True</code>, senão retorna <code class="highlighter-rouge">False</code>
+<code class="language-plaintext highlighter-rouge">or</code>: retorna <code class="language-plaintext highlighter-rouge">True</code> se qualquer um dos operandos é <code class="language-plaintext highlighter-rouge">True</code>, senão retorna <code class="language-plaintext highlighter-rouge">False</code>
 </li>
   <li>
-<code class="highlighter-rouge">not</code>: usado para reverter o estado lógico de um operando (exemplo: <code class="highlighter-rouge">not(4 &gt; 3 and 5 &gt; 2)</code> retorna <code class="highlighter-rouge">False</code>)</li>
+<code class="language-plaintext highlighter-rouge">not</code>: usado para reverter o estado lógico de um operando (exemplo: <code class="language-plaintext highlighter-rouge">not(4 &gt; 3 and 5 &gt; 2)</code> retorna <code class="language-plaintext highlighter-rouge">False</code>)</li>
 </ul>
 
 <p>Alguns exemplos:</p>
@@ -1278,7 +1278,7 @@
 <span class="n">y</span> <span class="o">=</span> <span class="n">a</span> <span class="o">&gt;</span> <span class="n">b</span> <span class="ow">or</span> <span class="n">a</span> <span class="o">&gt;</span> <span class="mi">0</span>
 <span class="k">print</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
 </code></pre></div></div>
-<p>Esse código imprime <code class="highlighter-rouge">False True</code></p>
+<p>Esse código imprime <code class="language-plaintext highlighter-rouge">False True</code></p>
 
 
 

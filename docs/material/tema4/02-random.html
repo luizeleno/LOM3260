@@ -22,17 +22,17 @@
 
 <!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>Números aleatórios | LOM3260</title>
-<meta name="generator" content="Jekyll v4.0.0" />
+<meta name="generator" content="Jekyll v4.1.0" />
 <meta property="og:title" content="Números aleatórios" />
 <meta name="author" content="Luiz T. F. Eleno" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Computação Científica em Python - uma disciplina do curso de Engenharia Física da Escola de Engenharia de Lorena da Universidade de São Paulo - EEL USP" />
-<meta property="og:description" content="Computação Científica em Python - uma disciplina do curso de Engenharia Física da Escola de Engenharia de Lorena da Universidade de São Paulo - EEL USP" />
+<meta name="description" content="Gerar números aleatórios é uma das tarefas mais importantes da computação científica" />
+<meta property="og:description" content="Gerar números aleatórios é uma das tarefas mais importantes da computação científica" />
 <link rel="canonical" href="https://computeel.org/LOM3260/material/tema4/02-random.html" />
 <meta property="og:url" content="https://computeel.org/LOM3260/material/tema4/02-random.html" />
 <meta property="og:site_name" content="LOM3260" />
 <script type="application/ld+json">
-{"@type":"WebPage","headline":"Números aleatórios","dateModified":"2020-06-07T13:06:30-03:00","url":"https://computeel.org/LOM3260/material/tema4/02-random.html","author":{"@type":"Person","name":"Luiz T. F. Eleno"},"description":"Computação Científica em Python - uma disciplina do curso de Engenharia Física da Escola de Engenharia de Lorena da Universidade de São Paulo - EEL USP","@context":"https://schema.org"}</script>
+{"@type":"WebPage","headline":"Números aleatórios","dateModified":"2020-06-07T13:06:30-03:00","url":"https://computeel.org/LOM3260/material/tema4/02-random.html","author":{"@type":"Person","name":"Luiz T. F. Eleno"},"description":"Gerar números aleatórios é uma das tarefas mais importantes da computação científica","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -1195,18 +1195,18 @@
 
 <h2 id="aleatoriedade-em-computação">Aleatoriedade em computação</h2>
 
-<p>Como exemplo de módulos da família <code class="highlighter-rouge">numpy/scipy</code>, vejamos um que fornece recursos importantíssimos para a computação científica. Gerar dados aleatórios  é fundamental para o teste de hipóteses e modelos e estão na base de modelos físico-estatísticos como o Método de Monte Carlo, usualmente encontrado em disciplinas como <em>Métodos computacionais da Física</em> (aqui na EEL, <a href="https://uspdigital.usp.br/jupiterweb/jupDisciplina?sgldis=LOM3227&amp;verdis=1" target="\_blank">LOM3227</a>) ou outras correlatas. Antigamente (bem antigamente mesmo, antes da era digital!), qualquer livro de Probabilidades e Estatística contava com um apêndice contendo uma tabela de números aleatórios. Podemos apenas imaginar como tais tabelas eram geradas: usando dados e moedas?</p>
+<p>Como exemplo de módulos da família <code class="language-plaintext highlighter-rouge">numpy/scipy</code>, vejamos um que fornece recursos importantíssimos para a computação científica. Gerar dados aleatórios  é fundamental para o teste de hipóteses e modelos e estão na base de modelos físico-estatísticos como o Método de Monte Carlo, usualmente encontrado em disciplinas como <em>Métodos computacionais da Física</em> (aqui na EEL, <a href="https://uspdigital.usp.br/jupiterweb/jupDisciplina?sgldis=LOM3227&amp;verdis=1" target="\_blank">LOM3227</a>) ou outras correlatas. Antigamente (bem antigamente mesmo, antes da era digital!), qualquer livro de Probabilidades e Estatística contava com um apêndice contendo uma tabela de números aleatórios. Podemos apenas imaginar como tais tabelas eram geradas: usando dados e moedas?</p>
 
 <p>Hoje em dia, porém (na verdade, desde a década de 1940!), a computação para a geração de números aleatórios está muito mais avançada e qualquer computador é capaz de gerar séries enormes de dados aleatórios.</p>
 
-<p>A verdade, porém, é mais complexa. Um computador é uma máquina praticamente determinística, e não consegue (ou tem grandes dificuldades) em criar informações que sejam, de fato, aleatórias. Existem, na verdade, geradores de números pseudo-aleatórios, ou seja, que apenas parecem aleatórios. Veremos mais detalhes sobre isso  na disciplina mencionada anteriormente. Por enquanto, vamos nos concentrar apenas em como usar o módulo <code class="highlighter-rouge">numpy.random</code> para gerar sequências de valores <code class="highlighter-rouge">int</code> e <code class="highlighter-rouge">float</code> que são, para todos os efeitos, aleatórias.</p>
+<p>A verdade, porém, é mais complexa. Um computador é uma máquina praticamente determinística, e não consegue (ou tem grandes dificuldades) em criar informações que sejam, de fato, aleatórias. Existem, na verdade, geradores de números pseudo-aleatórios, ou seja, que apenas parecem aleatórios. Veremos mais detalhes sobre isso  na disciplina mencionada anteriormente. Por enquanto, vamos nos concentrar apenas em como usar o módulo <code class="language-plaintext highlighter-rouge">numpy.random</code> para gerar sequências de valores <code class="language-plaintext highlighter-rouge">int</code> e <code class="language-plaintext highlighter-rouge">float</code> que são, para todos os efeitos, aleatórias.</p>
 
-<h2 id="o-módulo-numpyrandom">O módulo <code class="highlighter-rouge">numpy.random</code>
+<h2 id="o-módulo-numpyrandom">O módulo <code class="language-plaintext highlighter-rouge">numpy.random</code>
 </h2>
 
 <p>Em inglês <em>random</em> significa <em>aleatório</em>.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import numpy.random as rd
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import numpy.random as rd
 </code></pre></div></div>
 
 

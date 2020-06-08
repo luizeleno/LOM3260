@@ -1,4 +1,4 @@
-I"<p>A maioria dos anos tem 365 dias. No entanto, o tempo necessário para a Terra orbitar o Sol é na verdade um pouco maior que isso. Para corrigir essa diferença, um dia extra, 29 de fevereiro, está incluído em alguns anos, ditos bissextos. As regras para determinar se um ano é ou não um ano bissexto são as seguintes:</p>
+I"�<p>A maioria dos anos tem 365 dias. No entanto, o tempo necessário para a Terra orbitar o Sol é na verdade um pouco maior que isso. Para corrigir essa diferença, um dia extra, 29 de fevereiro, está incluído em alguns anos, ditos bissextos. As regras para determinar se um ano é ou não um ano bissexto são as seguintes:</p>
 
 <table>
   <tbody>
@@ -45,7 +45,7 @@
 <span class="k">else</span><span class="p">:</span>
     <span class="n">res</span> <span class="o">=</span> <span class="s">'não é'</span>
 
-<span class="n">s</span> <span class="o">=</span> <span class="n">f</span><span class="s">'{ano} {res} bissexto'</span> <span class="c1"># mensagem formatada
+<span class="n">s</span> <span class="o">=</span> <span class="s">f'</span><span class="si">{</span><span class="n">ano</span><span class="si">}</span><span class="s"> </span><span class="si">{</span><span class="n">res</span><span class="si">}</span><span class="s"> bissexto'</span> <span class="c1"># mensagem formatada
 </span><span class="k">print</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
 </code></pre></div></div>
 

@@ -1,2 +1,0 @@
-I"N<p>(MIT) Escreva um programa que conte o número de vogais numa <em>string</em> <code class="highlighter-rouge">s</code> composta unicamente de letras minúsculas. Por exemplo, se <code class="highlighter-rouge">s = 'azcbobobegghakl'</code>, seu programa deve imprimir <code class="highlighter-rouge">Número de vogais: 5</code>.</p>
-:ET

@@ -22,17 +22,17 @@
 
 <!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>Dicionários | LOM3260</title>
-<meta name="generator" content="Jekyll v4.0.0" />
+<meta name="generator" content="Jekyll v4.1.0" />
 <meta property="og:title" content="Dicionários" />
 <meta name="author" content="Luiz T. F. Eleno" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Computação Científica em Python - uma disciplina do curso de Engenharia Física da Escola de Engenharia de Lorena da Universidade de São Paulo - EEL USP" />
-<meta property="og:description" content="Computação Científica em Python - uma disciplina do curso de Engenharia Física da Escola de Engenharia de Lorena da Universidade de São Paulo - EEL USP" />
+<meta name="description" content="Uma poderosa ferramenta para turbinar seu código" />
+<meta property="og:description" content="Uma poderosa ferramenta para turbinar seu código" />
 <link rel="canonical" href="https://computeel.org/LOM3260/material/tema2/07-dicionarios.html" />
 <meta property="og:url" content="https://computeel.org/LOM3260/material/tema2/07-dicionarios.html" />
 <meta property="og:site_name" content="LOM3260" />
 <script type="application/ld+json">
-{"@type":"WebPage","headline":"Dicionários","dateModified":"2020-06-07T13:06:30-03:00","url":"https://computeel.org/LOM3260/material/tema2/07-dicionarios.html","author":{"@type":"Person","name":"Luiz T. F. Eleno"},"description":"Computação Científica em Python - uma disciplina do curso de Engenharia Física da Escola de Engenharia de Lorena da Universidade de São Paulo - EEL USP","@context":"https://schema.org"}</script>
+{"@type":"WebPage","headline":"Dicionários","dateModified":"2020-06-07T13:06:30-03:00","url":"https://computeel.org/LOM3260/material/tema2/07-dicionarios.html","author":{"@type":"Person","name":"Luiz T. F. Eleno"},"description":"Uma poderosa ferramenta para turbinar seu código","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -1198,10 +1198,10 @@
 <p>Vejemos um exemplo. Vamos criar um dicionário:</p>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">meu_dicio</span> <span class="o">=</span> <span class="p">{</span><span class="s">'o'</span><span class="p">:</span> <span class="s">'the'</span><span class="p">,</span> <span class="s">'livro'</span><span class="p">:</span> <span class="s">'book'</span><span class="p">,</span> <span class="s">'está'</span><span class="p">:</span> <span class="s">'is'</span><span class="p">,</span> <span class="s">'sobre'</span><span class="p">:</span> <span class="s">'on'</span><span class="p">,</span> <span class="s">'a'</span><span class="p">:</span> <span class="s">'the'</span><span class="p">,</span> <span class="s">'mesa'</span><span class="p">:</span> <span class="s">'table'</span><span class="p">}</span>
 </code></pre></div></div>
-<p>A variável <code class="highlighter-rouge">meu_dicio</code> contém o dicionário. Os valores antes dos dois-pontos (<code class="highlighter-rouge">:</code>) são  as <strong>chaves</strong> (<em>keys</em>) e os demais valores são os <strong>itens</strong> (<em>items</em>) indexados pelas chaves. Por exemplo,</p>
+<p>A variável <code class="language-plaintext highlighter-rouge">meu_dicio</code> contém o dicionário. Os valores antes dos dois-pontos (<code class="language-plaintext highlighter-rouge">:</code>) são  as <strong>chaves</strong> (<em>keys</em>) e os demais valores são os <strong>itens</strong> (<em>items</em>) indexados pelas chaves. Por exemplo,</p>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">meu_dicio</span><span class="p">[</span><span class="s">'o'</span><span class="p">]</span>
 </code></pre></div></div>
-<p>retorna <code class="highlighter-rouge">the</code>.</p>
+<p>retorna <code class="language-plaintext highlighter-rouge">the</code>.</p>
 
 <p>Os dois comandos a seguir usam um recurso chamado <em>list comprehension</em>, que vimos na lição anterior:</p>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">print</span><span class="p">([</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">meu_dicio</span><span class="p">])</span>
@@ -1213,17 +1213,17 @@
 
 <p>O comando</p>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">palavra</span><span class="o">=</span><span class="s">'mesa'</span>
-<span class="k">print</span><span class="p">(</span><span class="n">f</span><span class="s">'{palavra} em inglês é {meu_dicio[palavra]}'</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">f'</span><span class="si">{</span><span class="n">palavra</span><span class="si">}</span><span class="s"> em inglês é </span><span class="si">{</span><span class="n">meu_dicio</span><span class="p">[</span><span class="n">palavra</span><span class="p">]</span><span class="si">}</span><span class="s">'</span><span class="p">)</span>
 </code></pre></div></div>
-<p>retorna <code class="highlighter-rouge">mesa em inglês é table</code></p>
+<p>retorna <code class="language-plaintext highlighter-rouge">mesa em inglês é table</code></p>
 
 <p>Mais um exemplo:</p>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">palavra_pt</span> <span class="o">=</span> <span class="s">'caderno'</span>
 <span class="k">if</span> <span class="n">palavra_pt</span> <span class="ow">in</span> <span class="n">meu_dicio</span><span class="p">:</span>
     <span class="c1"># o operador in opera recursivamente por todas as chaves em meu_dicio
-</span>    <span class="k">print</span><span class="p">(</span><span class="n">f</span><span class="s">'Eu sei traduzir {palavra_pt} pro inglês: {meu_dicio[palavra_pt]}'</span> <span class="p">)</span>
+</span>    <span class="k">print</span><span class="p">(</span><span class="s">f'Eu sei traduzir </span><span class="si">{</span><span class="n">palavra_pt</span><span class="si">}</span><span class="s"> pro inglês: </span><span class="si">{</span><span class="n">meu_dicio</span><span class="p">[</span><span class="n">palavra_pt</span><span class="p">]</span><span class="si">}</span><span class="s">'</span> <span class="p">)</span>
 <span class="k">else</span><span class="p">:</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">f</span><span class="s">'Não faço ideia de como é </span><span class="se">\'</span><span class="s">{palavra_pt}</span><span class="se">\'</span><span class="s"> em inglês'</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">f'Não faço ideia de como é </span><span class="se">\'</span><span class="si">{</span><span class="n">palavra_pt</span><span class="si">}</span><span class="se">\'</span><span class="s"> em inglês'</span><span class="p">)</span>
 </code></pre></div></div>
 <p>Qual é a saída desse código?</p>
 
@@ -1236,7 +1236,7 @@
 <span class="k">print</span><span class="p">(</span><span class="n">dicio</span><span class="p">[</span><span class="mf">3.141593</span><span class="p">])</span>
 <span class="k">print</span><span class="p">(</span><span class="n">dicio</span><span class="p">[</span><span class="s">'e'</span><span class="p">])</span>
 </code></pre></div></div>
-<p>O que esses comandos <code class="highlighter-rouge">print</code> imprimem?</p>
+<p>O que esses comandos <code class="language-plaintext highlighter-rouge">print</code> imprimem?</p>
 
 <h2 id="acrescentar-e-alterar-valores">Acrescentar e alterar valores</h2>
 
@@ -1250,14 +1250,14 @@
 </span><span class="n">dicio</span><span class="p">[</span><span class="s">'animal'</span><span class="p">]</span> <span class="o">=</span> <span class="s">'gato'</span> 
 
 <span class="c1"># Remover um valor
-</span><span class="n">dicio</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="s">'cor'</span><span class="p">)</span>
+</span><span class="n">dicio</span><span class="p">.</span><span class="n">pop</span><span class="p">(</span><span class="s">'cor'</span><span class="p">)</span>
 </code></pre></div></div>
 
 <h2 id="observação">Observação</h2>
 
-<p>Também é possível pesquisar no sentido contrário, apesar de ser um pouco mais complicado (não será usado nesse curso). Para isso, não podem haver chaves repetidas, mas itens repetidos são permitidos (por exemplo, ‘the’ no dicionário <code class="highlighter-rouge">meu_dicio</code>). Um exemplo:</p>
+<p>Também é possível pesquisar no sentido contrário, apesar de ser um pouco mais complicado (não será usado nesse curso). Para isso, não podem haver chaves repetidas, mas itens repetidos são permitidos (por exemplo, ‘the’ no dicionário <code class="language-plaintext highlighter-rouge">meu_dicio</code>). Um exemplo:</p>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">palavra_en</span> <span class="o">=</span> <span class="s">'the'</span>
-<span class="p">[</span><span class="n">chave</span> <span class="k">for</span> <span class="n">chave</span><span class="p">,</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">meu_dicio</span><span class="o">.</span><span class="n">items</span><span class="p">()</span> <span class="k">if</span> <span class="n">item</span> <span class="ow">is</span> <span class="n">palavra_en</span><span class="p">]</span>
+<span class="p">[</span><span class="n">chave</span> <span class="k">for</span> <span class="n">chave</span><span class="p">,</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">meu_dicio</span><span class="p">.</span><span class="n">items</span><span class="p">()</span> <span class="k">if</span> <span class="n">item</span> <span class="ow">is</span> <span class="n">palavra_en</span><span class="p">]</span>
 </code></pre></div></div>
 
 

@@ -1,7 +1,7 @@
-I"�<p>Calcule uma aproximação para $\cos x$ através da série</p>
+I"�<p>Calcule uma aproximação para $\cos x$ através da série</p>
 
-<script type="math/tex; mode=display">\small
-\cos x = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \frac{x^6}{6!} + \ldots</script>
+\[\small
+\cos x = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \frac{x^6}{6!} + \ldots\]
 
 <p>até que o módulo do último termo seja menor que $10^{-6}$. O usuário deve fornecer o valor de $x$. Não use a função fatorial, pois isso é desperdício de tempo de processamento, já que boa parte das operações para o cálculo de um termo da série já foi feita para o termo anterior!</p>
 
@@ -26,7 +26,7 @@
             - 'graus': x em graus
   '''</span>
 
-  <span class="n">x0</span> <span class="o">=</span> <span class="n">x</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span> <span class="o">/</span> <span class="mi">180</span> <span class="k">if</span> <span class="n">unid</span> <span class="o">==</span> <span class="s">'graus'</span> <span class="k">else</span> <span class="n">x</span>
+  <span class="n">x0</span> <span class="o">=</span> <span class="n">x</span> <span class="o">*</span> <span class="n">np</span><span class="p">.</span><span class="n">pi</span> <span class="o">/</span> <span class="mi">180</span> <span class="k">if</span> <span class="n">unid</span> <span class="o">==</span> <span class="s">'graus'</span> <span class="k">else</span> <span class="n">x</span>
 
   <span class="n">termo</span><span class="p">,</span> <span class="n">soma</span> <span class="o">=</span> <span class="mf">1.</span><span class="p">,</span> <span class="mf">1.</span>
   <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span>
@@ -40,7 +40,7 @@
 
 <span class="c1"># usando a função
 </span><span class="n">x</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">'x='</span><span class="p">))</span>
-<span class="k">print</span><span class="p">(</span><span class="n">f</span><span class="s">'cos({x}) = {cos_serie(x)}'</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">f'cos(</span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s">) = </span><span class="si">{</span><span class="n">cos_serie</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="si">}</span><span class="s">'</span><span class="p">)</span>
 
 </code></pre></div></div>
 :ET

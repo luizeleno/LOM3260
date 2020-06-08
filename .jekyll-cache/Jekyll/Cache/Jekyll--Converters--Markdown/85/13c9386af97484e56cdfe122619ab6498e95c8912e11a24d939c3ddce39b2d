@@ -1,4 +1,4 @@
-I"4<p class="lead">Definir suas próprias funções – novas ferramentas! – torna seu código mais robusto e fácil de entender.</p>
+I"c7<p class="lead">Definir suas próprias funções – novas ferramentas! – torna seu código mais robusto e fácil de entender.</p>
 
 <p>Aprender a criar e usar funções personalizadas é o passo mais importante para sair do nível novato e alcançar o patamar avançado. A maior parte dos usuários de python não chega a esse nível, a não ser que já tenha trabalhado com, e conheça um pouco mais a fundo, alguma outra linguagem de programação.</p>
 
@@ -8,16 +8,16 @@
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">r</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">'Digite r em centímetros:'</span><span class="p">))</span>
 <span class="n">pi</span> <span class="o">=</span> <span class="mf">3.14159</span>  <span class="c1"># uma aproximação para pi
 </span><span class="n">A</span> <span class="o">=</span> <span class="n">pi</span> <span class="o">*</span> <span class="n">r</span> <span class="o">*</span> <span class="n">r</span>
-<span class="k">print</span><span class="p">(</span><span class="n">f</span><span class="s">'A área do círculo de raio {r} cm é A = {A} cm²'</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">f'A área do círculo de raio </span><span class="si">{</span><span class="n">r</span><span class="si">}</span><span class="s"> cm é A = </span><span class="si">{</span><span class="n">A</span><span class="si">}</span><span class="s"> cm²'</span><span class="p">)</span>
 </code></pre></div></div>
 
-<p>Mas poderíamos também criar uma <em>função</em> e usá-la no código, para deixá-lo mais <em>modular</em>. Uma função é criada usando o comando <code class="highlighter-rouge">def</code> como no exemplo abaixo:</p>
+<p>Mas poderíamos também criar uma <em>função</em> e usá-la no código, para deixá-lo mais <em>modular</em>. Uma função é criada usando o comando <code class="language-plaintext highlighter-rouge">def</code> como no exemplo abaixo:</p>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">area_circulo</span><span class="p">(</span><span class="n">raio</span><span class="p">):</span>
   <span class="n">pi</span> <span class="o">=</span> <span class="mf">3.14159</span>
   <span class="n">area</span> <span class="o">=</span> <span class="n">pi</span> <span class="o">*</span> <span class="n">raio</span> <span class="o">*</span> <span class="n">raio</span>
   <span class="k">return</span> <span class="n">area</span>
 </code></pre></div></div>
-<p>Veja que o nome da função (que você escolhe!), nesse caso, é <code class="highlighter-rouge">area_circulo</code>. A função pede um <strong>argumento</strong>, nesse caso, <code class="highlighter-rouge">raio</code> (um nome que também é de sua escolha). Dentro da função, as variáveis <code class="highlighter-rouge">pi</code> e <code class="highlighter-rouge">area</code> são definidas. Por fim, o valor da variável <code class="highlighter-rouge">area</code> é <strong>retornado</strong> ao usuário (usando <code class="highlighter-rouge">return</code>).</p>
+<p>Veja que o nome da função (que você escolhe!), nesse caso, é <code class="language-plaintext highlighter-rouge">area_circulo</code>. A função pede um <strong>argumento</strong>, nesse caso, <code class="language-plaintext highlighter-rouge">raio</code> (um nome que também é de sua escolha). Dentro da função, as variáveis <code class="language-plaintext highlighter-rouge">pi</code> e <code class="language-plaintext highlighter-rouge">area</code> são definidas. Por fim, o valor da variável <code class="language-plaintext highlighter-rouge">area</code> é <strong>retornado</strong> ao usuário (usando <code class="language-plaintext highlighter-rouge">return</code>).</p>
 
 <p>Vejamos um exemplo da utilização dessa função:</p>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">area_circulo</span><span class="p">(</span><span class="n">raio</span><span class="p">):</span>
@@ -28,14 +28,14 @@
 <span class="n">r</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">'Digite r em centímetros:'</span><span class="p">))</span>
 <span class="n">pi</span> <span class="o">=</span> <span class="mf">3.14159</span>  <span class="c1"># uma aproximação para pi
 </span><span class="n">A</span> <span class="o">=</span> <span class="n">area_circulo</span><span class="p">(</span><span class="n">r</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="n">f</span><span class="s">'A área do círculo de raio {r} cm é A = {A} cm²'</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">f'A área do círculo de raio </span><span class="si">{</span><span class="n">r</span><span class="si">}</span><span class="s"> cm é A = </span><span class="si">{</span><span class="n">A</span><span class="si">}</span><span class="s"> cm²'</span><span class="p">)</span>
 </code></pre></div></div>
 
 <p class="alert alert-primary">:bangbang: O que eu percebo, da minha experiência ensinando programação, é que muitos iniciantes empacam nesse ponto, por isso, preste atenção, pois não é difícil (depois que você entendeu :confounded:):</p>
 <ul>
-  <li>No início do código acima, está  a <strong>definição da função.</strong> O python encontra o comando <code class="highlighter-rouge">def</code> e guarda no nome <code class="highlighter-rouge">area_circulo</code> as <strong>instruções</strong> contidas nas linhas seguintes (ou seja, nas linhas “dentro” do <code class="highlighter-rouge">def</code>). Mas ele não as executa! Você apenas ensinou ao python uma nova <strong>ferramenta:</strong> uma <strong>função</strong>, chamada <code class="highlighter-rouge">area_circulo</code></li>
-  <li>O python também sabe que a nova função depende de um argumento, que você decidiu chamar, <em>para fins da definição da função</em>, de <code class="highlighter-rouge">raio</code>.</li>
-  <li>Depois da definição da função, ela estará disponível ao programa, e você pode <strong>chamar</strong> a função fornecendo-lhe o argumento que você quiser! Foi o que fizemos ao usar a função com o argumento <code class="highlighter-rouge">r</code> na linha <code class="highlighter-rouge">A = area_circulo(r)</code>.</li>
+  <li>No início do código acima, está  a <strong>definição da função.</strong> O python encontra o comando <code class="language-plaintext highlighter-rouge">def</code> e guarda no nome <code class="language-plaintext highlighter-rouge">area_circulo</code> as <strong>instruções</strong> contidas nas linhas seguintes (ou seja, nas linhas “dentro” do <code class="language-plaintext highlighter-rouge">def</code>). Mas ele não as executa! Você apenas ensinou ao python uma nova <strong>ferramenta:</strong> uma <strong>função</strong>, chamada <code class="language-plaintext highlighter-rouge">area_circulo</code></li>
+  <li>O python também sabe que a nova função depende de um argumento, que você decidiu chamar, <em>para fins da definição da função</em>, de <code class="language-plaintext highlighter-rouge">raio</code>.</li>
+  <li>Depois da definição da função, ela estará disponível ao programa, e você pode <strong>chamar</strong> a função fornecendo-lhe o argumento que você quiser! Foi o que fizemos ao usar a função com o argumento <code class="language-plaintext highlighter-rouge">r</code> na linha <code class="language-plaintext highlighter-rouge">A = area_circulo(r)</code>.</li>
 </ul>
 
 <h2 id="funções-de-vários-argumentos">Funções de vários argumentos</h2>
@@ -90,7 +90,7 @@
 <span class="n">A2</span><span class="p">,</span> <span class="n">P2</span> <span class="o">=</span> <span class="n">AP_retangulo</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
 </code></pre></div></div>
 
-<h2 id="sobre-o-comando-return">Sobre o comando <code class="highlighter-rouge">return</code></h2>
+<h2 id="sobre-o-comando-return">Sobre o comando <code class="language-plaintext highlighter-rouge">return</code></h2>
 
 <p>Veja que o return pode também retornar expressões <em>“on the fly”</em> (de passagem):</p>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">quadrado</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
@@ -99,7 +99,7 @@
 <p>Ou seja, não é imprescindível retornar um valor previamente atribuído a uma variável.
 Você poderia usá-la (assim como as funções anteriores!), por exemplo, assim:</p>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">c</span> <span class="o">=</span> <span class="mf">2.5</span>
-<span class="k">print</span><span class="p">(</span><span class="n">f</span><span class="s">'{c}² = {quadrado(c)}'</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">f'</span><span class="si">{</span><span class="n">c</span><span class="si">}</span><span class="s">² = </span><span class="si">{</span><span class="n">quadrado</span><span class="p">(</span><span class="n">c</span><span class="p">)</span><span class="si">}</span><span class="s">'</span><span class="p">)</span>
 </code></pre></div></div>
 
 :ET
