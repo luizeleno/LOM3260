@@ -5,7 +5,7 @@ id: biblio
 permalink: /biblio/
 tags: [livros, sites, bibliografia]
 icon: books
-timestamp: 07/06/20
+timestamp: 08/06/20
 ---
 
 Quase todos os recursos abaixo estão disponíveis *online* ou fisicamente pelo serviço de biblioteca da USP

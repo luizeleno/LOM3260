@@ -20,19 +20,9 @@ Uma disciplina do curso de Engenharia Física da Escola de Engenharia de Lorena 
 ### Departamento de Engenharia de Materiais da EEL::USP ([DEMAR])
 {: .no_toc }
 
-- Bem-vindo! O site foi criado como uma ferramenta de ajuda específica para os alunos da [EEL]. Mas todos são bem-vindos para utilizar, curtir e compartilhar o material apresentado aqui. 
-- Espero ser de alguma ajuda aos iniciantes em programação e em python, e também aos usuários mais avançados, que podem se aproveitar do enfoque mais computacional e científico do material. 
+- Bem-vindo! O site foi criado como uma ferramenta de ajuda específica para os alunos da [EEL]. Mas todos são bem-vindos para utilizar, curtir e compartilhar o material apresentado aqui.
+- Espero ser de alguma ajuda aos iniciantes em programação e em python, e também aos usuários mais avançados, que podem se aproveitar do enfoque mais computacional e científico do material.
 - <span class='badge badge-pill badge-warning'>Atenção!</span> *O site ainda está em desenvolvimento!* Mas muito material já pode ser utilizado. Confira a página de [instruções]({{site.baseurl}}/instrucoes/) para mais informações.
-
----
-layout: home
-title: Início
-nav_order: -2
-permalink: /
-id: home
-icon: house_with_garden
-timestamp: 07/06/20
----
 
 ***Última atualização: {{site.time | date: "%d/%m/%Y %T"}}***
 {: .small }
@@ -45,4 +35,3 @@ timestamp: 07/06/20
 
 [DEMAR]: http://www.demar.eel.usp.br/
 {: target="\_blank"}
-
