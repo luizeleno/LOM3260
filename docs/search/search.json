@@ -32,7 +32,7 @@
 <meta property="og:url" content="https://computeel.org/LOM3260/search/search.json" />
 <meta property="og:site_name" content="LOM3260" />
 <script type="application/ld+json">
-{"@type":"WebPage","headline":"LOM3260","dateModified":"2020-04-29T21:15:30-03:00","url":"https://computeel.org/LOM3260/search/search.json","author":{"@type":"Person","name":"Luiz T. F. Eleno"},"description":"Computação Científica em Python - uma disciplina do curso de Engenharia Física da Escola de Engenharia de Lorena da Universidade de São Paulo - EEL USP","@context":"https://schema.org"}</script>
+{"@type":"WebPage","url":"https://computeel.org/LOM3260/search/search.json","author":{"@type":"Person","name":"Luiz T. F. Eleno"},"description":"Computação Científica em Python - uma disciplina do curso de Engenharia Física da Escola de Engenharia de Lorena da Universidade de São Paulo - EEL USP","headline":"LOM3260","dateModified":"2020-04-29T21:15:30-03:00","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -515,8 +515,6 @@
     
     
   
-  
-  
 </div>
 
     </ul>
@@ -997,8 +995,6 @@
     
     
   
-  
-  
 </div>
 
         </div>
@@ -1380,14 +1376,6 @@
       "url"      : "/LOM3260/biblio/",
       "category" : "",
       "tags"     : "livros, sites, bibliografia",
-      "date"     : ""
-    } ,
-  
-    {
-      "title"    : "Classes",
-      "url"      : "/LOM3260/classes/",
-      "category" : "",
-      "tags"     : "",
       "date"     : ""
     } ,
   
