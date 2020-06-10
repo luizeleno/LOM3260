@@ -1,9 +1,4 @@
----
-permalink: /classes/
-layout:
----
-
-<html>
+I"­<html>
 <body>
 <script type="text/javascript">
     // Javascript URL redirection
@@ -11,3 +6,4 @@ layout:
 </script>
 </body>
 </html>
+:ET
