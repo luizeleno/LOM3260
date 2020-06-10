@@ -1,5 +1,5 @@
 ---
-  permalink: /classes/
+permalink: /classes/
 ---
 
 <!DOCTYPE html>
