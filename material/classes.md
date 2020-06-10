@@ -1,5 +1,6 @@
 ---
 permalink: /classes/
+layout:
 ---
 
 <!DOCTYPE html>
