@@ -63,6 +63,15 @@
     
       
         
+        <a href="/LOM3260/classes/" class=" list-group-item list-group-item-action list-group-item-primary px-2"> </a>
+      
+    
+    
+  
+  
+    
+      
+        
         <a href="/LOM3260/" class=" list-group-item list-group-item-action list-group-item-primary px-2">:house_with_garden: Início</a>
       
     
@@ -538,6 +547,15 @@
         <div class="sticky-top">
             <div class="accordion" id="side">
   
+  
+  
+    
+      
+        
+        <a href="/LOM3260/classes/" class=" list-group-item list-group-item-action list-group-item-primary px-2"> </a>
+      
+    
+    
   
   
     
@@ -1376,6 +1394,14 @@
       "url"      : "/LOM3260/biblio/",
       "category" : "",
       "tags"     : "livros, sites, bibliografia",
+      "date"     : ""
+    } ,
+  
+    {
+      "title"    : "",
+      "url"      : "/LOM3260/classes/",
+      "category" : "",
+      "tags"     : "",
       "date"     : ""
     } ,
   
