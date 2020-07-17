@@ -1,0 +1,20 @@
+I"�<p>(MIT) Escreva um código para contar o número de vezes que a sequência <code class="language-plaintext highlighter-rouge">'bob'</code> aparece numa <em>string</em> <code class="language-plaintext highlighter-rouge">s</code> composta unicamente de letras minúsculas. Por exemplo, se <code class="language-plaintext highlighter-rouge">s = 'azcbobobegghakl'</code>, seu programa deve imprimir <code class="language-plaintext highlighter-rouge">Número de ocorrências de bob: 2</code>.</p>
+
+<!-- more -->
+
+<h3 id="solução">Solução:</h3>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">s</span><span class="o">=</span><span class="s">'bobazcbobobobobegbobghakl'</span>
+<span class="n">ns</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+
+<span class="n">v</span> <span class="o">=</span> <span class="s">'bob'</span>
+<span class="n">nv</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
+
+<span class="n">n</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">ns</span><span class="o">-</span><span class="n">nv</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+  <span class="k">if</span> <span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="p">:</span><span class="n">i</span><span class="o">+</span><span class="n">nv</span><span class="p">]</span> <span class="o">==</span> <span class="n">v</span><span class="p">:</span>
+    <span class="n">n</span> <span class="o">+=</span> <span class="mi">1</span>
+
+<span class="k">print</span><span class="p">(</span><span class="s">f'Número de ocorrências de </span><span class="si">{</span><span class="n">v</span><span class="si">}</span><span class="s">: </span><span class="si">{</span><span class="n">n</span><span class="si">}</span><span class="s">'</span><span class="p">)</span>
+</code></pre></div></div>
+
+:ET

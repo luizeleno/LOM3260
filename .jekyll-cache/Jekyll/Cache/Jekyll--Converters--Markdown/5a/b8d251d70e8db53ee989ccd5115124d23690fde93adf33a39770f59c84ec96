@@ -1,0 +1,63 @@
+I"T<p>Uma linha de melhor ajuste é uma linha reta que melhor se aproxima de uma coleção de $n$ pontos de dados. Neste exercício, vamos supor que cada ponto na coleção tem uma coordenada $(x_i,\,y_i)$, com $1\le i \le n$. A linha de melhor ajuste é representada pela equação $y = m x + b$, onde $m$ e $b$ são calculados usando as seguintes fórmulas:</p>
+
+\[m = \frac{ n \sum x_i y_i - \left( \sum x_i \right) \left( \sum y_i \right) }{n \sum x_i^2 - \left( \sum x_i \right)^2}\]
+
+\[b = \overline{y} - m \overline{x}\]
+
+<p>onde os símbolos $\overline{x}$ e $\overline{y}$ são os valores médios de $x$ e $y$, respectivamente. Escreva um programa para ler os pontos contidos num arquivo-texto fornecido pelo usuário (use a função <code class="language-plaintext highlighter-rouge">genfromtxt()</code> do módulo <code class="language-plaintext highlighter-rouge">numpy</code>). Então calcule e exiba a linha de melhor ajuste.
+Por exemplo, se o usuário fornece as coordenadas $(1,\,1)$, $(2,\,2.1)$ e $(3,\,2.9)$, o seu
+o programa deve exibir <code class="language-plaintext highlighter-rouge">y = 0.95 x + 0.1</code>. Faça também um gráfico com os pontos e a linha de melhor ajuste usando as funções <code class="language-plaintext highlighter-rouge">scatter()</code> e <code class="language-plaintext highlighter-rouge">plot()</code> do módulo <code class="language-plaintext highlighter-rouge">matplotlib.pyplot</code>.</p>
+
+<!-- more -->
+
+<h2 id="solução">Solução</h2>
+
+<p>A solução abaixo faz uso de muitas propriedades de arrays.</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+<span class="kn">import</span> <span class="nn">numpy.random</span> <span class="k">as</span> <span class="n">rd</span>
+
+<span class="c1"># Leitura dos dados
+</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">genfromtxt</span><span class="p">(</span><span class="s">'dados-teste.txt'</span><span class="p">,</span> <span class="n">unpack</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+
+<span class="c1"># Cálculo da reta de melhor ajuste
+</span><span class="n">n</span> <span class="o">=</span> <span class="n">x</span><span class="p">.</span><span class="n">size</span>
+<span class="n">sx</span> <span class="o">=</span> <span class="n">x</span><span class="p">.</span><span class="nb">sum</span><span class="p">()</span>
+<span class="n">sy</span> <span class="o">=</span> <span class="n">y</span><span class="p">.</span><span class="nb">sum</span><span class="p">()</span>
+
+<span class="n">sxx</span> <span class="o">=</span> <span class="n">sx</span><span class="o">**</span><span class="mi">2</span>
+<span class="n">sx2</span> <span class="o">=</span> <span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="p">).</span><span class="nb">sum</span><span class="p">()</span>
+<span class="n">sxy</span> <span class="o">=</span> <span class="p">(</span><span class="n">x</span><span class="o">*</span><span class="n">y</span><span class="p">).</span><span class="nb">sum</span><span class="p">()</span>
+
+<span class="n">m</span> <span class="o">=</span> <span class="p">(</span><span class="n">n</span> <span class="o">*</span> <span class="n">sxy</span> <span class="o">-</span> <span class="n">sx</span> <span class="o">*</span> <span class="n">sy</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="n">n</span> <span class="o">*</span> <span class="n">sx2</span> <span class="o">-</span> <span class="n">sxx</span><span class="p">)</span>
+
+<span class="n">xm</span> <span class="o">=</span> <span class="n">x</span><span class="p">.</span><span class="n">mean</span><span class="p">()</span>
+<span class="n">ym</span> <span class="o">=</span> <span class="n">y</span><span class="p">.</span><span class="n">mean</span><span class="p">()</span>
+
+<span class="n">b</span> <span class="o">=</span> <span class="n">ym</span> <span class="o">-</span> <span class="n">m</span> <span class="o">*</span> <span class="n">xm</span>
+
+<span class="c1"># criando a reta de ajuste
+</span><span class="n">xajuste</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">linspace</span><span class="p">(</span><span class="n">x</span><span class="p">.</span><span class="nb">min</span><span class="p">(),</span> <span class="n">x</span><span class="p">.</span><span class="nb">max</span><span class="p">(),</span> <span class="mi">2</span><span class="p">)</span>  <span class="c1"># é uma reta, não precisa de muitos pontos!
+</span><span class="n">yajuste</span> <span class="o">=</span> <span class="n">m</span> <span class="o">*</span> <span class="n">xajuste</span> <span class="o">+</span> <span class="n">b</span>
+
+<span class="c1"># criação do gráfico
+</span><span class="n">plt</span><span class="p">.</span><span class="n">figure</span><span class="p">()</span>
+
+<span class="n">plt</span><span class="p">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s">'$x$'</span><span class="p">)</span>
+<span class="n">plt</span><span class="p">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s">'$y$'</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="p">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="s">'o'</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s">'experimental'</span><span class="p">)</span>
+<span class="n">plt</span><span class="p">.</span><span class="n">plot</span><span class="p">(</span><span class="n">xajuste</span><span class="p">,</span> <span class="n">yajuste</span><span class="p">,</span> <span class="s">'-'</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s">'ajuste linear'</span><span class="p">)</span>
+
+<span class="n">eq</span> <span class="o">=</span> <span class="s">f'$y(x) = </span><span class="si">{</span><span class="n">m</span><span class="p">:.</span><span class="mi">5</span><span class="n">f</span><span class="si">}</span><span class="s"> x </span><span class="si">{</span><span class="n">b</span><span class="p">:</span><span class="o">+</span><span class="p">.</span><span class="mi">5</span><span class="n">f</span><span class="si">}</span><span class="s">$'</span>  <span class="c1"># formatando números com 5 casas decimais
+</span><span class="n">plt</span><span class="p">.</span><span class="n">text</span><span class="p">(</span><span class="mf">2.5</span><span class="p">,</span> <span class="mf">3.5</span><span class="p">,</span> <span class="n">eq</span><span class="p">)</span>  <span class="c1"># colocando a equação no gráfico!
+</span>
+<span class="n">plt</span><span class="p">.</span><span class="n">legend</span><span class="p">()</span>
+
+<span class="c1"># salvando a figura como arquivo
+</span><span class="n">plt</span><span class="p">.</span><span class="n">savefig</span><span class="p">(</span><span class="s">'ajuste.png'</span><span class="p">,</span> <span class="n">bbox_inches</span><span class="o">=</span><span class="s">'tight'</span><span class="p">)</span>
+
+</code></pre></div></div>
+<p>plt.show()</p>
+
+:ET

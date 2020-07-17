@@ -14,6 +14,8 @@ $$
 
 até que o módulo do último termo seja menor que $10^{-6}$. O usuário deve fornecer o valor de $x$. Não use a função fatorial, pois isso é desperdício de tempo de processamento, já que boa parte das operações para o cálculo de um termo da série já foi feita para o termo anterior!
 
+<!-- more -->
+
 ### Solução
 
 Vou criar uma função que pede como argumentos o valor de $x$ e, opcionalmente, a precisão do último termo (padrão: $10^{-6}$). Além disso, confere as unidades de $x$ --graus ou radianos--, considerando radianos por padrão.
@@ -53,3 +55,5 @@ x = float(input('x='))
 print(f'cos({x}) = {cos_serie(x)}')
 
 ```
+
+

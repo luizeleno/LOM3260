@@ -14,6 +14,8 @@ $$
 
 Novamente, não use uma função fatorial, é uma perda de tempo e de recursos computacionais!
 
+<!-- more -->
+
 ### Solução
 
 ```python
@@ -31,3 +33,5 @@ for n in range(1, 16): # sequencia de 15 valores de 1 a 15
     print(n, soma)
     sinal = -sinal # alternando o sinal do termo
 ```
+
+

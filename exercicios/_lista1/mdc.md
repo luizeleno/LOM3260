@@ -13,6 +13,8 @@ O máximo divisor comum (MDC) de dois inteiros positivos, $n$ e $m$, é o maior 
 
 Ao final do algoritmo, $d$ sera o MDC de $n$ e $m$. Escreva um programa que leia dois inteiros positivos do usuário e use esse algoritmo para determinar e relatar seu máximo divisor comum.
 
+<!-- more -->
+
 ### Solução:
 
 ```python
@@ -34,11 +36,11 @@ while m % d or n % d :
 
 '''
 comentário:
-veja que 
+veja que
 while m % d or n % d:
 é o mesmo que
 while m % d != 0 or n % d != 0:
-pois qualquer valor positivo significa True, 
+pois qualquer valor positivo significa True,
 e qualquer valor zero ou negativo resulta em False
 '''
 
@@ -46,3 +48,5 @@ e qualquer valor zero ou negativo resulta em False
 
 print(f'MDC({m}, {n}) = {d}')
 ```
+
+

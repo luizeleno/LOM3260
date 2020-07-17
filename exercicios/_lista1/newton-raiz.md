@@ -14,6 +14,8 @@ Escreva um programa que implementa o método de Newton para extrair a raiz quadr
 
 Quando o algoritmo é concluído, `raiz` contém uma aproximação da raiz quadrada de `x`. A qualidade da aproximação depende de como você define "bom o suficiente," então adote o seguinte critério de parada: o valor absoluto da diferença entre `raiz * raiz` e `x` deve ser menor que $10^{-12}$.
 
+<!-- more -->
+
 ### Solução
 
 ```python
@@ -33,3 +35,5 @@ while abs(raiz**2 - x) >= tolerancia: # a função abs() retorna o módulo (valo
 
 print(f'A raiz quadrada de {x} é {raiz}')
 ```
+
+

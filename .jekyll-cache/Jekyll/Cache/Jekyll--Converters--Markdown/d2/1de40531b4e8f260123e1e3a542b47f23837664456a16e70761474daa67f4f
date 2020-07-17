@@ -1,0 +1,36 @@
+I"�<p>Escreva um programa que converta um número binário (base 2) em decimal (base 10). Seu programa deve ler o número binário do usuário como uma sequência de zeros e uns e exibir o número decimal equivalente, processando cada dígito da representação binária. Por exemplo, 1010011 (base 2) $\equiv$ 83 (base 10), obtido a partir da definição:</p>
+
+\[1010011 \text{ (base 2)} =\]
+
+\[= \mathbf{1} \times 2^6 +
+\mathbf{0} \times 2^5 +
+\mathbf{1} \times 2^4 +\]
+
+\[+ \mathbf{0} \times 2^3 +
+\mathbf{0} \times 2^2 +
+\mathbf{1} \times 2^1 +
+\mathbf{1} \times 2^0 =\]
+
+\[= 83 \text{ (base 10)}\]
+
+<!-- more -->
+
+<h3 id="solução">Solução</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Input
+</span><span class="n">binario</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">'Digite um número em base 2: '</span><span class="p">)</span>
+
+<span class="c1"># Algoritmo
+</span>
+<span class="n">soma</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">p</span> <span class="o">=</span> <span class="mi">1</span>  <span class="c1"># = 2**expoente
+</span>
+<span class="k">for</span> <span class="n">digito</span> <span class="ow">in</span> <span class="n">binario</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]:</span>  <span class="c1"># slicing para inverter a string
+</span>    <span class="n">soma</span> <span class="o">=</span> <span class="n">soma</span> <span class="o">+</span> <span class="nb">int</span><span class="p">(</span><span class="n">digito</span><span class="p">)</span> <span class="o">*</span> <span class="n">p</span>
+    <span class="n">p</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">p</span>
+
+<span class="c1"># Output
+</span><span class="k">print</span><span class="p">(</span><span class="s">f'</span><span class="si">{</span><span class="n">binario</span><span class="si">}</span><span class="s"> (base 10) = </span><span class="si">{</span><span class="n">soma</span><span class="si">}</span><span class="s"> (base 2)'</span><span class="p">)</span>
+
+</code></pre></div></div>
+:ET

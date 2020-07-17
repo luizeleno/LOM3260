@@ -1,6 +1,7 @@
 ---
 permalink: /classes/
 layout:
+hidden: true
 ---
 
 <html>

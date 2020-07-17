@@ -1,0 +1,40 @@
+I"{<p>Escreva um programa que implementa o método de Newton para extrair a raiz quadrada de um número digitado pelo usuário. O algoritmo é o seguinte:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>1. leia <code class="language-plaintext highlighter-rouge">x</code> do usuário;</td>
+    </tr>
+    <tr>
+      <td>2. inicialize <code class="language-plaintext highlighter-rouge">raiz</code> em <code class="language-plaintext highlighter-rouge">x / 2</code>;</td>
+    </tr>
+    <tr>
+      <td>3. enquanto <code class="language-plaintext highlighter-rouge">raiz</code> não for “bom o suficiente,” atualize <code class="language-plaintext highlighter-rouge">raiz</code> para a média de <code class="language-plaintext highlighter-rouge">raiz</code> e <code class="language-plaintext highlighter-rouge">x / raiz</code>.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Quando o algoritmo é concluído, <code class="language-plaintext highlighter-rouge">raiz</code> contém uma aproximação da raiz quadrada de <code class="language-plaintext highlighter-rouge">x</code>. A qualidade da aproximação depende de como você define “bom o suficiente,” então adote o seguinte critério de parada: o valor absoluto da diferença entre <code class="language-plaintext highlighter-rouge">raiz * raiz</code> e <code class="language-plaintext highlighter-rouge">x</code> deve ser menor que $10^{-12}$.</p>
+
+<!-- more -->
+
+<h3 id="solução">Solução</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s">'''
+cálculo da raiz quadrada aproximada
+usando método de Newton
+com uma precisão de 1e-12
+'''</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">'Digite um número: '</span><span class="p">))</span>
+
+<span class="c1"># Algoritmo: método de Newton para raiz quadrada
+</span><span class="n">raiz</span> <span class="o">=</span> <span class="n">x</span> <span class="o">/</span> <span class="mi">2</span> <span class="c1"># inicializar o palpite para a a raiz em x / 2
+</span><span class="n">tolerancia</span> <span class="o">=</span> <span class="mf">1.e-12</span> <span class="c1"># notacão científica: 1e-12 é igual a 1 * 10**(-12)
+</span><span class="k">while</span> <span class="nb">abs</span><span class="p">(</span><span class="n">raiz</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span> <span class="n">x</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="n">tolerancia</span><span class="p">:</span> <span class="c1"># a função abs() retorna o módulo (valor absoluto) do seu argumento
+</span>    <span class="n">raiz</span> <span class="o">=</span> <span class="p">(</span><span class="n">raiz</span> <span class="o">+</span> <span class="n">x</span> <span class="o">/</span> <span class="n">raiz</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span> <span class="c1"># atualiza o valor do palpite para a raiz
+</span>
+<span class="k">print</span><span class="p">(</span><span class="s">f'A raiz quadrada de </span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s"> é </span><span class="si">{</span><span class="n">raiz</span><span class="si">}</span><span class="s">'</span><span class="p">)</span>
+</code></pre></div></div>
+
+:ET

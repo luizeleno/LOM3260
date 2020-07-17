@@ -4,10 +4,10 @@ parent: exs
 nav_order: 1
 mathjax: true
 remove_trinket: true
-resolvidos: ['1', '5', '6', '7', '8', '11', '12', '13', '15', '16', '20', '21', '22', '23', '26']
-entrega1: ['2', '3', '4', '9', '14', '17', '19', '28']
-entrega2: ['18', '29', '30']
-timestamp: 07/06/20
+# resolvidos: ['1', '5', '6', '7', '8', '11', '12', '13', '15', '16', '20', '21', '22', '23', '26']
+# entrega1: ['2', '3', '4', '9', '14', '17', '19', '28']
+# entrega2: ['18', '29', '30']
+timestamp: 17/07/20
 ---
 
 ### Acesso rápido
@@ -17,20 +17,13 @@ timestamp: 07/06/20
 {%- endfor %}
 
 ### Instruções
+{% if false %}
 - **Os exercícios marcados em <span class="badge badge-warning">amarelo</span> na lista acima (Acesso rápido) devem ser entregues em dupla no [Google Classroom](https://classroom.google.com){: target="\_blank"} até as 14h00 do dia 12/09/2019. São os exercícios {% for i in page.entrega1 %}{{i}}{% unless forloop.last %}, {%endunless%}{% endfor %}.**
 - **Os exercícios marcados em <span class="badge badge-danger">vermelho</span> na lista acima (Acesso rápido) devem ser entregues em dupla no [Google Classroom](https://classroom.google.com){: target="\_blank"} até as 14h00 do dia 24/10/2019. São os exercícios {% for i in page.entrega2 %}{{i}}{% unless forloop.last %}, {%endunless%}{% endfor %}.**
+{% endif  %}
 - os exercícios marcados em <span class="badge badge-success">verde</span> foram resolvidos em sala de aula. Uma possível solução é fornecida aqui, junto ao exercício.
-- as porcentagens no começo de cada exercício são uma maneira de indicar o seu grau de dificuldade. Mas não se apegue muito a esses valores: talvez você ache fáceis alguns que eu julgo como difíceis ---
-title: Primeira Lista
-parent: exs
-nav_order: 1
-mathjax: true
-remove_trinket: true
-resolvidos: ['1', '5', '6', '7', '8', '11', '12', '13', '15', '16', '20', '21', '22', '23', '26']
-entrega1: ['2', '3', '4', '9', '14', '17', '19', '28']
-entrega2: ['18', '29', '30']
-timestamp: 07/06/20
----
+- as porcentagens no começo de cada exercício são uma maneira de indicar o seu grau de dificuldade. Mas não se apegue muito a esses valores: talvez você ache fáceis alguns que eu julgo como difíceis --- e vice versa!
+{% include labels-ex.html %}
 
 {% assign n = 0 %}
 
@@ -48,10 +41,19 @@ timestamp: 07/06/20
             <li><i><b>utiliza:</b></i> {% include grade-exs.html tags=ex.tags %}</li>
         </ul>
 
-        {{ex.content}}
+        {% if ex.content contains "<!-- more -->" %}
+          {% assign conteudo = ex.content | split:"<!-- more -->"  %}
+          {{conteudo[0]}}
+        {% else %}
+          {{ ex.content }}
+        {% endif %}
+
+        {%- assign ns = n | downcase %}
+        {% if page.resolvidos contains ns %}
+          {{conteudo[1]}}
+        {% endif %}
 
     </div>
 </div>
 
 {% endfor %}
-

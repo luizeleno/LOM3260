@@ -1,0 +1,52 @@
+I"�
+<p>O máximo divisor comum (MDC) de dois inteiros positivos, $n$ e $m$, é o maior número, $d$, capaz de dividir $n$ e $m$ sem deixar resto. Existem vários algoritmos para determinar $d$, incluindo o seguinte:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>1. inicialize $d$ como o menor entre $m$ e $n$;</td>
+    </tr>
+    <tr>
+      <td>2. enquanto $d$ não dividir exatamente $m$ e $n$, diminua o valor de $d$ de uma unidade.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Ao final do algoritmo, $d$ sera o MDC de $n$ e $m$. Escreva um programa que leia dois inteiros positivos do usuário e use esse algoritmo para determinar e relatar seu máximo divisor comum.</p>
+
+<!-- more -->
+
+<h3 id="solução">Solução:</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Entrada
+</span><span class="n">m</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">'m = '</span><span class="p">))</span>
+<span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">'n = '</span><span class="p">))</span>
+
+<span class="c1"># Algoritmo
+</span>
+<span class="c1"># encontrando o menor valor
+</span><span class="k">if</span> <span class="n">m</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">:</span>
+  <span class="n">d</span> <span class="o">=</span> <span class="n">m</span>
+<span class="k">else</span><span class="p">:</span>
+  <span class="n">d</span> <span class="o">=</span> <span class="n">n</span>
+
+<span class="c1"># encontrando o MDC(m, n)
+</span><span class="k">while</span> <span class="n">m</span> <span class="o">%</span> <span class="n">d</span> <span class="ow">or</span> <span class="n">n</span> <span class="o">%</span> <span class="n">d</span> <span class="p">:</span>
+  <span class="n">d</span> <span class="o">-=</span> <span class="mi">1</span>
+
+<span class="s">'''
+comentário:
+veja que
+while m % d or n % d:
+é o mesmo que
+while m % d != 0 or n % d != 0:
+pois qualquer valor positivo significa True,
+e qualquer valor zero ou negativo resulta em False
+'''</span>
+
+<span class="c1"># Saída
+</span>
+<span class="k">print</span><span class="p">(</span><span class="s">f'MDC(</span><span class="si">{</span><span class="n">m</span><span class="si">}</span><span class="s">, </span><span class="si">{</span><span class="n">n</span><span class="si">}</span><span class="s">) = </span><span class="si">{</span><span class="n">d</span><span class="si">}</span><span class="s">'</span><span class="p">)</span>
+</code></pre></div></div>
+
+:ET

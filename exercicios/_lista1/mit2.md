@@ -8,6 +8,8 @@ title: MIT II
 
 (MIT) Escreva um código para contar o número de vezes que a sequência `'bob'` aparece numa *string* `s` composta unicamente de letras minúsculas. Por exemplo, se `s = 'azcbobobegghakl'`, seu programa deve imprimir `Número de ocorrências de bob: 2`.
 
+<!-- more -->
+
 ### Solução:
 ```python
 s='bobazcbobobobobegbobghakl'
@@ -23,3 +25,5 @@ for i in range(ns-nv+1):
 
 print(f'Número de ocorrências de {v}: {n}')
 ```
+
+

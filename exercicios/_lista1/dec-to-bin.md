@@ -18,6 +18,8 @@ Escreva um programa que converta um número decimal (base 10) em binário (base 
 ```
 Os restos das divisões (começando do último valor) contém a representação binária do número, nesse caso 1010011 (base 2).
 
+<!-- more -->
+
 ### Solução
 ```python
 # Entrada
@@ -28,15 +30,15 @@ decimal = int(input('N (base 10) = '))
 
 # inicialização das variáveis
 quociente = decimal
-binario = ''  
+binario = ''
 
 '''
 comentários:
-- quociente vair receber, a cada iteração, o resultado da divisão por 2 
-- binário é uma string inicialmente vazia, que receberá os restos das divisões por dois 
+- quociente vair receber, a cada iteração, o resultado da divisão por 2
+- binário é uma string inicialmente vazia, que receberá os restos das divisões por dois
 - usamos o operador concatenação de strings (+) para construir a representação binária
 '''
- 
+
 while quociente > 0:
     resto = quociente % 2
     quociente = quociente // 2
@@ -46,3 +48,5 @@ while quociente > 0:
 print(f'{decimal} (base 10) = {binario} (base 2)')
 
 ```
+
+

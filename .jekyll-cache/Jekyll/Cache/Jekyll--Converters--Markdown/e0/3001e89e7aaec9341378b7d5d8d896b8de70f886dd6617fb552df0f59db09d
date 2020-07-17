@@ -1,0 +1,43 @@
+I"?
+<p>Escreva um programa que converta um número decimal (base 10) em binário (base 2). Leia o número decimal do usuário e use o seguinte algoritmo de divisão, exemplificado para o número 83 (base 10):</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	83/2 = 41 resto 1
+	41/2 = 20 resto 1
+	20/2 = 10 resto 0
+	10/2 = 5 resto 0
+	5/2 = 2 resto 1
+	2/2 = 1 resto 0
+	1/2 = 0 resto 1
+</code></pre></div></div>
+<p>Os restos das divisões (começando do último valor) contém a representação binária do número, nesse caso 1010011 (base 2).</p>
+
+<!-- more -->
+
+<h3 id="solução">Solução</h3>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Entrada
+</span>
+<span class="n">decimal</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">'N (base 10) = '</span><span class="p">))</span>
+
+<span class="c1"># Algoritmo
+</span>
+<span class="c1"># inicialização das variáveis
+</span><span class="n">quociente</span> <span class="o">=</span> <span class="n">decimal</span>
+<span class="n">binario</span> <span class="o">=</span> <span class="s">''</span>
+
+<span class="s">'''
+comentários:
+- quociente vair receber, a cada iteração, o resultado da divisão por 2
+- binário é uma string inicialmente vazia, que receberá os restos das divisões por dois
+- usamos o operador concatenação de strings (+) para construir a representação binária
+'''</span>
+
+<span class="k">while</span> <span class="n">quociente</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="n">resto</span> <span class="o">=</span> <span class="n">quociente</span> <span class="o">%</span> <span class="mi">2</span>
+    <span class="n">quociente</span> <span class="o">=</span> <span class="n">quociente</span> <span class="o">//</span> <span class="mi">2</span>
+    <span class="n">binario</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">resto</span><span class="p">)</span> <span class="o">+</span> <span class="n">binario</span>
+
+<span class="c1"># Saída
+</span><span class="k">print</span><span class="p">(</span><span class="s">f'</span><span class="si">{</span><span class="n">decimal</span><span class="si">}</span><span class="s"> (base 10) = </span><span class="si">{</span><span class="n">binario</span><span class="si">}</span><span class="s"> (base 2)'</span><span class="p">)</span>
+
+</code></pre></div></div>
+
+:ET

@@ -20,6 +20,8 @@ onde os símbolos $\overline{x}$ e $\overline{y}$ são os valores médios de $x$
 Por exemplo, se o usuário fornece as coordenadas $(1,\,1)$, $(2,\,2.1)$ e $(3,\,2.9)$, o seu
 o programa deve exibir `y = 0.95 x + 0.1`. Faça também um gráfico com os pontos e a linha de melhor ajuste usando as funções `scatter()` e `plot()` do módulo `matplotlib.pyplot`.
 
+<!-- more -->
+
 ## Solução
 
 A solução abaixo faz uso de muitas propriedades de arrays.
@@ -68,5 +70,7 @@ plt.legend()
 # salvando a figura como arquivo
 plt.savefig('ajuste.png', bbox_inches='tight')
 
-plt.show()
 ```
+plt.show()
+
+

@@ -8,6 +8,8 @@ title: Senha forte
 
 Adapte o exercício anterior para gerar uma *senha forte*, tendo pelo menos 8 caracteres, pelo menos uma letra maiúscula, pelo menos uma letra minúscula, e pelo menos um número. Conte e exiba o número de tentativas que foram necessárias antes que uma senha forte fosse gerada.
 
+<!-- more -->
+
 ### Solução
 
 A solução proposta abaixo faz extenso uso de [**funções**]({{site.baseurl}}/tema3/funcoes/). Apesar de não ser obrigatório, isso ajuda e muito a organização do código!
@@ -73,3 +75,5 @@ print(f'Senha: {SenhaForte}\nTentativas: {n}')
 
 :bulb: Em strings, `\n` é um código para quebra de linha. Ele corresponde ao caractere de no. 10 da [Tabela ASCII](https://pt.wikipedia.org/wiki/ASCII){: target="\_blank"}
 {: .alert .alert-success }
+
+
