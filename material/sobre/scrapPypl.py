@@ -35,7 +35,7 @@ a frequência com que busca-se por tutoriais da linguagem no Google \
 ([pypl.github.io/PYPL.html](http://pypl.github.io/PYPL.html)\
 {: target="\\_blank"})
 
-| Posição	| Linguagem |	Fatia	| Tendência |
+| Posição	| Linguagem |	Fatia (%%)	| Tendência (%%) |
 |:-------:|:--------- |:-----:|:---------:|
 ''' % (data.strftime('%d/%m/%y'))
 
@@ -64,7 +64,7 @@ for n in range(len(language)):
          {share[n].string[:-1]} | {trend[n].string[:-1]} |', file=of)
 
 print(f'\n***Mundialmente em {mes} de {ano}, comparado \
-# a um ano antes***', file=of)
+a um ano antes***', file=of)
 print('{: .small}', file=of)
 
 of.close()
