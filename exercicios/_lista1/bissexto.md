@@ -17,9 +17,9 @@ A maioria dos anos tem 365 dias. No entanto, o tempo necessário para a Terra or
 Escreva um programa que leia um ano do usuário e exiba uma mensagem dizendo se ele é ou não um ano bissexto. Você consegue pensar num algoritmo mais eficiente, que faça em média menos testes?
 
 ### Dicas para responder à pergunta final:
-- Veja que o algoritmo proposto no enunciado testa inicialmente se um número é múltiplo de 400. Apenas um em 400 números é múltiplo de 400. Portanto, 399 de 400 (99.75%) casos vão para o primeiro elif.
-- Similarmente, um a cada 100 números é múltiplo de 100, então 99 de 100 (99%) casos vão para o segundo elif.
-- Assim, em média, o algoritmo proposto faz muito mais comparações do que o necessário. Rearranjando a ordem dos testes, é possível reduzir o número de testes. Por exemplo, se você começar com o teste ano % 4 != 0, 3 de 4 casos resultam em True, ou seja, esse é o único teste que você precisaria fazer para 75% dos casos.
+- Veja que o algoritmo proposto no enunciado testa inicialmente se um número é múltiplo de 400. Apenas um em 400 números é múltiplo de 400. Portanto, 399 de 400 (99.75%) não passam no primeiro teste e vão para o segundo.
+- Similarmente, um a cada 100 números é múltiplo de 100, então 99 de 100 (99%) não passam pelo segundo teste e vão para o terceiro.
+- Assim, em média, o algoritmo proposto faz muito mais comparações do que o necessário. Repensando a ordem dos testes, é possível reduzi-los em número. Por exemplo, se você começar com o teste `ano % 4 != 0`, 3 de 4 casos resultam em `True`, ou seja, esse é o único teste que você precisaria fazer em 75% dos casos.
 
 <!-- more -->
 
