@@ -1,10 +1,10 @@
-I"i<div class="w-100">
+I"h<div class="w-100">
 <div class="text-center">
 <figure class="figure">
   
   <a href="#" data-toggle="modal" data-target="#crono">
   
-    <img class="figure-img img-fluid rounded mx-auto" src="/LOM3260/assets/images/Cronograma.jpg" alt="Cronograma do semestre" title="Cronograma do semestre" />
+    <img class="figure-img img-fluid rounded mx-auto" src="/LOM3260/assets/images/Cronograma.png" alt="Cronograma do semestre" title="Cronograma do semestre" />
   
   </a>
   
@@ -26,8 +26,8 @@
         </button>
       </div>
       <div class="modal-body">
-        <a id="no-ext-link" href="/LOM3260/assets/images/Cronograma.jpg" target="_blank">
-        <img class="figure-img img-fluid rounded w-100mx-auto" src="/LOM3260/assets/images/Cronograma.jpg" alt="Cronograma do semestre" title="Cronograma do semestre" />
+        <a id="no-ext-link" href="/LOM3260/assets/images/Cronograma.png" target="_blank">
+        <img class="figure-img img-fluid rounded w-100mx-auto" src="/LOM3260/assets/images/Cronograma.png" alt="Cronograma do semestre" title="Cronograma do semestre" />
         </a>
       </div>
       <div class="modal-footer">
@@ -42,5 +42,4 @@
 </div>
 
 </div>
-
 :ET
