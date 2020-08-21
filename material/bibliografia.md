@@ -21,7 +21,6 @@ Quase todos os recursos abaixo estão disponíveis *online* ou fisicamente pelo 
 
 - *Como Pensar Como um Cientista da Computação - Edição interativa* <https://panda.ime.usp.br/pensepy/static/pensepy/index.html>{: target="\_blank"}
 
-
 ## Documentação online
 
 - **Documentação oficial:** <https://docs.python.org/3>{: target="\_blank"} (em inglês)
