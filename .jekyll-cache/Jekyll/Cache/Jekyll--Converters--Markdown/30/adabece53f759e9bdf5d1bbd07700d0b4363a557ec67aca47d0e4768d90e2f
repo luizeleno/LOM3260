@@ -1,4 +1,4 @@
-I"�D<p class="lead">O melhor módulo para criar gráficos em python</p>
+I"�D<p class="lead">O melhor módulo para criar gráficos em python</p>
 
 <p>É dificílimo superestimar a qualidade do módulo <code class="language-plaintext highlighter-rouge">matplotlib</code>. Ele é extremamente versátil para a criação de uma imensa variedade de gráficos 2D e 3D, com uma qualidade impressionante. Apesar de não ser o único módulo para essa finalidade, ele é sem dúvida o mais difundido mundo afora.</p>
 
@@ -21,7 +21,7 @@
 <span class="n">plt</span><span class="p">.</span><span class="n">show</span><span class="p">()</span>
 </code></pre></div></div>
 
-<p><img src="/LOM3260/docs/tema5/fig1.png" class="mw-100" /></p>
+<p><img src="/LOM3260/material/tema5/fig1.png" class="mw-100" /></p>
 
 <p>Veja que, por padrão, o python apenas liga os dados com linhas, mas não identifica os pontos por símbolos. Troque o comportamento acima mudando a linha com a função <code class="language-plaintext highlighter-rouge">plt.plot</code> por</p>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">plt</span><span class="p">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="s">'o'</span><span class="p">)</span>
@@ -32,10 +32,10 @@
 
 <div class="row">
 <div class="col-md-6">
-<img src="/LOM3260/docs/tema5/fig2.png" class="mw-100" />
+<img src="/LOM3260/material/tema5/fig2.png" class="mw-100" />
 </div>
 <div class="col-md-6">
-<img src="/LOM3260/docs/tema5/fig3.png" class="mw-100" />
+<img src="/LOM3260/material/tema5/fig3.png" class="mw-100" />
 </div>
 </div>
 
@@ -61,11 +61,11 @@
 <span class="n">plt</span><span class="p">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s">'valores de $x$'</span><span class="p">)</span>  <span class="c1"># veja que dá pra usar LaTeX!
 </span><span class="n">plt</span><span class="p">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s">'valores de $f(x)$'</span><span class="p">)</span>
 
-<span class="n">plt</span><span class="p">.</span><span class="n">legend</span><span class="p">()</span>  
+<span class="n">plt</span><span class="p">.</span><span class="n">legend</span><span class="p">()</span>
 <span class="n">plt</span><span class="p">.</span><span class="n">show</span><span class="p">()</span>
 </code></pre></div></div>
 
-<p><img src="/LOM3260/docs/tema5/fig4.png" class="mw-100" /></p>
+<p><img src="/LOM3260/material/tema5/fig4.png" class="mw-100" /></p>
 
 <h2 id="gráfico-de-uma-função">Gráfico de uma função</h2>
 
@@ -80,8 +80,8 @@
 
 <span class="n">plt</span><span class="p">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s">'$\cos(x)$'</span><span class="p">)</span>
 
-<span class="n">plt</span><span class="p">.</span><span class="n">xlim</span><span class="p">(</span><span class="o">-</span><span class="n">np</span><span class="p">.</span><span class="n">pi</span><span class="p">,</span><span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="p">.</span><span class="n">pi</span><span class="p">)</span> 
-<span class="n">plt</span><span class="p">.</span><span class="n">ylim</span><span class="p">(</span><span class="o">-</span><span class="mf">1.2</span><span class="p">,</span> <span class="mf">1.2</span><span class="p">)</span> 
+<span class="n">plt</span><span class="p">.</span><span class="n">xlim</span><span class="p">(</span><span class="o">-</span><span class="n">np</span><span class="p">.</span><span class="n">pi</span><span class="p">,</span><span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="p">.</span><span class="n">pi</span><span class="p">)</span>
+<span class="n">plt</span><span class="p">.</span><span class="n">ylim</span><span class="p">(</span><span class="o">-</span><span class="mf">1.2</span><span class="p">,</span> <span class="mf">1.2</span><span class="p">)</span>
 
 <span class="n">plt</span><span class="p">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s">'$x$'</span><span class="p">)</span>  <span class="c1"># veja que dá pra usar LaTeX!
 </span><span class="n">plt</span><span class="p">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s">'$\cos(x)$'</span><span class="p">)</span>
@@ -93,7 +93,7 @@
 <span class="n">plt</span><span class="p">.</span><span class="n">show</span><span class="p">()</span>
 </code></pre></div></div>
 
-<p><img src="/LOM3260/docs/tema5/fig5.png" class="mw-100" /></p>
+<p><img src="/LOM3260/material/tema5/fig5.png" class="mw-100" /></p>
 
 <h2 id="gráfico-com-barras-de-erros">Gráfico com barras de erros</h2>
 
@@ -118,13 +118,13 @@
 <span class="n">plt</span><span class="p">.</span><span class="n">show</span><span class="p">()</span>
 </code></pre></div></div>
 
-<p><img src="/LOM3260/docs/tema5/fig6.png" class="mw-100" /></p>
+<p><img src="/LOM3260/material/tema5/fig6.png" class="mw-100" /></p>
 
 <h3 id="desvio-como-porcentagem">Desvio como porcentagem</h3>
 
 <p>Digamos agora que o desvio corresponde a 10% dos valores de <code class="language-plaintext highlighter-rouge">y</code>. Faça o seguinte: troque a definição de <code class="language-plaintext highlighter-rouge">desvio</code> por <code class="language-plaintext highlighter-rouge">desvio = .1 * np.array(y)</code>. Veja que, para facilitar a nossa vida, criamos uma versão de <code class="language-plaintext highlighter-rouge">y</code> como um array antes de multiplicar por 0.1. Caso contrário, teríamos que usar um laço ou list comprehension: <code class="language-plaintext highlighter-rouge">desvio = [.1 * v for v in y]</code></p>
 
-<p><img src="/LOM3260/docs/tema5/fig7.png" class="mw-100" /></p>
+<p><img src="/LOM3260/material/tema5/fig7.png" class="mw-100" /></p>
 
 <h3 id="desvio-variável">Desvio variável.</h3>
 
@@ -145,6 +145,5 @@
 <span class="n">plt</span><span class="p">.</span><span class="n">show</span><span class="p">()</span>
 </code></pre></div></div>
 
-<p><img src="/LOM3260/docs/tema5/fig8.png" class="mw-100" /></p>
-
+<p><img src="/LOM3260/material/tema5/fig8.png" class="mw-100" /></p>
 :ET

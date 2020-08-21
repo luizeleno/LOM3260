@@ -1,0 +1,68 @@
+<div class="text-center">
+<figure class="figure">
+  <a href="#" data-toggle="modal" data-target="#{{include.id}}">
+    <img class="figure-img img-fluid rounded" src="http://img.youtube.com/vi/{{include.video}}/0.jpg" alt="{{include.caption}}" title="{{include.caption}}">
+  </a>
+  <figcaption class="figure-caption">
+    {{ include.caption }}
+  </figcaption>
+
+<!-- Modal -->
+<div class="modal fade" id="{{include.id}}" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-light bg-dark">
+        <h5>{{include.caption}}</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span class="text-light" aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <style>
+          .embed-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+          }
+          .embed-container iframe, .embed-container object, .embed-container embed {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+          }
+        </style>
+        <div class="embed-container">
+          <iframe id="{{include.id}}vid" title="YouTube video player" width="640" height="390" src="https://www.youtube.com/embed/{{include.video}}" frameborder="0" allowfullscreen="">
+          </iframe>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">OK</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+</figure>
+</div>
+
+<script type="text/javascript">
+$(document).ready(function(){
+    /* Get iframe src attribute value i.e. YouTube video url
+    and store it in a variable */
+    var url = $("#{{include.id}}vid").attr('src');
+    /* Assign empty url value to the iframe src attribute when
+    modal hide, which stop the video playing */
+    $("#{{include.id}}").on('hide.bs.modal', function(){
+        $("#{{include.id}}vid").attr('src', '');
+    });
+    /* Assign the initially stored url back to the iframe src
+    attribute when modal is displayed again */
+    $("#{{include.id}}").on('show.bs.modal', function(){
+        $("#{{include.id}}vid").attr('src', url);
+    });
+});
+</script>

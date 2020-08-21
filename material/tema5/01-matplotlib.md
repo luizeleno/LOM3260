@@ -3,10 +3,10 @@ title: O módulo matplotlib
 parent: temafive
 status: yellow
 tags: [numpy, matplotlib, pyplot, plt, arrays, gráficos, plots, scatter, desvios, erro, barra, legenda, eixos]
-timestamp: 07/06/20
+timestamp: 21/08/20
 ---
 
-O melhor módulo para criar gráficos em python 
+O melhor módulo para criar gráficos em python
 {: .lead }
 
 É dificílimo superestimar a qualidade do módulo `matplotlib`. Ele é extremamente versátil para a criação de uma imensa variedade de gráficos 2D e 3D, com uma qualidade impressionante. Apesar de não ser o único módulo para essa finalidade, ele é sem dúvida o mais difundido mundo afora.
@@ -31,7 +31,7 @@ plt.plot(x, y)
 plt.show()
 ```
 
-<img src="{{site.baseurl}}/docs/tema5/fig1.png" class="mw-100">
+<img src="{{site.baseurl}}/material/tema5/fig1.png" class="mw-100">
 
 Veja que, por padrão, o python apenas liga os dados com linhas, mas não identifica os pontos por símbolos. Troque o comportamento acima mudando a linha com a função `plt.plot` por
 ```python
@@ -44,10 +44,10 @@ plt.plot(x, y, '-o')
 
 <div class="row">
 <div class="col-md-6">
-<img src="{{site.baseurl}}/docs/tema5/fig2.png" class="mw-100">
+<img src="{{site.baseurl}}/material/tema5/fig2.png" class="mw-100">
 </div>
 <div class="col-md-6">
-<img src="{{site.baseurl}}/docs/tema5/fig3.png" class="mw-100">
+<img src="{{site.baseurl}}/material/tema5/fig3.png" class="mw-100">
 </div>
 </div>
 
@@ -75,11 +75,11 @@ plt.ylim(0,10)
 plt.xlabel('valores de $x$')  # veja que dá pra usar LaTeX!
 plt.ylabel('valores de $f(x)$')
 
-plt.legend()  
+plt.legend()
 plt.show()
 ```
 
-<img src="{{site.baseurl}}/docs/tema5/fig4.png" class="mw-100">
+<img src="{{site.baseurl}}/material/tema5/fig4.png" class="mw-100">
 
 ## Gráfico de uma função
 
@@ -95,8 +95,8 @@ plt.figure()
 
 plt.plot(x, y, label='$\cos(x)$')
 
-plt.xlim(-np.pi,2*np.pi) 
-plt.ylim(-1.2, 1.2) 
+plt.xlim(-np.pi,2*np.pi)
+plt.ylim(-1.2, 1.2)
 
 plt.xlabel('$x$')  # veja que dá pra usar LaTeX!
 plt.ylabel('$\cos(x)$')
@@ -108,11 +108,11 @@ plt.legend()
 plt.show()
 ```
 
-<img src="{{site.baseurl}}/docs/tema5/fig5.png" class="mw-100">
+<img src="{{site.baseurl}}/material/tema5/fig5.png" class="mw-100">
 
 ## Gráfico com barras de erros
 
-Um tipo de gráfico muito útil para apresentar medidas experimentais, e seus respectivos desvios-padrão, é o gráfico com barras de erros. Os exemplos abaixo mostram o que você deve fazer. 
+Um tipo de gráfico muito útil para apresentar medidas experimentais, e seus respectivos desvios-padrão, é o gráfico com barras de erros. Os exemplos abaixo mostram o que você deve fazer.
 
 ### Desvio constante
 
@@ -134,13 +134,13 @@ plt.legend()
 plt.show()
 ```
 
-<img src="{{site.baseurl}}/docs/tema5/fig6.png" class="mw-100">
+<img src="{{site.baseurl}}/material/tema5/fig6.png" class="mw-100">
 
 ### Desvio como porcentagem
 
 Digamos agora que o desvio corresponde a 10% dos valores de `y`. Faça o seguinte: troque a definição de `desvio` por `desvio = .1 * np.array(y)`. Veja que, para facilitar a nossa vida, criamos uma versão de `y` como um array antes de multiplicar por 0.1. Caso contrário, teríamos que usar um laço ou list comprehension: `desvio = [.1 * v for v in y]`
 
-<img src="{{site.baseurl}}/docs/tema5/fig7.png" class="mw-100">
+<img src="{{site.baseurl}}/material/tema5/fig7.png" class="mw-100">
 
 ### Desvio variável.
 
@@ -162,5 +162,4 @@ plt.legend()
 plt.show()
 ```
 
-<img src="{{site.baseurl}}/docs/tema5/fig8.png" class="mw-100">
-
+<img src="{{site.baseurl}}/material/tema5/fig8.png" class="mw-100">
