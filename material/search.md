@@ -4,7 +4,7 @@ id: search
 nav_order: 100
 permalink: /search/
 icon: mag
-timestamp: 07/06/20
+timestamp: 21/08/20
 ---
 
 Use o campo abaixo para encontrar mais rapidamente o que você procura
@@ -35,5 +35,4 @@ SimpleJekyllSearch({
 
 O mecanismo de busca acima foi inspirado por [este post]{: target="\_blank"}.
 
-[este post]: https://christianfei.com/posts/Use-Simple-Jekyll-Search-on-your-blog-in-these-easy-steps/
-
+[este post]: https://cri.dev/posts/2017-02-05-Use-Simple-Jekyll-Search-on-your-blog-in-these-easy-steps/
