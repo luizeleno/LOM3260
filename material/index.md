@@ -5,7 +5,7 @@ nav_order: -2
 permalink: /
 id: home
 icon: house_with_garden
-timestamp: 07/06/20
+timestamp: 22/08/20
 ---
 
 # Computação Científica em Python
@@ -23,6 +23,10 @@ Uma disciplina do curso de Engenharia Física da Escola de Engenharia de Lorena 
 - Bem-vindo! O site foi criado como uma ferramenta de ajuda específica para os alunos da [EEL]. Mas todos são bem-vindos para utilizar, curtir e compartilhar o material apresentado aqui.
 - Espero ser de alguma ajuda aos iniciantes em programação e em python, e também aos usuários mais avançados, que podem se aproveitar do enfoque mais computacional e científico do material.
 - <span class='badge badge-pill badge-warning'>Atenção!</span> *O site ainda está em desenvolvimento!* Mas muito material já pode ser utilizado. Confira a página de [instruções]({{site.baseurl}}/instrucoes/) para mais informações.
+
+<div class='w-100 col-md-12'>
+{% include figure.html image='/assets/images/demar-fachada.jpg' id='demar' caption='Fachada do departamento' %}
+</div>
 
 ***Última atualização: {{site.time | date: "%d/%m/%Y %T"}}***
 {: .small }

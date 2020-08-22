@@ -3,8 +3,8 @@ title: Saída com print()
 parent: temaone
 nav_order: 4
 status: green
-tags: [input, entrada, output, saída, print, formatação, formatada, interpoladas, f-strings, substituição]
-timestamp: 07/06/20
+tags: [input, entrada, output, saída, print, formatação, formatada, interpoladas, f-strings, substituição, TUI]
+timestamp: 22/08/20
 ---
 
 Como iniciantes fornecem informações ao usuário
@@ -55,7 +55,7 @@ que resulta na frase `O valor de 5 ao quadrado é 25` impressa na sua tela. Repa
 
 ### Saída formatada
 
-Existem diversas maneiras de **formatar** o que será impresso pelo comando `print()`. A mais indicada para iniciantes é o uso de **strings interpoladas**, ou **f-strings**, implementada a partir do Python 3.6 -- não funciona em versões anteriores do python! 
+Existem diversas maneiras de **formatar** o que será impresso pelo comando `print()`. A mais indicada para iniciantes é o uso de **strings interpoladas**, ou **f-strings**, implementada a partir do Python 3.6 -- não funciona em versões anteriores do python!
 
 Lembre que uma string é uma sequência de caracteres: `s='x ao quadrado é igual a y'`. Mas você pode precedê-la com o caracter `f` torná-la interpolável: qualquer variável dentro de chaves (`{}`) na string será substituída pelo valor dessa variável. Por exemplo, veja o código abaixo:
 ```python
@@ -64,19 +64,11 @@ y = x * x
 s = f'O valor de {x} ao quadrado é {y}'
 print(s)
 ```
-O python simplesmente substitui (interpola) os valores das variáveis `x` e `y` na sua string! Depois disso, basta imprimi-la normalmente. Veja que você pode fazer tudo ---
-title: Saída com print()
-parent: temaone
-nav_order: 4
-status: green
-tags: [input, entrada, output, saída, print, formatação, formatada, interpoladas, f-strings, substituição]
-timestamp: 07/06/20
---- numa única linha:
+O python simplesmente substitui (interpola) os valores das variáveis `x` e `y` na sua string! Depois disso, basta imprimi-la normalmente. Veja que você pode fazer tudo numa única linha:
 ```python
 x = 5
 print(f'O valor de {x} ao quadrado é {x*x}')
 ```
-Conveniente, não concorda?
+Conveniente, concorda?
 
-Existem outras maneiras de gerar strings formatadas e facilitar a saída de informações para o usuário (que não veremos nesse curso). O próprio método de f-strings tem muitas opções para configurar a maneira como as variáveis são manipuladas antes de gerar a string final. Mas veremos isso mais adiante. 
-
+Existem outras maneiras de gerar strings formatadas e facilitar a saída de informações para o usuário (que não veremos nesse curso). O próprio método de f-strings tem muitas opções para configurar a maneira como as variáveis são manipuladas antes de gerar a string final. <!-- Mas veremos isso mais adiante. -->

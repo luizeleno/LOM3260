@@ -1,0 +1,74 @@
+I"=%<p class="lead">Python tem uma grande variedade de <strong>tipos de objetos</strong> para as mais diversas finalidades</p>
+
+<h2 id="alguns-tipos-de-objetos-em-python">Alguns tipos de objetos em python</h2>
+
+<h3 id="tipos-numéricos">Tipos numéricos</h3>
+
+<p>Em computação científica, os principais tipos de dados são naturalmente os dados numéricos. O python diferencia entre alguns tipos. Alguns exemplos:</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">a</span> <span class="o">=</span> <span class="mi">5453</span>  <span class="c1"># tipo inteiro (int)
+</span><span class="n">a1</span> <span class="o">=</span> <span class="mf">5453.</span>  <span class="c1"># tipo ponto flutuante (float)
+</span>
+<span class="n">a2</span> <span class="o">=</span> <span class="mf">5.453e+3</span>  <span class="c1"># float em notação científica
+</span><span class="n">a3</span> <span class="o">=</span> <span class="mf">5.453</span> <span class="o">*</span> <span class="mi">10</span><span class="o">**</span><span class="mi">3</span>  <span class="c1"># evite fazer explicitamente a exponenciação: você perderá eficiência!
+</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">5</span>  <span class="c1"># tipo int
+</span><span class="n">b</span> <span class="o">=</span> <span class="mf">5.</span> <span class="c1"># tipo float (o ponto no final faz diferença!!!)
+</span><span class="n">b</span> <span class="o">=</span> <span class="mf">5.0</span>  <span class="c1"># tipo float - é o mesmo que a linha anterior
+</span>
+<span class="n">c1</span> <span class="o">=</span> <span class="mf">5.</span><span class="o">+</span><span class="mf">6.j</span>  <span class="c1"># tipo número complexo (o j é a raiz quadrada de -1 nesse contexto)
+</span></code></pre></div></div>
+
+<p>Repare que <code class="language-plaintext highlighter-rouge">5</code> é um dado do tipo int, ao passo que <code class="language-plaintext highlighter-rouge">5.</code> é do tipo float.</p>
+
+<p class="alert alert-primary">:information_source: Escrever <code class="language-plaintext highlighter-rouge">5.</code> é o mesmo que <code class="language-plaintext highlighter-rouge">5.0</code>, ou <code class="language-plaintext highlighter-rouge">5.00</code>, etc. Uma outra notação possível para dados <code class="language-plaintext highlighter-rouge">float</code> é escrever <code class="language-plaintext highlighter-rouge">.5234</code>, que equivale a <code class="language-plaintext highlighter-rouge">0.5234</code> (ou seja, podemos ignorar o zero antes da vírgula para definir um float de módulo menor que 1). Vale também para números negativos: <code class="language-plaintext highlighter-rouge">-.12</code> é o mesmo que <code class="language-plaintext highlighter-rouge">-0.12</code>.</p>
+
+<p class="alert alert-success">:heavy_check_mark: <strong>Notação científica:</strong> Um número em notação científica, por exemplo, $5.23 \times 10^{4}=52300.$, é preferencialmente indicado assim em python: <code class="language-plaintext highlighter-rouge">5.23e4</code>. Ou seja, o <code class="language-plaintext highlighter-rouge">e</code> significa <code class="language-plaintext highlighter-rouge">10**</code> (<code class="language-plaintext highlighter-rouge">**</code> é o operador de exponenciação: <code class="language-plaintext highlighter-rouge">2**3=8</code>). O expoente pode ser negativo: <code class="language-plaintext highlighter-rouge">5.23e-3</code> é o float <code class="language-plaintext highlighter-rouge">.00523</code>.</p>
+
+<p class="alert alert-danger">:x: Evite usar explicitamente a exponenciação quando desnecessário! Por exemplo, nunca defina uma variável como <code class="language-plaintext highlighter-rouge">k = 1.38 * 10**(-23)</code>. Ao invés disso, use a notação científica: <code class="language-plaintext highlighter-rouge">k = 1.38e-23</code>. Com isso, você evita fazer contas desnecessariamente, que podem até mesmo levar a uma perda de precisão.</p>
+
+<h3 id="tipo-string">Tipo <em>string</em></h3>
+
+<p>Outro tipo de dado comum e importante é a <strong>string</strong>, ou sequência de caracteres. Elas são indicadas por qualquer sequência de símbolos (letras, números e caracteres não alfa-numéricos como <code class="language-plaintext highlighter-rouge">?:&amp;-=+@#?!*</code>), delimitados por aspas simples (<code class="language-plaintext highlighter-rouge">''</code>) ou duplas (<code class="language-plaintext highlighter-rouge">""</code>).</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">s1</span> <span class="o">=</span> <span class="s">'string 1'</span>  <span class="c1"># delimitada por aspas simples
+</span><span class="n">s2</span> <span class="o">=</span> <span class="s">"String 2"</span>  <span class="c1"># delimitada por aspas duplas
+</span>
+<span class="n">w</span> <span class="o">=</span> <span class="s">'Uma string mais longa com caracteres diferentes: :&amp;%$@%#$'</span>
+</code></pre></div></div>
+<p>Cuidado ao lidar com strings compostas por caracteres numéricos:</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">a3</span> <span class="o">=</span> <span class="mf">5.0</span>  <span class="c1"># a3 é do tipo float
+</span><span class="n">s3</span> <span class="o">=</span> <span class="s">'5.0'</span> <span class="c1"># s3 é do tipo string
+</span></code></pre></div></div>
+
+<h3 id="tipo-booleano-variáveis-lógicas">Tipo booleano (variáveis lógicas)</h3>
+
+<p>Dados lógicos ou booleanos (do nome do matemático inglês <a href="https://pt.wikipedia.org/wiki/George_Boole" target="\_blank">George Boole</a>) são basicamente dois: verdadeiro (<code class="language-plaintext highlighter-rouge">True</code>) e falso (<code class="language-plaintext highlighter-rouge">False</code>):</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">v1</span> <span class="o">=</span> <span class="bp">True</span>
+<span class="n">v2</span> <span class="o">=</span> <span class="bp">False</span>
+</code></pre></div></div>
+<p>Eles são importantes para fazer testes de condições, como veremos mais adiante.</p>
+
+<h2 id="convertendo-entre-tipos-de-objetos">Convertendo entre tipos de objetos</h2>
+
+<p>Às vezes é possível converter objetos para outros tipos usando alguns comandos básicos do python. Vejamos alguns exemplos:</p>
+
+<h3 id="int-ou-float-para-string"><code class="language-plaintext highlighter-rouge">int</code> ou <code class="language-plaintext highlighter-rouge">float</code> para <code class="language-plaintext highlighter-rouge">string</code></h3>
+
+<p>Use o comando <code class="language-plaintext highlighter-rouge">str()</code>:</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">n</span> <span class="o">=</span> <span class="mi">52</span>  <span class="c1"># n é do tipo int
+</span><span class="n">ns</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>  <span class="c1"># ns é do tipo string
+</span></code></pre></div></div>
+
+<h3 id="string-para-int-ou-float"><code class="language-plaintext highlighter-rouge">String</code> para <code class="language-plaintext highlighter-rouge">int</code> ou <code class="language-plaintext highlighter-rouge">float</code></h3>
+
+<p>Use os comandos <code class="language-plaintext highlighter-rouge">int()</code> e <code class="language-plaintext highlighter-rouge">float()</code>:</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">s</span> <span class="o">=</span> <span class="s">'45.23'</span>
+<span class="n">sf</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+<span class="n">si</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>  <span class="c1"># dá erro! quando for rodar o código, comente esta linha
+</span><span class="n">si</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">sf</span><span class="p">)</span>  <span class="c1"># assim funciona
+</span></code></pre></div></div>
+<p>Teste os últimos comandos para ver o que a função <code class="language-plaintext highlighter-rouge">int()</code> retorna quando <code class="language-plaintext highlighter-rouge">s='45.23'</code> (uma string) e quando <code class="language-plaintext highlighter-rouge">sf=45.23</code> (um float).</p>
+
+<h2 id="outros-tipos-de-dados">Outros tipos de dados</h2>
+
+<p>Os tipos de dados não param com os vistos acima. Existem muitos outros, como <code class="language-plaintext highlighter-rouge">range</code>, <code class="language-plaintext highlighter-rouge">list</code>, <code class="language-plaintext highlighter-rouge">dict</code>, <code class="language-plaintext highlighter-rouge">array</code>, etc. Você pode até mesmo definir novos tipos de dados para atender necessidades específicas do seu código. É impossível descrever todos os tipos básicos de dados nessa altura do curso. Veremos vários deles com o desenrolar do semestre.</p>
+:ET

@@ -19,7 +19,7 @@ Escreva um programa que leia um ano do usuário e exiba uma mensagem dizendo se 
 ### Dicas para responder à pergunta final:
 - Veja que o algoritmo proposto no enunciado testa inicialmente se um número é múltiplo de 400. Apenas um em 400 números é múltiplo de 400. Portanto, 399 de 400 (99.75%) não passam no primeiro teste e vão para o segundo.
 - Similarmente, um a cada 100 números é múltiplo de 100, então 99 de 100 (99%) não passam pelo segundo teste e vão para o terceiro.
-- Assim, em média, o algoritmo proposto faz muito mais comparações do que o necessário. Repensando a ordem dos testes, é possível reduzi-los em número. Por exemplo, se você começar com o teste `ano % 4 != 0`, 3 de 4 casos resultam em `True`, ou seja, esse é o único teste que você precisaria fazer em 75% dos casos.
+- Assim, em média, o algoritmo proposto faz muito mais comparações do que o necessário. Repensando os testes a serem feitos, é possível reduzi-los em número. Por exemplo, se você começar com o teste `ano % 4 != 0`, 3 de 4 casos resultam em `True`, ou seja, esse é o único teste que você precisaria fazer em 75% dos casos.
 
 <!-- more -->
 

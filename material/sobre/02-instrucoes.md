@@ -4,7 +4,7 @@ parent: sobre
 nav_order: 1
 tags: [instruções, google, classroom, sala, aula]
 permalink: /instrucoes/
-timestamp: 07/06/20
+timestamp: 22/08/20
 ---
 
 Um pouco para todo tipo de usuário
@@ -12,8 +12,8 @@ Um pouco para todo tipo de usuário
 
 ## Para os visitantes
 
-- Bem-vindo! O site foi criado como uma ferramenta de ajuda específica para os alunos da [EEL::USP]. Mas todos são bem-vindos para utilizar, curtir e compartilhar o material apresentado aqui. 
-- Espero ser de alguma ajuda aos iniciantes em programação e em python, e também aos usuários mais avançados, que podem se aproveitar do enfoque mais computacional e científico do material. 
+- Bem-vindo! O site foi criado como uma ferramenta de ajuda específica para os alunos da [EEL::USP]. Mas todos são bem-vindos para utilizar, curtir e compartilhar o material apresentado aqui.
+- Espero ser de alguma ajuda aos iniciantes em programação e em python, e também aos usuários mais avançados, que podem se aproveitar do enfoque mais computacional e científico do material.
 
 ## Para os alunos da [EEL::USP]
 
@@ -24,11 +24,11 @@ Um pouco para todo tipo de usuário
 ## Organização geral do site
 
 - Neste site, as páginas em cada **Tema** estão rotuladas de acordo com a seguinte convenção:
-  - <span class="badge badge-success">final</span> : página em versão final. Página foi testada, com texto e código funcionando.
-  - <span class="badge badge-warning">devel</span> : versão de desenvolvimento. Contém apenas um esboço do conteúdo.
+  - <span class="badge badge-success">final</span> : página em versão final. Página foi testada, com texto e código funcionando. Isso não significa que não possa ser melhorada! Estou constantemente atualizando todas as páginas, livrando-as de inconsistências e erros. Se achar algum, não deixe de me comunicar, seria uma grande ajuda ao projeto!
+  - <span class="badge badge-warning">constr</span> : versão de desenvolvimento, ou seja, página em construção. Contém apenas um esboço do conteúdo.
   - <span class="badge badge-danger">criado</span> : página criada, mas ainda praticamente sem conteúdo.
-  - Use o site junto com um interpretador python, pois nem todas as respostas aos códigos-exemplos são dadas aqui! Assim você pode testar os códigos (e variações deles) enquanto vai lendo.
-    - Ao final de todas as páginas nos **Temas** há um intérprete python do [trinket.io](https://trinket.io){: target="\_blank"} para você testar imediatamente exemplos do código! Use-o à vontade!
+- Use o site junto com um interpretador python, pois nem todas as respostas aos códigos-exemplos são dadas aqui! Assim você pode testar os códigos (e variações deles) enquanto vai lendo.
+  - Ao final de todas as páginas nos **Temas** há um intérprete python do [trinket.io](https://trinket.io){: target="\_blank"} para você testar imediatamente exemplos do código! Use-o à vontade!
 
 ## Licença de uso: MIT license
 
@@ -55,4 +55,3 @@ SOFTWARE.
 
 [EEL::USP]: http://www.demar.eel.usp.br
 {: target="\_blank"}
-

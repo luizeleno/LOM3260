@@ -4,7 +4,7 @@ parent: temaone
 nav_order: 5
 status: green
 tags: [operador, operadores, comparação, lógicos, incremento, operando, aritmético, lógico, comparação, atribuição]
-timestamp: 07/06/20
+timestamp: 22/08/20
 ---
 
 Numa expressão como `c = a op b`, `a` e `b` são chamados *operandos* e `op` é um **operador**. Os operadores abaixo (com exceção do `not`) agem sobre dois *operandos* e produzem (*retornam*) um resultado, que depende dos tipos de dados dos operandos.
@@ -12,7 +12,7 @@ Numa expressão como `c = a op b`, `a` e `b` são chamados *operandos* e `op` é
 
 ## Operadores aritméticos
 
-- adição: `+` 
+- adição: `+`
 - subtração: `-`
 - multiplicação: `*`
 - divisão: `/`
@@ -22,7 +22,8 @@ Numa expressão como `c = a op b`, `a` e `b` são chamados *operandos* e `op` é
 
 **Regra:** se `op` é qualquer dos operadores acima, temos que:
 - `int op int` retorna `int`
-- `int op float` retorna `float` 
+  - a exceção é o operador `/`, que retorma `float` nesse caso
+- `int op float` retorna `float`
 - `c op int` retorna `float`
 - `float op float` retorna `float`
 
@@ -32,10 +33,14 @@ Numa expressão como `c = a op b`, `a` e `b` são chamados *operandos* e `op` é
 
 Se a comparação é satisfeita, os operadores de comparação retornam `True` (tipo booleanno, ver aula sobre [tipos de dados]({{site.baseurl}}/docs/tipos/)). Caso contrário, retornam `False`.
 - igualdade: `==`
-- não igualdade: `!=` ou `<>` contrário
+- não igualdade: `!=` ou `<>`
 - maior que: `>`
+- menor que: `<`
 - maior ou igual a: `>=`
 - menor ou igual a: `<=`
+
+:warning: Veja que o operador de igualdade é `==`, ou seja, dois sinais de igual em sequência! Isso porque o operador `=`, como vimos, é o operador de atribuição de dados a variáveis.
+{: .alert .alert-warning }
 
 ## Operadores de atribuição
 
@@ -57,9 +62,8 @@ Se a comparação é satisfeita, os operadores de comparação retornam `True` (
 Alguns exemplos:
 ```python
 a, b = 3, 4
-x = a > b and a > 0  
+x = a > b and a > 0
 y = a > b or a > 0
 print(x, y)
 ```
 Esse código imprime `False True`
-

@@ -1,0 +1,53 @@
+I"i<p class="lead">Gerando sequências de inteiros</p>
+
+<p>O comando <code class="language-plaintext highlighter-rouge">range()</code> gera uma sequência de valores de acordo com a seguinte sintaxe:</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">range</span><span class="p">([</span><span class="n">start</span><span class="p">,]</span> <span class="n">stop</span> <span class="p">[,</span> <span class="n">step</span><span class="p">])</span>
+</code></pre></div></div>
+<p>onde</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">start</code>: primeiro valor da sequência</li>
+  <li><code class="language-plaintext highlighter-rouge">stop</code>: último valor, QUE NÃO É INCLUÍDO na sequência gerada</li>
+  <li><code class="language-plaintext highlighter-rouge">step</code>: passo (diferença) entre os valores da sequência</li>
+</ul>
+
+<p>Os argumentos em colchetes (<code class="language-plaintext highlighter-rouge">[start,]</code> e <code class="language-plaintext highlighter-rouge">[, step]</code>) são opcionais. Quando não são fornecidos, valem por padrão 0 (<code class="language-plaintext highlighter-rouge">start</code>) e 1 (<code class="language-plaintext highlighter-rouge">step</code>)</p>
+
+<h2 id="exemplos">Exemplos:</h2>
+
+<ol>
+  <li><code class="language-plaintext highlighter-rouge">range(8)</code> gera os valores 0, 1, 2, 3, 4, 5, 6, 7
+    <ul>
+      <li>se o primeiro valor (<code class="language-plaintext highlighter-rouge">start</code>) não é especificado, ele é 0 por padrão</li>
+      <li>se o passo (<code class="language-plaintext highlighter-rouge">step</code>) não é especificado, ele é 1 por padrão</li>
+      <li>o último valor (<code class="language-plaintext highlighter-rouge">stop</code>) <strong>não</strong> é incluído na sequência gerada</li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">range(1, 9)</code> gera 1, 2, 3, 4, 5, 6, 7, 8
+    <ul>
+      <li>aqui fornecemos <code class="language-plaintext highlighter-rouge">start</code> e <code class="language-plaintext highlighter-rouge">stop</code>, mas não <code class="language-plaintext highlighter-rouge">step</code> (que por padrão é 1)</li>
+      <li>novamente, o último valor (<code class="language-plaintext highlighter-rouge">stop</code>) não é incluído</li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">range(0, 32, 4)</code> gera 0, 4, 8, 12, 16, 20, 24, 28
+    <ul>
+      <li>se você quiser fornecer o <code class="language-plaintext highlighter-rouge">step</code>, precisa necessariamente fornecer também o <code class="language-plaintext highlighter-rouge">start</code></li>
+    </ul>
+  </li>
+  <li>os valores também podem ser negativos: <code class="language-plaintext highlighter-rouge">range(-4, 6)</code> gera -4, -3, -2, -1, 0, 1, 2, 3, 4, 5</li>
+  <li>o passo também pode ser negativo: <code class="language-plaintext highlighter-rouge">range(6, 0, -1)</code> gera 6, 5, 4, 3, 2, 1</li>
+</ol>
+
+<h2 id="observações">Observações</h2>
+
+<p>O comando <code class="language-plaintext highlighter-rouge">range()</code> gera um <strong>objeto do tipo range</strong>. Para conferir se o comando <code class="language-plaintext highlighter-rouge">range</code> realmente gera a sequência esperada, use o comando <code class="language-plaintext highlighter-rouge">list()</code> para convertê-lo para um <strong>objeto do tipo lista</strong>. Por exemplo, o comando</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">)</span>
+</code></pre></div></div>
+<p>gera a sequência 15, 13, 11, 9, 7, 5. Para conferir que isso realmente é verdade, converta-o para um objeto do tipo <code class="language-plaintext highlighter-rouge">list</code></p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">y</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">))</span>
+</code></pre></div></div>
+<p>e o imprima:</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">print</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Veremos em breve como trabalhar com objetos do tipo <code class="language-plaintext highlighter-rouge">list</code>.</p>
+:ET

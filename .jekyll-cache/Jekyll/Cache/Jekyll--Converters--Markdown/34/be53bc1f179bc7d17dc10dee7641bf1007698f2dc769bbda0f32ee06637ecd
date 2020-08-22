@@ -1,0 +1,40 @@
+I"�<ul>
+  <li>
+    <p>A <strong>Nota Final</strong> ($N_{f}$) na disciplina será composta da média ponderada de <strong>Listas de exercícios</strong> ($L$, 70%) e um <strong>Projeto em equipe</strong> ($P$, 30%):</p>
+
+\[N_{f} = 0.7 L + 0.3 P\]
+  </li>
+  <li>
+    <p>A nota das <strong>Listas de exercícios</strong> ($L$) tem duas partes:</p>
+
+\[L = 0.4 L_{d} + 0.6 Q\]
+
+    <ul>
+      <li>$L_{d}$: média de três listas entregues <strong>em dupla</strong> ao longo do semestre
+        <ul>
+          <li>além de verificação manual, será utilizado um <strong>detector anti-plágio</strong> baseado em inteligência artificial!</li>
+        </ul>
+      </li>
+      <li>$Q$:  série de questões a serem respondidas <strong>individualmente</strong> na última aula do semestre</li>
+    </ul>
+  </li>
+  <li>
+    <p>A nota do <strong>Projeto em equipe</strong> ($P$) também tem duas partes:</p>
+
+\[P = P_{e} + \frac{P_{i}}{\displaystyle\sum_{i} P_{i}}\]
+
+    <ul>
+      <li>$P_e$: nota da equipe (<strong>de 4 ou 5 alunos</strong>), <strong>atribuída pelo professor</strong></li>
+      <li>$P_i$: nota individual, <strong>atribuída pelos membros da equipe</strong>
+        <ul>
+          <li>uma nota de 50 a 100 pontos atribuída a cada aluno</li>
+          <li>diferença mínima de 10 pontos entre duas notas consecutivas</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>Requisitos para aprovação: $N_f \ge 5$ e frequência $\ge$ 70%</p>
+  </li>
+</ul>
+:ET

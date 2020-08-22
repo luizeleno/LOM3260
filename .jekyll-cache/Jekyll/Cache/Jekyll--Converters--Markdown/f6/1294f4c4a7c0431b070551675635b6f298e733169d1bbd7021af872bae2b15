@@ -1,0 +1,1113 @@
+I"��<h3 id="acesso-rápido">Acesso rápido</h3>
+
+<p><a href="#ex1" class="badge badge-primary">Ex. 1</a>
+<a href="#ex2" class="badge badge-primary">Ex. 2</a>
+<a href="#ex3" class="badge badge-primary">Ex. 3</a>
+<a href="#ex4" class="badge badge-primary">Ex. 4</a>
+<a href="#ex5" class="badge badge-primary">Ex. 5</a>
+<a href="#ex6" class="badge badge-primary">Ex. 6</a>
+<a href="#ex7" class="badge badge-primary">Ex. 7</a>
+<a href="#ex8" class="badge badge-primary">Ex. 8</a>
+<a href="#ex9" class="badge badge-primary">Ex. 9</a>
+<a href="#ex10" class="badge badge-primary">Ex. 10</a>
+<a href="#ex11" class="badge badge-primary">Ex. 11</a>
+<a href="#ex12" class="badge badge-primary">Ex. 12</a>
+<a href="#ex13" class="badge badge-primary">Ex. 13</a>
+<a href="#ex14" class="badge badge-primary">Ex. 14</a>
+<a href="#ex15" class="badge badge-primary">Ex. 15</a>
+<a href="#ex16" class="badge badge-primary">Ex. 16</a>
+<a href="#ex17" class="badge badge-primary">Ex. 17</a>
+<a href="#ex18" class="badge badge-primary">Ex. 18</a>
+<a href="#ex19" class="badge badge-primary">Ex. 19</a>
+<a href="#ex20" class="badge badge-primary">Ex. 20</a>
+<a href="#ex21" class="badge badge-primary">Ex. 21</a>
+<a href="#ex22" class="badge badge-primary">Ex. 22</a>
+<a href="#ex23" class="badge badge-primary">Ex. 23</a>
+<a href="#ex24" class="badge badge-primary">Ex. 24</a>
+<a href="#ex25" class="badge badge-primary">Ex. 25</a>
+<a href="#ex26" class="badge badge-primary">Ex. 26</a>
+<a href="#ex27" class="badge badge-primary">Ex. 27</a>
+<a href="#ex28" class="badge badge-primary">Ex. 28</a>
+<a href="#ex29" class="badge badge-primary">Ex. 29</a>
+<a href="#ex30" class="badge badge-primary">Ex. 30</a></p>
+
+<h3 id="instruções">Instruções</h3>
+
+<ul>
+  <li>os exercícios marcados em <span class="badge badge-success">verde</span> foram resolvidos em sala de aula. Uma possível solução é fornecida aqui, junto ao exercício.</li>
+  <li>as porcentagens no começo de cada exercício são uma maneira de indicar o seu grau de dificuldade. Mas não se apegue muito a esses valores: talvez você ache fáceis alguns que eu julgo como difíceis — e vice versa!</li>
+  <li><strong>Legenda:</strong>
+<img src="/LOM3260/assets/images/legenda/ifthenelse.jpg" alt="" title="decisão" width="20px" />’ : decisão;
+<img src="/LOM3260/assets/images/legenda/loop.png" alt="" title="repetição" width="20px" />’ : repetição;
+<img src="/LOM3260/assets/images/legenda/function.png" alt="" title="função" width="20px" />’ : função;
+<img src="/LOM3260/assets/images/legenda/dict.png" alt="" title="dicionário" width="20px" />’ : dicionários;
+<img src="/LOM3260/assets/images/legenda/list.png" alt="" title="lista" width="20px" />’ : listas;
+<img src="/LOM3260/assets/images/legenda/string.jpg" alt="" title="string" width="20px" />’ : <em>strings</em>.</li>
+</ul>
+
+<div class="card mb-2">
+    <a name="ex1"></a><h2 class="card-title alert alert-primary">Exercício 1: Anos bissextos</h2>
+    <div class="card-body">
+        <ul>
+            <li><i><b>dificuldade:</b></i> 10%</li>
+            <li><i><b>utiliza:</b></i> <img src="/LOM3260/assets/images/legenda/ifthenelse.jpg" title="decisão" width="30px" />&nbsp;</li>
+        </ul>
+
+        
+          
+          <p>A maioria dos anos tem 365 dias. No entanto, o tempo necessário para a Terra orbitar o Sol é na verdade um pouco maior que isso. Para corrigir essa diferença, um dia extra, 29 de fevereiro, está incluído em alguns anos, ditos bissextos. As regras para determinar se um ano é ou não um ano bissexto são as seguintes:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>1. qualquer ano que seja divisível por 400 é um ano bissexto;</td>
+    </tr>
+    <tr>
+      <td>2. dos anos restantes, qualquer ano que seja divisível por 100 não é um ano bissexto;</td>
+    </tr>
+    <tr>
+      <td>3. dos anos restantes, qualquer ano que seja divisível por 4 é um ano bissexto;</td>
+    </tr>
+    <tr>
+      <td>4. todos os outros anos não são anos bissextos.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Escreva um programa que leia um ano do usuário e exiba uma mensagem dizendo se ele é ou não um ano bissexto. Você consegue pensar num algoritmo mais eficiente, que faça em média menos testes?</p>
+
+<h3 id="dicas-para-responder-à-pergunta-final">Dicas para responder à pergunta final:</h3>
+<ul>
+  <li>Veja que o algoritmo proposto no enunciado testa inicialmente se um número é múltiplo de 400. Apenas um em 400 números é múltiplo de 400. Portanto, 399 de 400 (99.75%) não passam no primeiro teste e vão para o segundo.</li>
+  <li>Similarmente, um a cada 100 números é múltiplo de 100, então 99 de 100 (99%) não passam pelo segundo teste e vão para o terceiro.</li>
+  <li>Assim, em média, o algoritmo proposto faz muito mais comparações do que o necessário. Repensando os testes a serem feitos, é possível reduzi-los em número. Por exemplo, se você começar com o teste <code class="language-plaintext highlighter-rouge">ano % 4 != 0</code>, 3 de 4 casos resultam em <code class="language-plaintext highlighter-rouge">True</code>, ou seja, esse é o único teste que você precisaria fazer em 75% dos casos.</li>
+</ul>
+
+
+        
+        
+
+    </div>
+</div>
+
+<div class="card mb-2">
+    <a name="ex2"></a><h2 class="card-title alert alert-primary">Exercício 2: Tempo em segundos</h2>
+    <div class="card-body">
+        <ul>
+            <li><i><b>dificuldade:</b></i> 20%</li>
+            <li><i><b>utiliza:</b></i> </li>
+        </ul>
+
+        
+          <p>Escreva um programa que, dada uma duração de tempo em segundos, calcule o número equivalente de dias, horas, minutos e segundos.</p>
+
+<h3 id="dicas">Dicas:</h3>
+
+<p>Nesse exercício, use os operadores // (divisão inteira) e % (resto de divisão). Alguns exemplos:</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="mi">18</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">x</span> <span class="o">//</span> <span class="mi">3</span> <span class="c1"># retorna o int 6
+</span><span class="n">y</span> <span class="o">=</span> <span class="n">x</span> <span class="o">%</span> <span class="mi">3</span> <span class="c1"># retorna o int 0
+</span><span class="n">y</span> <span class="o">=</span> <span class="n">x</span> <span class="o">//</span> <span class="mi">4</span> <span class="c1"># retorna o int 4
+</span><span class="n">y</span> <span class="o">=</span> <span class="n">x</span> <span class="o">%</span> <span class="mi">4</span> <span class="c1"># retorna o int 2
+</span></code></pre></div></div>
+
+        
+        
+
+    </div>
+</div>
+
+<div class="card mb-2">
+    <a name="ex3"></a><h2 class="card-title alert alert-primary">Exercício 3: Triângulos</h2>
+    <div class="card-body">
+        <ul>
+            <li><i><b>dificuldade:</b></i> 20%</li>
+            <li><i><b>utiliza:</b></i> <img src="/LOM3260/assets/images/legenda/ifthenelse.jpg" title="decisão" width="30px" />&nbsp;</li>
+        </ul>
+
+        
+          <p>Se você tem 3 varetas, possivelmente de diferentes comprimentos, pode ou não ser possível ajeitá-las para que elas formem um triângulo. Por exemplo, se todos as varetas tiverem um comprimento de 6cm, pode-se facilmente construir um triângulo equilátero. No entanto, se uma vareta tem 6cm e as outras duas têm apenas 2cm, não dá pra criar um triângulo. Em geral, se qualquer uma das varetas é maior ou igual à soma das outras duas, elas não podem ser usadas para formar um triângulo. Caso contrário, o triângulo existe. Escreva um programa que determine se três comprimentos podem ou não formar um triângulo. O programa recebe 3 parâmetros e retorna um resultado booleano (<code class="language-plaintext highlighter-rouge">True</code> ou <code class="language-plaintext highlighter-rouge">False</code>).</p>
+
+        
+        
+
+    </div>
+</div>
+
+<div class="card mb-2">
+    <a name="ex4"></a><h2 class="card-title alert alert-primary">Exercício 4: 3-5-15</h2>
+    <div class="card-body">
+        <ul>
+            <li><i><b>dificuldade:</b></i> 10%</li>
+            <li><i><b>utiliza:</b></i> <img src="/LOM3260/assets/images/legenda/ifthenelse.jpg" title="decisão" width="30px" />&nbsp;<img src="/LOM3260/assets/images/legenda/loop.png" title="repetição" width="20px" />&nbsp;</li>
+        </ul>
+
+        
+          <p>Monte um código que imprima os números de 1 a 100 mas, para múltiplos de 3, imprime <code class="language-plaintext highlighter-rouge">trei</code> ao invés do número; se é múltiplo de 5, imprime <code class="language-plaintext highlighter-rouge">cinci</code>; mas, se é múltiplo de 3 e 5 ao mesmo tempo, imprime <code class="language-plaintext highlighter-rouge">cincisprezece</code> (3, 5 e 15 em romeno).</p>
+
+        
+        
+
+    </div>
+</div>
+
+<div class="card mb-2">
+    <a name="ex5"></a><h2 class="card-title alert alert-primary">Exercício 5: Divisores</h2>
+    <div class="card-body">
+        <ul>
+            <li><i><b>dificuldade:</b></i> 15%</li>
+            <li><i><b>utiliza:</b></i> <img src="/LOM3260/assets/images/legenda/ifthenelse.jpg" title="decisão" width="30px" />&nbsp;<img src="/LOM3260/assets/images/legenda/loop.png" title="repetição" width="20px" />&nbsp;</li>
+        </ul>
+
+        
+          
+          <p>Crie um programa que peça ao usuário um número e imprima todos os seus divisores. Se você não lembra o que é um divisor, é um número que divide outro sem deixar resto. Por exemplo, 13 é um divisor de 26 porque 26/13 não tem nenhum resto.</p>
+
+
+        
+        
+
+    </div>
+</div>
+
+<div class="card mb-2">
+    <a name="ex6"></a><h2 class="card-title alert alert-primary">Exercício 6: Máximo divisor comum</h2>
+    <div class="card-body">
+        <ul>
+            <li><i><b>dificuldade:</b></i> 10%</li>
+            <li><i><b>utiliza:</b></i> <img src="/LOM3260/assets/images/legenda/ifthenelse.jpg" title="decisão" width="30px" />&nbsp;<img src="/LOM3260/assets/images/legenda/loop.png" title="repetição" width="20px" />&nbsp;</li>
+        </ul>
+
+        
+          
+          <p>O máximo divisor comum (MDC) de dois inteiros positivos, $n$ e $m$, é o maior número, $d$, capaz de dividir $n$ e $m$ sem deixar resto. Existem vários algoritmos para determinar $d$, incluindo o seguinte:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>1. inicialize $d$ como o menor entre $m$ e $n$;</td>
+    </tr>
+    <tr>
+      <td>2. enquanto $d$ não dividir exatamente $m$ e $n$, diminua o valor de $d$ de uma unidade.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Ao final do algoritmo, $d$ sera o MDC de $n$ e $m$. Escreva um programa que leia dois inteiros positivos do usuário e use esse algoritmo para determinar e relatar seu máximo divisor comum.</p>
+
+
+        
+        
+
+    </div>
+</div>
+
+<div class="card mb-2">
+    <a name="ex7"></a><h2 class="card-title alert alert-primary">Exercício 7: MIT I</h2>
+    <div class="card-body">
+        <ul>
+            <li><i><b>dificuldade:</b></i> 10%</li>
+            <li><i><b>utiliza:</b></i> <img src="/LOM3260/assets/images/legenda/ifthenelse.jpg" title="decisão" width="30px" />&nbsp;<img src="/LOM3260/assets/images/legenda/loop.png" title="repetição" width="20px" />&nbsp;<img src="/LOM3260/assets/images/legenda/string.jpg" title="string" width="25px" />&nbsp;</li>
+        </ul>
+
+        
+          
+          <p>(MIT) Escreva um programa que conte o número de vogais numa <em>string</em> <code class="language-plaintext highlighter-rouge">s</code> composta unicamente de letras minúsculas. Por exemplo, se <code class="language-plaintext highlighter-rouge">s = 'azcbobobegghakl'</code>, seu programa deve imprimir <code class="language-plaintext highlighter-rouge">Número de vogais: 5</code>.</p>
+
+
+        
+        
+
+    </div>
+</div>
+
+<div class="card mb-2">
+    <a name="ex8"></a><h2 class="card-title alert alert-primary">Exercício 8: MIT II</h2>
+    <div class="card-body">
+        <ul>
+            <li><i><b>dificuldade:</b></i> 30%</li>
+            <li><i><b>utiliza:</b></i> <img src="/LOM3260/assets/images/legenda/ifthenelse.jpg" title="decisão" width="30px" />&nbsp;<img src="/LOM3260/assets/images/legenda/loop.png" title="repetição" width="20px" />&nbsp;<img src="/LOM3260/assets/images/legenda/string.jpg" title="string" width="25px" />&nbsp;</li>
+        </ul>
+
+        
+          
+          <p>(MIT) Escreva um código para contar o número de vezes que a sequência <code class="language-plaintext highlighter-rouge">'bob'</code> aparece numa <em>string</em> <code class="language-plaintext highlighter-rouge">s</code> composta unicamente de letras minúsculas. Por exemplo, se <code class="language-plaintext highlighter-rouge">s = 'azcbobobegghakl'</code>, seu programa deve imprimir <code class="language-plaintext highlighter-rouge">Número de ocorrências de bob: 2</code>.</p>
+
+
+        
+        
+
+    </div>
+</div>
+
+<div class="card mb-2">
+    <a name="ex9"></a><h2 class="card-title alert alert-primary">Exercício 9: MIT III</h2>
+    <div class="card-body">
+        <ul>
+            <li><i><b>dificuldade:</b></i> 60%</li>
+            <li><i><b>utiliza:</b></i> <img src="/LOM3260/assets/images/legenda/ifthenelse.jpg" title="decisão" width="30px" />&nbsp;<img src="/LOM3260/assets/images/legenda/loop.png" title="repetição" width="20px" />&nbsp;<img src="/LOM3260/assets/images/legenda/string.jpg" title="string" width="25px" />&nbsp;</li>
+        </ul>
+
+        
+          <p>(MIT) Escreva um código para imprimir a maior sequência em ordem estritamente alfabética de uma <em>string</em> <code class="language-plaintext highlighter-rouge">s</code> composta unicamente de letras minúsculas. Por exemplo, se <code class="language-plaintext highlighter-rouge">s = 'azcbobobegghakl'</code>, seu programa deve imprimir <code class="language-plaintext highlighter-rouge">Maior sequência em ordem alfabética: beggh</code>. Em caso de empate, imprima apenas a primeira subsequência. Por exemplo, se <code class="language-plaintext highlighter-rouge">s = 'abcbcd'</code>, seu programa deve imprimir <code class="language-plaintext highlighter-rouge">Maior sequência em ordem alfabética: abc</code>.</p>
+
+        
+        
+
+    </div>
+</div>
+
+<div class="card mb-2">
+    <a name="ex10"></a><h2 class="card-title alert alert-primary">Exercício 10: Números romanos</h2>
+    <div class="card-body">
+        <ul>
+            <li><i><b>dificuldade:</b></i> 50%</li>
+            <li><i><b>utiliza:</b></i> <img src="/LOM3260/assets/images/legenda/ifthenelse.jpg" title="decisão" width="30px" />&nbsp;<img src="/LOM3260/assets/images/legenda/loop.png" title="repetição" width="20px" />&nbsp;<img src="/LOM3260/assets/images/legenda/string.jpg" title="string" width="25px" />&nbsp;<img src="/LOM3260/assets/images/legenda/dict.png" title="dicionário" width="40px" />&nbsp;</li>
+        </ul>
+
+        
+          <p>Implemente um algoritmo para converter números em algarismos arábicos (por exemplo, 4, 18, 29, 98, 1746) em algarismos romanos (IV, XVIII, XXIX, XCVIII, MDCCXLVI). Limite-se aos valores de 1 a 3999. Se estiver inspirado, implemente a conversão de algarismos romanos para arábicos.</p>
+
+        
+        
+
+    </div>
+</div>
+
+<div class="card mb-2">
+    <a name="ex11"></a><h2 class="card-title alert alert-primary">Exercício 11: Só uma linha</h2>
+    <div class="card-body">
+        <ul>
+            <li><i><b>dificuldade:</b></i> 10%</li>
+            <li><i><b>utiliza:</b></i> <img src="/LOM3260/assets/images/legenda/ifthenelse.jpg" title="decisão" width="30px" />&nbsp;<img src="/LOM3260/assets/images/legenda/loop.png" title="repetição" width="20px" />&nbsp;<img src="/LOM3260/assets/images/legenda/list.png" title="lista" width="25px" />&nbsp;</li>
+        </ul>
+
+        
+          
+          <p>Digamos que eu lhe forneça uma lista de números: <code class="language-plaintext highlighter-rouge">a = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]</code>. Escreva uma única linha em Python que gere uma nova lista apenas com os elementos pares de <code class="language-plaintext highlighter-rouge">a</code>.</p>
+
+
+        
+        
+
+    </div>
+</div>
+
+<div class="card mb-2">
+    <a name="ex12"></a><h2 class="card-title alert alert-primary">Exercício 12: Números binários I</h2>
+    <div class="card-body">
+        <ul>
+            <li><i><b>dificuldade:</b></i> 15%</li>
+            <li><i><b>utiliza:</b></i> <img src="/LOM3260/assets/images/legenda/string.jpg" title="string" width="25px" />&nbsp;<img src="/LOM3260/assets/images/legenda/loop.png" title="repetição" width="20px" />&nbsp;</li>
+        </ul>
+
+        
+          
+          <p>Escreva um programa que converta um número binário (base 2) em decimal (base 10). Seu programa deve ler o número binário do usuário como uma sequência de zeros e uns e exibir o número decimal equivalente, processando cada dígito da representação binária. Por exemplo, 1010011 (base 2) $\equiv$ 83 (base 10), obtido a partir da definição:</p>
+
+\[1010011 \text{ (base 2)} =\]
+
+\[= \mathbf{1} \times 2^6 +
+\mathbf{0} \times 2^5 +
+\mathbf{1} \times 2^4 +\]
+
+\[+ \mathbf{0} \times 2^3 +
+\mathbf{0} \times 2^2 +
+\mathbf{1} \times 2^1 +
+\mathbf{1} \times 2^0 =\]
+
+\[= 83 \text{ (base 10)}\]
+
+
+        
+        
+
+    </div>
+</div>
+
+<div class="card mb-2">
+    <a name="ex13"></a><h2 class="card-title alert alert-primary">Exercício 13: Números binários II</h2>
+    <div class="card-body">
+        <ul>
+            <li><i><b>dificuldade:</b></i> 15%</li>
+            <li><i><b>utiliza:</b></i> <img src="/LOM3260/assets/images/legenda/loop.png" title="repetição" width="20px" />&nbsp;</li>
+        </ul>
+
+        
+          
+          <p>Escreva um programa que converta um número decimal (base 10) em binário (base 2). Leia o número decimal do usuário e use o seguinte algoritmo de divisão, exemplificado para o número 83 (base 10):</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	83/2 = 41 resto 1
+	41/2 = 20 resto 1
+	20/2 = 10 resto 0
+	10/2 = 5 resto 0
+	5/2 = 2 resto 1
+	2/2 = 1 resto 0
+	1/2 = 0 resto 1
+</code></pre></div></div>
+<p>Os restos das divisões (começando do último valor) contém a representação binária do número, nesse caso 1010011 (base 2).</p>
+
+
+        
+        
+
+    </div>
+</div>
+
+<div class="card mb-2">
+    <a name="ex14"></a><h2 class="card-title alert alert-primary">Exercício 14: Sistema RGB</h2>
+    <div class="card-body">
+        <ul>
+            <li><i><b>dificuldade:</b></i> 30%</li>
+            <li><i><b>utiliza:</b></i> <img src="/LOM3260/assets/images/legenda/loop.png" title="repetição" width="20px" />&nbsp;<img src="/LOM3260/assets/images/legenda/string.jpg" title="string" width="25px" />&nbsp;<img src="/LOM3260/assets/images/legenda/dict.png" title="dicionário" width="40px" />&nbsp;</li>
+        </ul>
+
+        
+          <p>Uma das maneiras de se referir a cores em <em>websites</em> e outras aplicações é a <strong>notação RGB</strong> (<em>red-green-blue</em>): três inteiros $0 \le R,\,G,\,B \le 255$ como identificadores das tonalidades de vermelho, verde e azul, respectivamente, que, quando mescladas, fornecem a cor desejada. Ao invés de fornecer os três inteiros em base 10, no entanto, é comum usar base 16. Essa maneira de identificar cores  é conhecida como <strong>código hexadecimal</strong>. Em base 16, precisamos de 16 caracteres para representar os “dígitos” de um número (veja que em base 2 precisamos de dois, e em base 10, de dez). Usualmente são escolhidos os caracteres 0–9, com os valores usuais, e portanto precisamos de mais seis caracteres para representar os “dígitos” de de 10 a 15. Usualmente usa-se as letras A–F. Por exemplo,</p>
+
+\[\small
+42 \text{ (base 10)} = 2A \text{ (base 16)} =\]
+
+\[= 2 \times 16^1 + 10 \times 16^0 \,.\]
+
+<p>Números que em base 16 são formados por apenas dois caracteres equivalem aos números de 0 a 255 ($= 16 ^ 2 -1$) em base 10.
+Além disso, no código hexadecimal as três tonalidades são indicadas por uma única <em>string</em> de seis caracteres. Por exemplo, o código hexadecimal <code class="language-plaintext highlighter-rouge">CD1F41</code> corresponde aos tons $R=205$, $G=31$ e $B=65$, como você pode conferir <a href="https://htmlcolorcodes.com/" target="blank">aqui</a>.
+Esse sistema (ou seja, seis caracteres escolhidos do conjunto 0–9+A–F) é capaz de descrever $256^3=16\,777\,216$ cores diferentes, de 000000 (preto) a FFFFFF (branco). Com base nos exercícios anteriores sobre números binários, monte um algoritmo para converter uma <em>string</em> válida de seis caracteres representando uma cor em código hexadecimal para a notação RGB, ou seja, os três inteiros $0 \le R,\,G,\,B \le 255$ com as tonalidades de vermelho, verde e azul. Implemente também a conversão no sentido contrário, ou seja, dados três inteiros $R,\,G,\,B \in [0,\,255]$, determine o código hexadecimal da cor em questão.</p>
+
+        
+        
+
+    </div>
+</div>
+
+<div class="card mb-2">
+    <a name="ex15"></a><h2 class="card-title alert alert-primary">Exercício 15: Cosseno como uma série</h2>
+    <div class="card-body">
+        <ul>
+            <li><i><b>dificuldade:</b></i> 30%</li>
+            <li><i><b>utiliza:</b></i> <img src="/LOM3260/assets/images/legenda/ifthenelse.jpg" title="decisão" width="30px" />&nbsp;<img src="/LOM3260/assets/images/legenda/loop.png" title="repetição" width="20px" />&nbsp;</li>
+        </ul>
+
+        
+          
+          <p>Calcule uma aproximação para $\cos x$ através da série</p>
+
+\[\small
+\cos x = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \frac{x^6}{6!} + \ldots\]
+
+<p>até que o módulo do último termo seja menor que $10^{-6}$. O usuário deve fornecer o valor de $x$. Não use a função fatorial, pois isso é desperdício de tempo de processamento, já que boa parte das operações para o cálculo de um termo da série já foi feita para o termo anterior!</p>
+
+
+        
+        
+
+    </div>
+</div>
+
+<div class="card mb-2">
+    <a name="ex16"></a><h2 class="card-title alert alert-primary">Exercício 16: Pi como uma série</h2>
+    <div class="card-body">
+        <ul>
+            <li><i><b>dificuldade:</b></i> 20%</li>
+            <li><i><b>utiliza:</b></i> <img src="/LOM3260/assets/images/legenda/loop.png" title="repetição" width="20px" />&nbsp;</li>
+        </ul>
+
+        
+          
+          <p>Calcule as quinze primeiras aproximações para $\pi$ de acordo com a série</p>
+
+\[\small
+\frac{\pi-3}{4} = \frac{1}{2\cdot3\cdot4} - \frac{1}{4\cdot5\cdot6} + \frac{1}{6\cdot7\cdot8} - \ldots\]
+
+<p>Novamente, não use uma função fatorial, é uma perda de tempo e de recursos computacionais!</p>
+
+
+        
+        
+
+    </div>
+</div>
+
+<div class="card mb-2">
+    <a name="ex17"></a><h2 class="card-title alert alert-primary">Exercício 17: Joguinho</h2>
+    <div class="card-body">
+        <ul>
+            <li><i><b>dificuldade:</b></i> 20%</li>
+            <li><i><b>utiliza:</b></i> <img src="/LOM3260/assets/images/legenda/ifthenelse.jpg" title="decisão" width="30px" />&nbsp;<img src="/LOM3260/assets/images/legenda/loop.png" title="repetição" width="20px" />&nbsp;</li>
+        </ul>
+
+        
+          <p>Implemente o seguinte joguinho de computador: o usuário deve adivinhar um número de 1 a 100 “pensado” pelo computador (use a função <code class="language-plaintext highlighter-rouge">randint()</code> do módulo <code class="language-plaintext highlighter-rouge">numpy.random</code>). A cada palpite do usuário, o programa vai “cercando” o número, informando o intervalo $[a,\,b]$ em que ele se encontra. Acompanhe o seguinte exemplo, em que o número secreto é 42:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Adivinhe o número:
+Está entre 1 e 100: 25
+Está entre 25 e 100: 60
+Está entre 25 e 60: 40
+Está entre 40 e 60:
+</code></pre></div></div>
+<p>E assim por diante, até o usuário acertar. Não precisa de interface gráfica! Use a função <code class="language-plaintext highlighter-rouge">input()</code> para pedir ao usuário seu palpite (ou seja, crie uma <strong>TUI</strong> — <em>text-based user interface</em>). Qual é a melhor estratégia para ganhar o jogo no menor número de tentativas?</p>
+
+        
+        
+
+    </div>
+</div>
+
+<div class="card mb-2">
+    <a name="ex18"></a><h2 class="card-title alert alert-primary">Exercício 18: Dia seguinte</h2>
+    <div class="card-body">
+        <ul>
+            <li><i><b>dificuldade:</b></i> 35%</li>
+            <li><i><b>utiliza:</b></i> <img src="/LOM3260/assets/images/legenda/ifthenelse.jpg" title="decisão" width="30px" />&nbsp;<img src="/LOM3260/assets/images/legenda/loop.png" title="repetição" width="20px" />&nbsp;<img src="/LOM3260/assets/images/legenda/dict.png" title="dicionário" width="40px" />&nbsp;</li>
+        </ul>
+
+        
+          <p>Escreva um programa que leia uma data do usuário e calcule o dia seguinte. Por exemplo, se o usuário inserir valores que representem 18/11/2013, o programa deve exibir 19/11/2013. A data deve ser inserida em formato numérico com três declarações de entrada separadas, uma para o ano, uma para o mês e uma para o dia. Certifique-se de que o seu programa funcione corretamente para anos bissextos.</p>
+
+        
+        
+
+    </div>
+</div>
+
+<div class="card mb-2">
+    <a name="ex19"></a><h2 class="card-title alert alert-primary">Exercício 19: Código César</h2>
+    <div class="card-body">
+        <ul>
+            <li><i><b>dificuldade:</b></i> 40%</li>
+            <li><i><b>utiliza:</b></i> <img src="/LOM3260/assets/images/legenda/ifthenelse.jpg" title="decisão" width="30px" />&nbsp;<img src="/LOM3260/assets/images/legenda/loop.png" title="repetição" width="20px" />&nbsp;<img src="/LOM3260/assets/images/legenda/string.jpg" title="string" width="25px" />&nbsp;<img src="/LOM3260/assets/images/legenda/function.png" title="função" width="15px" />&nbsp;</li>
+        </ul>
+
+        
+          <p>Um dos primeiros exemplos conhecidos de criptografia foi usado por Júlio César, que precisava fornecer instruções escritas para seus generais, mas não queria que seus inimigos descobrissem seus planos se a mensagem caísse em mãos erradas. Como resultado, ele desenvolveu o que mais tarde ficou conhecido como Código de César. A ideia é simples mas, em consequência, não fornece proteção contra técnicas modernas de quebra de código. Cada letra na mensagem original é deslocada de 3 lugares. Por exemplo, A torna-se D, B torna-se E, C torna-se F, D torna-se G, etc. As últimas três letras do alfabeto são enroladas de volta do início: X torna-se A, Y torna-se B e Z torna-se C. Caracteres não alfabéticos ficam inalterados. Escreva um programa que implemente o  Código de César. Permita ao usuário fornecer a mensagem e o valor do deslocamento (não necessariamente 3) e, em seguida, exiba a mensagem codificada. Garanta que seu programa codifique letras maiúsculas e minúsculas de modo coerente. Faça com que seu programa suporte também valores de deslocamento negativos, para que possa ser usado tanto para codificar quanto para decodificar mensagens.</p>
+
+<h3 id="dicas">Dicas</h3>
+
+<ol>
+  <li>Os caracteres da Tabela ASCII correspondentes às letras A-Z e a-z estão, respectivamente, nas posições 65-90 e 97-122. Os algarismos de 0 a 9 correspondem às posições de 48 a 57.</li>
+  <li>Os seguintes comandos são úteis para esse (e outros) exercícios:
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">ord(c)</code>: retorna um <code class="language-plaintext highlighter-rouge">int</code> com a posição do caractere <code class="language-plaintext highlighter-rouge">c</code> na Tabela ASCII. Por exemplo, <code class="language-plaintext highlighter-rouge">ord('A')</code> retorna <code class="language-plaintext highlighter-rouge">65</code>.</li>
+      <li><code class="language-plaintext highlighter-rouge">chr(n)</code>: retorna o caractere correspondente ao inteiro <code class="language-plaintext highlighter-rouge">n</code>. Por exemplo, <code class="language-plaintext highlighter-rouge">chr(122)</code> retorna <code class="language-plaintext highlighter-rouge">'z'</code>.</li>
+    </ul>
+  </li>
+</ol>
+
+        
+        
+
+    </div>
+</div>
+
+<div class="card mb-2">
+    <a name="ex20"></a><h2 class="card-title alert alert-primary">Exercício 20: Raiz quadrada (Newton)</h2>
+    <div class="card-body">
+        <ul>
+            <li><i><b>dificuldade:</b></i> 20%</li>
+            <li><i><b>utiliza:</b></i> <img src="/LOM3260/assets/images/legenda/ifthenelse.jpg" title="decisão" width="30px" />&nbsp;<img src="/LOM3260/assets/images/legenda/loop.png" title="repetição" width="20px" />&nbsp;</li>
+        </ul>
+
+        
+          
+          <p>Escreva um programa que implementa o método de Newton para extrair a raiz quadrada de um número digitado pelo usuário. O algoritmo é o seguinte:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>1. leia <code class="language-plaintext highlighter-rouge">x</code> do usuário;</td>
+    </tr>
+    <tr>
+      <td>2. inicialize <code class="language-plaintext highlighter-rouge">raiz</code> em <code class="language-plaintext highlighter-rouge">x / 2</code>;</td>
+    </tr>
+    <tr>
+      <td>3. enquanto <code class="language-plaintext highlighter-rouge">raiz</code> não for “bom o suficiente,” atualize <code class="language-plaintext highlighter-rouge">raiz</code> para a média de <code class="language-plaintext highlighter-rouge">raiz</code> e <code class="language-plaintext highlighter-rouge">x / raiz</code>.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Quando o algoritmo é concluído, <code class="language-plaintext highlighter-rouge">raiz</code> contém uma aproximação da raiz quadrada de <code class="language-plaintext highlighter-rouge">x</code>. A qualidade da aproximação depende de como você define “bom o suficiente,” então adote o seguinte critério de parada: o valor absoluto da diferença entre <code class="language-plaintext highlighter-rouge">raiz * raiz</code> e <code class="language-plaintext highlighter-rouge">x</code> deve ser menor que $10^{-12}$.</p>
+
+
+        
+        
+
+    </div>
+</div>
+
+<div class="card mb-2">
+    <a name="ex21"></a><h2 class="card-title alert alert-primary">Exercício 21: Senha aleatória</h2>
+    <div class="card-body">
+        <ul>
+            <li><i><b>dificuldade:</b></i> 20%</li>
+            <li><i><b>utiliza:</b></i> <img src="/LOM3260/assets/images/legenda/ifthenelse.jpg" title="decisão" width="30px" />&nbsp;<img src="/LOM3260/assets/images/legenda/loop.png" title="repetição" width="20px" />&nbsp;<img src="/LOM3260/assets/images/legenda/string.jpg" title="string" width="25px" />&nbsp;</li>
+        </ul>
+
+        
+          
+          <p>Escreva um programa para gerar uma senha aleatória. A senha deve ter um comprimento aleatório entre 7 e 10 caracteres (use a função <code class="language-plaintext highlighter-rouge">randint()</code> do módulo <code class="language-plaintext highlighter-rouge">numpy.random</code>). Cada caractere deve ser aleatoriamente selecionado das posições 33 a 126 na tabela ASCII. Sua função deve retornar a senha gerada aleatoriamente como único resultado, sem necessidade de entrada do usuário.
+<strong>Dica:</strong> a função <code class="language-plaintext highlighter-rouge">chr()</code> é útil para resolver esse exercício.</p>
+
+
+        
+        
+
+    </div>
+</div>
+
+<div class="card mb-2">
+    <a name="ex22"></a><h2 class="card-title alert alert-primary">Exercício 22: Senha forte</h2>
+    <div class="card-body">
+        <ul>
+            <li><i><b>dificuldade:</b></i> 25%</li>
+            <li><i><b>utiliza:</b></i> <img src="/LOM3260/assets/images/legenda/ifthenelse.jpg" title="decisão" width="30px" />&nbsp;<img src="/LOM3260/assets/images/legenda/loop.png" title="repetição" width="20px" />&nbsp;<img src="/LOM3260/assets/images/legenda/string.jpg" title="string" width="25px" />&nbsp;<img src="/LOM3260/assets/images/legenda/function.png" title="função" width="15px" />&nbsp;</li>
+        </ul>
+
+        
+          
+          <p>Adapte o exercício anterior para gerar uma <em>senha forte</em>, tendo pelo menos 8 caracteres, pelo menos uma letra maiúscula, pelo menos uma letra minúscula, e pelo menos um número. Conte e exiba o número de tentativas que foram necessárias antes que uma senha forte fosse gerada.</p>
+
+
+        
+        
+
+    </div>
+</div>
+
+<div class="card mb-2">
+    <a name="ex23"></a><h2 class="card-title alert alert-primary">Exercício 23: Fatorial por recursão</h2>
+    <div class="card-body">
+        <ul>
+            <li><i><b>dificuldade:</b></i> 20%</li>
+            <li><i><b>utiliza:</b></i> <img src="/LOM3260/assets/images/legenda/ifthenelse.jpg" title="decisão" width="30px" />&nbsp;<img src="/LOM3260/assets/images/legenda/function.png" title="função" width="15px" />&nbsp;</li>
+        </ul>
+
+        
+          <p>Interprete a saída da seguinte função, que usa uma propriedade conhecida como <strong>recursão</strong>:</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">fatorial_recursivo</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">n</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">:</span>
+        <span class="k">return</span> <span class="mi">1</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">n</span> <span class="o">*</span> <span class="n">fatorial_recursivo</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+</code></pre></div></div>
+
+        
+        
+
+    </div>
+</div>
+
+<div class="card mb-2">
+    <a name="ex24"></a><h2 class="card-title alert alert-primary">Exercício 24: Fibonacci por recursão</h2>
+    <div class="card-body">
+        <ul>
+            <li><i><b>dificuldade:</b></i> 30%</li>
+            <li><i><b>utiliza:</b></i> <img src="/LOM3260/assets/images/legenda/ifthenelse.jpg" title="decisão" width="30px" />&nbsp;<img src="/LOM3260/assets/images/legenda/function.png" title="função" width="15px" />&nbsp;</li>
+        </ul>
+
+        
+          <p>Usando recursão, implemente uma função para calcular o $n$-ésimo termo da série de Fibonacci,</p>
+
+\[0,\ 1,\ 1,\ 2,\ 3,\ 5,\ 8,\ 13,\ 21,\ \ldots\]
+
+<p>que começa com $a_0=0$, $a_1=1$ e em que cada termo $a_n$ ($n \ge 2$) é calculado usando a equação recursiva</p>
+
+\[a_n = a_{n-1} + a_{n-2}\,.\]
+
+        
+        
+
+    </div>
+</div>
+
+<div class="card mb-2">
+    <a name="ex25"></a><h2 class="card-title alert alert-primary">Exercício 25: Ajuste linear</h2>
+    <div class="card-body">
+        <ul>
+            <li><i><b>dificuldade:</b></i> 25%</li>
+            <li><i><b>utiliza:</b></i> <img src="/LOM3260/assets/images/legenda/loop.png" title="repetição" width="20px" />&nbsp;<img src="/LOM3260/assets/images/legenda/list.png" title="lista" width="25px" />&nbsp;<img src="/LOM3260/assets/images/legenda/function.png" title="função" width="15px" />&nbsp;</li>
+        </ul>
+
+        
+          
+          <p>Uma linha de melhor ajuste é uma linha reta que melhor se aproxima de uma coleção de $n$ pontos de dados. Neste exercício, vamos supor que cada ponto na coleção tem uma coordenada $(x_i,\,y_i)$, com $1\le i \le n$. A linha de melhor ajuste é representada pela equação $y = m x + b$, onde $m$ e $b$ são calculados usando as seguintes fórmulas:</p>
+
+\[m = \frac{ n \sum x_i y_i - \left( \sum x_i \right) \left( \sum y_i \right) }{n \sum x_i^2 - \left( \sum x_i \right)^2}\]
+
+\[b = \overline{y} - m \overline{x}\]
+
+<p>onde os símbolos $\overline{x}$ e $\overline{y}$ são os valores médios de $x$ e $y$, respectivamente. Escreva um programa para ler os pontos contidos num arquivo-texto fornecido pelo usuário (use a função <code class="language-plaintext highlighter-rouge">genfromtxt()</code> do módulo <code class="language-plaintext highlighter-rouge">numpy</code>). Então calcule e exiba a linha de melhor ajuste.
+Por exemplo, se o usuário fornece as coordenadas $(1,\,1)$, $(2,\,2.1)$ e $(3,\,2.9)$, o seu
+o programa deve exibir <code class="language-plaintext highlighter-rouge">y = 0.95 x + 0.1</code>. Faça também um gráfico com os pontos e a linha de melhor ajuste usando as funções <code class="language-plaintext highlighter-rouge">scatter()</code> e <code class="language-plaintext highlighter-rouge">plot()</code> do módulo <code class="language-plaintext highlighter-rouge">matplotlib.pyplot</code>.</p>
+
+
+        
+        
+
+    </div>
+</div>
+
+<div class="card mb-2">
+    <a name="ex26"></a><h2 class="card-title alert alert-primary">Exercício 26: Máximo de uma lista</h2>
+    <div class="card-body">
+        <ul>
+            <li><i><b>dificuldade:</b></i> 20%</li>
+            <li><i><b>utiliza:</b></i> <img src="/LOM3260/assets/images/legenda/ifthenelse.jpg" title="decisão" width="30px" />&nbsp;<img src="/LOM3260/assets/images/legenda/loop.png" title="repetição" width="20px" />&nbsp;<img src="/LOM3260/assets/images/legenda/list.png" title="lista" width="25px" />&nbsp;<img src="/LOM3260/assets/images/legenda/function.png" title="função" width="15px" />&nbsp;</li>
+        </ul>
+
+        
+          
+          <p>Considere o problema de identificar o máximo valor de uma coleção de inteiros,  todos selecionados aleatoriamente no intervalo $[1,\,100]$. A coleção pode conter valores duplicados, e alguns dos números entre 1 e 100 podem não estar presentes. Pare um pouco e pense em como você lidaria com esse problema no papel. A maioria checaria cada número em sequência e perguntaria se o valor da vez é maior que o máximo dentre anteriores. Se for, eles esqueceriam o máximo anterior e lembrariam o número atual como o novo máximo. Essa é uma abordagem razoável e resultará na resposta correta quando o processo for executado com cuidado. Implemente o método em python. Quantas vezes você esperaria precisar atualizar o valor máximo e lembrar de um novo número?</p>
+
+
+        
+        
+
+    </div>
+</div>
+
+<div class="card mb-2">
+    <a name="ex27"></a><h2 class="card-title alert alert-primary">Exercício 27: Código Morse</h2>
+    <div class="card-body">
+        <ul>
+            <li><i><b>dificuldade:</b></i> 25%</li>
+            <li><i><b>utiliza:</b></i> <img src="/LOM3260/assets/images/legenda/loop.png" title="repetição" width="20px" />&nbsp;<img src="/LOM3260/assets/images/legenda/string.jpg" title="string" width="25px" />&nbsp;<img src="/LOM3260/assets/images/legenda/dict.png" title="dicionário" width="40px" />&nbsp;</li>
+        </ul>
+
+        
+          <p>O <strong>código Morse</strong> é um esquema de codificação que usa traços e pontos para representar números e letras. Neste exercício, você vai escrever um programa que usa um dicionário para armazenar o mapeamento de letras e números para código Morse, mostrado na tabela a seguir:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>A</td>
+      <td>. -</td>
+      <td>J</td>
+      <td>. - - -</td>
+      <td>S</td>
+      <td>. . .</td>
+      <td>1</td>
+      <td>. - - - -</td>
+    </tr>
+    <tr>
+      <td>B</td>
+      <td>- . . .</td>
+      <td>K</td>
+      <td>- . -</td>
+      <td>T</td>
+      <td>-</td>
+      <td>2</td>
+      <td>. . - - -</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td>- . - .</td>
+      <td>L</td>
+      <td>. - . .</td>
+      <td>U</td>
+      <td>. . -</td>
+      <td>3</td>
+      <td>. . . - -</td>
+    </tr>
+    <tr>
+      <td>D</td>
+      <td>- . .</td>
+      <td>M</td>
+      <td>- -</td>
+      <td>V</td>
+      <td>. . . -</td>
+      <td>4</td>
+      <td>. . . . -</td>
+    </tr>
+    <tr>
+      <td>E</td>
+      <td>.</td>
+      <td>N</td>
+      <td>- .</td>
+      <td>W</td>
+      <td>. - -</td>
+      <td>5</td>
+      <td>. . . . .</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>. . - .</td>
+      <td>O</td>
+      <td>- - -</td>
+      <td>X</td>
+      <td>- . . -</td>
+      <td>6</td>
+      <td>- . . . .</td>
+    </tr>
+    <tr>
+      <td>G</td>
+      <td>- - .</td>
+      <td>P</td>
+      <td>.- -.</td>
+      <td>Y</td>
+      <td>- . - -</td>
+      <td>7</td>
+      <td>- - . . .</td>
+    </tr>
+    <tr>
+      <td>H</td>
+      <td>. . . .</td>
+      <td>Q</td>
+      <td>- -.-</td>
+      <td>Z</td>
+      <td>- - . .</td>
+      <td>8</td>
+      <td>- - - . .</td>
+    </tr>
+    <tr>
+      <td>I</td>
+      <td>. .</td>
+      <td>R</td>
+      <td>. - .</td>
+      <td>0</td>
+      <td>- - - - -</td>
+      <td>9</td>
+      <td>- - - - .</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Seu programa deve ler uma mensagem do usuário. Então deve traduzir cada
+letra e número na mensagem para o código Morse, deixando um espaço entre cada
+seqüência de traços e pontos. Seu programa deve ignorar quaisquer caracteres que não sejam letras ou números. O código Morse para <code class="language-plaintext highlighter-rouge">Hello, World!</code> é mostrado abaixo:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>....  .  .-..  .-..  ---   .--  ---  .-.  .-..  -..
+</code></pre></div></div>
+
+        
+        
+
+    </div>
+</div>
+
+<div class="card mb-2">
+    <a name="ex28"></a><h2 class="card-title alert alert-primary">Exercício 28: Cômputo da Páscoa</h2>
+    <div class="card-body">
+        <ul>
+            <li><i><b>dificuldade:</b></i> 15%</li>
+            <li><i><b>utiliza:</b></i> <img src="/LOM3260/assets/images/legenda/ifthenelse.jpg" title="decisão" width="30px" />&nbsp;<img src="/LOM3260/assets/images/legenda/function.png" title="função" width="15px" />&nbsp;</li>
+        </ul>
+
+        
+          <p>A Páscoa cai no primeiro domingo do ano após a lua cheia (mas não a lua cheia real, e sim de acordo com um antigo cômputo (computus) eclesiástico que nada mais tem a ver com a lua que vemos no céu: é apenas um <em>algoritmo</em>…) que acontece no ou imediatamente após o equinócio de março (considera-se sempre 21 de março como a data do equinócio, o que nem sempre é verdade, pois pode ser um ou dois dias antes…). Na prática, é mais fácil calcular a data da Páscoa usando o algoritmo de Meeus–Jones–Butcher:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Divida</th>
+      <th style="text-align: center">por</th>
+      <th style="text-align: center">Quociente</th>
+      <th style="text-align: center">  Resto</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">o ano $x$</td>
+      <td style="text-align: center">19</td>
+      <td style="text-align: center">—</td>
+      <td style="text-align: center">$a$</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">o ano $x$</td>
+      <td style="text-align: center">100</td>
+      <td style="text-align: center">$b$</td>
+      <td style="text-align: center">$c$</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">$b$</td>
+      <td style="text-align: center">4</td>
+      <td style="text-align: center">$d$</td>
+      <td style="text-align: center">$e$</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">$b+8$</td>
+      <td style="text-align: center">25</td>
+      <td style="text-align: center">$f$</td>
+      <td style="text-align: center">—</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">$b-f+1$</td>
+      <td style="text-align: center">3</td>
+      <td style="text-align: center">$g$</td>
+      <td style="text-align: center">—</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">$19a+b-d-g+15$</td>
+      <td style="text-align: center">30</td>
+      <td style="text-align: center">—</td>
+      <td style="text-align: center">$h$</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">$c$</td>
+      <td style="text-align: center">4</td>
+      <td style="text-align: center">$i$</td>
+      <td style="text-align: center">$k$</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">$32+2e+2i-h-k$</td>
+      <td style="text-align: center">7</td>
+      <td style="text-align: center">—</td>
+      <td style="text-align: center">$l$</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">$a+11h+22l$</td>
+      <td style="text-align: center">451</td>
+      <td style="text-align: center">$m$</td>
+      <td style="text-align: center">—</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">$h+l-7m+114$</td>
+      <td style="text-align: center">31</td>
+      <td style="text-align: center">$n$</td>
+      <td style="text-align: center">$p$</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>O domingo de Páscoa será então no dia $p+1$ do mês $n$ (3: março, 4: abril). O algoritmo é válido para qualquer ano no calendário gregoriano, ou seja, a partir de 1583. Implemente-o em python e verifique <a href="https://www.assa.org.au/edm" target="blank">aqui</a>. <strong>Dica</strong>: não use o operador <code class="language-plaintext highlighter-rouge">/</code>, e sim <code class="language-plaintext highlighter-rouge">//</code> (divisão inteira) para as divisões.</p>
+
+        
+        
+
+    </div>
+</div>
+
+<div class="card mb-2">
+    <a name="ex29"></a><h2 class="card-title alert alert-primary">Exercício 29: Triângulo de Pascal</h2>
+    <div class="card-body">
+        <ul>
+            <li><i><b>dificuldade:</b></i> 30%</li>
+            <li><i><b>utiliza:</b></i> <img src="/LOM3260/assets/images/legenda/ifthenelse.jpg" title="decisão" width="30px" />&nbsp;<img src="/LOM3260/assets/images/legenda/loop.png" title="repetição" width="20px" />&nbsp;<img src="/LOM3260/assets/images/legenda/list.png" title="lista" width="25px" />&nbsp;</li>
+        </ul>
+
+        
+          <p>O triângulo de Pascal é uma tabela de números construída assim: o elemento da linha $i$ e coluna $j$ (com $0 \le j \le i$ e começando de cima, onde $i=j=0$) é dado por</p>
+
+\[a_{i,j} =
+ \begin{cases}
+1 \quad \text{ se } j=0 \text{ ou }  j=i\\
+a_{i-1,j} + a_{i-1,j-1} \,, \text{ se } 1 \lt j \lt  i
+\end{cases}\]
+
+<p>As primeiras oito linhas (ou seja, até $i=7$) são mostradas abaixo:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  1
+  1  1
+  1  2  1
+  1  3  3  1
+  1  4  6  4  1
+  1  5  10 10 5  1
+  1  6  15 20 15 6  1
+  1  7  21 35 35 21 7  1
+</code></pre></div></div>
+
+<ol>
+  <li>Implemente um algoritmo para calcular as primeiras $n$ linhas do triângulo de Pascal.</li>
+  <li>Modifique o código para substituir os números ímpares do triângulo por 1 e os pares por 0. Use um valor alto de $n$ (algo em torno de 500) e salve o resultado numa matriz. Por fim, use o comando <code class="language-plaintext highlighter-rouge">imshow()</code> do módulo <code class="language-plaintext highlighter-rouge">matplotlib.pyplot</code> para exibir graficamente o resultado, que é muito parecido com o fractal chamado de <em>Triângulo de Sierpinski</em> (clique <a href="https://pt.wikipedia.org/wiki/Tri%C3%A2ngulo_de_Sierpinski" target="blank">aqui</a> e veja na Wikipedia).</li>
+</ol>
+
+        
+        
+
+    </div>
+</div>
+
+<div class="card mb-2">
+    <a name="ex30"></a><h2 class="card-title alert alert-primary">Exercício 30: Quadrado mágico</h2>
+    <div class="card-body">
+        <ul>
+            <li><i><b>dificuldade:</b></i> 40%</li>
+            <li><i><b>utiliza:</b></i> <img src="/LOM3260/assets/images/legenda/ifthenelse.jpg" title="decisão" width="30px" />&nbsp;<img src="/LOM3260/assets/images/legenda/loop.png" title="repetição" width="20px" />&nbsp;<img src="/LOM3260/assets/images/legenda/list.png" title="lista" width="25px" />&nbsp;</li>
+        </ul>
+
+        
+          <p>Um <strong>quadrado mágico</strong> é uma tabela de números em que a soma nas linhas, colunas e diagonais dá sempre o mesmo valor. Por exemplo, na gravura <em>Melencholia I</em> de Albrecht Dürer (1471–1528),</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td><img src="/LOM3260/assets/images/melencol.jpg" alt="" width="100%" /></td>
+      <td><img src="/LOM3260/assets/images/Durer.jpg" alt="" width="100%" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>a soma dos números é sempre igual a 34 (o quadrádo mágico de Dürer serviu de inspiração para o nome e o logotipo da <a href="http://www.editora34.com.br/quemsomos.htm" target="blank">Editora 34</a>). Outro exemplo simples é o seguinte, em que estão presentes todos os inteiros de 1 a 9 num quadrado $3\times3$:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  |---|---|---|
+  | 8 | 1 | 6 |
+  |---|---|---|
+  | 3 | 5 | 7 |
+  |---|---|---|
+  | 4 | 9 | 2 |
+  |---|---|---|
+</code></pre></div></div>
+<p>e a soma é sempre igual a 15. Existe um algoritmo para criar quadrados mágicos de ordem ímpar $n$ (a ordem é o número de linhas = número de colunas), preenchidos por todos os inteiros de 1 a $n^2$:</p>
+
+<hr />
+
+<table>
+  <tbody>
+    <tr>
+      <td>(i) Comece com o número 1 na célula central superior do quadrado (como no exemplo acima);</td>
+    </tr>
+    <tr>
+      <td>(ii) preencha sequencialmente na diagonal, seguindo para a direita e subindo;</td>
+    </tr>
+    <tr>
+      <td>(iii) quando atingir as bordas do quadrado, o próximo número é preenchido como se o quadrado estivesse “enrolado” feito uma rosquinha — ou seja, a borda esquerda “colada” à direita e a superior à inferior. Isso é o que se chama de <strong>condições de contorno periódicas</strong>;</td>
+    </tr>
+    <tr>
+      <td>(iv) uma exceção é o canto superior direito: quando atingi-lo, o próximo valor vai na célula de baixo;</td>
+    </tr>
+    <tr>
+      <td>(v) se a próxima célula já está ocupada, o próximo valor vai abaixo do último número preenchido;</td>
+    </tr>
+    <tr>
+      <td>(vi) continue até chegar em $n^2$ na célula central inferior.</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<p>Para ilustrar o uso do algoritmo, vejamos sua aplicação para gerar um quadrado mágico de ordem $n=5$:</p>
+
+<ul>
+  <li>Comece com o passo i, colocando o número 1 na célula central superior
+do quadrado:</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>|---|---|---|---|---|
+|   |   | 1 |   |   |
+|---|---|---|---|---|
+|   |   |   |   |   |
+|---|---|---|---|---|
+|   |   |   |   |   |  
+|---|---|---|---|---|
+|   |   |   |   |   |
+|---|---|---|---|---|
+|   |   |   |   |   |
+|---|---|---|---|---|
+</code></pre></div></div>
+
+<ul>
+  <li>Ao tentar usar o passo ii para inserir o próximo número (2), não temos
+célula acima e à direita da célula anterior (1). Temos então que usar o
+passo iii:</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  |---|---|---|---|---|
+  |   |   | 1 |   |   |
+  |---|---|---|---|---|
+  |   |   |   |   |   |
+  |---|---|---|---|---|
+  |   |   |   |   |   |  
+  |---|---|---|---|---|
+  |   |   |   |   |   |
+  |---|---|---|---|---|
+  |   |   |   | 2 |   |
+  |---|---|---|---|---|
+</code></pre></div></div>
+
+<ul>
+  <li>Alguns passos depois, usando os passos ii e iii, o quadrado estará assim:</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>|---|---|---|---|---|
+|   |   | 1 |   |   |
+|---|---|---|---|---|
+|   | 5 |   |   |   |
+|---|---|---|---|---|
+| 4 |   |   |   |   |  
+|---|---|---|---|---|
+|   |   |   |   | 3 |
+|---|---|---|---|---|
+|   |   |   | 2 |   |
+|---|---|---|---|---|
+</code></pre></div></div>
+
+<ul>
+  <li>Como a próxima célula (1) já está ocupada, usamos o passo v para o
+próximo valor (6):</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>|---|---|---|---|---|
+|   |   | 1 |   |   |
+|---|---|---|---|---|
+|   | 5 |   |   |   |
+|---|---|---|---|---|
+| 4 | 6 |   |   |   |  
+|---|---|---|---|---|
+|   |   |   |   | 3 |
+|---|---|---|---|---|
+|   |   |   | 2 |   |
+|---|---|---|---|---|
+</code></pre></div></div>
+
+<ul>
+  <li>Continuando por mais alguns valores, usando os passos ii, iii e v:</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>|----|----|----|----|----|
+|    |    | 1  | 8  | 15 |
+|----|----|----|----|----|
+|    | 5  | 7  | 14 |    |
+|----|----|----|----|----|
+| 4  | 6  | 13 |    |    |  
+|----|----|----|----|----|
+| 10 | 12 |    |    | 3  |
+|----|----|----|----|----|
+| 11 |    |    | 2  | 9  |
+|--- |----|----|----|----|
+</code></pre></div></div>
+
+<ul>
+  <li>Atingido o canto superior direito, o próximo valor (16) vai abaixo dele,
+de acordo com o passo iv:</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>|----|----|----|----|----|
+|    |    | 1  | 8  | 15 |
+|----|----|----|----|----|
+|    | 5  | 7  | 14 | 16 |
+|----|----|----|----|----|
+| 4  | 6  | 13 |    |    |  
+|----|----|----|----|----|
+| 10 | 12 |    |    | 3  |
+|----|----|----|----|----|
+| 11 |    |    | 2  | 9  |
+|--- |----|----|----|----|
+</code></pre></div></div>
+
+<ul>
+  <li>E agora continue com os passos ii, iii e v até terminar de preencher o
+quadrado:</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>|----|----|----|----|----|
+| 17 | 24 | 1  | 8  | 15 |
+|----|----|----|----|----|
+| 23 | 5  | 7  | 14 | 16 |
+|----|----|----|----|----|
+| 4  | 6  | 13 | 20 | 22 |  
+|----|----|----|----|----|
+| 10 | 12 | 19 | 21 | 3  |
+|----|----|----|----|----|
+| 11 | 18 | 25 | 2  | 9  |
+|--- |----|----|----|----|
+</code></pre></div></div>
+
+<p>Lembre que o algoritmo só vale para valores ímpares de $n$. Existem muitos outros quadrados mágicos de mesma ordem, o algoritmo só fornece uma possibilidade.</p>
+
+<ol>
+  <li>Qual é a soma em cada linha, coluna e nas duas diagonais, em função de $n$? Responda a essa pergunta usando a cabeça, não o computador!</li>
+  <li>Implemente o algoritmo em python para montar e exibir um quadrado mágico de ordem $n$ ($n$ ímpar) com os números inteiros de 1 a $n^2$. A ordem do quadrado ($n$) deve ser fornecida pelo usuário.</li>
+</ol>
+
+        
+        
+
+    </div>
+</div>
+
+:ET

@@ -1,0 +1,89 @@
+I"3<p class="lead">Existem muitos módulos em python especializados numa imensa gama de tarefas!</p>
+
+<h2 id="a-biblioteca-padrão-de-python">A Biblioteca Padrão de Python</h2>
+
+<p>A linguagem python tem por padrão várias funções, suficientes para criar programas bastante complexos. A lista abaixo fornece praticamente todas as palavras-chaves do python padrão (<em>Standard Python</em>):</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>False      await      else       import     pass
+None       break      except     in         raise
+True       class      finally    is         return
+and        continue   for        lambda     try
+as         def        from       nonlocal   while
+assert     del        global     not        with
+async      elif       if         or         yield
+</code></pre></div></div>
+
+<p>Outras palavras, como <code class="language-plaintext highlighter-rouge">int</code>, <code class="language-plaintext highlighter-rouge">float</code>, <code class="language-plaintext highlighter-rouge">print</code>, <code class="language-plaintext highlighter-rouge">input</code>, etc.,  estão reservadas para funções, tipos de dados, operadores, etc. Consulte a documentação sobre a <strong><a href="https://docs.python.org/3/library/" target="\_blank">Biblioteca Padrão de Python</a></strong> (<em>Python Standard Library</em>) para uma lista gigante e praticamente completa.</p>
+
+<h2 id="módulos">Módulos</h2>
+
+<p>Mesmo com todos esses recursos, o python só se tornou a mais importante ferramente computacional da atualidade pela sua capacidade de extender seus poderes usando <strong>módulos,</strong> que são conjuntos (ou bibliotecas) de novos tipos de dados, métodos, operadores e funções  criados com uma finalidade específica em mente: lidar com arquivos, resolver problemas numéricos, inteligência artificial, etc, etc, etc.</p>
+
+<p>A lista de módulos disponíveis é praticamente infinita, impossível de ser listada aqui. Como o curso pretende lidar com técnicas computacionais de análise numérica de dados, vamos focar num subconjunto pequeno dos módulos python para essa finalidade. Anida assim, mesmo sem conseguir trabalhar aqui com mais do que um pequeno punhado de módulos, começaremos com comandos básicos, válidos para qualquer um deles. Com isso, você pode procurar nos <a href="/LOM3260/biblio/">Recursos</a> outros módulos que lhe interessem e testá-los para seus objetivos. Veremos também, mais adiante, como criar nosso próprio módulo personalizado!</p>
+
+<p>Para fixar as ideias, vamos usar como exemplo o módulo chamado <code class="language-plaintext highlighter-rouge">numpy</code>. Você pode extrapolar os conceitos e comandos mostrados abaixo para qualquer módulo.</p>
+
+<p class="alert alert-warning">:warning: O módulo <code class="language-plaintext highlighter-rouge">math</code> tem algumas funções parecidas com as encontradas no <code class="language-plaintext highlighter-rouge">numpy</code>. No entanto, o <code class="language-plaintext highlighter-rouge">math</code> não é atualmente recomendável para computação científica. Evite usá-lo!</p>
+
+<p>Usaremos como motivação o seguinte problema: digamos que você precise calcular a raiz quadrada de um número. O python padrão não tem uma função para isso, mas pode ser adicionada se você incluir no seu código algum módulo que contenha essa função. O módulo <code class="language-plaintext highlighter-rouge">numpy</code> é o mais indicado: ele contém muitas funções matemáticas, como seno, cosseno, exponential, raiz quadrada, etc.</p>
+
+<p class="alert alert-primary">:bulb: Um dos exercícios da Lista 1 (<a href="/LOM3260/material/exercicios/lista1.html#ex20">esse aqui</a>) ilustra uma possível maneira de calcular a raiz quadrada sem usar um módulo externo, usando uma estratégia numérica conhecida por <em>Método de Newton-Raphson</em>. Você poderia usá-la em seus próprios módulos personalizados…</p>
+
+<h2 id="importanto-módulos">Importanto módulos</h2>
+
+<p>Vejamos, então, como incluir um módulo externo no código. Isse é feito com o comando <code class="language-plaintext highlighter-rouge">import</code>. De forma direta, basta incluir a seguinte linha no começo do seu programa:</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">numpy</span>
+</code></pre></div></div>
+<p>Com isso, importamos <strong>todas</strong> as funções e métodos disponibilizados pelo módulo numpy. Por exemplo, a função raiz quadrada é chamada de <code class="language-plaintext highlighter-rouge">sqrt</code> (do inglês <em>square root</em>). Usando <code class="language-plaintext highlighter-rouge">import numpy</code>, a função ficará acessível ao seu programa como <code class="language-plaintext highlighter-rouge">numpy.sqrt</code>. Você então a chamaria assim:</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">numpy</span>
+
+<span class="n">a</span> <span class="o">=</span> <span class="mf">5.0</span>
+<span class="n">rqa</span> <span class="o">=</span> <span class="n">numpy</span><span class="p">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+
+<span class="k">print</span><span class="p">(</span><span class="s">f'A raiz quadrada de </span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s"> é </span><span class="si">{</span><span class="n">rqa</span><span class="si">}</span><span class="s">'</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Essa, no entanto, é apenas uma das maneiras de usar o comando <code class="language-plaintext highlighter-rouge">import</code>. Uma outra maneira é dar um “apelido” ao módulo com a palavra chave <code class="language-plaintext highlighter-rouge">as</code> (<em>como</em>):</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+</code></pre></div></div>
+<p>onde <code class="language-plaintext highlighter-rouge">np</code> é o apelido escolhido (é da escolha do programador). Nesse caso, acessamos a função <code class="language-plaintext highlighter-rouge">sqrt</code> precedida pelo apelido, <code class="language-plaintext highlighter-rouge">np.sqrt</code>, e não mais pelo nome (<code class="language-plaintext highlighter-rouge">numpy.sqrt</code>). Veja a diferença:</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+
+<span class="n">a</span> <span class="o">=</span> <span class="mf">5.0</span>
+<span class="n">rqa</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+
+<span class="k">print</span><span class="p">(</span><span class="s">f'A raiz quadrada de </span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s"> é </span><span class="si">{</span><span class="n">rqa</span><span class="si">}</span><span class="s">'</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Uma terceira maneira de usar o import é a seguinte, usando o método <code class="language-plaintext highlighter-rouge">from</code> (<em>de</em>):</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">numpy</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="n">a</span> <span class="o">=</span> <span class="mf">5.0</span>
+<span class="n">rqa</span> <span class="o">=</span> <span class="n">sqrt</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+
+<span class="k">print</span><span class="p">(</span><span class="s">f'A raiz quadrada de </span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s"> é </span><span class="si">{</span><span class="n">rqa</span><span class="si">}</span><span class="s">'</span><span class="p">)</span>
+</code></pre></div></div>
+<p>A linha <code class="language-plaintext highlighter-rouge">from numpy import *</code> diz, literalmente (em inglês), <em>de numpy importe tudo</em>. O caractere <code class="language-plaintext highlighter-rouge">*</code> (asterisco) é chamado de <strong>caractere-coringa</strong> (<em>wildcard</em>, em inglês) pois, em analogia a jogos de cartas, ele tem o valor que você quiser, ou tudo ao mesmo tempo. Repare que, usando essa maneira de importar, as funções são usadas sem nenhuma qualificação de origem, ou seja, usamos diretamente <code class="language-plaintext highlighter-rouge">sqrt(a)</code>, e não <code class="language-plaintext highlighter-rouge">numpy.sqrt(a)</code> ou <code class="language-plaintext highlighter-rouge">np.sqrt(a)</code>. Com a construção <code class="language-plaintext highlighter-rouge">from import</code>, você poderia também importar apenas a função que lhe interessa:</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">numpy</span> <span class="kn">import</span> <span class="n">sqrt</span>
+
+<span class="n">a</span> <span class="o">=</span> <span class="mf">5.0</span>
+<span class="n">rqa</span> <span class="o">=</span> <span class="n">sqrt</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+
+<span class="k">print</span><span class="p">(</span><span class="s">f'A raiz quadrada de </span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s"> é </span><span class="si">{</span><span class="n">rqa</span><span class="si">}</span><span class="s">'</span><span class="p">)</span>
+</code></pre></div></div>
+<p>Isso tem um certo ganho de eficiência, pois menos funções, métodos e variáveis são criadas pelo seu programa, usando assim menos memória. Mas essa vantagem é contrabalanceada pelo seguinte problema:</p>
+
+<p class="alert alert-danger">:x: Fuja do uso da construção <code class="language-plaintext highlighter-rouge">from modulo import *</code> ou <code class="language-plaintext highlighter-rouge">from modulo import metodo</code>. Isso não é recomendado, pois seu programa poderia ter funções ou variáveis com o mesmo nome de funções ou variáveis do <code class="language-plaintext highlighter-rouge">modulo</code> importado. Esses <em>conflitos</em> levariam a erros de execução.</p>
+
+<p>Para evitar isso, você pode combinar a construção <code class="language-plaintext highlighter-rouge">from</code> com <code class="language-plaintext highlighter-rouge">as</code>, importando apenas a função <code class="language-plaintext highlighter-rouge">sqrt</code> do <code class="language-plaintext highlighter-rouge">numpy</code>, mas dando-lhe um apelido:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">numpy</span> <span class="kn">import</span> <span class="n">sqrt</span> <span class="k">as</span> <span class="n">raiz</span>
+
+<span class="n">a</span> <span class="o">=</span> <span class="mf">5.0</span>
+<span class="n">rqa</span> <span class="o">=</span> <span class="n">raiz</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+
+<span class="k">print</span><span class="p">(</span><span class="s">f'A raiz quadrada de </span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s"> é </span><span class="si">{</span><span class="n">rqa</span><span class="si">}</span><span class="s">'</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>É pouco provável que exista uma função <code class="language-plaintext highlighter-rouge">raiz</code> no numpy, então o problema é contornado — mas sem nenhuma garantia: e se um dos desenvolvedores do <code class="language-plaintext highlighter-rouge">numpy</code> é lusófono e usou a palavra <code class="language-plaintext highlighter-rouge">raiz</code> internamente no código? Por isso, eu não recomendo usar a construção <code class="language-plaintext highlighter-rouge">from</code>, nem mesmo com o uso concomitante do <code class="language-plaintext highlighter-rouge">as</code>. É melhor, por segurança e compatibilidade, importar os módulos completos, com <code class="language-plaintext highlighter-rouge">import numpy</code> ou <code class="language-plaintext highlighter-rouge">import numpy as np</code>.</p>
+:ET

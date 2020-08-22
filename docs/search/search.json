@@ -11,10 +11,10 @@
     } ,
   
     {
-      "title"    : "Introdução",
+      "title"    : "Formatação e indentação",
       "url"      : "/LOM3260/docs/intro/",
       "category" : "",
-      "tags"     : "edição, arquivos, extensão, py, sintaxe, indentação, comentário",
+      "tags"     : "edição, arquivos, extensão, py, sintaxe, indentação, comentário, tabulação, formatação",
       "date"     : ""
     } ,
   
@@ -206,7 +206,7 @@
       "title"    : "Entrada com input()",
       "url"      : "/LOM3260/material/tema1/04-entrada.html",
       "category" : "",
-      "tags"     : "input, entrada, output, saída, print, formatação, formatada",
+      "tags"     : "input, entrada, output, saída, print, formatação, formatada, TUI",
       "date"     : ""
     } ,
   
@@ -238,7 +238,7 @@
       "title"    : "Saída com print()",
       "url"      : "/LOM3260/material/tema1/05-saida.html",
       "category" : "",
-      "tags"     : "input, entrada, output, saída, print, formatação, formatada, interpoladas, f-strings, substituição",
+      "tags"     : "input, entrada, output, saída, print, formatação, formatada, interpoladas, f-strings, substituição, TUI",
       "date"     : ""
     } ,
   
@@ -331,18 +331,18 @@
     } ,
   
     {
-      "title"    : "Comandos in e len()",
-      "url"      : "/LOM3260/material/tema1/09-in-len.html",
+      "title"    : "O comando range",
+      "url"      : "/LOM3260/material/tema1/09-range.html",
       "category" : "",
-      "tags"     : "in, range, palavras, chave",
+      "tags"     : "range",
       "date"     : ""
     } ,
   
     {
-      "title"    : "O comando range",
-      "url"      : "/LOM3260/material/tema1/10-range.html",
+      "title"    : "Comandos in e len()",
+      "url"      : "/LOM3260/material/tema1/10-in-len.html",
       "category" : "",
-      "tags"     : "range",
+      "tags"     : "in, range, palavras, chave",
       "date"     : ""
     } ,
   

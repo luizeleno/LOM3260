@@ -14,11 +14,12 @@ Uma construção para repetir comandos, ou um grupo de comandos, é chamada de *
 {: .no_toc .text-delta }
 
 1. TOC
-{:toc} -->
+{:toc}
+-->
 
 ## A construção `while`
 
-Um dos comandos para criar laços é o `while`. A sintaxe do comando é a seguinte:
+Um dos comandos para criar um laço (repetição de comandos) é o `while` (*enquanto*). A sintaxe do comando é a seguinte:
 ```python
 while bool:
     [comandos]
@@ -53,4 +54,3 @@ Ou seja, o for gera valores de 1 a 10 usando o comando `range`, atribuídos sequ
 
 - Mais detalhes sobre o comando `range` no próximo material.
 - A palavra `in` no comando `for` é uma palavra chave. Mais detalhes em breve.
-

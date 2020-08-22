@@ -1,0 +1,57 @@
+I"�<p class="lead">Um pouco para todo tipo de usuário</p>
+
+<h2 id="para-os-visitantes">Para os visitantes</h2>
+
+<ul>
+  <li>Bem-vindo! O site foi criado como uma ferramenta de ajuda específica para os alunos da <a target="\_blank" href="http://www.demar.eel.usp.br">EEL::USP</a>. Mas todos são bem-vindos para utilizar, curtir e compartilhar o material apresentado aqui.</li>
+  <li>Espero ser de alguma ajuda aos iniciantes em programação e em python, e também aos usuários mais avançados, que podem se aproveitar do enfoque mais computacional e científico do material.</li>
+</ul>
+
+<h2 id="para-os-alunos-da-eelusp">Para os alunos da <a target="\_blank" href="http://www.demar.eel.usp.br">EEL::USP</a></h2>
+
+<ul>
+  <li>O material fornecido aqui <strong>não substitui</strong> as aulas presenciais! Considere-o apenas  um  suporte para ajudá-lo na caminhada.</li>
+  <li>Exercícios e trabalhos devem ser entregues usando o <a href="https://classroom.google.com" target="\_blank">Google Classroom</a>.</li>
+  <li><strong>Não</strong> considere o material fornecido e discutido aqui como o fim da linha! Para se aprofundar, estude sempre: consulte a <a href="/LOM3260/biblio/">bibliografia</a> sugerida.</li>
+</ul>
+
+<h2 id="organização-geral-do-site">Organização geral do site</h2>
+
+<ul>
+  <li>Neste site, as páginas em cada <strong>Tema</strong> estão rotuladas de acordo com a seguinte convenção:
+    <ul>
+      <li><span class="badge badge-success">final</span> : página em versão final. Página foi testada, com texto e código funcionando. Isso não significa que não possa ser melhorada! Estou constantemente atualizando todas as páginas, livrando-as de inconsistências e erros. Se achar algum, não deixe de me comunicar, seria uma grande ajuda ao projeto!</li>
+      <li><span class="badge badge-warning">constr</span> : versão de desenvolvimento, ou seja, página em construção. Contém apenas um esboço do conteúdo.</li>
+      <li><span class="badge badge-danger">criado</span> : página criada, mas ainda praticamente sem conteúdo.</li>
+    </ul>
+  </li>
+  <li>Use o site junto com um interpretador python, pois nem todas as respostas aos códigos-exemplos são dadas aqui! Assim você pode testar os códigos (e variações deles) enquanto vai lendo.
+    <ul>
+      <li>Ao final de todas as páginas nos <strong>Temas</strong> há um intérprete python do <a href="https://trinket.io" target="\_blank">trinket.io</a> para você testar imediatamente exemplos do código! Use-o à vontade!</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="licença-de-uso-mit-license">Licença de uso: MIT license</h2>
+
+<p class="text-monospace alert alert-warning">Copyright (c) 2019 Luiz T. F. Eleno
+<br /><br />
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the “Software”), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+<br /><br />
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+<br /><br />
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.</p>
+
+:ET

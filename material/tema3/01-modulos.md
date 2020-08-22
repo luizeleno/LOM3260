@@ -2,12 +2,12 @@
 title: Módulos
 parent: temathree
 nav_order: 1
-status: green 
+status: green
 tags: [funções, função, módulo, module, numpy, from, as, apelido, import, raiz, sqrt, padrão, standard]
-timestamp: 07/06/20
+timestamp: 22/08/20
 ---
 
-Existem muitos módulos em python especializados numa imensa gama de tarefas! 
+Existem muitos módulos em python especializados numa imensa gama de tarefas!
 {: .lead }
 
 ## A Biblioteca Padrão de Python
@@ -26,20 +26,20 @@ async      elif       if         or         yield
 
 Outras palavras, como `int`, `float`, `print`, `input`, etc.,  estão reservadas para funções, tipos de dados, operadores, etc. Consulte a documentação sobre a **[Biblioteca Padrão de Python](https://docs.python.org/3/library/){: target="\_blank"}** (*Python Standard Library*) para uma lista gigante e praticamente completa.
 
-## Módulos 
+## Módulos
 
-Mesmo com todos esses recursos, o python só se tornou a mais importante ferramente computacional da atualidade pela sua capacidade de extender seus poderes usando **módulos,** que são conjuntos (ou bibliotecas) de novos tipos de dados, métodos, operadores e funções  criados com uma finalidade específica em mente: lidar com arquivos, resolver problemas numéricos, inteligência artificial, etc, etc, etc. 
+Mesmo com todos esses recursos, o python só se tornou a mais importante ferramente computacional da atualidade pela sua capacidade de extender seus poderes usando **módulos,** que são conjuntos (ou bibliotecas) de novos tipos de dados, métodos, operadores e funções  criados com uma finalidade específica em mente: lidar com arquivos, resolver problemas numéricos, inteligência artificial, etc, etc, etc.
 
 A lista de módulos disponíveis é praticamente infinita, impossível de ser listada aqui. Como o curso pretende lidar com técnicas computacionais de análise numérica de dados, vamos focar num subconjunto pequeno dos módulos python para essa finalidade. Anida assim, mesmo sem conseguir trabalhar aqui com mais do que um pequeno punhado de módulos, começaremos com comandos básicos, válidos para qualquer um deles. Com isso, você pode procurar nos [Recursos]({{site.baseurl}}/biblio/) outros módulos que lhe interessem e testá-los para seus objetivos. Veremos também, mais adiante, como criar nosso próprio módulo personalizado!
 
-Para fixar as ideias, vamos usar como exemplo o módulo chamado `numpy`. Você pode extrapolar os conceitos e comandos mostrados abaixo para qualquer módulo. 
+Para fixar as ideias, vamos usar como exemplo o módulo chamado `numpy`. Você pode extrapolar os conceitos e comandos mostrados abaixo para qualquer módulo.
 
-:warning: O módulo `math` tem algumas funções parecidas com as encontradas no `numpy`. No entanto, o `math` não é atualmente recomendável para computação científica. Evite usá-lo! 
+:warning: O módulo `math` tem algumas funções parecidas com as encontradas no `numpy`. No entanto, o `math` não é atualmente recomendável para computação científica. Evite usá-lo!
 {: .alert .alert-warning }
 
-Usaremos como motivação o seguinte problema: digamos que você precise calcular a raiz quadrada de um número. O python padrão não tem uma função para isso, mas pode ser adicionada se você incluir no seu código algum módulo que contenha essa função. O módulo `numpy` é o mais indicado: ele contém muitas funções matemáticas, como seno, cosseno, exponential, raiz quadrada, etc.  
+Usaremos como motivação o seguinte problema: digamos que você precise calcular a raiz quadrada de um número. O python padrão não tem uma função para isso, mas pode ser adicionada se você incluir no seu código algum módulo que contenha essa função. O módulo `numpy` é o mais indicado: ele contém muitas funções matemáticas, como seno, cosseno, exponential, raiz quadrada, etc.
 
-:bulb: Um dos exercícios da Lista 1 ([esse aqui]({{site.baseurl}}/docs/exercicios/lista1.html#exerc%C3%ADcio-20)) ilustra uma possível maneira de calcular a raiz quadrada sem usar um módulo externo, usando uma estratégia numérica conhecida por *Método de Newton-Raphson*. Você poderia usá-la em seus próprios módulos personalizados...  
+:bulb: Um dos exercícios da Lista 1 ([esse aqui]({{site.baseurl}}/material/exercicios/lista1.html#ex20)) ilustra uma possível maneira de calcular a raiz quadrada sem usar um módulo externo, usando uma estratégia numérica conhecida por *Método de Newton-Raphson*. Você poderia usá-la em seus próprios módulos personalizados...
 {: .alert .alert-primary }
 
 ## Importanto módulos
@@ -107,4 +107,3 @@ print(f'A raiz quadrada de {a} é {rqa}')
 ```
 
 É pouco provável que exista uma função `raiz` no numpy, então o problema é contornado --- mas sem nenhuma garantia: e se um dos desenvolvedores do `numpy` é lusófono e usou a palavra `raiz` internamente no código? Por isso, eu não recomendo usar a construção `from`, nem mesmo com o uso concomitante do `as`. É melhor, por segurança e compatibilidade, importar os módulos completos, com `import numpy` ou `import numpy as np`.
-
