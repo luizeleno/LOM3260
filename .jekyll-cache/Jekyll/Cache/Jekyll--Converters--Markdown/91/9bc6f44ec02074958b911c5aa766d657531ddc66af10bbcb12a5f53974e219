@@ -1,4 +1,4 @@
-I"<p class="lead">Um mesmo símbolo pode significar diferentes operadores em python, dependendo dos tipos de dados sobre os quais ele opera</p>
+I")<p class="lead">Um mesmo símbolo pode significar diferentes operadores em python, dependendo dos tipos de dados sobre os quais ele opera</p>
 
 <p>Imagine que você tenha duas variáveis inteiras e queira calcular a sua soma. Nada mais fácil:</p>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">a</span> <span class="o">=</span> <span class="mi">3</span>
@@ -16,14 +16,13 @@
 
 <p>Chamamos esse “abuso” de um mesmo símbolo para indicar coisas diferentes de <strong>sobrecarga</strong> (<em>overloading</em>) de operadores e métodos.</p>
 
-<p>Veja outro exemplo de uso do operador <code class="language-plaintext highlighter-rouge">+</code> que você pode usar para resolver muitos problemas práticos:
-a = ‘3’</p>
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">b</span> <span class="o">=</span> <span class="s">'8'</span>
+<p>Veja outro exemplo de uso do operador <code class="language-plaintext highlighter-rouge">+</code> que você pode usar para resolver muitos problemas práticos:</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">a</span> <span class="o">=</span> <span class="s">'3'</span>
+<span class="n">b</span> <span class="o">=</span> <span class="s">'8'</span>
 <span class="n">c</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
 <span class="k">print</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
 </code></pre></div></div>
-<p>O que você acha que esse comando <code class="language-plaintext highlighter-rouge">print</code> imprime? Veja que <code class="language-plaintext highlighter-rouge">a</code> e <code class="language-plaintext highlighter-rouge">b</code> são do tipo <code class="language-plaintext highlighter-rouge">string</code> e, não <code class="language-plaintext highlighter-rouge">int</code>!</p>
+<p>O que você acha que esse comando <code class="language-plaintext highlighter-rouge">print</code> imprime? Veja que <code class="language-plaintext highlighter-rouge">a</code> e <code class="language-plaintext highlighter-rouge">b</code> são do tipo <code class="language-plaintext highlighter-rouge">string</code> e, não <code class="language-plaintext highlighter-rouge">int</code>! Nesse caso, o operador <code class="language-plaintext highlighter-rouge">+</code> é o operador de <strong>concatenação</strong> de strings (como diz uma velha piadinha infantil: <em>quanto é 1+1? 2? Nao! É 11</em>).</p>
 
-<p>Na próxima seção veremos como usar operadores “sobrecarregados” para criar facilmente novas listas.</p>
-
+<p>Na próxima lição veremos como usar operadores “sobrecarregados” para criar facilmente novas listas.</p>
 :ET

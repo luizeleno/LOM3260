@@ -3,7 +3,7 @@ title: Dicionários
 parent: tematwo
 nav_order: 7
 status: green
-tags: [dict, dicionário, chaves, itens, elementos, ]
+tags: [dict, dicionário, chaves, itens, elementos]
 timestamp: 07/06/20
 ---
 
@@ -49,7 +49,7 @@ else:
 ```
 Qual é a saída desse código?
 
-## Tipos de dados para chaves e itens    
+## Tipos de dados para chaves e itens
 
 As chaves e os itens não precisam necessariamente ser strings. Veja o seguinte exemplo:
 ```python
@@ -68,14 +68,14 @@ Uma vez criado um dicionário, é possível acrescentar, remover ou alterar valo
 dicio = {'animal': 'cachorro', 'fruta': 'laranja', 'cidade': 'Lorena', 'cor': 'vermelho'}
 
 # Acrescentar um valor:
-dicio['estado'] = 'SP' 
+dicio['estado'] = 'SP'
 
 # Alterar um valor:
-dicio['animal'] = 'gato' 
+dicio['animal'] = 'gato'
 
 # Remover um valor
 dicio.pop('cor')
-``` 
+```
 
 ## Observação
 
@@ -84,4 +84,3 @@ Também é possível pesquisar no sentido contrário, apesar de ser um pouco mai
 palavra_en = 'the'
 [chave for chave, item in meu_dicio.items() if item is palavra_en]
 ```
-

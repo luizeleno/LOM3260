@@ -1,4 +1,4 @@
-I"�<p class="lead">Usando sobrecarga de operadores, vamos ver uma maneira de criar listas e strings de maneira fácil e rápida</p>
+I"�<p class="lead">Usando sobrecarga de operadores, vamos ver uma maneira de criar listas e strings de maneira fácil e rápida</p>
 
 <p>Imagine que você precise de uma lista de 200 elementos, todos iguais a 1. Você poderia fazer o seguinte:</p>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">L</span> <span class="o">=</span> <span class="p">[]</span>  <span class="c1"># uma lista vazia
@@ -6,7 +6,7 @@
   <span class="n">L</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
 <span class="k">print</span><span class="p">(</span><span class="n">L</span><span class="p">)</span>
 </code></pre></div></div>
-<p>Esse código usa o comando <code class="language-plaintext highlighter-rouge">append</code>, que não descrevi anteriormente porque não vamos usar nesse curso, já que, em computação científica, como veremos, é preferível trabalhar com <strong>arrays</strong>, e não com listas (veremos mais sobre arrays no devido tempo). Mas, basicamente, <code class="language-plaintext highlighter-rouge">L.append(c)</code> é um <em>método</em> para acrescentar o elemento <code class="language-plaintext highlighter-rouge">c</code> ao final da lista <code class="language-plaintext highlighter-rouge">L</code>.</p>
+<p>Esse código usa o comando <code class="language-plaintext highlighter-rouge">append</code>, que não descrevi anteriormente porque não vamos usá-lo neste curso, já que, em computação científica, como veremos, é preferível trabalhar com <strong>arrays</strong>, e não com listas (veremos mais sobre arrays no devido tempo). Mas, basicamente, <code class="language-plaintext highlighter-rouge">L.append(c)</code> é um <em>método</em> para acrescentar o elemento <code class="language-plaintext highlighter-rouge">c</code> ao final da lista <code class="language-plaintext highlighter-rouge">L</code>.</p>
 
 <p>O código acima, apesar de funcionar, não é o mais indicado nessa situação. Podemos aproveitar a sobrecarga do operador <code class="language-plaintext highlighter-rouge">*</code> para “multiplicar” os elementos de uma lista. Veja:</p>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">L</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="mi">200</span>
@@ -22,5 +22,4 @@
 </code></pre></div></div>
 
 <p>Concluindo: a sobrecarga do operador <code class="language-plaintext highlighter-rouge">*</code> é uma ótima maneira de <strong>inicializar</strong> listas e strings.</p>
-
 :ET

@@ -182,7 +182,7 @@
       "title"    : "Criando novas listas",
       "url"      : "/LOM3260/material/tema2/04-criar-listas.html",
       "category" : "",
-      "tags"     : "overload, sobrecarga, operadores, listas, strings",
+      "tags"     : "overload, sobrecarga, operadores, listas, strings, inicializar",
       "date"     : ""
     } ,
   
@@ -251,18 +251,18 @@
     } ,
   
     {
-      "title"    : "List comprehension",
-      "url"      : "/LOM3260/material/tema2/06-comprehension.html",
-      "category" : "",
-      "tags"     : "list, comprehension, dicionário, tupla, string, lista",
-      "date"     : ""
-    } ,
-  
-    {
       "title"    : "Cronograma",
       "url"      : "/LOM3260/material/sobre/06-cronograma.html",
       "category" : "",
       "tags"     : "aula, trabalho, cronograma, prova, entrega, projeto, datas, semestre",
+      "date"     : ""
+    } ,
+  
+    {
+      "title"    : "Dicionários",
+      "url"      : "/LOM3260/material/tema2/06-dicionarios.html",
+      "category" : "",
+      "tags"     : "dict, dicionário, chaves, itens, elementos",
       "date"     : ""
     } ,
   
@@ -291,18 +291,18 @@
     } ,
   
     {
-      "title"    : "Testando condições",
-      "url"      : "/LOM3260/material/tema1/07-condicional.html",
+      "title"    : "List comprehension",
+      "url"      : "/LOM3260/material/tema2/07-comprehension.html",
       "category" : "",
-      "tags"     : "if, elif, else, condições, condicional, decisão",
+      "tags"     : "list, comprehension, dicionário, tupla, string, lista, compreensão, lista",
       "date"     : ""
     } ,
   
     {
-      "title"    : "Dicionários",
-      "url"      : "/LOM3260/material/tema2/07-dicionarios.html",
+      "title"    : "Testando condições",
+      "url"      : "/LOM3260/material/tema1/07-condicional.html",
       "category" : "",
-      "tags"     : "dict, dicionário, chaves, itens, elementos",
+      "tags"     : "if, elif, else, condições, condicional, decisão",
       "date"     : ""
     } ,
   

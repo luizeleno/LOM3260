@@ -283,7 +283,7 @@
 
           
             <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
-<a href="/LOM3260/material/tema2/06-comprehension.html">List comprehension</a> <span class="badge badge-success">final</span>
+<a href="/LOM3260/material/tema2/06-dicionarios.html">Dicionários</a> <span class="badge badge-success">final</span>
 </li>
           
         
@@ -291,7 +291,7 @@
 
           
             <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
-<a href="/LOM3260/material/tema2/07-dicionarios.html">Dicionários</a> <span class="badge badge-success">final</span>
+<a href="/LOM3260/material/tema2/07-comprehension.html">List comprehension</a> <span class="badge badge-success">final</span>
 </li>
           
         
@@ -846,7 +846,7 @@
 
           
             <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
-<a href="/LOM3260/material/tema2/06-comprehension.html">List comprehension</a> <span class="badge badge-success">final</span>
+<a href="/LOM3260/material/tema2/06-dicionarios.html">Dicionários</a> <span class="badge badge-success">final</span>
 </li>
           
         
@@ -854,7 +854,7 @@
 
           
             <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
-<a href="/LOM3260/material/tema2/07-dicionarios.html">Dicionários</a> <span class="badge badge-success">final</span>
+<a href="/LOM3260/material/tema2/07-comprehension.html">List comprehension</a> <span class="badge badge-success">final</span>
 </li>
           
         
@@ -1195,7 +1195,8 @@
 
 <p>Quase todos os comandos que veremos a seguir funcionam para objetos do tipo string, lista e tupla. Quando não for o caso, deixaremos indicado.</p>
 
-<h2 id="indexing">Indexing</h2>
+<h2 id="indexação-indexing">Indexação <em>(Indexing)</em>
+</h2>
 
 <p><strong>Indexing</strong> é a maneira pela qual nos referimos a um elemento de uma lista, string ou tupla. Por exemplo, se temos uma lista <code class="language-plaintext highlighter-rouge">L = [1, 8, 'EEL', 5.43]</code>, cada um dos elementos tem por <strong>índice</strong> um inteiro, começando em zero e sequencialmente aumentando de uma unidade até o último elemento. O primeiro elemento da lista <code class="language-plaintext highlighter-rouge">L</code> é indicado por <code class="language-plaintext highlighter-rouge">L[0]</code>, o segundo por <code class="language-plaintext highlighter-rouge">L[1]</code>, e assim por diante. Acompanhe:</p>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">L</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="s">'EEL'</span><span class="p">,</span> <span class="mf">5.43</span><span class="p">]</span>
@@ -1208,9 +1209,9 @@
 <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">L</span><span class="p">:</span>
   <span class="k">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 </code></pre></div></div>
-<p>Nesse caso, nem precisamos saber o tamanho da lista!</p>
+<p>Nesse caso, nem precisamos saber o tamanho da lista! Obviamente, você poderia evitar o uso do <code class="language-plaintext highlighter-rouge">for</code> fazendo simplesmente <code class="language-plaintext highlighter-rouge">print(L)</code>, mas, nesse caso, os elementos de <code class="language-plaintext highlighter-rouge">L</code> apareceriam numa mesma linha, diferentemente do exemplo mostrado acima, onde aparecem sequencialmente, um por linha.</p>
 
-<p>Na lição anterior, vimos que listas são editáveis, ou seja, é possível alterar qualquer um de seus elementos. Isso é feito usando indexação. Por exemplo, usando a mesma lista <code class="language-plaintext highlighter-rouge">L=[1, 8, 'EEL', 5.43]</code>, se quisermos alterar o terceiro elemento (com índice 2, não se esqueça!) para  <code class="language-plaintext highlighter-rouge">Demar</code>, podemos simplesmente fazer <code class="language-plaintext highlighter-rouge">L[2] = 'Demar'</code>. A lista entãlo passa a ser <code class="language-plaintext highlighter-rouge">L=[1, 8, 'Demar', 5.43]</code>.</p>
+<p>Na lição anterior, vimos que listas são editáveis, ou seja, é possível alterar qualquer um de seus elementos. Isso é feito usando indexação. Por exemplo, usando a mesma lista <code class="language-plaintext highlighter-rouge">L=[1, 8, 'EEL', 5.43]</code>, se quisermos alterar o terceiro elemento (com índice 2, não se esqueça!) para  <code class="language-plaintext highlighter-rouge">Demar</code>, podemos simplesmente fazer <code class="language-plaintext highlighter-rouge">L[2] = 'Demar'</code>. A lista então passa a ser <code class="language-plaintext highlighter-rouge">L=[1, 8, 'Demar', 5.43]</code>.</p>
 
 <p class="lead alert alert-warning"><img class="emoji" title=":warning:" alt=":warning:" src="https://github.githubassets.com/images/icons/emoji/unicode/26a0.png" height="20" width="20"> Não é possível usar indexing para alterar valores de uma string ou de uma tupla! Esses são tipos imutáveis de objetos.</p>
 
@@ -1220,12 +1221,13 @@
 
 <p>Caso você queira o último elemento, a convenção é usar <strong>índices negativos</strong>: <code class="language-plaintext highlighter-rouge">L[-1]</code> é o último elemento de <code class="language-plaintext highlighter-rouge">L</code>, <code class="language-plaintext highlighter-rouge">L[-2]</code> o penúltimo, e assim por diante. Veja que, com isso, você não precisa necessariamente conhecer o tamanho de <code class="language-plaintext highlighter-rouge">L</code> para obter o seu último (ou qualquer outro) elemento.</p>
 
-<h2 id="slicing-fatiamento">Slicing (fatiamento)</h2>
+<h2 id="fatiamento-slicing">Fatiamento <em>(Slicing)</em>
+</h2>
 
 <p>Se você entendeu como funciona o comando <code class="language-plaintext highlighter-rouge">range()</code>, vai entender o fatiamento de listas, tuplas e strings, pois são muito parecidos. A sintaxe é</p>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">f</span> <span class="o">=</span> <span class="n">L</span><span class="p">[</span><span class="n">start</span><span class="p">:</span><span class="n">stop</span><span class="p">:</span><span class="n">step</span><span class="p">]</span>
 </code></pre></div></div>
-<p>em que <code class="language-plaintext highlighter-rouge">L</code> é uma string, lista ou tupla e <code class="language-plaintext highlighter-rouge">f</code> é uma fatia de <code class="language-plaintext highlighter-rouge">L</code> (ou seja, uma parte de <code class="language-plaintext highlighter-rouge">L</code>) a partir do elemento <code class="language-plaintext highlighter-rouge">start</code> até o elemento <code class="language-plaintext highlighter-rouge">stop</code>, mas <strong>SEM INCLUIR <code class="language-plaintext highlighter-rouge">stop</code></strong>, com um passo <code class="language-plaintext highlighter-rouge">step</code>.</p>
+<p>em que <code class="language-plaintext highlighter-rouge">L</code> é uma string, lista ou tupla e <code class="language-plaintext highlighter-rouge">f</code> é uma variável a que se atribuiu uma “fatia” de <code class="language-plaintext highlighter-rouge">L</code> (ou seja, uma parte de <code class="language-plaintext highlighter-rouge">L</code>) a partir do elemento <code class="language-plaintext highlighter-rouge">start</code> até o elemento <code class="language-plaintext highlighter-rouge">stop</code>, mas <strong>SEM INCLUIR <code class="language-plaintext highlighter-rouge">stop</code></strong>, com um passo <code class="language-plaintext highlighter-rouge">step</code>.</p>
 
 <p>Se <code class="language-plaintext highlighter-rouge">start</code> não é fornecido, ele é por padrão <code class="language-plaintext highlighter-rouge">0</code>, ou seja, o primeiro elemento. Se stop não é fornecido, ele é por padrão o último elemento, ou seja, <code class="language-plaintext highlighter-rouge">len(L)</code>. O <code class="language-plaintext highlighter-rouge">step</code> é opcional e, se não for fornecido, vale <code class="language-plaintext highlighter-rouge">1</code> por padrão.</p>
 
@@ -1236,20 +1238,24 @@
 
 <span class="c1"># primeira palavra (Eu)
 </span><span class="k">print</span><span class="p">(</span><span class="n">L</span><span class="p">[:</span><span class="mi">2</span><span class="p">])</span>
+</code></pre></div></div>
+<p>O comando <code class="language-plaintext highlighter-rouge">print</code> imprime os caracteres nas posições <code class="language-plaintext highlighter-rouge">0 e 1</code>, ou seja, a primeira palavra. Continuando com mais exemplos (que você deveria conferir rodando o código!):</p>
 
-<span class="c1"># segunda palavra:
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># segunda palavra:
 </span><span class="k">print</span><span class="p">(</span><span class="n">L</span><span class="p">[</span><span class="mi">3</span><span class="p">:</span><span class="mi">6</span><span class="p">])</span>
 
 <span class="c1"># última palavra:
 </span><span class="k">print</span><span class="p">(</span><span class="n">L</span><span class="p">[</span><span class="o">-</span><span class="mi">6</span><span class="p">:])</span>
+</code></pre></div></div>
+<p>Veja que, diferentemente do comando <code class="language-plaintext highlighter-rouge">range</code>, números negativos para <code class="language-plaintext highlighter-rouge">start</code> e <code class="language-plaintext highlighter-rouge">stop</code> tem interpretações diferentes no caso de fatiamento!</p>
 
-<span class="c1"># teste: os seguintes comandos imprimem?
+<p>Finalmente, tente entender o que os seguintes fatiamentos fazem:</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># teste: os seguintes comandos imprimem?
 </span><span class="k">print</span><span class="p">(</span><span class="n">L</span><span class="p">[</span><span class="o">-</span><span class="mi">6</span><span class="p">::</span><span class="mi">2</span><span class="p">])</span>
 <span class="k">print</span><span class="p">(</span><span class="n">L</span><span class="p">[:])</span>
 <span class="k">print</span><span class="p">(</span><span class="n">L</span><span class="p">[::])</span>
 <span class="k">print</span><span class="p">(</span><span class="n">L</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
 </code></pre></div></div>
-
 
 
   
@@ -1269,7 +1275,7 @@
 
 <hr>
 <p class="small">
-  <i> Página atualizada em 07/06/20</i>
+  <i> Página atualizada em 23/08/20</i>
 </p>
 
 

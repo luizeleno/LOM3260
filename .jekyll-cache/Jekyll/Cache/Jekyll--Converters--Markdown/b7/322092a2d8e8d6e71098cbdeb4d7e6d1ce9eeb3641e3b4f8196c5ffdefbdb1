@@ -1,4 +1,4 @@
-I"�!<p class="lead">Uma poderosa ferramenta para turbinar seu código</p>
+I"�!<p class="lead">Uma poderosa ferramenta para turbinar seu código</p>
 
 <p>Dicionários são uma espécie de lista, em que os índices, ao invés de uma sequência de inteiros começando em zero, são <strong>chaves</strong> que você mesmo fornece. É muito parecido com um dicionário de verdade, com verbetes e suas definições.</p>
 
@@ -51,10 +51,10 @@
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">dicio</span> <span class="o">=</span> <span class="p">{</span><span class="s">'animal'</span><span class="p">:</span> <span class="s">'cachorro'</span><span class="p">,</span> <span class="s">'fruta'</span><span class="p">:</span> <span class="s">'laranja'</span><span class="p">,</span> <span class="s">'cidade'</span><span class="p">:</span> <span class="s">'Lorena'</span><span class="p">,</span> <span class="s">'cor'</span><span class="p">:</span> <span class="s">'vermelho'</span><span class="p">}</span>
 
 <span class="c1"># Acrescentar um valor:
-</span><span class="n">dicio</span><span class="p">[</span><span class="s">'estado'</span><span class="p">]</span> <span class="o">=</span> <span class="s">'SP'</span> 
+</span><span class="n">dicio</span><span class="p">[</span><span class="s">'estado'</span><span class="p">]</span> <span class="o">=</span> <span class="s">'SP'</span>
 
 <span class="c1"># Alterar um valor:
-</span><span class="n">dicio</span><span class="p">[</span><span class="s">'animal'</span><span class="p">]</span> <span class="o">=</span> <span class="s">'gato'</span> 
+</span><span class="n">dicio</span><span class="p">[</span><span class="s">'animal'</span><span class="p">]</span> <span class="o">=</span> <span class="s">'gato'</span>
 
 <span class="c1"># Remover um valor
 </span><span class="n">dicio</span><span class="p">.</span><span class="n">pop</span><span class="p">(</span><span class="s">'cor'</span><span class="p">)</span>
@@ -66,5 +66,4 @@
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">palavra_en</span> <span class="o">=</span> <span class="s">'the'</span>
 <span class="p">[</span><span class="n">chave</span> <span class="k">for</span> <span class="n">chave</span><span class="p">,</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">meu_dicio</span><span class="p">.</span><span class="n">items</span><span class="p">()</span> <span class="k">if</span> <span class="n">item</span> <span class="ow">is</span> <span class="n">palavra_en</span><span class="p">]</span>
 </code></pre></div></div>
-
 :ET

@@ -28,11 +28,11 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Computação Científica em Python - uma disciplina do curso de Engenharia Física da Escola de Engenharia de Lorena da Universidade de São Paulo - EEL USP" />
 <meta property="og:description" content="Computação Científica em Python - uma disciplina do curso de Engenharia Física da Escola de Engenharia de Lorena da Universidade de São Paulo - EEL USP" />
-<link rel="canonical" href="https://computeel.org/LOM3260/material/tema2/07-dicionarios.html" />
-<meta property="og:url" content="https://computeel.org/LOM3260/material/tema2/07-dicionarios.html" />
+<link rel="canonical" href="https://computeel.org/LOM3260/material/tema2/06-dicionarios.html" />
+<meta property="og:url" content="https://computeel.org/LOM3260/material/tema2/06-dicionarios.html" />
 <meta property="og:site_name" content="LOM3260" />
 <script type="application/ld+json">
-{"@type":"WebPage","url":"https://computeel.org/LOM3260/material/tema2/07-dicionarios.html","headline":"Dicionários","dateModified":"2020-06-07T13:06:30-03:00","description":"Computação Científica em Python - uma disciplina do curso de Engenharia Física da Escola de Engenharia de Lorena da Universidade de São Paulo - EEL USP","author":{"@type":"Person","name":"Luiz T. F. Eleno"},"@context":"https://schema.org"}</script>
+{"@type":"WebPage","url":"https://computeel.org/LOM3260/material/tema2/06-dicionarios.html","headline":"Dicionários","dateModified":"2020-08-23T14:10:17-03:00","description":"Computação Científica em Python - uma disciplina do curso de Engenharia Física da Escola de Engenharia de Lorena da Universidade de São Paulo - EEL USP","author":{"@type":"Person","name":"Luiz T. F. Eleno"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -283,15 +283,15 @@
           
 
           
-            <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
-<a href="/LOM3260/material/tema2/06-comprehension.html">List comprehension</a> <span class="badge badge-success">final</span>
+            <li class="active list-group-item list-group-item-action list-group-item-secondary my-0">Dicionários <span class="badge badge-success">final</span>
 </li>
           
         
           
 
           
-            <li class="active list-group-item list-group-item-action list-group-item-secondary my-0">Dicionários <span class="badge badge-success">final</span>
+            <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
+<a href="/LOM3260/material/tema2/07-comprehension.html">List comprehension</a> <span class="badge badge-success">final</span>
 </li>
           
         
@@ -846,15 +846,15 @@
           
 
           
-            <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
-<a href="/LOM3260/material/tema2/06-comprehension.html">List comprehension</a> <span class="badge badge-success">final</span>
+            <li class="active list-group-item list-group-item-action list-group-item-secondary my-0">Dicionários <span class="badge badge-success">final</span>
 </li>
           
         
           
 
           
-            <li class="active list-group-item list-group-item-action list-group-item-secondary my-0">Dicionários <span class="badge badge-success">final</span>
+            <li class="list-group-item list-group-item-action list-group-item-secondary my-0">
+<a href="/LOM3260/material/tema2/07-comprehension.html">List comprehension</a> <span class="badge badge-success">final</span>
 </li>
           
         
@@ -1244,10 +1244,10 @@
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">dicio</span> <span class="o">=</span> <span class="p">{</span><span class="s">'animal'</span><span class="p">:</span> <span class="s">'cachorro'</span><span class="p">,</span> <span class="s">'fruta'</span><span class="p">:</span> <span class="s">'laranja'</span><span class="p">,</span> <span class="s">'cidade'</span><span class="p">:</span> <span class="s">'Lorena'</span><span class="p">,</span> <span class="s">'cor'</span><span class="p">:</span> <span class="s">'vermelho'</span><span class="p">}</span>
 
 <span class="c1"># Acrescentar um valor:
-</span><span class="n">dicio</span><span class="p">[</span><span class="s">'estado'</span><span class="p">]</span> <span class="o">=</span> <span class="s">'SP'</span> 
+</span><span class="n">dicio</span><span class="p">[</span><span class="s">'estado'</span><span class="p">]</span> <span class="o">=</span> <span class="s">'SP'</span>
 
 <span class="c1"># Alterar um valor:
-</span><span class="n">dicio</span><span class="p">[</span><span class="s">'animal'</span><span class="p">]</span> <span class="o">=</span> <span class="s">'gato'</span> 
+</span><span class="n">dicio</span><span class="p">[</span><span class="s">'animal'</span><span class="p">]</span> <span class="o">=</span> <span class="s">'gato'</span>
 
 <span class="c1"># Remover um valor
 </span><span class="n">dicio</span><span class="p">.</span><span class="n">pop</span><span class="p">(</span><span class="s">'cor'</span><span class="p">)</span>
@@ -1259,7 +1259,6 @@
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">palavra_en</span> <span class="o">=</span> <span class="s">'the'</span>
 <span class="p">[</span><span class="n">chave</span> <span class="k">for</span> <span class="n">chave</span><span class="p">,</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">meu_dicio</span><span class="p">.</span><span class="n">items</span><span class="p">()</span> <span class="k">if</span> <span class="n">item</span> <span class="ow">is</span> <span class="n">palavra_en</span><span class="p">]</span>
 </code></pre></div></div>
-
 
 
   

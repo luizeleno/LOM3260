@@ -1,19 +1,25 @@
-I"8 <p class="lead">Uma maneira rápida e elegante de iterar por elementos de uma lista ou string</p>
+I"�*<p class="lead">Uma maneira rápida e elegante de iterar por elementos de uma lista ou string</p>
 
 <p>Considere o seguinte código usado para multiplicar todos os elementos de uma lista por uma constante:</p>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">L</span> <span class="o">=</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">23</span><span class="p">,</span> <span class="o">-</span><span class="mi">5</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">16</span><span class="p">]</span>
 <span class="n">c</span> <span class="o">=</span> <span class="mi">2</span>
-<span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">L</span><span class="p">)):</span>
+<span class="c1"># quero multiplicar todos os elementos de L por c
+</span><span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">L</span><span class="p">)):</span>
   <span class="n">L</span><span class="p">[</span><span class="n">n</span><span class="p">]</span> <span class="o">*=</span> <span class="n">c</span>
 
 <span class="k">print</span><span class="p">(</span><span class="n">L</span><span class="p">)</span>
 </code></pre></div></div>
-<p>O código acima atinge o objetivo esperado: multiplicar todos os elementos da lista <code class="language-plaintext highlighter-rouge">L</code> por dois. Mas existe uma outra maneira de fazer isso usando um conceito chamado <strong>list comprehension</strong>, ou <em>abrangência de lista</em>. A ideia é usar colchetes (<code class="language-plaintext highlighter-rouge">[]</code>), que é o indicador de indexação, como sabemos, para criar uma nova lista seguindo a regra encontrada dentro dos colchetes. No caso do exemplo acima, teríamos</p>
+<p>O código acima atinge o objetivo esperado: multiplicar todos os elementos da lista <code class="language-plaintext highlighter-rouge">L</code> por dois.</p>
+
+<p class="alert alert-primary">:question: Pergunta: o que o comando: <code class="language-plaintext highlighter-rouge">L * c</code> faria?</p>
+
+<p>Existe uma outra maneira de fazer a multiplicação desejada usando um conceito chamado <strong>list comprehension</strong>, ou <em>abrangência de lista</em>. A ideia é usar colchetes (<code class="language-plaintext highlighter-rouge">[]</code>), que é o indicador de indexação, como sabemos, para criar uma nova lista seguindo a regra encontrada dentro dos colchetes. No caso do exemplo acima, teríamos</p>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">L</span> <span class="o">=</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">23</span><span class="p">,</span> <span class="o">-</span><span class="mi">5</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">16</span><span class="p">]</span>
 <span class="n">c</span> <span class="o">=</span> <span class="mi">2</span>
 <span class="n">Lnovo</span> <span class="o">=</span> <span class="p">[</span><span class="n">n</span> <span class="o">*</span> <span class="n">c</span> <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">L</span><span class="p">]</span>
 <span class="k">print</span><span class="p">(</span><span class="n">Lnovo</span><span class="p">)</span>
 </code></pre></div></div>
+<p>Repare que, no código acima, <code class="language-plaintext highlighter-rouge">n</code> é apenas um índice auxiliar (<em>“dummy index”</em>) para percorrer os elementos de <code class="language-plaintext highlighter-rouge">L</code>, um a um, multiplicando-os por <code class="language-plaintext highlighter-rouge">c</code>. O resultado é salvo numa outra lista, <code class="language-plaintext highlighter-rouge">Lnovo</code>.</p>
 
 <p>A sintaxe completa da construção para <strong>list comprehension</strong> é a seguinte:</p>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">[</span><span class="n">expressao</span> <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">lista</span> <span class="k">if</span> <span class="n">condicao</span><span class="p">]</span>
@@ -27,19 +33,29 @@
 </code></pre></div></div>
 
 <p>Um outro exemplo: digamos que temos a seguinte lista:</p>
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">dados</span> <span class="o">=</span> <span class="p">[</span><span class="s">'Cristina'</span><span class="p">,</span> <span class="s">'Jefferson'</span><span class="p">,</span> <span class="mf">13.5</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="s">'#af3429'</span><span class="p">,</span> <span class="mi">2</span><span class="o">-</span><span class="mf">1.j</span><span class="p">,</span> <span class="nb">range</span><span class="p">(</span><span class="mi">12</span><span class="p">)</span> <span class="p">]</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">dados</span> <span class="o">=</span> <span class="p">[</span><span class="s">'Cristina'</span><span class="p">,</span> <span class="s">'Jefferson'</span><span class="p">,</span> <span class="mf">13.5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="s">'#af3429'</span><span class="p">,</span> <span class="mi">2</span><span class="o">-</span><span class="mf">1.j</span><span class="p">,</span> <span class="nb">range</span><span class="p">(</span><span class="mi">12</span><span class="p">),</span> <span class="mi">4</span> <span class="p">]</span>
 </code></pre></div></div>
 <p>e queremos extrair apenas as variáveis do tipo <code class="language-plaintext highlighter-rouge">int</code>, multiplicando-as por 3, deixando de lado os outros dados. Podemos usar list comprehension e fazer:</p>
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">dados</span> <span class="o">=</span> <span class="p">[</span><span class="s">'Cristina'</span><span class="p">,</span> <span class="s">'Jefferson'</span><span class="p">,</span> <span class="mf">13.5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="s">'#af3429'</span><span class="p">,</span> <span class="mi">2</span><span class="o">-</span><span class="mf">1.j</span><span class="p">,</span> <span class="nb">range</span><span class="p">(</span><span class="mi">12</span><span class="p">)</span> <span class="p">]</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">dados</span> <span class="o">=</span> <span class="p">[</span><span class="s">'Cristina'</span><span class="p">,</span> <span class="s">'Jefferson'</span><span class="p">,</span> <span class="mf">13.5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="s">'#af3429'</span><span class="p">,</span> <span class="mi">2</span><span class="o">-</span><span class="mf">1.j</span><span class="p">,</span> <span class="nb">range</span><span class="p">(</span><span class="mi">12</span><span class="p">),</span> <span class="mi">4</span> <span class="p">]</span>
 <span class="n">dados_int3</span> <span class="o">=</span> <span class="p">[</span><span class="n">dado</span> <span class="o">*</span> <span class="mi">3</span> <span class="k">for</span> <span class="n">dado</span> <span class="ow">in</span> <span class="n">dados</span> <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">dado</span><span class="p">)</span> <span class="o">==</span> <span class="nb">int</span><span class="p">]</span>
 <span class="k">print</span><span class="p">(</span><span class="n">dados_int3</span><span class="p">)</span>
 </code></pre></div></div>
-<p>Veja que, nesse caso, <code class="language-plaintext highlighter-rouge">dados_int3</code> será uma lista com um único elemento, dado por <code class="language-plaintext highlighter-rouge">15</code>.</p>
+<p>Veja que, nesse caso, <code class="language-plaintext highlighter-rouge">dados_int3</code> será uma lista com dois elementos: <code class="language-plaintext highlighter-rouge">[15, 12]</code>. Nessa situação, repare que usamos list comprehension como uma espécie de filtro dos elementos da lista.</p>
 
-<p>List comprehension funciona também com strings, tuplas e dicionários! Teste o seguinte exemplo:</p>
+<p>Se você não quiser usar list comprehension, pode sempre atingir o objetivo de maneira mais “tradicional:”</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">dados</span> <span class="o">=</span> <span class="p">[</span><span class="s">'Cristina'</span><span class="p">,</span> <span class="s">'Jefferson'</span><span class="p">,</span> <span class="mf">13.5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="s">'#af3429'</span><span class="p">,</span> <span class="mi">2</span><span class="o">-</span><span class="mf">1.j</span><span class="p">,</span> <span class="nb">range</span><span class="p">(</span><span class="mi">12</span><span class="p">),</span> <span class="mi">4</span> <span class="p">]</span>
+<span class="n">dados_int3</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">dado</span> <span class="ow">in</span> <span class="n">dados</span><span class="p">:</span>
+  <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">dado</span><span class="p">)</span> <span class="o">==</span> <span class="nb">int</span><span class="p">:</span>
+    <span class="n">dados_int3</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">dado</span><span class="o">*</span><span class="mi">3</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">dados_int3</span><span class="p">)</span>
+</code></pre></div></div>
+<p>Bem mais prolixo, concorda?</p>
+
+<p class="alert alert-success">:heavy_check_mark: List comprehension funciona também com strings, tuplas e dicionários! Teste o seguinte exemplo:</p>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">dic</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">:</span><span class="s">'a'</span><span class="p">,</span> <span class="mi">2</span><span class="p">:</span><span class="s">'b'</span><span class="p">,</span> <span class="mi">3</span><span class="p">:</span><span class="s">'c'</span><span class="p">}</span>
 <span class="k">print</span><span class="p">(</span><span class="s">'valores no dicionário:'</span><span class="p">)</span>
 <span class="p">[</span><span class="k">print</span><span class="p">(</span><span class="n">c</span><span class="p">,</span> <span class="n">dic</span><span class="p">[</span><span class="n">c</span><span class="p">])</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">dic</span><span class="p">]</span>
 </code></pre></div></div>
-
+<p>Experimente trocar a última linha por <code class="language-plaintext highlighter-rouge">print([ (c, dic[c]) for c in dic])</code> para ver a diferença. Tente entendê-la!</p>
 :ET
