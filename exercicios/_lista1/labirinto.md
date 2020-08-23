@@ -42,6 +42,6 @@ Com o código em mãos, teste a sua solução no seguinte labirinto:
 
 Baixe o arquivo com a matriz $L$ clicando no botão abaixo com o botão direito e escolhendo *"Salvar link como..."*
 
-<a class='btn btn-primary btn-lg' href='{{site.baseurl}}/assets/images/labirinto/labirinto-grande.txt'>Baixe o arquivo labirinto.txt</a>
+<a class='btn btn-primary btn-lg' href='{{site.baseurl}}/assets/images/labirinto/labirinto-grande.txt'>Baixe o arquivo labirinto-grande.txt</a>
 
 O arquivo `labirinto-grande.txt` é composto por 0's e -1's, formando um labirinto de 41 linhas e 101 colunas, com o rato inicialmente na posição (1,0) e o queijo em (39, 100).
