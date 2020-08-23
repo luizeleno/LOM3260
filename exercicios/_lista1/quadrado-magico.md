@@ -20,17 +20,20 @@ a soma dos números é sempre igual a 34 (o quadrádo mágico de Dürer serviu d
   | 4 | 9 | 2 |
   |---|---|---|
 ```
-e a soma é sempre igual a 15. Existe um algoritmo para criar quadrados mágicos de ordem ímpar $n$ (a ordem é o número de linhas = número de colunas), preenchidos por todos os inteiros de 1 a $n^2$:
+e a soma é sempre igual a 15.
+
+Existe um algoritmo para criar quadrados mágicos de ordem ímpar $n$ (a ordem é o número de linhas = número de colunas), preenchidos por todos os inteiros de 1 a $n^2$:
 
 ---
-    
+### Algoritmo:
+
 | (i) Comece com o número 1 na célula central superior do quadrado (como no exemplo acima); |
 | (ii) preencha sequencialmente na diagonal, seguindo para a direita e subindo; |
 | (iii) quando atingir as bordas do quadrado, o próximo número é preenchido como se o quadrado estivesse "enrolado" feito uma rosquinha --- ou seja, a borda esquerda "colada" à direita e a superior à inferior. Isso é o que se chama de **condições de contorno periódicas**; |
 | (iv) uma exceção é o canto superior direito: quando atingi-lo, o próximo valor vai na célula de baixo; |
 | (v) se a próxima célula já está ocupada, o próximo valor vai abaixo do último número preenchido; |
 | (vi) continue até chegar em $n^2$ na célula central inferior. |
-    
+
 ---
 
 Para ilustrar o uso do algoritmo, vejamos sua aplicação para gerar um quadrado mágico de ordem $n=5$:
@@ -44,7 +47,7 @@ do quadrado:
 |---|---|---|---|---|
 |   |   |   |   |   |
 |---|---|---|---|---|
-|   |   |   |   |   |  
+|   |   |   |   |   |
 |---|---|---|---|---|
 |   |   |   |   |   |
 |---|---|---|---|---|
@@ -62,7 +65,7 @@ passo iii:
   |---|---|---|---|---|
   |   |   |   |   |   |
   |---|---|---|---|---|
-  |   |   |   |   |   |  
+  |   |   |   |   |   |
   |---|---|---|---|---|
   |   |   |   |   |   |
   |---|---|---|---|---|
@@ -78,7 +81,7 @@ passo iii:
 |---|---|---|---|---|
 |   | 5 |   |   |   |
 |---|---|---|---|---|
-| 4 |   |   |   |   |  
+| 4 |   |   |   |   |
 |---|---|---|---|---|
 |   |   |   |   | 3 |
 |---|---|---|---|---|
@@ -95,7 +98,7 @@ próximo valor (6):
 |---|---|---|---|---|
 |   | 5 |   |   |   |
 |---|---|---|---|---|
-| 4 | 6 |   |   |   |  
+| 4 | 6 |   |   |   |
 |---|---|---|---|---|
 |   |   |   |   | 3 |
 |---|---|---|---|---|
@@ -111,7 +114,7 @@ próximo valor (6):
 |----|----|----|----|----|
 |    | 5  | 7  | 14 |    |
 |----|----|----|----|----|
-| 4  | 6  | 13 |    |    |  
+| 4  | 6  | 13 |    |    |
 |----|----|----|----|----|
 | 10 | 12 |    |    | 3  |
 |----|----|----|----|----|
@@ -128,7 +131,7 @@ de acordo com o passo iv:
 |----|----|----|----|----|
 |    | 5  | 7  | 14 | 16 |
 |----|----|----|----|----|
-| 4  | 6  | 13 |    |    |  
+| 4  | 6  | 13 |    |    |
 |----|----|----|----|----|
 | 10 | 12 |    |    | 3  |
 |----|----|----|----|----|
@@ -145,7 +148,7 @@ quadrado:
 |----|----|----|----|----|
 | 23 | 5  | 7  | 14 | 16 |
 |----|----|----|----|----|
-| 4  | 6  | 13 | 20 | 22 |  
+| 4  | 6  | 13 | 20 | 22 |
 |----|----|----|----|----|
 | 10 | 12 | 19 | 21 | 3  |
 |----|----|----|----|----|

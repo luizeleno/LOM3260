@@ -1,0 +1,18 @@
+I"�	<p>Considere o problema de identificar o máximo valor de uma coleção de inteiros,  todos selecionados aleatoriamente no intervalo $[1,\,100]$. A coleção pode conter valores duplicados, e alguns dos números entre 1 e 100 podem não estar presentes. Pare um pouco e pense em como você lidaria com esse problema no papel. A maioria checaria cada número em sequência e perguntaria se o valor da vez é maior que o máximo dentre os anteriores. Se for, eles esqueceriam o máximo anterior e lembrariam o número atual como o novo máximo. Essa é uma abordagem razoável e resultará na resposta correta quando o processo for executado com cuidado. Implemente o método em python. Quantas vezes você esperaria precisar atualizar o valor máximo e lembrar de um novo número?</p>
+
+<!-- more -->
+
+<h3 id="solução">Solução</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">numpy.random</span> <span class="k">as</span> <span class="n">rd</span>
+<span class="c1"># exemplificando para 20 valores
+</span><span class="n">L</span> <span class="o">=</span> <span class="n">rd</span><span class="p">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">101</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
+<span class="nb">max</span> <span class="o">=</span> <span class="n">L</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">L</span><span class="p">[</span><span class="mi">1</span><span class="p">:]:</span>
+    <span class="k">if</span> <span class="n">v</span> <span class="o">&gt;</span> <span class="nb">max</span><span class="p">:</span>
+        <span class="nb">max</span> <span class="o">=</span> <span class="n">v</span>
+
+<span class="k">print</span><span class="p">(</span><span class="s">f'Na lista </span><span class="si">{</span><span class="n">L</span><span class="si">}</span><span class="s">'</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">f'o valor máximo é </span><span class="si">{</span><span class="nb">max</span><span class="si">}</span><span class="s">'</span><span class="p">)</span>
+</code></pre></div></div>
+:ET

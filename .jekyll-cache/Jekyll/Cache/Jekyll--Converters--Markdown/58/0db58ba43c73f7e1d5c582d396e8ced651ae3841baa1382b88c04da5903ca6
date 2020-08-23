@@ -1,0 +1,186 @@
+I"�<p>Um <strong>quadrado mágico</strong> é uma tabela de números em que a soma nas linhas, colunas e diagonais dá sempre o mesmo valor. Por exemplo, na gravura <em>Melencholia I</em> de Albrecht Dürer (1471–1528),</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td><img src="/LOM3260/assets/images/melencol.jpg" alt="" width="100%" /></td>
+      <td><img src="/LOM3260/assets/images/Durer.jpg" alt="" width="100%" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>a soma dos números é sempre igual a 34 (o quadrádo mágico de Dürer serviu de inspiração para o nome e o logotipo da <a href="http://www.editora34.com.br/quemsomos.htm" target="blank">Editora 34</a>). Outro exemplo simples é o seguinte, em que estão presentes todos os inteiros de 1 a 9 num quadrado $3\times3$:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  |---|---|---|
+  | 8 | 1 | 6 |
+  |---|---|---|
+  | 3 | 5 | 7 |
+  |---|---|---|
+  | 4 | 9 | 2 |
+  |---|---|---|
+</code></pre></div></div>
+<p>e a soma é sempre igual a 15.</p>
+
+<p>Existe um algoritmo para criar quadrados mágicos de ordem ímpar $n$ (a ordem é o número de linhas = número de colunas), preenchidos por todos os inteiros de 1 a $n^2$:</p>
+
+<hr />
+<h3 id="algoritmo">Algoritmo:</h3>
+
+<table>
+  <tbody>
+    <tr>
+      <td>(i) Comece com o número 1 na célula central superior do quadrado (como no exemplo acima);</td>
+    </tr>
+    <tr>
+      <td>(ii) preencha sequencialmente na diagonal, seguindo para a direita e subindo;</td>
+    </tr>
+    <tr>
+      <td>(iii) quando atingir as bordas do quadrado, o próximo número é preenchido como se o quadrado estivesse “enrolado” feito uma rosquinha — ou seja, a borda esquerda “colada” à direita e a superior à inferior. Isso é o que se chama de <strong>condições de contorno periódicas</strong>;</td>
+    </tr>
+    <tr>
+      <td>(iv) uma exceção é o canto superior direito: quando atingi-lo, o próximo valor vai na célula de baixo;</td>
+    </tr>
+    <tr>
+      <td>(v) se a próxima célula já está ocupada, o próximo valor vai abaixo do último número preenchido;</td>
+    </tr>
+    <tr>
+      <td>(vi) continue até chegar em $n^2$ na célula central inferior.</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<p>Para ilustrar o uso do algoritmo, vejamos sua aplicação para gerar um quadrado mágico de ordem $n=5$:</p>
+
+<ul>
+  <li>Comece com o passo i, colocando o número 1 na célula central superior
+do quadrado:</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>|---|---|---|---|---|
+|   |   | 1 |   |   |
+|---|---|---|---|---|
+|   |   |   |   |   |
+|---|---|---|---|---|
+|   |   |   |   |   |
+|---|---|---|---|---|
+|   |   |   |   |   |
+|---|---|---|---|---|
+|   |   |   |   |   |
+|---|---|---|---|---|
+</code></pre></div></div>
+
+<ul>
+  <li>Ao tentar usar o passo ii para inserir o próximo número (2), não temos
+célula acima e à direita da célula anterior (1). Temos então que usar o
+passo iii:</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  |---|---|---|---|---|
+  |   |   | 1 |   |   |
+  |---|---|---|---|---|
+  |   |   |   |   |   |
+  |---|---|---|---|---|
+  |   |   |   |   |   |
+  |---|---|---|---|---|
+  |   |   |   |   |   |
+  |---|---|---|---|---|
+  |   |   |   | 2 |   |
+  |---|---|---|---|---|
+</code></pre></div></div>
+
+<ul>
+  <li>Alguns passos depois, usando os passos ii e iii, o quadrado estará assim:</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>|---|---|---|---|---|
+|   |   | 1 |   |   |
+|---|---|---|---|---|
+|   | 5 |   |   |   |
+|---|---|---|---|---|
+| 4 |   |   |   |   |
+|---|---|---|---|---|
+|   |   |   |   | 3 |
+|---|---|---|---|---|
+|   |   |   | 2 |   |
+|---|---|---|---|---|
+</code></pre></div></div>
+
+<ul>
+  <li>Como a próxima célula (1) já está ocupada, usamos o passo v para o
+próximo valor (6):</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>|---|---|---|---|---|
+|   |   | 1 |   |   |
+|---|---|---|---|---|
+|   | 5 |   |   |   |
+|---|---|---|---|---|
+| 4 | 6 |   |   |   |
+|---|---|---|---|---|
+|   |   |   |   | 3 |
+|---|---|---|---|---|
+|   |   |   | 2 |   |
+|---|---|---|---|---|
+</code></pre></div></div>
+
+<ul>
+  <li>Continuando por mais alguns valores, usando os passos ii, iii e v:</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>|----|----|----|----|----|
+|    |    | 1  | 8  | 15 |
+|----|----|----|----|----|
+|    | 5  | 7  | 14 |    |
+|----|----|----|----|----|
+| 4  | 6  | 13 |    |    |
+|----|----|----|----|----|
+| 10 | 12 |    |    | 3  |
+|----|----|----|----|----|
+| 11 |    |    | 2  | 9  |
+|--- |----|----|----|----|
+</code></pre></div></div>
+
+<ul>
+  <li>Atingido o canto superior direito, o próximo valor (16) vai abaixo dele,
+de acordo com o passo iv:</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>|----|----|----|----|----|
+|    |    | 1  | 8  | 15 |
+|----|----|----|----|----|
+|    | 5  | 7  | 14 | 16 |
+|----|----|----|----|----|
+| 4  | 6  | 13 |    |    |
+|----|----|----|----|----|
+| 10 | 12 |    |    | 3  |
+|----|----|----|----|----|
+| 11 |    |    | 2  | 9  |
+|--- |----|----|----|----|
+</code></pre></div></div>
+
+<ul>
+  <li>E agora continue com os passos ii, iii e v até terminar de preencher o
+quadrado:</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>|----|----|----|----|----|
+| 17 | 24 | 1  | 8  | 15 |
+|----|----|----|----|----|
+| 23 | 5  | 7  | 14 | 16 |
+|----|----|----|----|----|
+| 4  | 6  | 13 | 20 | 22 |
+|----|----|----|----|----|
+| 10 | 12 | 19 | 21 | 3  |
+|----|----|----|----|----|
+| 11 | 18 | 25 | 2  | 9  |
+|--- |----|----|----|----|
+</code></pre></div></div>
+
+<p>Lembre que o algoritmo só vale para valores ímpares de $n$. Existem muitos outros quadrados mágicos de mesma ordem, o algoritmo só fornece uma possibilidade.</p>
+
+<ol>
+  <li>Qual é a soma em cada linha, coluna e nas duas diagonais, em função de $n$? Responda a essa pergunta usando a cabeça, não o computador!</li>
+  <li>Implemente o algoritmo em python para montar e exibir um quadrado mágico de ordem $n$ ($n$ ímpar) com os números inteiros de 1 a $n^2$. A ordem do quadrado ($n$) deve ser fornecida pelo usuário.</li>
+</ol>
+:ET

@@ -32,7 +32,7 @@
 <meta property="og:url" content="https://computeel.org/LOM3260/material/exercicios/lista1.html" />
 <meta property="og:site_name" content="LOM3260" />
 <script type="application/ld+json">
-{"@type":"WebPage","url":"https://computeel.org/LOM3260/material/exercicios/lista1.html","headline":"Primeira Lista","dateModified":"2020-08-22T12:36:20-03:00","description":"Computação Científica em Python - uma disciplina do curso de Engenharia Física da Escola de Engenharia de Lorena da Universidade de São Paulo - EEL USP","author":{"@type":"Person","name":"Luiz T. F. Eleno"},"@context":"https://schema.org"}</script>
+{"dateModified":"2020-08-22T12:36:20-03:00","@type":"WebPage","headline":"Primeira Lista","url":"https://computeel.org/LOM3260/material/exercicios/lista1.html","author":{"@type":"Person","name":"Luiz T. F. Eleno"},"description":"Computação Científica em Python - uma disciplina do curso de Engenharia Física da Escola de Engenharia de Lorena da Universidade de São Paulo - EEL USP","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -1915,7 +1915,7 @@ o programa deve exibir <code class="language-plaintext highlighter-rouge">y = 0.
 
         
           
-          <p>Considere o problema de identificar o máximo valor de uma coleção de inteiros,  todos selecionados aleatoriamente no intervalo $[1,\,100]$. A coleção pode conter valores duplicados, e alguns dos números entre 1 e 100 podem não estar presentes. Pare um pouco e pense em como você lidaria com esse problema no papel. A maioria checaria cada número em sequência e perguntaria se o valor da vez é maior que o máximo dentre anteriores. Se for, eles esqueceriam o máximo anterior e lembrariam o número atual como o novo máximo. Essa é uma abordagem razoável e resultará na resposta correta quando o processo for executado com cuidado. Implemente o método em python. Quantas vezes você esperaria precisar atualizar o valor máximo e lembrar de um novo número?</p>
+          <p>Considere o problema de identificar o máximo valor de uma coleção de inteiros,  todos selecionados aleatoriamente no intervalo $[1,\,100]$. A coleção pode conter valores duplicados, e alguns dos números entre 1 e 100 podem não estar presentes. Pare um pouco e pense em como você lidaria com esse problema no papel. A maioria checaria cada número em sequência e perguntaria se o valor da vez é maior que o máximo dentre os anteriores. Se for, eles esqueceriam o máximo anterior e lembrariam o número atual como o novo máximo. Essa é uma abordagem razoável e resultará na resposta correta quando o processo for executado com cuidado. Implemente o método em python. Quantas vezes você esperaria precisar atualizar o valor máximo e lembrar de um novo número?</p>
 
 
         
@@ -2210,9 +2210,12 @@ a_{i-1,j} + a_{i-1,j-1} \,, \text{ se } 1 \lt j \lt  i
   | 4 | 9 | 2 |
   |---|---|---|
 </code></pre></div></div>
-<p>e a soma é sempre igual a 15. Existe um algoritmo para criar quadrados mágicos de ordem ímpar $n$ (a ordem é o número de linhas = número de colunas), preenchidos por todos os inteiros de 1 a $n^2$:</p>
+<p>e a soma é sempre igual a 15.</p>
+
+<p>Existe um algoritmo para criar quadrados mágicos de ordem ímpar $n$ (a ordem é o número de linhas = número de colunas), preenchidos por todos os inteiros de 1 a $n^2$:</p>
 
 <hr>
+<h3 id="algoritmo">Algoritmo:</h3>
 
 <table class="table table-sm table-hover">
   <tbody>
@@ -2251,7 +2254,7 @@ do quadrado:</li>
 |---|---|---|---|---|
 |   |   |   |   |   |
 |---|---|---|---|---|
-|   |   |   |   |   |  
+|   |   |   |   |   |
 |---|---|---|---|---|
 |   |   |   |   |   |
 |---|---|---|---|---|
@@ -2270,7 +2273,7 @@ passo iii:</li>
   |---|---|---|---|---|
   |   |   |   |   |   |
   |---|---|---|---|---|
-  |   |   |   |   |   |  
+  |   |   |   |   |   |
   |---|---|---|---|---|
   |   |   |   |   |   |
   |---|---|---|---|---|
@@ -2287,7 +2290,7 @@ passo iii:</li>
 |---|---|---|---|---|
 |   | 5 |   |   |   |
 |---|---|---|---|---|
-| 4 |   |   |   |   |  
+| 4 |   |   |   |   |
 |---|---|---|---|---|
 |   |   |   |   | 3 |
 |---|---|---|---|---|
@@ -2305,7 +2308,7 @@ próximo valor (6):</li>
 |---|---|---|---|---|
 |   | 5 |   |   |   |
 |---|---|---|---|---|
-| 4 | 6 |   |   |   |  
+| 4 | 6 |   |   |   |
 |---|---|---|---|---|
 |   |   |   |   | 3 |
 |---|---|---|---|---|
@@ -2322,7 +2325,7 @@ próximo valor (6):</li>
 |----|----|----|----|----|
 |    | 5  | 7  | 14 |    |
 |----|----|----|----|----|
-| 4  | 6  | 13 |    |    |  
+| 4  | 6  | 13 |    |    |
 |----|----|----|----|----|
 | 10 | 12 |    |    | 3  |
 |----|----|----|----|----|
@@ -2340,7 +2343,7 @@ de acordo com o passo iv:</li>
 |----|----|----|----|----|
 |    | 5  | 7  | 14 | 16 |
 |----|----|----|----|----|
-| 4  | 6  | 13 |    |    |  
+| 4  | 6  | 13 |    |    |
 |----|----|----|----|----|
 | 10 | 12 |    |    | 3  |
 |----|----|----|----|----|
@@ -2358,7 +2361,7 @@ quadrado:</li>
 |----|----|----|----|----|
 | 23 | 5  | 7  | 14 | 16 |
 |----|----|----|----|----|
-| 4  | 6  | 13 | 20 | 22 |  
+| 4  | 6  | 13 | 20 | 22 |
 |----|----|----|----|----|
 | 10 | 12 | 19 | 21 | 3  |
 |----|----|----|----|----|
