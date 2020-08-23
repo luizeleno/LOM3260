@@ -1,15 +1,19 @@
 {%- for tag  in include.tags -%}
 {%- if tag == 'cond' -%}
-<img src="/LOM3260/assets/images/legenda/ifthenelse.jpg" title="decisão" width="30px" />&nbsp;
+<img src="{{site.baseurl}}/assets/images/legenda/ifthenelse.jpg" title="decisão" width="30px" />&nbsp;
 {%- elsif tag == 'loop' -%}
-<img src="/LOM3260/assets/images/legenda/loop.png" title="repetição" width="20px" />&nbsp;
+<img src="{{site.baseurl}}/assets/images/legenda/loop.png" title="repetição" width="20px" />&nbsp;
 {%- elsif tag == 'func' -%}
-<img src="/LOM3260/assets/images/legenda/function.png" title="função" width="15px" />&nbsp;
+<img src="{{site.baseurl}}/assets/images/legenda/function.png" title="função" width="15px" />&nbsp;
 {%- elsif tag == 'dict' -%}
-<img src="/LOM3260/assets/images/legenda/dict.png" title="dicionário" width="40px" />&nbsp;
+<img src="{{site.baseurl}}/assets/images/legenda/dict.png" title="dicionário" width="40px" />&nbsp;
 {%- elsif tag == 'list' -%}
-<img src="/LOM3260/assets/images/legenda/list.png" title="lista" width="25px" />&nbsp;
+<img src="{{site.baseurl}}/assets/images/legenda/list.png" title="lista" width="25px" />&nbsp;
 {%- elsif tag == 'string' -%}
-<img src="/LOM3260/assets/images/legenda/string.jpg" title="string" width="25px" />&nbsp;
+<img src="{{site.baseurl}}/assets/images/legenda/string.jpg" title="string" width="25px" />&nbsp;
+{%- elsif tag == 'recurs' -%}
+<img src="{{site.baseurl}}/assets/images/legenda/recursion.png" title="recursão" width="25px" />&nbsp;
+{%- elsif tag == 'desafio' -%}
+<img src="{{site.baseurl}}/assets/images/legenda/caveira.png" title="desafio" width="25px" />&nbsp;
 {%- endif -%}
 {%- endfor -%}

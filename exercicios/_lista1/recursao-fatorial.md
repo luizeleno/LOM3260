@@ -1,7 +1,7 @@
 ---
 nav_order: 23
 dificuldade: 20
-tags: [cond, func]
+tags: [cond, func, recurs]
 mathjax: true
 title: Fatorial por recursão
 ---

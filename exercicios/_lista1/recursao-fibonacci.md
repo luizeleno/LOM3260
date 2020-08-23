@@ -1,7 +1,7 @@
 ---
 nav_order: 24
 dificuldade: 30
-tags: [cond, func]
+tags: [cond, func, recurs]
 mathjax: true
 title: Fibonacci por recursão
 ---

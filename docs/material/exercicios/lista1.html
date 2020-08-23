@@ -32,7 +32,7 @@
 <meta property="og:url" content="https://computeel.org/LOM3260/material/exercicios/lista1.html" />
 <meta property="og:site_name" content="LOM3260" />
 <script type="application/ld+json">
-{"dateModified":"2020-08-22T12:36:20-03:00","@type":"WebPage","headline":"Primeira Lista","url":"https://computeel.org/LOM3260/material/exercicios/lista1.html","author":{"@type":"Person","name":"Luiz T. F. Eleno"},"description":"Computação Científica em Python - uma disciplina do curso de Engenharia Física da Escola de Engenharia de Lorena da Universidade de São Paulo - EEL USP","@context":"https://schema.org"}</script>
+{"@type":"WebPage","url":"https://computeel.org/LOM3260/material/exercicios/lista1.html","headline":"Primeira Lista","dateModified":"2020-08-22T12:36:20-03:00","description":"Computação Científica em Python - uma disciplina do curso de Engenharia Física da Escola de Engenharia de Lorena da Universidade de São Paulo - EEL USP","author":{"@type":"Person","name":"Luiz T. F. Eleno"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -1235,7 +1235,8 @@
 <a href="#ex27" class="badge badge-primary">Ex. 27</a>
 <a href="#ex28" class="badge badge-primary">Ex. 28</a>
 <a href="#ex29" class="badge badge-primary">Ex. 29</a>
-<a href="#ex30" class="badge badge-primary">Ex. 30</a></p>
+<a href="#ex30" class="badge badge-primary">Ex. 30</a>
+<a href="#ex31" class="badge badge-primary">Ex. 31</a></p>
 
 <h3 id="instruções">Instruções</h3>
 
@@ -1831,7 +1832,7 @@ Está entre 40 e 60:
             <li>
 <i><b>dificuldade:</b></i> 20%</li>
             <li>
-<i><b>utiliza:</b></i> <img src="/LOM3260/assets/images/legenda/ifthenelse.jpg" title="decisão" width="30px"> <img src="/LOM3260/assets/images/legenda/function.png" title="função" width="15px"> </li>
+<i><b>utiliza:</b></i> <img src="/LOM3260/assets/images/legenda/ifthenelse.jpg" title="decisão" width="30px"> <img src="/LOM3260/assets/images/legenda/function.png" title="função" width="15px"> <img src="/LOM3260/assets/images/legenda/recursion.png" title="recursão" width="25px"> </li>
         </ul>
 
         
@@ -1856,7 +1857,7 @@ Está entre 40 e 60:
             <li>
 <i><b>dificuldade:</b></i> 30%</li>
             <li>
-<i><b>utiliza:</b></i> <img src="/LOM3260/assets/images/legenda/ifthenelse.jpg" title="decisão" width="30px"> <img src="/LOM3260/assets/images/legenda/function.png" title="função" width="15px"> </li>
+<i><b>utiliza:</b></i> <img src="/LOM3260/assets/images/legenda/ifthenelse.jpg" title="decisão" width="30px"> <img src="/LOM3260/assets/images/legenda/function.png" title="função" width="15px"> <img src="/LOM3260/assets/images/legenda/recursion.png" title="recursão" width="25px"> </li>
         </ul>
 
         
@@ -2382,6 +2383,220 @@ quadrado:</li>
     </div>
 </div>
 
+<div class="card mb-2">
+    <a name="ex31"></a><h2 class="card-title alert alert-primary">Exercício 31: Saindo do labirinto</h2>
+    <div class="card-body">
+        <ul>
+            <li>
+<i><b>dificuldade:</b></i> 80%</li>
+            <li>
+<i><b>utiliza:</b></i> <img src="/LOM3260/assets/images/legenda/ifthenelse.jpg" title="decisão" width="30px"> <img src="/LOM3260/assets/images/legenda/loop.png" title="repetição" width="20px"> <img src="/LOM3260/assets/images/legenda/list.png" title="lista" width="25px"> <img src="/LOM3260/assets/images/legenda/function.png" title="função" width="15px"> <img src="/LOM3260/assets/images/legenda/recursion.png" title="recursão" width="25px"> <img src="/LOM3260/assets/images/legenda/caveira.png" title="desafio" width="25px"> </li>
+        </ul>
+
+        
+          <p>Ajude um rato a encontrar um pedaço de queijo num labirinto como o do desenho abaixo:</p>
+
+<div class="w-100 col-md-12">
+<div class="text-center">
+<figure class="figure">
+  
+  <a href="#" data-toggle="modal" data-target="#labirinto">
+  
+    <img class="figure-img img-fluid rounded mx-auto" src="/LOM3260/assets/images/labirinto/labirinto.png" alt="Exemplo de um labirinto" title="Exemplo de um labirinto">
+  
+  </a>
+  
+  
+  <figcaption class="figure-caption">
+    Exemplo de um labirinto
+  </figcaption>
+  
+
+<!-- Modal -->
+
+<div class="modal fade" id="labirinto" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-light bg-dark">
+        <h5>Exemplo de um labirinto</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span class="text-light" aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <a id="no-ext-link" href="/LOM3260/assets/images/labirinto/labirinto.png" target="_blank">
+        <img class="figure-img img-fluid rounded w-100mx-auto" src="/LOM3260/assets/images/labirinto/labirinto.png" alt="Exemplo de um labirinto" title="Exemplo de um labirinto">
+        </a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">OK</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</figure>
+</div>
+
+</div>
+
+<p>Um labirinto desses pode ser representado por uma matriz retangular $L$, cujo elemento $\ell_{ij}$ vale $0$ ou $-1$, conforme a casa correspondente do labirinto seja uma passagem livre ou uma parede, respectivamente.</p>
+
+<p>Um método geral para resolver esse problema consiste em marcar com o número $k$ ($k = 1, 2,\ldots$) todas as casas livres que estejam exatamente a $k-1$ passos de distância do queijo, pelo caminho mais curto possível. Suponha que, a cada passo, o rato possa se deslocar de apenas uma casa na vertical ou na horizontal. Então, rotula-se inicialmente a posição do queijo com $1$ e para cada $k\ge2$ examinam-se <em>todas</em> as casas livre do labirinto, marcando-se com $k$ aquelas ainda não marcadas e que sejam adjacentes a alguma casa marcada com $k-1$.</p>
+
+<p>A marcação continua até ser atingido um valor $k$ (28 no exemplo abaixo) tal que nenhuma casa esteja em condições de ser marcada. Ao final da marcação teremos a seguinte matriz, supondo o queijo em (5,10), ou seja, no canto inferir direito:</p>
+
+<table class="table table-sm table-hover">
+  <tbody>
+    <tr>
+      <td>26</td>
+      <td>27</td>
+      <td>-1</td>
+      <td>-1</td>
+      <td>12</td>
+      <td>11</td>
+      <td>10</td>
+      <td>9</td>
+      <td>10</td>
+      <td>11</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>25</td>
+      <td>-1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>-1</td>
+      <td>12</td>
+      <td>-1</td>
+      <td>8</td>
+      <td>-1</td>
+      <td>-1</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td>25</td>
+      <td>-1</td>
+      <td>0</td>
+      <td>-1</td>
+      <td>13</td>
+      <td>-1</td>
+      <td>7</td>
+      <td>6</td>
+      <td>5</td>
+      <td>-1</td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td>-1</td>
+      <td>21</td>
+      <td>-1</td>
+      <td>15</td>
+      <td>14</td>
+      <td>15</td>
+      <td>-1</td>
+      <td>-1</td>
+      <td>4</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>21</td>
+      <td>20</td>
+      <td>-1</td>
+      <td>16</td>
+      <td>-1</td>
+      <td>16</td>
+      <td>17</td>
+      <td>18</td>
+      <td>-1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td>-1</td>
+      <td>19</td>
+      <td>18</td>
+      <td>17</td>
+      <td>18</td>
+      <td>17</td>
+      <td>18</td>
+      <td>-1</td>
+      <td>2</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>O caminho mais curto até o queijo pode então ser determinado, partindo-se da posição do rato e passando a cada etapa para uma casa adjacente cuja numeração seja menor do que a atual.</p>
+
+<p>Por exemplo, partindo de (0, 0), i.e., o canto superior esquerdo, o rato precisará percorrer pelo menos 26 casas para chegar ao queijo: (0, 0), (1, 0), (2, 0), (3, 0), (4, 0), (4, 1), (4,2), …, (4, 10), (4, 15).</p>
+
+<p>Dados o labirinto (matriz $L$) com elementos $0$ e $-1$ e as posições do rato e do queijo, determine o caminho mais curto que o rato deve percorrer até encontrar o queijo, se tal caminho existir.</p>
+
+<p><strong>Sugestão:</strong> escreva uma função que efetua a marcação (recebendo como argumentos a matriz $L$ e a posição do queijo) e uma outra que imprime o caminho (recebendo como argumentos a matriz $L$ já preenchida e a posição inicial do rato).</p>
+
+<p>Com o código em mãos, teste a sua solução no seguinte labirinto:</p>
+
+<div class="w-100 col-md-12">
+<div class="text-center">
+<figure class="figure">
+  
+  <a href="#" data-toggle="modal" data-target="#labirintogrande">
+  
+    <img class="figure-img img-fluid rounded mx-auto" src="/LOM3260/assets/images/labirinto/labirinto-grande.png" alt="Um labirinto mais complicado" title="Um labirinto mais complicado">
+  
+  </a>
+  
+  
+  <figcaption class="figure-caption">
+    Um labirinto mais complicado
+  </figcaption>
+  
+
+<!-- Modal -->
+
+<div class="modal fade" id="labirintogrande" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-light bg-dark">
+        <h5>Um labirinto mais complicado</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span class="text-light" aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <a id="no-ext-link" href="/LOM3260/assets/images/labirinto/labirinto-grande.png" target="_blank">
+        <img class="figure-img img-fluid rounded w-100mx-auto" src="/LOM3260/assets/images/labirinto/labirinto-grande.png" alt="Um labirinto mais complicado" title="Um labirinto mais complicado">
+        </a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">OK</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</figure>
+</div>
+
+</div>
+
+<p>Baixe o arquivo com a matriz $L$ clicando no botão abaixo com o botão direito e escolhendo <em>“Salvar link como…”</em></p>
+
+<p><a class="btn btn-primary btn-lg" href="/LOM3260/assets/images/labirinto/labirinto-grande.txt">Baixe o arquivo labirinto.txt</a></p>
+
+<p>O arquivo <code class="language-plaintext highlighter-rouge">labirinto-grande.txt</code> é composto por 0’s e -1’s, formando um labirinto de 41 linhas e 101 colunas, com o rato inicialmente na posição (1,0) e o queijo em (39, 100).</p>
+
+        
+        
+
+    </div>
+</div>
+
 
 
   
@@ -2391,7 +2606,7 @@ quadrado:</li>
 
 <hr>
 <p class="small">
-  <i> Página atualizada em 22/08/20</i>
+  <i> Página atualizada em 23/08/20</i>
 </p>
 
 

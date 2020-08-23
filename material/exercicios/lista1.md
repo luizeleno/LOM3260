@@ -7,11 +7,11 @@ remove_trinket: true
 # resolvidos: ['1', '5', '6', '7', '8', '11', '12', '13', '15', '16', '20', '21', '22', '23', '26']
 # entrega1: ['2', '3', '4', '9', '14', '17', '19', '28']
 # entrega2: ['18', '29', '30']
-timestamp: 22/08/20
+timestamp: 23/08/20
 ---
 
 ### Acesso rápido
-{% for i in (1..30) %}
+{% for i in (1..31) %}
 {%- assign v = i | downcase %}
 [Ex. {{i}}](#ex{{i}}){: .badge .badge-{% if page.entrega1 contains v %}warning{% elsif page.entrega2 contains v %}danger{% elsif page.resolvidos contains v %}success{% else %}primary{% endif %} }
 {%- endfor %}
