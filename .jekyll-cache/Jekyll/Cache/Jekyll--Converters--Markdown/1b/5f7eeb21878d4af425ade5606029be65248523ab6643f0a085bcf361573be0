@@ -1,0 +1,22 @@
+I"�<p class="lead">O que você vai encontrar neste site</p>
+
+<ol>
+  <li>Programação em Python:
+    <ul>
+      <li>Introdução à programação em Python</li>
+      <li>Palavras-chave em Python; <strong>rotinas e funções</strong></li>
+      <li><code class="language-plaintext highlighter-rouge">numpy</code> e o conceito de <strong>slicing</strong> e <strong>indexing</strong> de <strong>arrays</strong></li>
+      <li>Gráficos e animações com <code class="language-plaintext highlighter-rouge">matplotlib</code></li>
+      <li>Criação de interfaces gráficas com o usuário usando <code class="language-plaintext highlighter-rouge">matplotlib.widgets</code></li>
+    </ul>
+  </li>
+  <li>Métodos numéricos:
+    <ul>
+      <li>Zeros de funções</li>
+      <li>Integração</li>
+      <li>Sistemas de equações lineares
+<!-- - Ajuste por mínimos quadrados --></li>
+    </ul>
+  </li>
+</ol>
+:ET
