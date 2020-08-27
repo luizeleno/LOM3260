@@ -4,7 +4,7 @@ parent: temaone
 nav_order: 5
 status: green
 tags: [operador, operadores, comparação, lógicos, incremento, operando, aritmético, lógico, comparação, atribuição]
-timestamp: 22/08/20
+timestamp: 8/27/2020, 6:46:55 PM
 ---
 
 Numa expressão como `c = a op b`, `a` e `b` são chamados *operandos* e `op` é um **operador**. Os operadores abaixo (com exceção do `not`) agem sobre dois *operandos* e produzem (*retornam*) um resultado, que depende dos tipos de dados dos operandos.
@@ -24,7 +24,7 @@ Numa expressão como `c = a op b`, `a` e `b` são chamados *operandos* e `op` é
 - `int op int` retorna `int`
   - a exceção é o operador `/`, que retorma `float` nesse caso
 - `int op float` retorna `float`
-- `c op int` retorna `float`
+- `float op int` retorna `float`
 - `float op float` retorna `float`
 
 **Obs.:** Consulte a aula de [*Sobrecarga de operadores*]({{site.baseurl}}/docs/sobrecarga/) para outro uso do operador adição quando os operandos são `string`.

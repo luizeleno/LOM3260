@@ -6,7 +6,7 @@ has_children: false
 permalink: /docs/intro/
 status: green
 tags: [edição, arquivos, extensão, py, sintaxe, indentação, comentário, tabulação, formatação]
-timestamp: 22/08/20
+timestamp: 8/27/2020, 6:47:05 PM
 ---
 
 Um código python é escrito de maneira estruturada usando tabulações (indentação) criando blocos dentro do arquivo
@@ -29,7 +29,7 @@ while(n < 10) {
   y += n;
   n++;
 }
-printf("y = %d\n", y)
+printf("y = %d\n", y);
 ```
 é equivalente, em python, ao seguinte:
 ```python

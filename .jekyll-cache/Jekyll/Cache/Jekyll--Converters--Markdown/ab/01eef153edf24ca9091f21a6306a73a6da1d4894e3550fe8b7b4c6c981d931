@@ -1,0 +1,50 @@
+I"�<p class="lead">Um código python é escrito de maneira estruturada usando tabulações (indentação) criando blocos dentro do arquivo</p>
+
+<h2 id="sistema-de-arquivos">Sistema de arquivos</h2>
+
+<ul>
+  <li>Arquivos legíveis por um <em>interpretador</em> python tem o formato de arquivos texto.</li>
+  <li>Usualmente, para identificá-los, adiciona-se a <em>extensão</em> <code class="language-plaintext highlighter-rouge">.py</code> ao nome do arquivo</li>
+  <li>Não existem muitas restrições quanto ao nome do arquivo (isso depende mais do seu sistema operacional), mas eu recomendo evitar espaços em branco e caracteres especiais e acentuados para batizar seus programas. Isso é uma garantia de maior portabilidade de seus códigos para diversas plataformas (windows, linux, mac, …)</li>
+</ul>
+
+<h2 id="sintaxe-python">Sintaxe python</h2>
+
+<p>Diferente de outras linguagens de programação, como C, C++ e Java, os diferentes blocos de um programa python são identificados por <strong>tabulações</strong>, ou espaços em branco que servem como <strong>indentação</strong>  (espaço em branco antes dos comandos)  e fazem o papel das chaves nas linguagens citadas. Por exemplo, o seguinte código escrito em C:</p>
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cm">/* isto é um comentário */</span>
+<span class="n">n</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="n">y</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="k">while</span><span class="p">(</span><span class="n">n</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">)</span> <span class="p">{</span>
+  <span class="n">y</span> <span class="o">+=</span> <span class="n">n</span><span class="p">;</span>
+  <span class="n">n</span><span class="o">++</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="n">printf</span><span class="p">(</span><span class="s">"y = %d</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">y</span><span class="p">);</span>
+</code></pre></div></div>
+<p>é equivalente, em python, ao seguinte:</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># isto é um comentário
+</span><span class="n">n</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span>
+<span class="k">while</span> <span class="n">n</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">:</span>
+  <span class="n">y</span> <span class="o">+=</span> <span class="n">n</span>
+  <span class="n">n</span> <span class="o">+=</span> <span class="mi">1</span>
+<span class="k">print</span><span class="p">(</span><span class="s">f'y = </span><span class="si">{</span><span class="n">y</span><span class="si">}</span><span class="s">'</span><span class="p">)</span>
+</code></pre></div></div>
+<p>Em C, o bloco definido pelo comando <code class="language-plaintext highlighter-rouge">while</code> é delimitado pelas chaves (<code class="language-plaintext highlighter-rouge">{}</code>). Além disso, cada comando é terminado necessariamente por um ponto-e-vírgula (<code class="language-plaintext highlighter-rouge">;</code>). A indentação dentro do bloco <code class="language-plaintext highlighter-rouge">while</code> é puramente opcional, servindo apenas para aumentar a legibilidade do código.</p>
+
+<p>Em python, por outro lado, a indentação é <strong>obrigatória</strong>: é a maneira pela qual o python identifica quais comandos pertencem ao bloco <code class="language-plaintext highlighter-rouge">ẁhile</code> e quais não pertencem. Veja que a única diferença entre a a penúltima linha (<code class="language-plaintext highlighter-rouge">n += 1</code>) e a última (<code class="language-plaintext highlighter-rouge">print(f'y = {y}')</code>) é a falta de indentação desta última, fazendo com que ela esteja fora do <code class="language-plaintext highlighter-rouge">while</code>. Para tornar o código mais legível, seria interessante deixar uma linha em branco entre essas duas linhas.</p>
+
+<p class="alert alert-primary">:information_source: Em python, qualquer coisa após o símbolo <code class="language-plaintext highlighter-rouge">#</code> é um <strong>comentário</strong>. O intérprete python ignora essas partes do código quando executa seus programas. Comentários servem para melhor <em>documentar</em> o seu código, como observações para quem vai ler seu código e tentar entendê-lo. Inclusive para você mesmo, depois de alguns dias sem olhar para ele!</p>
+
+<p>Veja que diferentes blocos podem estar <em>aninhados</em>, novamente usando indentação. Por exemplo, considere o seguinte código:</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">m</span><span class="p">,</span> <span class="n">n</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span>
+<span class="k">while</span> <span class="n">m</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">:</span>
+  <span class="k">while</span> <span class="n">n</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">:</span>
+    <span class="n">y</span> <span class="o">+=</span> <span class="n">n</span>
+    <span class="n">n</span> <span class="o">+=</span> <span class="mi">1</span>
+  <span class="n">m</span> <span class="o">+=</span> <span class="mi">1</span>
+
+<span class="k">print</span><span class="p">(</span><span class="s">f'y = </span><span class="si">{</span><span class="n">y</span><span class="si">}</span><span class="s">'</span><span class="p">)</span>
+</code></pre></div></div>
+<p>A linha <code class="language-plaintext highlighter-rouge">n += 1</code> está dentro do segundo <code class="language-plaintext highlighter-rouge">while</code>, mas a última linha (<code class="language-plaintext highlighter-rouge">m += 1</code>) está dentro do primeiro, mas fora do segundo.</p>
+
+<p>Assim, um código python é, em geral, mais conciso que códigos escritos em outras linguagens semelhantes. Também por esse motivo, é preciso tomar cuidado, pois falhas na indentação podem dificultar o processo de <em>debugging</em> (eliminação de erros).</p>
+:ET
