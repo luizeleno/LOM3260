@@ -1,6 +1,6 @@
-I"-�<h3 id="acesso-rápido">Acesso rápido</h3>
+I"�<h3 id="acesso-rápido">Acesso rápido</h3>
 
-<p><a href="#ex1" class="badge badge-primary">Ex. 1</a>
+<p><a href="#ex1" class="badge badge-success">Ex. 1</a>
 <a href="#ex2" class="badge badge-primary">Ex. 2</a>
 <a href="#ex3" class="badge badge-primary">Ex. 3</a>
 <a href="#ex4" class="badge badge-primary">Ex. 4</a>
@@ -87,6 +87,80 @@
 
         
         
+          
+
+<h2 id="solução">Solução</h2>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Entrada de dados
+</span>
+<span class="n">ano</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">'Digite o ano: '</span><span class="p">)</span>
+
+<span class="c1"># Código - algoritmos
+</span>
+<span class="n">ano</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">ano</span><span class="p">)</span> <span class="c1"># convertendo ano de string para int
+</span>
+<span class="k">if</span> <span class="n">ano</span> <span class="o">%</span> <span class="mi">400</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>  <span class="c1"># é múltiplo de 400
+</span>    <span class="n">resultado</span> <span class="o">=</span> <span class="bp">True</span>
+<span class="k">elif</span> <span class="n">ano</span> <span class="o">%</span> <span class="mi">100</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>  <span class="c1"># é múltiplo de 100
+</span>    <span class="n">resultado</span> <span class="o">=</span> <span class="bp">False</span>
+<span class="k">elif</span> <span class="n">ano</span> <span class="o">%</span> <span class="mi">4</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>  <span class="c1"># é múltiplo de 4
+</span>    <span class="n">resultado</span> <span class="o">=</span> <span class="bp">True</span>
+<span class="k">else</span><span class="p">:</span>  <span class="c1"># não é múltiplo de 4
+</span>    <span class="n">resultado</span> <span class="o">=</span> <span class="bp">False</span>
+
+<span class="c1"># Saída de dados
+</span>
+<span class="k">if</span> <span class="n">resultado</span> <span class="o">==</span> <span class="bp">True</span><span class="p">:</span>
+    <span class="n">res</span> <span class="o">=</span> <span class="s">'é'</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="n">res</span> <span class="o">=</span> <span class="s">'não é'</span>
+
+<span class="n">s</span> <span class="o">=</span> <span class="s">f'</span><span class="si">{</span><span class="n">ano</span><span class="si">}</span><span class="s"> </span><span class="si">{</span><span class="n">res</span><span class="si">}</span><span class="s"> bissexto'</span> <span class="c1"># mensagem formatada
+</span><span class="k">print</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="análise-da-solução">Análise da Solução</h3>
+
+<p>Dado que, de cada 400 números, 100 (25%) são divisíveis por 4, 1 (0.25%) é divisível por 400 e 3 (0.75%) são divisíveis por 100 mas não por 400, concluimos que, de todos os anos possíveis,</p>
+<ul>
+  <li>0.25%: apenas um teste (<code class="language-plaintext highlighter-rouge">if</code>) é necessário;</li>
+  <li>0.75%: dois testes (if e 1º <code class="language-plaintext highlighter-rouge">elif</code>) são necessários;</li>
+  <li>99%: três testes (24% passam no teste do 2º <code class="language-plaintext highlighter-rouge">elif</code> e 75% vão para o else) são necessários.</li>
+</ul>
+
+<p>O número médio de testes é então</p>
+
+\[N = 1 \times \frac{0.25}{100} + 2 \times \frac{0.75}{100} + 3 \times \frac{99}{100} = 2.9875\]
+
+<p>Esse é um número de testes muito alto para um problema tão simples. Portanto, o algoritmo proposto no enunciado não é muito eficiente.</p>
+
+<h2 id="solução-otimizada">Solução otimizada</h2>
+
+<p>Com as dicas do enunciado e usando a construção <code class="language-plaintext highlighter-rouge">if elif else</code>, a melhor solução para o problema (<em>melhor</em> no sentido estatístico, ou seja, aquela que faz, em média, menos testes) é a seguinte:</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span> <span class="n">ano</span> <span class="o">%</span> <span class="mi">4</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>  <span class="c1"># não é múltiplo de 4
+</span>    <span class="n">resultado</span> <span class="o">=</span> <span class="bp">False</span>
+<span class="k">elif</span> <span class="n">ano</span> <span class="o">%</span> <span class="mi">100</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>  <span class="c1"># é multiplo de 4 mas não de 100
+</span>    <span class="n">resultado</span> <span class="o">=</span> <span class="bp">True</span>
+<span class="k">elif</span> <span class="n">ano</span> <span class="o">%</span> <span class="mi">400</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>  <span class="c1"># é múltiplo de 100 mas não de 400
+</span>    <span class="n">resultado</span> <span class="o">=</span> <span class="bp">False</span>
+<span class="k">else</span><span class="p">:</span>  <span class="c1"># é múltiplo de 400
+</span>    <span class="n">resultado</span> <span class="o">=</span> <span class="bp">True</span>
+</code></pre></div></div>
+
+<p>Vamos fazer a análise novamente. De todos os anos possíveis,</p>
+<ul>
+  <li>75%: apenas um teste (<code class="language-plaintext highlighter-rouge">if</code>) é necessário;</li>
+  <li>24% dois testes (if e 1º <code class="language-plaintext highlighter-rouge">elif</code>) são necessários;</li>
+  <li>1%: três testes (0.75% passam no teste do 2º <code class="language-plaintext highlighter-rouge">elif</code> e 0.25% vão para o else) são necessários.</li>
+</ul>
+
+<p>O número médio de testes nesse caso é então</p>
+
+\[N = 1 \times \frac{75}{100} + 2 \times \frac{24}{100} + 3 \times \frac{1}{100} = 1.26\]
+
+<p>Uma melhora excelente! Conseguimos reduzir em quase 60% o número de comparações, reduzindo de forma parecida o tempo de execução do código. Pense no caso em que seu código precisa ser rodado bilhões ou trilhões de vezes num único dia, qual seria a economia de energia e recursos!</p>
+
+        
 
     </div>
 </div>
@@ -101,6 +175,8 @@
 
         
           <p>Escreva um programa que, dada uma duração de tempo em segundos, calcule o número equivalente de dias, horas, minutos e segundos.</p>
+
+<p>Por exemplo, 123554 segundos equivalem a 1 dia, 10 horas, 19 minutos e 14 segundos.</p>
 
 <h3 id="dicas">Dicas:</h3>
 
