@@ -4,7 +4,7 @@ parent: exs
 nav_order: 1
 mathjax: true
 remove_trinket: true
-resolvidos: ['1']
+resolvidos: ['1', '2']
 #, '5', '6', '7', '8', '11', '12', '13', '15', '16', '20', '21', '22', '23', '26']
 # entrega1: ['2', '3', '4', '9', '14', '17', '19', '28']
 # entrega2: ['18', '29', '30']

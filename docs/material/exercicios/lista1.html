@@ -32,7 +32,7 @@
 <meta property="og:url" content="https://computeel.org/LOM3260/material/exercicios/lista1.html" />
 <meta property="og:site_name" content="LOM3260" />
 <script type="application/ld+json">
-{"dateModified":"2020-08-23T20:00:58-03:00","@type":"WebPage","headline":"Primeira Lista","url":"https://computeel.org/LOM3260/material/exercicios/lista1.html","author":{"@type":"Person","name":"Luiz T. F. Eleno"},"description":"Computação Científica em Python - uma disciplina do curso de Engenharia Física da Escola de Engenharia de Lorena da Universidade de São Paulo - EEL USP","@context":"https://schema.org"}</script>
+{"@type":"WebPage","url":"https://computeel.org/LOM3260/material/exercicios/lista1.html","headline":"Primeira Lista","dateModified":"2020-09-01T16:41:20-03:00","description":"Computação Científica em Python - uma disciplina do curso de Engenharia Física da Escola de Engenharia de Lorena da Universidade de São Paulo - EEL USP","author":{"@type":"Person","name":"Luiz T. F. Eleno"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -1207,7 +1207,7 @@
   <h3 id="acesso-rápido">Acesso rápido</h3>
 
 <p><a href="#ex1" class="badge badge-success">Ex. 1</a>
-<a href="#ex2" class="badge badge-primary">Ex. 2</a>
+<a href="#ex2" class="badge badge-success">Ex. 2</a>
 <a href="#ex3" class="badge badge-primary">Ex. 3</a>
 <a href="#ex4" class="badge badge-primary">Ex. 4</a>
 <a href="#ex5" class="badge badge-primary">Ex. 5</a>
@@ -1385,6 +1385,7 @@
         </ul>
 
         
+          
           <p>Escreva um programa que, dada uma duração de tempo em segundos, calcule o número equivalente de dias, horas, minutos e segundos.</p>
 
 <p>Por exemplo, 123554 segundos equivalem a 1 dia, 10 horas, 19 minutos e 14 segundos.</p>
@@ -1399,7 +1400,32 @@
 </span><span class="n">y</span> <span class="o">=</span> <span class="n">x</span> <span class="o">%</span> <span class="mi">4</span> <span class="c1"># retorna o int 2
 </span></code></pre></div></div>
 
+
         
+        
+          
+
+<h2 id="solução">Solução</h2>
+
+<p>Existem muitas maneiras de resolver este exercício. Uma proposta é encontrada abaixo:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">t</span> <span class="o">=</span> <span class="mi">1423554</span>  <span class="c1"># tempo em segundos
+</span>
+<span class="n">s</span> <span class="o">=</span> <span class="n">t</span> <span class="o">%</span> <span class="mi">60</span>  <span class="c1"># segundos: 60 s = 1 min
+</span><span class="n">t</span> <span class="o">//=</span> <span class="mi">60</span>  <span class="c1"># tempo restante em minutos
+</span><span class="n">m</span> <span class="o">=</span> <span class="n">t</span> <span class="o">%</span> <span class="mi">60</span>  <span class="c1"># minutos: 60 min = 1 h
+</span><span class="n">t</span> <span class="o">//=</span> <span class="mi">60</span>  <span class="c1"># tempo restante em horas
+</span><span class="n">h</span> <span class="o">=</span> <span class="n">t</span> <span class="o">%</span> <span class="mi">24</span>  <span class="c1"># horas: 24 h = 1 dia
+</span><span class="n">d</span> <span class="o">=</span> <span class="n">t</span> <span class="o">//</span> <span class="mi">24</span>  <span class="c1"># tempo restante em dias
+</span>
+<span class="k">print</span><span class="p">(</span><span class="s">f'</span><span class="si">{</span><span class="n">d</span><span class="si">}</span><span class="s">d </span><span class="si">{</span><span class="n">h</span><span class="si">}</span><span class="s">h </span><span class="si">{</span><span class="n">m</span><span class="si">}</span><span class="s">m </span><span class="si">{</span><span class="n">s</span><span class="si">}</span><span class="s">s'</span><span class="p">)</span>
+
+<span class="c1"># Teste da solução:
+</span><span class="n">t</span> <span class="o">=</span> <span class="mi">60</span> <span class="o">*</span> <span class="p">(</span> <span class="mi">60</span> <span class="o">*</span> <span class="p">(</span><span class="n">d</span> <span class="o">*</span> <span class="mi">24</span> <span class="o">+</span> <span class="n">h</span><span class="p">)</span> <span class="o">+</span> <span class="n">m</span><span class="p">)</span> <span class="o">+</span> <span class="n">s</span>
+<span class="k">print</span><span class="p">(</span><span class="s">f'</span><span class="si">{</span><span class="n">t</span><span class="si">}</span><span class="s">s'</span><span class="p">)</span>
+
+</code></pre></div></div>
+
         
 
     </div>
