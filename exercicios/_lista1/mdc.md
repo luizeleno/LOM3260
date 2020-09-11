@@ -4,6 +4,7 @@ dificuldade: 10
 tags: [cond, loop]
 mathjax: true
 title: Máximo divisor comum
+label: mdc
 ---
 
 O máximo divisor comum (MDC) de dois inteiros positivos, $n$ e $m$, é o maior número, $d$, capaz de dividir $n$ e $m$ sem deixar resto. Existem vários algoritmos para determinar $d$, incluindo o seguinte:
@@ -48,5 +49,3 @@ e qualquer valor zero ou negativo resulta em False
 
 print(f'MDC({m}, {n}) = {d}')
 ```
-
-

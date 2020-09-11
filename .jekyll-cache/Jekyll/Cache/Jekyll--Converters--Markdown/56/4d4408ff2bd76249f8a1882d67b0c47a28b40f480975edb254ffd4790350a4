@@ -1,4 +1,4 @@
-I"�<h3 id="acesso-rápido">Acesso rápido</h3>
+I"h<h3 id="acesso-rápido">Acesso rápido</h3>
 
 <p><a href="#ex1" class="badge badge-success">Ex. 1</a>
 <a href="#ex2" class="badge badge-success">Ex. 2</a>
@@ -87,7 +87,13 @@
 
         
         
-          
+
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="collapse" data-target="#bissexto" aria-expanded="false" aria-controls="bissexto">
+          Solução
+        </button>
+        <div class="collapse" id="bissexto">
+          <div class="card card-body">
+            
 
 <h2 id="solução">Solução</h2>
 
@@ -160,6 +166,9 @@
 
 <p>Uma melhora excelente! Conseguimos reduzir em quase 60% o número de comparações, reduzindo de forma parecida o tempo de execução do código. Pense no caso em que seu código precisa ser rodado bilhões ou trilhões de vezes num único dia, qual seria a economia de energia e recursos!</p>
 
+          </div>
+        </div>
+
         
 
     </div>
@@ -192,7 +201,13 @@
 
         
         
-          
+
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="collapse" data-target="#segundos" aria-expanded="false" aria-controls="segundos">
+          Solução
+        </button>
+        <div class="collapse" id="segundos">
+          <div class="card card-body">
+            
 
 <h2 id="solução">Solução</h2>
 
@@ -214,6 +229,9 @@
 <span class="k">print</span><span class="p">(</span><span class="s">f'</span><span class="si">{</span><span class="n">t</span><span class="si">}</span><span class="s">s'</span><span class="p">)</span>
 
 </code></pre></div></div>
+
+          </div>
+        </div>
 
         
 

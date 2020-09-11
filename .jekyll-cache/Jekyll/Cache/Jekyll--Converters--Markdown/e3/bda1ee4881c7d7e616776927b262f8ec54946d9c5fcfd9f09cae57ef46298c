@@ -1,4 +1,4 @@
-I"T<p>Uma linha de melhor ajuste é uma linha reta que melhor se aproxima de uma coleção de $n$ pontos de dados. Neste exercício, vamos supor que cada ponto na coleção tem uma coordenada $(x_i,\,y_i)$, com $1\le i \le n$. A linha de melhor ajuste é representada pela equação $y = m x + b$, onde $m$ e $b$ são calculados usando as seguintes fórmulas:</p>
+I"S<p>Uma linha de melhor ajuste é uma linha reta que melhor se aproxima de uma coleção de $n$ pontos de dados. Neste exercício, vamos supor que cada ponto na coleção tem uma coordenada $(x_i,\,y_i)$, com $1\le i \le n$. A linha de melhor ajuste é representada pela equação $y = m x + b$, onde $m$ e $b$ são calculados usando as seguintes fórmulas:</p>
 
 \[m = \frac{ n \sum x_i y_i - \left( \sum x_i \right) \left( \sum y_i \right) }{n \sum x_i^2 - \left( \sum x_i \right)^2}\]
 
@@ -59,5 +59,4 @@ o programa deve exibir <code class="language-plaintext highlighter-rouge">y = 0.
 
 </code></pre></div></div>
 <p>plt.show()</p>
-
 :ET

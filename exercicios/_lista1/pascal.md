@@ -4,6 +4,7 @@ dificuldade: 30
 tags: [cond, loop, list]
 mathjax: true
 title: Triângulo de Pascal
+label: pascal
 ---
 
 O triângulo de Pascal é uma tabela de números construída assim: o elemento da linha $i$ e coluna $j$ (com $0 \le j \le i$ e começando de cima, onde $i=j=0$) é dado por

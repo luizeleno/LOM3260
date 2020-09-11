@@ -4,6 +4,7 @@ dificuldade: 20
 tags: [cond, loop]
 mathjax: true
 title: Joguinho
+label: joguinho
 ---
 
 Implemente o seguinte joguinho de computador: o usuário deve adivinhar um número de 1 a 100 "pensado" pelo computador (use a função `randint()` do módulo `numpy.random`). A cada palpite do usuário, o programa vai "cercando" o número, informando o intervalo $[a,\,b]$ em que ele se encontra. Acompanhe o seguinte exemplo, em que o número secreto é 42:

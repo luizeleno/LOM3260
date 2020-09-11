@@ -4,6 +4,7 @@ dificuldade: 30
 tags: [cond, loop]
 mathjax: true
 title: Cosseno como uma série
+label: cos
 ---
 
 Calcule uma aproximação para $\cos x$ através da série
@@ -55,5 +56,3 @@ x = float(input('x='))
 print(f'cos({x}) = {cos_serie(x)}')
 
 ```
-
-

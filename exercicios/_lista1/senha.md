@@ -4,6 +4,7 @@ dificuldade: 20
 tags: [cond, loop, string]
 mathjax: true
 title: Senha aleatória
+label: senha
 ---
 
 Escreva um programa para gerar uma senha aleatória. A senha deve ter um comprimento aleatório entre 7 e 10 caracteres (use a função `randint()` do módulo `numpy.random`). Cada caractere deve ser aleatoriamente selecionado das posições 33 a 126 na tabela ASCII. Sua função deve retornar a senha gerada aleatoriamente como único resultado, sem necessidade de entrada do usuário.
@@ -30,5 +31,3 @@ print(senha)
 senha = ''.join(chr(c) for c in s)
 print(senha)
 ```
-
-

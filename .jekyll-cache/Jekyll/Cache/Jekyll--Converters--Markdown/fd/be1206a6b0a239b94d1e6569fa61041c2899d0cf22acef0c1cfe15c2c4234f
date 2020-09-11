@@ -1,4 +1,4 @@
-I"�<p>Calcule uma aproximação para $\cos x$ através da série</p>
+I"�<p>Calcule uma aproximação para $\cos x$ através da série</p>
 
 \[\small
 \cos x = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \frac{x^6}{6!} + \ldots\]
@@ -45,5 +45,4 @@
 <span class="k">print</span><span class="p">(</span><span class="s">f'cos(</span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s">) = </span><span class="si">{</span><span class="n">cos_serie</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="si">}</span><span class="s">'</span><span class="p">)</span>
 
 </code></pre></div></div>
-
 :ET

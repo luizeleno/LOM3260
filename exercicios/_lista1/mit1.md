@@ -4,6 +4,7 @@ dificuldade: 10
 tags: [cond, loop, string]
 mathjax: true
 title: MIT I
+label: mitum
 ---
 
 (MIT) Escreva um programa que conte o número de vogais numa *string* `s` composta unicamente de letras minúsculas. Por exemplo, se `s = 'azcbobobegghakl'`, seu programa deve imprimir `Número de vogais: 5`.
@@ -23,5 +24,3 @@ for letter in s:
 
 print(f'Número de vogais: {n}')
 ```
-
-

@@ -4,6 +4,7 @@ dificuldade: 30
 tags: [cond, func, recurs]
 mathjax: true
 title: Fibonacci por recursão
+label: fibo
 ---
 
 Usando recursão, implemente uma função para calcular o $n$-ésimo termo da série de Fibonacci,

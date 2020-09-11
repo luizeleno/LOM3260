@@ -51,7 +51,16 @@ timestamp: 23/08/20
 
         {%- assign ns = n | downcase %}
         {% if page.resolvidos contains ns %}
-          {{conteudo[1]}}
+
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="collapse" data-target="#{{ex.label}}" aria-expanded="false" aria-controls="{{ex.label}}">
+          Solução
+        </button>
+        <div class="collapse" id="{{ex.label}}">
+          <div class="card card-body">
+            {{conteudo[1]}}
+          </div>
+        </div>
+
         {% endif %}
 
     </div>

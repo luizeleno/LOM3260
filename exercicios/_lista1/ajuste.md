@@ -4,6 +4,7 @@ dificuldade: 25
 tags: [loop, list, func]
 mathjax: true
 title: Ajuste linear
+label: ajuste
 ---
 
 Uma linha de melhor ajuste é uma linha reta que melhor se aproxima de uma coleção de $n$ pontos de dados. Neste exercício, vamos supor que cada ponto na coleção tem uma coordenada $(x_i,\,y_i)$, com $1\le i \le n$. A linha de melhor ajuste é representada pela equação $y = m x + b$, onde $m$ e $b$ são calculados usando as seguintes fórmulas:
@@ -72,5 +73,3 @@ plt.savefig('ajuste.png', bbox_inches='tight')
 
 ```
 plt.show()
-
-

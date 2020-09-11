@@ -4,12 +4,13 @@ dificuldade: 30
 tags: [loop, string, dict]
 mathjax: true
 title: Sistema RGB
+label: rgb
 ---
 
 Uma das maneiras de se referir a cores em *websites* e outras aplicações é a **notação RGB** (*red-green-blue*): três inteiros $0 \le R,\,G,\,B \le 255$ como identificadores das tonalidades de vermelho, verde e azul, respectivamente, que, quando mescladas, fornecem a cor desejada. Ao invés de fornecer os três inteiros em base 10, no entanto, é comum usar base 16. Essa maneira de identificar cores  é conhecida como **código hexadecimal**. Em base 16, precisamos de 16 caracteres para representar os "dígitos" de um número (veja que em base 2 precisamos de dois, e em base 10, de dez). Usualmente são escolhidos os caracteres 0--9, com os valores usuais, e portanto precisamos de mais seis caracteres para representar os "dígitos" de de 10 a 15. Usualmente usa-se as letras A--F. Por exemplo,
 
 $$ \small
-42 \text{ (base 10)} = 2A \text{ (base 16)} = 
+42 \text{ (base 10)} = 2A \text{ (base 16)} =
 $$
 
 $$

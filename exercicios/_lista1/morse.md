@@ -4,6 +4,7 @@ dificuldade: 25
 tags: [loop, string, dict]
 mathjax: true
 title: Código Morse
+label: morse
 ---
 
 O **código Morse** é um esquema de codificação que usa traços e pontos para representar números e letras. Neste exercício, você vai escrever um programa que usa um dicionário para armazenar o mapeamento de letras e números para código Morse, mostrado na tabela a seguir:
@@ -21,7 +22,7 @@ O **código Morse** é um esquema de codificação que usa traços e pontos para
 
 Seu programa deve ler uma mensagem do usuário. Então deve traduzir cada
 letra e número na mensagem para o código Morse, deixando um espaço entre cada
-seqüência de traços e pontos. Seu programa deve ignorar quaisquer caracteres que não sejam letras ou números. O código Morse para `Hello, World!` é mostrado abaixo:  
+seqüência de traços e pontos. Seu programa deve ignorar quaisquer caracteres que não sejam letras ou números. O código Morse para `Hello, World!` é mostrado abaixo:
 ```
 ....  .  .-..  .-..  ---   .--  ---  .-.  .-..  -..
 ```

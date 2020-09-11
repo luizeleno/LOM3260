@@ -4,6 +4,7 @@ dificuldade: 15
 tags: [cond, loop]
 mathjax: true
 title: Divisores
+label: divisores
 ---
 
 Crie um programa que peça ao usuário um número e imprima todos os seus divisores. Se você não lembra o que é um divisor, é um número que divide outro sem deixar resto. Por exemplo, 13 é um divisor de 26 porque 26/13 não tem nenhum resto.

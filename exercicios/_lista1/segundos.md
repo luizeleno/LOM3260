@@ -4,6 +4,7 @@ dificuldade: 20
 tags:
 mathjax: true
 title: Tempo em segundos
+label: segundos
 ---
 
 Escreva um programa que, dada uma duração de tempo em segundos, calcule o número equivalente de dias, horas, minutos e segundos.

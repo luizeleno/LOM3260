@@ -4,6 +4,7 @@ dificuldade: 80
 tags: [cond, loop, list, func, recurs, desafio]
 mathjax: true
 title: 'Saindo do labirinto'
+label: labirinto
 ---
 
 Ajude um rato a encontrar um pedaço de queijo num labirinto como o do desenho abaixo:

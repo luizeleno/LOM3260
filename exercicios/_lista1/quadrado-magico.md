@@ -4,6 +4,7 @@ dificuldade: 40
 tags: [cond, loop, list]
 mathjax: true
 title: Quadrado mágico
+label: quadrado
 ---
 
 Um **quadrado mágico** é uma tabela de números em que a soma nas linhas, colunas e diagonais dá sempre o mesmo valor. Por exemplo, na gravura *Melencholia I* de Albrecht Dürer (1471--1528),

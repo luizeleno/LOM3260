@@ -4,6 +4,7 @@ dificuldade: 20
 tags: [cond, loop]
 mathjax: true
 title: Raiz quadrada (Newton)
+label: newton
 ---
 
 Escreva um programa que implementa o método de Newton para extrair a raiz quadrada de um número digitado pelo usuário. O algoritmo é o seguinte:
@@ -35,5 +36,3 @@ while abs(raiz**2 - x) >= tolerancia: # a função abs() retorna o módulo (valo
 
 print(f'A raiz quadrada de {x} é {raiz}')
 ```
-
-

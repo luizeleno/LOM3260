@@ -4,6 +4,7 @@ dificuldade: 15
 tags: [loop]
 mathjax: true
 title: Números binários II
+label: dectobin
 ---
 
 Escreva um programa que converta um número decimal (base 10) em binário (base 2). Leia o número decimal do usuário e use o seguinte algoritmo de divisão, exemplificado para o número 83 (base 10):
@@ -48,5 +49,3 @@ while quociente > 0:
 print(f'{decimal} (base 10) = {binario} (base 2)')
 
 ```
-
-

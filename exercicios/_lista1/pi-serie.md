@@ -4,6 +4,7 @@ dificuldade: 20
 tags: [loop]
 mathjax: true
 title: Pi como uma série
+label: pi
 ---
 
 Calcule as quinze primeiras aproximações para $\pi$ de acordo com a série
@@ -33,5 +34,3 @@ for n in range(1, 16): # sequencia de 15 valores de 1 a 15
     print(n, soma)
     sinal = -sinal # alternando o sinal do termo
 ```
-
-

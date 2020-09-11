@@ -1,4 +1,4 @@
-I"{<p>Escreva um programa que implementa o método de Newton para extrair a raiz quadrada de um número digitado pelo usuário. O algoritmo é o seguinte:</p>
+I"z<p>Escreva um programa que implementa o método de Newton para extrair a raiz quadrada de um número digitado pelo usuário. O algoritmo é o seguinte:</p>
 
 <table>
   <tbody>
@@ -36,5 +36,4 @@ com uma precisão de 1e-12
 </span>
 <span class="k">print</span><span class="p">(</span><span class="s">f'A raiz quadrada de </span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s"> é </span><span class="si">{</span><span class="n">raiz</span><span class="si">}</span><span class="s">'</span><span class="p">)</span>
 </code></pre></div></div>
-
 :ET

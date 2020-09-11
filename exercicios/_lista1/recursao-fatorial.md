@@ -4,6 +4,7 @@ dificuldade: 20
 tags: [cond, func, recurs]
 mathjax: true
 title: Fatorial por recursão
+label: fat
 ---
 
 Interprete a saída da seguinte função, que usa uma propriedade conhecida como **recursão**:

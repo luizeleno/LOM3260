@@ -4,6 +4,7 @@ dificuldade: 25
 tags: [cond, loop, string, func]
 mathjax: true
 title: Senha forte
+label: senhaforte
 ---
 
 Adapte o exercício anterior para gerar uma *senha forte*, tendo pelo menos 8 caracteres, pelo menos uma letra maiúscula, pelo menos uma letra minúscula, e pelo menos um número. Conte e exiba o número de tentativas que foram necessárias antes que uma senha forte fosse gerada.
@@ -75,5 +76,3 @@ print(f'Senha: {SenhaForte}\nTentativas: {n}')
 
 :bulb: Em strings, `\n` é um código para quebra de linha. Ele corresponde ao caractere de no. 10 da [Tabela ASCII](https://pt.wikipedia.org/wiki/ASCII){: target="\_blank"}
 {: .alert .alert-success }
-
-

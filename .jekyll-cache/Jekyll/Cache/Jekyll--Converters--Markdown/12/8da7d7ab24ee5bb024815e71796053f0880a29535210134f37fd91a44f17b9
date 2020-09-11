@@ -1,4 +1,4 @@
-I"�<p>(MIT) Escreva um programa que conte o número de vogais numa <em>string</em> <code class="language-plaintext highlighter-rouge">s</code> composta unicamente de letras minúsculas. Por exemplo, se <code class="language-plaintext highlighter-rouge">s = 'azcbobobegghakl'</code>, seu programa deve imprimir <code class="language-plaintext highlighter-rouge">Número de vogais: 5</code>.</p>
+I"�<p>(MIT) Escreva um programa que conte o número de vogais numa <em>string</em> <code class="language-plaintext highlighter-rouge">s</code> composta unicamente de letras minúsculas. Por exemplo, se <code class="language-plaintext highlighter-rouge">s = 'azcbobobegghakl'</code>, seu programa deve imprimir <code class="language-plaintext highlighter-rouge">Número de vogais: 5</code>.</p>
 
 <!-- more -->
 
@@ -14,5 +14,4 @@
 
 <span class="k">print</span><span class="p">(</span><span class="s">f'Número de vogais: </span><span class="si">{</span><span class="n">n</span><span class="si">}</span><span class="s">'</span><span class="p">)</span>
 </code></pre></div></div>
-
 :ET

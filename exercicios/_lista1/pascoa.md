@@ -4,10 +4,11 @@ dificuldade: 15
 tags: [cond, func]
 mathjax: true
 title: Cômputo da Páscoa
+label: pascoa
 ---
 
 A Páscoa cai no primeiro domingo do ano após a lua cheia (mas não a lua cheia real, e sim de acordo com um antigo cômputo (computus) eclesiástico que nada mais tem a ver com a lua que vemos no céu: é apenas um *algoritmo*...) que acontece no ou imediatamente após o equinócio de março (considera-se sempre 21 de março como a data do equinócio, o que nem sempre é verdade, pois pode ser um ou dois dias antes...). Na prática, é mais fácil calcular a data da Páscoa usando o algoritmo de Meeus--Jones--Butcher:
-    
+
 | Divida          | por | Quociente | &nbsp; Resto |
 |:----------------|:----:|:----------:|:------:|
 | o ano $x$       | 19  | --- | $a$ |

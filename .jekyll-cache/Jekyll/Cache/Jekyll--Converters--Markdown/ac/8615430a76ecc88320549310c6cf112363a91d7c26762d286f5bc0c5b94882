@@ -1,4 +1,4 @@
-I"�<p>(MIT) Escreva um código para contar o número de vezes que a sequência <code class="language-plaintext highlighter-rouge">'bob'</code> aparece numa <em>string</em> <code class="language-plaintext highlighter-rouge">s</code> composta unicamente de letras minúsculas. Por exemplo, se <code class="language-plaintext highlighter-rouge">s = 'azcbobobegghakl'</code>, seu programa deve imprimir <code class="language-plaintext highlighter-rouge">Número de ocorrências de bob: 2</code>.</p>
+I"�<p>(MIT) Escreva um código para contar o número de vezes que a sequência <code class="language-plaintext highlighter-rouge">'bob'</code> aparece numa <em>string</em> <code class="language-plaintext highlighter-rouge">s</code> composta unicamente de letras minúsculas. Por exemplo, se <code class="language-plaintext highlighter-rouge">s = 'azcbobobegghakl'</code>, seu programa deve imprimir <code class="language-plaintext highlighter-rouge">Número de ocorrências de bob: 2</code>.</p>
 
 <!-- more -->
 
@@ -16,5 +16,4 @@
 
 <span class="k">print</span><span class="p">(</span><span class="s">f'Número de ocorrências de </span><span class="si">{</span><span class="n">v</span><span class="si">}</span><span class="s">: </span><span class="si">{</span><span class="n">n</span><span class="si">}</span><span class="s">'</span><span class="p">)</span>
 </code></pre></div></div>
-
 :ET

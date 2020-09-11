@@ -4,6 +4,7 @@ dificuldade: 15
 tags: [string, loop]
 mathjax: true
 title: Números binários I
+label: bintodec
 ---
 
 Escreva um programa que converta um número binário (base 2) em decimal (base 10). Seu programa deve ler o número binário do usuário como uma sequência de zeros e uns e exibir o número decimal equivalente, processando cada dígito da representação binária. Por exemplo, 1010011 (base 2) $\equiv$ 83 (base 10), obtido a partir da definição:
