@@ -1,4 +1,4 @@
-I"�<p>A maioria dos anos tem 365 dias. No entanto, o tempo necessário para a Terra orbitar o Sol é na verdade um pouco maior que isso. Para corrigir essa diferença, um dia extra, 29 de fevereiro, está incluído em alguns anos, ditos bissextos. As regras para determinar se um ano é ou não um ano bissexto são as seguintes:</p>
+I"� <p>A maioria dos anos tem 365 dias. No entanto, o tempo necessário para a Terra orbitar o Sol é na verdade um pouco maior que isso. Para corrigir essa diferença, um dia extra, 29 de fevereiro, está incluído em alguns anos, ditos bissextos. As regras para determinar se um ano é ou não um ano bissexto são as seguintes:</p>
 
 <table>
   <tbody>
@@ -63,8 +63,8 @@
 <p>Dado que, de cada 400 números, 100 (25%) são divisíveis por 4, 1 (0.25%) é divisível por 400 e 3 (0.75%) são divisíveis por 100 mas não por 400, concluimos que, de todos os anos possíveis,</p>
 <ul>
   <li>0.25%: apenas um teste (<code class="language-plaintext highlighter-rouge">if</code>) é necessário;</li>
-  <li>0.75%: dois testes (if e 1º <code class="language-plaintext highlighter-rouge">elif</code>) são necessários;</li>
-  <li>99%: três testes (24% passam no teste do 2º <code class="language-plaintext highlighter-rouge">elif</code> e 75% vão para o else) são necessários.</li>
+  <li>0.75%: dois testes (<code class="language-plaintext highlighter-rouge">if</code> e 1º <code class="language-plaintext highlighter-rouge">elif</code>) são necessários;</li>
+  <li>99%: três testes (24% passam no teste do 2º <code class="language-plaintext highlighter-rouge">elif</code> e 75% vão para o <code class="language-plaintext highlighter-rouge">else</code>) são necessários.</li>
 </ul>
 
 <p>O número médio de testes é então</p>
@@ -89,8 +89,8 @@
 <p>Vamos fazer a análise novamente. De todos os anos possíveis,</p>
 <ul>
   <li>75%: apenas um teste (<code class="language-plaintext highlighter-rouge">if</code>) é necessário;</li>
-  <li>24% dois testes (if e 1º <code class="language-plaintext highlighter-rouge">elif</code>) são necessários;</li>
-  <li>1%: três testes (0.75% passam no teste do 2º <code class="language-plaintext highlighter-rouge">elif</code> e 0.25% vão para o else) são necessários.</li>
+  <li>24% dois testes (<code class="language-plaintext highlighter-rouge">if</code> e 1º <code class="language-plaintext highlighter-rouge">elif</code>) são necessários;</li>
+  <li>1%: três testes (0.75% passam no teste do 2º <code class="language-plaintext highlighter-rouge">elif</code> e 0.25% vão para o <code class="language-plaintext highlighter-rouge">else</code>) são necessários.</li>
 </ul>
 
 <p>O número médio de testes nesse caso é então</p>

@@ -58,8 +58,8 @@ print(s)
 
 Dado que, de cada 400 números, 100 (25%) são divisíveis por 4, 1 (0.25%) é divisível por 400 e 3 (0.75%) são divisíveis por 100 mas não por 400, concluimos que, de todos os anos possíveis,
 * 0.25%: apenas um teste (`if`) é necessário;
-* 0.75%: dois testes (if e 1º `elif`) são necessários;
-* 99%: três testes (24% passam no teste do 2º `elif` e 75% vão para o else) são necessários.
+* 0.75%: dois testes (`if` e 1º `elif`) são necessários;
+* 99%: três testes (24% passam no teste do 2º `elif` e 75% vão para o `else`) são necessários.
 
 O número médio de testes é então
 
@@ -83,8 +83,8 @@ else:  # é múltiplo de 400
 
 Vamos fazer a análise novamente. De todos os anos possíveis,
 * 75%: apenas um teste (`if`) é necessário;
-* 24% dois testes (if e 1º `elif`) são necessários;
-* 1%: três testes (0.75% passam no teste do 2º `elif` e 0.25% vão para o else) são necessários.
+* 24% dois testes (`if` e 1º `elif`) são necessários;
+* 1%: três testes (0.75% passam no teste do 2º `elif` e 0.25% vão para o `else`) são necessários.
 
 O número médio de testes nesse caso é então
 

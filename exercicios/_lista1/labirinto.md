@@ -17,15 +17,9 @@ Um labirinto desses pode ser representado por uma matriz retangular $L$, cujo el
 
 Um método geral para resolver esse problema consiste em marcar com o número $k$ ($k = 1, 2,\ldots$) todas as casas livres que estejam exatamente a $k-1$ passos de distância do queijo, pelo caminho mais curto possível. Suponha que, a cada passo, o rato possa se deslocar de apenas uma casa na vertical ou na horizontal. Então, rotula-se inicialmente a posição do queijo com $1$ e para cada $k\ge2$ examinam-se *todas* as casas livre do labirinto, marcando-se com $k$ aquelas ainda não marcadas e que sejam adjacentes a alguma casa marcada com $k-1$.
 
-A marcação continua até ser atingido um valor $k$ (28 no exemplo abaixo) tal que nenhuma casa esteja em condições de ser marcada. Ao final da marcação teremos a seguinte matriz, supondo o queijo em (5,10), ou seja, no canto inferir direito:
+A marcação continua até ser atingido um valor $k$ (28 no exemplo abaixo) tal que nenhuma casa esteja em condições de ser marcada. Ao final da marcação teremos a seguinte matriz, supondo o queijo em (5,10), ou seja, no canto inferior direito:
 
-| 26 | 27 | -1 | -1 | 12 | 11 | 10 | 9 | 10 | 11 | 12 |
-| 25 | -1 | 0 | 0 | -1 | 12 | -1 | 8 | -1 | -1 | 13 |
-| 24  | 25  | -1  | 0  | -1  | 13  | -1  | 7  | 6  | 5  | -1  |
-| 23  | -1  | 21  | -1  | 15  | 14  | 15  | -1  | -1  | 4  | 3  |
-| 22  | 21  | 20  | -1  | 16  | -1  | 16  | 17  | 18  | -1  | 2 |
-| 23  | -1  | 19  | 18  | 17  | 18  | 17  | 18  | -1  | 2  | 1 |
-{: .alert .alert-primary }
+{% include figure.html image='/assets/images/labirinto/labirinto-marcado-1.png' id='lab-marc' caption='Marcação do labirinto' %}
 
 O caminho mais curto até o queijo pode então ser determinado, partindo-se da posição do rato e passando a cada etapa para uma casa adjacente cuja numeração seja menor do que a atual.
 

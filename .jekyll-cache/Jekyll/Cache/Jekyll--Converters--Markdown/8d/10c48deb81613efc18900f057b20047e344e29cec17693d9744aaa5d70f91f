@@ -1,4 +1,4 @@
-I"nM<h3 id="acesso-rápido">Acesso rápido</h3>
+I"�N<h3 id="acesso-rápido">Acesso rápido</h3>
 
 <p><a href="#ex1" class="badge badge-success">Ex. 1</a>
 <a href="#ex2" class="badge badge-success">Ex. 2</a>
@@ -130,8 +130,8 @@
 <p>Dado que, de cada 400 números, 100 (25%) são divisíveis por 4, 1 (0.25%) é divisível por 400 e 3 (0.75%) são divisíveis por 100 mas não por 400, concluimos que, de todos os anos possíveis,</p>
 <ul>
   <li>0.25%: apenas um teste (<code class="language-plaintext highlighter-rouge">if</code>) é necessário;</li>
-  <li>0.75%: dois testes (if e 1º <code class="language-plaintext highlighter-rouge">elif</code>) são necessários;</li>
-  <li>99%: três testes (24% passam no teste do 2º <code class="language-plaintext highlighter-rouge">elif</code> e 75% vão para o else) são necessários.</li>
+  <li>0.75%: dois testes (<code class="language-plaintext highlighter-rouge">if</code> e 1º <code class="language-plaintext highlighter-rouge">elif</code>) são necessários;</li>
+  <li>99%: três testes (24% passam no teste do 2º <code class="language-plaintext highlighter-rouge">elif</code> e 75% vão para o <code class="language-plaintext highlighter-rouge">else</code>) são necessários.</li>
 </ul>
 
 <p>O número médio de testes é então</p>
@@ -156,8 +156,8 @@
 <p>Vamos fazer a análise novamente. De todos os anos possíveis,</p>
 <ul>
   <li>75%: apenas um teste (<code class="language-plaintext highlighter-rouge">if</code>) é necessário;</li>
-  <li>24% dois testes (if e 1º <code class="language-plaintext highlighter-rouge">elif</code>) são necessários;</li>
-  <li>1%: três testes (0.75% passam no teste do 2º <code class="language-plaintext highlighter-rouge">elif</code> e 0.25% vão para o else) são necessários.</li>
+  <li>24% dois testes (<code class="language-plaintext highlighter-rouge">if</code> e 1º <code class="language-plaintext highlighter-rouge">elif</code>) são necessários;</li>
+  <li>1%: três testes (0.75% passam no teste do 2º <code class="language-plaintext highlighter-rouge">elif</code> e 0.25% vão para o <code class="language-plaintext highlighter-rouge">else</code>) são necessários.</li>
 </ul>
 
 <p>O número médio de testes nesse caso é então</p>
@@ -1483,90 +1483,49 @@ quadrado:</li>
 
 <p>Um método geral para resolver esse problema consiste em marcar com o número $k$ ($k = 1, 2,\ldots$) todas as casas livres que estejam exatamente a $k-1$ passos de distância do queijo, pelo caminho mais curto possível. Suponha que, a cada passo, o rato possa se deslocar de apenas uma casa na vertical ou na horizontal. Então, rotula-se inicialmente a posição do queijo com $1$ e para cada $k\ge2$ examinam-se <em>todas</em> as casas livre do labirinto, marcando-se com $k$ aquelas ainda não marcadas e que sejam adjacentes a alguma casa marcada com $k-1$.</p>
 
-<p>A marcação continua até ser atingido um valor $k$ (28 no exemplo abaixo) tal que nenhuma casa esteja em condições de ser marcada. Ao final da marcação teremos a seguinte matriz, supondo o queijo em (5,10), ou seja, no canto inferir direito:</p>
+<p>A marcação continua até ser atingido um valor $k$ (28 no exemplo abaixo) tal que nenhuma casa esteja em condições de ser marcada. Ao final da marcação teremos a seguinte matriz, supondo o queijo em (5,10), ou seja, no canto inferior direito:</p>
 
-<table class="alert alert-primary">
-  <tbody>
-    <tr>
-      <td>26</td>
-      <td>27</td>
-      <td>-1</td>
-      <td>-1</td>
-      <td>12</td>
-      <td>11</td>
-      <td>10</td>
-      <td>9</td>
-      <td>10</td>
-      <td>11</td>
-      <td>12</td>
-    </tr>
-    <tr>
-      <td>25</td>
-      <td>-1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>-1</td>
-      <td>12</td>
-      <td>-1</td>
-      <td>8</td>
-      <td>-1</td>
-      <td>-1</td>
-      <td>13</td>
-    </tr>
-    <tr>
-      <td>24</td>
-      <td>25</td>
-      <td>-1</td>
-      <td>0</td>
-      <td>-1</td>
-      <td>13</td>
-      <td>-1</td>
-      <td>7</td>
-      <td>6</td>
-      <td>5</td>
-      <td>-1</td>
-    </tr>
-    <tr>
-      <td>23</td>
-      <td>-1</td>
-      <td>21</td>
-      <td>-1</td>
-      <td>15</td>
-      <td>14</td>
-      <td>15</td>
-      <td>-1</td>
-      <td>-1</td>
-      <td>4</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <td>22</td>
-      <td>21</td>
-      <td>20</td>
-      <td>-1</td>
-      <td>16</td>
-      <td>-1</td>
-      <td>16</td>
-      <td>17</td>
-      <td>18</td>
-      <td>-1</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <td>23</td>
-      <td>-1</td>
-      <td>19</td>
-      <td>18</td>
-      <td>17</td>
-      <td>18</td>
-      <td>17</td>
-      <td>18</td>
-      <td>-1</td>
-      <td>2</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
+<div class="text-center">
+<figure class="figure">
+  
+  <a href="#" data-toggle="modal" data-target="#lab-marc">
+  
+    <img class="figure-img img-fluid rounded mx-auto" src="/LOM3260/assets/images/labirinto/labirinto-marcado-1.png" alt="Marcação do labirinto" title="Marcação do labirinto" />
+  
+  </a>
+  
+  
+  <figcaption class="figure-caption">
+    Marcação do labirinto
+  </figcaption>
+  
+
+<!-- Modal -->
+
+<div class="modal fade" id="lab-marc" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-light bg-dark">
+        <h5>Marcação do labirinto</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span class="text-light" aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <a id="no-ext-link" href="/LOM3260/assets/images/labirinto/labirinto-marcado-1.png" target="_blank">
+        <img class="figure-img img-fluid rounded w-100mx-auto" src="/LOM3260/assets/images/labirinto/labirinto-marcado-1.png" alt="Marcação do labirinto" title="Marcação do labirinto" />
+        </a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">OK</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</figure>
+</div>
 
 <p>O caminho mais curto até o queijo pode então ser determinado, partindo-se da posição do rato e passando a cada etapa para uma casa adjacente cuja numeração seja menor do que a atual.</p>
 
