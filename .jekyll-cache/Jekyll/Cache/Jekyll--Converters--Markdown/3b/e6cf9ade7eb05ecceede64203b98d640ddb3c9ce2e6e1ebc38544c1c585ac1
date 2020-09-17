@@ -1,0 +1,20 @@
+I")<p>Se você tem 3 varetas, possivelmente de diferentes comprimentos, pode ou não ser possível ajeitá-las para que elas formem um triângulo. Por exemplo, se todos as varetas tiverem um comprimento de 6cm, pode-se facilmente construir um triângulo equilátero. No entanto, se uma vareta tem 6cm e as outras duas têm apenas 2cm, não dá pra criar um triângulo. Em geral, se qualquer uma das varetas é maior ou igual à soma das outras duas, elas não podem ser usadas para formar um triângulo. Caso contrário, o triângulo existe. Escreva um programa que determine se três comprimentos podem ou não formar um triângulo. O programa recebe 3 parâmetros e retorna um resultado booleano (<code class="language-plaintext highlighter-rouge">True</code> ou <code class="language-plaintext highlighter-rouge">False</code>).</p>
+
+<!-- more -->
+
+<h2 id="solução">Solução</h2>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">arestas</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">'a b c = '</span><span class="p">).</span><span class="n">split</span><span class="p">()</span>
+<span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span> <span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="n">arestas</span><span class="p">)</span>  <span class="c1"># o comando map(f, L) aplica a função f à lista L
+</span>
+<span class="k">if</span> <span class="n">a</span> <span class="o">&gt;=</span> <span class="n">b</span> <span class="o">+</span> <span class="n">c</span> <span class="ow">or</span> <span class="n">b</span> <span class="o">&gt;=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">c</span> <span class="ow">or</span> <span class="n">c</span> <span class="o">&gt;=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="p">:</span>
+  <span class="n">triangulo</span> <span class="o">=</span> <span class="bp">False</span>
+<span class="k">else</span><span class="p">:</span>
+  <span class="n">triangulo</span> <span class="o">=</span> <span class="bp">True</span>
+
+<span class="k">if</span> <span class="n">triangulo</span><span class="p">:</span>
+  <span class="k">print</span><span class="p">(</span><span class="s">f'Triângulo </span><span class="si">{</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="si">}</span><span class="s"> existe'</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+  <span class="k">print</span><span class="p">(</span><span class="s">f'Triângulo </span><span class="si">{</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="si">}</span><span class="s"> não existe'</span><span class="p">)</span>
+</code></pre></div></div>
+:ET

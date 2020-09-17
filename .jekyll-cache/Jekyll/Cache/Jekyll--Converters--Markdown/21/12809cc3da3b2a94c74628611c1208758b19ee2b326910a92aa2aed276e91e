@@ -2,7 +2,7 @@
 
 <!-- more -->
 
-<h3 id="solução">Solução</h3>
+<h2 id="solução">Solução</h2>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">'Digite um número:'</span><span class="p">))</span>
 

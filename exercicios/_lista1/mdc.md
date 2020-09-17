@@ -16,7 +16,7 @@ Ao final do algoritmo, $d$ sera o MDC de $n$ e $m$. Escreva um programa que leia
 
 <!-- more -->
 
-### Solução:
+## Solução:
 
 ```python
 # Entrada

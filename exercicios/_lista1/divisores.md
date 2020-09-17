@@ -11,7 +11,7 @@ Crie um programa que peça ao usuário um número e imprima todos os seus diviso
 
 <!-- more -->
 
-### Solução
+## Solução
 
 ```python
 n = int(input('Digite um número:'))
