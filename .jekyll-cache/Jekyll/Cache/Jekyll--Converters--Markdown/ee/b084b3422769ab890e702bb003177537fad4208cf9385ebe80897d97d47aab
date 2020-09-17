@@ -1,0 +1,87 @@
+I"e<p class="lead">Um professor universitário fazendo balbúrdia online!</p>
+
+<div class="col-4 float-right">
+<div class="text-center">
+<figure class="figure">
+  
+  <a href="#" data-toggle="modal" data-target="#eleno">
+  
+    <img class="figure-img img-fluid rounded mx-auto" src="/LOM3260/assets/images/sobre-autor.jpg" alt="Carpe diem" title="Carpe diem" />
+  
+  </a>
+  
+  
+  <figcaption class="figure-caption">
+    Carpe diem
+  </figcaption>
+  
+
+<!-- Modal -->
+
+<div class="modal fade" id="eleno" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-light bg-dark">
+        <h5>Carpe diem</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span class="text-light" aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <a id="no-ext-link" href="/LOM3260/assets/images/sobre-autor.jpg" target="_blank">
+        <img class="figure-img img-fluid rounded w-100mx-auto" src="/LOM3260/assets/images/sobre-autor.jpg" alt="Carpe diem" title="Carpe diem" />
+        </a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">OK</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</figure>
+</div>
+
+</div>
+
+<div class="col-md-9 my-auto">
+
+<h3>
+  
+  <a id="no-ext-link" href="http://lattes.cnpq.br/2806024249023699" target="_blank"><img class="social" src="/LOM3260/assets/images/logos/lattes.jpg" title="Lattes" /></a>
+  
+  
+  <a id="no-ext-link" href="http://www.researcherid.com/rid/P-4687-2018" target="_blank"><img class="social" src="/LOM3260/assets/images/logos/ResID.gif" title="ResearcherID" /></a>
+  
+  
+  <a id="no-ext-link" href="https://orcid.org/0000-0002-3117-5116" target="_blank"><img class="social" src="/LOM3260/assets/images/logos/ORCID.png" title="ORCID" /></a>
+  
+  
+  <a id="no-ext-link" href="https://scholar.google.com.br/citations?hl=en&amp;user=V4ycRTQAAAAJ" target="_blank"><img class="social" src="/LOM3260/assets/images/logos/googlescholar.jpg" title="Google Scholar" /></a>
+  
+  
+  <a id="no-ext-link" href="https://www.scopus.com/authid/detail.url?authorId=6506564624" target="_blank"><img class="social" src="/LOM3260/assets/images/logos/Elsevier.svg" title="Scopus" /></a>
+  
+  
+  <a id="no-ext-link" href="https://www.researchgate.net/profile/Luiz_Eleno" target="_blank"><img class="social" src="/LOM3260/assets/images/logos/researchgate.jpg" title="Research Gate" /></a>
+  
+  
+  
+  <a id="no-ext-link" href="https://www.github.com//luizeleno" target="_blank"><img class="social" src="/LOM3260/assets/images/logos/github.png" title="Github" /></a>
+  
+  
+  <a id="no-ext-link" href="https://www.facebook.com/luizeleno" target="_blank"><img class="social" src="/LOM3260/assets/images/logos/facebook.png" title="Facebook" /></a>
+  
+  
+  <a id="no-ext-link" href="https://twitter.com/ElenoLuiz" target="_blank"><img class="social" src="/LOM3260/assets/images/logos/twitter.png" title="Twitter" /></a>
+  
+  
+  <a id="no-ext-link" href="https://www.instagram.com/elenoluiz" target="_blank"><img class="social" src="/LOM3260/assets/images/logos/instagram.jpg" title="Instagram" /></a>
+  
+</h3>
+
+</div>
+
+<p>Sou de São Paulo, capital, nascido em 1976. Concluí minha graduação em Engenharia Metalúrgica pela Escola Politécnica (EP) da Universidade de São Paulo (USP), em 2001, e logo engatilhei o mestrado na mesma instituição, com a <a href="https://teses.usp.br/teses/disponiveis/3/3133/tde-21102003-094851/pt-br.php" target="_\blank">dissertação</a> “Incorporação do Volume ao Método Variacional de Clusters,” defendida em 2003. Depois disso, embarquei para a Alemanha, onde passei quatro anos e meio ensopado em cerveja e trabalhando no <em>Max-Planck-Institut für Eisenforschung</em> (Instituto Max Planck de Pesquisa em Ligas Ferrosas), na cidade de Düsseldorf, de 2003 a 2008. Lá caí (literalmente) do trem, quebrei a perna direita, onde tenho até hoje três pinos e uma placa metálica — selando minha simbiose com a Metalurgia. Logo em seguida, e ainda de muletas, conheci o amor da minha vida, também paulistana, coincidências. Fomos juntos para Toulouse, França, por mais seis meses, onde fui pesquisador convidado do <em>Centre Interuniversitaire de Recherche et d’Ingénierie des Matériaux</em> (CIRIMAT, Centro Interuniversítário de Ciência e de Engenharia de Materiais) da <em>Université de Toulouse</em>. Voltamos, finalmente, ao Brasil, onde defendi minha <a href="https://teses.usp.br/teses/disponiveis/3/3133/tde-05122012-165651/pt-br.php" target="_\blank">tese de doutorado</a> com o título “Dados empíricos e ab initio no método CALPHAD: os sistemas Fe–Cr–Mo–C e Nb–Ni–Si” em 2012, na EP-USP. Logo em seguida, dediquei-me ao Pós-Doutorado em Física pelo Instituto de Física (IF) da USP até 2014. Concluída mais essa etapa, começaram minhas atividades como Professor Doutor junto ao Departamento de Engenharia de Materiais (Demar) da Escola de Engenharia de Lorena (EEL) da USP, na cidade de Lorena, interior do estado de São Paulo, onde amarrei finalmente minha mula, que desamarro às vezes para saborear cerveja mundo afora, como na foto ao lado, em Oradea, Romênia. Quando não estou me dedicando a essas atividades, faço pesquisas em cálculo de propriedades eletrônicas e térmicas de materiais metálicos e ministro aulas às turmas de Engenharia de Materiais e Engenharia Física da EEL, nas disciplinas de Termodinâmica, Física Estatística, Mecânica Quântica, Computação Científica e Métodos Computacionais.</p>
+:ET

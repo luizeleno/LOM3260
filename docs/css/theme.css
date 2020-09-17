@@ -35,6 +35,11 @@ img.centered {
   margin-right: auto
 }
 
+img.social {
+  width:1.3em;
+  margin-right:.2em;
+}
+
 .mininav p {
   font-size: .75em;
 }
