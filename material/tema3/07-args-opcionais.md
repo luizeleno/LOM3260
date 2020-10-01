@@ -13,7 +13,7 @@ Funções podem ter argumentos opcionais com valores pré-definidos
 
 ## Argumentos opcionais
 
-Chegou a hora de cumprir (parcialmente) a promessa que eu fiz quando falei pela primeira vez do comando `help()` na página sobre [Documentação]({{site.baseurl}}/docs/tema3/02-documentacao.html). Ali vimos que a função `print()` tem uma série de argumentos opcionais, além dos obrigatórios (que são os objetos que queremos imprimir, naturalmente). Já vimos exemplos disso antes: a função `range()`, por exemplo, pode ser chamada com um argumento obrigatório (`end`) e até dois opcionais (`start` e `step`), como vimos na última aula do Tema 1, [Comandos in e len()]({{site.baseurl}}/docs/tema1/10-in-len.html).
+Chegou a hora de cumprir (parcialmente) a promessa que eu fiz quando falei pela primeira vez do comando `help()` na página sobre [Documentação]({{site.baseurl}}/material/tema3/02-documentacao.html). Ali vimos que a função `print()` tem uma série de argumentos opcionais, além dos obrigatórios (que são os objetos que queremos imprimir, naturalmente). Já vimos exemplos disso antes: a função `range()`, por exemplo, pode ser chamada com um argumento obrigatório (`end`) e até dois opcionais (`start` e `step`), como vimos na última aula do Tema 1, [Comandos in e len()]({{site.baseurl}}/material/tema1/10-in-len.html).
 
 Vamos lá então ver mais detalhes. Para entender o que são os argumentos opcionais, comecemos considerando a função `round()`, que faz parte do python padrão. O comando `help(round)` fornece a seguinte docstring:
 ```
