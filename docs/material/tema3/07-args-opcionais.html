@@ -32,7 +32,7 @@
 <meta property="og:url" content="https://computeel.org/LOM3260/material/tema3/07-args-opcionais.html" />
 <meta property="og:site_name" content="LOM3260" />
 <script type="application/ld+json">
-{"@type":"WebPage","dateModified":"2020-06-07T13:06:30-03:00","url":"https://computeel.org/LOM3260/material/tema3/07-args-opcionais.html","author":{"@type":"Person","name":"Luiz T. F. Eleno"},"description":"Computação Científica em Python - uma disciplina do curso de Engenharia Física da Escola de Engenharia de Lorena da Universidade de São Paulo - EEL USP","headline":"Argumentos obrigatórios e opcionais","@context":"https://schema.org"}</script>
+{"dateModified":"2020-06-07T13:06:30-03:00","@type":"WebPage","headline":"Argumentos obrigatórios e opcionais","url":"https://computeel.org/LOM3260/material/tema3/07-args-opcionais.html","author":{"@type":"Person","name":"Luiz T. F. Eleno"},"description":"Computação Científica em Python - uma disciplina do curso de Engenharia Física da Escola de Engenharia de Lorena da Universidade de São Paulo - EEL USP","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -1210,14 +1210,14 @@
 
 <h2 id="argumentos-opcionais">Argumentos opcionais</h2>
 
-<p>Chegou a hora de cumprir (parcialmente) a promessa que eu fiz quando falei pela primeira vez do comando <code class="language-plaintext highlighter-rouge">help()</code> na página sobre <a href="/LOM3260/docs/tema3/documentacao.html">Documentação</a>. Ali vimos que a função <code class="language-plaintext highlighter-rouge">print()</code> tem uma série de argumentos opcionais, além dos obrigatórios (que são os objetos que queremos imprimir, naturalmente). Já vimos exemplos disso antes: a função <code class="language-plaintext highlighter-rouge">range()</code>, por exemplo, pode ser chamada com um argumento obrigatório (<code class="language-plaintext highlighter-rouge">end</code>) e até dois opcionais (<code class="language-plaintext highlighter-rouge">start</code> e <code class="language-plaintext highlighter-rouge">step</code>), como vimos na última aula do Tema 1, <a href="/LOM3260/docs/tema1/in-len.html">Comandos in e len()</a>.</p>
+<p>Chegou a hora de cumprir (parcialmente) a promessa que eu fiz quando falei pela primeira vez do comando <code class="language-plaintext highlighter-rouge">help()</code> na página sobre <a href="/LOM3260/docs/tema3/02-documentacao.html">Documentação</a>. Ali vimos que a função <code class="language-plaintext highlighter-rouge">print()</code> tem uma série de argumentos opcionais, além dos obrigatórios (que são os objetos que queremos imprimir, naturalmente). Já vimos exemplos disso antes: a função <code class="language-plaintext highlighter-rouge">range()</code>, por exemplo, pode ser chamada com um argumento obrigatório (<code class="language-plaintext highlighter-rouge">end</code>) e até dois opcionais (<code class="language-plaintext highlighter-rouge">start</code> e <code class="language-plaintext highlighter-rouge">step</code>), como vimos na última aula do Tema 1, <a href="/LOM3260/docs/tema1/10-in-len.html">Comandos in e len()</a>.</p>
 
 <p>Vamos lá então ver mais detalhes. Para entender o que são os argumentos opcionais, comecemos considerando a função <code class="language-plaintext highlighter-rouge">round()</code>, que faz parte do python padrão. O comando <code class="language-plaintext highlighter-rouge">help(round)</code> fornece a seguinte docstring:</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Help on built-in function round in module builtins:
 
 round(...)
     round(number[, ndigits]) -&gt; number
-    
+
     Round a number to a given precision in decimal digits (default 0 digits).
     This returns an int when called with one argument, otherwise the
     same type as the number. ndigits may be negative.
@@ -1335,11 +1335,11 @@ round(...)
 
 <span class="k">def</span> <span class="nf">area_pizza</span><span class="p">(</span><span class="n">raio</span><span class="p">,</span> <span class="n">theta</span><span class="o">=</span><span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="p">.</span><span class="n">pi</span><span class="p">):</span>
   <span class="s">'''
-    Calcula a área de uma fatia de pizza 
-    
-    Uso: 
+    Calcula a área de uma fatia de pizza
+
+    Uso:
       area_pizza(raio, theta=2*np.pi)
-    
+
     entrada:
       - raio (float, obrigatório): o raio da pizza
       - theta (float, opcional, padrão: 2*pi): o ângulo da fatia.
@@ -1377,7 +1377,6 @@ round(...)
 <p>Valores pré-definidos são uma excelente opção para funções mais complexas, permitindo ao usuário utilizar rapidamente suas funções confiando que você escolheu valores sensatos para os argumentos opcionais!</p>
 
 <p>Por exemplo, argumentos como precisão, tolerância, método de cálculo e número máximo de iterações de um procedimento numérico podem ter valores pré-definidos que sejam razoáveis para a maior parte das situações práticas. Caso o usuário deseje ou precise, ele pode alterar os argumentos opcionais por sua própria conta. Essa maneira de trabalhar será muito importante quando começarmos a ver os métodos do cálculo numérico.</p>
-
 
 
   

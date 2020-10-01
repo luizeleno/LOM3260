@@ -13,7 +13,7 @@ Funções podem ter argumentos opcionais com valores pré-definidos
 
 ## Argumentos opcionais
 
-Chegou a hora de cumprir (parcialmente) a promessa que eu fiz quando falei pela primeira vez do comando `help()` na página sobre [Documentação]({{site.baseurl}}/docs/tema3/documentacao.html). Ali vimos que a função `print()` tem uma série de argumentos opcionais, além dos obrigatórios (que são os objetos que queremos imprimir, naturalmente). Já vimos exemplos disso antes: a função `range()`, por exemplo, pode ser chamada com um argumento obrigatório (`end`) e até dois opcionais (`start` e `step`), como vimos na última aula do Tema 1, [Comandos in e len()]({{site.baseurl}}/docs/tema1/in-len.html).
+Chegou a hora de cumprir (parcialmente) a promessa que eu fiz quando falei pela primeira vez do comando `help()` na página sobre [Documentação]({{site.baseurl}}/docs/tema3/02-documentacao.html). Ali vimos que a função `print()` tem uma série de argumentos opcionais, além dos obrigatórios (que são os objetos que queremos imprimir, naturalmente). Já vimos exemplos disso antes: a função `range()`, por exemplo, pode ser chamada com um argumento obrigatório (`end`) e até dois opcionais (`start` e `step`), como vimos na última aula do Tema 1, [Comandos in e len()]({{site.baseurl}}/docs/tema1/10-in-len.html).
 
 Vamos lá então ver mais detalhes. Para entender o que são os argumentos opcionais, comecemos considerando a função `round()`, que faz parte do python padrão. O comando `help(round)` fornece a seguinte docstring:
 ```
@@ -21,7 +21,7 @@ Help on built-in function round in module builtins:
 
 round(...)
     round(number[, ndigits]) -> number
-    
+
     Round a number to a given precision in decimal digits (default 0 digits).
     This returns an int when called with one argument, otherwise the
     same type as the number. ndigits may be negative.
@@ -43,7 +43,7 @@ x = 3.141592653589793
 y = round(number=x, ndigits=2)
 print(y)
 ```
-Essa chamada a `round` é 100% equivalente a `round(x, 2)`. Mas, com argumentos por nome, podemos até mesmo trocar a ordem dos argumentos: 
+Essa chamada a `round` é 100% equivalente a `round(x, 2)`. Mas, com argumentos por nome, podemos até mesmo trocar a ordem dos argumentos:
 ```python
 x = 3.141592653589793
 y = round(ndigits=2, number=x)
@@ -51,7 +51,7 @@ print(y)
 ```
 Tudo continua exatamente equivalente.
 
-Pode parecer pouca vantagem nesse ponto, mas usar argumentos por nome é uma ótima maneira de deixar seu código mais legível, se usamos nomes auto-explicativos, além de tornar irrelevante a ordem dos argumentos nas chamadas à função. 
+Pode parecer pouca vantagem nesse ponto, mas usar argumentos por nome é uma ótima maneira de deixar seu código mais legível, se usamos nomes auto-explicativos, além de tornar irrelevante a ordem dos argumentos nas chamadas à função.
 
 :warning: Se você não usa argumentos por nome, a ordem dos argumentos continua importante!!!
 {: .alert .alert-warning}
@@ -64,7 +64,7 @@ print(y)
 ```
 Esse código também é equivalente aos anteriores.
 
-:x: Não se pode começar com argumentos por nome e depois fornecer argumentos sem nome. Por exemplo, `round(ndigits=2, 5)` termina numa mensagem de erro (faça o teste!), assim como `round(number=5, 2)`, mas `round(5, ndigits=2)` é plenamente aceitável. 
+:x: Não se pode começar com argumentos por nome e depois fornecer argumentos sem nome. Por exemplo, `round(ndigits=2, 5)` termina numa mensagem de erro (faça o teste!), assim como `round(number=5, 2)`, mas `round(5, ndigits=2)` é plenamente aceitável.
 {: .alert .alert-danger }
 
 ## Crie funções com argumentos opcionais
@@ -75,13 +75,13 @@ Com os conhecimentos apenas adquiridos, podemos começar a criar nossas própria
 {% include figure.html image='/assets/images/tikz/setor-circulo.png-1.png' id='circ' caption='Um setor circular' %}
 </div>
 
-Para manter as coisas simples, vamos definir uma função para calcular a área de um setor circular (uma fatia de pizza!) de ângulo $\theta$ num círculo de raio $r$, como na figura. A área em questão é dada pela fórmula a seguir: 
+Para manter as coisas simples, vamos definir uma função para calcular a área de um setor circular (uma fatia de pizza!) de ângulo $\theta$ num círculo de raio $r$, como na figura. A área em questão é dada pela fórmula a seguir:
 
 $$ A=\frac{1}{2} \theta r^2 $$
 
 sendo que $\theta$ precisa estar em radianos. Além disso, a sua função deve calcular a área do círculo completo ($\theta=2\pi$) se o usuário fornecer só o raio, que é então o único argumento obrigatório.
 
-Eu faria assim: 
+Eu faria assim:
 ```python
 import numpy as np
 
@@ -102,11 +102,11 @@ import numpy as np
 
 def area_pizza(raio, theta=2*np.pi):
   '''
-    Calcula a área de uma fatia de pizza 
-    
-    Uso: 
+    Calcula a área de uma fatia de pizza
+
+    Uso:
       area_pizza(raio, theta=2*np.pi)
-    
+
     entrada:
       - raio (float, obrigatório): o raio da pizza
       - theta (float, opcional, padrão: 2*pi): o ângulo da fatia.
@@ -146,4 +146,3 @@ Apedaco = area_pizza(r, theta=corte)
 Valores pré-definidos são uma excelente opção para funções mais complexas, permitindo ao usuário utilizar rapidamente suas funções confiando que você escolheu valores sensatos para os argumentos opcionais!
 
 Por exemplo, argumentos como precisão, tolerância, método de cálculo e número máximo de iterações de um procedimento numérico podem ter valores pré-definidos que sejam razoáveis para a maior parte das situações práticas. Caso o usuário deseje ou precise, ele pode alterar os argumentos opcionais por sua própria conta. Essa maneira de trabalhar será muito importante quando começarmos a ver os métodos do cálculo numérico.
-
