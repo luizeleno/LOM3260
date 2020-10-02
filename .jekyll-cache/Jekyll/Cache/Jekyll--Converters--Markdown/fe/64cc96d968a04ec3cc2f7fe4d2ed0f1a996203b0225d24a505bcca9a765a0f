@@ -1,6 +1,6 @@
 I"F<p>Implemente o seguinte joguinho de computador: o usuário deve adivinhar um número de 1 a 100 “pensado” pelo computador (use a função <code class="language-plaintext highlighter-rouge">randint()</code> do módulo <code class="language-plaintext highlighter-rouge">numpy.random</code>). A cada palpite do usuário, o programa vai “cercando” o número, informando o intervalo $[a,\,b]$ em que ele se encontra. Acompanhe o seguinte exemplo, em que o número secreto é 42:</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Adivinhe o número:
-Está entre 1 e 100: 25
+Está entre 0 e 100: 25
 Está entre 25 e 100: 60
 Está entre 25 e 60: 40
 Está entre 40 e 60:

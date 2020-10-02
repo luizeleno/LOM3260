@@ -1,10 +1,10 @@
-I"T<p>Adapte o exercício anterior para gerar uma <em>senha forte</em>, tendo pelo menos 8 caracteres, pelo menos uma letra maiúscula, pelo menos uma letra minúscula, e pelo menos um número. Conte e exiba o número de tentativas que foram necessárias antes que uma senha forte fosse gerada.</p>
+I"�<p>Adapte o exercício anterior para gerar uma <em>senha forte</em>, tendo pelo menos 8 caracteres, pelo menos uma letra maiúscula, pelo menos uma letra minúscula, e pelo menos um número. Conte e exiba o número de tentativas que foram necessárias antes que uma senha forte fosse gerada.</p>
 
 <!-- more -->
 
 <h3 id="solução">Solução</h3>
 
-<p>A solução proposta abaixo faz extenso uso de <a href="/LOM3260/tema3/funcoes/"><strong>funções</strong></a>. Apesar de não ser obrigatório, isso ajuda e muito a organização do código!</p>
+<p>A solução proposta abaixo faz extenso uso de <a href="/LOM3260/tema3/funcoes/"><strong>funções</strong></a>. Apesar de não ser obrigatório, isso ajuda e muito a organização do código! Além disso, a solução apresentada aqui é ligeiramente diferente daquela que montamos em sala de aula. Compare para ver as diferenças. A principal delas é como fizemos as comparações. Veja que o comando <code class="language-plaintext highlighter-rouge">'A' &lt;= c &lt;= 'Z'</code>, sendo <code class="language-plaintext highlighter-rouge">c</code> um caractere (uma dado do tipo <em>string</em>) é equivalente a <code class="language-plaintext highlighter-rouge">65 &lt;= ord(c) &lt;= 90</code>, que foi o que usamos em aula.</p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">numpy.random</span> <span class="k">as</span> <span class="n">rd</span>
 
@@ -30,7 +30,7 @@
     <span class="c1"># verificando o tamanho
 </span>    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">senha</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">8</span><span class="p">:</span>
         <span class="k">return</span> <span class="bp">False</span>
-
+<span class="s">'A'</span> <span class="o">&lt;=</span> <span class="n">c</span> <span class="o">&lt;=</span> <span class="s">'Z'</span>
     <span class="c1"># verificando presença de caracteres
 </span>    <span class="n">flag_M</span><span class="p">,</span> <span class="n">flag_m</span><span class="p">,</span> <span class="n">flag_n</span> <span class="o">=</span> <span class="bp">False</span><span class="p">,</span> <span class="bp">False</span><span class="p">,</span> <span class="bp">False</span>
     <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">senha</span><span class="p">:</span>

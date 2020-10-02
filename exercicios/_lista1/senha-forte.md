@@ -13,7 +13,7 @@ Adapte o exercício anterior para gerar uma *senha forte*, tendo pelo menos 8 ca
 
 ### Solução
 
-A solução proposta abaixo faz extenso uso de [**funções**]({{site.baseurl}}/tema3/funcoes/). Apesar de não ser obrigatório, isso ajuda e muito a organização do código!
+A solução proposta abaixo faz extenso uso de [**funções**]({{site.baseurl}}/tema3/funcoes/). Apesar de não ser obrigatório, isso ajuda e muito a organização do código! Além disso, a solução apresentada aqui é ligeiramente diferente daquela que montamos em sala de aula. Compare para ver as diferenças. A principal delas é como fizemos as comparações. Veja que o comando `'A' <= c <= 'Z'`, sendo `c` um caractere (uma dado do tipo _string_) é equivalente a `65 <= ord(c) <= 90`, que foi o que usamos em aula.
 
 ```python
 import numpy.random as rd
@@ -40,7 +40,7 @@ def verifica_senha(senha):
     # verificando o tamanho
     if len(senha) < 8:
         return False
-
+'A' <= c <= 'Z'
     # verificando presença de caracteres
     flag_M, flag_m, flag_n = False, False, False
     for c in senha:

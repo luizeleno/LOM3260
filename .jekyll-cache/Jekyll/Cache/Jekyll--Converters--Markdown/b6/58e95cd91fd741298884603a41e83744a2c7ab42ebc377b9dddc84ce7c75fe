@@ -1,0 +1,103 @@
+I"�!<p>A Páscoa cai no primeiro domingo do ano após a lua cheia (mas não a lua cheia real, e sim de acordo com um antigo cômputo (computus) eclesiástico que nada mais tem a ver com a lua que vemos no céu: é apenas um <em>algoritmo</em>…) que acontece no ou imediatamente após o equinócio de março (considera-se sempre 21 de março como a data do equinócio, o que nem sempre é verdade, pois pode ser um ou dois dias antes…). Na prática, é mais fácil calcular a data da Páscoa usando o algoritmo de Meeus–Jones–Butcher:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Divida</th>
+      <th style="text-align: center">por</th>
+      <th style="text-align: center">Quociente</th>
+      <th style="text-align: center">  Resto</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">o ano $x$</td>
+      <td style="text-align: center">19</td>
+      <td style="text-align: center">—</td>
+      <td style="text-align: center">$a$</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">o ano $x$</td>
+      <td style="text-align: center">100</td>
+      <td style="text-align: center">$b$</td>
+      <td style="text-align: center">$c$</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">$b$</td>
+      <td style="text-align: center">4</td>
+      <td style="text-align: center">$d$</td>
+      <td style="text-align: center">$e$</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">$b+8$</td>
+      <td style="text-align: center">25</td>
+      <td style="text-align: center">$f$</td>
+      <td style="text-align: center">—</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">$b-f+1$</td>
+      <td style="text-align: center">3</td>
+      <td style="text-align: center">$g$</td>
+      <td style="text-align: center">—</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">$19a+b-d-g+15$</td>
+      <td style="text-align: center">30</td>
+      <td style="text-align: center">—</td>
+      <td style="text-align: center">$h$</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">$c$</td>
+      <td style="text-align: center">4</td>
+      <td style="text-align: center">$i$</td>
+      <td style="text-align: center">$k$</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">$32+2e+2i-h-k$</td>
+      <td style="text-align: center">7</td>
+      <td style="text-align: center">—</td>
+      <td style="text-align: center">$l$</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">$a+11h+22l$</td>
+      <td style="text-align: center">451</td>
+      <td style="text-align: center">$m$</td>
+      <td style="text-align: center">—</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">$h+l-7m+114$</td>
+      <td style="text-align: center">31</td>
+      <td style="text-align: center">$n$</td>
+      <td style="text-align: center">$p$</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>O domingo de Páscoa será então no dia $p+1$ do mês $n$ (3: março, 4: abril). O algoritmo é válido para qualquer ano no calendário gregoriano, ou seja, a partir de 1583. Implemente-o em python e verifique <a href="https://www.assa.org.au/edm" target="blank">aqui</a>. <strong>Dica</strong>: não use o operador <code class="language-plaintext highlighter-rouge">/</code>, e sim <code class="language-plaintext highlighter-rouge">//</code> (divisão inteira) para as divisões.</p>
+
+<!-- more -->
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">pascoa</span><span class="p">(</span><span class="n">ano</span><span class="p">):</span>
+    <span class="n">a</span> <span class="o">=</span> <span class="n">ano</span> <span class="o">%</span> <span class="mi">19</span>
+    <span class="n">b</span><span class="p">,</span> <span class="n">c</span> <span class="o">=</span> <span class="n">ano</span> <span class="o">//</span> <span class="mi">100</span><span class="p">,</span> <span class="n">ano</span> <span class="o">%</span> <span class="mi">100</span>
+    <span class="n">d</span><span class="p">,</span> <span class="n">e</span> <span class="o">=</span> <span class="n">b</span> <span class="o">//</span> <span class="mi">4</span><span class="p">,</span> <span class="n">b</span> <span class="o">%</span> <span class="mi">4</span>
+    <span class="n">f</span> <span class="o">=</span> <span class="p">(</span> <span class="n">b</span> <span class="o">+</span> <span class="mi">8</span> <span class="p">)</span> <span class="o">//</span> <span class="mi">25</span>
+    <span class="n">g</span> <span class="o">=</span> <span class="p">(</span> <span class="n">b</span> <span class="o">-</span> <span class="n">f</span> <span class="o">+</span> <span class="mi">1</span> <span class="p">)</span> <span class="o">//</span> <span class="mi">3</span>
+    <span class="n">h</span> <span class="o">=</span> <span class="p">(</span> <span class="mi">19</span> <span class="o">*</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span> <span class="o">-</span> <span class="n">d</span> <span class="o">-</span> <span class="n">g</span> <span class="o">+</span> <span class="mi">15</span> <span class="p">)</span> <span class="o">%</span> <span class="mi">30</span>
+    <span class="n">i</span><span class="p">,</span> <span class="n">k</span> <span class="o">=</span> <span class="n">c</span> <span class="o">//</span> <span class="mi">4</span><span class="p">,</span> <span class="n">c</span> <span class="o">%</span> <span class="mi">4</span>
+    <span class="n">l</span> <span class="o">=</span> <span class="p">(</span> <span class="mi">32</span> <span class="o">+</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">e</span> <span class="o">+</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">i</span> <span class="o">-</span> <span class="n">h</span> <span class="o">-</span> <span class="n">k</span> <span class="p">)</span> <span class="o">%</span> <span class="mi">7</span>
+    <span class="n">m</span> <span class="o">=</span> <span class="p">(</span> <span class="n">a</span> <span class="o">+</span> <span class="mi">11</span> <span class="o">*</span> <span class="n">h</span> <span class="o">+</span> <span class="mi">22</span> <span class="o">*</span> <span class="n">l</span> <span class="p">)</span> <span class="o">//</span> <span class="mi">451</span>
+    <span class="n">o</span> <span class="o">=</span> <span class="n">h</span> <span class="o">+</span> <span class="n">l</span> <span class="o">-</span> <span class="mi">7</span> <span class="o">*</span> <span class="n">m</span> <span class="o">+</span> <span class="mi">114</span>
+    <span class="n">n</span><span class="p">,</span> <span class="n">p</span> <span class="o">=</span> <span class="n">o</span> <span class="o">//</span> <span class="mi">31</span><span class="p">,</span> <span class="n">o</span> <span class="o">%</span> <span class="mi">31</span>
+    <span class="k">return</span> <span class="n">p</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">n</span>
+
+<span class="c1"># dicionário para converter mes de int para string
+</span><span class="n">mes</span> <span class="o">=</span> <span class="p">{</span><span class="mi">3</span><span class="p">:</span><span class="s">'Março'</span><span class="p">,</span> <span class="mi">4</span><span class="p">:</span><span class="s">'Abril'</span><span class="p">}</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">'Ano: '</span><span class="p">))</span>
+<span class="n">d</span><span class="p">,</span> <span class="n">m</span> <span class="o">=</span> <span class="n">pascoa</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+
+<span class="c1"># o formato 02d imprime um inteiro com 2 algarismos, com zeros à esquerda se necessário
+</span><span class="k">print</span><span class="p">(</span> <span class="s">f'Data da Páscoa em </span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s">: </span><span class="si">{</span><span class="n">d</span><span class="p">:</span><span class="mi">02</span><span class="n">d</span><span class="si">}</span><span class="s"> de </span><span class="si">{</span><span class="n">mes</span><span class="p">[</span><span class="n">m</span><span class="p">]</span><span class="si">}</span><span class="s">'</span> <span class="p">)</span>
+</code></pre></div></div>
+:ET

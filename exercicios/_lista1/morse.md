@@ -26,3 +26,40 @@ seqüência de traços e pontos. Seu programa deve ignorar quaisquer caracteres 
 ```
 ....  .  .-..  .-..  ---   .--  ---  .-.  .-..  -..
 ```
+
+<!-- more -->
+
+A solução abaixo usa um dicionário e uma função para converter minúsculas em maiúsculas e eliminar caracteres não alfanuméricos
+
+```python
+morse = {'A':	'.-',	'J':	'.---',	'S':	'...',	'1':	'.----',
+'B':	'-...',	'K':	'-.-',	'T':	'-'	,	'2':	'..---',
+'C':	'-.-.',	'L':	'.-..',	'U':	'..-',	'3':	'...--',
+'D':	'-..',	'M':	'--',	'V':	'...-',	'4':	'....-',
+'E':	'.',		'N':	'-.',	'W':	'.--',	'5':	'.....',
+'F':	'..-.',	'O':	'---',	'X':	'-..-',	'6':	'-....',
+'G':	'--.',	'P':	'.--.',	'Y':	'-.--',	'7':	'--...',
+'H':	'....',	'Q':	'--.-',	'Z':	'--..',	'8':	'---..',
+'I':	'..',	'R':	'.-.',	'0':	'-----',	'9':	'----.'}
+
+def converte(msg):
+  '''
+    converte minúsculas e maiúsculas e
+    elimina caracteres não alfanumericos
+  '''
+  msg1 = ''
+  for c in msg:
+    if 'a' <= c <= 'z':
+      msg1 += chr(ord(c)-32)
+    elif 'A' <= c <= 'Z' or '0' <= c <= '9':
+      msg1 += c
+
+  return msg1
+
+mensagem = input('Digite sua mensagem: ')
+mensagem = converte(mensagem)
+for c in mensagem:
+  print(morse[c], end=' ')
+print()
+
+  ```

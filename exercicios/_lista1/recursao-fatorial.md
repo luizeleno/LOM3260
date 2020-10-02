@@ -15,3 +15,7 @@ def fatorial_recursivo(n):
     else:
         return n * fatorial_recursivo(n-1)
 ```
+
+<!-- more -->
+
+A função retorna o fatorial de um inteiro, como você deve ter imaginado. Repare que a função chama ela mesma dentro dela. A isso chamamos de recursão.

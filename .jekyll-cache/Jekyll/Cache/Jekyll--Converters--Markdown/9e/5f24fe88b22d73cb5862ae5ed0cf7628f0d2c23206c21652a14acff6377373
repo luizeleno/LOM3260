@@ -1,0 +1,139 @@
+I"�"<p>O <strong>código Morse</strong> é um esquema de codificação que usa traços e pontos para representar números e letras. Neste exercício, você vai escrever um programa que usa um dicionário para armazenar o mapeamento de letras e números para código Morse, mostrado na tabela a seguir:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>A</td>
+      <td>. -</td>
+      <td>J</td>
+      <td>. - - -</td>
+      <td>S</td>
+      <td>. . .</td>
+      <td>1</td>
+      <td>. - - - -</td>
+    </tr>
+    <tr>
+      <td>B</td>
+      <td>- . . .</td>
+      <td>K</td>
+      <td>- . -</td>
+      <td>T</td>
+      <td>-</td>
+      <td>2</td>
+      <td>. . - - -</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td>- . - .</td>
+      <td>L</td>
+      <td>. - . .</td>
+      <td>U</td>
+      <td>. . -</td>
+      <td>3</td>
+      <td>. . . - -</td>
+    </tr>
+    <tr>
+      <td>D</td>
+      <td>- . .</td>
+      <td>M</td>
+      <td>- -</td>
+      <td>V</td>
+      <td>. . . -</td>
+      <td>4</td>
+      <td>. . . . -</td>
+    </tr>
+    <tr>
+      <td>E</td>
+      <td>.</td>
+      <td>N</td>
+      <td>- .</td>
+      <td>W</td>
+      <td>. - -</td>
+      <td>5</td>
+      <td>. . . . .</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>. . - .</td>
+      <td>O</td>
+      <td>- - -</td>
+      <td>X</td>
+      <td>- . . -</td>
+      <td>6</td>
+      <td>- . . . .</td>
+    </tr>
+    <tr>
+      <td>G</td>
+      <td>- - .</td>
+      <td>P</td>
+      <td>.- -.</td>
+      <td>Y</td>
+      <td>- . - -</td>
+      <td>7</td>
+      <td>- - . . .</td>
+    </tr>
+    <tr>
+      <td>H</td>
+      <td>. . . .</td>
+      <td>Q</td>
+      <td>- -.-</td>
+      <td>Z</td>
+      <td>- - . .</td>
+      <td>8</td>
+      <td>- - - . .</td>
+    </tr>
+    <tr>
+      <td>I</td>
+      <td>. .</td>
+      <td>R</td>
+      <td>. - .</td>
+      <td>0</td>
+      <td>- - - - -</td>
+      <td>9</td>
+      <td>- - - - .</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Seu programa deve ler uma mensagem do usuário. Então deve traduzir cada
+letra e número na mensagem para o código Morse, deixando um espaço entre cada
+seqüência de traços e pontos. Seu programa deve ignorar quaisquer caracteres que não sejam letras ou números. O código Morse para <code class="language-plaintext highlighter-rouge">Hello, World!</code> é mostrado abaixo:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>....  .  .-..  .-..  ---   .--  ---  .-.  .-..  -..
+</code></pre></div></div>
+
+<!-- more -->
+
+<p>A solução abaixo usa um dicionário e uma função para converter minúsculas em maiúsculas e eliminar caracteres não alfanuméricos</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">morse</span> <span class="o">=</span> <span class="p">{</span><span class="s">'A'</span><span class="p">:</span>	<span class="s">'.-'</span><span class="p">,</span>	<span class="s">'J'</span><span class="p">:</span>	<span class="s">'.---'</span><span class="p">,</span>	<span class="s">'S'</span><span class="p">:</span>	<span class="s">'...'</span><span class="p">,</span>	<span class="s">'1'</span><span class="p">:</span>	<span class="s">'.----'</span><span class="p">,</span>
+<span class="s">'B'</span><span class="p">:</span>	<span class="s">'-...'</span><span class="p">,</span>	<span class="s">'K'</span><span class="p">:</span>	<span class="s">'-.-'</span><span class="p">,</span>	<span class="s">'T'</span><span class="p">:</span>	<span class="s">'-'</span>	<span class="p">,</span>	<span class="s">'2'</span><span class="p">:</span>	<span class="s">'..---'</span><span class="p">,</span>
+<span class="s">'C'</span><span class="p">:</span>	<span class="s">'-.-.'</span><span class="p">,</span>	<span class="s">'L'</span><span class="p">:</span>	<span class="s">'.-..'</span><span class="p">,</span>	<span class="s">'U'</span><span class="p">:</span>	<span class="s">'..-'</span><span class="p">,</span>	<span class="s">'3'</span><span class="p">:</span>	<span class="s">'...--'</span><span class="p">,</span>
+<span class="s">'D'</span><span class="p">:</span>	<span class="s">'-..'</span><span class="p">,</span>	<span class="s">'M'</span><span class="p">:</span>	<span class="s">'--'</span><span class="p">,</span>	<span class="s">'V'</span><span class="p">:</span>	<span class="s">'...-'</span><span class="p">,</span>	<span class="s">'4'</span><span class="p">:</span>	<span class="s">'....-'</span><span class="p">,</span>
+<span class="s">'E'</span><span class="p">:</span>	<span class="s">'.'</span><span class="p">,</span>		<span class="s">'N'</span><span class="p">:</span>	<span class="s">'-.'</span><span class="p">,</span>	<span class="s">'W'</span><span class="p">:</span>	<span class="s">'.--'</span><span class="p">,</span>	<span class="s">'5'</span><span class="p">:</span>	<span class="s">'.....'</span><span class="p">,</span>
+<span class="s">'F'</span><span class="p">:</span>	<span class="s">'..-.'</span><span class="p">,</span>	<span class="s">'O'</span><span class="p">:</span>	<span class="s">'---'</span><span class="p">,</span>	<span class="s">'X'</span><span class="p">:</span>	<span class="s">'-..-'</span><span class="p">,</span>	<span class="s">'6'</span><span class="p">:</span>	<span class="s">'-....'</span><span class="p">,</span>
+<span class="s">'G'</span><span class="p">:</span>	<span class="s">'--.'</span><span class="p">,</span>	<span class="s">'P'</span><span class="p">:</span>	<span class="s">'.--.'</span><span class="p">,</span>	<span class="s">'Y'</span><span class="p">:</span>	<span class="s">'-.--'</span><span class="p">,</span>	<span class="s">'7'</span><span class="p">:</span>	<span class="s">'--...'</span><span class="p">,</span>
+<span class="s">'H'</span><span class="p">:</span>	<span class="s">'....'</span><span class="p">,</span>	<span class="s">'Q'</span><span class="p">:</span>	<span class="s">'--.-'</span><span class="p">,</span>	<span class="s">'Z'</span><span class="p">:</span>	<span class="s">'--..'</span><span class="p">,</span>	<span class="s">'8'</span><span class="p">:</span>	<span class="s">'---..'</span><span class="p">,</span>
+<span class="s">'I'</span><span class="p">:</span>	<span class="s">'..'</span><span class="p">,</span>	<span class="s">'R'</span><span class="p">:</span>	<span class="s">'.-.'</span><span class="p">,</span>	<span class="s">'0'</span><span class="p">:</span>	<span class="s">'-----'</span><span class="p">,</span>	<span class="s">'9'</span><span class="p">:</span>	<span class="s">'----.'</span><span class="p">}</span>
+
+<span class="k">def</span> <span class="nf">converte</span><span class="p">(</span><span class="n">msg</span><span class="p">):</span>
+  <span class="s">'''
+    converte minúsculas e maiúsculas e
+    elimina caracteres não alfanumericos
+  '''</span>
+  <span class="n">msg1</span> <span class="o">=</span> <span class="s">''</span>
+  <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">msg</span><span class="p">:</span>
+    <span class="k">if</span> <span class="s">'a'</span> <span class="o">&lt;=</span> <span class="n">c</span> <span class="o">&lt;=</span> <span class="s">'z'</span><span class="p">:</span>
+      <span class="n">msg1</span> <span class="o">+=</span> <span class="nb">chr</span><span class="p">(</span><span class="nb">ord</span><span class="p">(</span><span class="n">c</span><span class="p">)</span><span class="o">-</span><span class="mi">32</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="s">'A'</span> <span class="o">&lt;=</span> <span class="n">c</span> <span class="o">&lt;=</span> <span class="s">'Z'</span> <span class="ow">or</span> <span class="s">'0'</span> <span class="o">&lt;=</span> <span class="n">c</span> <span class="o">&lt;=</span> <span class="s">'9'</span><span class="p">:</span>
+      <span class="n">msg1</span> <span class="o">+=</span> <span class="n">c</span>
+
+  <span class="k">return</span> <span class="n">msg1</span>
+
+<span class="n">mensagem</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">'Digite sua mensagem: '</span><span class="p">)</span>
+<span class="n">mensagem</span> <span class="o">=</span> <span class="n">converte</span><span class="p">(</span><span class="n">mensagem</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">mensagem</span><span class="p">:</span>
+  <span class="k">print</span><span class="p">(</span><span class="n">morse</span><span class="p">[</span><span class="n">c</span><span class="p">],</span> <span class="n">end</span><span class="o">=</span><span class="s">' '</span><span class="p">)</span>
+<span class="k">print</span><span class="p">()</span>
+
+</code></pre></div></div>
+:ET
