@@ -31,5 +31,7 @@ def fibonacci(n):
 
 Vamos usar a função acima para imprimir os dez primeiros valores da sequência:
 
+```python
 for n in range(10):
   print(f'n={n}, a_n = {fibonacci(n)}')
+```

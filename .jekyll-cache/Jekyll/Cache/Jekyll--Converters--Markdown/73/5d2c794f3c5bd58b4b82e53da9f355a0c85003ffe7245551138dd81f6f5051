@@ -1,0 +1,27 @@
+I"�<p>Usando recursão, implemente uma função para calcular o $n$-ésimo termo da série de Fibonacci,</p>
+
+\[0,\ 1,\ 1,\ 2,\ 3,\ 5,\ 8,\ 13,\ 21,\ \ldots\]
+
+<p>que começa com $a_0=0$, $a_1=1$ e em que cada termo $a_n$ ($n \ge 2$) é calculado usando a equação recursiva</p>
+
+\[a_n = a_{n-1} + a_{n-2}\,.\]
+
+<!-- more -->
+
+<p>Segue uma proposta de função recursiva:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">fibonacci</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+  <span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="k">return</span> <span class="mi">0</span>
+  <span class="k">elif</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+    <span class="k">return</span> <span class="mi">1</span>
+  <span class="k">else</span><span class="p">:</span>
+    <span class="k">return</span> <span class="n">fibonacci</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="n">fibonacci</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">2</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Vamos usar a função acima para imprimir os dez primeiros valores da sequência:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+  <span class="k">print</span><span class="p">(</span><span class="s">f'n=</span><span class="si">{</span><span class="n">n</span><span class="si">}</span><span class="s">, a_n = </span><span class="si">{</span><span class="n">fibonacci</span><span class="p">(</span><span class="n">n</span><span class="p">)</span><span class="si">}</span><span class="s">'</span><span class="p">)</span>
+</code></pre></div></div>
+:ET
