@@ -1,5 +1,5 @@
 ---
-nav_order: 1
+nav_order: 2
 dificuldade: 25
 #tags: [loop, list, func]
 mathjax: true
@@ -16,14 +16,14 @@ $$
  y(x) = a \cosh\left(\frac{x}{a}\right)
 $$
 
-sendo $a$ um comprimento definido na figura e 
+sendo $a$ um comprimento definido na figura e
 
 $$
  \cosh \theta = \frac{e^\theta+e^{-\theta}}{2}
-$$ 
+$$
 
 a função **cosseno hiperbólico**.
 
-Considere que o cabo está suspenso entre dois pontos distantes 100m um do outro, com uma máxima deflexão de 20m. Além disso, o cabo tem um peso específico de $w=50\,$N/m. 
+Considere que o cabo está suspenso entre dois pontos distantes 100m um do outro, com uma máxima deflexão de 20m. Além disso, o cabo tem um peso específico de $w=50\,$N/m.
 
 Determine as tensões mínima e máxima suportadas pelo cabo, que  acontecem, respectivamente, no meio ($x=0$) e nas extremidades ($x = \pm 50\,$m) e são dadas por $ T_\mathrm{min}= w a $ e $ T_\mathrm{max}= w (a+20)$.

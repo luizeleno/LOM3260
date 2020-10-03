@@ -4,10 +4,13 @@ parent: exs
 mathjax: true
 remove_trinket: true
 timestamp: 07/06/20
+hidden: true
 ---
 
+{% assign exs = site.lista3 | sort: 'nav_order' %}
+
 ### Acesso rápido
-{% for i in (1..3) %}
+{% for i in (1..exs.size) %}
 {%- assign v = i | downcase %}
 [Ex. {{i}}](#ex{{i}}){: .badge .badge-{% if page.entrega1 contains v %}warning{% elsif page.entrega2 contains v %}danger{% elsif page.resolvidos contains v %}success{% else %}primary{% endif %} }
 {%- endfor %}
@@ -18,8 +21,6 @@ timestamp: 07/06/20
 ---
 
 {% assign n = 0 %}
-
-{% assign exs = site.lista3 | sort: 'nav_order' %}
 
 {% for ex in exs %}
 
@@ -39,4 +40,3 @@ timestamp: 07/06/20
 </div>
 
 {% endfor %}
-

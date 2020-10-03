@@ -1,0 +1,6 @@
+I" <p>Muitos métodos numéricos, incluindo o de Newton-Raphson, foram criados explicitamente para resolver a <em>equação de Kepler:</em></p>
+
+\[E = M + e \sin E\]
+
+<p>onde $M$ é a anomalia média, $e$ é a excentricidade  e $E$ é a anomalia excêntrica de um corpo em órbita elíptica segundo as leis da gravitação ($M$ e $E$ são ângulos usualmente dados em graus). Resolva a equação para $E$ no caso em que $M=5$° e $e=0.100$, com uma precisão de $10^{-6}$ graus. Não esqueça de converter $M$ para radianos antes de começar!</p>
+:ET

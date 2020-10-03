@@ -1,46 +1,48 @@
 <div class="accordion" id="{{include.id}}">
   {% assign mainpages = site.pages | where: 'parent', 'main' | sort: 'nav_order' %}
   {% for x in mainpages %}
-  {% unless x.hidden %}
-    {% if x.has_children %}
-      {% assign children = site.pages | where: 'parent', x.id | sort: 'path' %}
-      {% if x.url == page.url or page.parent == x.id  %}
-        {% assign active = 'active' %}
-        {% assign status= 'true' %}
-        {% assign show = 'show' %}
-        {% assign cursor = '' %}
-      {% else %}
-        {% assign active = '' %}
-        {% assign status= 'false' %}
-        {% assign show = '' %}
-        {% assign cursor = "cursor: pointer;" %}
-      {% endif %} 
-        <div class="{{active}} list-group-item list-group-item-action list-group-item-primary collapsed dropdown-toggle px-2" id="head{{include.id}}{{x.id}}" data-toggle="collapse" data-target="#{{include.id}}{{x.id}}" aria-expanded="{{status}}" aria-controls="{{include.id}}{{x.id}}" style="{{ cursor }}">
-        {% if page.url == x.url %}
-          {% if x.icon %}:{{x.icon}}:{% endif%} {{x.title}}
+    {% unless x.hidden %}
+      {% if x.has_children %}
+        {% assign children = site.pages | where: 'parent', x.id | sort: 'path' %}
+        {% if x.url == page.url or page.parent == x.id  %}
+          {% assign active = 'active' %}
+          {% assign status= 'true' %}
+          {% assign show = 'show' %}
+          {% assign cursor = '' %}
         {% else %}
-          {% if x.icon %}:{{x.icon}}:{% endif%} <a href="{{site.baseurl}}{{x.url}}">{{x.title}}</a>
+          {% assign active = '' %}
+          {% assign status= 'false' %}
+          {% assign show = '' %}
+          {% assign cursor = "cursor: pointer;" %}
         {% endif %}
-      </div>
-      <div id="{{include.id}}{{x.id}}" class="collapse {{show}}" aria-labelledby="head{{include.id}}{{x.id}}" data-parent="#{{include.id}}">
-        {% for child in children %}
-          {% include labels.html status=child.status %}
-          {% if page.url == child.url %}
-            <li class="active list-group-item list-group-item-action list-group-item-secondary my-0">{{child.title}} {% if child.status %}<span class="badge badge-{{type}}">{{label}}</span>{%endif%}</li>
+        <div class="{{active}} list-group-item list-group-item-action list-group-item-primary collapsed dropdown-toggle px-2" id="head{{include.id}}{{x.id}}" data-toggle="collapse" data-target="#{{include.id}}{{x.id}}" aria-expanded="{{status}}" aria-controls="{{include.id}}{{x.id}}" style="{{ cursor }}">
+          {% if page.url == x.url %}
+            {% if x.icon %}:{{x.icon}}:{% endif%} {{x.title}}
           {% else %}
-            <li class="list-group-item list-group-item-action list-group-item-secondary my-0"><a href="{{site.baseurl}}{{child.url}}">{{child.title}}</a> {% if child.status %}<span class="badge badge-{{type}}">{{ label }}</span>{%endif%}</li>
+            {% if x.icon %}:{{x.icon}}:{% endif%} <a href="{{site.baseurl}}{{x.url}}">{{x.title}}</a>
           {% endif %}
-        {% endfor %}
-      </div>
-    {% else %}
-      {% if page.url == x.url %}
-        {% assign  status = 'active' %}
-        <span class="{{status}} list-group-item list-group-item-action list-group-item-primary px-2">{% if x.icon %}:{{x.icon}}:{% endif%} {{x.title}}</span>
+        </div>
+        <div id="{{include.id}}{{x.id}}" class="collapse {{show}}" aria-labelledby="head{{include.id}}{{x.id}}" data-parent="#{{include.id}}">
+          {% for child in children %}
+            {% include labels.html status=child.status %}
+            {% unless child.hidden %}
+              {% if page.url == child.url %}
+                <li class="active list-group-item list-group-item-action list-group-item-secondary my-0">{{child.title}} {% if child.status %}<span class="badge badge-{{type}}">{{label}}</span>{%endif%}</li>
+              {% else %}
+                <li class="list-group-item list-group-item-action list-group-item-secondary my-0"><a href="{{site.baseurl}}{{child.url}}">{{child.title}}</a> {% if child.status %}<span class="badge badge-{{type}}">{{ label }}</span>{%endif%}</li>
+              {% endif %}
+            {% endunless %}
+          {% endfor %}
+        </div>
       {% else %}
-        {% assign  status = '' %}
-        <a href="{{site.baseurl}}{{x.url}}" class="{{status}} list-group-item list-group-item-action list-group-item-primary px-2">{% if x.icon %}:{{x.icon}}:{% endif%} {{x.title}}</a>
+        {% if page.url == x.url %}
+          {% assign  status = 'active' %}
+          <span class="{{status}} list-group-item list-group-item-action list-group-item-primary px-2">{% if x.icon %}:{{x.icon}}:{% endif%} {{x.title}}</span>
+        {% else %}
+          {% assign  status = '' %}
+          <a href="{{site.baseurl}}{{x.url}}" class="{{status}} list-group-item list-group-item-action list-group-item-primary px-2">{% if x.icon %}:{{x.icon}}:{% endif%} {{x.title}}</a>
+        {% endif %}
       {% endif %}
-    {% endif %}
     {% endunless %}
   {% endfor %}
 </div>

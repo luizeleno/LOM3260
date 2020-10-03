@@ -1,0 +1,47 @@
+I"N<div class="float-right col-md-4">
+<div class="text-center">
+<figure class="figure">
+  
+  <a href="#" data-toggle="modal" data-target="#flcd">
+  
+    <img class="figure-img img-fluid rounded mx-auto" src="/LOM3260/assets/images/flecha-corda.png" alt="Flecha AB e corda ADB" title="Flecha AB e corda ADB" />
+  
+  </a>
+  
+  
+  <figcaption class="figure-caption">
+    Flecha AB e corda ADB
+  </figcaption>
+  
+
+<!-- Modal -->
+
+<div class="modal fade" id="flcd" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-light bg-dark">
+        <h5>Flecha AB e corda ADB</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span class="text-light" aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <a id="no-ext-link" href="/LOM3260/assets/images/flecha-corda.png" target="_blank">
+        <img class="figure-img img-fluid rounded w-100mx-auto" src="/LOM3260/assets/images/flecha-corda.png" alt="Flecha AB e corda ADB" title="Flecha AB e corda ADB" />
+        </a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">OK</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</figure>
+</div>
+
+</div>
+
+<p>A figura representa um círculo de centro em $O$ em que a corda $AB$ mede 10cm e o arco $ADB$ (ao longo da circunferência) mede 12cm. Determine o comprimento da flecha $CD$, sendo $C$ o ponto médio de $AB$.</p>
+:ET

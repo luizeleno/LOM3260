@@ -11,10 +11,12 @@ entrega1: ['9', '13', '14', '18', '19', '20']
 timestamp: 9/17/2020, 1:39:00 PM
 ---
 
+{% assign exs = site.lista1 | sort: 'nav_order' %}
+
 ### Acesso rápido
-{% for i in (1..31) %}
-{%- assign v = i | downcase %}
-[Ex. {{i}}](#ex{{i}}){: .badge .badge-{% if page.entrega1 contains v %}warning{% elsif page.entrega2 contains v %}danger{% elsif page.resolvidos contains v %}success{% else %}primary{% endif %} }
+{% for i in (1..exs.size) %}
+  {%- assign v = i | downcase %}
+  [Ex. {{i}}](#ex{{i}}){: .badge .badge-{% if page.entrega1 contains v %}warning{% elsif page.entrega2 contains v %}danger{% elsif page.resolvidos contains v %}success{% else %}primary{% endif %} }
 {%- endfor %}
 
 ### Instruções
@@ -28,8 +30,6 @@ timestamp: 9/17/2020, 1:39:00 PM
 {% include labels-ex.html %}
 
 {% assign n = 0 %}
-
-{% assign exs = site.lista1 | sort: 'nav_order' %}
 
 {% for ex in exs %}
 
