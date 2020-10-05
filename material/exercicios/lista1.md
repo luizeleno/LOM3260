@@ -20,10 +20,6 @@ timestamp: 9/17/2020, 1:39:00 PM
 {%- endfor %}
 
 ### Instruções
-{% if false %}
-- **Os exercícios marcados em <span class="badge badge-warning">amarelo</span> na lista acima (Acesso rápido) devem ser entregues em dupla no [Google Classroom](https://classroom.google.com){: target="\_blank"} até as 14h00 do dia 12/09/2019. São os exercícios {% for i in page.entrega1 %}{{i}}{% unless forloop.last %}, {%endunless%}{% endfor %}.**
-- **Os exercícios marcados em <span class="badge badge-danger">vermelho</span> na lista acima (Acesso rápido) devem ser entregues em dupla no [Google Classroom](https://classroom.google.com){: target="\_blank"} até as 14h00 do dia 24/10/2019. São os exercícios {% for i in page.entrega2 %}{{i}}{% unless forloop.last %}, {%endunless%}{% endfor %}.**
-{% endif  %}
 - os exercícios marcados em <span class="badge badge-success">verde</span> foram resolvidos em sala de aula. Uma possível solução é fornecida aqui, junto ao exercício.
 - os exercícios marcados em <span class="badge badge-warning">amarelo</span> devem ser entregues no dia 08/10/2020.
 - as porcentagens no começo de cada exercício são uma maneira de indicar o seu grau de dificuldade. Mas não se apegue muito a esses valores: talvez você ache fáceis alguns que eu julgo como difíceis --- e vice versa!

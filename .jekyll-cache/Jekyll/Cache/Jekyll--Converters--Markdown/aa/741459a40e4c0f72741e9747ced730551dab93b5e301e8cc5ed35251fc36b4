@@ -1,4 +1,4 @@
-I"�0
+I"I/
 <h3 id="acesso-rápido">Acesso rápido</h3>
 
 <p><a href="#ex1" class="badge badge-primary">Ex. 1</a>
@@ -11,25 +11,24 @@
   <a href="#ex8" class="badge badge-primary">Ex. 8</a></p>
 
 <h3 id="instruções">Instruções</h3>
-<!-- - Os exercícios 1 a 5 devem ser entregues em dupla no [Google Classroom](https://classroom.google.com){: target="\_blank"} até as 14h00 do dia 21/11/2019. -->
 <ul>
-  <li>as porcentagens no começo de cada exercício são uma maneira de indicar o seu grau de dificuldade. Mas não se apegue muito a esses valores: talvez você ache fáceis alguns que eu julgo como difíceis — e vice-versa!</li>
-  <li>Seja paciente. Se começar a encontrar muitas dificuldades, mude para outro problema e volte para o anterior depois de uma boa pausa, com a cabeça fresca.</li>
-  <li>use recursos dos módulos <code class="language-plaintext highlighter-rouge">scipy.optimize</code> e <code class="language-plaintext highlighter-rouge">scipy.integrate</code> à vontade, exceto quanto explicitamente indicado o contrário.</li>
+  <li>os exercícios marcados em <span class="badge badge-success">verde</span> foram resolvidos em sala de aula. Uma possível solução é fornecida aqui, junto ao exercício.
+<!-- - os exercícios marcados em <span class="badge badge-warning">amarelo</span> devem ser entregues no dia 08/10/2020. --></li>
+  <li>as porcentagens no começo de cada exercício são uma maneira de indicar o seu grau de dificuldade. Mas não se apegue muito a esses valores: talvez você ache fáceis alguns que eu julgo como difíceis — e vice versa!</li>
 </ul>
-
-<hr />
 
 <div class="card mb-2">
     <a name="ex1"></a><h2 class="card-title alert alert-primary">Exercício 1: Iteração nos métodos da bissecçao e de Newton</h2>
     <div class="card-body">
         <ul>
             <li><i><b>dificuldade:</b></i> 30%</li>
-            <!-- <li><i><b>utiliza:</b></i> </li> -->
         </ul>
 
-        <p>Para resolver a equação $x=\cos(x)$ com uma precisão de 8 algarismos significativos, quantas iterações serão necessárias no método da bissecção se começarmos delimitando a raiz no intervalo $\left[0.5,\ 1.0\right]$? E no método de Newton-Raphson, começando com o chute inicial $x_0=1$?</p>
+        
+          <p>Para resolver a equação $x=\cos(x)$ com uma precisão de 8 algarismos significativos, quantas iterações serão necessárias no método da bissecção se começarmos delimitando a raiz no intervalo $\left[0.5,\ 1.0\right]$? E no método de Newton-Raphson, começando com o chute inicial $x_0=1$?</p>
 
+        
+        
 
     </div>
 </div>
@@ -39,10 +38,10 @@
     <div class="card-body">
         <ul>
             <li><i><b>dificuldade:</b></i> 25%</li>
-            <!-- <li><i><b>utiliza:</b></i> </li> -->
         </ul>
 
-        <div class="float-right col-md-6">
+        
+          <div class="float-right col-md-6">
 <div class="text-center">
 <figure class="figure">
   
@@ -97,6 +96,8 @@
 
 <p>Determine as tensões mínima e máxima suportadas pelo cabo, que  acontecem, respectivamente, no meio ($x=0$) e nas extremidades ($x = \pm 50\,$m) e são dadas por $ T_\mathrm{min}= w a $ e $ T_\mathrm{max}= w (a+20)$.</p>
 
+        
+        
 
     </div>
 </div>
@@ -106,15 +107,17 @@
     <div class="card-body">
         <ul>
             <li><i><b>dificuldade:</b></i> 25%</li>
-            <!-- <li><i><b>utiliza:</b></i> </li> -->
         </ul>
 
-        <p>Muitos métodos numéricos, incluindo o de Newton-Raphson, foram criados explicitamente para resolver a <em>equação de Kepler:</em></p>
+        
+          <p>Muitos métodos numéricos, incluindo o de Newton-Raphson, foram criados explicitamente para resolver a <em>equação de Kepler:</em></p>
 
 \[E = M + e \sin E\]
 
 <p>onde $M$ é a anomalia média, $e$ é a excentricidade  e $E$ é a anomalia excêntrica de um corpo em órbita elíptica segundo as leis da gravitação ($M$ e $E$ são ângulos usualmente dados em graus). Resolva a equação para $E$ no caso em que $M=5$° e $e=0.100$, com uma precisão de $10^{-6}$ graus. Não esqueça de converter $M$ para radianos antes de começar!</p>
 
+        
+        
 
     </div>
 </div>
@@ -124,10 +127,10 @@
     <div class="card-body">
         <ul>
             <li><i><b>dificuldade:</b></i> 25%</li>
-            <!-- <li><i><b>utiliza:</b></i> </li> -->
         </ul>
 
-        <div class="float-right col-md-6">
+        
+          <div class="float-right col-md-6">
 <div class="text-center">
 <figure class="figure">
   
@@ -178,6 +181,8 @@
 
 \[V = L \left[ \frac{1}{2} \pi r^2 -r^2 \arcsin\left(\frac{h}{r}\right) - h \sqrt{r^2-h^2}\right]\]
 
+        
+        
 
     </div>
 </div>
@@ -187,15 +192,17 @@
     <div class="card-body">
         <ul>
             <li><i><b>dificuldade:</b></i> 25%</li>
-            <!-- <li><i><b>utiliza:</b></i> </li> -->
         </ul>
 
-        <p>Numa certa aplicação financeira de capitalização, o usuário deposita mensalmente uma certa quantia fixa $P$ para receber uma taxa de juros $j$ ao mês de acordo com a fórmula</p>
+        
+          <p>Numa certa aplicação financeira de capitalização, o usuário deposita mensalmente uma certa quantia fixa $P$ para receber uma taxa de juros $j$ ao mês de acordo com a fórmula</p>
 
 \[A = \frac{P}{j} \left[ (1+j)^{m}-1 \right]\]
 
 <p>em que $A$ é o montante acumulado ao final de $m$ meses. Um engenheiro gostaria de contar com 750000 reais ao final de 20 anos, mas só pode investir mensalmente 1500 reais. Qual é a menor taxa de juros para que isso seja possível?</p>
 
+        
+        
 
     </div>
 </div>
@@ -205,10 +212,10 @@
     <div class="card-body">
         <ul>
             <li><i><b>dificuldade:</b></i> 25%</li>
-            <!-- <li><i><b>utiliza:</b></i> </li> -->
         </ul>
 
-        <p>Um objeto de massa $m = 0.25$kg, inicialmente em repouso, é solto de uma altura $h_0 = 300$m. Devido à resistência do ar e
+        
+          <p>Um objeto de massa $m = 0.25$kg, inicialmente em repouso, é solto de uma altura $h_0 = 300$m. Devido à resistência do ar e
 à gravidade, a altura do objeto no instante t é</p>
 
 \[h(t) = h_0 - \frac{m g}{k} t + \frac{m^2 g}{k^2} \left( 1 - e^{-k t/m} \right)\]
@@ -216,6 +223,8 @@
 <p>onde $g = 9.80665$m/s² é a aceleração da gravidade e $k = 0.1$kg/s é o coeficiente de resistência do ar. Encontre, com uma
 tolerância de 0.01s, o tempo que o objeto leva para atingir o solo.</p>
 
+        
+        
 
     </div>
 </div>
@@ -225,10 +234,10 @@ tolerância de 0.01s, o tempo que o objeto leva para atingir o solo.</p>
     <div class="card-body">
         <ul>
             <li><i><b>dificuldade:</b></i> 40%</li>
-            <!-- <li><i><b>utiliza:</b></i> </li> -->
         </ul>
 
-        <div class="float-right col-md-4">
+        
+          <div class="float-right col-md-4">
 <div class="text-center">
 <figure class="figure">
   
@@ -273,8 +282,10 @@ tolerância de 0.01s, o tempo que o objeto leva para atingir o solo.</p>
 
 </div>
 
-<p>A figura representa um círculo de centro em $O$ em que a corda $AB$ mede 10cm e o arco $ADB$ (ao longo da circunferência) mede 12cm. Determine o comprimento da flecha $CD$, sendo $C$ o ponto médio de $AB$.</p>
+<p>A figura representa um círculo de centro em $O$ em que a corda $AB$ mede 10cm e o arco $ADB$ (ao longo da circunferência) mede 12cm. Determine o comprimento da flecha $CD$, sendo $C$ o ponto médio de $AB$. <strong>Dica:</strong> tente descobrir primeiro o ângulo $A\hat{O}C$ e o raio do círculo.</p>
 
+        
+        
 
     </div>
 </div>
@@ -284,10 +295,11 @@ tolerância de 0.01s, o tempo que o objeto leva para atingir o solo.</p>
     <div class="card-body">
         <ul>
             <li><i><b>dificuldade:</b></i> 50%</li>
-            <!-- <li><i><b>utiliza:</b></i> </li> -->
         </ul>
 
-        <div class="float-right col-md-3">
+        
+        
+          <div class="float-right col-md-3">
 <div class="text-center">
 <figure class="figure">
   
@@ -332,6 +344,9 @@ tolerância de 0.01s, o tempo que o objeto leva para atingir o solo.</p>
 
 <p>As escadas se interceptam a uma altura $H$ do chão. Determine $W$ se $L_1=15\,$m, $L_2=10\,$m e $H=4\,$m.</p>
 
+
+        
+        
 
     </div>
 </div>

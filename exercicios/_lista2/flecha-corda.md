@@ -3,6 +3,7 @@ nav_order: 7
 dificuldade: 40
 mathjax: true
 title: Arco e flecha
+label: flecha
 ---
 
 <div class='float-right col-md-4'>
