@@ -1,0 +1,4 @@
+{% for i in (1..include.exs.size) %}
+  {%- assign v = i | downcase %}
+  [Ex. {{i}}](#ex{{i}}){: .badge .badge-{% if page.entrega1 contains v %}warning{% elsif page.entrega2 contains v %}danger{% elsif page.resolvidos contains v %}success{% else %}primary{% endif %} }
+{%- endfor %}

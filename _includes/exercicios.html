@@ -1,0 +1,39 @@
+{% assign n = 0 %}
+
+{% for ex in include.exs %}
+
+{% assign n = n | plus: 1 %}
+
+<div class="card mb-2">
+    <a name="ex{{n}}"></a><h2 class="card-title alert alert-primary">Exercício {{n}}: {{ex.title}}</h2>
+    <div class="card-body">
+        <ul>
+            <li><i><b>dificuldade:</b></i> {{ex.dificuldade}}%</li>
+            <li><i><b>utiliza:</b></i> {% include grade-exs.html tags=ex.tags %}</li>
+        </ul>
+
+        {% if ex.content contains "<!-- more -->" %}
+          {% assign conteudo = ex.content | split:"<!-- more -->"  %}
+          {{conteudo[0]}}
+        {% else %}
+          {{ ex.content }}
+        {% endif %}
+
+        {%- assign ns = n | downcase %}
+        {% if page.resolvidos contains ns %}
+
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="collapse" data-target="#{{ex.label}}" aria-expanded="false" aria-controls="{{ex.label}}">
+          Solução
+        </button>
+        <div class="collapse" id="{{ex.label}}">
+          <div class="card card-body">
+            {{conteudo[1]}}
+          </div>
+        </div>
+
+        {% endif %}
+
+    </div>
+</div>
+
+{% endfor %}

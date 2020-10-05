@@ -1,13 +1,14 @@
-I"�
+I"�
 <h3 id="acesso-rápido">Acesso rápido</h3>
 
 <p><a href="#ex1" class="badge badge-primary">Ex. 1</a>
-<a href="#ex2" class="badge badge-primary">Ex. 2</a>
-<a href="#ex3" class="badge badge-primary">Ex. 3</a></p>
+  <a href="#ex2" class="badge badge-primary">Ex. 2</a>
+  <a href="#ex3" class="badge badge-primary">Ex. 3</a></p>
 
 <h3 id="instruções">Instruções</h3>
 <ul>
-  <li>use recursos dos módulos <code class="language-plaintext highlighter-rouge">scipy.linalg</code> à vontade</li>
+  <li>os exercícios marcados em <span class="badge badge-success">verde</span> foram resolvidos em sala de aula. Uma possível solução é fornecida aqui, junto ao exercício.</li>
+  <li>use recursos dos módulos <code class="language-plaintext highlighter-rouge">scipy.integrate</code> à vontade</li>
 </ul>
 
 <hr />
@@ -17,10 +18,11 @@
     <div class="card-body">
         <ul>
             <li><i><b>dificuldade:</b></i> 25%</li>
-            <!-- <li><i><b>utiliza:</b></i> </li> -->
+            <li><i><b>utiliza:</b></i> </li>
         </ul>
 
-        <p>Um carro de corrida termina uma volta de certo circuito em 84 segundos. Durante a volta, medidas de velocidade ($v$) foram tomadas a cada 6 segundos e resultaram nos valores listados abaixo:</p>
+        
+          <p>Um carro de corrida termina uma volta de certo circuito em 84 segundos. Durante a volta, medidas de velocidade ($v$) foram tomadas a cada 6 segundos e resultaram nos valores listados abaixo:</p>
 
 <table>
   <thead>
@@ -79,6 +81,8 @@
 
 <p>Qual é a extensão da pista? Estime o erro comparando os resultados das regras dos trapézios e de Simpson.</p>
 
+        
+        
 
     </div>
 </div>
@@ -88,10 +92,11 @@
     <div class="card-body">
         <ul>
             <li><i><b>dificuldade:</b></i> 25%</li>
-            <!-- <li><i><b>utiliza:</b></i> </li> -->
+            <li><i><b>utiliza:</b></i> </li>
         </ul>
 
-        <p>O perímetro de uma elipse com semi-eixo maior $a$ e semi-eixo menor $b$ é dado por</p>
+        
+          <p>O perímetro de uma elipse com semi-eixo maior $a$ e semi-eixo menor $b$ é dado por</p>
 
 \[C = 4a \int_0^{\pi/2} \sqrt{ 1 - e^2 \cos^2 \theta} \, d\theta\]
 
@@ -101,6 +106,8 @@
 
 <p>a <em>excentricidade</em> da elipse. Calcule $C$ quando $a=20$ cm e $b=10$ cm.</p>
 
+        
+        
 
     </div>
 </div>
@@ -110,10 +117,11 @@
     <div class="card-body">
         <ul>
             <li><i><b>dificuldade:</b></i> 40%</li>
-            <!-- <li><i><b>utiliza:</b></i> </li> -->
+            <li><i><b>utiliza:</b></i> </li>
         </ul>
 
-        <p>A <strong>função erro</strong> $(\mathrm{erf})$ é importante em Estatística, Transferência de Calor e Mecânica Quântica, entre outras áreas do conhecimento. Ela é definida pela seguinte integral:</p>
+        
+          <p>A <strong>função erro</strong> $(\mathrm{erf})$ é importante em Estatística, Transferência de Calor e Mecânica Quântica, entre outras áreas do conhecimento. Ela é definida pela seguinte integral:</p>
 
 \[\mathrm{erf}\,(x) = \frac{2}{\sqrt{\pi}} \int_0^x e^{-t^2} \, dt\,,\]
 
@@ -127,6 +135,8 @@
 
 <p>e explique o porquê do resultado encontrado.</p>
 
+        
+        
 
     </div>
 </div>

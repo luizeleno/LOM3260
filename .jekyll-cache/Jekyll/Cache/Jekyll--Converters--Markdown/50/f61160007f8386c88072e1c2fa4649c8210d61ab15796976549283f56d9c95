@@ -1,4 +1,4 @@
-I"I/
+I"B
 <h3 id="acesso-rápido">Acesso rápido</h3>
 
 <p><a href="#ex1" class="badge badge-primary">Ex. 1</a>
@@ -8,20 +8,24 @@
   <a href="#ex5" class="badge badge-primary">Ex. 5</a>
   <a href="#ex6" class="badge badge-primary">Ex. 6</a>
   <a href="#ex7" class="badge badge-primary">Ex. 7</a>
-  <a href="#ex8" class="badge badge-primary">Ex. 8</a></p>
+  <a href="#ex8" class="badge badge-success">Ex. 8</a></p>
 
 <h3 id="instruções">Instruções</h3>
 <ul>
   <li>os exercícios marcados em <span class="badge badge-success">verde</span> foram resolvidos em sala de aula. Uma possível solução é fornecida aqui, junto ao exercício.
 <!-- - os exercícios marcados em <span class="badge badge-warning">amarelo</span> devem ser entregues no dia 08/10/2020. --></li>
   <li>as porcentagens no começo de cada exercício são uma maneira de indicar o seu grau de dificuldade. Mas não se apegue muito a esses valores: talvez você ache fáceis alguns que eu julgo como difíceis — e vice versa!</li>
+  <li>pode-se usar recursos do módulo <code class="language-plaintext highlighter-rouge">scipy.optimize</code> à vontade.</li>
 </ul>
+
+<hr />
 
 <div class="card mb-2">
     <a name="ex1"></a><h2 class="card-title alert alert-primary">Exercício 1: Iteração nos métodos da bissecçao e de Newton</h2>
     <div class="card-body">
         <ul>
             <li><i><b>dificuldade:</b></i> 30%</li>
+            <li><i><b>utiliza:</b></i> </li>
         </ul>
 
         
@@ -38,6 +42,7 @@
     <div class="card-body">
         <ul>
             <li><i><b>dificuldade:</b></i> 25%</li>
+            <li><i><b>utiliza:</b></i> </li>
         </ul>
 
         
@@ -107,6 +112,7 @@
     <div class="card-body">
         <ul>
             <li><i><b>dificuldade:</b></i> 25%</li>
+            <li><i><b>utiliza:</b></i> </li>
         </ul>
 
         
@@ -127,6 +133,7 @@
     <div class="card-body">
         <ul>
             <li><i><b>dificuldade:</b></i> 25%</li>
+            <li><i><b>utiliza:</b></i> </li>
         </ul>
 
         
@@ -192,6 +199,7 @@
     <div class="card-body">
         <ul>
             <li><i><b>dificuldade:</b></i> 25%</li>
+            <li><i><b>utiliza:</b></i> </li>
         </ul>
 
         
@@ -212,6 +220,7 @@
     <div class="card-body">
         <ul>
             <li><i><b>dificuldade:</b></i> 25%</li>
+            <li><i><b>utiliza:</b></i> </li>
         </ul>
 
         
@@ -234,6 +243,7 @@ tolerância de 0.01s, o tempo que o objeto leva para atingir o solo.</p>
     <div class="card-body">
         <ul>
             <li><i><b>dificuldade:</b></i> 40%</li>
+            <li><i><b>utiliza:</b></i> </li>
         </ul>
 
         
@@ -295,10 +305,11 @@ tolerância de 0.01s, o tempo que o objeto leva para atingir o solo.</p>
     <div class="card-body">
         <ul>
             <li><i><b>dificuldade:</b></i> 50%</li>
+            <li><i><b>utiliza:</b></i> </li>
         </ul>
 
         
-        
+          
           <div class="float-right col-md-3">
 <div class="text-center">
 <figure class="figure">
@@ -346,6 +357,93 @@ tolerância de 0.01s, o tempo que o objeto leva para atingir o solo.</p>
 
 
         
+        
+
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="collapse" data-target="#escada" aria-expanded="false" aria-controls="escada">
+          Solução
+        </button>
+        <div class="collapse" id="escada">
+          <div class="card card-body">
+            
+
+<div class="float-right col-md-4">
+<div class="text-center">
+<figure class="figure">
+  
+  <a href="#" data-toggle="modal" data-target="#escadassol">
+  
+    <img class="figure-img img-fluid rounded mx-auto" src="/LOM3260/assets/images/tikz/escadas-sol.png" alt="" title="" />
+  
+  </a>
+  
+  
+
+<!-- Modal -->
+
+<div class="modal fade" id="escadassol" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-light bg-dark">
+        <h5></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span class="text-light" aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <a id="no-ext-link" href="/LOM3260/assets/images/tikz/escadas-sol.png" target="_blank">
+        <img class="figure-img img-fluid rounded w-100mx-auto" src="/LOM3260/assets/images/tikz/escadas-sol.png" alt="" title="" />
+        </a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">OK</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</figure>
+</div>
+
+</div>
+
+<p>Considere os comprimentos $a$, $b$, $x$ e $y$ como na figura. Pelo teorema de Pitágoras:</p>
+
+\[a = \sqrt{L_1^2-W^2} \,, \qquad b = \sqrt{L_2^2-W^2}\]
+
+<p>Além disso, por semelhança de triângulos,</p>
+
+\[\frac{H}{a} = \frac{x}{W} \quad \Rightarrow \quad x = \frac{HW}{a}\]
+
+\[\frac{H}{b} = \frac{y}{W} \quad \Rightarrow \quad y = \frac{HW}{b}\]
+
+<p>Mas $ x + y = W $, o que leva a</p>
+
+\[\frac{1}{a} + \frac{1}{b} = \frac{1}{H}\]
+
+<p>que deve ser resolvida numericamente usando, por exemplo, <code class="language-plaintext highlighter-rouge">scipy.optimize.newton</code>:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+<span class="kn">import</span> <span class="nn">scipy.optimize</span> <span class="k">as</span> <span class="n">op</span>
+
+<span class="n">L1</span><span class="p">,</span> <span class="n">L2</span><span class="p">,</span> <span class="n">H</span> <span class="o">=</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">4</span>
+
+
+<span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">w</span><span class="p">):</span>
+  <span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">L1</span><span class="o">**</span><span class="mi">2</span><span class="o">-</span><span class="n">w</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+  <span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">L2</span><span class="o">**</span><span class="mi">2</span><span class="o">-</span><span class="n">w</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+  <span class="k">return</span> <span class="mi">1</span><span class="o">/</span><span class="n">a</span> <span class="o">+</span> <span class="mi">1</span><span class="o">/</span><span class="n">b</span> <span class="o">-</span> <span class="mi">1</span><span class="o">/</span><span class="n">H</span>
+
+
+<span class="n">W</span> <span class="o">=</span> <span class="n">op</span><span class="p">.</span><span class="n">newton</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">W</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>O resultado é $W=8.106$m.</p>
+
+          </div>
+        </div>
+
         
 
     </div>

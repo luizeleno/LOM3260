@@ -56,6 +56,9 @@ collections:
   lista3:
     output: false
     doc: false
+  lista4:
+    output: false
+    doc: false
 
 sass:
   load_paths:
