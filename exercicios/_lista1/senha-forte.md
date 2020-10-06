@@ -40,7 +40,7 @@ def verifica_senha(senha):
     # verificando o tamanho
     if len(senha) < 8:
         return False
-'A' <= c <= 'Z'
+
     # verificando presença de caracteres
     flag_M, flag_m, flag_n = False, False, False
     for c in senha:
