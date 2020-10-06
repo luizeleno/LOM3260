@@ -4,7 +4,7 @@ parent: exs
 mathjax: true
 remove_trinket: true
 timestamp: 10/5/2020, 4:00:06 PM
-# hidden: true
+hidden: true
 ---
 
 {% assign exs = site.lista4 | sort: 'nav_order' %}
