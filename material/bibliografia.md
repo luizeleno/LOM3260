@@ -21,6 +21,15 @@ Quase todos os recursos abaixo estão disponíveis *online* ou fisicamente pelo 
 
 - *Como Pensar Como um Cientista da Computação - Edição interativa* <https://panda.ime.usp.br/pensepy/static/pensepy/index.html>{: target="\_blank"}
 
+## Específicos de Cálculo Numérico
+
+* R. Burden e J. Faires, **Análise Numérica,** Cengage Learning, São Paulo, 2008.
+* Chapra e Canale, **Métodos Numéricos para Engenharia,** 12th ed., McGrawHill 2009.
+* Humes / Melo / Yoshida / Martins, **Noções de Cálculo Numérico,** McGraw-Hill do Brasil, 1984 (<http://www.ime.usp.br/~map2121>).
+* A. Gilat e V. Subramaniam, **Métodos Numéricos para Engenheiros e Cientistas,** Bookman, Porto Alegre, 2008.
+* I. Q. Barros, **Introdução ao Cálculo Numérico,** Edgar Blücher, São Paulo, 1972.
+* Neide B. Franco, **Cálculo Numérico,** Pearson, São Paulo, 2007.
+
 ## Documentação online
 
 - **Documentação oficial:** <https://docs.python.org/3>{: target="\_blank"} (em inglês)
