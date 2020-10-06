@@ -10,4 +10,3 @@ Resolução numérica de integrais: ferramenta essencial para a computação cie
 {: .lead }
 
 ## [Baixar a aula (pdf)]({{site.baseurl}}/assets/aulas/pdf/Aula-Integracao.pdf){: class="btn btn-lg btn-primary" target="\_blank"}
-
