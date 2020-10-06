@@ -5,7 +5,7 @@ nav_order: 2
 mathjax: true
 remove_trinket: true
 timestamp: 10/5/2020, 11:15:02 AM
-resolvidos: ['8']
+# resolvidos: ['8']
 ---
 
 {% assign exs = site.lista2 | sort: 'nav_order' %}
