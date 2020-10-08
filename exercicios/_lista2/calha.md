@@ -4,6 +4,7 @@ dificuldade: 25
 #tags: [loop, list, func]
 mathjax: true
 title: Calha semicilíndrica
+label: calha
 ---
 
 <div class='float-right col-md-6'>

@@ -3,6 +3,7 @@ nav_order: 6
 dificuldade: 25
 mathjax: true
 title: Aplicação financeira
+label: juros
 ---
 
 Numa certa aplicação financeira de capitalização, o usuário deposita mensalmente uma certa quantia fixa $P$ para receber uma taxa de juros $j$ ao mês de acordo com a fórmula

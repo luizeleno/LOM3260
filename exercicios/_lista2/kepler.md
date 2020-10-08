@@ -4,6 +4,7 @@ dificuldade: 25
 #tags: [loop, list, func]
 mathjax: true
 title: A equação de Kepler
+label: kepler
 ---
 
 Muitos métodos numéricos, incluindo o de Newton-Raphson, foram criados explicitamente para resolver a _equação de Kepler:_

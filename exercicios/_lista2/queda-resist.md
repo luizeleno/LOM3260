@@ -3,6 +3,7 @@ nav_order: 7
 dificuldade: 25
 mathjax: true
 title: Queda com resistência do ar
+label: resist
 ---
 
 Um objeto de massa $m = 0.25$kg, inicialmente em repouso, é solto de uma altura $h_0 = 300$m. Devido à resistência do ar e
