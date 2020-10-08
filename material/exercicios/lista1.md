@@ -9,6 +9,7 @@ resolvidos: ['1', '2', '3', '4', '5', '6', '7', '8', '10', '11', '12', '15', '16
 entrega1: ['9', '13', '14', '18', '19', '20']
 # entrega2: ['18', '29', '30']
 timestamp: 9/17/2020, 1:39:00 PM
+labels: true
 ---
 
 {% assign exs = site.lista1 | sort: 'nav_order' %}

@@ -9,7 +9,9 @@
     <div class="card-body">
         <ul>
             <li><i><b>dificuldade:</b></i> {{ex.dificuldade}}%</li>
-            <li><i><b>utiliza:</b></i> {% include grade-exs.html tags=ex.tags %}</li>
+            {% if page.labels%}
+              <li><i><b>utiliza:</b></i> {% include grade-exs.html tags=ex.tags %}</li>
+            {% endif %}
         </ul>
 
         {% if ex.content contains "<!-- more -->" %}
