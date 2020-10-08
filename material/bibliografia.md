@@ -25,7 +25,7 @@ Quase todos os recursos abaixo estão disponíveis *online* ou fisicamente pelo 
 
 * R. Burden e J. Faires, **Análise Numérica,** Cengage Learning, São Paulo, 2008.
 * Chapra e Canale, **Métodos Numéricos para Engenharia,** 12th ed., McGrawHill 2009.
-* Humes / Melo / Yoshida / Martins, **Noções de Cálculo Numérico,** McGraw-Hill do Brasil, 1984 ((pdf)[{{site.baseurl}}/assets/aulas/pdf/Nocoes-de-Calculo-Numerico-1984.pdf]{: target="\_blank"}).
+* Humes / Melo / Yoshida / Martins, **Noções de Cálculo Numérico,** McGraw-Hill do Brasil, 1984 <a href='{{site.baseurl}}/assets/aulas/pdf/Nocoes-de-Calculo-Numerico-1984.pdf'>(pdf)</a>{: target="\_blank"}.
 * A. Gilat e V. Subramaniam, **Métodos Numéricos para Engenheiros e Cientistas,** Bookman, Porto Alegre, 2008.
 * I. Q. Barros, **Introdução ao Cálculo Numérico,** Edgar Blücher, São Paulo, 1972.
 * Neide B. Franco, **Cálculo Numérico,** Pearson, São Paulo, 2007.
