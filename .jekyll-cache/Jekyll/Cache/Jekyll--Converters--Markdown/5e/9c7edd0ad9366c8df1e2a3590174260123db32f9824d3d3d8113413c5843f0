@@ -1,0 +1,51 @@
+I"�<p class="lead">Quase todos os recursos abaixo estão disponíveis <em>online</em> ou fisicamente pelo serviço de biblioteca da USP</p>
+
+<h2 id="livros">Livros</h2>
+
+<ul>
+  <li>Nilo Ney Coutinho Menezes. <em>Introdução à Programação com Python: Algoritmos e Lógica de Programação Para Iniciantes</em>, 3a ed, 2019.</li>
+  <li>Sven Linge, Hans Petter Langtangen. <em>Programming for Computations — Python</em>, 2016.</li>
+  <li>
+    <p>Kent D. Lee, <em>Python Programming Fundamentals</em>, 2nd ed, 2014.</p>
+  </li>
+  <li>
+    <p>Livros online disponibilizados pelo Serviço de Bibliotecas da USP: <a href="https://goo.gl/HSkGmU" target="\_blank">https://goo.gl/HSkGmU</a></p>
+  </li>
+  <li><em>Como Pensar Como um Cientista da Computação - Edição interativa</em> <a href="https://panda.ime.usp.br/pensepy/static/pensepy/index.html" target="\_blank">https://panda.ime.usp.br/pensepy/static/pensepy/index.html</a></li>
+</ul>
+
+<h2 id="específicos-de-cálculo-numérico">Específicos de Cálculo Numérico</h2>
+
+<ul>
+  <li>R. Burden e J. Faires, <strong>Análise Numérica,</strong> Cengage Learning, São Paulo, 2008.</li>
+  <li>Chapra e Canale, <strong>Métodos Numéricos para Engenharia,</strong> 12th ed., McGrawHill 2009.</li>
+  <li>Humes / Melo / Yoshida / Martins, <strong>Noções de Cálculo Numérico,</strong> McGraw-Hill do Brasil, 1984 ((pdf)[/LOM3260/assets/aulas/pdf/Nocoes-de-Calculo-Numerico-1984.pdf]{: target=”_blank”}).</li>
+  <li>A. Gilat e V. Subramaniam, <strong>Métodos Numéricos para Engenheiros e Cientistas,</strong> Bookman, Porto Alegre, 2008.</li>
+  <li>I. Q. Barros, <strong>Introdução ao Cálculo Numérico,</strong> Edgar Blücher, São Paulo, 1972.</li>
+  <li>Neide B. Franco, <strong>Cálculo Numérico,</strong> Pearson, São Paulo, 2007.</li>
+</ul>
+
+<h2 id="documentação-online">Documentação online</h2>
+
+<ul>
+  <li><strong>Documentação oficial:</strong> <a href="https://docs.python.org/3" target="\_blank">https://docs.python.org/3</a> (em inglês)</li>
+  <li>Documentação em português (incompleta): <a href="https://pt.wikibooks.org/wiki/Python" target="\_blank">https://pt.wikibooks.org/wiki/Python</a></li>
+  <li><em>Numpy Manual.</em> <a href="https://docs.scipy.org/doc/numpy" target="\_blank">https://docs.scipy.org/doc/numpy</a></li>
+  <li><em>Scipy Documentation.</em> <a href="https://docs.scipy.org/doc/scipy/reference" target="\_blank">https://docs.scipy.org/doc/scipy/reference</a></li>
+  <li><em>Matplotlib User’s Guide.</em> <a href="https://matplotlib.org/users/index.html" target="\_blank">https://matplotlib.org/users/index.html</a></li>
+  <li><em>Pandas documentation.</em> <a href="https://pandas.pydata.org/pandas-docs/stable" target="\_blank">https://pandas.pydata.org/pandas-docs/stable</a></li>
+</ul>
+
+<h2 id="sites-úteis">Sites úteis</h2>
+
+<ul>
+  <li>
+    <p>Introdução à Ciência da Computação com Python: <a href="https://www.coursera.org/learn/ciencia-computacao-python-conceitos" target="\_blank">https://www.coursera.org/learn/ciencia-computacao-python-conceitos</a></p>
+  </li>
+  <li><em>Pythonic Perambulations:</em> <a href="https://jakevdp.github.io/" target="\_blank">https://jakevdp.github.io/</a></li>
+  <li><em>Real Python:</em> <a href="https://realpython.com/" target="\_blank">https://realpython.com/</a></li>
+  <li><em>Scipy Cookbook:</em> <a href="https://scipy-cookbook.readthedocs.io/" target="\_blank">https://scipy-cookbook.readthedocs.io/</a></li>
+  <li><em>learnpython.org:</em> <a href="https://www.learnpython.org/" target="\_blank">https://www.learnpython.org/</a></li>
+  <li><em>Matplotlib tutorial</em>: <a href="https://github.com/rougier/matplotlib-tutorial" target="\_blank">https://github.com/rougier/matplotlib-tutorial</a></li>
+</ul>
+:ET
