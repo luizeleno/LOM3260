@@ -1,0 +1,83 @@
+I"<div class="float-right col-md-6">
+<div class="text-center">
+<figure class="figure">
+  
+  <a href="#" data-toggle="modal" data-target="#catenaria">
+  
+    <img class="figure-img img-fluid rounded mx-auto" src="/LOM3260/assets/images/tikz/catenaria.png" alt="" title="" />
+  
+  </a>
+  
+  
+
+<!-- Modal -->
+
+<div class="modal fade" id="catenaria" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-light bg-dark">
+        <h5></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span class="text-light" aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <a id="no-ext-link" href="/LOM3260/assets/images/tikz/catenaria.png" target="_blank">
+        <img class="figure-img img-fluid rounded w-100mx-auto" src="/LOM3260/assets/images/tikz/catenaria.png" alt="" title="" />
+        </a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">OK</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</figure>
+</div>
+
+</div>
+
+<p>Cabos usados em pontes e linhas de transmissão suportam o próprio peso uniformemente distribuído e assumem um formato conhecido por <strong>catenária</strong>, expresso por</p>
+
+\[y(x) = a \cosh\left(\frac{x}{a}\right)\]
+
+<p>sendo $a$ um comprimento definido na figura e</p>
+
+\[\cosh \theta = \frac{e^\theta+e^{-\theta}}{2}\]
+
+<p>a função <strong>cosseno hiperbólico</strong>.</p>
+
+<p>Considere que o cabo está suspenso entre dois pontos distantes 100m um do outro, com uma máxima deflexão de 20m. Além disso, o cabo tem um peso específico de $w=50\,$N/m.</p>
+
+<p>Determine as tensões mínima e máxima suportadas pelo cabo, que  acontecem, respectivamente, no meio ($x=0$) e nas extremidades ($x = \pm 50\,$m) e são dadas por $ T_\mathrm{min}= w a $ e $ T_\mathrm{max}= w (a+20)$.</p>
+
+<!-- more -->
+
+<p>A catenária passa pelo ponto $x=50,\,y=a+20$, o que fornece a equação</p>
+
+\[a+20 = a \cosh \left( \frac{50}{a} \right)\]
+
+<p>que resolvemos numericamente:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+<span class="kn">import</span> <span class="nn">scipy.optimize</span> <span class="k">as</span> <span class="n">spo</span>
+
+<span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">a</span><span class="p">):</span>  <span class="c1"># função da qual se quer a raiz
+</span>  <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="mi">20</span> <span class="o">-</span> <span class="n">a</span> <span class="o">*</span> <span class="n">np</span><span class="p">.</span><span class="n">cosh</span><span class="p">(</span><span class="mi">50</span> <span class="o">/</span> <span class="n">a</span><span class="p">)</span>
+
+<span class="n">c</span> <span class="o">=</span> <span class="mi">65</span>  <span class="c1"># chute inicial
+</span><span class="n">a</span> <span class="o">=</span> <span class="n">spo</span><span class="p">.</span><span class="n">newton</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">c</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+
+<span class="n">w</span> <span class="o">=</span> <span class="mi">50</span>
+<span class="k">print</span><span class="p">(</span><span class="s">f'Tmin=</span><span class="si">{</span><span class="n">w</span><span class="o">*</span><span class="n">a</span><span class="si">}</span><span class="s">, Tmax=</span><span class="si">{</span><span class="n">w</span><span class="o">*</span><span class="p">(</span><span class="n">a</span><span class="o">+</span><span class="mi">20</span><span class="p">)</span><span class="si">}</span><span class="s">'</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Obtemos $a=65.5862\,$m. Com isso, as tensões mínima e máxima são</p>
+
+\[T_\text{min} = \omega a = 3279.3\,\text{N}\]
+
+\[T_\text{max} = \omega (a+20) = 4279.3\,\text{N}\]
+:ET

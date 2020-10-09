@@ -45,12 +45,10 @@ import scipy.optimize as op
 
 L1, L2, H = 15, 10, 4
 
-
 def f(w):
   a = np.sqrt(L1**2-w**2)
   b = np.sqrt(L2**2-w**2)
   return 1/a + 1/b - 1/H
-
 
 W = op.newton(f, 6)
 print(W)

@@ -1,4 +1,4 @@
-I"H<div class="float-right col-md-3">
+I"F<div class="float-right col-md-3">
 <div class="text-center">
 <figure class="figure">
   
@@ -107,12 +107,10 @@
 
 <span class="n">L1</span><span class="p">,</span> <span class="n">L2</span><span class="p">,</span> <span class="n">H</span> <span class="o">=</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">4</span>
 
-
 <span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">w</span><span class="p">):</span>
   <span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">L1</span><span class="o">**</span><span class="mi">2</span><span class="o">-</span><span class="n">w</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
   <span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">L2</span><span class="o">**</span><span class="mi">2</span><span class="o">-</span><span class="n">w</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
   <span class="k">return</span> <span class="mi">1</span><span class="o">/</span><span class="n">a</span> <span class="o">+</span> <span class="mi">1</span><span class="o">/</span><span class="n">b</span> <span class="o">-</span> <span class="mi">1</span><span class="o">/</span><span class="n">H</span>
-
 
 <span class="n">W</span> <span class="o">=</span> <span class="n">op</span><span class="p">.</span><span class="n">newton</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
 <span class="k">print</span><span class="p">(</span><span class="n">W</span><span class="p">)</span>
