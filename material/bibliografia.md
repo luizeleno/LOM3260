@@ -5,7 +5,8 @@ id: biblio
 permalink: /biblio/
 tags: [livros, sites, bibliografia]
 icon: books
-timestamp: 08/06/20
+timestamp: 10/15/2020, 11:09:01 AM
+mathjax: true
 ---
 
 Quase todos os recursos abaixo estão disponíveis *online* ou fisicamente pelo serviço de biblioteca da USP
@@ -21,7 +22,7 @@ Quase todos os recursos abaixo estão disponíveis *online* ou fisicamente pelo 
 
 - *Como Pensar Como um Cientista da Computação - Edição interativa* <https://panda.ime.usp.br/pensepy/static/pensepy/index.html>{: target="\_blank"}
 
-## Específicos de Cálculo Numérico
+### Específicos de Cálculo Numérico
 
 * R. Burden e J. Faires, **Análise Numérica,** Cengage Learning, São Paulo, 2008.
 * Chapra e Canale, **Métodos Numéricos para Engenharia,** 12th ed., McGrawHill 2009.
@@ -43,8 +44,16 @@ Quase todos os recursos abaixo estão disponíveis *online* ou fisicamente pelo 
 
 - Introdução à Ciência da Computação com Python: <https://www.coursera.org/learn/ciencia-computacao-python-conceitos>{: target="\_blank"}
 
+- *The Python Tutorial:* <https://docs.python.org/3/tutorial/>{: target="\_blank"}
+- *NumPy quickstart:* <https://numpy.org/devdocs/user/quickstart.html>{: target="\_blank"}
+- *From Python to Numpy:* <https://www.labri.fr/perso/nrougier/from-python-to-numpy/>{: target="\_blank"}
 - *Pythonic Perambulations:* <https://jakevdp.github.io/>{: target="\_blank"}
 - *Real Python:* <https://realpython.com/>{: target="\_blank"}
 - *Scipy Cookbook:* <https://scipy-cookbook.readthedocs.io/>{: target="\_blank"}
 - *learnpython.org:* <https://www.learnpython.org/>{: target="\_blank"}
 - *Matplotlib tutorial*: <https://github.com/rougier/matplotlib-tutorial>{: target="\_blank"}
+
+## Sobre $\LaTeX$
+
+- Luiz T. F. Eleno, *A  LaTeX tutorial for newbies:* <https://github.com/luizeleno/LaTeX-tutorial-for-newbies>{: target="\_blank"}
+- *Overleaf:* <https://www.overleaf.com>{: target="\_blank"}

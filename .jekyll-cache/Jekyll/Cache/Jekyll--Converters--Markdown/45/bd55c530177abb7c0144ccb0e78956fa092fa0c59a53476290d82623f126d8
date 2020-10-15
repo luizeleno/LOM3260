@@ -1,8 +1,8 @@
-I"�D<p class="lead">O melhor módulo para criar gráficos em python</p>
+I"E<p class="lead">O melhor módulo para criar gráficos em python</p>
 
 <p>É dificílimo superestimar a qualidade do módulo <code class="language-plaintext highlighter-rouge">matplotlib</code>. Ele é extremamente versátil para a criação de uma imensa variedade de gráficos 2D e 3D, com uma qualidade impressionante. Apesar de não ser o único módulo para essa finalidade, ele é sem dúvida o mais difundido mundo afora.</p>
 
-<p>Além disso, é impossível (para mim, que tenho um tempo limitado e usado para muitas tarefas dentro da universidade!) deixar aqui mais do que algumas recomendações para o seu uso, na forma de alguns <em>templates</em> (modelos) de uso de alguns tipos simples de gráfico. Você encontra muitas outras informações na documentação do matplotlib (<a href="https://matplotlib.org/users/index.html">https://matplotlib.org/users/index.html</a>) e em tutoriais espalhados pela internet (recomendo este: <a href="https://github.com/rougier/matplotlib-tutorial">https://github.com/rougier/matplotlib-tutorial</a>).</p>
+<p>Além disso, é impossível (para mim, que tenho um tempo limitado e usado para muitas tarefas dentro da universidade!) deixar aqui mais do que algumas recomendações para o seu uso, na forma de alguns <em>templates</em> (modelos) de uso de alguns tipos simples de gráfico. Você encontra muitas outras informações na documentação do matplotlib (<a href="https://matplotlib.org/users/index.html" target="\_blank">https://matplotlib.org/users/index.html</a>) e em tutoriais espalhados pela internet (recomendo este: <a href="https://github.com/rougier/matplotlib-tutorial" target="\_blank">https://github.com/rougier/matplotlib-tutorial</a>).</p>
 
 <p>Nesse curso veremos apenas como fazer gráficos 2D com o módulo <code class="language-plaintext highlighter-rouge">matplotlib.pyplot</code>. Teste os exemplos abaixo na caixa do trinket.io para ver o que acontece.</p>
 

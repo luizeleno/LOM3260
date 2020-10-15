@@ -1,4 +1,4 @@
-I"�<p class="lead">Quase todos os recursos abaixo estão disponíveis <em>online</em> ou fisicamente pelo serviço de biblioteca da USP</p>
+I"*<p class="lead">Quase todos os recursos abaixo estão disponíveis <em>online</em> ou fisicamente pelo serviço de biblioteca da USP</p>
 
 <h2 id="livros">Livros</h2>
 
@@ -14,7 +14,7 @@
   <li><em>Como Pensar Como um Cientista da Computação - Edição interativa</em> <a href="https://panda.ime.usp.br/pensepy/static/pensepy/index.html" target="\_blank">https://panda.ime.usp.br/pensepy/static/pensepy/index.html</a></li>
 </ul>
 
-<h2 id="específicos-de-cálculo-numérico">Específicos de Cálculo Numérico</h2>
+<h3 id="específicos-de-cálculo-numérico">Específicos de Cálculo Numérico</h3>
 
 <ul>
   <li>R. Burden e J. Faires, <strong>Análise Numérica,</strong> Cengage Learning, São Paulo, 2008.</li>
@@ -42,10 +42,20 @@
   <li>
     <p>Introdução à Ciência da Computação com Python: <a href="https://www.coursera.org/learn/ciencia-computacao-python-conceitos" target="\_blank">https://www.coursera.org/learn/ciencia-computacao-python-conceitos</a></p>
   </li>
+  <li><em>The Python Tutorial:</em> <a href="https://docs.python.org/3/tutorial/" target="\_blank">https://docs.python.org/3/tutorial/</a></li>
+  <li><em>NumPy quickstart:</em> <a href="https://numpy.org/devdocs/user/quickstart.html" target="\_blank">https://numpy.org/devdocs/user/quickstart.html</a></li>
+  <li><em>From Python to Numpy:</em> <a href="https://www.labri.fr/perso/nrougier/from-python-to-numpy/" target="\_blank">https://www.labri.fr/perso/nrougier/from-python-to-numpy/</a></li>
   <li><em>Pythonic Perambulations:</em> <a href="https://jakevdp.github.io/" target="\_blank">https://jakevdp.github.io/</a></li>
   <li><em>Real Python:</em> <a href="https://realpython.com/" target="\_blank">https://realpython.com/</a></li>
   <li><em>Scipy Cookbook:</em> <a href="https://scipy-cookbook.readthedocs.io/" target="\_blank">https://scipy-cookbook.readthedocs.io/</a></li>
   <li><em>learnpython.org:</em> <a href="https://www.learnpython.org/" target="\_blank">https://www.learnpython.org/</a></li>
   <li><em>Matplotlib tutorial</em>: <a href="https://github.com/rougier/matplotlib-tutorial" target="\_blank">https://github.com/rougier/matplotlib-tutorial</a></li>
+</ul>
+
+<h2 id="sobre-latex">Sobre $\LaTeX$</h2>
+
+<ul>
+  <li>Luiz T. F. Eleno, <em>A  LaTeX tutorial for newbies:</em> <a href="https://github.com/luizeleno/LaTeX-tutorial-for-newbies" target="\_blank">https://github.com/luizeleno/LaTeX-tutorial-for-newbies</a></li>
+  <li><em>Overleaf:</em> <a href="https://www.overleaf.com" target="\_blank">https://www.overleaf.com</a></li>
 </ul>
 :ET

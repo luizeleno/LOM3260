@@ -3,7 +3,7 @@ title: O módulo matplotlib
 parent: temafive
 status: yellow
 tags: [numpy, matplotlib, pyplot, plt, arrays, gráficos, plots, scatter, desvios, erro, barra, legenda, eixos]
-timestamp: 21/08/20
+timestamp: 10/15/2020, 11:15:31 AM
 ---
 
 O melhor módulo para criar gráficos em python
@@ -11,7 +11,7 @@ O melhor módulo para criar gráficos em python
 
 É dificílimo superestimar a qualidade do módulo `matplotlib`. Ele é extremamente versátil para a criação de uma imensa variedade de gráficos 2D e 3D, com uma qualidade impressionante. Apesar de não ser o único módulo para essa finalidade, ele é sem dúvida o mais difundido mundo afora.
 
-Além disso, é impossível (para mim, que tenho um tempo limitado e usado para muitas tarefas dentro da universidade!) deixar aqui mais do que algumas recomendações para o seu uso, na forma de alguns *templates* (modelos) de uso de alguns tipos simples de gráfico. Você encontra muitas outras informações na documentação do matplotlib (<https://matplotlib.org/users/index.html>) e em tutoriais espalhados pela internet (recomendo este: <https://github.com/rougier/matplotlib-tutorial>).
+Além disso, é impossível (para mim, que tenho um tempo limitado e usado para muitas tarefas dentro da universidade!) deixar aqui mais do que algumas recomendações para o seu uso, na forma de alguns *templates* (modelos) de uso de alguns tipos simples de gráfico. Você encontra muitas outras informações na documentação do matplotlib (<https://matplotlib.org/users/index.html>{: target="\_blank"}) e em tutoriais espalhados pela internet (recomendo este: <https://github.com/rougier/matplotlib-tutorial>{: target="\_blank"}).
 
 Nesse curso veremos apenas como fazer gráficos 2D com o módulo `matplotlib.pyplot`. Teste os exemplos abaixo na caixa do trinket.io para ver o que acontece.
 
