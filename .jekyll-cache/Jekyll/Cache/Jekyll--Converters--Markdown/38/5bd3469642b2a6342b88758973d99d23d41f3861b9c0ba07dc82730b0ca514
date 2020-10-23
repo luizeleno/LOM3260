@@ -1,21 +1,21 @@
-I"�M
+I"�M
 <h3 id="acesso-rápido">Acesso rápido</h3>
 
-<p><a href="#ex1" class="badge badge-primary">Ex. 1</a>
-  <a href="#ex2" class="badge badge-primary">Ex. 2</a>
+<p><a href="#ex1" class="badge badge-danger">Ex. 1</a>
+  <a href="#ex2" class="badge badge-danger">Ex. 2</a>
   <a href="#ex3" class="badge badge-success">Ex. 3</a>
   <a href="#ex4" class="badge badge-primary">Ex. 4</a>
   <a href="#ex5" class="badge badge-primary">Ex. 5</a>
   <a href="#ex6" class="badge badge-primary">Ex. 6</a>
   <a href="#ex7" class="badge badge-primary">Ex. 7</a>
   <a href="#ex8" class="badge badge-success">Ex. 8</a>
-  <a href="#ex9" class="badge badge-primary">Ex. 9</a></p>
+  <a href="#ex9" class="badge badge-danger">Ex. 9</a></p>
 
 <h3 id="instruções">Instruções</h3>
 
 <ul>
-  <li>os exercícios marcados em <span class="badge badge-success">verde</span> foram resolvidos em sala de aula. Uma possível solução é fornecida aqui, junto ao exercício.
-<!-- - os exercícios marcados em <span class="badge badge-warning">amarelo</span> devem ser entregues no dia 08/10/2020. --></li>
+  <li>os exercícios marcados em <span class="badge badge-success">verde</span> foram resolvidos em sala de aula. Uma possível solução é fornecida aqui, junto ao exercício.</li>
+  <li>os exercícios marcados em <span class="badge badge-danger">vermelho</span> devem ser entregues no dia 05/11/2020.</li>
   <li>as porcentagens no começo de cada exercício são uma maneira de indicar o seu grau de dificuldade. Mas não se apegue muito a esses valores: talvez você ache fáceis alguns que eu julgo como difíceis — e vice versa!</li>
   <li>pode-se usar recursos do módulo <code class="language-plaintext highlighter-rouge">scipy.optimize</code> à vontade.</li>
   <li>para fazer gráficos rápidos e ajudar a encontrar graficamente raízes, use recursos <em>online</em> como os do <a href="https://www.desmos.com/calculator" target="_blank">www.desmos.com</a>.</li>

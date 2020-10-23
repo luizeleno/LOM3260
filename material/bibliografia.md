@@ -9,7 +9,7 @@ timestamp: 10/15/2020, 11:09:01 AM
 mathjax: true
 ---
 
-Quase todos os recursos abaixo estão disponíveis *online* ou fisicamente pelo serviço de biblioteca da USP
+Quase todos os recursos abaixo estão disponíveis *online* ou fisicamente pelo serviço de bibliotecas da USP
 {: .lead }
 
 ## Livros

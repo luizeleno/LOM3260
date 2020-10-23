@@ -1417,23 +1417,27 @@
   <a href="#ex26" class="badge badge-primary">Ex. 26</a>
   <a href="#ex27" class="badge badge-success">Ex. 27</a>
   <a href="#ex28" class="badge badge-success">Ex. 28</a>
-  <a href="#ex29" class="badge badge-primary">Ex. 29</a>
-  <a href="#ex30" class="badge badge-primary">Ex. 30</a>
+  <a href="#ex29" class="badge badge-success">Ex. 29</a>
+  <a href="#ex30" class="badge badge-danger">Ex. 30</a>
   <a href="#ex31" class="badge badge-primary">Ex. 31</a></p>
 
 <h3 id="instruções">Instruções</h3>
 <ul>
   <li>os exercícios marcados em <span class="badge badge-success">verde</span> foram resolvidos em sala de aula. Uma possível solução é fornecida aqui, junto ao exercício.</li>
   <li>os exercícios marcados em <span class="badge badge-warning">amarelo</span> devem ser entregues no dia 08/10/2020.</li>
-  <li>as porcentagens no começo de cada exercício são uma maneira de indicar o seu grau de dificuldade. Mas não se apegue muito a esses valores: talvez você ache fáceis alguns que eu julgo como difíceis — e vice versa!</li>
+  <li>os exercícios marcados em <span class="badge badge-danger">vermelho</span> devem ser entregues no dia 05/11/2020.</li>
+  <li>
+    <p>as porcentagens no começo de cada exercício são uma maneira de indicar o seu grau de dificuldade. Mas não se apegue muito a esses valores: talvez você ache fáceis alguns que eu julgo como difíceis — e vice versa!</p>
+  </li>
   <li>
 <strong>Legenda:</strong>
-<img src="/LOM3260/assets/images/legenda/ifthenelse.jpg" alt="" title="decisão" width="20px">’ : decisão;
-<img src="/LOM3260/assets/images/legenda/loop.png" alt="" title="repetição" width="20px">’ : repetição;
-<img src="/LOM3260/assets/images/legenda/function.png" alt="" title="função" width="20px">’ : função;
-<img src="/LOM3260/assets/images/legenda/dict.png" alt="" title="dicionário" width="20px">’ : dicionários;
-<img src="/LOM3260/assets/images/legenda/list.png" alt="" title="lista" width="20px">’ : listas;
-<img src="/LOM3260/assets/images/legenda/string.jpg" alt="" title="string" width="20px">’ : <em>strings</em>.</li>
+<img src="/LOM3260/assets/images/legenda/ifthenelse.jpg" alt="" title="decisão" width="20px">: decisão;
+<img src="/LOM3260/assets/images/legenda/loop.png" alt="" title="repetição" width="20px">: repetição;
+<img src="/LOM3260/assets/images/legenda/function.png" alt="" title="função" width="20px">: função;
+<img src="/LOM3260/assets/images/legenda/dict.png" alt="" title="dicionário" width="35px">: dicionários;
+<img src="/LOM3260/assets/images/legenda/list.png" alt="" title="lista" width="20px">: listas;
+<img src="/LOM3260/assets/images/legenda/string.jpg" alt="" title="string" width="30px">: <em>strings</em>;
+<img src="/LOM3260/assets/images/legenda/recursion.png" alt="" title="string" width="25px">: recursão.</li>
 </ul>
 
 <hr>
@@ -3157,6 +3161,7 @@ seqüência de traços e pontos. Seu programa deve ignorar quaisquer caracteres 
         </ul>
 
         
+          
           <p>O triângulo de Pascal é uma tabela de números construída assim: o elemento da linha $i$ e coluna $j$ (com $0 \le j \le i$ e começando de cima, onde $i=j=0$) é dado por</p>
 
 \[a_{i,j} =
@@ -3181,7 +3186,97 @@ a_{i-1,j} + a_{i-1,j-1} \,, \text{ se } 1 \lt j \lt  i
   <li>Modifique o código para substituir os números ímpares do triângulo por 1 e os pares por 0. Use um valor alto de $n$ (algo em torno de 500) e salve o resultado numa matriz. Por fim, use o comando <code class="language-plaintext highlighter-rouge">imshow()</code> do módulo <code class="language-plaintext highlighter-rouge">matplotlib.pyplot</code> para exibir graficamente o resultado, que é muito parecido com o fractal chamado de <em>Triângulo de Sierpinski</em> (clique <a href="https://pt.wikipedia.org/wiki/Tri%C3%A2ngulo_de_Sierpinski" target="blank">aqui</a> e veja na Wikipedia).</li>
 </ol>
 
+
         
+        
+
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="collapse" data-target="#pascal" aria-expanded="false" aria-controls="pascal">
+          Solução
+        </button>
+        <div class="collapse" id="pascal">
+          <div class="card card-body">
+            
+
+<p>Segue uma função usando um <em>array</em>  em <code class="language-plaintext highlighter-rouge">numpy</code>:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+
+<span class="k">def</span> <span class="nf">pascal</span><span class="p">(</span><span class="n">N</span><span class="p">):</span>
+    <span class="s">'''
+    gera as N primeiras linhas do triângulo de Pascal
+    (supoe N inteiro não-negativo)
+    '''</span>
+    <span class="n">v</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">N</span><span class="p">,</span> <span class="n">N</span><span class="p">))</span>  <span class="c1"># uma matriz NxN de 0'
+</span>    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="p">):</span>  <span class="c1"># laço para gerar as linhas
+</span>        <span class="n">v</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>  <span class="c1"># laço pelas colunas
+</span>            <span class="n">v</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">v</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">j</span><span class="p">]</span> <span class="o">+</span> <span class="n">v</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+
+    <span class="k">return</span> <span class="n">v</span>
+</code></pre></div></div>
+
+<p>Para a segunda parte do exercício, podemos usar a função acima, aliada ao poder de arrays em numpy, e calcular diretamente o resto da divisão por 2. Isso automaticamente substituirá números pares por 0 e ímpares por 1:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">N</span> <span class="o">=</span> <span class="mi">500</span>
+<span class="n">tri</span> <span class="o">=</span> <span class="n">pascal</span><span class="p">(</span><span class="n">N</span><span class="p">)</span> <span class="o">%</span> <span class="mi">2</span>
+
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+
+<span class="n">plt</span><span class="p">.</span><span class="n">figure</span><span class="p">()</span>
+<span class="n">plt</span><span class="p">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">tri</span><span class="p">,</span> <span class="n">interpolation</span><span class="o">=</span><span class="s">'none'</span><span class="p">)</span>
+<span class="n">plt</span><span class="p">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p class="alert alert-warning"><img class="emoji" title=":exclamation:" alt=":exclamation:" src="https://github.githubassets.com/images/icons/emoji/unicode/2757.png" height="20" width="20"> É um bom hábito de programação carregar todos os módulos no começo do arquivo, e não fazer como no exemplo acima, em que carreguei o módulo <code class="language-plaintext highlighter-rouge">matplotlib.pyplot</code> no meio do código (um exemplo do ditado <em>faça o que eu digo, não faça o que eu faço…</em>).</p>
+
+<p>O resultado é a imagem abaixo:</p>
+
+<div class="text-center">
+<figure class="figure">
+  
+  <a href="#" data-toggle="modal" data-target="#pascaltri">
+  
+    <img class="figure-img img-fluid rounded mx-auto" src="/LOM3260/assets/images/sierpinski-pascal.png" alt="Pascal modificado - Sierpinski" title="Pascal modificado - Sierpinski">
+  
+  </a>
+  
+  
+  <figcaption class="figure-caption">
+    Pascal modificado - Sierpinski
+  </figcaption>
+  
+
+<!-- Modal -->
+
+<div class="modal fade" id="pascaltri" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-light bg-dark">
+        <h5>Pascal modificado - Sierpinski</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span class="text-light" aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <a id="no-ext-link" href="/LOM3260/assets/images/sierpinski-pascal.png" target="_blank">
+        <img class="figure-img img-fluid rounded w-100mx-auto" src="/LOM3260/assets/images/sierpinski-pascal.png" alt="Pascal modificado - Sierpinski" title="Pascal modificado - Sierpinski">
+        </a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">OK</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</figure>
+</div>
+
+
+          </div>
+        </div>
+
         
 
     </div>
@@ -3576,7 +3671,7 @@ quadrado:</li>
 
 <hr>
 <p class="small">
-  <i> Página atualizada em 9/17/2020, 1:39:00 PM</i>
+  <i> Página atualizada em 10/23/2020, 9:12:44 AM</i>
 </p>
 
 
