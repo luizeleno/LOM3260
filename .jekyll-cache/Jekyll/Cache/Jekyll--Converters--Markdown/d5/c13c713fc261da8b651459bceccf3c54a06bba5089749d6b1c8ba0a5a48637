@@ -1,0 +1,45 @@
+I"|<p>A figura representa a fotografia de um lago, com as medidas dadas em quilômetros. Calcule a área do lago usando a regra de Simpson.</p>
+
+<div class="text-center">
+<figure class="figure">
+  
+  <a href="#" data-toggle="modal" data-target="#lago">
+  
+    <img class="figure-img img-fluid rounded mx-auto" src="/LOM3260/assets/images/tikz/lago.png" alt="Um lago" title="Um lago" />
+  
+  </a>
+  
+  
+  <figcaption class="figure-caption">
+    Um lago
+  </figcaption>
+  
+
+<!-- Modal -->
+
+<div class="modal fade" id="lago" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-light bg-dark">
+        <h5>Um lago</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span class="text-light" aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <a id="no-ext-link" href="/LOM3260/assets/images/tikz/lago.png" target="_blank">
+        <img class="figure-img img-fluid rounded w-100mx-auto" src="/LOM3260/assets/images/tikz/lago.png" alt="Um lago" title="Um lago" />
+        </a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">OK</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</figure>
+</div>
+
+:ET

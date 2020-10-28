@@ -1,0 +1,54 @@
+﻿\begin{tikzpicture}[scale=.3]
+
+\coordinate (A0) at (0,0);
+\coordinate (A1) at (6,7);
+\coordinate (A2) at (12,6);
+\coordinate (A3) at (18,9);
+\coordinate (A4) at (24,10);
+\coordinate (A5) at (30,9);
+\coordinate (A6) at (36,8);
+\coordinate (A7) at (42,6);
+\coordinate (A8) at (48,0);
+\coordinate (A9) at (40,-7);
+\coordinate (A10) at (32,-8);
+\coordinate (A11) at (24,-9);
+\coordinate (A12) at (16,-5);
+\coordinate (A13) at (8,-4);
+
+\coordinate (B0) at (0,0);
+\coordinate (B1) at (6,0);
+\coordinate (B2) at (12,0);
+\coordinate (B3) at (18,0);
+\coordinate (B4) at (24,0);
+\coordinate (B5) at (30,0);
+\coordinate (B6) at (36,0);
+\coordinate (B7) at (42,0);
+\coordinate (B8) at (48,0);
+\coordinate (B9) at (40,0);
+\coordinate (B10) at (32,0);
+\coordinate (B11) at (24,0);
+\coordinate (B12) at (16,0);
+\coordinate (B13) at (8,0);
+
+\draw[->] (-1,0) -- (50,0) node[right] {$x$};
+\draw[->] (0,-10) -- (0,11) node[right] {$y$};
+
+\draw plot[smooth cycle] coordinates {(A0) (A1)  (A2)  (A3)  (A4)  (A5) (A6) (A7) (A8) (A9) (A10) (A11) (A12) (A13)};
+
+\draw[dashed] (B0) node[below left] {0};
+\draw[dashed] (B1) node[below] {6} -- node[right] {7} (A1);
+\draw[dashed] (B2) node[below] {12} -- node[right] {6} (A2);
+\draw[dashed] (B3) node[below] {18} -- node[right] {9} (A3);
+\draw[dashed] (B4) node[below right] {24} -- node[right] {10} (A4);
+\draw[dashed] (B5) node[below] {30} -- node[right] {9} (A5);
+\draw[dashed] (B6) node[below] {36} -- node[right] {8} (A6);
+\draw[dashed] (B7) node[below] {42} -- node[right] {6} (A7);
+\draw[dashed] (B8) node[below, xshift=4] {48} ;
+\draw[dashed] (B9) node[above] {40} -- node[right] {7} (A9);
+\draw[dashed] (B10) node[above] {32} -- node[right] {8} (A10);
+\draw[dashed] (B11) -- node[right] {9} (A11);
+\draw[dashed] (B12) node[above] {16} -- node[right] {5} (A12);
+\draw[dashed] (B13) node[above] {8} -- node[right] {4} (A13);
+
+
+\end{tikzpicture}

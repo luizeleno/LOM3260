@@ -1,0 +1,293 @@
+I"� 
+<h3 id="acesso-rápido">Acesso rápido</h3>
+
+<p><a href="#ex1" class="badge badge-primary">Ex. 1</a>
+  <a href="#ex2" class="badge badge-primary">Ex. 2</a>
+  <a href="#ex3" class="badge badge-primary">Ex. 3</a>
+  <a href="#ex4" class="badge badge-primary">Ex. 4</a>
+  <a href="#ex5" class="badge badge-primary">Ex. 5</a>
+  <a href="#ex6" class="badge badge-primary">Ex. 6</a>
+  <a href="#ex7" class="badge badge-primary">Ex. 7</a></p>
+
+<h3 id="instruções">Instruções</h3>
+
+<ul>
+  <li>as porcentagens no começo de cada exercício são uma maneira de indicar o seu grau de dificuldade. Mas não se apegue muito a esses valores: talvez você ache fáceis alguns que eu julgo como difíceis — e vice versa!</li>
+  <li>use recursos dos módulos <code class="language-plaintext highlighter-rouge">scipy.integrate</code> à vontade</li>
+</ul>
+
+<hr />
+
+<div class="card mb-2">
+    <a name="ex1"></a><h2 class="card-title alert alert-primary">Exercício 1: Carro de corrida</h2>
+    <div class="card-body">
+        <ul>
+            <li><i><b>dificuldade:</b></i> 25%</li>
+            
+        </ul>
+
+        
+          <p>Um carro de corrida termina uma volta de certo circuito em 84 segundos. Durante a volta, medidas de velocidade (<strong>v</strong>) foram tomadas a cada 6 segundos e resultaram nos valores listados abaixo:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>t (s)</th>
+      <th>v (km/h)</th>
+      <th>t (s)</th>
+      <th>v (km/h)</th>
+      <th>t (s)</th>
+      <th>v (km/h)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>124</td>
+      <td>30</td>
+      <td>133</td>
+      <td>60</td>
+      <td>78</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>134</td>
+      <td>36</td>
+      <td>121</td>
+      <td>66</td>
+      <td>89</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>148</td>
+      <td>42</td>
+      <td>109</td>
+      <td>72</td>
+      <td>104</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>156</td>
+      <td>48</td>
+      <td>99</td>
+      <td>78</td>
+      <td>116</td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td>147</td>
+      <td>54</td>
+      <td>85</td>
+      <td>84</td>
+      <td>123</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Qual é a extensão da pista? Estime o resultado usando tanto o método dos trapézios quanto o de Simpson.</p>
+
+        
+        
+
+    </div>
+</div>
+
+<div class="card mb-2">
+    <a name="ex2"></a><h2 class="card-title alert alert-primary">Exercício 2: Superfície de um lago</h2>
+    <div class="card-body">
+        <ul>
+            <li><i><b>dificuldade:</b></i> 35%</li>
+            
+        </ul>
+
+        
+          <p>A figura representa a fotografia de um lago, com as medidas dadas em quilômetros. Calcule a área do lago usando a regra de Simpson.</p>
+
+<div class="text-center">
+<figure class="figure">
+  
+  <a href="#" data-toggle="modal" data-target="#lago">
+  
+    <img class="figure-img img-fluid rounded mx-auto" src="/LOM3260/assets/images/tikz/lago.png" alt="Um lago" title="Um lago" />
+  
+  </a>
+  
+  
+  <figcaption class="figure-caption">
+    Um lago
+  </figcaption>
+  
+
+<!-- Modal -->
+
+<div class="modal fade" id="lago" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-light bg-dark">
+        <h5>Um lago</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span class="text-light" aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <a id="no-ext-link" href="/LOM3260/assets/images/tikz/lago.png" target="_blank">
+        <img class="figure-img img-fluid rounded w-100mx-auto" src="/LOM3260/assets/images/tikz/lago.png" alt="Um lago" title="Um lago" />
+        </a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">OK</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</figure>
+</div>
+
+
+        
+        
+
+    </div>
+</div>
+
+<div class="card mb-2">
+    <a name="ex3"></a><h2 class="card-title alert alert-primary">Exercício 3: Perímetro da elipse</h2>
+    <div class="card-body">
+        <ul>
+            <li><i><b>dificuldade:</b></i> 25%</li>
+            
+        </ul>
+
+        
+          <p>O perímetro de uma elipse com semi-eixo maior $a$ e semi-eixo menor $b$ é dado por</p>
+
+\[C = 4a \int_0^{\pi/2} \sqrt{ 1 - e^2 \cos^2 \theta} \, d\theta\]
+
+<p>sendo</p>
+
+\[e = \sqrt{ 1 - \left(\frac{b}{a} \right)^2 }\]
+
+<p>a <em>excentricidade</em> da elipse (se $b&gt;a$, troque as posições de $a$ e $b$ na fração).</p>
+
+<ol>
+  <li>Calcule $C$ quando $a=20\,$cm e $b=10\,$cm.</li>
+  <li>Faça um gráfico de $C$ em função de $e$ para $a=10\,$cm no intervalo $0.1 \le e \le 10$. No mesmo gráfico, mostre o perímetro de um círculo de raio $a$.</li>
+</ol>
+
+        
+        
+
+    </div>
+</div>
+
+<div class="card mb-2">
+    <a name="ex4"></a><h2 class="card-title alert alert-primary">Exercício 4: A função erro</h2>
+    <div class="card-body">
+        <ul>
+            <li><i><b>dificuldade:</b></i> 40%</li>
+            
+        </ul>
+
+        
+          <p>A <strong>função erro</strong> $(\mathrm{erf})$ é importante em Estatística, Transferência de Calor e Mecânica Quântica, entre outras áreas do conhecimento. Ela é definida pela seguinte integral:</p>
+
+\[\mathrm{erf}\,(x) = \frac{2}{\sqrt{\pi}} \int_0^x e^{-t^2} \, dt\,,\]
+
+<ol>
+  <li>Monte uma tabela da função erro com seis casas decimais para valores de $x$ no intervalo $[0,\ 3]$ com um passo $\Delta x=0.1$.</li>
+  <li>Faça um gráfico da função no mesmo intervalo.</li>
+  <li>Estime graficamente o valor do limite</li>
+</ol>
+
+\[\lim_{x\to\infty} \mathrm{erf}\,(x) \,.\]
+
+        
+        
+
+    </div>
+</div>
+
+<div class="card mb-2">
+    <a name="ex5"></a><h2 class="card-title alert alert-primary">Exercício 5: Capacidade térmica de sólidos</h2>
+    <div class="card-body">
+        <ul>
+            <li><i><b>dificuldade:</b></i> 50%</li>
+            
+        </ul>
+
+        
+          <p>A  <strong>função de Debye</strong> é definida como</p>
+
+\[D(x) = \frac{9}{x^3} \int_0^x \frac{u^4 e^u}{(e^u-1)^2} du\]
+
+<p>(cuidado! O integrando não é definido em $u=0$ e você tem que tomar cuidado ao calcular a integral).</p>
+
+<p>No <em>modelo de Debye</em>, o <strong>calor específico molar</strong> de um sólido a volume constante é dado por</p>
+
+\[c_v(T) = R D\left(\frac{\theta_D}{T}\right)\]
+
+<p>sendo $T$ a temperatura em Kelvin, $\theta_D$ a <strong>temperatura de Debye</strong> do material e $R=8.31451\,$J$\,$mol$\,^{-1}$K$\,^{-1}$ a constante universal dos gases. O calor específico molar mede a quantidade de calor que um mol do material absorve/libera numa variação de temperatura.</p>
+
+<ol>
+  <li>Implemente a função de Debye em python.</li>
+  <li>Faça um gráfico de $c_v$ em função de $T$ para o diamante, para o qual $\theta_D=1849\,$K. No mesmo gráfico, mostre os pontos experimentais encontrados nos seguintes artigos:
+    <ul>
+      <li>K. S. Pitzer, <em>J. Chem. Phys.</em> <strong>6</strong> (1938) 68;</li>
+      <li>A. C. Victor, <em>J. Chem. Phys.</em> <strong>36</strong> (1962) 1903.</li>
+    </ul>
+
+    <p>Os dados estão <a href="/LOM3260/assets/data/diamante.dat">neste arquivo</a>.</p>
+  </li>
+</ol>
+
+        
+        
+
+    </div>
+</div>
+
+<div class="card mb-2">
+    <a name="ex6"></a><h2 class="card-title alert alert-primary">Exercício 6: Erro na integração 1</h2>
+    <div class="card-body">
+        <ul>
+            <li><i><b>dificuldade:</b></i> 20%</li>
+            
+        </ul>
+
+        
+          <p>Delimite o erro que se comete ao calcular</p>
+
+\[\int_0^{0.4} e^x dx\]
+
+<p>pela fórmula de Simpson com $h=0.1$.</p>
+
+        
+        
+
+    </div>
+</div>
+
+<div class="card mb-2">
+    <a name="ex7"></a><h2 class="card-title alert alert-primary">Exercício 7: Erro na integração 2</h2>
+    <div class="card-body">
+        <ul>
+            <li><i><b>dificuldade:</b></i> 30%</li>
+            
+        </ul>
+
+        
+          <p>Deseja-se calcular</p>
+
+\[\ln 2 = \int_1^{2} \frac{dx}{x}\]
+
+<p>com erro inferior a $1/2400$ usando a fórmula dos trapézios. Qual deve ser o passo escolhido? Repita o exercício para a fórmula de Simpson.</p>
+
+        
+        
+
+    </div>
+</div>
+
+:ET

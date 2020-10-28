@@ -1,14 +1,14 @@
-I"�<p>Um carro de corrida termina uma volta de certo circuito em 84 segundos. Durante a volta, medidas de velocidade ($v$) foram tomadas a cada 6 segundos e resultaram nos valores listados abaixo:</p>
+I"�<p>Um carro de corrida termina uma volta de certo circuito em 84 segundos. Durante a volta, medidas de velocidade (<strong>v</strong>) foram tomadas a cada 6 segundos e resultaram nos valores listados abaixo:</p>
 
 <table>
   <thead>
     <tr>
-      <th>$t$ (s)</th>
-      <th>$v$ (km/h)</th>
-      <th>$t$ (s)</th>
-      <th>$v$ (km/h)</th>
-      <th>$t$ (s)</th>
-      <th>$v$ (km/h)</th>
+      <th>t (s)</th>
+      <th>v (km/h)</th>
+      <th>t (s)</th>
+      <th>v (km/h)</th>
+      <th>t (s)</th>
+      <th>v (km/h)</th>
     </tr>
   </thead>
   <tbody>
@@ -55,5 +55,5 @@
   </tbody>
 </table>
 
-<p>Qual é a extensão da pista? Estime o erro comparando os resultados das regras dos trapézios e de Simpson.</p>
+<p>Qual é a extensão da pista? Estime o resultado usando tanto o método dos trapézios quanto o de Simpson.</p>
 :ET

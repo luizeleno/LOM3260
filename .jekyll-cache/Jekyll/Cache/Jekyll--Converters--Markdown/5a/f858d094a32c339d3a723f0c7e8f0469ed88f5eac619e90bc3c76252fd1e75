@@ -1,0 +1,15 @@
+I"8<p>O perímetro de uma elipse com semi-eixo maior $a$ e semi-eixo menor $b$ é dado por</p>
+
+\[C = 4a \int_0^{\pi/2} \sqrt{ 1 - e^2 \cos^2 \theta} \, d\theta\]
+
+<p>sendo</p>
+
+\[e = \sqrt{ 1 - \left(\frac{b}{a} \right)^2 }\]
+
+<p>a <em>excentricidade</em> da elipse (se $b&gt;a$, troque as posições de $a$ e $b$ na fração).</p>
+
+<ol>
+  <li>Calcule $C$ quando $a=20\,$cm e $b=10\,$cm.</li>
+  <li>Faça um gráfico de $C$ em função de $e$ para $a=10\,$cm no intervalo $0.1 \le e \le 10$. No mesmo gráfico, mostre o perímetro de um círculo de raio $a$.</li>
+</ol>
+:ET

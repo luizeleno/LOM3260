@@ -1,4 +1,4 @@
-I"�<p>A <strong>função erro</strong> $(\mathrm{erf})$ é importante em Estatística, Transferência de Calor e Mecânica Quântica, entre outras áreas do conhecimento. Ela é definida pela seguinte integral:</p>
+I"Q<p>A <strong>função erro</strong> $(\mathrm{erf})$ é importante em Estatística, Transferência de Calor e Mecânica Quântica, entre outras áreas do conhecimento. Ela é definida pela seguinte integral:</p>
 
 \[\mathrm{erf}\,(x) = \frac{2}{\sqrt{\pi}} \int_0^x e^{-t^2} \, dt\,,\]
 
@@ -8,7 +8,5 @@
   <li>Estime graficamente o valor do limite</li>
 </ol>
 
-\[\lim_{x\to\infty} \mathrm{erf}\,(x)\]
-
-<p>e explique o porquê do resultado encontrado.</p>
+\[\lim_{x\to\infty} \mathrm{erf}\,(x) \,.\]
 :ET

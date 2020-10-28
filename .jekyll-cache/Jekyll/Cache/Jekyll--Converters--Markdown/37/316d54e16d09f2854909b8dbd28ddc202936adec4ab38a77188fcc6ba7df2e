@@ -1,4 +1,4 @@
-I"�
+I"�
 <h3 id="acesso-rápido">Acesso rápido</h3>
 
 <p><a href="#ex1" class="badge badge-success">Ex. 1</a>
@@ -34,9 +34,9 @@
   <a href="#ex31" class="badge badge-primary">Ex. 31</a></p>
 
 <h3 id="instruções">Instruções</h3>
+
 <ul>
-  <li>os exercícios marcados em <span class="badge badge-success">verde</span> foram resolvidos em sala de aula. Uma possível solução é fornecida aqui, junto ao exercício.</li>
-  <li>os exercícios marcados em <span class="badge badge-warning">amarelo</span> devem ser entregues no dia 08/10/2020.</li>
+  <li>os exercícios marcados em <span class="badge badge-success">verde</span> foram resolvidos em sala de aula. Uma possível solução é fornecida aqui, junto ao exercício.- os exercícios marcados em <span class="badge badge-warning">amarelo</span> devem ser entregues no dia 08/10/2020.</li>
   <li>os exercícios marcados em <span class="badge badge-danger">vermelho</span> devem ser entregues no dia 05/11/2020.</li>
   <li>
     <p>as porcentagens no começo de cada exercício são uma maneira de indicar o seu grau de dificuldade. Mas não se apegue muito a esses valores: talvez você ache fáceis alguns que eu julgo como difíceis — e vice versa!</p>

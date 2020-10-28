@@ -1,9 +1,10 @@
 ---
-nav_order: 11
+nav_order: 4
 dificuldade: 40
 #tags: [loop, list, func]
 mathjax: true
 title: A função erro
+label: erf
 ---
 
 A **função erro** $(\mathrm{erf})$ é importante em Estatística, Transferência de Calor e Mecânica Quântica, entre outras áreas do conhecimento. Ela é definida pela seguinte integral:
@@ -17,7 +18,5 @@ $$
 3. Estime graficamente o valor do limite
 
 $$
-\lim_{x\to\infty} \mathrm{erf}\,(x)
+\lim_{x\to\infty} \mathrm{erf}\,(x) \,.
 $$
-
-e explique o porquê do resultado encontrado.

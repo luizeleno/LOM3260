@@ -32,7 +32,7 @@
 <meta property="og:url" content="https://computeel.org/LOM3260/material/exercicios/lista3.html" />
 <meta property="og:site_name" content="LOM3260" />
 <script type="application/ld+json">
-{"dateModified":"2020-10-05T16:10:26-03:00","@type":"WebPage","headline":"Terceira Lista","url":"https://computeel.org/LOM3260/material/exercicios/lista3.html","author":{"@type":"Person","name":"Luiz T. F. Eleno"},"description":"Computação Científica em Python - uma disciplina do curso de Engenharia Física da Escola de Engenharia de Lorena da Universidade de São Paulo - EEL USP","@context":"https://schema.org"}</script>
+{"@type":"WebPage","dateModified":"2020-10-05T16:10:26-03:00","url":"https://computeel.org/LOM3260/material/exercicios/lista3.html","author":{"@type":"Person","name":"Luiz T. F. Eleno"},"description":"Computação Científica em Python - uma disciplina do curso de Engenharia Física da Escola de Engenharia de Lorena da Universidade de São Paulo - EEL USP","headline":"Terceira Lista","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -659,6 +659,10 @@
           
             
 
+            
+              
+                <li class="active list-group-item list-group-item-action list-group-item-secondary my-0">Terceira Lista </li>
+              
             
           
             
@@ -1315,6 +1319,10 @@
             
 
             
+              
+                <li class="active list-group-item list-group-item-action list-group-item-secondary my-0">Terceira Lista </li>
+              
+            
           
             
 
@@ -1393,11 +1401,16 @@
 
 <p><a href="#ex1" class="badge badge-primary">Ex. 1</a>
   <a href="#ex2" class="badge badge-primary">Ex. 2</a>
-  <a href="#ex3" class="badge badge-primary">Ex. 3</a></p>
+  <a href="#ex3" class="badge badge-primary">Ex. 3</a>
+  <a href="#ex4" class="badge badge-primary">Ex. 4</a>
+  <a href="#ex5" class="badge badge-primary">Ex. 5</a>
+  <a href="#ex6" class="badge badge-primary">Ex. 6</a>
+  <a href="#ex7" class="badge badge-primary">Ex. 7</a></p>
 
 <h3 id="instruções">Instruções</h3>
+
 <ul>
-  <li>os exercícios marcados em <span class="badge badge-success">verde</span> foram resolvidos em sala de aula. Uma possível solução é fornecida aqui, junto ao exercício.</li>
+  <li>as porcentagens no começo de cada exercício são uma maneira de indicar o seu grau de dificuldade. Mas não se apegue muito a esses valores: talvez você ache fáceis alguns que eu julgo como difíceis — e vice versa!</li>
   <li>use recursos dos módulos <code class="language-plaintext highlighter-rouge">scipy.integrate</code> à vontade</li>
 </ul>
 
@@ -1413,17 +1426,17 @@
         </ul>
 
         
-          <p>Um carro de corrida termina uma volta de certo circuito em 84 segundos. Durante a volta, medidas de velocidade ($v$) foram tomadas a cada 6 segundos e resultaram nos valores listados abaixo:</p>
+          <p>Um carro de corrida termina uma volta de certo circuito em 84 segundos. Durante a volta, medidas de velocidade (<strong>v</strong>) foram tomadas a cada 6 segundos e resultaram nos valores listados abaixo:</p>
 
 <table class="table table-sm table-hover">
   <thead>
     <tr>
-      <th>$t$ (s)</th>
-      <th>$v$ (km/h)</th>
-      <th>$t$ (s)</th>
-      <th>$v$ (km/h)</th>
-      <th>$t$ (s)</th>
-      <th>$v$ (km/h)</th>
+      <th>t (s)</th>
+      <th>v (km/h)</th>
+      <th>t (s)</th>
+      <th>v (km/h)</th>
+      <th>t (s)</th>
+      <th>v (km/h)</th>
     </tr>
   </thead>
   <tbody>
@@ -1470,7 +1483,7 @@
   </tbody>
 </table>
 
-<p>Qual é a extensão da pista? Estime o erro comparando os resultados das regras dos trapézios e de Simpson.</p>
+<p>Qual é a extensão da pista? Estime o resultado usando tanto o método dos trapézios quanto o de Simpson.</p>
 
         
         
@@ -1479,7 +1492,68 @@
 </div>
 
 <div class="card mb-2">
-    <a name="ex2"></a><h2 class="card-title alert alert-primary">Exercício 2: Perímetro da elipse</h2>
+    <a name="ex2"></a><h2 class="card-title alert alert-primary">Exercício 2: Superfície de um lago</h2>
+    <div class="card-body">
+        <ul>
+            <li>
+<i><b>dificuldade:</b></i> 35%</li>
+            
+        </ul>
+
+        
+          <p>A figura representa a fotografia de um lago, com as medidas dadas em quilômetros. Calcule a área do lago usando a regra de Simpson.</p>
+
+<div class="text-center">
+<figure class="figure">
+  
+  <a href="#" data-toggle="modal" data-target="#lago">
+  
+    <img class="figure-img img-fluid rounded mx-auto" src="/LOM3260/assets/images/tikz/lago.png" alt="Um lago" title="Um lago">
+  
+  </a>
+  
+  
+  <figcaption class="figure-caption">
+    Um lago
+  </figcaption>
+  
+
+<!-- Modal -->
+
+<div class="modal fade" id="lago" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-light bg-dark">
+        <h5>Um lago</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span class="text-light" aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <a id="no-ext-link" href="/LOM3260/assets/images/tikz/lago.png" target="_blank">
+        <img class="figure-img img-fluid rounded w-100mx-auto" src="/LOM3260/assets/images/tikz/lago.png" alt="Um lago" title="Um lago">
+        </a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">OK</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</figure>
+</div>
+
+
+        
+        
+
+    </div>
+</div>
+
+<div class="card mb-2">
+    <a name="ex3"></a><h2 class="card-title alert alert-primary">Exercício 3: Perímetro da elipse</h2>
     <div class="card-body">
         <ul>
             <li>
@@ -1494,9 +1568,14 @@
 
 <p>sendo</p>
 
-\[e = \sqrt{ 1 - \left(\frac{a}{b} \right)^2 }\]
+\[e = \sqrt{ 1 - \left(\frac{b}{a} \right)^2 }\]
 
-<p>a <em>excentricidade</em> da elipse. Calcule $C$ quando $a=20$ cm e $b=10$ cm.</p>
+<p>a <em>excentricidade</em> da elipse (se $b&gt;a$, troque as posições de $a$ e $b$ na fração).</p>
+
+<ol>
+  <li>Calcule $C$ quando $a=20\,$cm e $b=10\,$cm.</li>
+  <li>Faça um gráfico de $C$ em função de $e$ para $a=10\,$cm no intervalo $0.1 \le e \le 10$. No mesmo gráfico, mostre o perímetro de um círculo de raio $a$.</li>
+</ol>
 
         
         
@@ -1505,7 +1584,7 @@
 </div>
 
 <div class="card mb-2">
-    <a name="ex3"></a><h2 class="card-title alert alert-primary">Exercício 3: A função erro</h2>
+    <a name="ex4"></a><h2 class="card-title alert alert-primary">Exercício 4: A função erro</h2>
     <div class="card-body">
         <ul>
             <li>
@@ -1524,9 +1603,91 @@
   <li>Estime graficamente o valor do limite</li>
 </ol>
 
-\[\lim_{x\to\infty} \mathrm{erf}\,(x)\]
+\[\lim_{x\to\infty} \mathrm{erf}\,(x) \,.\]
 
-<p>e explique o porquê do resultado encontrado.</p>
+        
+        
+
+    </div>
+</div>
+
+<div class="card mb-2">
+    <a name="ex5"></a><h2 class="card-title alert alert-primary">Exercício 5: Capacidade térmica de sólidos</h2>
+    <div class="card-body">
+        <ul>
+            <li>
+<i><b>dificuldade:</b></i> 50%</li>
+            
+        </ul>
+
+        
+          <p>A  <strong>função de Debye</strong> é definida como</p>
+
+\[D(x) = \frac{9}{x^3} \int_0^x \frac{u^4 e^u}{(e^u-1)^2} du\]
+
+<p>(cuidado! O integrando não é definido em $u=0$ e você tem que tomar cuidado ao calcular a integral).</p>
+
+<p>No <em>modelo de Debye</em>, o <strong>calor específico molar</strong> de um sólido a volume constante é dado por</p>
+
+\[c_v(T) = R D\left(\frac{\theta_D}{T}\right)\]
+
+<p>sendo $T$ a temperatura em Kelvin, $\theta_D$ a <strong>temperatura de Debye</strong> do material e $R=8.31451\,$J$\,$mol$\,^{-1}$K$\,^{-1}$ a constante universal dos gases. O calor específico molar mede a quantidade de calor que um mol do material absorve/libera numa variação de temperatura.</p>
+
+<ol>
+  <li>Implemente a função de Debye em python.</li>
+  <li>Faça um gráfico de $c_v$ em função de $T$ para o diamante, para o qual $\theta_D=1849\,$K. No mesmo gráfico, mostre os pontos experimentais encontrados nos seguintes artigos:
+    <ul>
+      <li>K. S. Pitzer, <em>J. Chem. Phys.</em> <strong>6</strong> (1938) 68;</li>
+      <li>A. C. Victor, <em>J. Chem. Phys.</em> <strong>36</strong> (1962) 1903.</li>
+    </ul>
+
+    <p>Os dados estão <a href="/LOM3260/assets/data/diamante.dat">neste arquivo</a>.</p>
+  </li>
+</ol>
+
+        
+        
+
+    </div>
+</div>
+
+<div class="card mb-2">
+    <a name="ex6"></a><h2 class="card-title alert alert-primary">Exercício 6: Erro na integração 1</h2>
+    <div class="card-body">
+        <ul>
+            <li>
+<i><b>dificuldade:</b></i> 20%</li>
+            
+        </ul>
+
+        
+          <p>Delimite o erro que se comete ao calcular</p>
+
+\[\int_0^{0.4} e^x dx\]
+
+<p>pela fórmula de Simpson com $h=0.1$.</p>
+
+        
+        
+
+    </div>
+</div>
+
+<div class="card mb-2">
+    <a name="ex7"></a><h2 class="card-title alert alert-primary">Exercício 7: Erro na integração 2</h2>
+    <div class="card-body">
+        <ul>
+            <li>
+<i><b>dificuldade:</b></i> 30%</li>
+            
+        </ul>
+
+        
+          <p>Deseja-se calcular</p>
+
+\[\ln 2 = \int_1^{2} \frac{dx}{x}\]
+
+<p>com erro inferior a $1/2400$ usando a fórmula dos trapézios. Qual deve ser o passo escolhido? Repita o exercício para a fórmula de Simpson.</p>
 
         
         
@@ -1543,7 +1704,7 @@
 
 <hr>
 <p class="small">
-  <i> Página atualizada em 07/06/20</i>
+  <i> Página atualizada em 10/28/2020, 1:25:48 PM</i>
 </p>
 
 
