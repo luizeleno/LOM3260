@@ -1,0 +1,4 @@
+.jekyll-cache
+.rake_tasks~
+Gemfile.lock
+.git

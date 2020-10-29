@@ -1,6 +1,0 @@
-I"�<p>Deseja-se calcular</p>
-
-\[\ln 2 = \int_1^{2} \frac{dx}{x}\]
-
-<p>com erro inferior a $1/2400$ usando a fórmula dos trapézios. Qual deve ser o passo escolhido? Repita o exercício para a fórmula de Simpson.</p>
-:ET

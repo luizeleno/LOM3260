@@ -21,7 +21,7 @@ $$
  c_v(T) = R D\left(\frac{\theta_D}{T}\right)
 $$
 
-sendo $T$ a temperatura em Kelvin, $\theta_D$ a **temperatura de Debye** do material e $R=8.31451\,$J$\,$mol$\,^{-1}$K$\,^{-1}$ a constante universal dos gases. O calor específico molar mede a quantidade de calor que um mol do material absorve/libera numa variação de temperatura.
+sendo $T$ a temperatura em Kelvin, $\theta_D$ a **temperatura de Debye** do material e $R=8.31451\,$J$\,$mol$\,^{-1}$K$\,^{-1}$ a constante universal dos gases. O calor específico molar mede a quantidade de energia que um mol do material absorve/libera devido a alguma variação de temperatura.
 
 1. Implemente a função de Debye em python.
 1. Faça um gráfico de $c_v$ em função de $T$ para o diamante, para o qual $\theta_D=1849\,$K. No mesmo gráfico, mostre os pontos experimentais encontrados nos seguintes artigos: 
