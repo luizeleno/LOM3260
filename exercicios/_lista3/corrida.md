@@ -20,3 +20,30 @@ t (s) |  v (km/h) | t (s) |  v (km/h) | t (s) |  v (km/h)
 |---
 
 Qual é a extensão da pista? Estime o resultado usando tanto o método dos trapézios quanto o de Simpson.
+
+<!-- more -->
+
+A solução abaixo usa as funções vistas em aula:
+
+```python
+import numpy as np
+
+v = np.array([124, 134, 148, 156, 147, 133, 121, 109, 99, 85, 78, 89, 104, 116, 123])
+v = v / 3.6  # converter km/h para m/s
+
+h = 6.  # intervalo de tempo entre as medidas
+
+# Regra dos Trapézios
+
+s = v[0] + 2 * np.sum(v[1:-1]) + v[-1]
+A = .5 * h * s
+print(f'A pista tem {A:.2f} m de extensão (trapézios)')
+
+# Regra de Simpson
+
+si = np.sum(v[1::2])
+sp = np.sum(v[2:-1:2])
+s = v[0] + 4 * si + 2 * sp + v[-1]
+A =  h * s / 3.
+print(f'A pista tem {A:.2f} m de extensão (Simpson)')
+```

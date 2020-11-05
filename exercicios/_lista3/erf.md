@@ -20,3 +20,25 @@ $$
 $$
 \lim_{x\to\infty} \mathrm{erf}\,(x) \,.
 $$
+
+<!-- more -->
+
+Segue uma solução possível usando arrays e _list compreehension_:
+
+```python
+import numpy as np
+import scipy.integrate as spi
+import matplotlib.pyplot as plt
+
+def f(x):
+  return np.exp(-x*x)
+
+xi, xf, dx =  0, 3, 0.1
+x = np.arange(xi, xf+dx, dx)
+y = np.array([spi.quad(f, 0, xn) for xn in x])
+erf = 2 / np.sqrt(np.pi) * y[:,0]
+
+plt.figure()
+plt.plot(x, erf)
+plt.show()
+```

@@ -1409,10 +1409,10 @@
   
 <h3 id="acesso-rápido">Acesso rápido</h3>
 
-<p><a href="#ex1" class="badge badge-primary">Ex. 1</a>
+<p><a href="#ex1" class="badge badge-success">Ex. 1</a>
   <a href="#ex2" class="badge badge-primary">Ex. 2</a>
   <a href="#ex3" class="badge badge-primary">Ex. 3</a>
-  <a href="#ex4" class="badge badge-primary">Ex. 4</a>
+  <a href="#ex4" class="badge badge-success">Ex. 4</a>
   <a href="#ex5" class="badge badge-primary">Ex. 5</a>
   <a href="#ex6" class="badge badge-success">Ex. 6</a>
   <a href="#ex7" class="badge badge-primary">Ex. 7</a></p>
@@ -1436,6 +1436,7 @@
         </ul>
 
         
+          
           <p>Um carro de corrida termina uma volta de certo circuito em 84 segundos. Durante a volta, medidas de velocidade (<strong>v</strong>) foram tomadas a cada 6 segundos e resultaram nos valores listados abaixo:</p>
 
 <table class="table table-sm table-hover">
@@ -1495,7 +1496,44 @@
 
 <p>Qual é a extensão da pista? Estime o resultado usando tanto o método dos trapézios quanto o de Simpson.</p>
 
+
         
+        
+
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="collapse" data-target="#corrida" aria-expanded="false" aria-controls="corrida">
+          Solução
+        </button>
+        <div class="collapse" id="corrida">
+          <div class="card card-body">
+            
+
+<p>A solução abaixo usa as funções vistas em aula:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+
+<span class="n">v</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">array</span><span class="p">([</span><span class="mi">124</span><span class="p">,</span> <span class="mi">134</span><span class="p">,</span> <span class="mi">148</span><span class="p">,</span> <span class="mi">156</span><span class="p">,</span> <span class="mi">147</span><span class="p">,</span> <span class="mi">133</span><span class="p">,</span> <span class="mi">121</span><span class="p">,</span> <span class="mi">109</span><span class="p">,</span> <span class="mi">99</span><span class="p">,</span> <span class="mi">85</span><span class="p">,</span> <span class="mi">78</span><span class="p">,</span> <span class="mi">89</span><span class="p">,</span> <span class="mi">104</span><span class="p">,</span> <span class="mi">116</span><span class="p">,</span> <span class="mi">123</span><span class="p">])</span>
+<span class="n">v</span> <span class="o">=</span> <span class="n">v</span> <span class="o">/</span> <span class="mf">3.6</span>  <span class="c1"># converter km/h para m/s
+</span>
+<span class="n">h</span> <span class="o">=</span> <span class="mf">6.</span>  <span class="c1"># intervalo de tempo entre as medidas
+</span>
+<span class="c1"># Regra dos Trapézios
+</span>
+<span class="n">s</span> <span class="o">=</span> <span class="n">v</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">np</span><span class="p">.</span><span class="nb">sum</span><span class="p">(</span><span class="n">v</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span> <span class="o">+</span> <span class="n">v</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">A</span> <span class="o">=</span> <span class="p">.</span><span class="mi">5</span> <span class="o">*</span> <span class="n">h</span> <span class="o">*</span> <span class="n">s</span>
+<span class="k">print</span><span class="p">(</span><span class="s">f'A pista tem </span><span class="si">{</span><span class="n">A</span><span class="p">:.</span><span class="mi">2</span><span class="n">f</span><span class="si">}</span><span class="s"> m de extensão (trapézios)'</span><span class="p">)</span>
+
+<span class="c1"># Regra de Simpson
+</span>
+<span class="n">si</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nb">sum</span><span class="p">(</span><span class="n">v</span><span class="p">[</span><span class="mi">1</span><span class="p">::</span><span class="mi">2</span><span class="p">])</span>
+<span class="n">sp</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nb">sum</span><span class="p">(</span><span class="n">v</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">:</span><span class="mi">2</span><span class="p">])</span>
+<span class="n">s</span> <span class="o">=</span> <span class="n">v</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="mi">4</span> <span class="o">*</span> <span class="n">si</span> <span class="o">+</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">sp</span> <span class="o">+</span> <span class="n">v</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">A</span> <span class="o">=</span>  <span class="n">h</span> <span class="o">*</span> <span class="n">s</span> <span class="o">/</span> <span class="mf">3.</span>
+<span class="k">print</span><span class="p">(</span><span class="s">f'A pista tem </span><span class="si">{</span><span class="n">A</span><span class="p">:.</span><span class="mi">2</span><span class="n">f</span><span class="si">}</span><span class="s"> m de extensão (Simpson)'</span><span class="p">)</span>
+</code></pre></div></div>
+
+          </div>
+        </div>
+
         
 
     </div>
@@ -1603,6 +1641,7 @@
         </ul>
 
         
+          
           <p>A <strong>função erro</strong> $(\mathrm{erf})$ é importante em Estatística, Transferência de Calor e Mecânica Quântica, entre outras áreas do conhecimento. Ela é definida pela seguinte integral:</p>
 
 \[\mathrm{erf}\,(x) = \frac{2}{\sqrt{\pi}} \int_0^x e^{-t^2} \, dt\,,\]
@@ -1615,7 +1654,39 @@
 
 \[\lim_{x\to\infty} \mathrm{erf}\,(x) \,.\]
 
+
         
+        
+
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="collapse" data-target="#erf" aria-expanded="false" aria-controls="erf">
+          Solução
+        </button>
+        <div class="collapse" id="erf">
+          <div class="card card-body">
+            
+
+<p>Segue uma solução possível usando arrays e <em>list compreehension</em>:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+<span class="kn">import</span> <span class="nn">scipy.integrate</span> <span class="k">as</span> <span class="n">spi</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+
+<span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+  <span class="k">return</span> <span class="n">np</span><span class="p">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">x</span><span class="o">*</span><span class="n">x</span><span class="p">)</span>
+
+<span class="n">xi</span><span class="p">,</span> <span class="n">xf</span><span class="p">,</span> <span class="n">dx</span> <span class="o">=</span>  <span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mf">0.1</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">arange</span><span class="p">(</span><span class="n">xi</span><span class="p">,</span> <span class="n">xf</span><span class="o">+</span><span class="n">dx</span><span class="p">,</span> <span class="n">dx</span><span class="p">)</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">array</span><span class="p">([</span><span class="n">spi</span><span class="p">.</span><span class="n">quad</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">xn</span><span class="p">)</span> <span class="k">for</span> <span class="n">xn</span> <span class="ow">in</span> <span class="n">x</span><span class="p">])</span>
+<span class="n">erf</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">/</span> <span class="n">np</span><span class="p">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">np</span><span class="p">.</span><span class="n">pi</span><span class="p">)</span> <span class="o">*</span> <span class="n">y</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span>
+
+<span class="n">plt</span><span class="p">.</span><span class="n">figure</span><span class="p">()</span>
+<span class="n">plt</span><span class="p">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">erf</span><span class="p">)</span>
+<span class="n">plt</span><span class="p">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div></div>
+
+          </div>
+        </div>
+
         
 
     </div>
@@ -1760,7 +1831,7 @@
 
 <hr>
 <p class="small">
-  <i> Página atualizada em 10/28/2020, 1:25:48 PM</i>
+  <i> Página atualizada em 11/5/2020, 1:03:26 PM</i>
 </p>
 
 
