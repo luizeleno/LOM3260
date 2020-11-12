@@ -21,18 +21,28 @@ onde os símbolos $\overline{x}$ e $\overline{y}$ são os valores médios de $x$
 Por exemplo, se o usuário fornece as coordenadas $(1,\,1)$, $(2,\,2.1)$ e $(3,\,2.9)$, o seu
 o programa deve exibir `y = 0.95 x + 0.1`. Faça também um gráfico com os pontos e a linha de melhor ajuste usando as funções `scatter()` e `plot()` do módulo `matplotlib.pyplot`.
 
+Para testar seu código, use os dados deste arquivo: [dados-linear.csv]({{site.baseurl}}/assets/data/dados-linear.csv)
+
+:bulb: Um arquivo csv é um arquivo-texto em que os dados de cada linha estão separados por vírgulas (csv: _comma separated values_). Qualquer editor de texto é capaz de abri-los, e também programas de planilhas eletrônicas, como o M$Excel
+{: .alert .alert-success}
+
 <!-- more -->
 
 ## Solução
 
 A solução abaixo faz uso de muitas propriedades de arrays.
+
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
 import numpy.random as rd
 
 # Leitura dos dados
-x, y = np.genfromtxt('dados-teste.txt', unpack=True)
+import numpy as np
+import matplotlib.pyplot as plt
+
+x, y = np.genfromtxt('dados-linear.csv', 
+                     delimiter=',', skip_header=1, unpack=True)
 
 # Cálculo da reta de melhor ajuste
 n = x.size
@@ -51,7 +61,7 @@ ym = y.mean()
 b = ym - m * xm
 
 # criando a reta de ajuste
-xajuste = np.linspace(x.min(), x.max(), 2)  # é uma reta, não precisa de muitos pontos!
+xajuste = np.linspace(x.min(), x.max(), 2)  # uma reta só precisa de 2 pontos!
 yajuste = m * xajuste + b
 
 # criação do gráfico
@@ -71,5 +81,5 @@ plt.legend()
 # salvando a figura como arquivo
 plt.savefig('ajuste.png', bbox_inches='tight')
 
-```
 plt.show()
+```

@@ -3,8 +3,9 @@ title: Quarta Lista
 parent: exs
 mathjax: true
 remove_trinket: true
-timestamp: 11/5/2020, 12:16:41 PM
-hidden: false
+timestamp: 12-11-2020 09:27
+#hidden: false
+resolvidos: ['1', '2']
 ---
 
 {% assign exs = site.lista4 | sort: 'nav_order' %}

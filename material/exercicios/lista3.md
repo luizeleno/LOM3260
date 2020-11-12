@@ -3,8 +3,8 @@ title: Terceira Lista
 parent: exs
 mathjax: true
 remove_trinket: true
-timestamp: 11/5/2020, 1:03:26 PM
-resolvidos: ['1', '4', '6']
+timestamp: 12-11-2020 11:58
+resolvidos: ['1', '3', '4', '6']
 # hidden: true
 ---
 

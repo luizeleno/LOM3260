@@ -32,7 +32,7 @@
 <meta property="og:url" content="https://computeel.org/LOM3260/material/exercicios/lista3.html" />
 <meta property="og:site_name" content="LOM3260" />
 <script type="application/ld+json">
-{"dateModified":"2020-11-05T12:15:05-03:00","@type":"WebPage","headline":"Terceira Lista","url":"https://computeel.org/LOM3260/material/exercicios/lista3.html","author":{"@type":"Person","name":"Luiz T. F. Eleno"},"description":"Computação Científica em Python - uma disciplina do curso de Engenharia Física da Escola de Engenharia de Lorena da Universidade de São Paulo - EEL USP","@context":"https://schema.org"}</script>
+{"@type":"WebPage","dateModified":"2020-11-05T12:15:05-03:00","url":"https://computeel.org/LOM3260/material/exercicios/lista3.html","author":{"@type":"Person","name":"Luiz T. F. Eleno"},"description":"Computação Científica em Python - uma disciplina do curso de Engenharia Física da Escola de Engenharia de Lorena da Universidade de São Paulo - EEL USP","headline":"Terceira Lista","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -1411,7 +1411,7 @@
 
 <p><a href="#ex1" class="badge badge-success">Ex. 1</a>
   <a href="#ex2" class="badge badge-primary">Ex. 2</a>
-  <a href="#ex3" class="badge badge-primary">Ex. 3</a>
+  <a href="#ex3" class="badge badge-success">Ex. 3</a>
   <a href="#ex4" class="badge badge-success">Ex. 4</a>
   <a href="#ex5" class="badge badge-primary">Ex. 5</a>
   <a href="#ex6" class="badge badge-success">Ex. 6</a>
@@ -1610,6 +1610,7 @@
         </ul>
 
         
+          
           <p>O perímetro de uma elipse com semi-eixo maior $a$ e semi-eixo menor $b$ é dado por</p>
 
 \[C = 4a \int_0^{\pi/2} \sqrt{ 1 - e^2 \cos^2 \theta} \, d\theta\]
@@ -1625,7 +1626,101 @@
   <li>Faça um gráfico de $C$ em função de $e$ para $a=10\,$cm no intervalo $0.1 \le e \le 10$. No mesmo gráfico, mostre o perímetro de um círculo de raio $a$.</li>
 </ol>
 
+
         
+        
+
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="collapse" data-target="#elipse" aria-expanded="false" aria-controls="elipse">
+          Solução
+        </button>
+        <div class="collapse" id="elipse">
+          <div class="card card-body">
+            
+
+<p>A solução abaixo usa a função <code class="language-plaintext highlighter-rouge">quad</code> do módulo <code class="language-plaintext highlighter-rouge">scipy.integrate</code> para o cálculo da integral. Usa também um recurso dessa função: o argumento opcional <code class="language-plaintext highlighter-rouge">args</code>, que passa outros argumentos que o integrando possa ter além da variável de integração.</p>
+
+<p>Além disso, no item b usei abrangência de listas (<em>list comprehension</em>) para gerar numa única linha uma lista de valores em função da excentricidade $e$, que é então convertida em <code class="language-plaintext highlighter-rouge">array</code>. A primeira coluna contém os valores da integral, a segunda os erros de integração estimados.</p>
+
+<p>Repare também o uso dos métodos <code class="language-plaintext highlighter-rouge">.min()</code> e <code class="language-plaintext highlighter-rouge">.max()</code> aplicados ao array <code class="language-plaintext highlighter-rouge">excs</code> para delimitar os valores do eixo horizontal do gráfico.</p>
+
+<p>Segue o código:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+<span class="kn">import</span> <span class="nn">scipy.integrate</span> <span class="k">as</span> <span class="n">spi</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+
+<span class="k">def</span> <span class="nf">integrando</span><span class="p">(</span><span class="n">th</span><span class="p">,</span> <span class="n">e</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">np</span><span class="p">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="p">(</span><span class="n">e</span> <span class="o">*</span> <span class="n">np</span><span class="p">.</span><span class="n">cos</span><span class="p">(</span><span class="n">th</span><span class="p">))</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+  
+<span class="c1"># item a
+</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">10</span>
+<span class="n">e</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="p">(</span><span class="n">b</span> <span class="o">/</span> <span class="n">a</span><span class="p">)</span> <span class="o">**</span> <span class="mi">2</span><span class="p">)</span>
+<span class="n">integral</span><span class="p">,</span> <span class="n">erro</span> <span class="o">=</span> <span class="n">spi</span><span class="p">.</span><span class="n">quad</span><span class="p">(</span><span class="n">integrando</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">np</span><span class="p">.</span><span class="n">pi</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="n">args</span><span class="o">=</span><span class="p">(</span><span class="n">e</span><span class="p">))</span>
+<span class="n">perimetro</span> <span class="o">=</span> <span class="mi">4</span> <span class="o">*</span> <span class="n">a</span> <span class="o">*</span> <span class="n">integral</span>
+<span class="k">print</span><span class="p">(</span><span class="n">perimetro</span><span class="p">)</span>
+
+<span class="c1"># item b
+</span><span class="n">a</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">excs</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">linspace</span><span class="p">(</span><span class="mf">0.1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">101</span><span class="p">)</span>
+<span class="n">integral</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">array</span><span class="p">([</span><span class="n">spi</span><span class="p">.</span><span class="n">quad</span><span class="p">(</span><span class="n">integrando</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">np</span><span class="p">.</span><span class="n">pi</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="n">args</span><span class="o">=</span><span class="p">(</span><span class="n">e</span><span class="p">))</span> <span class="k">for</span> <span class="n">e</span> <span class="ow">in</span> <span class="n">excs</span><span class="p">])</span>
+<span class="n">perimetro</span> <span class="o">=</span> <span class="mi">4</span> <span class="o">*</span> <span class="n">a</span> <span class="o">*</span> <span class="n">integral</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">]</span>
+
+<span class="n">perimetro_circulo</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">np</span><span class="p">.</span><span class="n">pi</span> <span class="o">*</span> <span class="n">a</span>
+
+<span class="n">plt</span><span class="p">.</span><span class="n">figure</span><span class="p">()</span>
+<span class="n">plt</span><span class="p">.</span><span class="n">xlim</span><span class="p">(</span><span class="n">excs</span><span class="p">.</span><span class="nb">min</span><span class="p">(),</span> <span class="n">excs</span><span class="p">.</span><span class="nb">max</span><span class="p">())</span>
+<span class="n">plt</span><span class="p">.</span><span class="n">plot</span><span class="p">(</span><span class="n">excs</span><span class="p">,</span> <span class="n">perimetro</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s">'elipse'</span><span class="p">)</span>
+<span class="n">plt</span><span class="p">.</span><span class="n">axhline</span><span class="p">(</span><span class="n">perimetro_circulo</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s">'red'</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s">'circulo'</span><span class="p">)</span>
+<span class="n">plt</span><span class="p">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="p">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div></div>
+
+<div class="text-center">
+<figure class="figure">
+  
+  <a href="#" data-toggle="modal" data-target="#elipsol">
+  
+    <img class="figure-img img-fluid rounded mx-auto" src="/LOM3260/assets/images/elipses-sol.png" alt="Perímetro em função da excentricidade para $a=10$" title="Perímetro em função da excentricidade para $a=10$">
+  
+  </a>
+  
+  
+  <figcaption class="figure-caption">
+    Perímetro em função da excentricidade para $a=10$
+  </figcaption>
+  
+
+<!-- Modal -->
+
+<div class="modal fade" id="elipsol" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-light bg-dark">
+        <h5>Perímetro em função da excentricidade para $a=10$</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span class="text-light" aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <a id="no-ext-link" href="/LOM3260/assets/images/elipses-sol.png" target="_blank">
+        <img class="figure-img img-fluid rounded w-100mx-auto" src="/LOM3260/assets/images/elipses-sol.png" alt="Perímetro em função da excentricidade para $a=10$" title="Perímetro em função da excentricidade para $a=10$">
+        </a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">OK</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</figure>
+</div>
+
+
+          </div>
+        </div>
+
         
 
     </div>
@@ -1718,11 +1813,11 @@
   <li>Implemente a função de Debye em python.</li>
   <li>Faça um gráfico de $c_v$ em função de $T$ para o diamante, para o qual $\theta_D=1849\,$K. No mesmo gráfico, mostre os pontos experimentais encontrados nos seguintes artigos:
     <ul>
-      <li>K. S. Pitzer, <em>J. Chem. Phys.</em> <strong>6</strong> (1938) 68;</li>
-      <li>A. C. Victor, <em>J. Chem. Phys.</em> <strong>36</strong> (1962) 1903.</li>
+      <li>K. S. Pitzer, <em>J. Chem. Phys.</em> <strong>6</strong> (1938) 68 (<a href="https://doi.org/10.1063/1.1698710" target="_blank">https://doi.org/10.1063/1.1698710</a>);</li>
+      <li>A. C. Victor, <em>J. Chem. Phys.</em> <strong>36</strong> (1962) 1903 (<a href="https://doi.org/10.1063/1.1701288" target="_blank">https://doi.org/10.1063/1.1701288</a>).</li>
     </ul>
 
-    <p>Os dados estão <a href="/LOM3260/assets/data/diamante.dat">neste arquivo</a>.</p>
+    <p>Os dados estão aqui em arquivos-texto (<a href="/LOM3260/assets/data/diamante-pitzer.dat">diamante-pitzer.dat</a> e <a href="/LOM3260/assets/data/diamante-victor.dat">diamante-victor.dat</a>) ou neste <a href="/LOM3260/assets/data/diamante.xlsx">arquivo excel</a>.</p>
   </li>
 </ol>
 
@@ -1831,7 +1926,7 @@
 
 <hr>
 <p class="small">
-  <i> Página atualizada em 11/5/2020, 1:03:26 PM</i>
+  <i> Página atualizada em 12-11-2020 11:58</i>
 </p>
 
 

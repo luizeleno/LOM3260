@@ -1,7 +1,8 @@
 ---
 nav_order: 3
 dificuldade: 10
-title: vitaminas
+title: Vitaminas
+label: vitaminas
 ---
 
 <div class="col-md-6 float-right">

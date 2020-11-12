@@ -25,7 +25,7 @@ sendo $T$ a temperatura em Kelvin, $\theta_D$ a **temperatura de Debye** do mate
 
 1. Implemente a função de Debye em python.
 1. Faça um gráfico de $c_v$ em função de $T$ para o diamante, para o qual $\theta_D=1849\,$K. No mesmo gráfico, mostre os pontos experimentais encontrados nos seguintes artigos: 
-    - K. S. Pitzer, _J. Chem. Phys._ **6** (1938) 68; 
-    - A. C. Victor, _J. Chem. Phys._ **36** (1962) 1903. 
+    - K. S. Pitzer, _J. Chem. Phys._ **6** (1938) 68 (<https://doi.org/10.1063/1.1698710>{: target='_blank'}); 
+    - A. C. Victor, _J. Chem. Phys._ **36** (1962) 1903 (<https://doi.org/10.1063/1.1701288>{: target='_blank'}). 
 
-    Os dados estão [neste arquivo]({{site.baseurl}}/assets/data/diamante.dat).
+    Os dados estão aqui em arquivos-texto ([diamante-pitzer.dat]({{site.baseurl}}/assets/data/diamante-pitzer.dat) e [diamante-victor.dat]({{site.baseurl}}/assets/data/diamante-victor.dat)) ou neste [arquivo excel]({{site.baseurl}}/assets/data/diamante.xlsx).
