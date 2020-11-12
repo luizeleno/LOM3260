@@ -23,7 +23,7 @@ A marcação continua até ser atingido um valor $k$ (28 no exemplo abaixo) tal 
 
 O caminho mais curto até o queijo pode então ser determinado, partindo-se da posição do rato e passando a cada etapa para uma casa adjacente cuja numeração seja menor do que a atual.
 
-Por exemplo, partindo de (0, 0), i.e., o canto superior esquerdo, o rato precisará percorrer pelo menos 26 casas para chegar ao queijo: (0, 0), (1, 0), (2, 0), (3, 0), (4, 0), (4, 1), (4,2), ..., (4, 10), (4, 15).
+Por exemplo, partindo de (0, 0), i.e., o canto superior esquerdo, o rato precisará percorrer pelo menos 26 casas para chegar ao queijo: (0, 0), (1, 0), (2, 0), (3, 0), (4, 0), (4, 1), (4,2), ..., (4, 10), (5, 10).
 
 Dados o labirinto (matriz $L$) com elementos $0$ e $-1$ e as posições do rato e do queijo, determine o caminho mais curto que o rato deve percorrer até encontrar o queijo, se tal caminho existir.
 
