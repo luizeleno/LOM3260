@@ -8,7 +8,8 @@ resolvidos: ['1', '2', '3', '4', '5', '6', '7', '8', '10', '11', '12', '15', '16
 #, '5', '6', '7', '8', '11', '12', '13', '15', '16', '20', '21', '22', '23', '26']
 entrega1: ['9', '13', '14', '18', '19', '20']
 entrega2: ['30']
-timestamp: 12-11-2020 11:58
+entrega3: ['26']
+timestamp: 12-11-2020 13:18
 labels: true
 ---
 
@@ -22,9 +23,10 @@ labels: true
 
 {%if page.resolvidos%}
 - os exercícios marcados em <span class="badge badge-success">verde</span> foram resolvidos em sala de aula. Uma possível solução é fornecida aqui, junto ao exercício.
-{%-endif-%}
+{%endif-%}
 - os exercícios marcados em <span class="badge badge-warning">amarelo</span> devem ser entregues no dia 08/10/2020.
 - os exercícios marcados em <span class="badge badge-danger">vermelho</span> devem ser entregues no dia 05/11/2020.
+- os exercícios marcados em <span class="badge badge-dark">preto</span> devem ser entregues em dupla no dia 03/12/2020.
 - as porcentagens no começo de cada exercício são uma maneira de indicar o seu grau de dificuldade. Mas não se apegue muito a esses valores: talvez você ache fáceis alguns que eu julgo como difíceis --- e vice versa!
 
 {% include labels-ex.html %}
