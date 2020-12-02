@@ -15,3 +15,35 @@ Um dos primeiros exemplos conhecidos de criptografia foi usado por Júlio César
 1. Os seguintes comandos são úteis para esse (e outros) exercícios:
   - `ord(c)`: retorna um `int` com a posição do caractere `c` na Tabela ASCII. Por exemplo, `ord('A')` retorna `65`.
   - `chr(n)`: retorna o caractere correspondente ao inteiro `n`. Por exemplo, `chr(122)` retorna `'z'`.
+
+<!-- more -->
+  
+## Solução
+  
+ ```python
+# Entrada
+mensagem = input('Digite sua mensagem:\n')
+shift = int(input('shift= '))
+
+# Algoritmo
+coded = ''
+for c in mensagem:
+    c_ascii = ord(c)
+    if c_ascii >= 65 and c_ascii <= 90:
+        c_ascii += shift
+        if c_ascii > 90:
+            c_ascii -= 26
+        elif c_ascii < 65:
+            c_ascii += 26
+    elif c_ascii >= 97 and c_ascii <= 122:
+        c_ascii += shift
+        if c_ascii > 122:
+            c_ascii -= 26
+        elif c_ascii < 97:
+            c_ascii += 26
+    coded += chr(c_ascii)
+
+# Saída
+print('Mensagem codificada:')
+print(coded)
+```

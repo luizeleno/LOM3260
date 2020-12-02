@@ -32,7 +32,7 @@
 <meta property="og:url" content="https://computeel.org/LOM3260/material/exercicios/lista1.html" />
 <meta property="og:site_name" content="LOM3260" />
 <script type="application/ld+json">
-{"dateModified":"2020-11-12T11:14:29-03:00","@type":"WebPage","headline":"Primeira Lista","url":"https://computeel.org/LOM3260/material/exercicios/lista1.html","author":{"@type":"Person","name":"Luiz T. F. Eleno"},"description":"Computação Científica em Python - uma disciplina do curso de Engenharia Física da Escola de Engenharia de Lorena da Universidade de São Paulo - EEL USP","@context":"https://schema.org"}</script>
+{"@type":"WebPage","dateModified":"2020-11-12T12:20:20-03:00","url":"https://computeel.org/LOM3260/material/exercicios/lista1.html","author":{"@type":"Person","name":"Luiz T. F. Eleno"},"description":"Computação Científica em Python - uma disciplina do curso de Engenharia Física da Escola de Engenharia de Lorena da Universidade de São Paulo - EEL USP","headline":"Primeira Lista","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -1417,18 +1417,18 @@
   <a href="#ex6" class="badge badge-success">Ex. 6</a>
   <a href="#ex7" class="badge badge-success">Ex. 7</a>
   <a href="#ex8" class="badge badge-success">Ex. 8</a>
-  <a href="#ex9" class="badge badge-warning">Ex. 9</a>
+  <a href="#ex9" class="badge badge-success">Ex. 9</a>
   <a href="#ex10" class="badge badge-success">Ex. 10</a>
   <a href="#ex11" class="badge badge-success">Ex. 11</a>
   <a href="#ex12" class="badge badge-success">Ex. 12</a>
-  <a href="#ex13" class="badge badge-warning">Ex. 13</a>
-  <a href="#ex14" class="badge badge-warning">Ex. 14</a>
+  <a href="#ex13" class="badge badge-success">Ex. 13</a>
+  <a href="#ex14" class="badge badge-success">Ex. 14</a>
   <a href="#ex15" class="badge badge-success">Ex. 15</a>
   <a href="#ex16" class="badge badge-success">Ex. 16</a>
   <a href="#ex17" class="badge badge-success">Ex. 17</a>
-  <a href="#ex18" class="badge badge-warning">Ex. 18</a>
-  <a href="#ex19" class="badge badge-warning">Ex. 19</a>
-  <a href="#ex20" class="badge badge-warning">Ex. 20</a>
+  <a href="#ex18" class="badge badge-success">Ex. 18</a>
+  <a href="#ex19" class="badge badge-success">Ex. 19</a>
+  <a href="#ex20" class="badge badge-success">Ex. 20</a>
   <a href="#ex21" class="badge badge-success">Ex. 21</a>
   <a href="#ex22" class="badge badge-success">Ex. 22</a>
   <a href="#ex23" class="badge badge-success">Ex. 23</a>
@@ -1438,15 +1438,16 @@
   <a href="#ex27" class="badge badge-success">Ex. 27</a>
   <a href="#ex28" class="badge badge-success">Ex. 28</a>
   <a href="#ex29" class="badge badge-success">Ex. 29</a>
-  <a href="#ex30" class="badge badge-danger">Ex. 30</a>
+  <a href="#ex30" class="badge badge-primary">Ex. 30</a>
   <a href="#ex31" class="badge badge-primary">Ex. 31</a></p>
 
 <h3 id="instruções">Instruções</h3>
 
 <ul>
-  <li>os exercícios marcados em <span class="badge badge-success">verde</span> foram resolvidos em sala de aula. Uma possível solução é fornecida aqui, junto ao exercício.</li>
-  <li>os exercícios marcados em <span class="badge badge-warning">amarelo</span> devem ser entregues no dia 08/10/2020.</li>
-  <li>os exercícios marcados em <span class="badge badge-danger">vermelho</span> devem ser entregues no dia 05/11/2020.</li>
+  <li>para os exercícios marcados em <span class="badge badge-success">verde</span>, uma possível solução é fornecida aqui, junto ao exercício.
+<!-- - os exercícios marcados em <span class="badge badge-warning">amarelo</span> devem ser entregues no dia 08/10/2020. -->
+<!-- - os exercícios marcados em <span class="badge badge-danger">vermelho</span> devem ser entregues no dia 05/11/2020. -->
+</li>
   <li>os exercícios marcados em <span class="badge badge-dark">preto</span> devem ser entregues em dupla no dia 03/12/2020.</li>
   <li>
     <p>as porcentagens no começo de cada exercício são uma maneira de indicar o seu grau de dificuldade. Mas não se apegue muito a esses valores: talvez você ache fáceis alguns que eu julgo como difíceis — e vice versa!</p>
@@ -1587,6 +1588,18 @@
 \[N = 1 \times \frac{75}{100} + 2 \times \frac{24}{100} + 3 \times \frac{1}{100} = 1.26\]
 
 <p>Uma melhora excelente! Conseguimos reduzir em quase 60% o número de comparações, reduzindo de forma parecida o tempo de execução do código. Pense no caso em que seu código precisa ser rodado bilhões ou trilhões de vezes num único dia, qual seria a economia de energia e recursos!</p>
+
+<hr>
+
+<p>Abaixo segue uma alternativa ao código anterior, com apenas uma linha e usando e abusando de operadores lógicos:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">resultado</span> <span class="o">=</span> <span class="p">(</span><span class="n">ano</span> <span class="o">%</span> <span class="mi">4</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">ano</span> <span class="o">%</span> <span class="mi">100</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">)</span> <span class="ow">or</span> <span class="n">ano</span> <span class="o">%</span> <span class="mi">400</span> <span class="o">==</span> <span class="mi">0</span>
+</code></pre></div></div>
+
+<p>Outra versão, fazendo ainda menos comparações e usando ainda mais operadores lógicos:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">resultado</span> <span class="o">=</span> <span class="nb">bool</span><span class="p">((</span><span class="ow">not</span> <span class="n">ano</span> <span class="o">%</span> <span class="mi">4</span> <span class="ow">and</span> <span class="n">ano</span> <span class="o">%</span> <span class="mi">100</span><span class="p">)</span> <span class="ow">or</span> <span class="ow">not</span> <span class="n">ano</span> <span class="o">%</span> <span class="mi">400</span><span class="p">)</span>
+</code></pre></div></div>
 
           </div>
         </div>
@@ -2016,6 +2029,43 @@ e qualquer valor zero ou negativo resulta em False
         
         
 
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="collapse" data-target="#mittres" aria-expanded="false" aria-controls="mittres">
+          Solução
+        </button>
+        <div class="collapse" id="mittres">
+          <div class="card card-body">
+            
+
+<h2 id="solução">Solução</h2>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">s</span><span class="o">=</span><span class="s">'azcbobobegghakl'</span>
+
+<span class="n">N</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+<span class="n">start</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">maxstart</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">size</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">maxsize</span> <span class="o">=</span> <span class="mi">1</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">N</span><span class="p">):</span>
+	<span class="k">if</span> <span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]:</span>
+		<span class="n">size</span> <span class="o">+=</span> <span class="mi">1</span>
+	<span class="k">else</span><span class="p">:</span>
+		<span class="n">start</span> <span class="o">=</span> <span class="n">i</span>
+		<span class="n">size</span> <span class="o">=</span> <span class="mi">1</span>
+	<span class="k">if</span> <span class="n">size</span> <span class="o">&gt;</span> <span class="n">maxsize</span><span class="p">:</span>
+		<span class="n">maxsize</span> <span class="o">=</span> <span class="n">size</span>
+		<span class="n">maxstart</span> <span class="o">=</span> <span class="n">start</span>
+
+<span class="n">a</span> <span class="o">=</span> <span class="n">s</span><span class="p">[</span><span class="n">maxstart</span><span class="p">:</span><span class="n">maxstart</span><span class="o">+</span><span class="n">maxsize</span><span class="p">]</span>
+
+<span class="k">print</span><span class="p">(</span><span class="s">f'Longest substring in alphabetical order is: </span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s">'</span><span class="p">)</span>
+</code></pre></div></div>
+
+          </div>
+        </div>
+
+        
+
     </div>
 </div>
 
@@ -2225,6 +2275,46 @@ e qualquer valor zero ou negativo resulta em False
         
         
 
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="collapse" data-target="#dectobin" aria-expanded="false" aria-controls="dectobin">
+          Solução
+        </button>
+        <div class="collapse" id="dectobin">
+          <div class="card card-body">
+            
+
+<h3 id="solução">Solução</h3>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Entrada
+</span>
+<span class="n">decimal</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">'N (base 10) = '</span><span class="p">))</span>
+
+<span class="c1"># Algoritmo
+</span>
+<span class="c1"># inicialização das variáveis
+</span><span class="n">quociente</span> <span class="o">=</span> <span class="n">decimal</span>
+<span class="n">binario</span> <span class="o">=</span> <span class="s">''</span>
+
+<span class="s">'''
+comentários:
+- quociente vair receber, a cada iteração, o resultado da divisão por 2
+- binário é uma string inicialmente vazia, que receberá os restos das divisões por dois
+- usamos o operador concatenação de strings (+) para construir a representação binária
+'''</span>
+
+<span class="k">while</span> <span class="n">quociente</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="n">resto</span> <span class="o">=</span> <span class="n">quociente</span> <span class="o">%</span> <span class="mi">2</span>
+    <span class="n">quociente</span> <span class="o">=</span> <span class="n">quociente</span> <span class="o">//</span> <span class="mi">2</span>
+    <span class="n">binario</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">resto</span><span class="p">)</span> <span class="o">+</span> <span class="n">binario</span>
+
+<span class="c1"># Saída
+</span><span class="k">print</span><span class="p">(</span><span class="s">f'</span><span class="si">{</span><span class="n">decimal</span><span class="si">}</span><span class="s"> (base 10) = </span><span class="si">{</span><span class="n">binario</span><span class="si">}</span><span class="s"> (base 2)'</span><span class="p">)</span>
+
+</code></pre></div></div>
+
+          </div>
+        </div>
+
+        
+
     </div>
 </div>
 
@@ -2241,6 +2331,7 @@ e qualquer valor zero ou negativo resulta em False
         </ul>
 
         
+          
           <p>Uma das maneiras de se referir a cores em <em>websites</em> e outras aplicações é a <strong>notação RGB</strong> (<em>red-green-blue</em>): três inteiros $0 \le R,\,G,\,B \le 255$ como identificadores das tonalidades de vermelho, verde e azul, respectivamente, que, quando mescladas, fornecem a cor desejada. Ao invés de fornecer os três inteiros em base 10, no entanto, é comum usar base 16. Essa maneira de identificar cores  é conhecida como <strong>código hexadecimal</strong>. Em base 16, precisamos de 16 caracteres para representar os “dígitos” de um número (veja que em base 2 precisamos de dois, e em base 10, de dez). Usualmente são escolhidos os caracteres 0–9, com os valores usuais, e portanto precisamos de mais seis caracteres para representar os “dígitos” de de 10 a 15. Usualmente usa-se as letras A–F. Por exemplo,</p>
 
 \[\small
@@ -2252,7 +2343,58 @@ e qualquer valor zero ou negativo resulta em False
 Além disso, no código hexadecimal as três tonalidades são indicadas por uma única <em>string</em> de seis caracteres. Por exemplo, o código hexadecimal <code class="language-plaintext highlighter-rouge">CD1F41</code> corresponde aos tons $R=205$, $G=31$ e $B=65$, como você pode conferir <a href="https://htmlcolorcodes.com/" target="blank">aqui</a>.
 Esse sistema (ou seja, seis caracteres escolhidos do conjunto 0–9+A–F) é capaz de descrever $256^3=16\,777\,216$ cores diferentes, de 000000 (preto) a FFFFFF (branco). Com base nos exercícios anteriores sobre números binários, monte um algoritmo para converter uma <em>string</em> válida de seis caracteres representando uma cor em código hexadecimal para a notação RGB, ou seja, os três inteiros $0 \le R,\,G,\,B \le 255$ com as tonalidades de vermelho, verde e azul. Implemente também a conversão no sentido contrário, ou seja, dados três inteiros $R,\,G,\,B \in [0,\,255]$, determine o código hexadecimal da cor em questão.</p>
 
+
         
+        
+
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="collapse" data-target="#rgb" aria-expanded="false" aria-controls="rgb">
+          Solução
+        </button>
+        <div class="collapse" id="rgb">
+          <div class="card card-body">
+            
+
+<h2 id="solução">Solução</h2>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># dicionário para conversão de decimal para hexadecimal
+</span><span class="n">dec_hex_dicio</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span><span class="p">:</span> <span class="s">'0'</span><span class="p">,</span> <span class="mi">1</span><span class="p">:</span> <span class="s">'1'</span><span class="p">,</span> <span class="mi">2</span><span class="p">:</span> <span class="s">'2'</span><span class="p">,</span> <span class="mi">3</span><span class="p">:</span> <span class="s">'3'</span><span class="p">,</span> <span class="mi">4</span><span class="p">:</span> <span class="s">'4'</span><span class="p">,</span> <span class="mi">5</span><span class="p">:</span> <span class="s">'5'</span><span class="p">,</span> <span class="mi">6</span><span class="p">:</span> <span class="s">'6'</span><span class="p">,</span> <span class="mi">7</span><span class="p">:</span> <span class="s">'7'</span><span class="p">,</span> <span class="mi">8</span><span class="p">:</span> <span class="s">'8'</span><span class="p">,</span> <span class="mi">9</span><span class="p">:</span> <span class="s">'9'</span><span class="p">,</span> <span class="mi">10</span><span class="p">:</span> <span class="s">'A'</span><span class="p">,</span> <span class="mi">11</span><span class="p">:</span> <span class="s">'B'</span><span class="p">,</span> <span class="mi">12</span><span class="p">:</span> <span class="s">'C'</span><span class="p">,</span> <span class="mi">13</span><span class="p">:</span> <span class="s">'D'</span><span class="p">,</span> <span class="mi">14</span><span class="p">:</span> <span class="s">'E'</span><span class="p">,</span> <span class="mi">15</span><span class="p">:</span> <span class="s">'F'</span><span class="p">}</span>
+
+<span class="c1"># dicionário para conversão de hexadecimal para decimal
+</span><span class="n">hex_dec_dicio</span> <span class="o">=</span> <span class="p">{</span><span class="s">'0'</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s">'1'</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s">'2'</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s">'3'</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span> <span class="s">'4'</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span> <span class="s">'5'</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span> <span class="s">'6'</span><span class="p">:</span> <span class="mi">6</span><span class="p">,</span> <span class="s">'7'</span><span class="p">:</span> <span class="mi">7</span><span class="p">,</span> <span class="s">'8'</span><span class="p">:</span> <span class="mi">8</span><span class="p">,</span> <span class="s">'9'</span><span class="p">:</span> <span class="mi">9</span><span class="p">,</span> <span class="s">'A'</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="s">'B'</span><span class="p">:</span> <span class="mi">11</span><span class="p">,</span> <span class="s">'C'</span><span class="p">:</span> <span class="mi">12</span><span class="p">,</span> <span class="s">'D'</span><span class="p">:</span> <span class="mi">13</span><span class="p">,</span> <span class="s">'E'</span><span class="p">:</span> <span class="mi">14</span><span class="p">,</span> <span class="s">'F'</span><span class="p">:</span> <span class="mi">15</span><span class="p">}</span>
+
+
+<span class="k">def</span> <span class="nf">rgb_para_hex</span><span class="p">(</span><span class="n">rgb</span><span class="p">):</span>
+	<span class="s">'''
+		função para conversão de cores rgb = [r, g, b]
+		para uma string com os códigos hexadecimais
+	'''</span>
+	<span class="n">code</span> <span class="o">=</span> <span class="s">''</span>
+	<span class="k">for</span> <span class="n">cor</span> <span class="ow">in</span> <span class="n">rgb</span><span class="p">:</span>  <span class="c1"># iterando pelas três cores
+</span>		<span class="n">colorhex</span> <span class="o">=</span> <span class="s">''</span>
+		<span class="k">while</span> <span class="n">cor</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>  <span class="c1"># conversão para hexadecimal (mesmo algoritmo do ex. 13)
+</span>			<span class="n">resto</span> <span class="o">=</span> <span class="n">cor</span> <span class="o">%</span> <span class="mi">16</span>
+			<span class="n">cor</span> <span class="o">=</span> <span class="n">cor</span> <span class="o">//</span> <span class="mi">16</span>
+			<span class="n">colorhex</span> <span class="o">=</span> <span class="n">dec_hex_dicio</span><span class="p">[</span><span class="n">resto</span><span class="p">]</span> <span class="o">+</span> <span class="n">colorhex</span>  <span class="c1"># sobrecarga do operador + para strings
+</span>		<span class="n">code</span> <span class="o">+=</span> <span class="n">colorhex</span>
+	<span class="k">return</span> <span class="n">code</span>
+
+
+<span class="k">def</span> <span class="nf">hex_para_rgb</span><span class="p">(</span><span class="n">code</span><span class="p">):</span>
+	<span class="s">'''
+		função para a conversão de uma string com o código hexadecimal
+		para a lista rgb=[r, g, b] de cores
+	'''</span>
+	<span class="n">cores</span> <span class="o">=</span> <span class="p">[]</span>  <span class="c1"># inicializando a lista
+</span>	<span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">2</span><span class="p">):</span>  <span class="c1"># fazendo o loop a cada dois caracteres de code
+</span>		<span class="n">cor</span> <span class="o">=</span> <span class="n">hex_dec_dicio</span><span class="p">[</span><span class="n">code</span><span class="p">[</span><span class="n">c</span><span class="p">]]</span> <span class="o">*</span> <span class="mi">16</span>  <span class="c1"># convertendo o primeiro caractere
+</span>		<span class="n">cor</span> <span class="o">+=</span> <span class="n">hex_dec_dicio</span><span class="p">[</span><span class="n">code</span><span class="p">[</span><span class="n">c</span><span class="o">+</span><span class="mi">1</span><span class="p">]]</span>  <span class="c1"># e somando o segundo
+</span>		<span class="n">cores</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">cor</span><span class="p">)</span>  <span class="c1"># adicionando cor à lista
+</span>	<span class="k">return</span> <span class="n">cores</span>
+</code></pre></div></div>
+
+          </div>
+        </div>
+
         
 
     </div>
@@ -2477,9 +2619,56 @@ Está entre 40 e 60:
         </ul>
 
         
+          
           <p>Escreva um programa que leia uma data do usuário e calcule o dia seguinte. Por exemplo, se o usuário inserir valores que representem 18/11/2013, o programa deve exibir 19/11/2013. A data deve ser inserida em formato numérico com três declarações de entrada separadas, uma para o ano, uma para o mês e uma para o dia. Certifique-se de que o seu programa funcione corretamente para anos bissextos.</p>
 
+
         
+        
+
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="collapse" data-target="#diaseguinte" aria-expanded="false" aria-controls="diaseguinte">
+          Solução
+        </button>
+        <div class="collapse" id="diaseguinte">
+          <div class="card card-body">
+            
+
+<h2 id="solução">Solução</h2>
+
+<p>Segue uma solução usando dicionários e uma função para determinar se um ano é bissexto:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="k">def</span> <span class="nf">fevereiro</span><span class="p">(</span><span class="n">ano</span><span class="p">):</span>
+	<span class="c1"># retorna o no. de dias em fevereiro do ano
+</span>    <span class="k">return</span> <span class="mi">29</span> <span class="k">if</span> <span class="p">(</span><span class="ow">not</span> <span class="n">ano</span> <span class="o">%</span> <span class="mi">4</span> <span class="ow">and</span> <span class="n">ano</span> <span class="o">%</span> <span class="mi">100</span><span class="p">)</span> <span class="ow">or</span> <span class="ow">not</span> <span class="n">ano</span> <span class="o">%</span> <span class="mi">400</span> <span class="k">else</span> <span class="mi">28</span>
+
+<span class="c1"># entrada de dados
+</span><span class="n">d</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">'Dia: '</span><span class="p">))</span>
+<span class="n">m</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">'Mês: '</span><span class="p">))</span>
+<span class="n">a</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">'Ano: '</span><span class="p">))</span>
+<span class="k">print</span><span class="p">(</span><span class="s">f'dia atual: </span><span class="si">{</span><span class="n">d</span><span class="p">:</span><span class="mi">02</span><span class="n">d</span><span class="si">}</span><span class="s">/</span><span class="si">{</span><span class="n">m</span><span class="p">:</span><span class="mi">02</span><span class="n">d</span><span class="si">}</span><span class="s">/</span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s">'</span><span class="p">)</span>
+
+<span class="c1"># durações de todos os meses
+</span><span class="n">duracoes</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">:</span> <span class="mi">31</span><span class="p">,</span> <span class="mi">2</span><span class="p">:</span> <span class="n">fevereiro</span><span class="p">(</span><span class="n">a</span><span class="p">),</span> <span class="mi">3</span><span class="p">:</span> <span class="mi">31</span><span class="p">,</span> <span class="mi">4</span><span class="p">:</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">5</span><span class="p">:</span> <span class="mi">31</span><span class="p">,</span> <span class="mi">6</span><span class="p">:</span> <span class="mi">30</span><span class="p">,</span>
+            <span class="mi">7</span><span class="p">:</span> <span class="mi">31</span><span class="p">,</span> <span class="mi">8</span><span class="p">:</span> <span class="mi">31</span><span class="p">,</span> <span class="mi">9</span><span class="p">:</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">10</span><span class="p">:</span> <span class="mi">31</span><span class="p">,</span> <span class="mi">11</span><span class="p">:</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">12</span><span class="p">:</span> <span class="mi">31</span><span class="p">}</span>
+
+<span class="k">if</span> <span class="n">d</span> <span class="o">&lt;</span> <span class="n">duracoes</span><span class="p">[</span><span class="n">m</span><span class="p">]:</span>  <span class="c1"># não é o último dia do mês
+</span>    <span class="n">d</span> <span class="o">+=</span> <span class="mi">1</span>  <span class="c1"># apenas incrementa o dia
+</span><span class="k">elif</span> <span class="n">m</span> <span class="o">==</span> <span class="mi">12</span><span class="p">:</span>  <span class="c1"># último dia do mês 12
+</span>    <span class="n">d</span> <span class="o">=</span> <span class="mi">1</span>  <span class="c1"># incrementa o ano
+</span>    <span class="n">m</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="n">a</span> <span class="o">+=</span> <span class="mi">1</span>
+<span class="k">else</span><span class="p">:</span>  <span class="c1"># último dia dos meses 1-11
+</span>    <span class="n">d</span> <span class="o">=</span> <span class="mi">1</span>  <span class="c1"># incrementa o mês
+</span>    <span class="n">m</span> <span class="o">+=</span> <span class="mi">1</span>
+
+<span class="c1"># imprimindo o resultado
+</span><span class="k">print</span><span class="p">(</span><span class="s">f'dia seguinte: </span><span class="si">{</span><span class="n">d</span><span class="p">:</span><span class="mi">02</span><span class="n">d</span><span class="si">}</span><span class="s">/</span><span class="si">{</span><span class="n">m</span><span class="p">:</span><span class="mi">02</span><span class="n">d</span><span class="si">}</span><span class="s">/</span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s">'</span><span class="p">)</span>
+</code></pre></div></div>
+
+          </div>
+        </div>
+
         
 
     </div>
@@ -2498,6 +2687,7 @@ Está entre 40 e 60:
         </ul>
 
         
+          
           <p>Um dos primeiros exemplos conhecidos de criptografia foi usado por Júlio César, que precisava fornecer instruções escritas para seus generais, mas não queria que seus inimigos descobrissem seus planos se a mensagem caísse em mãos erradas. Como resultado, ele desenvolveu o que mais tarde ficou conhecido como Código de César. A ideia é simples mas, em consequência, não fornece proteção contra técnicas modernas de quebra de código. Cada letra na mensagem original é deslocada de 3 lugares. Por exemplo, A torna-se D, B torna-se E, C torna-se F, D torna-se G, etc. As últimas três letras do alfabeto são enroladas de volta do início: X torna-se A, Y torna-se B e Z torna-se C. Caracteres não alfabéticos ficam inalterados. Escreva um programa que implemente o  Código de César. Permita ao usuário fornecer a mensagem e o valor do deslocamento (não necessariamente 3) e, em seguida, exiba a mensagem codificada. Garanta que seu programa codifique letras maiúsculas e minúsculas de modo coerente. Faça com que seu programa suporte também valores de deslocamento negativos, para que possa ser usado tanto para codificar quanto para decodificar mensagens.</p>
 
 <h3 id="dicas">Dicas</h3>
@@ -2514,7 +2704,49 @@ Está entre 40 e 60:
   </li>
 </ol>
 
+
         
+        
+
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="collapse" data-target="#cesar" aria-expanded="false" aria-controls="cesar">
+          Solução
+        </button>
+        <div class="collapse" id="cesar">
+          <div class="card card-body">
+            
+
+<h2 id="solução">Solução</h2>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Entrada
+</span><span class="n">mensagem</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">'Digite sua mensagem:</span><span class="se">\n</span><span class="s">'</span><span class="p">)</span>
+<span class="n">shift</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">'shift= '</span><span class="p">))</span>
+
+<span class="c1"># Algoritmo
+</span><span class="n">coded</span> <span class="o">=</span> <span class="s">''</span>
+<span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">mensagem</span><span class="p">:</span>
+    <span class="n">c_ascii</span> <span class="o">=</span> <span class="nb">ord</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">c_ascii</span> <span class="o">&gt;=</span> <span class="mi">65</span> <span class="ow">and</span> <span class="n">c_ascii</span> <span class="o">&lt;=</span> <span class="mi">90</span><span class="p">:</span>
+        <span class="n">c_ascii</span> <span class="o">+=</span> <span class="n">shift</span>
+        <span class="k">if</span> <span class="n">c_ascii</span> <span class="o">&gt;</span> <span class="mi">90</span><span class="p">:</span>
+            <span class="n">c_ascii</span> <span class="o">-=</span> <span class="mi">26</span>
+        <span class="k">elif</span> <span class="n">c_ascii</span> <span class="o">&lt;</span> <span class="mi">65</span><span class="p">:</span>
+            <span class="n">c_ascii</span> <span class="o">+=</span> <span class="mi">26</span>
+    <span class="k">elif</span> <span class="n">c_ascii</span> <span class="o">&gt;=</span> <span class="mi">97</span> <span class="ow">and</span> <span class="n">c_ascii</span> <span class="o">&lt;=</span> <span class="mi">122</span><span class="p">:</span>
+        <span class="n">c_ascii</span> <span class="o">+=</span> <span class="n">shift</span>
+        <span class="k">if</span> <span class="n">c_ascii</span> <span class="o">&gt;</span> <span class="mi">122</span><span class="p">:</span>
+            <span class="n">c_ascii</span> <span class="o">-=</span> <span class="mi">26</span>
+        <span class="k">elif</span> <span class="n">c_ascii</span> <span class="o">&lt;</span> <span class="mi">97</span><span class="p">:</span>
+            <span class="n">c_ascii</span> <span class="o">+=</span> <span class="mi">26</span>
+    <span class="n">coded</span> <span class="o">+=</span> <span class="nb">chr</span><span class="p">(</span><span class="n">c_ascii</span><span class="p">)</span>
+
+<span class="c1"># Saída
+</span><span class="k">print</span><span class="p">(</span><span class="s">'Mensagem codificada:'</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">coded</span><span class="p">)</span>
+</code></pre></div></div>
+
+          </div>
+        </div>
+
         
 
     </div>
@@ -2554,6 +2786,37 @@ Está entre 40 e 60:
 
 
         
+        
+
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="collapse" data-target="#newton" aria-expanded="false" aria-controls="newton">
+          Solução
+        </button>
+        <div class="collapse" id="newton">
+          <div class="card card-body">
+            
+
+<h3 id="solução">Solução</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s">'''
+cálculo da raiz quadrada aproximada
+usando método de Newton
+com uma precisão de 1e-12
+'''</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">'Digite um número: '</span><span class="p">))</span>
+
+<span class="c1"># Algoritmo: método de Newton para raiz quadrada
+</span><span class="n">raiz</span> <span class="o">=</span> <span class="n">x</span> <span class="o">/</span> <span class="mi">2</span> <span class="c1"># inicializar o palpite para a a raiz em x / 2
+</span><span class="n">tolerancia</span> <span class="o">=</span> <span class="mf">1.e-12</span> <span class="c1"># notacão científica: 1e-12 é igual a 1 * 10**(-12)
+</span><span class="k">while</span> <span class="nb">abs</span><span class="p">(</span><span class="n">raiz</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span> <span class="n">x</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="n">tolerancia</span><span class="p">:</span> <span class="c1"># a função abs() retorna o módulo (valor absoluto) do seu argumento
+</span>    <span class="n">raiz</span> <span class="o">=</span> <span class="p">(</span><span class="n">raiz</span> <span class="o">+</span> <span class="n">x</span> <span class="o">/</span> <span class="n">raiz</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span> <span class="c1"># atualiza o valor do palpite para a raiz
+</span>
+<span class="k">print</span><span class="p">(</span><span class="s">f'A raiz quadrada de </span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s"> é </span><span class="si">{</span><span class="n">raiz</span><span class="si">}</span><span class="s">'</span><span class="p">)</span>
+</code></pre></div></div>
+
+          </div>
+        </div>
+
         
 
     </div>

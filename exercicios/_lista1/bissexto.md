@@ -91,3 +91,17 @@ O número médio de testes nesse caso é então
 $$  N = 1 \times \frac{75}{100} + 2 \times \frac{24}{100} + 3 \times \frac{1}{100} = 1.26  $$
 
 Uma melhora excelente! Conseguimos reduzir em quase 60% o número de comparações, reduzindo de forma parecida o tempo de execução do código. Pense no caso em que seu código precisa ser rodado bilhões ou trilhões de vezes num único dia, qual seria a economia de energia e recursos!
+
+---
+
+Abaixo segue uma alternativa ao código anterior, com apenas uma linha e usando e abusando de operadores lógicos:
+
+```python
+resultado = (ano % 4 == 0 and ano % 100 != 0) or ano % 400 == 0
+```
+
+Outra versão, fazendo ainda menos comparações e usando ainda mais operadores lógicos:
+
+```python
+resultado = bool((not ano % 4 and ano % 100) or not ano % 400)
+```
