@@ -4,7 +4,7 @@ parent: sobre
 nav_order: 0
 tags: [introdução, pypl, python, popularity]
 permalink: /popularidade/
-timestamp: '05/11/20'
+timestamp: '03/03/21'
 ---
 
 Python é a linguagem mais popular e a que mais cresce mundialmente
@@ -12,40 +12,40 @@ Python é a linguagem mais popular e a que mais cresce mundialmente
 
 ## O índice PYPL:
 
-![]({{site.baseurl}}/assets/images/pypl.jpeg){: .col-md-8 .my-1 }
+![]({{site.baseurl}}/assets/images/pypl.png){: .col-md-8 .my-1 }
 
 O **índice PYPL** (*PopularitY of Programming Language*) é obtido analisando a frequência com que busca-se por tutoriais da linguagem no Google ([pypl.github.io/PYPL.html](http://pypl.github.io/PYPL.html){: target="\_blank"})
 
 | Posição	| Linguagem |	Fatia (%)	| Tendência (%) |
 |:-------:|:--------- |:-----:|:---------:|
-| 1 | Python |          30.8  | +1.8  |
-| 2 | Java |          16.79  | -2.3  |
-| 3 | JavaScript |          8.37  | +0.3  |
-| 4 | C# |          6.42  | -0.9  |
-| 5 | PHP |          5.92  | -0.2  |
-| 6 | C/C++ |          5.78  | -0.2  |
-| 7 | R |          4.16  | +0.4  |
-| 8 | Objective-C |          3.57  | +1.0  |
-| 9 | Swift |          2.29  | -0.2  |
-| 10 | TypeScript |          1.84  | -0.0  |
-| 11 | Matlab |          1.65  | -0.1  |
-| 12 | Kotlin |          1.64  | -0.0  |
-| 13 | Go |          1.43  | +0.2  |
-| 14 | Ruby |          1.2  | -0.2  |
-| 15 | VBA |          1.11  | -0.2  |
-| 16 | Rust |          0.97  | +0.3  |
-| 17 | Scala |          0.87  | -0.2  |
-| 18 | Visual Basic |          0.78  | -0.2  |
-| 19 | Ada |          0.62  | +0.3  |
-| 20 | Lua |          0.58  | +0.2  |
-| 21 | Dart |          0.57  | +0.2  |
-| 22 | Perl |          0.47  | -0.1  |
-| 23 | Abap |          0.45  | -0.1  |
-| 24 | Groovy |          0.43  | -0.0  |
-| 25 | Julia |          0.41  | +0.1  |
-| 26 | Cobol |          0.32  | -0.0  |
-| 27 | Haskell |          0.29  | +0.0  |
-| 28 | Delphi |          0.27  | +0.0  |
+| 1 | Python |          30.17  | -0.2  |
+| 2 | Java |          17.18  | -1.2  |
+| 3 | JavaScript |          8.21  | +0.2  |
+| 4 | C# |          6.76  | -0.6  |
+| 5 | C/C++ |          6.71  | +0.8  |
+| 6 | PHP |          6.13  | +0.0  |
+| 7 | R |          3.81  | +0.0  |
+| 8 | Objective-C |          3.56  | +1.1  |
+| 9 | Swift |          1.82  | -0.4  |
+| 10 | Matlab |          1.8  | -0.0  |
+| 11 | Kotlin |          1.76  | +0.2  |
+| 12 | TypeScript |          1.74  | -0.1  |
+| 13 | Go |          1.34  | +0.0  |
+| 14 | VBA |          1.22  | -0.1  |
+| 15 | Ruby |          1.13  | -0.1  |
+| 16 | Rust |          1.13  | +0.5  |
+| 17 | Ada |          0.68  | +0.4  |
+| 18 | Visual Basic |          0.67  | -0.3  |
+| 19 | Scala |          0.66  | -0.4  |
+| 20 | Lua |          0.55  | +0.2  |
+| 21 | Dart |          0.53  | +0.1  |
+| 22 | Abap |          0.44  | -0.1  |
+| 23 | Perl |          0.44  | -0.0  |
+| 24 | Groovy |          0.4  | -0.0  |
+| 25 | Cobol |          0.36  | +0.1  |
+| 26 | Julia |          0.35  | +0.1  |
+| 27 | Haskell |          0.24  | -0.1  |
+| 28 | Delphi |          0.22  | -0.0  |
 
-***Mundialmente em novembro de 2020, comparado a um ano antes***
+***Mundialmente em março de 2021, comparado a um ano antes***
 {: .small}

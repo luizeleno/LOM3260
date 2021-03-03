@@ -28,7 +28,7 @@ Python é a linguagem mais popular e a que mais cresce mundialmente
 
 ## O índice PYPL:
 
-![]({{site.baseurl}}/assets/images/pypl.jpeg){: .col-md-8 .my-1 }
+![]({{site.baseurl}}/assets/images/pypl.png){: .col-md-8 .my-1 }
 
 O **índice PYPL** (*PopularitY of Programming Language*) é obtido analisando \
 a frequência com que busca-se por tutoriais da linguagem no Google \
@@ -86,6 +86,6 @@ ax1.pie(sizes, labels=labels, autopct='%1.2f%%', explode=explode,
         shadow=True, startangle=30)
 ax1.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
 
-plt.savefig('../../assets/images/pypl.jpeg', bbox_inches='tight')
+plt.savefig('../../assets/images/pypl.png', bbox_inches='tight')
 
 plt.show()
