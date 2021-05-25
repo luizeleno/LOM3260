@@ -88,4 +88,4 @@ ax1.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
 
 plt.savefig('../../assets/images/pypl.png', bbox_inches='tight')
 
-plt.show()
+#plt.show()
