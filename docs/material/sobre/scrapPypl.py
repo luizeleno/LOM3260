@@ -77,7 +77,7 @@ sizes = [n.string[:-1] for n in share[:nmax]]
 resto = [n.string[:-1] for n in share[nmax:]]
 r = sum(list(map(float, resto)))
 sizes.append(str(r))
-print(len(sizes))
+#print(len(sizes))
 explode = [0] * (nmax+1)
 # explode[0] = .1
 
