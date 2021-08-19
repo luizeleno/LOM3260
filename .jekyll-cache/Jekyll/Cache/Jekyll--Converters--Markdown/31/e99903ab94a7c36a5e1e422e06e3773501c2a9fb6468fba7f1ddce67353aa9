@@ -1,4 +1,4 @@
-I"l<p>Adapte o exercício anterior para gerar uma <em>senha forte</em>, tendo pelo menos 8 caracteres, pelo menos uma letra maiúscula, pelo menos uma letra minúscula, e pelo menos um número. Conte e exiba o número de tentativas que foram necessárias antes que uma senha forte fosse gerada.</p>
+I"�<p>Adapte o exercício anterior para gerar uma <em>senha forte</em>, tendo pelo menos 8 caracteres, pelo menos uma letra maiúscula, pelo menos uma letra minúscula, e pelo menos um número. Conte e exiba o número de tentativas que foram necessárias antes que uma senha forte fosse gerada.</p>
 
 <!-- more -->
 
@@ -61,7 +61,7 @@
 
 <span class="c1"># Chamando a função
 </span><span class="n">SenhaForte</span><span class="p">,</span> <span class="n">n</span> <span class="o">=</span> <span class="n">senha_forte</span><span class="p">()</span>
-<span class="k">print</span><span class="p">(</span><span class="s">f'Senha: </span><span class="si">{</span><span class="n">SenhaForte</span><span class="si">}</span><span class="se">\n</span><span class="s">Tentativas: </span><span class="si">{</span><span class="n">n</span><span class="si">}</span><span class="s">'</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'Senha: </span><span class="si">{</span><span class="n">SenhaForte</span><span class="si">}</span><span class="se">\n</span><span class="s">Tentativas: </span><span class="si">{</span><span class="n">n</span><span class="si">}</span><span class="s">'</span><span class="p">)</span>
 </code></pre></div></div>
 
 <p class="alert alert-success">:bulb: Em strings, <code class="language-plaintext highlighter-rouge">\n</code> é um código para quebra de linha. Ele corresponde ao caractere de no. 10 da <a href="https://pt.wikipedia.org/wiki/ASCII" target="\_blank">Tabela ASCII</a></p>

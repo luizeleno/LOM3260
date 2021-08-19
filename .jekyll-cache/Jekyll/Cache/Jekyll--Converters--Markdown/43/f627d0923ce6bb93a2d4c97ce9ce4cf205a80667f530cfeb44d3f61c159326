@@ -1,4 +1,4 @@
-I"�<div class="float-right col-md-4">
+I"�<div class="float-right col-md-4">
 <div class="text-center">
 <figure class="figure">
   
@@ -114,7 +114,7 @@
 
 <span class="k">print</span><span class="p">(</span><span class="n">th</span><span class="p">,</span> <span class="n">R</span><span class="p">)</span>
 
-<span class="k">print</span><span class="p">(</span><span class="s">f'CD=</span><span class="si">{</span><span class="n">CD</span><span class="si">}</span><span class="s">'</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'CD=</span><span class="si">{</span><span class="n">CD</span><span class="si">}</span><span class="s">'</span><span class="p">)</span>
 </code></pre></div></div>
 
 <p>Obtendo $\theta=1.0267\,$rad (58.827°). Voltando às equações, calculamos $R = 5.8437\,\text{cm}$ e finalmente a flecha $CD$:</p>

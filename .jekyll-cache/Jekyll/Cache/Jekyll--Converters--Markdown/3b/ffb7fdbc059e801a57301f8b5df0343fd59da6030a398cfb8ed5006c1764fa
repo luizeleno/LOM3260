@@ -1,4 +1,4 @@
-I">
+I"V
 <p>Escreva um programa que converta um número decimal (base 10) em binário (base 2). Leia o número decimal do usuário e use o seguinte algoritmo de divisão, exemplificado para o número 83 (base 10):</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	83/2 = 41 resto 1
 	41/2 = 20 resto 1
@@ -36,7 +36,7 @@ comentários:
     <span class="n">binario</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">resto</span><span class="p">)</span> <span class="o">+</span> <span class="n">binario</span>
 
 <span class="c1"># Saída
-</span><span class="k">print</span><span class="p">(</span><span class="s">f'</span><span class="si">{</span><span class="n">decimal</span><span class="si">}</span><span class="s"> (base 10) = </span><span class="si">{</span><span class="n">binario</span><span class="si">}</span><span class="s"> (base 2)'</span><span class="p">)</span>
+</span><span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'</span><span class="si">{</span><span class="n">decimal</span><span class="si">}</span><span class="s"> (base 10) = </span><span class="si">{</span><span class="n">binario</span><span class="si">}</span><span class="s"> (base 2)'</span><span class="p">)</span>
 
 </code></pre></div></div>
 :ET

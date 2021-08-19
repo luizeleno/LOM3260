@@ -1,4 +1,4 @@
-I")<p>Se você tem 3 varetas, possivelmente de diferentes comprimentos, pode ou não ser possível ajeitá-las para que elas formem um triângulo. Por exemplo, se todos as varetas tiverem um comprimento de 6cm, pode-se facilmente construir um triângulo equilátero. No entanto, se uma vareta tem 6cm e as outras duas têm apenas 2cm, não dá pra criar um triângulo. Em geral, se qualquer uma das varetas é maior ou igual à soma das outras duas, elas não podem ser usadas para formar um triângulo. Caso contrário, o triângulo existe. Escreva um programa que determine se três comprimentos podem ou não formar um triângulo. O programa recebe 3 parâmetros e retorna um resultado booleano (<code class="language-plaintext highlighter-rouge">True</code> ou <code class="language-plaintext highlighter-rouge">False</code>).</p>
+I"Y<p>Se você tem 3 varetas, possivelmente de diferentes comprimentos, pode ou não ser possível ajeitá-las para que elas formem um triângulo. Por exemplo, se todos as varetas tiverem um comprimento de 6cm, pode-se facilmente construir um triângulo equilátero. No entanto, se uma vareta tem 6cm e as outras duas têm apenas 2cm, não dá pra criar um triângulo. Em geral, se qualquer uma das varetas é maior ou igual à soma das outras duas, elas não podem ser usadas para formar um triângulo. Caso contrário, o triângulo existe. Escreva um programa que determine se três comprimentos podem ou não formar um triângulo. O programa recebe 3 parâmetros e retorna um resultado booleano (<code class="language-plaintext highlighter-rouge">True</code> ou <code class="language-plaintext highlighter-rouge">False</code>).</p>
 
 <!-- more -->
 
@@ -13,8 +13,8 @@
   <span class="n">triangulo</span> <span class="o">=</span> <span class="bp">True</span>
 
 <span class="k">if</span> <span class="n">triangulo</span><span class="p">:</span>
-  <span class="k">print</span><span class="p">(</span><span class="s">f'Triângulo </span><span class="si">{</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="si">}</span><span class="s"> existe'</span><span class="p">)</span>
+  <span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'Triângulo </span><span class="si">{</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="si">}</span><span class="s"> existe'</span><span class="p">)</span>
 <span class="k">else</span><span class="p">:</span>
-  <span class="k">print</span><span class="p">(</span><span class="s">f'Triângulo </span><span class="si">{</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="si">}</span><span class="s"> não existe'</span><span class="p">)</span>
+  <span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'Triângulo </span><span class="si">{</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="si">}</span><span class="s"> não existe'</span><span class="p">)</span>
 </code></pre></div></div>
 :ET

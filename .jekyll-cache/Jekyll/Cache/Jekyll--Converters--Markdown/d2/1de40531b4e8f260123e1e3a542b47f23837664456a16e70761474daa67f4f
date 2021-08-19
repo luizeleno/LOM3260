@@ -1,4 +1,4 @@
-I"�<p>Escreva um programa que converta um número binário (base 2) em decimal (base 10). Seu programa deve ler o número binário do usuário como uma sequência de zeros e uns e exibir o número decimal equivalente, processando cada dígito da representação binária. Por exemplo, 1010011 (base 2) $\equiv$ 83 (base 10), obtido a partir da definição:</p>
+I"�<p>Escreva um programa que converta um número binário (base 2) em decimal (base 10). Seu programa deve ler o número binário do usuário como uma sequência de zeros e uns e exibir o número decimal equivalente, processando cada dígito da representação binária. Por exemplo, 1010011 (base 2) $\equiv$ 83 (base 10), obtido a partir da definição:</p>
 
 \[1010011 \text{ (base 2)} =\]
 
@@ -30,7 +30,7 @@
     <span class="n">p</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">p</span>
 
 <span class="c1"># Output
-</span><span class="k">print</span><span class="p">(</span><span class="s">f'</span><span class="si">{</span><span class="n">binario</span><span class="si">}</span><span class="s"> (base 10) = </span><span class="si">{</span><span class="n">soma</span><span class="si">}</span><span class="s"> (base 2)'</span><span class="p">)</span>
+</span><span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'</span><span class="si">{</span><span class="n">binario</span><span class="si">}</span><span class="s"> (base 10) = </span><span class="si">{</span><span class="n">soma</span><span class="si">}</span><span class="s"> (base 2)'</span><span class="p">)</span>
 
 </code></pre></div></div>
 :ET

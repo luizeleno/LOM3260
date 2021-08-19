@@ -1,4 +1,4 @@
-I"!<p>Implemente um algoritmo para converter números em algarismos arábicos (por exemplo, 4, 18, 29, 98, 1746) em algarismos romanos (IV, XVIII, XXIX, XCVIII, MDCCXLVI). Limite-se aos valores de 1 a 3999. Se estiver inspirado, implemente a conversão de algarismos romanos para arábicos.</p>
+I"-!<p>Implemente um algoritmo para converter números em algarismos arábicos (por exemplo, 4, 18, 29, 98, 1746) em algarismos romanos (IV, XVIII, XXIX, XCVIII, MDCCXLVI). Limite-se aos valores de 1 a 3999. Se estiver inspirado, implemente a conversão de algarismos romanos para arábicos.</p>
 
 <!-- more -->
 
@@ -17,7 +17,7 @@
 
 
 <span class="k">def</span> <span class="nf">arabico_para_romano</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
-    <span class="n">arab</span> <span class="o">=</span> <span class="s">f'</span><span class="si">{</span><span class="n">n</span><span class="p">:</span><span class="mi">04</span><span class="n">d</span><span class="si">}</span><span class="s">'</span>  <span class="c1"># converte o inteiro n para string, padding com zeros
+    <span class="n">arab</span> <span class="o">=</span> <span class="sa">f</span><span class="s">'</span><span class="si">{</span><span class="n">n</span><span class="p">:</span><span class="mi">04</span><span class="n">d</span><span class="si">}</span><span class="s">'</span>  <span class="c1"># converte o inteiro n para string, padding com zeros
 </span>    <span class="n">rom</span> <span class="o">=</span> <span class="n">dict_milhar</span><span class="p">[</span><span class="n">arab</span><span class="p">[</span><span class="mi">0</span><span class="p">]]</span>
     <span class="n">rom</span> <span class="o">+=</span> <span class="n">dict_centena</span><span class="p">[</span><span class="n">arab</span><span class="p">[</span><span class="mi">1</span><span class="p">]]</span>
     <span class="n">rom</span> <span class="o">+=</span> <span class="n">dict_dezena</span><span class="p">[</span><span class="n">arab</span><span class="p">[</span><span class="mi">2</span><span class="p">]]</span>

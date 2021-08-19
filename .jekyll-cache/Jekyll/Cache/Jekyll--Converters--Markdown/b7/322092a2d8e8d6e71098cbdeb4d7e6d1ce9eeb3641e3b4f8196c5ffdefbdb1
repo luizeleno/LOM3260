@@ -1,4 +1,4 @@
-I"�!<p class="lead">Uma poderosa ferramenta para turbinar seu código</p>
+I""<p class="lead">Uma poderosa ferramenta para turbinar seu código</p>
 
 <p>Dicionários são uma espécie de lista, em que os índices, ao invés de uma sequência de inteiros começando em zero, são <strong>chaves</strong> que você mesmo fornece. É muito parecido com um dicionário de verdade, com verbetes e suas definições.</p>
 
@@ -20,7 +20,7 @@
 
 <p>O comando</p>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">palavra</span><span class="o">=</span><span class="s">'mesa'</span>
-<span class="k">print</span><span class="p">(</span><span class="s">f'</span><span class="si">{</span><span class="n">palavra</span><span class="si">}</span><span class="s"> em inglês é </span><span class="si">{</span><span class="n">meu_dicio</span><span class="p">[</span><span class="n">palavra</span><span class="p">]</span><span class="si">}</span><span class="s">'</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'</span><span class="si">{</span><span class="n">palavra</span><span class="si">}</span><span class="s"> em inglês é </span><span class="si">{</span><span class="n">meu_dicio</span><span class="p">[</span><span class="n">palavra</span><span class="p">]</span><span class="si">}</span><span class="s">'</span><span class="p">)</span>
 </code></pre></div></div>
 <p>retorna <code class="language-plaintext highlighter-rouge">mesa em inglês é table</code></p>
 
@@ -28,9 +28,9 @@
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">palavra_pt</span> <span class="o">=</span> <span class="s">'caderno'</span>
 <span class="k">if</span> <span class="n">palavra_pt</span> <span class="ow">in</span> <span class="n">meu_dicio</span><span class="p">:</span>
     <span class="c1"># o operador in opera recursivamente por todas as chaves em meu_dicio
-</span>    <span class="k">print</span><span class="p">(</span><span class="s">f'Eu sei traduzir </span><span class="si">{</span><span class="n">palavra_pt</span><span class="si">}</span><span class="s"> pro inglês: </span><span class="si">{</span><span class="n">meu_dicio</span><span class="p">[</span><span class="n">palavra_pt</span><span class="p">]</span><span class="si">}</span><span class="s">'</span> <span class="p">)</span>
+</span>    <span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'Eu sei traduzir </span><span class="si">{</span><span class="n">palavra_pt</span><span class="si">}</span><span class="s"> pro inglês: </span><span class="si">{</span><span class="n">meu_dicio</span><span class="p">[</span><span class="n">palavra_pt</span><span class="p">]</span><span class="si">}</span><span class="s">'</span> <span class="p">)</span>
 <span class="k">else</span><span class="p">:</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">f'Não faço ideia de como é </span><span class="se">\'</span><span class="si">{</span><span class="n">palavra_pt</span><span class="si">}</span><span class="se">\'</span><span class="s"> em inglês'</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'Não faço ideia de como é </span><span class="se">\'</span><span class="si">{</span><span class="n">palavra_pt</span><span class="si">}</span><span class="se">\'</span><span class="s"> em inglês'</span><span class="p">)</span>
 </code></pre></div></div>
 <p>Qual é a saída desse código?</p>
 
