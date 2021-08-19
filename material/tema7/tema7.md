@@ -7,7 +7,9 @@ icon: rocket
 timestamp: 07/06/20
 ---
 
-Finalmente chegamos ao cálculo científico propriamente dito!
+<!-- Finalmente chegamos ao cálculo científico propriamente dito! -->
+
+Ferramentas para resolver problemas numéricos
 {: .lead }
 
 <!-- Os tópicos deste tema estão na forma de arquivos pdf. Com o tempo, serão convertidos para o formato web. -->
