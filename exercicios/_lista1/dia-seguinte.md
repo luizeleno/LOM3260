@@ -16,9 +16,8 @@ Escreva um programa que leia uma data do usuário e calcule o dia seguinte. Por 
 Segue uma solução usando dicionários e uma função para determinar se um ano é bissexto:
 
 ```python
-
 def fevereiro(ano):
-	# retorna o no. de dias em fevereiro do ano
+    # retorna o no. de dias em fevereiro do ano
     return 29 if (not ano % 4 and ano % 100) or not ano % 400 else 28
 
 # entrada de dados
