@@ -15,13 +15,10 @@ Escreva um programa para gerar uma senha aleatória. A senha deve ter um comprim
 ### Solução
 
 ```python
-import numpy.random as rd
-L = rd.randint(7, 11)  # tamanho da senha
-s = rd.randint(33, 127, size=L)  # senha com L caracteres no intervalo 33-126
-# imprime a senha:
-senha = ''
-for c in s:
-    senha += chr(c)
+from numpy.random import randint
+L = randint(7, 11)  # tamanho da senha
+s = randint(33, 127, size=L)  # senha com L caracteres no intervalo 33-126
+senha = ''.join(chr(c) for c in s)
 print(senha)
 ```
 
