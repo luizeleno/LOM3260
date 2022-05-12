@@ -4,7 +4,7 @@ parent: sobre
 nav_order: 0
 tags: [introdução, pypl, python, popularity]
 permalink: /popularidade/
-timestamp: '02/05/22'
+timestamp: '12/05/22'
 ---
 
 Python é a linguagem mais popular e a que mais cresce mundialmente
