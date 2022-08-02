@@ -4,7 +4,7 @@ parent: sobre
 nav_order: 0
 tags: [introdução, pypl, python, popularity]
 permalink: /popularidade/
-timestamp: '02/06/22'
+timestamp: '02/08/22'
 ---
 
 Python é a linguagem mais popular e a que mais cresce mundialmente
@@ -18,34 +18,34 @@ O **índice PYPL** (*PopularitY of Programming Language*) é obtido analisando a
 
 | Posição	| Linguagem |	Fatia (%)	| Tendência (%) |
 |:-------:|:--------- |:-----:|:---------:|
-| 1 | Python |          27.61  | -2.8  |
-| 2 | Java |          17.64  | -0.7  |
-| 3 | JavaScript |          9.21  | +0.4  |
-| 4 | C# |          7.79  | +0.8  |
-| 5 | C/C++ |          7.01  | +0.4  |
-| 6 | PHP |          5.27  | -1.0  |
-| 7 | R |          4.26  | +0.5  |
-| 8 | TypeScript |          2.43  | +0.7  |
-| 9 | Objective-C |          2.21  | +0.1  |
-| 10 | Swift |          2.17  | +0.4  |
-| 11 | Matlab |          1.71  | +0.2  |
-| 12 | Kotlin |          1.57  | -0.2  |
-| 13 | Go |          1.48  | +0.0  |
-| 14 | Rust |          1.29  | +0.4  |
-| 15 | Ruby |          1.1  | -0.0  |
-| 16 | VBA |          1.07  | -0.2  |
-| 17 | Ada |          0.95  | +0.4  |
-| 18 | Scala |          0.73  | +0.2  |
-| 19 | Visual Basic |          0.65  | -0.0  |
-| 20 | Dart |          0.64  | +0.0  |
-| 21 | Abap |          0.58  | +0.1  |
-| 22 | Lua |          0.51  | -0.0  |
-| 23 | Groovy |          0.48  | +0.1  |
-| 24 | Perl |          0.44  | +0.0  |
-| 25 | Julia |          0.41  | +0.0  |
-| 26 | Cobol |          0.34  | +0.1  |
-| 27 | Haskell |          0.29  | +0.1  |
-| 28 | Delphi/Pascal |          0.16  | +0.1  |
+| 1 | Python |          28.11  | -2.6  |
+| 2 | Java |          17.35  | -0.9  |
+| 3 | JavaScript |          9.48  | +0.2  |
+| 4 | C# |          7.08  | +0.1  |
+| 5 | C/C++ |          6.19  | -0.3  |
+| 6 | PHP |          5.47  | -0.8  |
+| 7 | R |          4.35  | +0.6  |
+| 8 | TypeScript |          2.79  | +1.1  |
+| 9 | Swift |          2.09  | +0.5  |
+| 10 | Objective-C |          2.03  | +0.2  |
+| 11 | Go |          2.03  | +0.5  |
+| 12 | Kotlin |          1.78  | -0.0  |
+| 13 | Rust |          1.58  | +0.8  |
+| 14 | Matlab |          1.52  | +0.1  |
+| 15 | Ruby |          1.15  | +0.1  |
+| 16 | VBA |          1.02  | -0.2  |
+| 17 | Dart |          0.83  | +0.2  |
+| 18 | Ada |          0.78  | +0.2  |
+| 19 | Scala |          0.73  | +0.2  |
+| 20 | Lua |          0.64  | +0.1  |
+| 21 | Visual Basic |          0.6  | -0.2  |
+| 22 | Abap |          0.48  | -0.0  |
+| 23 | Julia |          0.43  | +0.1  |
+| 24 | Groovy |          0.41  | -0.1  |
+| 25 | Perl |          0.32  | -0.1  |
+| 26 | Cobol |          0.32  | +0.0  |
+| 27 | Haskell |          0.26  | +0.1  |
+| 28 | Delphi/Pascal |          0.18  | +0.2  |
 
-***Mundialmente em junho de 2022, comparado a um ano antes***
+***Mundialmente em agosto de 2022, comparado a um ano antes***
 {: .small}
