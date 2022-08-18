@@ -1,4 +1,4 @@
-I"�!<p>A Páscoa cai no primeiro domingo do ano após a lua cheia (mas não a lua cheia real, e sim de acordo com um antigo cômputo (computus) eclesiástico que nada mais tem a ver com a lua que vemos no céu: é apenas um <em>algoritmo</em>…) que acontece no ou imediatamente após o equinócio de março (considera-se sempre 21 de março como a data do equinócio, o que nem sempre é verdade, pois pode ser um ou dois dias antes…). Na prática, é mais fácil calcular a data da Páscoa usando o algoritmo de Meeus–Jones–Butcher:</p>
+I"�!<p>A Páscoa cai no primeiro domingo do ano após a lua cheia (mas não a lua cheia real, e sim de acordo com um antigo cômputo (computus) eclesiástico que nada mais tem a ver com a lua que vemos no céu: é apenas um <em>algoritmo</em>…) que acontece no ou imediatamente após o equinócio de março (considera-se sempre 21 de março como a data do equinócio, o que nem sempre é verdade, pois pode ser um ou dois dias antes…). Na prática, é mais fácil calcular a data da Páscoa usando o algoritmo de Meeus–Jones–Butcher:</p>
 
 <table>
   <thead>
@@ -98,6 +98,6 @@
 <span class="n">d</span><span class="p">,</span> <span class="n">m</span> <span class="o">=</span> <span class="n">pascoa</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 
 <span class="c1"># o formato 02d imprime um inteiro com 2 algarismos, com zeros à esquerda se necessário
-</span><span class="k">print</span><span class="p">(</span> <span class="sa">f</span><span class="s">'Data da Páscoa em </span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s">: </span><span class="si">{</span><span class="n">d</span><span class="p">:</span><span class="mi">02</span><span class="n">d</span><span class="si">}</span><span class="s"> de </span><span class="si">{</span><span class="n">mes</span><span class="p">[</span><span class="n">m</span><span class="p">]</span><span class="si">}</span><span class="s">'</span> <span class="p">)</span>
+</span><span class="k">print</span><span class="p">(</span> <span class="sa">f</span><span class="s">'Data da Páscoa em </span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s">: </span><span class="si">{</span><span class="n">d</span><span class="si">:</span><span class="mi">02</span><span class="n">d</span><span class="si">}</span><span class="s"> de </span><span class="si">{</span><span class="n">mes</span><span class="p">[</span><span class="n">m</span><span class="p">]</span><span class="si">}</span><span class="s">'</span> <span class="p">)</span>
 </code></pre></div></div>
 :ET
