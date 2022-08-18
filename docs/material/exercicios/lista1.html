@@ -1412,9 +1412,9 @@
   
 <h3 id="acesso-rápido">Acesso rápido</h3>
 
-<p><a href="#ex1" class="badge badge-primary">Ex. 1</a>
-  <a href="#ex2" class="badge badge-primary">Ex. 2</a>
-  <a href="#ex3" class="badge badge-primary">Ex. 3</a>
+<p><a href="#ex1" class="badge badge-success">Ex. 1</a>
+  <a href="#ex2" class="badge badge-success">Ex. 2</a>
+  <a href="#ex3" class="badge badge-success">Ex. 3</a>
   <a href="#ex4" class="badge badge-primary">Ex. 4</a>
   <a href="#ex5" class="badge badge-primary">Ex. 5</a>
   <a href="#ex6" class="badge badge-primary">Ex. 6</a>
@@ -1446,23 +1446,24 @@
 
 <h3 id="instruções">Instruções</h3>
 
+<ul>
+  <li>para os exercícios marcados em <span class="badge badge-success">verde</span>, uma possível solução é fornecida aqui, junto ao exercício.
 <!-- - os exercícios marcados em <span class="badge badge-warning">amarelo</span> devem ser entregues no dia 08/10/2020. -->
 <!-- - os exercícios marcados em <span class="badge badge-danger">vermelho</span> devem ser entregues no dia 05/11/2020. -->
 <!-- - os exercícios marcados em <span class="badge badge-dark">preto</span> devem ser entregues em dupla no dia 03/12/2020. -->
-<ul>
+</li>
   <li>
     <p>as porcentagens no começo de cada exercício são uma maneira de indicar o seu grau de dificuldade. Mas não se apegue muito a esses valores: talvez você ache fáceis alguns que eu julgo como difíceis — e vice versa!</p>
   </li>
   <li>
-    <p><strong>Legenda:</strong>
+<strong>Legenda:</strong>
 <img src="/LOM3260/assets/images/legenda/ifthenelse.jpg" alt="" title="decisão" width="20px">: decisão;
 <img src="/LOM3260/assets/images/legenda/loop.png" alt="" title="repetição" width="20px">: repetição;
 <img src="/LOM3260/assets/images/legenda/function.png" alt="" title="função" width="20px">: função;
 <img src="/LOM3260/assets/images/legenda/dict.png" alt="" title="dicionário" width="35px">: dicionários;
 <img src="/LOM3260/assets/images/legenda/list.png" alt="" title="lista" width="20px">: listas;
 <img src="/LOM3260/assets/images/legenda/string.jpg" alt="" title="string" width="30px">: <em>strings</em>;
-<img src="/LOM3260/assets/images/legenda/recursion.png" alt="" title="string" width="25px">: recursão.</p>
-  </li>
+<img src="/LOM3260/assets/images/legenda/recursion.png" alt="" title="string" width="25px">: recursão.</li>
 </ul>
 
 <hr>
@@ -1513,6 +1514,101 @@
         
         
 
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="collapse" data-target="#bissexto" aria-expanded="false" aria-controls="bissexto">
+          Solução
+        </button>
+        <div class="collapse" id="bissexto">
+          <div class="card card-body">
+            
+
+<h2 id="solução">Solução</h2>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Entrada de dados
+</span>
+<span class="n">ano</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">'Digite o ano: '</span><span class="p">)</span>
+
+<span class="c1"># Código - algoritmos
+</span>
+<span class="n">ano</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">ano</span><span class="p">)</span> <span class="c1"># convertendo ano de string para int
+</span>
+<span class="k">if</span> <span class="n">ano</span> <span class="o">%</span> <span class="mi">400</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>  <span class="c1"># é múltiplo de 400
+</span>    <span class="n">resultado</span> <span class="o">=</span> <span class="bp">True</span>
+<span class="k">elif</span> <span class="n">ano</span> <span class="o">%</span> <span class="mi">100</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>  <span class="c1"># é múltiplo de 100
+</span>    <span class="n">resultado</span> <span class="o">=</span> <span class="bp">False</span>
+<span class="k">elif</span> <span class="n">ano</span> <span class="o">%</span> <span class="mi">4</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>  <span class="c1"># é múltiplo de 4
+</span>    <span class="n">resultado</span> <span class="o">=</span> <span class="bp">True</span>
+<span class="k">else</span><span class="p">:</span>  <span class="c1"># não é múltiplo de 4
+</span>    <span class="n">resultado</span> <span class="o">=</span> <span class="bp">False</span>
+
+<span class="c1"># Saída de dados
+</span>
+<span class="k">if</span> <span class="n">resultado</span> <span class="o">==</span> <span class="bp">True</span><span class="p">:</span>
+    <span class="n">res</span> <span class="o">=</span> <span class="s">'é'</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="n">res</span> <span class="o">=</span> <span class="s">'não é'</span>
+
+<span class="n">s</span> <span class="o">=</span> <span class="sa">f</span><span class="s">'</span><span class="si">{</span><span class="n">ano</span><span class="si">}</span><span class="s"> </span><span class="si">{</span><span class="n">res</span><span class="si">}</span><span class="s"> bissexto'</span> <span class="c1"># mensagem formatada
+</span><span class="k">print</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="análise-da-solução">Análise da Solução</h3>
+
+<p>Dado que, de cada 400 números, 100 (25%) são divisíveis por 4, 1 (0.25%) é divisível por 400 e 3 (0.75%) são divisíveis por 100 mas não por 400, concluimos que, de todos os anos possíveis,</p>
+<ul>
+  <li>0.25%: apenas um teste (<code class="language-plaintext highlighter-rouge">if</code>) é necessário;</li>
+  <li>0.75%: dois testes (<code class="language-plaintext highlighter-rouge">if</code> e 1º <code class="language-plaintext highlighter-rouge">elif</code>) são necessários;</li>
+  <li>99%: três testes (24% passam no teste do 2º <code class="language-plaintext highlighter-rouge">elif</code> e 75% vão para o <code class="language-plaintext highlighter-rouge">else</code>) são necessários.</li>
+</ul>
+
+<p>O número médio de testes é então</p>
+
+\[N = 1 \times \frac{0.25}{100} + 2 \times \frac{0.75}{100} + 3 \times \frac{99}{100} = 2.9875\]
+
+<p>Esse é um número de testes muito alto para um problema tão simples. Portanto, o algoritmo proposto no enunciado não é muito eficiente.</p>
+
+<h2 id="solução-otimizada">Solução otimizada</h2>
+
+<p>Com as dicas do enunciado e usando a construção <code class="language-plaintext highlighter-rouge">if elif else</code>, a melhor solução para o problema (<em>melhor</em> no sentido estatístico, ou seja, aquela que faz, em média, menos testes) é a seguinte:</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span> <span class="n">ano</span> <span class="o">%</span> <span class="mi">4</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>  <span class="c1"># não é múltiplo de 4
+</span>    <span class="n">resultado</span> <span class="o">=</span> <span class="bp">False</span>
+<span class="k">elif</span> <span class="n">ano</span> <span class="o">%</span> <span class="mi">100</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>  <span class="c1"># é multiplo de 4 mas não de 100
+</span>    <span class="n">resultado</span> <span class="o">=</span> <span class="bp">True</span>
+<span class="k">elif</span> <span class="n">ano</span> <span class="o">%</span> <span class="mi">400</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>  <span class="c1"># é múltiplo de 100 mas não de 400
+</span>    <span class="n">resultado</span> <span class="o">=</span> <span class="bp">False</span>
+<span class="k">else</span><span class="p">:</span>  <span class="c1"># é múltiplo de 400
+</span>    <span class="n">resultado</span> <span class="o">=</span> <span class="bp">True</span>
+</code></pre></div></div>
+
+<p>Vamos fazer a análise novamente. De todos os anos possíveis,</p>
+<ul>
+  <li>75%: apenas um teste (<code class="language-plaintext highlighter-rouge">if</code>) é necessário;</li>
+  <li>24% dois testes (<code class="language-plaintext highlighter-rouge">if</code> e 1º <code class="language-plaintext highlighter-rouge">elif</code>) são necessários;</li>
+  <li>1%: três testes (0.75% passam no teste do 2º <code class="language-plaintext highlighter-rouge">elif</code> e 0.25% vão para o <code class="language-plaintext highlighter-rouge">else</code>) são necessários.</li>
+</ul>
+
+<p>O número médio de testes nesse caso é então</p>
+
+\[N = 1 \times \frac{75}{100} + 2 \times \frac{24}{100} + 3 \times \frac{1}{100} = 1.26\]
+
+<p>Uma melhora excelente! Conseguimos reduzir em quase 60% o número de comparações, reduzindo de forma parecida o tempo de execução do código. Pense no caso em que seu código precisa ser rodado bilhões ou trilhões de vezes num único dia, qual seria a economia de energia e recursos!</p>
+
+<hr>
+
+<p>Abaixo segue uma alternativa ao código anterior, com apenas uma linha e usando e abusando de operadores lógicos:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">resultado</span> <span class="o">=</span> <span class="p">(</span><span class="n">ano</span> <span class="o">%</span> <span class="mi">4</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">ano</span> <span class="o">%</span> <span class="mi">100</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">)</span> <span class="ow">or</span> <span class="n">ano</span> <span class="o">%</span> <span class="mi">400</span> <span class="o">==</span> <span class="mi">0</span>
+</code></pre></div></div>
+
+<p>Outra versão, fazendo ainda menos comparações e usando ainda mais operadores lógicos:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">resultado</span> <span class="o">=</span> <span class="nb">bool</span><span class="p">((</span><span class="ow">not</span> <span class="n">ano</span> <span class="o">%</span> <span class="mi">4</span> <span class="ow">and</span> <span class="n">ano</span> <span class="o">%</span> <span class="mi">100</span><span class="p">)</span> <span class="ow">or</span> <span class="ow">not</span> <span class="n">ano</span> <span class="o">%</span> <span class="mi">400</span><span class="p">)</span>
+</code></pre></div></div>
+
+          </div>
+        </div>
+
+        
+
     </div>
 </div>
 
@@ -1548,6 +1644,39 @@
         
         
 
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="collapse" data-target="#segundos" aria-expanded="false" aria-controls="segundos">
+          Solução
+        </button>
+        <div class="collapse" id="segundos">
+          <div class="card card-body">
+            
+
+<h2 id="solução">Solução</h2>
+
+<p>Existem muitas maneiras de resolver este exercício. Uma proposta é encontrada abaixo:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">t</span> <span class="o">=</span> <span class="mi">1423554</span>  <span class="c1"># tempo em segundos
+</span>
+<span class="n">s</span> <span class="o">=</span> <span class="n">t</span> <span class="o">%</span> <span class="mi">60</span>  <span class="c1"># segundos: 60 s = 1 min
+</span><span class="n">t</span> <span class="o">//=</span> <span class="mi">60</span>  <span class="c1"># tempo restante em minutos
+</span><span class="n">m</span> <span class="o">=</span> <span class="n">t</span> <span class="o">%</span> <span class="mi">60</span>  <span class="c1"># minutos: 60 min = 1 h
+</span><span class="n">t</span> <span class="o">//=</span> <span class="mi">60</span>  <span class="c1"># tempo restante em horas
+</span><span class="n">h</span> <span class="o">=</span> <span class="n">t</span> <span class="o">%</span> <span class="mi">24</span>  <span class="c1"># horas: 24 h = 1 dia
+</span><span class="n">d</span> <span class="o">=</span> <span class="n">t</span> <span class="o">//</span> <span class="mi">24</span>  <span class="c1"># tempo restante em dias
+</span>
+<span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'</span><span class="si">{</span><span class="n">d</span><span class="si">}</span><span class="s">d </span><span class="si">{</span><span class="n">h</span><span class="si">}</span><span class="s">h </span><span class="si">{</span><span class="n">m</span><span class="si">}</span><span class="s">m </span><span class="si">{</span><span class="n">s</span><span class="si">}</span><span class="s">s'</span><span class="p">)</span>
+
+<span class="c1"># Teste da solução:
+</span><span class="n">t</span> <span class="o">=</span> <span class="mi">60</span> <span class="o">*</span> <span class="p">(</span> <span class="mi">60</span> <span class="o">*</span> <span class="p">(</span><span class="n">d</span> <span class="o">*</span> <span class="mi">24</span> <span class="o">+</span> <span class="n">h</span><span class="p">)</span> <span class="o">+</span> <span class="n">m</span><span class="p">)</span> <span class="o">+</span> <span class="n">s</span>
+<span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'</span><span class="si">{</span><span class="n">t</span><span class="si">}</span><span class="s">s'</span><span class="p">)</span>
+
+</code></pre></div></div>
+
+          </div>
+        </div>
+
+        
+
     </div>
 </div>
 
@@ -1569,6 +1698,34 @@
 
 
         
+        
+
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="collapse" data-target="#tri" aria-expanded="false" aria-controls="tri">
+          Solução
+        </button>
+        <div class="collapse" id="tri">
+          <div class="card card-body">
+            
+
+<h2 id="solução">Solução</h2>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">arestas</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">'a b c = '</span><span class="p">).</span><span class="n">split</span><span class="p">()</span>
+<span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span> <span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="n">arestas</span><span class="p">)</span>  <span class="c1"># o comando map(f, L) aplica a função f à lista L
+</span>
+<span class="k">if</span> <span class="n">a</span> <span class="o">&gt;=</span> <span class="n">b</span> <span class="o">+</span> <span class="n">c</span> <span class="ow">or</span> <span class="n">b</span> <span class="o">&gt;=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">c</span> <span class="ow">or</span> <span class="n">c</span> <span class="o">&gt;=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="p">:</span>
+  <span class="n">triangulo</span> <span class="o">=</span> <span class="bp">False</span>
+<span class="k">else</span><span class="p">:</span>
+  <span class="n">triangulo</span> <span class="o">=</span> <span class="bp">True</span>
+
+<span class="k">if</span> <span class="n">triangulo</span><span class="p">:</span>
+  <span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'Triângulo </span><span class="si">{</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="si">}</span><span class="s"> existe'</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+  <span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'Triângulo </span><span class="si">{</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="si">}</span><span class="s"> não existe'</span><span class="p">)</span>
+</code></pre></div></div>
+
+          </div>
+        </div>
+
         
 
     </div>
