@@ -35,7 +35,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Primeira Lista" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Luiz T. F. Eleno"},"dateModified":"2021-11-18T14:00:29-03:00","description":"Computação Científica em Python - uma disciplina do curso de Engenharia Física da Escola de Engenharia de Lorena da Universidade de São Paulo - EEL USP","headline":"Primeira Lista","url":"https://computeel.org/LOM3260/material/exercicios/lista1.html"}</script>
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Luiz T. F. Eleno"},"dateModified":"2022-08-18T19:23:51-03:00","description":"Computação Científica em Python - uma disciplina do curso de Engenharia Física da Escola de Engenharia de Lorena da Universidade de São Paulo - EEL USP","headline":"Primeira Lista","url":"https://computeel.org/LOM3260/material/exercicios/lista1.html"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -1413,9 +1413,9 @@
 <h3 id="acesso-rápido">Acesso rápido</h3>
 
 <p><a href="#ex1" class="badge badge-success">Ex. 1</a>
-  <a href="#ex2" class="badge badge-success">Ex. 2</a>
+  <a href="#ex2" class="badge badge-primary">Ex. 2</a>
   <a href="#ex3" class="badge badge-success">Ex. 3</a>
-  <a href="#ex4" class="badge badge-primary">Ex. 4</a>
+  <a href="#ex4" class="badge badge-success">Ex. 4</a>
   <a href="#ex5" class="badge badge-primary">Ex. 5</a>
   <a href="#ex6" class="badge badge-primary">Ex. 6</a>
   <a href="#ex7" class="badge badge-primary">Ex. 7</a>
@@ -1644,39 +1644,6 @@
         
         
 
-        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="collapse" data-target="#segundos" aria-expanded="false" aria-controls="segundos">
-          Solução
-        </button>
-        <div class="collapse" id="segundos">
-          <div class="card card-body">
-            
-
-<h2 id="solução">Solução</h2>
-
-<p>Existem muitas maneiras de resolver este exercício. Uma proposta é encontrada abaixo:</p>
-
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">t</span> <span class="o">=</span> <span class="mi">1423554</span>  <span class="c1"># tempo em segundos
-</span>
-<span class="n">s</span> <span class="o">=</span> <span class="n">t</span> <span class="o">%</span> <span class="mi">60</span>  <span class="c1"># segundos: 60 s = 1 min
-</span><span class="n">t</span> <span class="o">//=</span> <span class="mi">60</span>  <span class="c1"># tempo restante em minutos
-</span><span class="n">m</span> <span class="o">=</span> <span class="n">t</span> <span class="o">%</span> <span class="mi">60</span>  <span class="c1"># minutos: 60 min = 1 h
-</span><span class="n">t</span> <span class="o">//=</span> <span class="mi">60</span>  <span class="c1"># tempo restante em horas
-</span><span class="n">h</span> <span class="o">=</span> <span class="n">t</span> <span class="o">%</span> <span class="mi">24</span>  <span class="c1"># horas: 24 h = 1 dia
-</span><span class="n">d</span> <span class="o">=</span> <span class="n">t</span> <span class="o">//</span> <span class="mi">24</span>  <span class="c1"># tempo restante em dias
-</span>
-<span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'</span><span class="si">{</span><span class="n">d</span><span class="si">}</span><span class="s">d </span><span class="si">{</span><span class="n">h</span><span class="si">}</span><span class="s">h </span><span class="si">{</span><span class="n">m</span><span class="si">}</span><span class="s">m </span><span class="si">{</span><span class="n">s</span><span class="si">}</span><span class="s">s'</span><span class="p">)</span>
-
-<span class="c1"># Teste da solução:
-</span><span class="n">t</span> <span class="o">=</span> <span class="mi">60</span> <span class="o">*</span> <span class="p">(</span> <span class="mi">60</span> <span class="o">*</span> <span class="p">(</span><span class="n">d</span> <span class="o">*</span> <span class="mi">24</span> <span class="o">+</span> <span class="n">h</span><span class="p">)</span> <span class="o">+</span> <span class="n">m</span><span class="p">)</span> <span class="o">+</span> <span class="n">s</span>
-<span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'</span><span class="si">{</span><span class="n">t</span><span class="si">}</span><span class="s">s'</span><span class="p">)</span>
-
-</code></pre></div></div>
-
-          </div>
-        </div>
-
-        
-
     </div>
 </div>
 
@@ -1749,6 +1716,38 @@
 
 
         
+        
+
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="collapse" data-target="#romeno" aria-expanded="false" aria-controls="romeno">
+          Solução
+        </button>
+        <div class="collapse" id="romeno">
+          <div class="card card-body">
+            
+
+<h2 id="solução">Solução</h2>
+
+<p>A solução abaixo é uma das muitas possíveis. Usei <code class="language-plaintext highlighter-rouge">ifs</code> aninhados e um <code class="language-plaintext highlighter-rouge">elif</code>. Defini os divisores e frases a serem impressos antes do código da impressão, de modo que é fácil alterá-los, se alguem assim desejar.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">N</span> <span class="o">=</span> <span class="mi">100</span>
+<span class="n">d1</span><span class="p">,</span> <span class="n">d2</span> <span class="o">=</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span>
+<span class="n">f1</span><span class="p">,</span> <span class="n">f2</span><span class="p">,</span> <span class="n">f3</span> <span class="o">=</span> <span class="s">'trei'</span><span class="p">,</span> <span class="s">'cinci'</span><span class="p">,</span> <span class="s">'cincisprezece'</span>
+
+<span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">N</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+  <span class="k">if</span> <span class="n">n</span> <span class="o">%</span> <span class="n">d1</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">n</span> <span class="o">%</span> <span class="n">d2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+      <span class="k">print</span><span class="p">(</span><span class="n">f3</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+      <span class="k">print</span><span class="p">(</span><span class="n">f1</span><span class="p">)</span>
+  <span class="k">elif</span> <span class="n">n</span> <span class="o">%</span> <span class="n">d2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">f2</span><span class="p">)</span>
+  <span class="k">else</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+</code></pre></div></div>
+
+          </div>
+        </div>
+
         
 
     </div>
