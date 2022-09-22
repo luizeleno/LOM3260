@@ -35,7 +35,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Primeira Lista" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Luiz T. F. Eleno"},"dateModified":"2022-08-18T19:42:40-03:00","description":"Computação Científica em Python - uma disciplina do curso de Engenharia Física da Escola de Engenharia de Lorena da Universidade de São Paulo - EEL USP","headline":"Primeira Lista","url":"https://computeel.org/LOM3260/material/exercicios/lista1.html"}</script>
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Luiz T. F. Eleno"},"dateModified":"2022-09-15T13:42:28-03:00","description":"Computação Científica em Python - uma disciplina do curso de Engenharia Física da Escola de Engenharia de Lorena da Universidade de São Paulo - EEL USP","headline":"Primeira Lista","url":"https://computeel.org/LOM3260/material/exercicios/lista1.html"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -1426,12 +1426,12 @@
   <a href="#ex12" class="badge badge-primary">Ex. 12</a>
   <a href="#ex13" class="badge badge-primary">Ex. 13</a>
   <a href="#ex14" class="badge badge-primary">Ex. 14</a>
-  <a href="#ex15" class="badge badge-primary">Ex. 15</a>
-  <a href="#ex16" class="badge badge-primary">Ex. 16</a>
+  <a href="#ex15" class="badge badge-success">Ex. 15</a>
+  <a href="#ex16" class="badge badge-success">Ex. 16</a>
   <a href="#ex17" class="badge badge-primary">Ex. 17</a>
   <a href="#ex18" class="badge badge-primary">Ex. 18</a>
   <a href="#ex19" class="badge badge-primary">Ex. 19</a>
-  <a href="#ex20" class="badge badge-primary">Ex. 20</a>
+  <a href="#ex20" class="badge badge-success">Ex. 20</a>
   <a href="#ex21" class="badge badge-primary">Ex. 21</a>
   <a href="#ex22" class="badge badge-primary">Ex. 22</a>
   <a href="#ex23" class="badge badge-primary">Ex. 23</a>
@@ -2121,6 +2121,57 @@ Esse sistema (ou seja, seis caracteres escolhidos do conjunto 0–9+A–F) é ca
         
         
 
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="collapse" data-target="#cos" aria-expanded="false" aria-controls="cos">
+          Solução
+        </button>
+        <div class="collapse" id="cos">
+          <div class="card card-body">
+            
+
+<h3 id="solução">Solução</h3>
+
+<p>Vou criar uma função que pede como argumentos o valor de $x$ e, opcionalmente, a precisão do último termo (padrão: $10^{-6}$). Além disso, confere as unidades de $x$ –graus ou radianos–, considerando radianos por padrão.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+
+
+<span class="k">def</span> <span class="nf">cos_serie</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">tol</span><span class="o">=</span><span class="mf">1.e-6</span><span class="p">,</span> <span class="n">unid</span><span class="o">=</span><span class="s">'rad'</span><span class="p">):</span>
+
+  <span class="s">'''
+    cos_serie calcula cos(x) por série de Taylor com uma tolerância no número de termos
+
+    entrada:
+      - x (obrigatório): float de que se deseja calcular o cosseno
+      - tol (opcional): módulo do útimo termo é menor do que isso
+      - unid (opcional): unidade de x.
+          Opções:
+            - 'rad' (padrão): x em radianos
+            - 'graus': x em graus
+  '''</span>
+
+  <span class="n">x0</span> <span class="o">=</span> <span class="n">x</span> <span class="o">*</span> <span class="n">np</span><span class="p">.</span><span class="n">pi</span> <span class="o">/</span> <span class="mi">180</span> <span class="k">if</span> <span class="n">unid</span> <span class="o">==</span> <span class="s">'graus'</span> <span class="k">else</span> <span class="n">x</span>
+
+  <span class="n">termo</span><span class="p">,</span> <span class="n">soma</span> <span class="o">=</span> <span class="mf">1.</span><span class="p">,</span> <span class="mf">1.</span>
+  <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span>
+  <span class="k">while</span> <span class="nb">abs</span><span class="p">(</span><span class="n">termo</span><span class="p">)</span> <span class="o">&gt;</span> <span class="n">tol</span><span class="p">:</span>
+    <span class="n">termo</span> <span class="o">*=</span> <span class="o">-</span><span class="n">x0</span><span class="o">*</span><span class="n">x0</span> <span class="o">/</span> <span class="n">a</span> <span class="o">/</span> <span class="n">b</span>
+    <span class="n">soma</span> <span class="o">+=</span> <span class="n">termo</span>
+    <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="n">a</span><span class="o">+</span><span class="mi">2</span><span class="p">,</span> <span class="n">b</span><span class="o">+</span><span class="mi">2</span>
+
+  <span class="k">return</span> <span class="n">soma</span>
+
+
+<span class="c1"># usando a função
+</span><span class="n">x</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">'x='</span><span class="p">))</span>
+<span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'cos(</span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s">) = </span><span class="si">{</span><span class="n">cos_serie</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="si">}</span><span class="s">'</span><span class="p">)</span>
+
+</code></pre></div></div>
+
+          </div>
+        </div>
+
+        
+
     </div>
 </div>
 
@@ -2147,6 +2198,35 @@ Esse sistema (ou seja, seis caracteres escolhidos do conjunto 0–9+A–F) é ca
 
 
         
+        
+
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="collapse" data-target="#pi" aria-expanded="false" aria-controls="pi">
+          Solução
+        </button>
+        <div class="collapse" id="pi">
+          <div class="card card-body">
+            
+
+<h3 id="solução">Solução</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s">'''
+Solução usando for, e eliminando fatores de 4 da fórmula do enunciado:
+(pi-3)/4 = 1/(2*3*4) - 1/(4*5*6) + 1/(6*7*8) - ...
+é simplificada para
+pi-3 = 1/(1*3*2) - 1/(2*5*3) + 1/(3*7*4) - ...
+'''</span>
+
+<span class="n">soma</span> <span class="o">=</span> <span class="mi">3</span> <span class="c1"># variável que vai receber as aproximações de pi
+</span><span class="n">sinal</span> <span class="o">=</span> <span class="mi">1</span> <span class="c1"># variável com o sinal dos termos da soma
+</span><span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">16</span><span class="p">):</span> <span class="c1"># sequencia de 15 valores de 1 a 15
+</span>    <span class="n">soma</span> <span class="o">+=</span> <span class="n">sinal</span> <span class="o">/</span> <span class="p">(</span><span class="n">n</span> <span class="o">*</span> <span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="p">))</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">soma</span><span class="p">)</span>
+    <span class="n">sinal</span> <span class="o">=</span> <span class="o">-</span><span class="n">sinal</span> <span class="c1"># alternando o sinal do termo
+</span></code></pre></div></div>
+
+          </div>
+        </div>
+
         
 
     </div>
@@ -2276,6 +2356,37 @@ Está entre 40 e 60:
 
 
         
+        
+
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="collapse" data-target="#newton" aria-expanded="false" aria-controls="newton">
+          Solução
+        </button>
+        <div class="collapse" id="newton">
+          <div class="card card-body">
+            
+
+<h3 id="solução">Solução</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s">'''
+cálculo da raiz quadrada aproximada
+usando método de Newton
+com uma precisão de 1e-12
+'''</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">'Digite um número: '</span><span class="p">))</span>
+
+<span class="c1"># Algoritmo: método de Newton para raiz quadrada
+</span><span class="n">raiz</span> <span class="o">=</span> <span class="n">x</span> <span class="o">/</span> <span class="mi">2</span> <span class="c1"># inicializar o palpite para a a raiz em x / 2
+</span><span class="n">tolerancia</span> <span class="o">=</span> <span class="mf">1.e-12</span> <span class="c1"># notacão científica: 1e-12 é igual a 1 * 10**(-12)
+</span><span class="k">while</span> <span class="nb">abs</span><span class="p">(</span><span class="n">raiz</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span> <span class="n">x</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="n">tolerancia</span><span class="p">:</span> <span class="c1"># a função abs() retorna o módulo (valor absoluto) do seu argumento
+</span>    <span class="n">raiz</span> <span class="o">=</span> <span class="p">(</span><span class="n">raiz</span> <span class="o">+</span> <span class="n">x</span> <span class="o">/</span> <span class="n">raiz</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span> <span class="c1"># atualiza o valor do palpite para a raiz
+</span>
+<span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'A raiz quadrada de </span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s"> é </span><span class="si">{</span><span class="n">raiz</span><span class="si">}</span><span class="s">'</span><span class="p">)</span>
+</code></pre></div></div>
+
+          </div>
+        </div>
+
         
 
     </div>
