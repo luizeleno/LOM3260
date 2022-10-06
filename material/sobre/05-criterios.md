@@ -11,14 +11,13 @@ timestamp: 19/08/21
 
   $$ N_f = 0.45 A + 0.55 P $$
 
-  sendo  $P$ a média ponderada de três notas de **Projeto em equipe**:
+  sendo  $P$ a média ponderada de duas notas de **Projeto em equipe**:
 
-    $$ P = 0.25 P_1 + 0.35 P_2 + 0.4 P_3 $$
+    $$ P = 0.4 P_1 + 0.6 P_2 $$
 
     com
-  - $P_1$: nota para a apresentação da proposta
-  - $P_2$: nota para a apresentação de andamento
-  - $P_3$: nota da apresentação final
+  - $P_1$: nota para a apresentação de andamento
+  - $P_2$: nota da apresentação final
 
   e $A$ a média ponderada de duas **Avaliações individuais:**
 
