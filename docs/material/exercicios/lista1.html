@@ -35,7 +35,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Primeira Lista" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Luiz T. F. Eleno"},"dateModified":"2022-09-22T13:56:43-03:00","description":"Computação Científica em Python - uma disciplina do curso de Engenharia Física da Escola de Engenharia de Lorena da Universidade de São Paulo - EEL USP","headline":"Primeira Lista","url":"https://computeel.org/LOM3260/material/exercicios/lista1.html"}</script>
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Luiz T. F. Eleno"},"dateModified":"2022-10-20T15:36:50-03:00","description":"Computação Científica em Python - uma disciplina do curso de Engenharia Física da Escola de Engenharia de Lorena da Universidade de São Paulo - EEL USP","headline":"Primeira Lista","url":"https://computeel.org/LOM3260/material/exercicios/lista1.html"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -1423,9 +1423,9 @@
   <a href="#ex9" class="badge badge-primary">Ex. 9</a>
   <a href="#ex10" class="badge badge-primary">Ex. 10</a>
   <a href="#ex11" class="badge badge-primary">Ex. 11</a>
-  <a href="#ex12" class="badge badge-primary">Ex. 12</a>
-  <a href="#ex13" class="badge badge-primary">Ex. 13</a>
-  <a href="#ex14" class="badge badge-primary">Ex. 14</a>
+  <a href="#ex12" class="badge badge-success">Ex. 12</a>
+  <a href="#ex13" class="badge badge-success">Ex. 13</a>
+  <a href="#ex14" class="badge badge-success">Ex. 14</a>
   <a href="#ex15" class="badge badge-success">Ex. 15</a>
   <a href="#ex16" class="badge badge-success">Ex. 16</a>
   <a href="#ex17" class="badge badge-primary">Ex. 17</a>
@@ -2029,6 +2029,37 @@ e qualquer valor zero ou negativo resulta em False
         
         
 
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="collapse" data-target="#bintodec" aria-expanded="false" aria-controls="bintodec">
+          Solução
+        </button>
+        <div class="collapse" id="bintodec">
+          <div class="card card-body">
+            
+
+<h3 id="solução">Solução</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Input
+</span><span class="n">binario</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">'Digite um número em base 2: '</span><span class="p">)</span>
+
+<span class="c1"># Algoritmo
+</span>
+<span class="n">soma</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">p</span> <span class="o">=</span> <span class="mi">1</span>  <span class="c1"># = 2**expoente
+</span>
+<span class="k">for</span> <span class="n">digito</span> <span class="ow">in</span> <span class="n">binario</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]:</span>  <span class="c1"># slicing para inverter a string
+</span>    <span class="n">soma</span> <span class="o">=</span> <span class="n">soma</span> <span class="o">+</span> <span class="nb">int</span><span class="p">(</span><span class="n">digito</span><span class="p">)</span> <span class="o">*</span> <span class="n">p</span>
+    <span class="n">p</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">p</span>
+
+<span class="c1"># Output
+</span><span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'</span><span class="si">{</span><span class="n">binario</span><span class="si">}</span><span class="s"> (base 10) = </span><span class="si">{</span><span class="n">soma</span><span class="si">}</span><span class="s"> (base 2)'</span><span class="p">)</span>
+
+</code></pre></div></div>
+
+          </div>
+        </div>
+
+        
+
     </div>
 </div>
 
@@ -2061,6 +2092,46 @@ e qualquer valor zero ou negativo resulta em False
         
         
 
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="collapse" data-target="#dectobin" aria-expanded="false" aria-controls="dectobin">
+          Solução
+        </button>
+        <div class="collapse" id="dectobin">
+          <div class="card card-body">
+            
+
+<h3 id="solução">Solução</h3>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Entrada
+</span>
+<span class="n">decimal</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">'N (base 10) = '</span><span class="p">))</span>
+
+<span class="c1"># Algoritmo
+</span>
+<span class="c1"># inicialização das variáveis
+</span><span class="n">quociente</span> <span class="o">=</span> <span class="n">decimal</span>
+<span class="n">binario</span> <span class="o">=</span> <span class="s">''</span>
+
+<span class="s">'''
+comentários:
+- quociente vair receber, a cada iteração, o resultado da divisão por 2
+- binário é uma string inicialmente vazia, que receberá os restos das divisões por dois
+- usamos o operador concatenação de strings (+) para construir a representação binária
+'''</span>
+
+<span class="k">while</span> <span class="n">quociente</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="n">resto</span> <span class="o">=</span> <span class="n">quociente</span> <span class="o">%</span> <span class="mi">2</span>
+    <span class="n">quociente</span> <span class="o">=</span> <span class="n">quociente</span> <span class="o">//</span> <span class="mi">2</span>
+    <span class="n">binario</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">resto</span><span class="p">)</span> <span class="o">+</span> <span class="n">binario</span>
+
+<span class="c1"># Saída
+</span><span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'</span><span class="si">{</span><span class="n">decimal</span><span class="si">}</span><span class="s"> (base 10) = </span><span class="si">{</span><span class="n">binario</span><span class="si">}</span><span class="s"> (base 2)'</span><span class="p">)</span>
+
+</code></pre></div></div>
+
+          </div>
+        </div>
+
+        
+
     </div>
 </div>
 
@@ -2091,6 +2162,56 @@ Esse sistema (ou seja, seis caracteres escolhidos do conjunto 0–9+A–F) é ca
 
 
         
+        
+
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="collapse" data-target="#rgb" aria-expanded="false" aria-controls="rgb">
+          Solução
+        </button>
+        <div class="collapse" id="rgb">
+          <div class="card card-body">
+            
+
+<h2 id="solução">Solução</h2>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># dicionário para conversão de decimal para hexadecimal
+</span><span class="n">dec_hex_dicio</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span><span class="p">:</span> <span class="s">'0'</span><span class="p">,</span> <span class="mi">1</span><span class="p">:</span> <span class="s">'1'</span><span class="p">,</span> <span class="mi">2</span><span class="p">:</span> <span class="s">'2'</span><span class="p">,</span> <span class="mi">3</span><span class="p">:</span> <span class="s">'3'</span><span class="p">,</span> <span class="mi">4</span><span class="p">:</span> <span class="s">'4'</span><span class="p">,</span> <span class="mi">5</span><span class="p">:</span> <span class="s">'5'</span><span class="p">,</span> <span class="mi">6</span><span class="p">:</span> <span class="s">'6'</span><span class="p">,</span> <span class="mi">7</span><span class="p">:</span> <span class="s">'7'</span><span class="p">,</span> <span class="mi">8</span><span class="p">:</span> <span class="s">'8'</span><span class="p">,</span> <span class="mi">9</span><span class="p">:</span> <span class="s">'9'</span><span class="p">,</span> <span class="mi">10</span><span class="p">:</span> <span class="s">'A'</span><span class="p">,</span> <span class="mi">11</span><span class="p">:</span> <span class="s">'B'</span><span class="p">,</span> <span class="mi">12</span><span class="p">:</span> <span class="s">'C'</span><span class="p">,</span> <span class="mi">13</span><span class="p">:</span> <span class="s">'D'</span><span class="p">,</span> <span class="mi">14</span><span class="p">:</span> <span class="s">'E'</span><span class="p">,</span> <span class="mi">15</span><span class="p">:</span> <span class="s">'F'</span><span class="p">}</span>
+
+<span class="c1"># dicionário para conversão de hexadecimal para decimal
+</span><span class="n">hex_dec_dicio</span> <span class="o">=</span> <span class="p">{</span><span class="s">'0'</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s">'1'</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s">'2'</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s">'3'</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span> <span class="s">'4'</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span> <span class="s">'5'</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span> <span class="s">'6'</span><span class="p">:</span> <span class="mi">6</span><span class="p">,</span> <span class="s">'7'</span><span class="p">:</span> <span class="mi">7</span><span class="p">,</span> <span class="s">'8'</span><span class="p">:</span> <span class="mi">8</span><span class="p">,</span> <span class="s">'9'</span><span class="p">:</span> <span class="mi">9</span><span class="p">,</span> <span class="s">'A'</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="s">'B'</span><span class="p">:</span> <span class="mi">11</span><span class="p">,</span> <span class="s">'C'</span><span class="p">:</span> <span class="mi">12</span><span class="p">,</span> <span class="s">'D'</span><span class="p">:</span> <span class="mi">13</span><span class="p">,</span> <span class="s">'E'</span><span class="p">:</span> <span class="mi">14</span><span class="p">,</span> <span class="s">'F'</span><span class="p">:</span> <span class="mi">15</span><span class="p">}</span>
+
+
+<span class="k">def</span> <span class="nf">rgb_para_hex</span><span class="p">(</span><span class="n">rgb</span><span class="p">):</span>
+	<span class="s">'''
+		função para conversão de cores rgb = [r, g, b]
+		para uma string com os códigos hexadecimais
+	'''</span>
+	<span class="n">code</span> <span class="o">=</span> <span class="s">''</span>
+	<span class="k">for</span> <span class="n">cor</span> <span class="ow">in</span> <span class="n">rgb</span><span class="p">:</span>  <span class="c1"># iterando pelas três cores
+</span>		<span class="n">colorhex</span> <span class="o">=</span> <span class="s">''</span>
+		<span class="k">while</span> <span class="n">cor</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>  <span class="c1"># conversão para hexadecimal (mesmo algoritmo do ex. 13)
+</span>			<span class="n">resto</span> <span class="o">=</span> <span class="n">cor</span> <span class="o">%</span> <span class="mi">16</span>
+			<span class="n">cor</span> <span class="o">=</span> <span class="n">cor</span> <span class="o">//</span> <span class="mi">16</span>
+			<span class="n">colorhex</span> <span class="o">=</span> <span class="n">dec_hex_dicio</span><span class="p">[</span><span class="n">resto</span><span class="p">]</span> <span class="o">+</span> <span class="n">colorhex</span>  <span class="c1"># sobrecarga do operador + para strings
+</span>		<span class="n">code</span> <span class="o">+=</span> <span class="n">colorhex</span>
+	<span class="k">return</span> <span class="n">code</span>
+
+
+<span class="k">def</span> <span class="nf">hex_para_rgb</span><span class="p">(</span><span class="n">code</span><span class="p">):</span>
+	<span class="s">'''
+		função para a conversão de uma string com o código hexadecimal
+		para a lista rgb=[r, g, b] de cores
+	'''</span>
+	<span class="n">cores</span> <span class="o">=</span> <span class="p">[]</span>  <span class="c1"># inicializando a lista
+</span>	<span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">2</span><span class="p">):</span>  <span class="c1"># fazendo o loop a cada dois caracteres de code
+</span>		<span class="n">cor</span> <span class="o">=</span> <span class="n">hex_dec_dicio</span><span class="p">[</span><span class="n">code</span><span class="p">[</span><span class="n">c</span><span class="p">]]</span> <span class="o">*</span> <span class="mi">16</span>  <span class="c1"># convertendo o primeiro caractere
+</span>		<span class="n">cor</span> <span class="o">+=</span> <span class="n">hex_dec_dicio</span><span class="p">[</span><span class="n">code</span><span class="p">[</span><span class="n">c</span><span class="o">+</span><span class="mi">1</span><span class="p">]]</span>  <span class="c1"># e somando o segundo
+</span>		<span class="n">cores</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">cor</span><span class="p">)</span>  <span class="c1"># adicionando cor à lista
+</span>	<span class="k">return</span> <span class="n">cores</span>
+</code></pre></div></div>
+
+          </div>
+        </div>
+
         
 
     </div>
