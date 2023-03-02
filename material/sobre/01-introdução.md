@@ -4,7 +4,7 @@ parent: sobre
 nav_order: 0
 tags: [introdução, pypl, python, popularity]
 permalink: /popularidade/
-timestamp: '02/02/23'
+timestamp: '02/03/23'
 ---
 
 Python é a linguagem mais popular e a que mais cresce mundialmente
@@ -18,34 +18,34 @@ O **índice PYPL** (*PopularitY of Programming Language*) é obtido analisando a
 
 | Posição	| Linguagem |	Fatia (%)	| Tendência (%) |
 |:-------:|:--------- |:-----:|:---------:|
-| 1 | Python |          27.7  | -0.7  |
-| 2 | Java |          16.79  | -1.3  |
-| 3 | JavaScript |          9.65  | +0.6  |
-| 4 | C# |          6.97  | -0.5  |
-| 5 | C/C++ |          6.87  | -0.6  |
-| 6 | PHP |          5.23  | -0.8  |
-| 7 | R |          4.11  | -0.1  |
-| 8 | TypeScript |          2.83  | +0.8  |
-| 9 | Swift |          2.27  | +0.3  |
-| 10 | Objective-C |          2.25  | -0.1  |
-| 11 | Go |          1.95  | +0.7  |
-| 12 | Rust |          1.91  | +0.9  |
-| 13 | Kotlin |          1.85  | +0.2  |
-| 14 | Matlab |          1.71  | -0.1  |
-| 15 | Ruby |          1.11  | +0.3  |
-| 16 | VBA |          1.03  | +0.0  |
-| 17 | Ada |          0.94  | +0.3  |
-| 18 | Dart |          0.84  | +0.4  |
+| 1 | Python |          27.91  | -0.6  |
+| 2 | Java |          16.58  | -1.6  |
+| 3 | JavaScript |          9.67  | +0.6  |
+| 4 | C/C++ |          6.93  | -0.5  |
+| 5 | C# |          6.88  | -0.5  |
+| 6 | PHP |          5.19  | -0.6  |
+| 7 | R |          4.23  | -0.2  |
+| 8 | TypeScript |          2.81  | +0.6  |
+| 9 | Swift |          2.28  | +0.2  |
+| 10 | Objective-C |          2.26  | +0.0  |
+| 11 | Rust |          2.03  | +1.0  |
+| 12 | Go |          1.93  | +0.7  |
+| 13 | Kotlin |          1.82  | +0.2  |
+| 14 | Matlab |          1.66  | -0.3  |
+| 15 | Ruby |          1.1  | +0.3  |
+| 16 | Ada |          1.01  | +0.4  |
+| 17 | VBA |          1.01  | +0.1  |
+| 18 | Dart |          0.81  | +0.3  |
 | 19 | Scala |          0.62  | +0.0  |
-| 20 | Lua |          0.54  | +0.2  |
-| 21 | Visual Basic |          0.53  | -0.1  |
+| 20 | Lua |          0.58  | +0.2  |
+| 21 | Visual Basic |          0.53  | -0.0  |
 | 22 | Abap |          0.52  | +0.1  |
-| 23 | Julia |          0.35  | +0.1  |
-| 24 | Groovy |          0.34  | -0.0  |
-| 25 | Haskell |          0.33  | +0.1  |
-| 26 | Perl |          0.33  | +0.0  |
-| 27 | Cobol |          0.31  | +0.1  |
-| 28 | Delphi/Pascal |          0.11  | -0.0  |
+| 23 | Julia |          0.36  | +0.1  |
+| 24 | Groovy |          0.33  | -0.0  |
+| 25 | Perl |          0.3  | +0.0  |
+| 26 | Haskell |          0.27  | +0.0  |
+| 27 | Cobol |          0.25  | +0.0  |
+| 28 | Delphi/Pascal |          0.13  | -0.0  |
 
-***Mundialmente em fevereiro de 2023, comparado a um ano antes***
+***Mundialmente em março de 2023, comparado a um ano antes***
 {: .small}
