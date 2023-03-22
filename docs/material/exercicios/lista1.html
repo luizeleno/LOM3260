@@ -1414,32 +1414,32 @@
 
 <p><a href="#ex1" class="badge badge-success">Ex. 1</a>
   <a href="#ex2" class="badge badge-primary">Ex. 2</a>
-  <a href="#ex3" class="badge badge-success">Ex. 3</a>
-  <a href="#ex4" class="badge badge-success">Ex. 4</a>
-  <a href="#ex5" class="badge badge-success">Ex. 5</a>
-  <a href="#ex6" class="badge badge-success">Ex. 6</a>
+  <a href="#ex3" class="badge badge-primary">Ex. 3</a>
+  <a href="#ex4" class="badge badge-primary">Ex. 4</a>
+  <a href="#ex5" class="badge badge-primary">Ex. 5</a>
+  <a href="#ex6" class="badge badge-primary">Ex. 6</a>
   <a href="#ex7" class="badge badge-primary">Ex. 7</a>
   <a href="#ex8" class="badge badge-primary">Ex. 8</a>
   <a href="#ex9" class="badge badge-primary">Ex. 9</a>
   <a href="#ex10" class="badge badge-primary">Ex. 10</a>
   <a href="#ex11" class="badge badge-primary">Ex. 11</a>
-  <a href="#ex12" class="badge badge-success">Ex. 12</a>
-  <a href="#ex13" class="badge badge-success">Ex. 13</a>
-  <a href="#ex14" class="badge badge-success">Ex. 14</a>
-  <a href="#ex15" class="badge badge-success">Ex. 15</a>
-  <a href="#ex16" class="badge badge-success">Ex. 16</a>
+  <a href="#ex12" class="badge badge-primary">Ex. 12</a>
+  <a href="#ex13" class="badge badge-primary">Ex. 13</a>
+  <a href="#ex14" class="badge badge-primary">Ex. 14</a>
+  <a href="#ex15" class="badge badge-primary">Ex. 15</a>
+  <a href="#ex16" class="badge badge-primary">Ex. 16</a>
   <a href="#ex17" class="badge badge-primary">Ex. 17</a>
-  <a href="#ex18" class="badge badge-success">Ex. 18</a>
+  <a href="#ex18" class="badge badge-primary">Ex. 18</a>
   <a href="#ex19" class="badge badge-primary">Ex. 19</a>
-  <a href="#ex20" class="badge badge-success">Ex. 20</a>
+  <a href="#ex20" class="badge badge-primary">Ex. 20</a>
   <a href="#ex21" class="badge badge-primary">Ex. 21</a>
   <a href="#ex22" class="badge badge-primary">Ex. 22</a>
   <a href="#ex23" class="badge badge-primary">Ex. 23</a>
   <a href="#ex24" class="badge badge-primary">Ex. 24</a>
   <a href="#ex25" class="badge badge-primary">Ex. 25</a>
   <a href="#ex26" class="badge badge-primary">Ex. 26</a>
-  <a href="#ex27" class="badge badge-success">Ex. 27</a>
-  <a href="#ex28" class="badge badge-success">Ex. 28</a>
+  <a href="#ex27" class="badge badge-primary">Ex. 27</a>
+  <a href="#ex28" class="badge badge-primary">Ex. 28</a>
   <a href="#ex29" class="badge badge-primary">Ex. 29</a>
   <a href="#ex30" class="badge badge-primary">Ex. 30</a>
   <a href="#ex31" class="badge badge-primary">Ex. 31</a></p>
@@ -1667,34 +1667,6 @@
         
         
 
-        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="collapse" data-target="#tri" aria-expanded="false" aria-controls="tri">
-          Solução
-        </button>
-        <div class="collapse" id="tri">
-          <div class="card card-body">
-            
-
-<h2 id="solução">Solução</h2>
-
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">arestas</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">'a b c = '</span><span class="p">).</span><span class="n">split</span><span class="p">()</span>
-<span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span> <span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="n">arestas</span><span class="p">)</span>  <span class="c1"># o comando map(f, L) aplica a função f à lista L
-</span>
-<span class="k">if</span> <span class="n">a</span> <span class="o">&gt;=</span> <span class="n">b</span> <span class="o">+</span> <span class="n">c</span> <span class="ow">or</span> <span class="n">b</span> <span class="o">&gt;=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">c</span> <span class="ow">or</span> <span class="n">c</span> <span class="o">&gt;=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="p">:</span>
-  <span class="n">triangulo</span> <span class="o">=</span> <span class="bp">False</span>
-<span class="k">else</span><span class="p">:</span>
-  <span class="n">triangulo</span> <span class="o">=</span> <span class="bp">True</span>
-
-<span class="k">if</span> <span class="n">triangulo</span><span class="p">:</span>
-  <span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'Triângulo </span><span class="si">{</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="si">}</span><span class="s"> existe'</span><span class="p">)</span>
-<span class="k">else</span><span class="p">:</span>
-  <span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'Triângulo </span><span class="si">{</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="si">}</span><span class="s"> não existe'</span><span class="p">)</span>
-</code></pre></div></div>
-
-          </div>
-        </div>
-
-        
-
     </div>
 </div>
 
@@ -1718,38 +1690,6 @@
         
         
 
-        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="collapse" data-target="#romeno" aria-expanded="false" aria-controls="romeno">
-          Solução
-        </button>
-        <div class="collapse" id="romeno">
-          <div class="card card-body">
-            
-
-<h2 id="solução">Solução</h2>
-
-<p>A solução abaixo é uma das muitas possíveis. Usei <code class="language-plaintext highlighter-rouge">ifs</code> aninhados e um <code class="language-plaintext highlighter-rouge">elif</code>. Defini os divisores e frases a serem impressos antes do código da impressão, de modo que é fácil alterá-los, se alguem assim desejar.</p>
-
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">N</span> <span class="o">=</span> <span class="mi">100</span>
-<span class="n">d1</span><span class="p">,</span> <span class="n">d2</span> <span class="o">=</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span>
-<span class="n">f1</span><span class="p">,</span> <span class="n">f2</span><span class="p">,</span> <span class="n">f3</span> <span class="o">=</span> <span class="s">'trei'</span><span class="p">,</span> <span class="s">'cinci'</span><span class="p">,</span> <span class="s">'cincisprezece'</span>
-
-<span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">N</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
-  <span class="k">if</span> <span class="n">n</span> <span class="o">%</span> <span class="n">d1</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-    <span class="k">if</span> <span class="n">n</span> <span class="o">%</span> <span class="n">d2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-      <span class="k">print</span><span class="p">(</span><span class="n">f3</span><span class="p">)</span>
-    <span class="k">else</span><span class="p">:</span>
-      <span class="k">print</span><span class="p">(</span><span class="n">f1</span><span class="p">)</span>
-  <span class="k">elif</span> <span class="n">n</span> <span class="o">%</span> <span class="n">d2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">f2</span><span class="p">)</span>
-  <span class="k">else</span><span class="p">:</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
-</code></pre></div></div>
-
-          </div>
-        </div>
-
-        
-
     </div>
 </div>
 
@@ -1771,30 +1711,6 @@
 
 
         
-        
-
-        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="collapse" data-target="#divisores" aria-expanded="false" aria-controls="divisores">
-          Solução
-        </button>
-        <div class="collapse" id="divisores">
-          <div class="card card-body">
-            
-
-<h2 id="solução">Solução</h2>
-
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">'Digite um número:'</span><span class="p">))</span>
-
-<span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'Divisores de </span><span class="si">{</span><span class="n">n</span><span class="si">}</span><span class="s">:'</span><span class="p">)</span>
-<span class="k">for</span> <span class="n">d</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
-    <span class="k">if</span> <span class="n">n</span> <span class="o">%</span> <span class="n">d</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-        <span class="k">print</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
-</code></pre></div></div>
-
-<p><strong>Obs:</strong> este código não está otimizado, pois testa muito mais números do que o necessário (por exemplo, qualquer número maior do que <code class="language-plaintext highlighter-rouge">n//2</code> não será um divisor de <code class="language-plaintext highlighter-rouge">n</code>, mas o código testa mesmo assim).</p>
-
-          </div>
-        </div>
-
         
 
     </div>
@@ -1831,51 +1747,6 @@
 
 
         
-        
-
-        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="collapse" data-target="#mdc" aria-expanded="false" aria-controls="mdc">
-          Solução
-        </button>
-        <div class="collapse" id="mdc">
-          <div class="card card-body">
-            
-
-<h2 id="solução">Solução:</h2>
-
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Entrada
-</span><span class="n">m</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">'m = '</span><span class="p">))</span>
-<span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">'n = '</span><span class="p">))</span>
-
-<span class="c1"># Algoritmo
-</span>
-<span class="c1"># encontrando o menor valor
-</span><span class="k">if</span> <span class="n">m</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">:</span>
-  <span class="n">d</span> <span class="o">=</span> <span class="n">m</span>
-<span class="k">else</span><span class="p">:</span>
-  <span class="n">d</span> <span class="o">=</span> <span class="n">n</span>
-
-<span class="c1"># encontrando o MDC(m, n)
-</span><span class="k">while</span> <span class="n">m</span> <span class="o">%</span> <span class="n">d</span> <span class="ow">or</span> <span class="n">n</span> <span class="o">%</span> <span class="n">d</span> <span class="p">:</span>
-  <span class="n">d</span> <span class="o">-=</span> <span class="mi">1</span>
-
-<span class="s">'''
-comentário:
-veja que
-while m % d or n % d:
-é o mesmo que
-while m % d != 0 or n % d != 0:
-pois qualquer valor positivo significa True,
-e qualquer valor zero ou negativo resulta em False
-'''</span>
-
-<span class="c1"># Saída
-</span>
-<span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'MDC(</span><span class="si">{</span><span class="n">m</span><span class="si">}</span><span class="s">, </span><span class="si">{</span><span class="n">n</span><span class="si">}</span><span class="s">) = </span><span class="si">{</span><span class="n">d</span><span class="si">}</span><span class="s">'</span><span class="p">)</span>
-</code></pre></div></div>
-
-          </div>
-        </div>
-
         
 
     </div>
@@ -2029,37 +1900,6 @@ e qualquer valor zero ou negativo resulta em False
         
         
 
-        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="collapse" data-target="#bintodec" aria-expanded="false" aria-controls="bintodec">
-          Solução
-        </button>
-        <div class="collapse" id="bintodec">
-          <div class="card card-body">
-            
-
-<h3 id="solução">Solução</h3>
-
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Input
-</span><span class="n">binario</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">'Digite um número em base 2: '</span><span class="p">)</span>
-
-<span class="c1"># Algoritmo
-</span>
-<span class="n">soma</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="n">p</span> <span class="o">=</span> <span class="mi">1</span>  <span class="c1"># = 2**expoente
-</span>
-<span class="k">for</span> <span class="n">digito</span> <span class="ow">in</span> <span class="n">binario</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]:</span>  <span class="c1"># slicing para inverter a string
-</span>    <span class="n">soma</span> <span class="o">=</span> <span class="n">soma</span> <span class="o">+</span> <span class="nb">int</span><span class="p">(</span><span class="n">digito</span><span class="p">)</span> <span class="o">*</span> <span class="n">p</span>
-    <span class="n">p</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">p</span>
-
-<span class="c1"># Output
-</span><span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'</span><span class="si">{</span><span class="n">binario</span><span class="si">}</span><span class="s"> (base 10) = </span><span class="si">{</span><span class="n">soma</span><span class="si">}</span><span class="s"> (base 2)'</span><span class="p">)</span>
-
-</code></pre></div></div>
-
-          </div>
-        </div>
-
-        
-
     </div>
 </div>
 
@@ -2090,46 +1930,6 @@ e qualquer valor zero ou negativo resulta em False
 
 
         
-        
-
-        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="collapse" data-target="#dectobin" aria-expanded="false" aria-controls="dectobin">
-          Solução
-        </button>
-        <div class="collapse" id="dectobin">
-          <div class="card card-body">
-            
-
-<h3 id="solução">Solução</h3>
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Entrada
-</span>
-<span class="n">decimal</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">'N (base 10) = '</span><span class="p">))</span>
-
-<span class="c1"># Algoritmo
-</span>
-<span class="c1"># inicialização das variáveis
-</span><span class="n">quociente</span> <span class="o">=</span> <span class="n">decimal</span>
-<span class="n">binario</span> <span class="o">=</span> <span class="s">''</span>
-
-<span class="s">'''
-comentários:
-- quociente vair receber, a cada iteração, o resultado da divisão por 2
-- binário é uma string inicialmente vazia, que receberá os restos das divisões por dois
-- usamos o operador concatenação de strings (+) para construir a representação binária
-'''</span>
-
-<span class="k">while</span> <span class="n">quociente</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
-    <span class="n">resto</span> <span class="o">=</span> <span class="n">quociente</span> <span class="o">%</span> <span class="mi">2</span>
-    <span class="n">quociente</span> <span class="o">=</span> <span class="n">quociente</span> <span class="o">//</span> <span class="mi">2</span>
-    <span class="n">binario</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">resto</span><span class="p">)</span> <span class="o">+</span> <span class="n">binario</span>
-
-<span class="c1"># Saída
-</span><span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'</span><span class="si">{</span><span class="n">decimal</span><span class="si">}</span><span class="s"> (base 10) = </span><span class="si">{</span><span class="n">binario</span><span class="si">}</span><span class="s"> (base 2)'</span><span class="p">)</span>
-
-</code></pre></div></div>
-
-          </div>
-        </div>
-
         
 
     </div>
@@ -2164,56 +1964,6 @@ Esse sistema (ou seja, seis caracteres escolhidos do conjunto 0–9+A–F) é ca
         
         
 
-        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="collapse" data-target="#rgb" aria-expanded="false" aria-controls="rgb">
-          Solução
-        </button>
-        <div class="collapse" id="rgb">
-          <div class="card card-body">
-            
-
-<h2 id="solução">Solução</h2>
-
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># dicionário para conversão de decimal para hexadecimal
-</span><span class="n">dec_hex_dicio</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span><span class="p">:</span> <span class="s">'0'</span><span class="p">,</span> <span class="mi">1</span><span class="p">:</span> <span class="s">'1'</span><span class="p">,</span> <span class="mi">2</span><span class="p">:</span> <span class="s">'2'</span><span class="p">,</span> <span class="mi">3</span><span class="p">:</span> <span class="s">'3'</span><span class="p">,</span> <span class="mi">4</span><span class="p">:</span> <span class="s">'4'</span><span class="p">,</span> <span class="mi">5</span><span class="p">:</span> <span class="s">'5'</span><span class="p">,</span> <span class="mi">6</span><span class="p">:</span> <span class="s">'6'</span><span class="p">,</span> <span class="mi">7</span><span class="p">:</span> <span class="s">'7'</span><span class="p">,</span> <span class="mi">8</span><span class="p">:</span> <span class="s">'8'</span><span class="p">,</span> <span class="mi">9</span><span class="p">:</span> <span class="s">'9'</span><span class="p">,</span> <span class="mi">10</span><span class="p">:</span> <span class="s">'A'</span><span class="p">,</span> <span class="mi">11</span><span class="p">:</span> <span class="s">'B'</span><span class="p">,</span> <span class="mi">12</span><span class="p">:</span> <span class="s">'C'</span><span class="p">,</span> <span class="mi">13</span><span class="p">:</span> <span class="s">'D'</span><span class="p">,</span> <span class="mi">14</span><span class="p">:</span> <span class="s">'E'</span><span class="p">,</span> <span class="mi">15</span><span class="p">:</span> <span class="s">'F'</span><span class="p">}</span>
-
-<span class="c1"># dicionário para conversão de hexadecimal para decimal
-</span><span class="n">hex_dec_dicio</span> <span class="o">=</span> <span class="p">{</span><span class="s">'0'</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s">'1'</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s">'2'</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s">'3'</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span> <span class="s">'4'</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span> <span class="s">'5'</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span> <span class="s">'6'</span><span class="p">:</span> <span class="mi">6</span><span class="p">,</span> <span class="s">'7'</span><span class="p">:</span> <span class="mi">7</span><span class="p">,</span> <span class="s">'8'</span><span class="p">:</span> <span class="mi">8</span><span class="p">,</span> <span class="s">'9'</span><span class="p">:</span> <span class="mi">9</span><span class="p">,</span> <span class="s">'A'</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="s">'B'</span><span class="p">:</span> <span class="mi">11</span><span class="p">,</span> <span class="s">'C'</span><span class="p">:</span> <span class="mi">12</span><span class="p">,</span> <span class="s">'D'</span><span class="p">:</span> <span class="mi">13</span><span class="p">,</span> <span class="s">'E'</span><span class="p">:</span> <span class="mi">14</span><span class="p">,</span> <span class="s">'F'</span><span class="p">:</span> <span class="mi">15</span><span class="p">}</span>
-
-
-<span class="k">def</span> <span class="nf">rgb_para_hex</span><span class="p">(</span><span class="n">rgb</span><span class="p">):</span>
-	<span class="s">'''
-		função para conversão de cores rgb = [r, g, b]
-		para uma string com os códigos hexadecimais
-	'''</span>
-	<span class="n">code</span> <span class="o">=</span> <span class="s">''</span>
-	<span class="k">for</span> <span class="n">cor</span> <span class="ow">in</span> <span class="n">rgb</span><span class="p">:</span>  <span class="c1"># iterando pelas três cores
-</span>		<span class="n">colorhex</span> <span class="o">=</span> <span class="s">''</span>
-		<span class="k">while</span> <span class="n">cor</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>  <span class="c1"># conversão para hexadecimal (mesmo algoritmo do ex. 13)
-</span>			<span class="n">resto</span> <span class="o">=</span> <span class="n">cor</span> <span class="o">%</span> <span class="mi">16</span>
-			<span class="n">cor</span> <span class="o">=</span> <span class="n">cor</span> <span class="o">//</span> <span class="mi">16</span>
-			<span class="n">colorhex</span> <span class="o">=</span> <span class="n">dec_hex_dicio</span><span class="p">[</span><span class="n">resto</span><span class="p">]</span> <span class="o">+</span> <span class="n">colorhex</span>  <span class="c1"># sobrecarga do operador + para strings
-</span>		<span class="n">code</span> <span class="o">+=</span> <span class="n">colorhex</span>
-	<span class="k">return</span> <span class="n">code</span>
-
-
-<span class="k">def</span> <span class="nf">hex_para_rgb</span><span class="p">(</span><span class="n">code</span><span class="p">):</span>
-	<span class="s">'''
-		função para a conversão de uma string com o código hexadecimal
-		para a lista rgb=[r, g, b] de cores
-	'''</span>
-	<span class="n">cores</span> <span class="o">=</span> <span class="p">[]</span>  <span class="c1"># inicializando a lista
-</span>	<span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">2</span><span class="p">):</span>  <span class="c1"># fazendo o loop a cada dois caracteres de code
-</span>		<span class="n">cor</span> <span class="o">=</span> <span class="n">hex_dec_dicio</span><span class="p">[</span><span class="n">code</span><span class="p">[</span><span class="n">c</span><span class="p">]]</span> <span class="o">*</span> <span class="mi">16</span>  <span class="c1"># convertendo o primeiro caractere
-</span>		<span class="n">cor</span> <span class="o">+=</span> <span class="n">hex_dec_dicio</span><span class="p">[</span><span class="n">code</span><span class="p">[</span><span class="n">c</span><span class="o">+</span><span class="mi">1</span><span class="p">]]</span>  <span class="c1"># e somando o segundo
-</span>		<span class="n">cores</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">cor</span><span class="p">)</span>  <span class="c1"># adicionando cor à lista
-</span>	<span class="k">return</span> <span class="n">cores</span>
-</code></pre></div></div>
-
-          </div>
-        </div>
-
-        
-
     </div>
 </div>
 
@@ -2242,57 +1992,6 @@ Esse sistema (ou seja, seis caracteres escolhidos do conjunto 0–9+A–F) é ca
         
         
 
-        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="collapse" data-target="#cos" aria-expanded="false" aria-controls="cos">
-          Solução
-        </button>
-        <div class="collapse" id="cos">
-          <div class="card card-body">
-            
-
-<h3 id="solução">Solução</h3>
-
-<p>Vou criar uma função que pede como argumentos o valor de $x$ e, opcionalmente, a precisão do último termo (padrão: $10^{-6}$). Além disso, confere as unidades de $x$ –graus ou radianos–, considerando radianos por padrão.</p>
-
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
-
-
-<span class="k">def</span> <span class="nf">cos_serie</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">tol</span><span class="o">=</span><span class="mf">1.e-6</span><span class="p">,</span> <span class="n">unid</span><span class="o">=</span><span class="s">'rad'</span><span class="p">):</span>
-
-  <span class="s">'''
-    cos_serie calcula cos(x) por série de Taylor com uma tolerância no número de termos
-
-    entrada:
-      - x (obrigatório): float de que se deseja calcular o cosseno
-      - tol (opcional): módulo do útimo termo é menor do que isso
-      - unid (opcional): unidade de x.
-          Opções:
-            - 'rad' (padrão): x em radianos
-            - 'graus': x em graus
-  '''</span>
-
-  <span class="n">x0</span> <span class="o">=</span> <span class="n">x</span> <span class="o">*</span> <span class="n">np</span><span class="p">.</span><span class="n">pi</span> <span class="o">/</span> <span class="mi">180</span> <span class="k">if</span> <span class="n">unid</span> <span class="o">==</span> <span class="s">'graus'</span> <span class="k">else</span> <span class="n">x</span>
-
-  <span class="n">termo</span><span class="p">,</span> <span class="n">soma</span> <span class="o">=</span> <span class="mf">1.</span><span class="p">,</span> <span class="mf">1.</span>
-  <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span>
-  <span class="k">while</span> <span class="nb">abs</span><span class="p">(</span><span class="n">termo</span><span class="p">)</span> <span class="o">&gt;</span> <span class="n">tol</span><span class="p">:</span>
-    <span class="n">termo</span> <span class="o">*=</span> <span class="o">-</span><span class="n">x0</span><span class="o">*</span><span class="n">x0</span> <span class="o">/</span> <span class="n">a</span> <span class="o">/</span> <span class="n">b</span>
-    <span class="n">soma</span> <span class="o">+=</span> <span class="n">termo</span>
-    <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="n">a</span><span class="o">+</span><span class="mi">2</span><span class="p">,</span> <span class="n">b</span><span class="o">+</span><span class="mi">2</span>
-
-  <span class="k">return</span> <span class="n">soma</span>
-
-
-<span class="c1"># usando a função
-</span><span class="n">x</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">'x='</span><span class="p">))</span>
-<span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'cos(</span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s">) = </span><span class="si">{</span><span class="n">cos_serie</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="si">}</span><span class="s">'</span><span class="p">)</span>
-
-</code></pre></div></div>
-
-          </div>
-        </div>
-
-        
-
     </div>
 </div>
 
@@ -2319,35 +2018,6 @@ Esse sistema (ou seja, seis caracteres escolhidos do conjunto 0–9+A–F) é ca
 
 
         
-        
-
-        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="collapse" data-target="#pi" aria-expanded="false" aria-controls="pi">
-          Solução
-        </button>
-        <div class="collapse" id="pi">
-          <div class="card card-body">
-            
-
-<h3 id="solução">Solução</h3>
-
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s">'''
-Solução usando for, e eliminando fatores de 4 da fórmula do enunciado:
-(pi-3)/4 = 1/(2*3*4) - 1/(4*5*6) + 1/(6*7*8) - ...
-é simplificada para
-pi-3 = 1/(1*3*2) - 1/(2*5*3) + 1/(3*7*4) - ...
-'''</span>
-
-<span class="n">soma</span> <span class="o">=</span> <span class="mi">3</span> <span class="c1"># variável que vai receber as aproximações de pi
-</span><span class="n">sinal</span> <span class="o">=</span> <span class="mi">1</span> <span class="c1"># variável com o sinal dos termos da soma
-</span><span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">16</span><span class="p">):</span> <span class="c1"># sequencia de 15 valores de 1 a 15
-</span>    <span class="n">soma</span> <span class="o">+=</span> <span class="n">sinal</span> <span class="o">/</span> <span class="p">(</span><span class="n">n</span> <span class="o">*</span> <span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="p">))</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">soma</span><span class="p">)</span>
-    <span class="n">sinal</span> <span class="o">=</span> <span class="o">-</span><span class="n">sinal</span> <span class="c1"># alternando o sinal do termo
-</span></code></pre></div></div>
-
-          </div>
-        </div>
-
         
 
     </div>
@@ -2401,50 +2071,6 @@ Está entre 40 e 60:
 
 
         
-        
-
-        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="collapse" data-target="#diaseguinte" aria-expanded="false" aria-controls="diaseguinte">
-          Solução
-        </button>
-        <div class="collapse" id="diaseguinte">
-          <div class="card card-body">
-            
-
-<h2 id="solução">Solução</h2>
-
-<p>Segue uma solução usando dicionários e uma função para determinar se um ano é bissexto:</p>
-
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">fevereiro</span><span class="p">(</span><span class="n">ano</span><span class="p">):</span>
-    <span class="c1"># retorna o no. de dias em fevereiro do ano
-</span>    <span class="k">return</span> <span class="mi">29</span> <span class="k">if</span> <span class="p">(</span><span class="ow">not</span> <span class="n">ano</span> <span class="o">%</span> <span class="mi">4</span> <span class="ow">and</span> <span class="n">ano</span> <span class="o">%</span> <span class="mi">100</span><span class="p">)</span> <span class="ow">or</span> <span class="ow">not</span> <span class="n">ano</span> <span class="o">%</span> <span class="mi">400</span> <span class="k">else</span> <span class="mi">28</span>
-
-<span class="c1"># entrada de dados
-</span><span class="n">d</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">'Dia: '</span><span class="p">))</span>
-<span class="n">m</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">'Mês: '</span><span class="p">))</span>
-<span class="n">a</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">'Ano: '</span><span class="p">))</span>
-<span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'dia atual: </span><span class="si">{</span><span class="n">d</span><span class="si">:</span><span class="mi">02</span><span class="n">d</span><span class="si">}</span><span class="s">/</span><span class="si">{</span><span class="n">m</span><span class="si">:</span><span class="mi">02</span><span class="n">d</span><span class="si">}</span><span class="s">/</span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s">'</span><span class="p">)</span>
-
-<span class="c1"># durações de todos os meses
-</span><span class="n">duracoes</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">:</span> <span class="mi">31</span><span class="p">,</span> <span class="mi">2</span><span class="p">:</span> <span class="n">fevereiro</span><span class="p">(</span><span class="n">a</span><span class="p">),</span> <span class="mi">3</span><span class="p">:</span> <span class="mi">31</span><span class="p">,</span> <span class="mi">4</span><span class="p">:</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">5</span><span class="p">:</span> <span class="mi">31</span><span class="p">,</span> <span class="mi">6</span><span class="p">:</span> <span class="mi">30</span><span class="p">,</span>
-            <span class="mi">7</span><span class="p">:</span> <span class="mi">31</span><span class="p">,</span> <span class="mi">8</span><span class="p">:</span> <span class="mi">31</span><span class="p">,</span> <span class="mi">9</span><span class="p">:</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">10</span><span class="p">:</span> <span class="mi">31</span><span class="p">,</span> <span class="mi">11</span><span class="p">:</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">12</span><span class="p">:</span> <span class="mi">31</span><span class="p">}</span>
-
-<span class="k">if</span> <span class="n">d</span> <span class="o">&lt;</span> <span class="n">duracoes</span><span class="p">[</span><span class="n">m</span><span class="p">]:</span>  <span class="c1"># não é o último dia do mês
-</span>    <span class="n">d</span> <span class="o">+=</span> <span class="mi">1</span>  <span class="c1"># apenas incrementa o dia
-</span><span class="k">elif</span> <span class="n">m</span> <span class="o">==</span> <span class="mi">12</span><span class="p">:</span>  <span class="c1"># último dia do mês 12
-</span>    <span class="n">d</span> <span class="o">=</span> <span class="mi">1</span>  <span class="c1"># incrementa o ano
-</span>    <span class="n">m</span> <span class="o">=</span> <span class="mi">1</span>
-    <span class="n">a</span> <span class="o">+=</span> <span class="mi">1</span>
-<span class="k">else</span><span class="p">:</span>  <span class="c1"># último dia dos meses 1-11
-</span>    <span class="n">d</span> <span class="o">=</span> <span class="mi">1</span>  <span class="c1"># incrementa o mês
-</span>    <span class="n">m</span> <span class="o">+=</span> <span class="mi">1</span>
-
-<span class="c1"># imprimindo o resultado
-</span><span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'dia seguinte: </span><span class="si">{</span><span class="n">d</span><span class="si">:</span><span class="mi">02</span><span class="n">d</span><span class="si">}</span><span class="s">/</span><span class="si">{</span><span class="n">m</span><span class="si">:</span><span class="mi">02</span><span class="n">d</span><span class="si">}</span><span class="s">/</span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s">'</span><span class="p">)</span>
-</code></pre></div></div>
-
-          </div>
-        </div>
-
         
 
     </div>
@@ -2521,37 +2147,6 @@ Está entre 40 e 60:
 
 
         
-        
-
-        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="collapse" data-target="#newton" aria-expanded="false" aria-controls="newton">
-          Solução
-        </button>
-        <div class="collapse" id="newton">
-          <div class="card card-body">
-            
-
-<h3 id="solução">Solução</h3>
-
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s">'''
-cálculo da raiz quadrada aproximada
-usando método de Newton
-com uma precisão de 1e-12
-'''</span>
-
-<span class="n">x</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">'Digite um número: '</span><span class="p">))</span>
-
-<span class="c1"># Algoritmo: método de Newton para raiz quadrada
-</span><span class="n">raiz</span> <span class="o">=</span> <span class="n">x</span> <span class="o">/</span> <span class="mi">2</span> <span class="c1"># inicializar o palpite para a a raiz em x / 2
-</span><span class="n">tolerancia</span> <span class="o">=</span> <span class="mf">1.e-12</span> <span class="c1"># notacão científica: 1e-12 é igual a 1 * 10**(-12)
-</span><span class="k">while</span> <span class="nb">abs</span><span class="p">(</span><span class="n">raiz</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span> <span class="n">x</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="n">tolerancia</span><span class="p">:</span> <span class="c1"># a função abs() retorna o módulo (valor absoluto) do seu argumento
-</span>    <span class="n">raiz</span> <span class="o">=</span> <span class="p">(</span><span class="n">raiz</span> <span class="o">+</span> <span class="n">x</span> <span class="o">/</span> <span class="n">raiz</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span> <span class="c1"># atualiza o valor do palpite para a raiz
-</span>
-<span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'A raiz quadrada de </span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s"> é </span><span class="si">{</span><span class="n">raiz</span><span class="si">}</span><span class="s">'</span><span class="p">)</span>
-</code></pre></div></div>
-
-          </div>
-        </div>
-
         
 
     </div>
@@ -2841,52 +2436,6 @@ seqüência de traços e pontos. Seu programa deve ignorar quaisquer caracteres 
         
         
 
-        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="collapse" data-target="#morse" aria-expanded="false" aria-controls="morse">
-          Solução
-        </button>
-        <div class="collapse" id="morse">
-          <div class="card card-body">
-            
-
-<p>A solução abaixo usa um dicionário e uma função para converter minúsculas em maiúsculas e eliminar caracteres não alfanuméricos</p>
-
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">morse</span> <span class="o">=</span> <span class="p">{</span><span class="s">'A'</span><span class="p">:</span>	<span class="s">'.-'</span><span class="p">,</span>	<span class="s">'J'</span><span class="p">:</span>	<span class="s">'.---'</span><span class="p">,</span>	<span class="s">'S'</span><span class="p">:</span>	<span class="s">'...'</span><span class="p">,</span>	<span class="s">'1'</span><span class="p">:</span>	<span class="s">'.----'</span><span class="p">,</span>
-<span class="s">'B'</span><span class="p">:</span>	<span class="s">'-...'</span><span class="p">,</span>	<span class="s">'K'</span><span class="p">:</span>	<span class="s">'-.-'</span><span class="p">,</span>	<span class="s">'T'</span><span class="p">:</span>	<span class="s">'-'</span>	<span class="p">,</span>	<span class="s">'2'</span><span class="p">:</span>	<span class="s">'..---'</span><span class="p">,</span>
-<span class="s">'C'</span><span class="p">:</span>	<span class="s">'-.-.'</span><span class="p">,</span>	<span class="s">'L'</span><span class="p">:</span>	<span class="s">'.-..'</span><span class="p">,</span>	<span class="s">'U'</span><span class="p">:</span>	<span class="s">'..-'</span><span class="p">,</span>	<span class="s">'3'</span><span class="p">:</span>	<span class="s">'...--'</span><span class="p">,</span>
-<span class="s">'D'</span><span class="p">:</span>	<span class="s">'-..'</span><span class="p">,</span>	<span class="s">'M'</span><span class="p">:</span>	<span class="s">'--'</span><span class="p">,</span>	<span class="s">'V'</span><span class="p">:</span>	<span class="s">'...-'</span><span class="p">,</span>	<span class="s">'4'</span><span class="p">:</span>	<span class="s">'....-'</span><span class="p">,</span>
-<span class="s">'E'</span><span class="p">:</span>	<span class="s">'.'</span><span class="p">,</span>		<span class="s">'N'</span><span class="p">:</span>	<span class="s">'-.'</span><span class="p">,</span>	<span class="s">'W'</span><span class="p">:</span>	<span class="s">'.--'</span><span class="p">,</span>	<span class="s">'5'</span><span class="p">:</span>	<span class="s">'.....'</span><span class="p">,</span>
-<span class="s">'F'</span><span class="p">:</span>	<span class="s">'..-.'</span><span class="p">,</span>	<span class="s">'O'</span><span class="p">:</span>	<span class="s">'---'</span><span class="p">,</span>	<span class="s">'X'</span><span class="p">:</span>	<span class="s">'-..-'</span><span class="p">,</span>	<span class="s">'6'</span><span class="p">:</span>	<span class="s">'-....'</span><span class="p">,</span>
-<span class="s">'G'</span><span class="p">:</span>	<span class="s">'--.'</span><span class="p">,</span>	<span class="s">'P'</span><span class="p">:</span>	<span class="s">'.--.'</span><span class="p">,</span>	<span class="s">'Y'</span><span class="p">:</span>	<span class="s">'-.--'</span><span class="p">,</span>	<span class="s">'7'</span><span class="p">:</span>	<span class="s">'--...'</span><span class="p">,</span>
-<span class="s">'H'</span><span class="p">:</span>	<span class="s">'....'</span><span class="p">,</span>	<span class="s">'Q'</span><span class="p">:</span>	<span class="s">'--.-'</span><span class="p">,</span>	<span class="s">'Z'</span><span class="p">:</span>	<span class="s">'--..'</span><span class="p">,</span>	<span class="s">'8'</span><span class="p">:</span>	<span class="s">'---..'</span><span class="p">,</span>
-<span class="s">'I'</span><span class="p">:</span>	<span class="s">'..'</span><span class="p">,</span>	<span class="s">'R'</span><span class="p">:</span>	<span class="s">'.-.'</span><span class="p">,</span>	<span class="s">'0'</span><span class="p">:</span>	<span class="s">'-----'</span><span class="p">,</span>	<span class="s">'9'</span><span class="p">:</span>	<span class="s">'----.'</span><span class="p">}</span>
-
-<span class="k">def</span> <span class="nf">converte</span><span class="p">(</span><span class="n">msg</span><span class="p">):</span>
-  <span class="s">'''
-    converte minúsculas e maiúsculas e
-    elimina caracteres não alfanumericos
-  '''</span>
-  <span class="n">msg1</span> <span class="o">=</span> <span class="s">''</span>
-  <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">msg</span><span class="p">:</span>
-    <span class="k">if</span> <span class="s">'a'</span> <span class="o">&lt;=</span> <span class="n">c</span> <span class="o">&lt;=</span> <span class="s">'z'</span><span class="p">:</span>
-      <span class="n">msg1</span> <span class="o">+=</span> <span class="nb">chr</span><span class="p">(</span><span class="nb">ord</span><span class="p">(</span><span class="n">c</span><span class="p">)</span><span class="o">-</span><span class="mi">32</span><span class="p">)</span>
-    <span class="k">elif</span> <span class="s">'A'</span> <span class="o">&lt;=</span> <span class="n">c</span> <span class="o">&lt;=</span> <span class="s">'Z'</span> <span class="ow">or</span> <span class="s">'0'</span> <span class="o">&lt;=</span> <span class="n">c</span> <span class="o">&lt;=</span> <span class="s">'9'</span><span class="p">:</span>
-      <span class="n">msg1</span> <span class="o">+=</span> <span class="n">c</span>
-
-  <span class="k">return</span> <span class="n">msg1</span>
-
-<span class="n">mensagem</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">'Digite sua mensagem: '</span><span class="p">)</span>
-<span class="n">mensagem</span> <span class="o">=</span> <span class="n">converte</span><span class="p">(</span><span class="n">mensagem</span><span class="p">)</span>
-<span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">mensagem</span><span class="p">:</span>
-  <span class="k">print</span><span class="p">(</span><span class="n">morse</span><span class="p">[</span><span class="n">c</span><span class="p">],</span> <span class="n">end</span><span class="o">=</span><span class="s">' '</span><span class="p">)</span>
-<span class="k">print</span><span class="p">()</span>
-
-</code></pre></div></div>
-
-          </div>
-        </div>
-
-        
-
     </div>
 </div>
 
@@ -2983,42 +2532,6 @@ seqüência de traços e pontos. Seu programa deve ignorar quaisquer caracteres 
 
 
         
-        
-
-        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="collapse" data-target="#pascoa" aria-expanded="false" aria-controls="pascoa">
-          Solução
-        </button>
-        <div class="collapse" id="pascoa">
-          <div class="card card-body">
-            
-
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">pascoa</span><span class="p">(</span><span class="n">ano</span><span class="p">):</span>
-    <span class="n">a</span> <span class="o">=</span> <span class="n">ano</span> <span class="o">%</span> <span class="mi">19</span>
-    <span class="n">b</span><span class="p">,</span> <span class="n">c</span> <span class="o">=</span> <span class="n">ano</span> <span class="o">//</span> <span class="mi">100</span><span class="p">,</span> <span class="n">ano</span> <span class="o">%</span> <span class="mi">100</span>
-    <span class="n">d</span><span class="p">,</span> <span class="n">e</span> <span class="o">=</span> <span class="n">b</span> <span class="o">//</span> <span class="mi">4</span><span class="p">,</span> <span class="n">b</span> <span class="o">%</span> <span class="mi">4</span>
-    <span class="n">f</span> <span class="o">=</span> <span class="p">(</span> <span class="n">b</span> <span class="o">+</span> <span class="mi">8</span> <span class="p">)</span> <span class="o">//</span> <span class="mi">25</span>
-    <span class="n">g</span> <span class="o">=</span> <span class="p">(</span> <span class="n">b</span> <span class="o">-</span> <span class="n">f</span> <span class="o">+</span> <span class="mi">1</span> <span class="p">)</span> <span class="o">//</span> <span class="mi">3</span>
-    <span class="n">h</span> <span class="o">=</span> <span class="p">(</span> <span class="mi">19</span> <span class="o">*</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span> <span class="o">-</span> <span class="n">d</span> <span class="o">-</span> <span class="n">g</span> <span class="o">+</span> <span class="mi">15</span> <span class="p">)</span> <span class="o">%</span> <span class="mi">30</span>
-    <span class="n">i</span><span class="p">,</span> <span class="n">k</span> <span class="o">=</span> <span class="n">c</span> <span class="o">//</span> <span class="mi">4</span><span class="p">,</span> <span class="n">c</span> <span class="o">%</span> <span class="mi">4</span>
-    <span class="n">l</span> <span class="o">=</span> <span class="p">(</span> <span class="mi">32</span> <span class="o">+</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">e</span> <span class="o">+</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">i</span> <span class="o">-</span> <span class="n">h</span> <span class="o">-</span> <span class="n">k</span> <span class="p">)</span> <span class="o">%</span> <span class="mi">7</span>
-    <span class="n">m</span> <span class="o">=</span> <span class="p">(</span> <span class="n">a</span> <span class="o">+</span> <span class="mi">11</span> <span class="o">*</span> <span class="n">h</span> <span class="o">+</span> <span class="mi">22</span> <span class="o">*</span> <span class="n">l</span> <span class="p">)</span> <span class="o">//</span> <span class="mi">451</span>
-    <span class="n">o</span> <span class="o">=</span> <span class="n">h</span> <span class="o">+</span> <span class="n">l</span> <span class="o">-</span> <span class="mi">7</span> <span class="o">*</span> <span class="n">m</span> <span class="o">+</span> <span class="mi">114</span>
-    <span class="n">n</span><span class="p">,</span> <span class="n">p</span> <span class="o">=</span> <span class="n">o</span> <span class="o">//</span> <span class="mi">31</span><span class="p">,</span> <span class="n">o</span> <span class="o">%</span> <span class="mi">31</span>
-    <span class="k">return</span> <span class="n">p</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">n</span>
-
-<span class="c1"># dicionário para converter mes de int para string
-</span><span class="n">mes</span> <span class="o">=</span> <span class="p">{</span><span class="mi">3</span><span class="p">:</span><span class="s">'Março'</span><span class="p">,</span> <span class="mi">4</span><span class="p">:</span><span class="s">'Abril'</span><span class="p">}</span>
-
-<span class="n">x</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">'Ano: '</span><span class="p">))</span>
-<span class="n">d</span><span class="p">,</span> <span class="n">m</span> <span class="o">=</span> <span class="n">pascoa</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-
-<span class="c1"># o formato 02d imprime um inteiro com 2 algarismos, com zeros à esquerda se necessário
-</span><span class="k">print</span><span class="p">(</span> <span class="sa">f</span><span class="s">'Data da Páscoa em </span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s">: </span><span class="si">{</span><span class="n">d</span><span class="si">:</span><span class="mi">02</span><span class="n">d</span><span class="si">}</span><span class="s"> de </span><span class="si">{</span><span class="n">mes</span><span class="p">[</span><span class="n">m</span><span class="p">]</span><span class="si">}</span><span class="s">'</span> <span class="p">)</span>
-</code></pre></div></div>
-
-          </div>
-        </div>
-
         
 
     </div>

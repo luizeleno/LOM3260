@@ -90,7 +90,7 @@ GEM
     rexml (3.2.5)
     rouge (4.1.0)
     safe_yaml (1.0.5)
-    sass-embedded (1.59.2)
+    sass-embedded (1.59.3)
       google-protobuf (~> 3.21)
       rake (>= 10.0.0)
     terminal-table (3.0.2)
@@ -116,4 +116,4 @@ DEPENDENCIES
   webrick (~> 1.7)
 
 BUNDLED WITH
-   2.3.5
+   2.3.19
