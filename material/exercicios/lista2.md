@@ -5,7 +5,7 @@ nav_order: 2
 mathjax: true
 remove_trinket: true
 timestamp: 12-11-2020 13:18
-resolvidos: ['3','8']
+#resolvidos: ['3','8']
 #entrega2: ['1', '2', '9']
 #entrega3: ['7']
 ---

@@ -5,7 +5,7 @@ mathjax: true
 remove_trinket: true
 timestamp: 12-11-2020 13:19
 #hidden: false
-resolvidos: ['1', '2']
+#resolvidos: ['1', '2']
 #entrega3: ['3']
 ---
 

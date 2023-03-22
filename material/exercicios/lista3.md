@@ -4,7 +4,7 @@ parent: exs
 mathjax: true
 remove_trinket: true
 timestamp: 12-11-2020 13:19
-resolvidos: ['1', '3', '4', '6']
+#resolvidos: ['1', '3', '4', '6']
 #entrega3: ['2', '7']
 # hidden: true
 ---

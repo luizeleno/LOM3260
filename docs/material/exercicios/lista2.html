@@ -1414,21 +1414,19 @@
 
 <p><a href="#ex1" class="badge badge-primary">Ex. 1</a>
   <a href="#ex2" class="badge badge-primary">Ex. 2</a>
-  <a href="#ex3" class="badge badge-success">Ex. 3</a>
+  <a href="#ex3" class="badge badge-primary">Ex. 3</a>
   <a href="#ex4" class="badge badge-primary">Ex. 4</a>
   <a href="#ex5" class="badge badge-primary">Ex. 5</a>
   <a href="#ex6" class="badge badge-primary">Ex. 6</a>
   <a href="#ex7" class="badge badge-primary">Ex. 7</a>
-  <a href="#ex8" class="badge badge-success">Ex. 8</a>
+  <a href="#ex8" class="badge badge-primary">Ex. 8</a>
   <a href="#ex9" class="badge badge-primary">Ex. 9</a></p>
 
 <h3 id="instruções">Instruções</h3>
 
-<ul>
-  <li>os exercícios marcados em <span class="badge badge-success">verde</span> foram resolvidos em sala de aula. Uma possível solução é fornecida aqui, junto ao exercício.
 <!-- - os exercícios marcados em <span class="badge badge-danger">vermelho</span> devem ser entregues em dupla no dia 05/11/2020. -->
 <!-- - os exercícios marcados em <span class="badge badge-dark">preto</span> devem ser entregues em dupla no dia 03/12/2020. -->
-</li>
+<ul>
   <li>as porcentagens no começo de cada exercício são uma maneira de indicar o seu grau de dificuldade. Mas não se apegue muito a esses valores: talvez você ache fáceis alguns que eu julgo como difíceis — e vice versa!</li>
   <li>pode-se usar recursos do módulo <code class="language-plaintext highlighter-rouge">scipy.optimize</code> à vontade.</li>
   <li>para fazer gráficos rápidos e ajudar a encontrar graficamente raízes, use recursos <em>online</em> como os do <a href="https://www.desmos.com/calculator" target="_blank">www.desmos.com</a>.</li>
@@ -1542,44 +1540,6 @@
 
 
         
-        
-
-        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="collapse" data-target="#catenaria" aria-expanded="false" aria-controls="catenaria">
-          Solução
-        </button>
-        <div class="collapse" id="catenaria">
-          <div class="card card-body">
-            
-
-<p>A catenária passa pelo ponto $x=50,\,y=a+20$, o que fornece a equação</p>
-
-\[a+20 = a \cosh \left( \frac{50}{a} \right)\]
-
-<p>que resolvemos numericamente:</p>
-
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
-<span class="kn">import</span> <span class="nn">scipy.optimize</span> <span class="k">as</span> <span class="n">spo</span>
-
-<span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">a</span><span class="p">):</span>  <span class="c1"># função da qual se quer a raiz
-</span>  <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="mi">20</span> <span class="o">-</span> <span class="n">a</span> <span class="o">*</span> <span class="n">np</span><span class="p">.</span><span class="n">cosh</span><span class="p">(</span><span class="mi">50</span> <span class="o">/</span> <span class="n">a</span><span class="p">)</span>
-
-<span class="n">c</span> <span class="o">=</span> <span class="mi">65</span>  <span class="c1"># chute inicial
-</span><span class="n">a</span> <span class="o">=</span> <span class="n">spo</span><span class="p">.</span><span class="n">newton</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">c</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
-
-<span class="n">w</span> <span class="o">=</span> <span class="mi">50</span>
-<span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'Tmin=</span><span class="si">{</span><span class="n">w</span><span class="o">*</span><span class="n">a</span><span class="si">}</span><span class="s">, Tmax=</span><span class="si">{</span><span class="n">w</span><span class="o">*</span><span class="p">(</span><span class="n">a</span><span class="o">+</span><span class="mi">20</span><span class="p">)</span><span class="si">}</span><span class="s">'</span><span class="p">)</span>
-</code></pre></div></div>
-
-<p>Obtemos $a=65.5862\,$m. Com isso, as tensões mínima e máxima são</p>
-
-\[T_\text{min} = \omega a = 3279.3\,\text{N}\]
-
-\[T_\text{max} = \omega (a+20) = 4279.3\,\text{N}\]
-
-          </div>
-        </div>
-
         
 
     </div>
@@ -1780,92 +1740,6 @@ tolerância de 0.01s, o tempo que o objeto leva para atingir o solo.</p>
 
 
         
-        
-
-        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="collapse" data-target="#flecha" aria-expanded="false" aria-controls="flecha">
-          Solução
-        </button>
-        <div class="collapse" id="flecha">
-          <div class="card card-body">
-            
-
-<div class="float-right col-md-8">
-<div class="text-center">
-<figure class="figure">
-  
-  <a href="#" data-toggle="modal" data-target="#flcdsol">
-  
-    <img class="figure-img img-fluid rounded mx-auto" src="/LOM3260/assets/images/tikz/arco-flecha.png" alt="" title="">
-  
-  </a>
-  
-  
-
-<!-- Modal -->
-
-<div class="modal fade" id="flcdsol" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header text-light bg-dark">
-        <h5></h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span class="text-light" aria-hidden="true">×</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <a id="no-ext-link" href="/LOM3260/assets/images/tikz/arco-flecha.png" target="_blank">
-        <img class="figure-img img-fluid rounded w-100mx-auto" src="/LOM3260/assets/images/tikz/arco-flecha.png" alt="" title="">
-        </a>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">OK</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-</figure>
-</div>
-
-</div>
-
-<p>A figura mostra os segmentos e ângulos que vamos utilizar para resolver o problema. Conseguimos duas equações em $R$ (o raio do círculo) e $\theta$ (o ângulo $A\hat{O}C$):</p>
-
-\[R \theta = 6\]
-
-\[R \sin \theta = 5\]
-
-<p>Dividindo uma pela outra e reescrevendo, obtemos</p>
-
-\[5 \theta -6 \sin \theta = 0\]
-
-<p>que resolvemos numericamente:</p>
-
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
-<span class="kn">import</span> <span class="nn">scipy.optimize</span> <span class="k">as</span> <span class="n">spo</span>
-
-<span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">th</span><span class="p">):</span>  <span class="c1"># função da qual se quer a raiz
-</span>  <span class="k">return</span> <span class="mi">5</span> <span class="o">*</span> <span class="n">th</span> <span class="o">-</span> <span class="mi">6</span> <span class="o">*</span> <span class="n">np</span><span class="p">.</span><span class="n">sin</span><span class="p">(</span><span class="n">th</span><span class="p">)</span>
-
-<span class="n">c</span> <span class="o">=</span> <span class="mi">1</span>  <span class="c1"># chute inicial
-</span><span class="n">th</span> <span class="o">=</span> <span class="n">spo</span><span class="p">.</span><span class="n">newton</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">c</span><span class="p">)</span>
-
-<span class="n">R</span> <span class="o">=</span> <span class="mi">6</span> <span class="o">/</span> <span class="n">th</span>
-<span class="n">CD</span> <span class="o">=</span> <span class="n">R</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">np</span><span class="p">.</span><span class="n">cos</span><span class="p">(</span><span class="n">th</span><span class="p">))</span>
-
-<span class="k">print</span><span class="p">(</span><span class="n">th</span><span class="p">,</span> <span class="n">R</span><span class="p">)</span>
-
-<span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'CD=</span><span class="si">{</span><span class="n">CD</span><span class="si">}</span><span class="s">'</span><span class="p">)</span>
-</code></pre></div></div>
-
-<p>Obtendo $\theta=1.0267\,$rad (58.827°). Voltando às equações, calculamos $R = 5.8437\,\text{cm}$ e finalmente a flecha $CD$:</p>
-
-\[CD = R (1-\cos \theta) = 2.8189\text{ cm}\]
-
-          </div>
-        </div>
-
         
 
     </div>
