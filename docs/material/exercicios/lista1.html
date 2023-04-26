@@ -35,7 +35,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Primeira Lista" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Luiz T. F. Eleno"},"dateModified":"2023-04-10T10:31:51-03:00","description":"Computação Científica em Python - uma disciplina do curso de Engenharia Física da Escola de Engenharia de Lorena da Universidade de São Paulo - EEL USP","headline":"Primeira Lista","url":"https://computeel.org/LOM3260/material/exercicios/lista1.html"}</script>
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Luiz T. F. Eleno"},"dateModified":"2023-04-26T07:35:23-03:00","description":"Computação Científica em Python - uma disciplina do curso de Engenharia Física da Escola de Engenharia de Lorena da Universidade de São Paulo - EEL USP","headline":"Primeira Lista","url":"https://computeel.org/LOM3260/material/exercicios/lista1.html"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -2026,16 +2026,16 @@ e qualquer valor zero ou negativo resulta em False
         = 100 -&gt; centena
   '''</span>
   
-  <span class="k">if</span> <span class="n">digit</span> <span class="o">&lt;=</span><span class="mi">3</span><span class="p">:</span>  <span class="c1"># I, II, III ou X, XX, XXX ou C, CC, CCC
+  <span class="k">if</span> <span class="n">digit</span> <span class="o">&lt;=</span> <span class="mi">3</span><span class="p">:</span>  <span class="c1"># I, II, III ou X, XX, XXX ou C, CC, CCC
 </span>    <span class="k">return</span> <span class="n">arab2rom</span><span class="p">[</span><span class="n">pos</span><span class="p">]</span> <span class="o">*</span> <span class="n">digit</span>
   <span class="k">elif</span> <span class="n">digit</span> <span class="o">==</span> <span class="mi">4</span><span class="p">:</span>  <span class="c1"># IV ou XL ou CD
-</span>    <span class="k">return</span> <span class="n">arab2rom</span><span class="p">[</span><span class="n">pos</span><span class="p">]</span> <span class="o">+</span> <span class="n">arab2rom</span><span class="p">[</span><span class="n">pos</span><span class="o">*</span><span class="mi">5</span><span class="p">]</span>
+</span>    <span class="k">return</span> <span class="n">arab2rom</span><span class="p">[</span><span class="n">pos</span><span class="p">]</span> <span class="o">+</span> <span class="n">arab2rom</span><span class="p">[</span><span class="n">pos</span> <span class="o">*</span> <span class="mi">5</span><span class="p">]</span>
   <span class="k">elif</span> <span class="n">digit</span> <span class="o">==</span> <span class="mi">5</span><span class="p">:</span>  <span class="c1"># V ou L ou D
 </span>    <span class="k">return</span> <span class="n">arab2rom</span><span class="p">[</span><span class="n">pos</span><span class="o">*</span><span class="mi">5</span><span class="p">]</span>
   <span class="k">elif</span> <span class="mi">6</span> <span class="o">&lt;=</span> <span class="n">digit</span> <span class="o">&lt;=</span> <span class="mi">8</span><span class="p">:</span>  <span class="c1"># VI, VII, VIII ou LX, LXX, LXXX ou DC, DCC, DCCC
 </span>    <span class="k">return</span> <span class="n">arab2rom</span><span class="p">[</span><span class="n">pos</span><span class="o">*</span><span class="mi">5</span><span class="p">]</span> <span class="o">+</span> <span class="n">arab2rom</span><span class="p">[</span><span class="n">pos</span><span class="p">]</span> <span class="o">*</span> <span class="p">(</span><span class="n">digit</span> <span class="o">-</span> <span class="mi">5</span><span class="p">)</span>
   <span class="k">else</span><span class="p">:</span>  <span class="c1"># IX ou XC ou CM
-</span>    <span class="k">return</span> <span class="n">arab2rom</span><span class="p">[</span><span class="n">pos</span><span class="p">]</span> <span class="o">+</span> <span class="n">arab2rom</span><span class="p">[</span><span class="n">pos</span><span class="o">*</span><span class="mi">10</span><span class="p">]</span>
+</span>    <span class="k">return</span> <span class="n">arab2rom</span><span class="p">[</span><span class="n">pos</span><span class="p">]</span> <span class="o">+</span> <span class="n">arab2rom</span><span class="p">[</span><span class="n">pos</span> <span class="o">*</span> <span class="mi">10</span><span class="p">]</span>
 
 <span class="k">def</span> <span class="nf">a2r</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
   <span class="s">'''

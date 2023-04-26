@@ -28,16 +28,16 @@ def det_simb(digit, pos=1):
         = 100 -> centena
   '''
   
-  if digit <=3:  # I, II, III ou X, XX, XXX ou C, CC, CCC
+  if digit <= 3:  # I, II, III ou X, XX, XXX ou C, CC, CCC
     return arab2rom[pos] * digit
   elif digit == 4:  # IV ou XL ou CD
-    return arab2rom[pos] + arab2rom[pos*5]
+    return arab2rom[pos] + arab2rom[pos * 5]
   elif digit == 5:  # V ou L ou D
     return arab2rom[pos*5]
   elif 6 <= digit <= 8:  # VI, VII, VIII ou LX, LXX, LXXX ou DC, DCC, DCCC
     return arab2rom[pos*5] + arab2rom[pos] * (digit - 5)
   else:  # IX ou XC ou CM
-    return arab2rom[pos] + arab2rom[pos*10]
+    return arab2rom[pos] + arab2rom[pos * 10]
 
 def a2r(num):
   '''
