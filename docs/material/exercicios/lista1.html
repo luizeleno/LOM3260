@@ -1428,7 +1428,7 @@
   <a href="#ex14" class="badge badge-primary">Ex. 14</a>
   <a href="#ex15" class="badge badge-primary">Ex. 15</a>
   <a href="#ex16" class="badge badge-success">Ex. 16</a>
-  <a href="#ex17" class="badge badge-primary">Ex. 17</a>
+  <a href="#ex17" class="badge badge-success">Ex. 17</a>
   <a href="#ex18" class="badge badge-success">Ex. 18</a>
   <a href="#ex19" class="badge badge-primary">Ex. 19</a>
   <a href="#ex20" class="badge badge-success">Ex. 20</a>
@@ -2325,6 +2325,46 @@ Está entre 40 e 60:
 
 
         
+        
+
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="collapse" data-target="#joguinho" aria-expanded="false" aria-controls="joguinho">
+          Solução
+        </button>
+        <div class="collapse" id="joguinho">
+          <div class="card card-body">
+            
+
+<p>Aqui está um possível algoritmo para o jogo:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">numpy.random</span> <span class="k">as</span> <span class="n">rd</span>
+
+<span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">100</span>  <span class="c1"># o segredo estará em [a,b]
+</span>
+<span class="c1"># número secreto a ser adivinhado pelo jogador:
+</span><span class="n">segredo</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">randint</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="c1"># Início do jogo:
+</span><span class="k">print</span><span class="p">(</span><span class="s">'Adivinhe o número:'</span><span class="p">)</span>
+
+<span class="n">n</span> <span class="o">=</span> <span class="mi">1</span>  <span class="c1"># n será o contador de tentativas e o indicador (flag) de acerto
+</span><span class="k">while</span> <span class="n">n</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+  <span class="n">chute</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="sa">f</span><span class="s">'Está entre </span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s"> e </span><span class="si">{</span><span class="n">b</span><span class="si">}</span><span class="s">:'</span><span class="p">))</span>
+
+  <span class="k">if</span> <span class="n">chute</span> <span class="o">&gt;</span> <span class="n">segredo</span><span class="p">:</span>
+    <span class="n">b</span> <span class="o">=</span> <span class="n">chute</span>
+    <span class="n">n</span> <span class="o">+=</span> <span class="mi">1</span>
+  <span class="k">elif</span> <span class="n">chute</span> <span class="o">&lt;</span> <span class="n">segredo</span><span class="p">:</span>
+    <span class="n">a</span> <span class="o">=</span> <span class="n">chute</span>
+    <span class="n">n</span> <span class="o">+=</span> <span class="mi">1</span>
+  <span class="k">else</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'Acertou em </span><span class="si">{</span><span class="n">n</span><span class="si">}</span><span class="s"> tentativas!'</span><span class="p">)</span>
+    <span class="n">n</span> <span class="o">=</span> <span class="mi">0</span>  <span class="c1"># zerando n para se tornar um flag de acerto
+</span>
+</code></pre></div></div>
+
+          </div>
+        </div>
+
         
 
     </div>
