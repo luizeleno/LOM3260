@@ -14,34 +14,74 @@ Implemente um algoritmo para converter números em algarismos arábicos (por exe
 ## Solução
 
 ```python
-dict_unidade = {'1': 'I', '2': 'II', '3': 'III', '4': 'IV', '5': 'V',
-                '6': 'VI', '7': 'VII', '8': 'VIII', '9': 'IX', '0': ''}
-dict_dezena = {'1': 'X', '2': 'XX', '3': 'XXX', '4': 'XL', '5': 'L',
-               '6': 'LX', '7': 'LXX', '8': 'LXXX', '9': 'XC', '0': ''}
-dict_centena = {'1': 'C', '2': 'CC', '3': 'CCC', '4': 'CD', '5': 'D',
-                '6': 'DC', '7': 'DCC', '8': 'DCCC', '9': 'CM', '0': ''}
-dict_milhar = {'1': 'M', '2': 'MM', '3': 'MMM', '0': ''}
-# inseri 0 nos milhares para facilitar a conversão de romanos para arábicos
+# DICIONÁRIOS
+rom2arab = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 1000}
+arab2rom = {val: key for key, val in rom2arab.items()}  # invertendo r2a usando list comprehension
 
-dic = {'': 0, 'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 1000}
+def det_simb(digit, pos=1):
+  '''
+    função auxiliar para determinar o símbolo
+    correspondente ao dígito (digit: int)
+    do número arábico na pos
+    pos = 1   -> unidade
+        = 10  -> dezena
+        = 100 -> centena
+  '''
+  
+  if digit <=3:  # I, II, III ou X, XX, XXX ou C, CC, CCC
+    return arab2rom[pos] * digit
+  elif digit == 4:  # IV ou XL ou CD
+    return arab2rom[pos] + arab2rom[pos*5]
+  elif digit == 5:  # V ou L ou D
+    return arab2rom[pos*5]
+  elif 6 <= digit <= 8:  # VI, VII, VIII ou LX, LXX, LXXX ou DC, DCC, DCCC
+    return arab2rom[pos*5] + arab2rom[pos] * (digit - 5)
+  else:  # IX ou XC ou CM
+    return arab2rom[pos] + arab2rom[pos*10]
+
+def a2r(num):
+  '''
+    Conversão de número arábico num (int) para romano 
+    válido para 1 <= num <= 3999
+  '''
+  
+  arab = f'{num:04d}'
+  rom = ''
+  # dígito do milhar:
+  d = int(arab[0])
+  rom = arab2rom[1000] * d
+  # dígito da centena:
+  d = int(arab[1])
+  rom += det_simb(d, pos=100)
+  # dígito da dezena:
+  d = int(arab[2])
+  rom += det_simb(d, pos=10)
+  # dígito da unidade:
+  d = int(arab[3])
+  rom += det_simb(d, pos=1)
+  
+  return rom
+
+def r2a(rom):
+  '''
+    conversão de número em algarismos romanos rom (str) para arábicos (int)
+  '''
+  
+  cm = rom[-1]
+  num = rom2arab[cm]
+
+  for c in rom[-2::-1]:  # lendo um caractere por vez, de traz para frente, começando do penúltimo
+    if rom2arab[c] >= rom2arab[cm]:
+      num += rom2arab[c]
+    else:
+      num -= rom2arab[c]
+    cm = c
+    
+  return num
 
 
-def arabico_para_romano(n):
-    arab = f'{n:04d}'  # converte o inteiro n para string, padding com zeros
-    rom = dict_milhar[arab[0]]
-    rom += dict_centena[arab[1]]
-    rom += dict_dezena[arab[2]]
-    rom += dict_unidade[arab[3]]
-    return rom
-
-
-def romano_para_arabico(n):
-    a = dic[n[-1]]
-    N = len(n)
-    for i in range(N-1):
-        if dic[n[i]] < dic[n[i+1]]:
-            a -= dic[n[i]]
-        else:
-            a += dic[n[i]]
-    return a
+# TESTE: todos os inteiros de 1 a 3999
+for A in range(1, 4000):
+    R = a2r(A)  # de arábico para romano
+    print(r2a(R), R)  # de romano para arábico
 ```
