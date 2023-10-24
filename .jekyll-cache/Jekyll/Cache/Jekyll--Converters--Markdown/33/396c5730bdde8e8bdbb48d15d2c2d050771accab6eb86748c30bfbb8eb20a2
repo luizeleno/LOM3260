@@ -1,4 +1,4 @@
-I"�<p>Escreva um programa que implementa o método de Newton para extrair a raiz quadrada de um número digitado pelo usuário. O algoritmo é o seguinte:</p>
+I"�<p>Escreva um programa que implementa o método de Newton para extrair a raiz quadrada de um número digitado pelo usuário. O algoritmo é o seguinte:</p>
 
 <table>
   <tbody>
@@ -26,14 +26,14 @@ usando método de Newton
 com uma precisão de 1e-12
 '''</span>
 
-<span class="n">x</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">'Digite um número: '</span><span class="p">))</span>
+<span class="n">x</span> <span class="o">=</span> <span class="nf">float</span><span class="p">(</span><span class="nf">input</span><span class="p">(</span><span class="s">'Digite um número: '</span><span class="p">))</span>
 
 <span class="c1"># Algoritmo: método de Newton para raiz quadrada
 </span><span class="n">raiz</span> <span class="o">=</span> <span class="n">x</span> <span class="o">/</span> <span class="mi">2</span> <span class="c1"># inicializar o palpite para a a raiz em x / 2
 </span><span class="n">tolerancia</span> <span class="o">=</span> <span class="mf">1.e-12</span> <span class="c1"># notacão científica: 1e-12 é igual a 1 * 10**(-12)
-</span><span class="k">while</span> <span class="nb">abs</span><span class="p">(</span><span class="n">raiz</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span> <span class="n">x</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="n">tolerancia</span><span class="p">:</span> <span class="c1"># a função abs() retorna o módulo (valor absoluto) do seu argumento
+</span><span class="k">while</span> <span class="nf">abs</span><span class="p">(</span><span class="n">raiz</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span> <span class="n">x</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="n">tolerancia</span><span class="p">:</span> <span class="c1"># a função abs() retorna o módulo (valor absoluto) do seu argumento
 </span>    <span class="n">raiz</span> <span class="o">=</span> <span class="p">(</span><span class="n">raiz</span> <span class="o">+</span> <span class="n">x</span> <span class="o">/</span> <span class="n">raiz</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span> <span class="c1"># atualiza o valor do palpite para a raiz
 </span>
-<span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'A raiz quadrada de </span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s"> é </span><span class="si">{</span><span class="n">raiz</span><span class="si">}</span><span class="s">'</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'A raiz quadrada de </span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s"> é </span><span class="si">{</span><span class="n">raiz</span><span class="si">}</span><span class="s">'</span><span class="p">)</span>
 </code></pre></div></div>
 :ET

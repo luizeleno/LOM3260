@@ -9,18 +9,7 @@
   <link rel="shortcut icon" type="image/x-icon" href="/LOM3260/favicon.ico">
   <link rel="stylesheet" href="/LOM3260/css/bootstrap.min.css">
   <link href="/LOM3260/css/theme.css" rel="stylesheet" type="text/css">
-  <link href="/LOM3260/css/syntax.css" rel="stylesheet" type="text/css">
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-146810112-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-146810112-1');
-</script>
-
-<!-- Begin Jekyll SEO tag v2.8.0 -->
+  <link href="/LOM3260/css/syntax.css" rel="stylesheet" type="text/css"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>Objetos e variáveis | LOM3260</title>
 <meta name="generator" content="Jekyll v4.3.2" />
 <meta property="og:title" content="Objetos e variáveis" />
@@ -28,14 +17,14 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Computação Científica em Python - uma disciplina do curso de Engenharia Física da Escola de Engenharia de Lorena da Universidade de São Paulo - EEL USP" />
 <meta property="og:description" content="Computação Científica em Python - uma disciplina do curso de Engenharia Física da Escola de Engenharia de Lorena da Universidade de São Paulo - EEL USP" />
-<link rel="canonical" href="https://computeel.org/LOM3260/material/tema1/02-objetos-e-variaveis.html" />
-<meta property="og:url" content="https://computeel.org/LOM3260/material/tema1/02-objetos-e-variaveis.html" />
+<link rel="canonical" href="http://localhost:4000/LOM3260/material/tema1/02-objetos-e-variaveis.html" />
+<meta property="og:url" content="http://localhost:4000/LOM3260/material/tema1/02-objetos-e-variaveis.html" />
 <meta property="og:site_name" content="LOM3260" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Objetos e variáveis" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Luiz T. F. Eleno"},"dateModified":"2020-08-22T12:36:20-03:00","description":"Computação Científica em Python - uma disciplina do curso de Engenharia Física da Escola de Engenharia de Lorena da Universidade de São Paulo - EEL USP","headline":"Objetos e variáveis","url":"https://computeel.org/LOM3260/material/tema1/02-objetos-e-variaveis.html"}</script>
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Luiz T. F. Eleno"},"dateModified":"2020-08-22T12:36:20-03:00","description":"Computação Científica em Python - uma disciplina do curso de Engenharia Física da Escola de Engenharia de Lorena da Universidade de São Paulo - EEL USP","headline":"Objetos e variáveis","url":"http://localhost:4000/LOM3260/material/tema1/02-objetos-e-variaveis.html"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -1423,7 +1412,7 @@
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">a</span> <span class="o">=</span> <span class="mi">2</span>
 <span class="n">b</span> <span class="o">=</span> <span class="mi">3</span> <span class="o">*</span> <span class="n">a</span>
 <span class="n">a</span> <span class="o">=</span> <span class="mi">5</span>
-<span class="k">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
 </code></pre></div></div>
 <p>O que você acha que será impresso pelo comando <code class="language-plaintext highlighter-rouge">print</code>? Veja, na última vez que o python atribuiu algum objeto à variável <code class="language-plaintext highlighter-rouge">b</code> (na segunda linha), esse objeto era o <code class="language-plaintext highlighter-rouge">int</code> 6. Ao alterar o valor guardado em <code class="language-plaintext highlighter-rouge">a</code>, o que estava em <code class="language-plaintext highlighter-rouge">b</code> não é alterado. Portanto, o comando <code class="language-plaintext highlighter-rouge">print(b)</code> imprime na tela o valor <code class="language-plaintext highlighter-rouge">6</code>. Ou seja, se você alterar o valor guardado numa variável, não esqueça de alterar as variáveis que dependem dela! Repare que aí está o motivo do nome <em>variável</em>: o valor guardado em certo lugar da memória pode variar!</p>
 
@@ -1432,7 +1421,7 @@
 <p>Outra maneira de usar o operador de atribuição (<code class="language-plaintext highlighter-rouge">=</code>) que causa confusão entre iniciantes em programação é algo como o seguinte código:</p>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">a</span> <span class="o">=</span> <span class="mi">2</span>
 <span class="n">a</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="mi">1</span>
-<span class="k">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
 </code></pre></div></div>
 <p>Qual o valor impresso? Bom, na primeira linha, atribuímos o <code class="language-plaintext highlighter-rouge">int</code> 2 à variável <code class="language-plaintext highlighter-rouge">a</code>. Na segunda linha, somamos 1 ao valor guardado em <code class="language-plaintext highlighter-rouge">a</code> (2), cujo resultado é obviamente 3. Esse valor é então atribuído novamente à variável <code class="language-plaintext highlighter-rouge">a</code>, ou seja, guardamos esse novo resultado no mesmo lugar da memória, atualizando seu valor. Com efeito, o que fizemos foi basicamente alterar o objeto guardado na variável <code class="language-plaintext highlighter-rouge">a</code>.</p>
 

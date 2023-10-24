@@ -1,9 +1,9 @@
-I"�<p class="lead">Aprenda a navegar e entender a documentação de um módulo</p>
+I"�<p class="lead">Aprenda a navegar e entender a documentação de um módulo</p>
 
 <h2 id="documentação-das-funções-do-python-básico">Documentação das funções do python básico</h2>
 
 <p>Quando você está em dúvida sobre o que um comando faz, ou quer saber mais detalhes sobre as opções de uma certa função, você pode usar o comando <code class="language-plaintext highlighter-rouge">help</code> antes de partir para buscas na internet. Por exemplo, para mais informações sobre o  comando <code class="language-plaintext highlighter-rouge">print</code>, simplesmente digite o seguinte comando em python:</p>
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">help</span><span class="p">(</span><span class="k">print</span><span class="p">)</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">help</span><span class="p">(</span><span class="k">print</span><span class="p">)</span>
 </code></pre></div></div>
 <p>Isso fará aparecer a seguinte mensagem na janela de saída do seu ambiente python:</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Help on built-in function print in module builtins:
@@ -28,8 +28,8 @@ print(...)
 <h2 id="documentação-de-funções-de-módulos-externos">Documentação de funções de módulos externos</h2>
 
 <p>O comando <code class="language-plaintext highlighter-rouge">help</code> também pode ser usado com funções de módulos externos (inclusive os seus próprios módulos personalizados, como veremos), <em>desde que os criadores do módulo tenham se preocupado em fornecer essa informação!</em> Nem sempre, porém, a informação fornecida pelos desenvolvedores de módulos ao comando <code class="language-plaintext highlighter-rouge">help</code> é de grande ajuda para iniciantes. Por exemplo, importe o módulo <code class="language-plaintext highlighter-rouge">numpy</code> e procure ajuda sobre a função <code class="language-plaintext highlighter-rouge">sqrt</code>:</p>
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
-<span class="n">help</span><span class="p">(</span><span class="n">np</span><span class="p">.</span><span class="n">sqrt</span><span class="p">)</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">numpy</span> <span class="k">as</span> <span class="n">np</span>
+<span class="nf">help</span><span class="p">(</span><span class="n">np</span><span class="p">.</span><span class="n">sqrt</span><span class="p">)</span>
 </code></pre></div></div>
 <p>A longa mensagem fornecida provavelmente será de pouca ajuda para você que está apenas engatinhando em programação em python (e para muitos que se dizem programadores também, é bom que se diga!). Se o comando <code class="language-plaintext highlighter-rouge">help</code> não te auxiliar em nada, é preciso consultar a documentação específica no manual do módulo. Por sorte, vivemos na era da informação, e essa documentação pode ser facilmente encontrada na internet.</p>
 

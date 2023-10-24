@@ -1,4 +1,4 @@
-I"h)<p class="lead">Como escolher e manipular partes de uma string ou lista usando indexação (<em>indexing</em>) e fatiamento (<em>slicing</em>)</p>
+I"q)<p class="lead">Como escolher e manipular partes de uma string ou lista usando indexação (<em>indexing</em>) e fatiamento (<em>slicing</em>)</p>
 
 <p>Quase todos os comandos que veremos a seguir funcionam para objetos do tipo string, lista e tupla. Quando não for o caso, deixaremos indicado.</p>
 
@@ -6,14 +6,14 @@
 
 <p><strong>Indexing</strong> é a maneira pela qual nos referimos a um elemento de uma lista, string ou tupla. Por exemplo, se temos uma lista <code class="language-plaintext highlighter-rouge">L = [1, 8, 'EEL', 5.43]</code>, cada um dos elementos tem por <strong>índice</strong> um inteiro, começando em zero e sequencialmente aumentando de uma unidade até o último elemento. O primeiro elemento da lista <code class="language-plaintext highlighter-rouge">L</code> é indicado por <code class="language-plaintext highlighter-rouge">L[0]</code>, o segundo por <code class="language-plaintext highlighter-rouge">L[1]</code>, e assim por diante. Acompanhe:</p>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">L</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="s">'EEL'</span><span class="p">,</span> <span class="mf">5.43</span><span class="p">]</span>
-<span class="n">nL</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">L</span><span class="p">)</span>
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">nL</span><span class="p">):</span>
-  <span class="k">print</span><span class="p">(</span><span class="n">L</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+<span class="n">nL</span> <span class="o">=</span> <span class="nf">len</span><span class="p">(</span><span class="n">L</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="n">nL</span><span class="p">):</span>
+  <span class="nf">print</span><span class="p">(</span><span class="n">L</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
 </code></pre></div></div>
 <p>Esse código vai imprimir, um a um, todos os elementos de <code class="language-plaintext highlighter-rouge">L</code>. Lembre que <code class="language-plaintext highlighter-rouge">len(L)</code> fornece o tamanho (nesse caso, o número de elementos) de <code class="language-plaintext highlighter-rouge">L</code>, assim como, se <code class="language-plaintext highlighter-rouge">s</code> é uma string, <code class="language-plaintext highlighter-rouge">len(s)</code> fornece o número de caracteres de <code class="language-plaintext highlighter-rouge">s</code> (incluindo possíveis espaços em branco). Mas repare que o código acima poderia ser simplificado fazendo uso das propriedades do operador <code class="language-plaintext highlighter-rouge">in</code>, já visto anteriormente:</p>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">L</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="s">'EEL'</span><span class="p">,</span> <span class="mf">5.43</span><span class="p">]</span>
 <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">L</span><span class="p">:</span>
-  <span class="k">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+  <span class="nf">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 </code></pre></div></div>
 <p>Nesse caso, nem precisamos saber o tamanho da lista! Obviamente, você poderia evitar o uso do <code class="language-plaintext highlighter-rouge">for</code> fazendo simplesmente <code class="language-plaintext highlighter-rouge">print(L)</code>, mas, nesse caso, os elementos de <code class="language-plaintext highlighter-rouge">L</code> apareceriam numa mesma linha, diferentemente do exemplo mostrado acima, onde aparecem sequencialmente, um por linha.</p>
 
@@ -42,23 +42,23 @@
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">L</span> <span class="o">=</span> <span class="s">'Eu sou uma string'</span>
 
 <span class="c1"># primeira palavra (Eu)
-</span><span class="k">print</span><span class="p">(</span><span class="n">L</span><span class="p">[:</span><span class="mi">2</span><span class="p">])</span>
+</span><span class="nf">print</span><span class="p">(</span><span class="n">L</span><span class="p">[:</span><span class="mi">2</span><span class="p">])</span>
 </code></pre></div></div>
 <p>O comando <code class="language-plaintext highlighter-rouge">print</code> imprime os caracteres nas posições <code class="language-plaintext highlighter-rouge">0 e 1</code>, ou seja, a primeira palavra. Continuando com mais exemplos (que você deveria conferir rodando o código!):</p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># segunda palavra:
-</span><span class="k">print</span><span class="p">(</span><span class="n">L</span><span class="p">[</span><span class="mi">3</span><span class="p">:</span><span class="mi">6</span><span class="p">])</span>
+</span><span class="nf">print</span><span class="p">(</span><span class="n">L</span><span class="p">[</span><span class="mi">3</span><span class="p">:</span><span class="mi">6</span><span class="p">])</span>
 
 <span class="c1"># última palavra:
-</span><span class="k">print</span><span class="p">(</span><span class="n">L</span><span class="p">[</span><span class="o">-</span><span class="mi">6</span><span class="p">:])</span>
+</span><span class="nf">print</span><span class="p">(</span><span class="n">L</span><span class="p">[</span><span class="o">-</span><span class="mi">6</span><span class="p">:])</span>
 </code></pre></div></div>
 <p>Veja que, diferentemente do comando <code class="language-plaintext highlighter-rouge">range</code>, números negativos para <code class="language-plaintext highlighter-rouge">start</code> e <code class="language-plaintext highlighter-rouge">stop</code> tem interpretações diferentes no caso de fatiamento!</p>
 
 <p>Finalmente, tente entender o que os seguintes fatiamentos fazem:</p>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># teste: os seguintes comandos imprimem?
-</span><span class="k">print</span><span class="p">(</span><span class="n">L</span><span class="p">[</span><span class="o">-</span><span class="mi">6</span><span class="p">::</span><span class="mi">2</span><span class="p">])</span>
-<span class="k">print</span><span class="p">(</span><span class="n">L</span><span class="p">[:])</span>
-<span class="k">print</span><span class="p">(</span><span class="n">L</span><span class="p">[::])</span>
-<span class="k">print</span><span class="p">(</span><span class="n">L</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+</span><span class="nf">print</span><span class="p">(</span><span class="n">L</span><span class="p">[</span><span class="o">-</span><span class="mi">6</span><span class="p">::</span><span class="mi">2</span><span class="p">])</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">L</span><span class="p">[:])</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">L</span><span class="p">[::])</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">L</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
 </code></pre></div></div>
 :ET

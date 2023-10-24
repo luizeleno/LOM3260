@@ -1,4 +1,4 @@
-I"�<p class="lead">Numa expressão como <code class="language-plaintext highlighter-rouge">c = a op b</code>, <code class="language-plaintext highlighter-rouge">a</code> e <code class="language-plaintext highlighter-rouge">b</code> são chamados <em>operandos</em> e <code class="language-plaintext highlighter-rouge">op</code> é um <strong>operador</strong>. Os operadores abaixo (com exceção do <code class="language-plaintext highlighter-rouge">not</code>) agem sobre dois <em>operandos</em> e produzem (<em>retornam</em>) um resultado, que depende dos tipos de dados dos operandos.</p>
+I"�<p class="lead">Numa expressão como <code class="language-plaintext highlighter-rouge">c = a op b</code>, <code class="language-plaintext highlighter-rouge">a</code> e <code class="language-plaintext highlighter-rouge">b</code> são chamados <em>operandos</em> e <code class="language-plaintext highlighter-rouge">op</code> é um <strong>operador</strong>. Os operadores abaixo (com exceção do <code class="language-plaintext highlighter-rouge">not</code>) agem sobre dois <em>operandos</em> e produzem (<em>retornam</em>) um resultado, que depende dos tipos de dados dos operandos.</p>
 
 <h2 id="operadores-aritméticos">Operadores aritméticos</h2>
 
@@ -65,7 +65,7 @@
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span>
 <span class="n">x</span> <span class="o">=</span> <span class="n">a</span> <span class="o">&gt;</span> <span class="n">b</span> <span class="ow">and</span> <span class="n">a</span> <span class="o">&gt;</span> <span class="mi">0</span>
 <span class="n">y</span> <span class="o">=</span> <span class="n">a</span> <span class="o">&gt;</span> <span class="n">b</span> <span class="ow">or</span> <span class="n">a</span> <span class="o">&gt;</span> <span class="mi">0</span>
-<span class="k">print</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
 </code></pre></div></div>
 <p>Esse código imprime <code class="language-plaintext highlighter-rouge">False True</code></p>
 :ET

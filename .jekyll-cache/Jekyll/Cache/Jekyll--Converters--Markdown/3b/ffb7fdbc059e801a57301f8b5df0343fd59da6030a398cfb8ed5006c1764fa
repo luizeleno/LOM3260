@@ -1,4 +1,4 @@
-I"V
+I"W
 <p>Escreva um programa que converta um número decimal (base 10) em binário (base 2). Leia o número decimal do usuário e use o seguinte algoritmo de divisão, exemplificado para o número 83 (base 10):</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	83/2 = 41 resto 1
 	41/2 = 20 resto 1
@@ -15,7 +15,7 @@
 <h3 id="solução">Solução</h3>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Entrada
 </span>
-<span class="n">decimal</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">'N (base 10) = '</span><span class="p">))</span>
+<span class="n">decimal</span> <span class="o">=</span> <span class="nf">int</span><span class="p">(</span><span class="nf">input</span><span class="p">(</span><span class="s">'N (base 10) = '</span><span class="p">))</span>
 
 <span class="c1"># Algoritmo
 </span>
@@ -33,10 +33,10 @@ comentários:
 <span class="k">while</span> <span class="n">quociente</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
     <span class="n">resto</span> <span class="o">=</span> <span class="n">quociente</span> <span class="o">%</span> <span class="mi">2</span>
     <span class="n">quociente</span> <span class="o">=</span> <span class="n">quociente</span> <span class="o">//</span> <span class="mi">2</span>
-    <span class="n">binario</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">resto</span><span class="p">)</span> <span class="o">+</span> <span class="n">binario</span>
+    <span class="n">binario</span> <span class="o">=</span> <span class="nf">str</span><span class="p">(</span><span class="n">resto</span><span class="p">)</span> <span class="o">+</span> <span class="n">binario</span>
 
 <span class="c1"># Saída
-</span><span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'</span><span class="si">{</span><span class="n">decimal</span><span class="si">}</span><span class="s"> (base 10) = </span><span class="si">{</span><span class="n">binario</span><span class="si">}</span><span class="s"> (base 2)'</span><span class="p">)</span>
+</span><span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'</span><span class="si">{</span><span class="n">decimal</span><span class="si">}</span><span class="s"> (base 10) = </span><span class="si">{</span><span class="n">binario</span><span class="si">}</span><span class="s"> (base 2)'</span><span class="p">)</span>
 
 </code></pre></div></div>
 :ET

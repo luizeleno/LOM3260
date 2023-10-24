@@ -55,16 +55,16 @@
 
 <p>Use o comando <code class="language-plaintext highlighter-rouge">str()</code>:</p>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">n</span> <span class="o">=</span> <span class="mi">52</span>  <span class="c1"># n é do tipo int
-</span><span class="n">ns</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>  <span class="c1"># ns é do tipo string
+</span><span class="n">ns</span> <span class="o">=</span> <span class="nf">str</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>  <span class="c1"># ns é do tipo string
 </span></code></pre></div></div>
 
 <h3 id="string-para-int-ou-float"><code class="language-plaintext highlighter-rouge">String</code> para <code class="language-plaintext highlighter-rouge">int</code> ou <code class="language-plaintext highlighter-rouge">float</code></h3>
 
 <p>Use os comandos <code class="language-plaintext highlighter-rouge">int()</code> e <code class="language-plaintext highlighter-rouge">float()</code>:</p>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">s</span> <span class="o">=</span> <span class="s">'45.23'</span>
-<span class="n">sf</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
-<span class="n">si</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>  <span class="c1"># dá erro! quando for rodar o código, comente esta linha
-</span><span class="n">si</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">sf</span><span class="p">)</span>  <span class="c1"># assim funciona
+<span class="n">sf</span> <span class="o">=</span> <span class="nf">float</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+<span class="n">si</span> <span class="o">=</span> <span class="nf">int</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>  <span class="c1"># dá erro! quando for rodar o código, comente esta linha
+</span><span class="n">si</span> <span class="o">=</span> <span class="nf">int</span><span class="p">(</span><span class="n">sf</span><span class="p">)</span>  <span class="c1"># assim funciona
 </span></code></pre></div></div>
 <p>Teste os últimos comandos para ver o que a função <code class="language-plaintext highlighter-rouge">int()</code> retorna quando <code class="language-plaintext highlighter-rouge">s='45.23'</code> (uma string) e quando <code class="language-plaintext highlighter-rouge">sf=45.23</code> (um float).</p>
 

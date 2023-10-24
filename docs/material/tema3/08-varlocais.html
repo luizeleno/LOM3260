@@ -9,18 +9,7 @@
   <link rel="shortcut icon" type="image/x-icon" href="/LOM3260/favicon.ico">
   <link rel="stylesheet" href="/LOM3260/css/bootstrap.min.css">
   <link href="/LOM3260/css/theme.css" rel="stylesheet" type="text/css">
-  <link href="/LOM3260/css/syntax.css" rel="stylesheet" type="text/css">
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-146810112-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-146810112-1');
-</script>
-
-<!-- Begin Jekyll SEO tag v2.8.0 -->
+  <link href="/LOM3260/css/syntax.css" rel="stylesheet" type="text/css"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>Variáveis locais e globais | LOM3260</title>
 <meta name="generator" content="Jekyll v4.3.2" />
 <meta property="og:title" content="Variáveis locais e globais" />
@@ -28,14 +17,14 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Computação Científica em Python - uma disciplina do curso de Engenharia Física da Escola de Engenharia de Lorena da Universidade de São Paulo - EEL USP" />
 <meta property="og:description" content="Computação Científica em Python - uma disciplina do curso de Engenharia Física da Escola de Engenharia de Lorena da Universidade de São Paulo - EEL USP" />
-<link rel="canonical" href="https://computeel.org/LOM3260/material/tema3/08-varlocais.html" />
-<meta property="og:url" content="https://computeel.org/LOM3260/material/tema3/08-varlocais.html" />
+<link rel="canonical" href="http://localhost:4000/LOM3260/material/tema3/08-varlocais.html" />
+<meta property="og:url" content="http://localhost:4000/LOM3260/material/tema3/08-varlocais.html" />
 <meta property="og:site_name" content="LOM3260" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Variáveis locais e globais" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Luiz T. F. Eleno"},"dateModified":"2020-04-29T21:15:30-03:00","description":"Computação Científica em Python - uma disciplina do curso de Engenharia Física da Escola de Engenharia de Lorena da Universidade de São Paulo - EEL USP","headline":"Variáveis locais e globais","url":"https://computeel.org/LOM3260/material/tema3/08-varlocais.html"}</script>
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Luiz T. F. Eleno"},"dateModified":"2020-04-29T21:15:30-03:00","description":"Computação Científica em Python - uma disciplina do curso de Engenharia Física da Escola de Engenharia de Lorena da Universidade de São Paulo - EEL USP","headline":"Variáveis locais e globais","url":"http://localhost:4000/LOM3260/material/tema3/08-varlocais.html"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -1422,9 +1411,9 @@
 
 
 <span class="n">x</span> <span class="o">=</span> <span class="mi">5</span>
-<span class="n">result</span> <span class="o">=</span> <span class="n">teste_local</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+<span class="n">result</span> <span class="o">=</span> <span class="nf">teste_local</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
 </code></pre></div></div>
 <p>O python retornará a seguinte mensagem de erro: <code class="language-plaintext highlighter-rouge">NameError: name 'y' is not defined</code>. Isso porque a variável <code class="language-plaintext highlighter-rouge">y</code> é uma <strong>variável local</strong>. Ela existe apenas dentro da função, ou seja, é criada durante a execução da função e, assim que a execução termina, ela é “esquecida”.</p>
 
@@ -1435,8 +1424,8 @@
 
 
 <span class="n">x</span> <span class="o">=</span> <span class="mi">5</span>
-<span class="n">z</span><span class="o">=</span> <span class="n">SeraQueMuda</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="n">z</span><span class="o">=</span> <span class="nc">SeraQueMuda</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 </code></pre></div></div>
 <p>Que valor o comando <code class="language-plaintext highlighter-rouge">print(x)</code> imprime?</p>
 
@@ -1450,8 +1439,8 @@
 
 <span class="n">x</span> <span class="o">=</span> <span class="mi">5</span>
 <span class="n">y</span> <span class="o">=</span> <span class="mi">3</span>
-<span class="n">z</span><span class="o">=</span> <span class="n">YLocal</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+<span class="n">z</span><span class="o">=</span> <span class="nc">YLocal</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
 </code></pre></div></div>
 <p>Veja que a função <code class="language-plaintext highlighter-rouge">YLocal</code> não afeta o valor da variável <code class="language-plaintext highlighter-rouge">y</code> (criada fora da função), pois o que você chamou de <code class="language-plaintext highlighter-rouge">y</code> dentro da função só existe durante o seu escopo (ou seja, a sua execução). No entanto, diga ao python para tratá-la como uma variável global da seguinte maneira:</p>
 
@@ -1463,8 +1452,8 @@
 
 <span class="n">x</span> <span class="o">=</span> <span class="mi">5</span>
 <span class="n">y</span> <span class="o">=</span> <span class="mi">3</span>
-<span class="n">z</span><span class="o">=</span> <span class="n">YGlobal</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+<span class="n">z</span><span class="o">=</span> <span class="nc">YGlobal</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
 </code></pre></div></div>
 <p>Veja que agora a função <code class="language-plaintext highlighter-rouge">YGlobal</code> altera o valor de <code class="language-plaintext highlighter-rouge">y</code>, pois essa é agora uma variável tornada  <strong>global</strong>, ou seja, a função deve tratá-la como uma variável externa a si própria.</p>
 

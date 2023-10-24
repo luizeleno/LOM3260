@@ -1,4 +1,4 @@
-I"F<div class="float-right col-md-3">
+I"H<div class="float-right col-md-3">
 <div class="text-center">
 <figure class="figure">
   
@@ -102,18 +102,18 @@
 
 <p>que deve ser resolvida numericamente usando, por exemplo, <code class="language-plaintext highlighter-rouge">scipy.optimize.newton</code>:</p>
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
-<span class="kn">import</span> <span class="nn">scipy.optimize</span> <span class="k">as</span> <span class="n">op</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">numpy</span> <span class="k">as</span> <span class="n">np</span>
+<span class="kn">import</span> <span class="n">scipy.optimize</span> <span class="k">as</span> <span class="n">op</span>
 
 <span class="n">L1</span><span class="p">,</span> <span class="n">L2</span><span class="p">,</span> <span class="n">H</span> <span class="o">=</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">4</span>
 
 <span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">w</span><span class="p">):</span>
-  <span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">L1</span><span class="o">**</span><span class="mi">2</span><span class="o">-</span><span class="n">w</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
-  <span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">L2</span><span class="o">**</span><span class="mi">2</span><span class="o">-</span><span class="n">w</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+  <span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">sqrt</span><span class="p">(</span><span class="n">L1</span><span class="o">**</span><span class="mi">2</span><span class="o">-</span><span class="n">w</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+  <span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">sqrt</span><span class="p">(</span><span class="n">L2</span><span class="o">**</span><span class="mi">2</span><span class="o">-</span><span class="n">w</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
   <span class="k">return</span> <span class="mi">1</span><span class="o">/</span><span class="n">a</span> <span class="o">+</span> <span class="mi">1</span><span class="o">/</span><span class="n">b</span> <span class="o">-</span> <span class="mi">1</span><span class="o">/</span><span class="n">H</span>
 
-<span class="n">W</span> <span class="o">=</span> <span class="n">op</span><span class="p">.</span><span class="n">newton</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="n">W</span><span class="p">)</span>
+<span class="n">W</span> <span class="o">=</span> <span class="n">op</span><span class="p">.</span><span class="nf">newton</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">W</span><span class="p">)</span>
 </code></pre></div></div>
 
 <p>O resultado é $W=8.106$m.</p>

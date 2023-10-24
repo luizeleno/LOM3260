@@ -1,8 +1,8 @@
-I"x<p>Interprete a saída da seguinte função, que usa uma propriedade conhecida como <strong>recursão</strong>:</p>
+I"y<p>Interprete a saída da seguinte função, que usa uma propriedade conhecida como <strong>recursão</strong>:</p>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">fatorial_recursivo</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">n</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">:</span>
         <span class="k">return</span> <span class="mi">1</span>
     <span class="k">else</span><span class="p">:</span>
-        <span class="k">return</span> <span class="n">n</span> <span class="o">*</span> <span class="n">fatorial_recursivo</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">n</span> <span class="o">*</span> <span class="nf">fatorial_recursivo</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
 </code></pre></div></div>
 :ET

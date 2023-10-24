@@ -1,4 +1,4 @@
-I"�<p class="lead">Dois operadores importantes</p>
+I"�<p class="lead">Dois operadores importantes</p>
 
 <h2 id="in"><code class="language-plaintext highlighter-rouge">in</code></h2>
 
@@ -6,8 +6,8 @@
 
 <ol>
   <li>iterar por todos os valores de uma lista ou string. É usado geralmente em conjunto com o comando <code class="language-plaintext highlighter-rouge">for</code>. Por exemplo, o seguinte código:
-    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">8</span><span class="p">):</span>
-  <span class="k">print</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="mi">8</span><span class="p">):</span>
+  <span class="nf">print</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
 </code></pre></div>    </div>
     <p>vai resultar na seguinte saída:</p>
     <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>0
@@ -24,7 +24,7 @@
     <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">s</span> <span class="o">=</span> <span class="s">'bobo'</span>
 <span class="n">c</span> <span class="o">=</span> <span class="s">'bo'</span>
 <span class="k">if</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">s</span><span class="p">:</span>
-  <span class="k">print</span><span class="p">(</span><span class="s">'encontrado!'</span><span class="p">)</span>
+  <span class="nf">print</span><span class="p">(</span><span class="s">'encontrado!'</span><span class="p">)</span>
 </code></pre></div>    </div>
     <p>é retornado <code class="language-plaintext highlighter-rouge">encontrado!</code>. Nessa situação, o operador <code class="language-plaintext highlighter-rouge">in</code> itera por todos os elementos de <code class="language-plaintext highlighter-rouge">s</code>, mesmo sem termos explicitamente estabelecido um laço usando <code class="language-plaintext highlighter-rouge">while</code> ou <code class="language-plaintext highlighter-rouge">for</code>. Se a string <code class="language-plaintext highlighter-rouge">c</code> fizer parte de <code class="language-plaintext highlighter-rouge">s</code>, a condição <code class="language-plaintext highlighter-rouge">c in s</code> resultará em <code class="language-plaintext highlighter-rouge">True</code>.</p>
   </li>
@@ -34,8 +34,8 @@
 
 <p>O comando <code class="language-plaintext highlighter-rouge">len()</code> retorna o tamanho de uma lista ou de um string. Um exemplo:</p>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">s</span> <span class="o">=</span> <span class="s">'EEL/USP'</span>
-<span class="n">Ns</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="n">Ns</span><span class="p">)</span>
+<span class="n">Ns</span> <span class="o">=</span> <span class="nf">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">Ns</span><span class="p">)</span>
 </code></pre></div></div>
 <p>Esse código retorna <code class="language-plaintext highlighter-rouge">7</code>, já que <code class="language-plaintext highlighter-rouge">'EEL/USP'</code> tem sete caracteres.</p>
 :ET

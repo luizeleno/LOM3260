@@ -9,18 +9,7 @@
   <link rel="shortcut icon" type="image/x-icon" href="/LOM3260/favicon.ico">
   <link rel="stylesheet" href="/LOM3260/css/bootstrap.min.css">
   <link href="/LOM3260/css/theme.css" rel="stylesheet" type="text/css">
-  <link href="/LOM3260/css/syntax.css" rel="stylesheet" type="text/css">
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-146810112-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-146810112-1');
-</script>
-
-<!-- Begin Jekyll SEO tag v2.8.0 -->
+  <link href="/LOM3260/css/syntax.css" rel="stylesheet" type="text/css"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>Sobrecarga de operadores | LOM3260</title>
 <meta name="generator" content="Jekyll v4.3.2" />
 <meta property="og:title" content="Sobrecarga de operadores" />
@@ -28,14 +17,14 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Computação Científica em Python - uma disciplina do curso de Engenharia Física da Escola de Engenharia de Lorena da Universidade de São Paulo - EEL USP" />
 <meta property="og:description" content="Computação Científica em Python - uma disciplina do curso de Engenharia Física da Escola de Engenharia de Lorena da Universidade de São Paulo - EEL USP" />
-<link rel="canonical" href="https://computeel.org/LOM3260/docs/sobrecarga/" />
-<meta property="og:url" content="https://computeel.org/LOM3260/docs/sobrecarga/" />
+<link rel="canonical" href="http://localhost:4000/LOM3260/docs/sobrecarga/" />
+<meta property="og:url" content="http://localhost:4000/LOM3260/docs/sobrecarga/" />
 <meta property="og:site_name" content="LOM3260" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Sobrecarga de operadores" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Luiz T. F. Eleno"},"dateModified":"2020-08-23T14:22:55-03:00","description":"Computação Científica em Python - uma disciplina do curso de Engenharia Física da Escola de Engenharia de Lorena da Universidade de São Paulo - EEL USP","headline":"Sobrecarga de operadores","url":"https://computeel.org/LOM3260/docs/sobrecarga/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Luiz T. F. Eleno"},"dateModified":"2020-08-23T14:22:55-03:00","description":"Computação Científica em Python - uma disciplina do curso de Engenharia Física da Escola de Engenharia de Lorena da Universidade de São Paulo - EEL USP","headline":"Sobrecarga de operadores","url":"http://localhost:4000/LOM3260/docs/sobrecarga/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -1433,7 +1422,7 @@
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">a</span> <span class="o">=</span> <span class="s">'3'</span>
 <span class="n">b</span> <span class="o">=</span> <span class="s">'8'</span>
 <span class="n">c</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
-<span class="k">print</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
 </code></pre></div></div>
 <p>O que você acha que esse comando <code class="language-plaintext highlighter-rouge">print</code> imprime? Veja que <code class="language-plaintext highlighter-rouge">a</code> e <code class="language-plaintext highlighter-rouge">b</code> são do tipo <code class="language-plaintext highlighter-rouge">string</code> e, não <code class="language-plaintext highlighter-rouge">int</code>! Nesse caso, o operador <code class="language-plaintext highlighter-rouge">+</code> é o operador de <strong>concatenação</strong> de strings (como diz uma velha piadinha infantil: <em>quanto é 1+1? 2? Nao! É 11</em>).</p>
 

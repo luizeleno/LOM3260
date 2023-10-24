@@ -1,4 +1,4 @@
-I"�"<p>O <strong>código Morse</strong> é um esquema de codificação que usa traços e pontos para representar números e letras. Neste exercício, você vai escrever um programa que usa um dicionário para armazenar o mapeamento de letras e números para código Morse, mostrado na tabela a seguir:</p>
+I"�"<p>O <strong>código Morse</strong> é um esquema de codificação que usa traços e pontos para representar números e letras. Neste exercício, você vai escrever um programa que usa um dicionário para armazenar o mapeamento de letras e números para código Morse, mostrado na tabela a seguir:</p>
 
 <table>
   <tbody>
@@ -123,17 +123,17 @@ seqüência de traços e pontos. Seu programa deve ignorar quaisquer caracteres 
   <span class="n">msg1</span> <span class="o">=</span> <span class="s">''</span>
   <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">msg</span><span class="p">:</span>
     <span class="k">if</span> <span class="s">'a'</span> <span class="o">&lt;=</span> <span class="n">c</span> <span class="o">&lt;=</span> <span class="s">'z'</span><span class="p">:</span>
-      <span class="n">msg1</span> <span class="o">+=</span> <span class="nb">chr</span><span class="p">(</span><span class="nb">ord</span><span class="p">(</span><span class="n">c</span><span class="p">)</span><span class="o">-</span><span class="mi">32</span><span class="p">)</span>
+      <span class="n">msg1</span> <span class="o">+=</span> <span class="nf">chr</span><span class="p">(</span><span class="nf">ord</span><span class="p">(</span><span class="n">c</span><span class="p">)</span><span class="o">-</span><span class="mi">32</span><span class="p">)</span>
     <span class="k">elif</span> <span class="s">'A'</span> <span class="o">&lt;=</span> <span class="n">c</span> <span class="o">&lt;=</span> <span class="s">'Z'</span> <span class="ow">or</span> <span class="s">'0'</span> <span class="o">&lt;=</span> <span class="n">c</span> <span class="o">&lt;=</span> <span class="s">'9'</span><span class="p">:</span>
       <span class="n">msg1</span> <span class="o">+=</span> <span class="n">c</span>
 
   <span class="k">return</span> <span class="n">msg1</span>
 
-<span class="n">mensagem</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">'Digite sua mensagem: '</span><span class="p">)</span>
-<span class="n">mensagem</span> <span class="o">=</span> <span class="n">converte</span><span class="p">(</span><span class="n">mensagem</span><span class="p">)</span>
+<span class="n">mensagem</span> <span class="o">=</span> <span class="nf">input</span><span class="p">(</span><span class="s">'Digite sua mensagem: '</span><span class="p">)</span>
+<span class="n">mensagem</span> <span class="o">=</span> <span class="nf">converte</span><span class="p">(</span><span class="n">mensagem</span><span class="p">)</span>
 <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">mensagem</span><span class="p">:</span>
-  <span class="k">print</span><span class="p">(</span><span class="n">morse</span><span class="p">[</span><span class="n">c</span><span class="p">],</span> <span class="n">end</span><span class="o">=</span><span class="s">' '</span><span class="p">)</span>
-<span class="k">print</span><span class="p">()</span>
+  <span class="nf">print</span><span class="p">(</span><span class="n">morse</span><span class="p">[</span><span class="n">c</span><span class="p">],</span> <span class="n">end</span><span class="o">=</span><span class="s">' '</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">()</span>
 
 </code></pre></div></div>
 :ET

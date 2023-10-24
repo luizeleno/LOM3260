@@ -9,18 +9,7 @@
   <link rel="shortcut icon" type="image/x-icon" href="/LOM3260/favicon.ico">
   <link rel="stylesheet" href="/LOM3260/css/bootstrap.min.css">
   <link href="/LOM3260/css/theme.css" rel="stylesheet" type="text/css">
-  <link href="/LOM3260/css/syntax.css" rel="stylesheet" type="text/css">
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-146810112-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-146810112-1');
-</script>
-
-<!-- Begin Jekyll SEO tag v2.8.0 -->
+  <link href="/LOM3260/css/syntax.css" rel="stylesheet" type="text/css"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>Dicionários | LOM3260</title>
 <meta name="generator" content="Jekyll v4.3.2" />
 <meta property="og:title" content="Dicionários" />
@@ -28,14 +17,14 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Computação Científica em Python - uma disciplina do curso de Engenharia Física da Escola de Engenharia de Lorena da Universidade de São Paulo - EEL USP" />
 <meta property="og:description" content="Computação Científica em Python - uma disciplina do curso de Engenharia Física da Escola de Engenharia de Lorena da Universidade de São Paulo - EEL USP" />
-<link rel="canonical" href="https://computeel.org/LOM3260/material/tema2/06-dicionarios.html" />
-<meta property="og:url" content="https://computeel.org/LOM3260/material/tema2/06-dicionarios.html" />
+<link rel="canonical" href="http://localhost:4000/LOM3260/material/tema2/06-dicionarios.html" />
+<meta property="og:url" content="http://localhost:4000/LOM3260/material/tema2/06-dicionarios.html" />
 <meta property="og:site_name" content="LOM3260" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Dicionários" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Luiz T. F. Eleno"},"dateModified":"2020-08-23T14:22:55-03:00","description":"Computação Científica em Python - uma disciplina do curso de Engenharia Física da Escola de Engenharia de Lorena da Universidade de São Paulo - EEL USP","headline":"Dicionários","url":"https://computeel.org/LOM3260/material/tema2/06-dicionarios.html"}</script>
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Luiz T. F. Eleno"},"dateModified":"2020-08-23T14:22:55-03:00","description":"Computação Científica em Python - uma disciplina do curso de Engenharia Física da Escola de Engenharia de Lorena da Universidade de São Paulo - EEL USP","headline":"Dicionários","url":"http://localhost:4000/LOM3260/material/tema2/06-dicionarios.html"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -1409,8 +1398,8 @@
 <p>retorna <code class="language-plaintext highlighter-rouge">the</code>.</p>
 
 <p>Os dois comandos a seguir usam um recurso chamado <em>list comprehension</em>, que vimos na lição anterior:</p>
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">print</span><span class="p">([</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">meu_dicio</span><span class="p">])</span>
-<span class="k">print</span><span class="p">([</span><span class="n">meu_dicio</span><span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">meu_dicio</span><span class="p">])</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">print</span><span class="p">([</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">meu_dicio</span><span class="p">])</span>
+<span class="nf">print</span><span class="p">([</span><span class="n">meu_dicio</span><span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">meu_dicio</span><span class="p">])</span>
 </code></pre></div></div>
 <p>Rode-os em python e tente entender a saída.</p>
 
@@ -1418,7 +1407,7 @@
 
 <p>O comando</p>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">palavra</span><span class="o">=</span><span class="s">'mesa'</span>
-<span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'</span><span class="si">{</span><span class="n">palavra</span><span class="si">}</span><span class="s"> em inglês é </span><span class="si">{</span><span class="n">meu_dicio</span><span class="p">[</span><span class="n">palavra</span><span class="p">]</span><span class="si">}</span><span class="s">'</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'</span><span class="si">{</span><span class="n">palavra</span><span class="si">}</span><span class="s"> em inglês é </span><span class="si">{</span><span class="n">meu_dicio</span><span class="p">[</span><span class="n">palavra</span><span class="p">]</span><span class="si">}</span><span class="s">'</span><span class="p">)</span>
 </code></pre></div></div>
 <p>retorna <code class="language-plaintext highlighter-rouge">mesa em inglês é table</code></p>
 
@@ -1426,9 +1415,9 @@
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">palavra_pt</span> <span class="o">=</span> <span class="s">'caderno'</span>
 <span class="k">if</span> <span class="n">palavra_pt</span> <span class="ow">in</span> <span class="n">meu_dicio</span><span class="p">:</span>
     <span class="c1"># o operador in opera recursivamente por todas as chaves em meu_dicio
-</span>    <span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'Eu sei traduzir </span><span class="si">{</span><span class="n">palavra_pt</span><span class="si">}</span><span class="s"> pro inglês: </span><span class="si">{</span><span class="n">meu_dicio</span><span class="p">[</span><span class="n">palavra_pt</span><span class="p">]</span><span class="si">}</span><span class="s">'</span> <span class="p">)</span>
+</span>    <span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'Eu sei traduzir </span><span class="si">{</span><span class="n">palavra_pt</span><span class="si">}</span><span class="s"> pro inglês: </span><span class="si">{</span><span class="n">meu_dicio</span><span class="p">[</span><span class="n">palavra_pt</span><span class="p">]</span><span class="si">}</span><span class="s">'</span> <span class="p">)</span>
 <span class="k">else</span><span class="p">:</span>
-    <span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'Não faço ideia de como é </span><span class="se">\'</span><span class="si">{</span><span class="n">palavra_pt</span><span class="si">}</span><span class="se">\'</span><span class="s"> em inglês'</span><span class="p">)</span>
+    <span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'Não faço ideia de como é </span><span class="se">\'</span><span class="si">{</span><span class="n">palavra_pt</span><span class="si">}</span><span class="se">\'</span><span class="s"> em inglês'</span><span class="p">)</span>
 </code></pre></div></div>
 <p>Qual é a saída desse código?</p>
 
@@ -1437,9 +1426,9 @@
 <p>As chaves e os itens não precisam necessariamente ser strings. Veja o seguinte exemplo:</p>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">dicio</span> <span class="o">=</span> <span class="p">{</span><span class="mi">3</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span> <span class="mf">3.141593</span><span class="p">:</span> <span class="s">'pi'</span><span class="p">,</span> <span class="s">'e'</span><span class="p">:</span> <span class="mf">2.718282</span><span class="p">}</span>
 
-<span class="k">print</span><span class="p">(</span><span class="n">dicio</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span>
-<span class="k">print</span><span class="p">(</span><span class="n">dicio</span><span class="p">[</span><span class="mf">3.141593</span><span class="p">])</span>
-<span class="k">print</span><span class="p">(</span><span class="n">dicio</span><span class="p">[</span><span class="s">'e'</span><span class="p">])</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">dicio</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">dicio</span><span class="p">[</span><span class="mf">3.141593</span><span class="p">])</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">dicio</span><span class="p">[</span><span class="s">'e'</span><span class="p">])</span>
 </code></pre></div></div>
 <p>O que esses comandos <code class="language-plaintext highlighter-rouge">print</code> imprimem?</p>
 
@@ -1455,14 +1444,14 @@
 </span><span class="n">dicio</span><span class="p">[</span><span class="s">'animal'</span><span class="p">]</span> <span class="o">=</span> <span class="s">'gato'</span>
 
 <span class="c1"># Remover um valor
-</span><span class="n">dicio</span><span class="p">.</span><span class="n">pop</span><span class="p">(</span><span class="s">'cor'</span><span class="p">)</span>
+</span><span class="n">dicio</span><span class="p">.</span><span class="nf">pop</span><span class="p">(</span><span class="s">'cor'</span><span class="p">)</span>
 </code></pre></div></div>
 
 <h2 id="observação">Observação</h2>
 
 <p>Também é possível pesquisar no sentido contrário, apesar de ser um pouco mais complicado (não será usado nesse curso). Para isso, não podem haver chaves repetidas, mas itens repetidos são permitidos (por exemplo, ‘the’ no dicionário <code class="language-plaintext highlighter-rouge">meu_dicio</code>). Um exemplo:</p>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">palavra_en</span> <span class="o">=</span> <span class="s">'the'</span>
-<span class="p">[</span><span class="n">chave</span> <span class="k">for</span> <span class="n">chave</span><span class="p">,</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">meu_dicio</span><span class="p">.</span><span class="n">items</span><span class="p">()</span> <span class="k">if</span> <span class="n">item</span> <span class="ow">is</span> <span class="n">palavra_en</span><span class="p">]</span>
+<span class="p">[</span><span class="n">chave</span> <span class="k">for</span> <span class="n">chave</span><span class="p">,</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">meu_dicio</span><span class="p">.</span><span class="nf">items</span><span class="p">()</span> <span class="k">if</span> <span class="n">item</span> <span class="ow">is</span> <span class="n">palavra_en</span><span class="p">]</span>
 </code></pre></div></div>
 
 

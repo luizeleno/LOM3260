@@ -1,4 +1,4 @@
-I"%<p class="lead">Dicas sobre a construção <code class="language-plaintext highlighter-rouge">if elif else</code>, usada para testar condições e tomar decisões dentro do código</p>
+I"&<p class="lead">Dicas sobre a construção <code class="language-plaintext highlighter-rouge">if elif else</code>, usada para testar condições e tomar decisões dentro do código</p>
 
 <p>A sintaxe é:</p>
 
@@ -65,6 +65,6 @@
     <span class="nb">max</span> <span class="o">=</span> <span class="n">b</span>
   <span class="k">else</span><span class="p">:</span>
     <span class="nb">max</span> <span class="o">=</span> <span class="n">c</span>
-<span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'O máximo de </span><span class="si">{</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="si">}</span><span class="s"> é </span><span class="si">{</span><span class="nb">max</span><span class="si">}</span><span class="s">'</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'O máximo de </span><span class="si">{</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="si">}</span><span class="s"> é </span><span class="si">{</span><span class="nb">max</span><span class="si">}</span><span class="s">'</span><span class="p">)</span>
 </code></pre></div></div>
 :ET

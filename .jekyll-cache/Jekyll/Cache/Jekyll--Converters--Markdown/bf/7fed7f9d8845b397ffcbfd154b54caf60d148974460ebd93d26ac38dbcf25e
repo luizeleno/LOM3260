@@ -1,4 +1,4 @@
-I",<p>Escreva um programa que, dada uma duração de tempo em segundos, calcule o número equivalente de dias, horas, minutos e segundos.</p>
+I".<p>Escreva um programa que, dada uma duração de tempo em segundos, calcule o número equivalente de dias, horas, minutos e segundos.</p>
 
 <p>Por exemplo, 123554 segundos equivalem a 1 dia, 10 horas, 19 minutos e 14 segundos.</p>
 
@@ -27,11 +27,11 @@
 </span><span class="n">h</span> <span class="o">=</span> <span class="n">t</span> <span class="o">%</span> <span class="mi">24</span>  <span class="c1"># horas: 24 h = 1 dia
 </span><span class="n">d</span> <span class="o">=</span> <span class="n">t</span> <span class="o">//</span> <span class="mi">24</span>  <span class="c1"># tempo restante em dias
 </span>
-<span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'</span><span class="si">{</span><span class="n">d</span><span class="si">}</span><span class="s">d </span><span class="si">{</span><span class="n">h</span><span class="si">}</span><span class="s">h </span><span class="si">{</span><span class="n">m</span><span class="si">}</span><span class="s">m </span><span class="si">{</span><span class="n">s</span><span class="si">}</span><span class="s">s'</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'</span><span class="si">{</span><span class="n">d</span><span class="si">}</span><span class="s">d </span><span class="si">{</span><span class="n">h</span><span class="si">}</span><span class="s">h </span><span class="si">{</span><span class="n">m</span><span class="si">}</span><span class="s">m </span><span class="si">{</span><span class="n">s</span><span class="si">}</span><span class="s">s'</span><span class="p">)</span>
 
 <span class="c1"># Teste da solução:
 </span><span class="n">t</span> <span class="o">=</span> <span class="mi">60</span> <span class="o">*</span> <span class="p">(</span> <span class="mi">60</span> <span class="o">*</span> <span class="p">(</span><span class="n">d</span> <span class="o">*</span> <span class="mi">24</span> <span class="o">+</span> <span class="n">h</span><span class="p">)</span> <span class="o">+</span> <span class="n">m</span><span class="p">)</span> <span class="o">+</span> <span class="n">s</span>
-<span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'</span><span class="si">{</span><span class="n">t</span><span class="si">}</span><span class="s">s'</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'</span><span class="si">{</span><span class="n">t</span><span class="si">}</span><span class="s">s'</span><span class="p">)</span>
 
 </code></pre></div></div>
 :ET

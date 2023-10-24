@@ -1,4 +1,4 @@
-I"�<div class="float-right col-md-4">
+I"�<div class="float-right col-md-4">
 <div class="text-center">
 <figure class="figure">
   
@@ -100,21 +100,21 @@
 
 <p>que resolvemos numericamente:</p>
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
-<span class="kn">import</span> <span class="nn">scipy.optimize</span> <span class="k">as</span> <span class="n">spo</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">numpy</span> <span class="k">as</span> <span class="n">np</span>
+<span class="kn">import</span> <span class="n">scipy.optimize</span> <span class="k">as</span> <span class="n">spo</span>
 
 <span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">th</span><span class="p">):</span>  <span class="c1"># função da qual se quer a raiz
-</span>  <span class="k">return</span> <span class="mi">5</span> <span class="o">*</span> <span class="n">th</span> <span class="o">-</span> <span class="mi">6</span> <span class="o">*</span> <span class="n">np</span><span class="p">.</span><span class="n">sin</span><span class="p">(</span><span class="n">th</span><span class="p">)</span>
+</span>  <span class="k">return</span> <span class="mi">5</span> <span class="o">*</span> <span class="n">th</span> <span class="o">-</span> <span class="mi">6</span> <span class="o">*</span> <span class="n">np</span><span class="p">.</span><span class="nf">sin</span><span class="p">(</span><span class="n">th</span><span class="p">)</span>
 
 <span class="n">c</span> <span class="o">=</span> <span class="mi">1</span>  <span class="c1"># chute inicial
-</span><span class="n">th</span> <span class="o">=</span> <span class="n">spo</span><span class="p">.</span><span class="n">newton</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">c</span><span class="p">)</span>
+</span><span class="n">th</span> <span class="o">=</span> <span class="n">spo</span><span class="p">.</span><span class="nf">newton</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">c</span><span class="p">)</span>
 
 <span class="n">R</span> <span class="o">=</span> <span class="mi">6</span> <span class="o">/</span> <span class="n">th</span>
-<span class="n">CD</span> <span class="o">=</span> <span class="n">R</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">np</span><span class="p">.</span><span class="n">cos</span><span class="p">(</span><span class="n">th</span><span class="p">))</span>
+<span class="n">CD</span> <span class="o">=</span> <span class="n">R</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">np</span><span class="p">.</span><span class="nf">cos</span><span class="p">(</span><span class="n">th</span><span class="p">))</span>
 
-<span class="k">print</span><span class="p">(</span><span class="n">th</span><span class="p">,</span> <span class="n">R</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">th</span><span class="p">,</span> <span class="n">R</span><span class="p">)</span>
 
-<span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'CD=</span><span class="si">{</span><span class="n">CD</span><span class="si">}</span><span class="s">'</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'CD=</span><span class="si">{</span><span class="n">CD</span><span class="si">}</span><span class="s">'</span><span class="p">)</span>
 </code></pre></div></div>
 
 <p>Obtendo $\theta=1.0267\,$rad (58.827°). Voltando às equações, calculamos $R = 5.8437\,\text{cm}$ e finalmente a flecha $CD$:</p>

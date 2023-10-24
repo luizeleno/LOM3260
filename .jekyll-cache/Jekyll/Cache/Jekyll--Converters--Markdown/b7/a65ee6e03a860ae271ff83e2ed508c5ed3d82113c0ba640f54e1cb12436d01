@@ -1,11 +1,11 @@
-I"~<p class="lead">Criando documentação para suas funções!</p>
+I"<p class="lead">Criando documentação para suas funções!</p>
 
 <p>Voltemos ao último exemplo da aula anterior (<em>Funções</em>), que era uma função para calcular o quadrado de um número:</p>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">quadrado</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
   <span class="k">return</span> <span class="n">x</span> <span class="o">*</span> <span class="n">x</span>
 </code></pre></div></div>
 <p>Você pode tentar usar o comando <code class="language-plaintext highlighter-rouge">help()</code> para ver o que acontece:</p>
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">help</span><span class="p">(</span><span class="n">quadrado</span><span class="p">)</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">help</span><span class="p">(</span><span class="n">quadrado</span><span class="p">)</span>
 </code></pre></div></div>
 <p>O resultado será algo assim:</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Help on function quadrado in module __main__:

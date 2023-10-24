@@ -9,18 +9,7 @@
   <link rel="shortcut icon" type="image/x-icon" href="/LOM3260/favicon.ico">
   <link rel="stylesheet" href="/LOM3260/css/bootstrap.min.css">
   <link href="/LOM3260/css/theme.css" rel="stylesheet" type="text/css">
-  <link href="/LOM3260/css/syntax.css" rel="stylesheet" type="text/css">
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-146810112-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-146810112-1');
-</script>
-
-<!-- Begin Jekyll SEO tag v2.8.0 -->
+  <link href="/LOM3260/css/syntax.css" rel="stylesheet" type="text/css"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>Comandos in e len() | LOM3260</title>
 <meta name="generator" content="Jekyll v4.3.2" />
 <meta property="og:title" content="Comandos in e len()" />
@@ -28,14 +17,14 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Computação Científica em Python - uma disciplina do curso de Engenharia Física da Escola de Engenharia de Lorena da Universidade de São Paulo - EEL USP" />
 <meta property="og:description" content="Computação Científica em Python - uma disciplina do curso de Engenharia Física da Escola de Engenharia de Lorena da Universidade de São Paulo - EEL USP" />
-<link rel="canonical" href="https://computeel.org/LOM3260/material/tema1/10-in-len.html" />
-<meta property="og:url" content="https://computeel.org/LOM3260/material/tema1/10-in-len.html" />
+<link rel="canonical" href="http://localhost:4000/LOM3260/material/tema1/10-in-len.html" />
+<meta property="og:url" content="http://localhost:4000/LOM3260/material/tema1/10-in-len.html" />
 <meta property="og:site_name" content="LOM3260" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Comandos in e len()" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Luiz T. F. Eleno"},"dateModified":"2020-08-22T12:36:20-03:00","description":"Computação Científica em Python - uma disciplina do curso de Engenharia Física da Escola de Engenharia de Lorena da Universidade de São Paulo - EEL USP","headline":"Comandos in e len()","url":"https://computeel.org/LOM3260/material/tema1/10-in-len.html"}</script>
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Luiz T. F. Eleno"},"dateModified":"2020-08-22T12:36:20-03:00","description":"Computação Científica em Python - uma disciplina do curso de Engenharia Física da Escola de Engenharia de Lorena da Universidade de São Paulo - EEL USP","headline":"Comandos in e len()","url":"http://localhost:4000/LOM3260/material/tema1/10-in-len.html"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -1405,8 +1394,8 @@
 <ol>
   <li>iterar por todos os valores de uma lista ou string. É usado geralmente em conjunto com o comando <code class="language-plaintext highlighter-rouge">for</code>. Por exemplo, o seguinte código:
     <div class="language-python highlighter-rouge">
-<div class="highlight"><pre class="highlight"><code><span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">8</span><span class="p">):</span>
-  <span class="k">print</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+<div class="highlight"><pre class="highlight"><code><span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="mi">8</span><span class="p">):</span>
+  <span class="nf">print</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
 </code></pre></div>    </div>
     <p>vai resultar na seguinte saída:</p>
     <div class="language-plaintext highlighter-rouge">
@@ -1425,7 +1414,7 @@
 <div class="highlight"><pre class="highlight"><code><span class="n">s</span> <span class="o">=</span> <span class="s">'bobo'</span>
 <span class="n">c</span> <span class="o">=</span> <span class="s">'bo'</span>
 <span class="k">if</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">s</span><span class="p">:</span>
-  <span class="k">print</span><span class="p">(</span><span class="s">'encontrado!'</span><span class="p">)</span>
+  <span class="nf">print</span><span class="p">(</span><span class="s">'encontrado!'</span><span class="p">)</span>
 </code></pre></div>    </div>
     <p>é retornado <code class="language-plaintext highlighter-rouge">encontrado!</code>. Nessa situação, o operador <code class="language-plaintext highlighter-rouge">in</code> itera por todos os elementos de <code class="language-plaintext highlighter-rouge">s</code>, mesmo sem termos explicitamente estabelecido um laço usando <code class="language-plaintext highlighter-rouge">while</code> ou <code class="language-plaintext highlighter-rouge">for</code>. Se a string <code class="language-plaintext highlighter-rouge">c</code> fizer parte de <code class="language-plaintext highlighter-rouge">s</code>, a condição <code class="language-plaintext highlighter-rouge">c in s</code> resultará em <code class="language-plaintext highlighter-rouge">True</code>.</p>
   </li>
@@ -1435,8 +1424,8 @@
 
 <p>O comando <code class="language-plaintext highlighter-rouge">len()</code> retorna o tamanho de uma lista ou de um string. Um exemplo:</p>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">s</span> <span class="o">=</span> <span class="s">'EEL/USP'</span>
-<span class="n">Ns</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="n">Ns</span><span class="p">)</span>
+<span class="n">Ns</span> <span class="o">=</span> <span class="nf">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">Ns</span><span class="p">)</span>
 </code></pre></div></div>
 <p>Esse código retorna <code class="language-plaintext highlighter-rouge">7</code>, já que <code class="language-plaintext highlighter-rouge">'EEL/USP'</code> tem sete caracteres.</p>
 

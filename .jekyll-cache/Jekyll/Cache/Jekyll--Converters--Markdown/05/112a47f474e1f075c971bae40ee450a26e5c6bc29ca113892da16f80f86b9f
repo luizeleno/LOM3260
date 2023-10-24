@@ -1,4 +1,4 @@
-I"�C<p class="lead">Funções podem ter argumentos opcionais com valores pré-definidos</p>
+I"�C<p class="lead">Funções podem ter argumentos opcionais com valores pré-definidos</p>
 
 <h2 id="argumentos-opcionais">Argumentos opcionais</h2>
 
@@ -16,23 +16,23 @@ round(...)
 </code></pre></div></div>
 <p>Da docstring da função, lemos que <code class="language-plaintext highlighter-rouge">round()</code> pode ser chamada com um ou dois argumentos e serve para arredondar um float para um dado número de casas decimais. O primeiro argumento (<code class="language-plaintext highlighter-rouge">number</code>) é o número que se deseja arredondar, e esse argumento é obrigatório. Já o segundo argumento (<code class="language-plaintext highlighter-rouge">ndigits</code>), o número de algarismos decimais, é opcional. Se não for fornecido, ele tem o valor padrão (zero), e a função retornará o <code class="language-plaintext highlighter-rouge">int</code> mais próximo de <code class="language-plaintext highlighter-rouge">number</code>. Mas, se o usuário fornecer o segundo argumento, a função <code class="language-plaintext highlighter-rouge">round()</code> retornará um <code class="language-plaintext highlighter-rouge">float</code> correspondendo a <code class="language-plaintext highlighter-rouge">number</code> arredondado com o número de casas desejado. Compare as saídas dos seguintes chamados à função <code class="language-plaintext highlighter-rouge">round()</code>:</p>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="mf">3.141592653589793</span>
-<span class="k">print</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
-<span class="k">print</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span>
-<span class="k">print</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
-<span class="k">print</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
+<span class="nf">print</span><span class="p">(</span><span class="nf">round</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
+<span class="nf">print</span><span class="p">(</span><span class="nf">round</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span>
+<span class="nf">print</span><span class="p">(</span><span class="nf">round</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+<span class="nf">print</span><span class="p">(</span><span class="nf">round</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
 </code></pre></div></div>
 
 <h2 id="argumentos-por-nome">Argumentos por nome</h2>
 
 <p>Vamos agora fazer um malabarismo. Conhecer os nomes das variáveis usadas como referência aos argumentos é uma informação interessante: Se os conhecemos, podemos chamar a função usando <strong>named arguments</strong>, ou <em>argumentos por nome</em>. Veja esse exemplo:</p>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="mf">3.141592653589793</span>
-<span class="n">y</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">number</span><span class="o">=</span><span class="n">x</span><span class="p">,</span> <span class="n">ndigits</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+<span class="n">y</span> <span class="o">=</span> <span class="nf">round</span><span class="p">(</span><span class="n">number</span><span class="o">=</span><span class="n">x</span><span class="p">,</span> <span class="n">ndigits</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
 </code></pre></div></div>
 <p>Essa chamada a <code class="language-plaintext highlighter-rouge">round</code> é 100% equivalente a <code class="language-plaintext highlighter-rouge">round(x, 2)</code>. Mas, com argumentos por nome, podemos até mesmo trocar a ordem dos argumentos:</p>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="mf">3.141592653589793</span>
-<span class="n">y</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">ndigits</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">number</span><span class="o">=</span><span class="n">x</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+<span class="n">y</span> <span class="o">=</span> <span class="nf">round</span><span class="p">(</span><span class="n">ndigits</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">number</span><span class="o">=</span><span class="n">x</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
 </code></pre></div></div>
 <p>Tudo continua exatamente equivalente.</p>
 
@@ -42,8 +42,8 @@ round(...)
 
 <p>Você também pode mesclar a maneira como fornece os argumentos: uma parte sem nomes, outra parte com:</p>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="mf">3.141592653589793</span>
-<span class="n">y</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">ndigits</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+<span class="n">y</span> <span class="o">=</span> <span class="nf">round</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">ndigits</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
 </code></pre></div></div>
 <p>Esse código também é equivalente aos anteriores.</p>
 
@@ -105,7 +105,7 @@ round(...)
 <p>sendo que $\theta$ precisa estar em radianos. Além disso, a sua função deve calcular a área do círculo completo ($\theta=2\pi$) se o usuário fornecer só o raio, que é então o único argumento obrigatório.</p>
 
 <p>Eu faria assim:</p>
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">numpy</span> <span class="k">as</span> <span class="n">np</span>
 
 <span class="k">def</span> <span class="nf">area_pizza</span><span class="p">(</span><span class="n">raio</span><span class="p">,</span> <span class="n">theta</span><span class="o">=</span><span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="p">.</span><span class="n">pi</span><span class="p">):</span>
   <span class="k">return</span> <span class="p">.</span><span class="mi">5</span> <span class="o">*</span> <span class="n">theta</span> <span class="o">*</span> <span class="n">raio</span> <span class="o">*</span> <span class="n">raio</span>
@@ -121,7 +121,7 @@ round(...)
 <p>Assim, todo argumento opcional tem um valor pré-definido e vice-versa: todo argumento com um valor pré-definido é opcional.</p>
 
 <p>Você pode deixar as coisas mais claras para o usuário se acrescentar uma docstring:</p>
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">numpy</span> <span class="k">as</span> <span class="n">np</span>
 
 <span class="k">def</span> <span class="nf">area_pizza</span><span class="p">(</span><span class="n">raio</span><span class="p">,</span> <span class="n">theta</span><span class="o">=</span><span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="p">.</span><span class="n">pi</span><span class="p">):</span>
   <span class="s">'''
@@ -141,27 +141,27 @@ round(...)
 </code></pre></div></div>
 
 <p>Vamos então brincar com a função com algumas chamadas. Teste todas no intérprete python!</p>
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">numpy</span> <span class="k">as</span> <span class="n">np</span>
 
 <span class="n">r</span> <span class="o">=</span> <span class="mi">25</span>  <span class="c1"># pizza com diâmetro de 50cm!
 </span><span class="n">corte</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">np</span><span class="p">.</span><span class="n">pi</span> <span class="o">/</span> <span class="mi">8</span>  <span class="c1"># um de oito pedaços da pizza
 </span>
-<span class="n">Apizza</span> <span class="o">=</span> <span class="n">area_pizza</span><span class="p">(</span><span class="n">r</span><span class="p">)</span>
-<span class="n">Apedaco</span> <span class="o">=</span> <span class="n">area_pizza</span><span class="p">(</span><span class="n">r</span><span class="p">,</span> <span class="n">corte</span><span class="p">)</span>
-<span class="n">Apedacoduplo</span> <span class="o">=</span> <span class="n">area_pizza</span><span class="p">(</span><span class="n">r</span><span class="p">,</span> <span class="mi">2</span><span class="o">*</span><span class="n">corte</span><span class="p">)</span>
+<span class="n">Apizza</span> <span class="o">=</span> <span class="nf">area_pizza</span><span class="p">(</span><span class="n">r</span><span class="p">)</span>
+<span class="n">Apedaco</span> <span class="o">=</span> <span class="nf">area_pizza</span><span class="p">(</span><span class="n">r</span><span class="p">,</span> <span class="n">corte</span><span class="p">)</span>
+<span class="n">Apedacoduplo</span> <span class="o">=</span> <span class="nf">area_pizza</span><span class="p">(</span><span class="n">r</span><span class="p">,</span> <span class="mi">2</span><span class="o">*</span><span class="n">corte</span><span class="p">)</span>
 </code></pre></div></div>
 
 <p>Vamos agora calcular a área de um pedaço de pizza chamando a função de várias maneiras equivalentes:</p>
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">numpy</span> <span class="k">as</span> <span class="n">np</span>
 
 <span class="n">r</span> <span class="o">=</span> <span class="mi">25</span>  <span class="c1"># pizza com diâmetro de 50cm!
 </span><span class="n">corte</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">np</span><span class="p">.</span><span class="n">pi</span> <span class="o">/</span> <span class="mi">8</span>  <span class="c1"># um de oito pedaços da pizza
 </span>
 <span class="c1"># todos os chamados à função abaixo são equivalentes:
-</span><span class="n">Apedaco</span> <span class="o">=</span> <span class="n">area_pizza</span><span class="p">(</span><span class="n">r</span><span class="p">,</span> <span class="n">corte</span><span class="p">)</span>
-<span class="n">Apedaco</span> <span class="o">=</span> <span class="n">area_pizza</span><span class="p">(</span><span class="n">raio</span><span class="o">=</span><span class="n">r</span><span class="p">,</span> <span class="n">theta</span><span class="o">=</span><span class="n">corte</span><span class="p">)</span>
-<span class="n">Apedaco</span> <span class="o">=</span> <span class="n">area_pizza</span><span class="p">(</span><span class="n">theta</span><span class="o">=</span><span class="n">corte</span><span class="p">,</span> <span class="n">raio</span><span class="o">=</span><span class="n">r</span><span class="p">)</span>
-<span class="n">Apedaco</span> <span class="o">=</span> <span class="n">area_pizza</span><span class="p">(</span><span class="n">r</span><span class="p">,</span> <span class="n">theta</span><span class="o">=</span><span class="n">corte</span><span class="p">)</span>
+</span><span class="n">Apedaco</span> <span class="o">=</span> <span class="nf">area_pizza</span><span class="p">(</span><span class="n">r</span><span class="p">,</span> <span class="n">corte</span><span class="p">)</span>
+<span class="n">Apedaco</span> <span class="o">=</span> <span class="nf">area_pizza</span><span class="p">(</span><span class="n">raio</span><span class="o">=</span><span class="n">r</span><span class="p">,</span> <span class="n">theta</span><span class="o">=</span><span class="n">corte</span><span class="p">)</span>
+<span class="n">Apedaco</span> <span class="o">=</span> <span class="nf">area_pizza</span><span class="p">(</span><span class="n">theta</span><span class="o">=</span><span class="n">corte</span><span class="p">,</span> <span class="n">raio</span><span class="o">=</span><span class="n">r</span><span class="p">)</span>
+<span class="n">Apedaco</span> <span class="o">=</span> <span class="nf">area_pizza</span><span class="p">(</span><span class="n">r</span><span class="p">,</span> <span class="n">theta</span><span class="o">=</span><span class="n">corte</span><span class="p">)</span>
 </code></pre></div></div>
 
 <p>Valores pré-definidos são uma excelente opção para funções mais complexas, permitindo ao usuário utilizar rapidamente suas funções confiando que você escolheu valores sensatos para os argumentos opcionais!</p>

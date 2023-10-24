@@ -1,7 +1,7 @@
-I"i<p class="lead">Gerando sequências de inteiros</p>
+I"j<p class="lead">Gerando sequências de inteiros</p>
 
 <p>O comando <code class="language-plaintext highlighter-rouge">range()</code> gera uma sequência de valores de acordo com a seguinte sintaxe:</p>
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">range</span><span class="p">([</span><span class="n">start</span><span class="p">,]</span> <span class="n">stop</span> <span class="p">[,</span> <span class="n">step</span><span class="p">])</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">range</span><span class="p">([</span><span class="n">start</span><span class="p">,]</span> <span class="n">stop</span> <span class="p">[,</span> <span class="n">step</span><span class="p">])</span>
 </code></pre></div></div>
 <p>onde</p>
 <ul>
@@ -40,13 +40,13 @@
 <h2 id="observações">Observações</h2>
 
 <p>O comando <code class="language-plaintext highlighter-rouge">range()</code> gera um <strong>objeto do tipo range</strong>. Para conferir se o comando <code class="language-plaintext highlighter-rouge">range</code> realmente gera a sequência esperada, use o comando <code class="language-plaintext highlighter-rouge">list()</code> para convertê-lo para um <strong>objeto do tipo lista</strong>. Por exemplo, o comando</p>
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">)</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="nf">range</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">)</span>
 </code></pre></div></div>
 <p>gera a sequência 15, 13, 11, 9, 7, 5. Para conferir que isso realmente é verdade, converta-o para um objeto do tipo <code class="language-plaintext highlighter-rouge">list</code></p>
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">y</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">))</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">y</span> <span class="o">=</span> <span class="nf">list</span><span class="p">(</span><span class="nf">range</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">))</span>
 </code></pre></div></div>
 <p>e o imprima:</p>
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">print</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">print</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
 </code></pre></div></div>
 
 <p>Veremos em breve como trabalhar com objetos do tipo <code class="language-plaintext highlighter-rouge">list</code>.</p>

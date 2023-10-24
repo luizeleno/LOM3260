@@ -58,17 +58,17 @@ Criado por L.T.F.E. em 11/09/2019 (que medo!).
   <li>No seu arquivo principal (chame-o do que quiser, por exemplo, <code class="language-plaintext highlighter-rouge">meu_main.py</code>), importe o módulo com o comando <code class="language-plaintext highlighter-rouge">import</code> da maneira que achar melhor, por exemplo, usando um apelido com <code class="language-plaintext highlighter-rouge">as</code>:</li>
 </ul>
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">meu_modulo</span> <span class="k">as</span> <span class="n">mm</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">meu_modulo</span> <span class="k">as</span> <span class="n">mm</span>
 </code></pre></div></div>
 <ul>
   <li>No arquivo principal, você usa as funções do seu módulo de maneira usual, como aprendemos na lição sobre módulos. Por exemplo:</li>
 </ul>
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">meu_modulo</span> <span class="k">as</span> <span class="n">mm</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">meu_modulo</span> <span class="k">as</span> <span class="n">mm</span>
 
 <span class="n">z</span> <span class="o">=</span> <span class="mi">5</span>
-<span class="n">y</span> <span class="o">=</span> <span class="n">mm</span><span class="p">.</span><span class="n">quadrado</span><span class="p">(</span><span class="n">z</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'</span><span class="si">{</span><span class="n">z</span><span class="si">}</span><span class="s">² = </span><span class="si">{</span><span class="n">y</span><span class="si">}</span><span class="s">'</span><span class="p">)</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">mm</span><span class="p">.</span><span class="nf">quadrado</span><span class="p">(</span><span class="n">z</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'</span><span class="si">{</span><span class="n">z</span><span class="si">}</span><span class="s">² = </span><span class="si">{</span><span class="n">y</span><span class="si">}</span><span class="s">'</span><span class="p">)</span>
 </code></pre></div></div>
 
 <p>Com isso, deixamos nosso código <em>modularizado</em>, ou seja, compartimentado em unidades menores (os módulos) que são “gerenciados” por um arquivo principal (o de nome <code class="language-plaintext highlighter-rouge">__main__</code>) que comanda a execução do programa.</p>
