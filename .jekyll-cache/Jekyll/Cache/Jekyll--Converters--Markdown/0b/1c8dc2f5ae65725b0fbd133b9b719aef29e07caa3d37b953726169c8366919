@@ -1,4 +1,4 @@
-I".<p>Monte um código que imprima os números de 1 a 100 mas, para múltiplos de 3, imprime <code class="language-plaintext highlighter-rouge">trei</code> ao invés do número; se é múltiplo de 5, imprime <code class="language-plaintext highlighter-rouge">cinci</code>; mas, se é múltiplo de 3 e 5 ao mesmo tempo, imprime <code class="language-plaintext highlighter-rouge">cincisprezece</code> (3, 5 e 15 em romeno).</p>
+I"�<p>Monte um código que imprima os números de 1 a 100 mas, para múltiplos de 3, imprime <code class="language-plaintext highlighter-rouge">trei</code> ao invés do número; se é múltiplo de 5, imprime <code class="language-plaintext highlighter-rouge">cinci</code>; mas, se é múltiplo de 3 e 5 ao mesmo tempo, imprime <code class="language-plaintext highlighter-rouge">cincisprezece</code> (3, 5 e 15 em romeno).</p>
 
 <!-- more -->
 
@@ -8,7 +8,7 @@
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">N</span> <span class="o">=</span> <span class="mi">100</span>
 <span class="n">d1</span><span class="p">,</span> <span class="n">d2</span> <span class="o">=</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span>
-<span class="n">f1</span><span class="p">,</span> <span class="n">f2</span><span class="p">,</span> <span class="n">f3</span> <span class="o">=</span> <span class="s">'trei'</span><span class="p">,</span> <span class="s">'cinci'</span><span class="p">,</span> <span class="s">'cincisprezece'</span>
+<span class="n">f1</span><span class="p">,</span> <span class="n">f2</span><span class="p">,</span> <span class="n">f3</span> <span class="o">=</span> <span class="sh">'</span><span class="s">trei</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">cinci</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">cincisprezece</span><span class="sh">'</span>
 
 <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">N</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
   <span class="k">if</span> <span class="n">n</span> <span class="o">%</span> <span class="n">d1</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>

@@ -1,4 +1,4 @@
-I"�<p class="lead">Como iniciantes fornecem informações ao usuário</p>
+I"%<p class="lead">Como iniciantes fornecem informações ao usuário</p>
 
 <p>Assim como na entrada de informações, você deve estar acostumado a programas e aplicativos fornecerem informações de forma gráfica, como no exemplo do botão abaixo:</p>
 
@@ -37,7 +37,7 @@
 <p>Pode-se usar o comando <code class="language-plaintext highlighter-rouge">print()</code> para imprimir vários valores:</p>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="mi">5</span>
 <span class="n">y</span> <span class="o">=</span> <span class="n">x</span> <span class="o">*</span> <span class="n">x</span>
-<span class="nf">print</span><span class="p">(</span><span class="s">'O valor de'</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="s">'ao quadrado é'</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="sh">'</span><span class="s">O valor de</span><span class="sh">'</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="sh">'</span><span class="s">ao quadrado é</span><span class="sh">'</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
 </code></pre></div></div>
 <p>que resulta na frase <code class="language-plaintext highlighter-rouge">O valor de 5 ao quadrado é 25</code> impressa na sua tela. Repare que o python adiciona um espaço em branco entre os dados impressos.</p>
 
@@ -48,12 +48,12 @@
 <p>Lembre que uma string é uma sequência de caracteres: <code class="language-plaintext highlighter-rouge">s='x ao quadrado é igual a y'</code>. Mas você pode precedê-la com o caracter <code class="language-plaintext highlighter-rouge">f</code> torná-la interpolável: qualquer variável dentro de chaves (<code class="language-plaintext highlighter-rouge">{}</code>) na string será substituída pelo valor dessa variável. Por exemplo, veja o código abaixo:</p>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="mi">5</span>
 <span class="n">y</span> <span class="o">=</span> <span class="n">x</span> <span class="o">*</span> <span class="n">x</span>
-<span class="n">s</span> <span class="o">=</span> <span class="sa">f</span><span class="s">'O valor de </span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s"> ao quadrado é </span><span class="si">{</span><span class="n">y</span><span class="si">}</span><span class="s">'</span>
+<span class="n">s</span> <span class="o">=</span> <span class="sa">f</span><span class="sh">'</span><span class="s">O valor de </span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s"> ao quadrado é </span><span class="si">{</span><span class="n">y</span><span class="si">}</span><span class="sh">'</span>
 <span class="nf">print</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
 </code></pre></div></div>
 <p>O python simplesmente substitui (interpola) os valores das variáveis <code class="language-plaintext highlighter-rouge">x</code> e <code class="language-plaintext highlighter-rouge">y</code> na sua string! Depois disso, basta imprimi-la normalmente. Veja que você pode fazer tudo numa única linha:</p>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="mi">5</span>
-<span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'O valor de </span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s"> ao quadrado é </span><span class="si">{</span><span class="n">x</span><span class="o">*</span><span class="n">x</span><span class="si">}</span><span class="s">'</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">'</span><span class="s">O valor de </span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s"> ao quadrado é </span><span class="si">{</span><span class="n">x</span><span class="o">*</span><span class="n">x</span><span class="si">}</span><span class="sh">'</span><span class="p">)</span>
 </code></pre></div></div>
 <p>Conveniente, concorda?</p>
 

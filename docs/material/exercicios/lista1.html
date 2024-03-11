@@ -22,7 +22,7 @@
 
 <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>Primeira Lista | LOM3260</title>
-<meta name="generator" content="Jekyll v4.3.2" />
+<meta name="generator" content="Jekyll v4.3.3" />
 <meta property="og:title" content="Primeira Lista" />
 <meta name="author" content="Luiz T. F. Eleno" />
 <meta property="og:locale" content="en_US" />
@@ -1525,7 +1525,7 @@
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Entrada de dados
 </span>
-<span class="n">ano</span> <span class="o">=</span> <span class="nf">input</span><span class="p">(</span><span class="s">'Digite o ano: '</span><span class="p">)</span>
+<span class="n">ano</span> <span class="o">=</span> <span class="nf">input</span><span class="p">(</span><span class="sh">'</span><span class="s">Digite o ano: </span><span class="sh">'</span><span class="p">)</span>
 
 <span class="c1"># Código - algoritmos
 </span>
@@ -1543,11 +1543,11 @@
 <span class="c1"># Saída de dados
 </span>
 <span class="k">if</span> <span class="n">resultado</span> <span class="o">==</span> <span class="bp">True</span><span class="p">:</span>
-    <span class="n">res</span> <span class="o">=</span> <span class="s">'é'</span>
+    <span class="n">res</span> <span class="o">=</span> <span class="sh">'</span><span class="s">é</span><span class="sh">'</span>
 <span class="k">else</span><span class="p">:</span>
-    <span class="n">res</span> <span class="o">=</span> <span class="s">'não é'</span>
+    <span class="n">res</span> <span class="o">=</span> <span class="sh">'</span><span class="s">não é</span><span class="sh">'</span>
 
-<span class="n">s</span> <span class="o">=</span> <span class="sa">f</span><span class="s">'</span><span class="si">{</span><span class="n">ano</span><span class="si">}</span><span class="s"> </span><span class="si">{</span><span class="n">res</span><span class="si">}</span><span class="s"> bissexto'</span> <span class="c1"># mensagem formatada
+<span class="n">s</span> <span class="o">=</span> <span class="sa">f</span><span class="sh">'</span><span class="si">{</span><span class="n">ano</span><span class="si">}</span><span class="s"> </span><span class="si">{</span><span class="n">res</span><span class="si">}</span><span class="s"> bissexto</span><span class="sh">'</span> <span class="c1"># mensagem formatada
 </span><span class="nf">print</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
 </code></pre></div></div>
 
@@ -1664,11 +1664,11 @@
 </span><span class="n">h</span> <span class="o">=</span> <span class="n">t</span> <span class="o">%</span> <span class="mi">24</span>  <span class="c1"># horas: 24 h = 1 dia
 </span><span class="n">d</span> <span class="o">=</span> <span class="n">t</span> <span class="o">//</span> <span class="mi">24</span>  <span class="c1"># tempo restante em dias
 </span>
-<span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'</span><span class="si">{</span><span class="n">d</span><span class="si">}</span><span class="s">d </span><span class="si">{</span><span class="n">h</span><span class="si">}</span><span class="s">h </span><span class="si">{</span><span class="n">m</span><span class="si">}</span><span class="s">m </span><span class="si">{</span><span class="n">s</span><span class="si">}</span><span class="s">s'</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">'</span><span class="si">{</span><span class="n">d</span><span class="si">}</span><span class="s">d </span><span class="si">{</span><span class="n">h</span><span class="si">}</span><span class="s">h </span><span class="si">{</span><span class="n">m</span><span class="si">}</span><span class="s">m </span><span class="si">{</span><span class="n">s</span><span class="si">}</span><span class="s">s</span><span class="sh">'</span><span class="p">)</span>
 
 <span class="c1"># Teste da solução:
 </span><span class="n">t</span> <span class="o">=</span> <span class="mi">60</span> <span class="o">*</span> <span class="p">(</span> <span class="mi">60</span> <span class="o">*</span> <span class="p">(</span><span class="n">d</span> <span class="o">*</span> <span class="mi">24</span> <span class="o">+</span> <span class="n">h</span><span class="p">)</span> <span class="o">+</span> <span class="n">m</span><span class="p">)</span> <span class="o">+</span> <span class="n">s</span>
-<span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'</span><span class="si">{</span><span class="n">t</span><span class="si">}</span><span class="s">s'</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">'</span><span class="si">{</span><span class="n">t</span><span class="si">}</span><span class="s">s</span><span class="sh">'</span><span class="p">)</span>
 
 </code></pre></div></div>
 
@@ -1709,7 +1709,7 @@
 
 <h2 id="solução">Solução</h2>
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">arestas</span> <span class="o">=</span> <span class="nf">input</span><span class="p">(</span><span class="s">'a b c = '</span><span class="p">).</span><span class="nf">split</span><span class="p">()</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">arestas</span> <span class="o">=</span> <span class="nf">input</span><span class="p">(</span><span class="sh">'</span><span class="s">a b c = </span><span class="sh">'</span><span class="p">).</span><span class="nf">split</span><span class="p">()</span>
 <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span> <span class="o">=</span> <span class="nf">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="n">arestas</span><span class="p">)</span>  <span class="c1"># o comando map(f, L) aplica a função f à lista L
 </span>
 <span class="k">if</span> <span class="n">a</span> <span class="o">&gt;=</span> <span class="n">b</span> <span class="o">+</span> <span class="n">c</span> <span class="ow">or</span> <span class="n">b</span> <span class="o">&gt;=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">c</span> <span class="ow">or</span> <span class="n">c</span> <span class="o">&gt;=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="p">:</span>
@@ -1718,9 +1718,9 @@
   <span class="n">triangulo</span> <span class="o">=</span> <span class="bp">True</span>
 
 <span class="k">if</span> <span class="n">triangulo</span><span class="p">:</span>
-  <span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'Triângulo </span><span class="si">{</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="si">}</span><span class="s"> existe'</span><span class="p">)</span>
+  <span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">'</span><span class="s">Triângulo </span><span class="si">{</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="si">}</span><span class="s"> existe</span><span class="sh">'</span><span class="p">)</span>
 <span class="k">else</span><span class="p">:</span>
-  <span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'Triângulo </span><span class="si">{</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="si">}</span><span class="s"> não existe'</span><span class="p">)</span>
+  <span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">'</span><span class="s">Triângulo </span><span class="si">{</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="si">}</span><span class="s"> não existe</span><span class="sh">'</span><span class="p">)</span>
 </code></pre></div></div>
 
           </div>
@@ -1764,7 +1764,7 @@
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">N</span> <span class="o">=</span> <span class="mi">100</span>
 <span class="n">d1</span><span class="p">,</span> <span class="n">d2</span> <span class="o">=</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span>
-<span class="n">f1</span><span class="p">,</span> <span class="n">f2</span><span class="p">,</span> <span class="n">f3</span> <span class="o">=</span> <span class="s">'trei'</span><span class="p">,</span> <span class="s">'cinci'</span><span class="p">,</span> <span class="s">'cincisprezece'</span>
+<span class="n">f1</span><span class="p">,</span> <span class="n">f2</span><span class="p">,</span> <span class="n">f3</span> <span class="o">=</span> <span class="sh">'</span><span class="s">trei</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">cinci</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">cincisprezece</span><span class="sh">'</span>
 
 <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">N</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
   <span class="k">if</span> <span class="n">n</span> <span class="o">%</span> <span class="n">d1</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
@@ -1815,9 +1815,9 @@
 
 <h2 id="solução">Solução</h2>
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">n</span> <span class="o">=</span> <span class="nf">int</span><span class="p">(</span><span class="nf">input</span><span class="p">(</span><span class="s">'Digite um número:'</span><span class="p">))</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">n</span> <span class="o">=</span> <span class="nf">int</span><span class="p">(</span><span class="nf">input</span><span class="p">(</span><span class="sh">'</span><span class="s">Digite um número:</span><span class="sh">'</span><span class="p">))</span>
 
-<span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'Divisores de </span><span class="si">{</span><span class="n">n</span><span class="si">}</span><span class="s">:'</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">'</span><span class="s">Divisores de </span><span class="si">{</span><span class="n">n</span><span class="si">}</span><span class="s">:</span><span class="sh">'</span><span class="p">)</span>
 <span class="k">for</span> <span class="n">d</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">n</span> <span class="o">%</span> <span class="n">d</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
         <span class="nf">print</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
@@ -1876,8 +1876,8 @@
 <h2 id="solução">Solução:</h2>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Entrada
-</span><span class="n">m</span> <span class="o">=</span> <span class="nf">int</span><span class="p">(</span><span class="nf">input</span><span class="p">(</span><span class="s">'m = '</span><span class="p">))</span>
-<span class="n">n</span> <span class="o">=</span> <span class="nf">int</span><span class="p">(</span><span class="nf">input</span><span class="p">(</span><span class="s">'n = '</span><span class="p">))</span>
+</span><span class="n">m</span> <span class="o">=</span> <span class="nf">int</span><span class="p">(</span><span class="nf">input</span><span class="p">(</span><span class="sh">'</span><span class="s">m = </span><span class="sh">'</span><span class="p">))</span>
+<span class="n">n</span> <span class="o">=</span> <span class="nf">int</span><span class="p">(</span><span class="nf">input</span><span class="p">(</span><span class="sh">'</span><span class="s">n = </span><span class="sh">'</span><span class="p">))</span>
 
 <span class="c1"># Algoritmo
 </span>
@@ -1891,7 +1891,7 @@
 </span><span class="k">while</span> <span class="n">m</span> <span class="o">%</span> <span class="n">d</span> <span class="ow">or</span> <span class="n">n</span> <span class="o">%</span> <span class="n">d</span> <span class="p">:</span>
   <span class="n">d</span> <span class="o">-=</span> <span class="mi">1</span>
 
-<span class="s">'''
+<span class="sh">'''</span><span class="s">
 comentário:
 veja que
 while m % d or n % d:
@@ -1899,11 +1899,11 @@ while m % d or n % d:
 while m % d != 0 or n % d != 0:
 pois qualquer valor positivo significa True,
 e qualquer valor zero ou negativo resulta em False
-'''</span>
+</span><span class="sh">'''</span>
 
 <span class="c1"># Saída
 </span>
-<span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'MDC(</span><span class="si">{</span><span class="n">m</span><span class="si">}</span><span class="s">, </span><span class="si">{</span><span class="n">n</span><span class="si">}</span><span class="s">) = </span><span class="si">{</span><span class="n">d</span><span class="si">}</span><span class="s">'</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">'</span><span class="s">MDC(</span><span class="si">{</span><span class="n">m</span><span class="si">}</span><span class="s">, </span><span class="si">{</span><span class="n">n</span><span class="si">}</span><span class="s">) = </span><span class="si">{</span><span class="n">d</span><span class="si">}</span><span class="sh">'</span><span class="p">)</span>
 </code></pre></div></div>
 
           </div>
@@ -2013,18 +2013,18 @@ e qualquer valor zero ou negativo resulta em False
 <h2 id="solução">Solução</h2>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># DICIONÁRIOS
-</span><span class="n">rom2arab</span> <span class="o">=</span> <span class="p">{</span><span class="s">'I'</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s">'V'</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span> <span class="s">'X'</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="s">'L'</span><span class="p">:</span> <span class="mi">50</span><span class="p">,</span> <span class="s">'C'</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span> <span class="s">'D'</span><span class="p">:</span> <span class="mi">500</span><span class="p">,</span> <span class="s">'M'</span><span class="p">:</span> <span class="mi">1000</span><span class="p">}</span>
+</span><span class="n">rom2arab</span> <span class="o">=</span> <span class="p">{</span><span class="sh">'</span><span class="s">I</span><span class="sh">'</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="sh">'</span><span class="s">V</span><span class="sh">'</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span> <span class="sh">'</span><span class="s">X</span><span class="sh">'</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="sh">'</span><span class="s">L</span><span class="sh">'</span><span class="p">:</span> <span class="mi">50</span><span class="p">,</span> <span class="sh">'</span><span class="s">C</span><span class="sh">'</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span> <span class="sh">'</span><span class="s">D</span><span class="sh">'</span><span class="p">:</span> <span class="mi">500</span><span class="p">,</span> <span class="sh">'</span><span class="s">M</span><span class="sh">'</span><span class="p">:</span> <span class="mi">1000</span><span class="p">}</span>
 <span class="n">arab2rom</span> <span class="o">=</span> <span class="p">{</span><span class="n">val</span><span class="p">:</span> <span class="n">key</span> <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">val</span> <span class="ow">in</span> <span class="n">rom2arab</span><span class="p">.</span><span class="nf">items</span><span class="p">()}</span>  <span class="c1"># invertendo r2a usando list comprehension
 </span>
 <span class="k">def</span> <span class="nf">det_simb</span><span class="p">(</span><span class="n">digit</span><span class="p">,</span> <span class="n">pos</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
-  <span class="s">'''
+  <span class="sh">'''</span><span class="s">
     função auxiliar para determinar o símbolo
     correspondente ao dígito (digit: int)
     do número arábico na pos
     pos = 1   -&gt; unidade
         = 10  -&gt; dezena
         = 100 -&gt; centena
-  '''</span>
+  </span><span class="sh">'''</span>
   
   <span class="k">if</span> <span class="n">digit</span> <span class="o">&lt;=</span> <span class="mi">3</span><span class="p">:</span>  <span class="c1"># I, II, III ou X, XX, XXX ou C, CC, CCC
 </span>    <span class="k">return</span> <span class="n">arab2rom</span><span class="p">[</span><span class="n">pos</span><span class="p">]</span> <span class="o">*</span> <span class="n">digit</span>
@@ -2038,13 +2038,13 @@ e qualquer valor zero ou negativo resulta em False
 </span>    <span class="k">return</span> <span class="n">arab2rom</span><span class="p">[</span><span class="n">pos</span><span class="p">]</span> <span class="o">+</span> <span class="n">arab2rom</span><span class="p">[</span><span class="n">pos</span> <span class="o">*</span> <span class="mi">10</span><span class="p">]</span>
 
 <span class="k">def</span> <span class="nf">a2r</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
-  <span class="s">'''
+  <span class="sh">'''</span><span class="s">
     Conversão de número arábico num (int) para romano 
     válido para 1 &lt;= num &lt;= 3999
-  '''</span>
+  </span><span class="sh">'''</span>
   
-  <span class="n">arab</span> <span class="o">=</span> <span class="sa">f</span><span class="s">'</span><span class="si">{</span><span class="n">num</span><span class="si">:</span><span class="mi">04</span><span class="n">d</span><span class="si">}</span><span class="s">'</span>
-  <span class="n">rom</span> <span class="o">=</span> <span class="s">''</span>
+  <span class="n">arab</span> <span class="o">=</span> <span class="sa">f</span><span class="sh">'</span><span class="si">{</span><span class="n">num</span><span class="si">:</span><span class="mi">04</span><span class="n">d</span><span class="si">}</span><span class="sh">'</span>
+  <span class="n">rom</span> <span class="o">=</span> <span class="sh">''</span>
   <span class="c1"># dígito do milhar:
 </span>  <span class="n">d</span> <span class="o">=</span> <span class="nf">int</span><span class="p">(</span><span class="n">arab</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
   <span class="n">rom</span> <span class="o">=</span> <span class="n">arab2rom</span><span class="p">[</span><span class="mi">1000</span><span class="p">]</span> <span class="o">*</span> <span class="n">d</span>
@@ -2061,9 +2061,9 @@ e qualquer valor zero ou negativo resulta em False
   <span class="k">return</span> <span class="n">rom</span>
 
 <span class="k">def</span> <span class="nf">r2a</span><span class="p">(</span><span class="n">rom</span><span class="p">):</span>
-  <span class="s">'''
+  <span class="sh">'''</span><span class="s">
     conversão de número em algarismos romanos rom (str) para arábicos (int)
-  '''</span>
+  </span><span class="sh">'''</span>
   
   <span class="n">cm</span> <span class="o">=</span> <span class="n">rom</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
   <span class="n">num</span> <span class="o">=</span> <span class="n">rom2arab</span><span class="p">[</span><span class="n">cm</span><span class="p">]</span>
@@ -2277,12 +2277,12 @@ Esse sistema (ou seja, seis caracteres escolhidos do conjunto 0–9+A–F) é ca
 
 <h3 id="solução">Solução</h3>
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s">'''
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="sh">'''</span><span class="s">
 Solução usando for, e eliminando fatores de 4 da fórmula do enunciado:
 (pi-3)/4 = 1/(2*3*4) - 1/(4*5*6) + 1/(6*7*8) - ...
 é simplificada para
 pi-3 = 1/(1*3*2) - 1/(2*5*3) + 1/(3*7*4) - ...
-'''</span>
+</span><span class="sh">'''</span>
 
 <span class="n">soma</span> <span class="o">=</span> <span class="mi">3</span> <span class="c1"># variável que vai receber as aproximações de pi
 </span><span class="n">sinal</span> <span class="o">=</span> <span class="mi">1</span> <span class="c1"># variável com o sinal dos termos da soma
@@ -2344,11 +2344,11 @@ Está entre 40 e 60:
 </span><span class="n">segredo</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">randint</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
 
 <span class="c1"># Início do jogo:
-</span><span class="nf">print</span><span class="p">(</span><span class="s">'Adivinhe o número:'</span><span class="p">)</span>
+</span><span class="nf">print</span><span class="p">(</span><span class="sh">'</span><span class="s">Adivinhe o número:</span><span class="sh">'</span><span class="p">)</span>
 
 <span class="n">n</span> <span class="o">=</span> <span class="mi">1</span>  <span class="c1"># n será o contador de tentativas e o indicador (flag) de acerto
 </span><span class="k">while</span> <span class="n">n</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
-  <span class="n">chute</span> <span class="o">=</span> <span class="nf">int</span><span class="p">(</span><span class="nf">input</span><span class="p">(</span><span class="sa">f</span><span class="s">'Está entre </span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s"> e </span><span class="si">{</span><span class="n">b</span><span class="si">}</span><span class="s">:'</span><span class="p">))</span>
+  <span class="n">chute</span> <span class="o">=</span> <span class="nf">int</span><span class="p">(</span><span class="nf">input</span><span class="p">(</span><span class="sa">f</span><span class="sh">'</span><span class="s">Está entre </span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s"> e </span><span class="si">{</span><span class="n">b</span><span class="si">}</span><span class="s">:</span><span class="sh">'</span><span class="p">))</span>
 
   <span class="k">if</span> <span class="n">chute</span> <span class="o">&gt;</span> <span class="n">segredo</span><span class="p">:</span>
     <span class="n">b</span> <span class="o">=</span> <span class="n">chute</span>
@@ -2357,7 +2357,7 @@ Está entre 40 e 60:
     <span class="n">a</span> <span class="o">=</span> <span class="n">chute</span>
     <span class="n">n</span> <span class="o">+=</span> <span class="mi">1</span>
   <span class="k">else</span><span class="p">:</span>
-    <span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'Acertou em </span><span class="si">{</span><span class="n">n</span><span class="si">}</span><span class="s"> tentativas!'</span><span class="p">)</span>
+    <span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">'</span><span class="s">Acertou em </span><span class="si">{</span><span class="n">n</span><span class="si">}</span><span class="s"> tentativas!</span><span class="sh">'</span><span class="p">)</span>
     <span class="n">n</span> <span class="o">=</span> <span class="mi">0</span>  <span class="c1"># zerando n para se tornar um flag de acerto
 </span>
 </code></pre></div></div>
@@ -2406,10 +2406,10 @@ Está entre 40 e 60:
 </span>    <span class="k">return</span> <span class="mi">29</span> <span class="nf">if </span><span class="p">(</span><span class="ow">not</span> <span class="n">ano</span> <span class="o">%</span> <span class="mi">4</span> <span class="ow">and</span> <span class="n">ano</span> <span class="o">%</span> <span class="mi">100</span><span class="p">)</span> <span class="ow">or</span> <span class="ow">not</span> <span class="n">ano</span> <span class="o">%</span> <span class="mi">400</span> <span class="k">else</span> <span class="mi">28</span>
 
 <span class="c1"># entrada de dados
-</span><span class="n">d</span> <span class="o">=</span> <span class="nf">int</span><span class="p">(</span><span class="nf">input</span><span class="p">(</span><span class="s">'Dia: '</span><span class="p">))</span>
-<span class="n">m</span> <span class="o">=</span> <span class="nf">int</span><span class="p">(</span><span class="nf">input</span><span class="p">(</span><span class="s">'Mês: '</span><span class="p">))</span>
-<span class="n">a</span> <span class="o">=</span> <span class="nf">int</span><span class="p">(</span><span class="nf">input</span><span class="p">(</span><span class="s">'Ano: '</span><span class="p">))</span>
-<span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'dia atual: </span><span class="si">{</span><span class="n">d</span><span class="si">:</span><span class="mi">02</span><span class="n">d</span><span class="si">}</span><span class="s">/</span><span class="si">{</span><span class="n">m</span><span class="si">:</span><span class="mi">02</span><span class="n">d</span><span class="si">}</span><span class="s">/</span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s">'</span><span class="p">)</span>
+</span><span class="n">d</span> <span class="o">=</span> <span class="nf">int</span><span class="p">(</span><span class="nf">input</span><span class="p">(</span><span class="sh">'</span><span class="s">Dia: </span><span class="sh">'</span><span class="p">))</span>
+<span class="n">m</span> <span class="o">=</span> <span class="nf">int</span><span class="p">(</span><span class="nf">input</span><span class="p">(</span><span class="sh">'</span><span class="s">Mês: </span><span class="sh">'</span><span class="p">))</span>
+<span class="n">a</span> <span class="o">=</span> <span class="nf">int</span><span class="p">(</span><span class="nf">input</span><span class="p">(</span><span class="sh">'</span><span class="s">Ano: </span><span class="sh">'</span><span class="p">))</span>
+<span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">'</span><span class="s">dia atual: </span><span class="si">{</span><span class="n">d</span><span class="si">:</span><span class="mi">02</span><span class="n">d</span><span class="si">}</span><span class="s">/</span><span class="si">{</span><span class="n">m</span><span class="si">:</span><span class="mi">02</span><span class="n">d</span><span class="si">}</span><span class="s">/</span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="sh">'</span><span class="p">)</span>
 
 <span class="c1"># durações de todos os meses
 </span><span class="n">duracoes</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">:</span> <span class="mi">31</span><span class="p">,</span> <span class="mi">2</span><span class="p">:</span> <span class="nf">fevereiro</span><span class="p">(</span><span class="n">a</span><span class="p">),</span> <span class="mi">3</span><span class="p">:</span> <span class="mi">31</span><span class="p">,</span> <span class="mi">4</span><span class="p">:</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">5</span><span class="p">:</span> <span class="mi">31</span><span class="p">,</span> <span class="mi">6</span><span class="p">:</span> <span class="mi">30</span><span class="p">,</span>
@@ -2426,7 +2426,7 @@ Está entre 40 e 60:
 </span>    <span class="n">m</span> <span class="o">+=</span> <span class="mi">1</span>
 
 <span class="c1"># imprimindo o resultado
-</span><span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'dia seguinte: </span><span class="si">{</span><span class="n">d</span><span class="si">:</span><span class="mi">02</span><span class="n">d</span><span class="si">}</span><span class="s">/</span><span class="si">{</span><span class="n">m</span><span class="si">:</span><span class="mi">02</span><span class="n">d</span><span class="si">}</span><span class="s">/</span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s">'</span><span class="p">)</span>
+</span><span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">'</span><span class="s">dia seguinte: </span><span class="si">{</span><span class="n">d</span><span class="si">:</span><span class="mi">02</span><span class="n">d</span><span class="si">}</span><span class="s">/</span><span class="si">{</span><span class="n">m</span><span class="si">:</span><span class="mi">02</span><span class="n">d</span><span class="si">}</span><span class="s">/</span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="sh">'</span><span class="p">)</span>
 </code></pre></div></div>
 
           </div>
@@ -2519,13 +2519,13 @@ Está entre 40 e 60:
 
 <h3 id="solução">Solução</h3>
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s">'''
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="sh">'''</span><span class="s">
 cálculo da raiz quadrada aproximada
 usando método de Newton
 com uma precisão de 1e-12
-'''</span>
+</span><span class="sh">'''</span>
 
-<span class="n">x</span> <span class="o">=</span> <span class="nf">float</span><span class="p">(</span><span class="nf">input</span><span class="p">(</span><span class="s">'Digite um número: '</span><span class="p">))</span>
+<span class="n">x</span> <span class="o">=</span> <span class="nf">float</span><span class="p">(</span><span class="nf">input</span><span class="p">(</span><span class="sh">'</span><span class="s">Digite um número: </span><span class="sh">'</span><span class="p">))</span>
 
 <span class="c1"># Algoritmo: método de Newton para raiz quadrada
 </span><span class="n">raiz</span> <span class="o">=</span> <span class="n">x</span> <span class="o">/</span> <span class="mi">2</span> <span class="c1"># inicializar o palpite para a a raiz em x / 2
@@ -2533,7 +2533,7 @@ com uma precisão de 1e-12
 </span><span class="k">while</span> <span class="nf">abs</span><span class="p">(</span><span class="n">raiz</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span> <span class="n">x</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="n">tolerancia</span><span class="p">:</span> <span class="c1"># a função abs() retorna o módulo (valor absoluto) do seu argumento
 </span>    <span class="n">raiz</span> <span class="o">=</span> <span class="p">(</span><span class="n">raiz</span> <span class="o">+</span> <span class="n">x</span> <span class="o">/</span> <span class="n">raiz</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span> <span class="c1"># atualiza o valor do palpite para a raiz
 </span>
-<span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'A raiz quadrada de </span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s"> é </span><span class="si">{</span><span class="n">raiz</span><span class="si">}</span><span class="s">'</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">'</span><span class="s">A raiz quadrada de </span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s"> é </span><span class="si">{</span><span class="n">raiz</span><span class="si">}</span><span class="sh">'</span><span class="p">)</span>
 </code></pre></div></div>
 
           </div>
@@ -2948,13 +2948,13 @@ seqüência de traços e pontos. Seu programa deve ignorar quaisquer caracteres 
     <span class="k">return</span> <span class="n">p</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">n</span>
 
 <span class="c1"># dicionário para converter mes de int para string
-</span><span class="n">mes</span> <span class="o">=</span> <span class="p">{</span><span class="mi">3</span><span class="p">:</span><span class="s">'Março'</span><span class="p">,</span> <span class="mi">4</span><span class="p">:</span><span class="s">'Abril'</span><span class="p">}</span>
+</span><span class="n">mes</span> <span class="o">=</span> <span class="p">{</span><span class="mi">3</span><span class="p">:</span><span class="sh">'</span><span class="s">Março</span><span class="sh">'</span><span class="p">,</span> <span class="mi">4</span><span class="p">:</span><span class="sh">'</span><span class="s">Abril</span><span class="sh">'</span><span class="p">}</span>
 
-<span class="n">x</span> <span class="o">=</span> <span class="nf">int</span><span class="p">(</span><span class="nf">input</span><span class="p">(</span><span class="s">'Ano: '</span><span class="p">))</span>
+<span class="n">x</span> <span class="o">=</span> <span class="nf">int</span><span class="p">(</span><span class="nf">input</span><span class="p">(</span><span class="sh">'</span><span class="s">Ano: </span><span class="sh">'</span><span class="p">))</span>
 <span class="n">d</span><span class="p">,</span> <span class="n">m</span> <span class="o">=</span> <span class="nf">pascoa</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 
 <span class="c1"># o formato 02d imprime um inteiro com 2 algarismos, com zeros à esquerda se necessário
-</span><span class="nf">print</span><span class="p">(</span> <span class="sa">f</span><span class="s">'Data da Páscoa em </span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s">: </span><span class="si">{</span><span class="n">d</span><span class="si">:</span><span class="mi">02</span><span class="n">d</span><span class="si">}</span><span class="s"> de </span><span class="si">{</span><span class="n">mes</span><span class="p">[</span><span class="n">m</span><span class="p">]</span><span class="si">}</span><span class="s">'</span> <span class="p">)</span>
+</span><span class="nf">print</span><span class="p">(</span> <span class="sa">f</span><span class="sh">'</span><span class="s">Data da Páscoa em </span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s">: </span><span class="si">{</span><span class="n">d</span><span class="si">:</span><span class="mi">02</span><span class="n">d</span><span class="si">}</span><span class="s"> de </span><span class="si">{</span><span class="n">mes</span><span class="p">[</span><span class="n">m</span><span class="p">]</span><span class="si">}</span><span class="sh">'</span> <span class="p">)</span>
 </code></pre></div></div>
 
           </div>

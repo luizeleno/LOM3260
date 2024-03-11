@@ -22,7 +22,7 @@
 
 <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>Funções | LOM3260</title>
-<meta name="generator" content="Jekyll v4.3.2" />
+<meta name="generator" content="Jekyll v4.3.3" />
 <meta property="og:title" content="Funções" />
 <meta name="author" content="Luiz T. F. Eleno" />
 <meta property="og:locale" content="en_US" />
@@ -1418,10 +1418,10 @@
 <p>Os iniciantes têm certa dificuldade em entender logo de cara um código que contém a definição de uma função. Eu não sei muito bem por que isso acontece (provavelmente passei pelo mesmo problema quando estava aprendendo a programar em C, nos idos de 1995, mas já não me lembro…), mas uma <strong>função</strong> é uma daquelas ideias fáceis de entender… depois que você a entendeu (!), e depois você se pergunta por que teve tanta dificuldade pra entender um conceito tão simples.</p>
 
 <p>Acho mais fácil começar por um exemplo. Digamos que precisamos determinar a área $A$ de um círculo, segundo a fórmula usual $A = \pi r^2$, sendo $r$ o raio do círculo em questão, que deve ser fornecido pelo usuário. Nada mais fácil:</p>
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">r</span> <span class="o">=</span> <span class="nf">float</span><span class="p">(</span><span class="nf">input</span><span class="p">(</span><span class="s">'Digite r em centímetros:'</span><span class="p">))</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">r</span> <span class="o">=</span> <span class="nf">float</span><span class="p">(</span><span class="nf">input</span><span class="p">(</span><span class="sh">'</span><span class="s">Digite r em centímetros:</span><span class="sh">'</span><span class="p">))</span>
 <span class="n">pi</span> <span class="o">=</span> <span class="mf">3.14159</span>  <span class="c1"># uma aproximação para pi
 </span><span class="n">A</span> <span class="o">=</span> <span class="n">pi</span> <span class="o">*</span> <span class="n">r</span> <span class="o">*</span> <span class="n">r</span>
-<span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'A área do círculo de raio </span><span class="si">{</span><span class="n">r</span><span class="si">}</span><span class="s"> cm é A = </span><span class="si">{</span><span class="n">A</span><span class="si">}</span><span class="s"> cm²'</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">'</span><span class="s">A área do círculo de raio </span><span class="si">{</span><span class="n">r</span><span class="si">}</span><span class="s"> cm é A = </span><span class="si">{</span><span class="n">A</span><span class="si">}</span><span class="s"> cm²</span><span class="sh">'</span><span class="p">)</span>
 </code></pre></div></div>
 
 <p>Mas poderíamos também criar uma <em>função</em> e usá-la no código, para deixá-lo mais <em>modular</em>. Uma função é criada usando o comando <code class="language-plaintext highlighter-rouge">def</code> como no exemplo abaixo:</p>
@@ -1438,10 +1438,10 @@
   <span class="n">area</span> <span class="o">=</span> <span class="n">pi</span> <span class="o">*</span> <span class="n">raio</span> <span class="o">*</span> <span class="n">raio</span>
   <span class="k">return</span> <span class="n">area</span>
 
-<span class="n">r</span> <span class="o">=</span> <span class="nf">float</span><span class="p">(</span><span class="nf">input</span><span class="p">(</span><span class="s">'Digite r em centímetros:'</span><span class="p">))</span>
+<span class="n">r</span> <span class="o">=</span> <span class="nf">float</span><span class="p">(</span><span class="nf">input</span><span class="p">(</span><span class="sh">'</span><span class="s">Digite r em centímetros:</span><span class="sh">'</span><span class="p">))</span>
 <span class="n">pi</span> <span class="o">=</span> <span class="mf">3.14159</span>  <span class="c1"># uma aproximação para pi
 </span><span class="n">A</span> <span class="o">=</span> <span class="nf">area_circulo</span><span class="p">(</span><span class="n">r</span><span class="p">)</span>
-<span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'A área do círculo de raio </span><span class="si">{</span><span class="n">r</span><span class="si">}</span><span class="s"> cm é A = </span><span class="si">{</span><span class="n">A</span><span class="si">}</span><span class="s"> cm²'</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">'</span><span class="s">A área do círculo de raio </span><span class="si">{</span><span class="n">r</span><span class="si">}</span><span class="s"> cm é A = </span><span class="si">{</span><span class="n">A</span><span class="si">}</span><span class="s"> cm²</span><span class="sh">'</span><span class="p">)</span>
 </code></pre></div></div>
 
 <p class="alert alert-primary"><img class="emoji" title=":bangbang:" alt=":bangbang:" src="https://github.githubassets.com/images/icons/emoji/unicode/203c.png" height="20" width="20"> O que eu percebo, da minha experiência ensinando programação, é que muitos iniciantes empacam nesse ponto, por isso, preste atenção, pois não é difícil (depois que você entendeu <img class="emoji" title=":confounded:" alt=":confounded:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f616.png" height="20" width="20">):</p>
@@ -1514,7 +1514,7 @@
 <p>Ou seja, não é imprescindível retornar um valor previamente atribuído a uma variável.
 Você poderia usá-la (assim como as funções anteriores!), por exemplo, assim:</p>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">c</span> <span class="o">=</span> <span class="mf">2.5</span>
-<span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'</span><span class="si">{</span><span class="n">c</span><span class="si">}</span><span class="s">² = </span><span class="si">{</span><span class="nf">quadrado</span><span class="p">(</span><span class="n">c</span><span class="p">)</span><span class="si">}</span><span class="s">'</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">'</span><span class="si">{</span><span class="n">c</span><span class="si">}</span><span class="s">² = </span><span class="si">{</span><span class="nf">quadrado</span><span class="p">(</span><span class="n">c</span><span class="p">)</span><span class="si">}</span><span class="sh">'</span><span class="p">)</span>
 </code></pre></div></div>
 
 

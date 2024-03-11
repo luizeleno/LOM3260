@@ -22,7 +22,7 @@
 
 <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>Tipos de objetos | LOM3260</title>
-<meta name="generator" content="Jekyll v4.3.2" />
+<meta name="generator" content="Jekyll v4.3.3" />
 <meta property="og:title" content="Tipos de objetos" />
 <meta name="author" content="Luiz T. F. Eleno" />
 <meta property="og:locale" content="en_US" />
@@ -1443,14 +1443,14 @@
 </h3>
 
 <p>Outro tipo de dado comum e importante é a <strong>string</strong>, ou sequência de caracteres. Elas são indicadas por qualquer sequência de símbolos (letras, números e caracteres não alfa-numéricos como <code class="language-plaintext highlighter-rouge">?:&amp;-=+@#?!*</code>), delimitados por aspas simples (<code class="language-plaintext highlighter-rouge">''</code>) ou duplas (<code class="language-plaintext highlighter-rouge">""</code>).</p>
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">s1</span> <span class="o">=</span> <span class="s">'string 1'</span>  <span class="c1"># delimitada por aspas simples
-</span><span class="n">s2</span> <span class="o">=</span> <span class="s">"String 2"</span>  <span class="c1"># delimitada por aspas duplas
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">s1</span> <span class="o">=</span> <span class="sh">'</span><span class="s">string 1</span><span class="sh">'</span>  <span class="c1"># delimitada por aspas simples
+</span><span class="n">s2</span> <span class="o">=</span> <span class="sh">"</span><span class="s">String 2</span><span class="sh">"</span>  <span class="c1"># delimitada por aspas duplas
 </span>
-<span class="n">w</span> <span class="o">=</span> <span class="s">'Uma string mais longa com caracteres diferentes: :&amp;%$@%#$'</span>
+<span class="n">w</span> <span class="o">=</span> <span class="sh">'</span><span class="s">Uma string mais longa com caracteres diferentes: :&amp;%$@%#$</span><span class="sh">'</span>
 </code></pre></div></div>
 <p>Cuidado ao lidar com strings compostas por caracteres numéricos:</p>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">a3</span> <span class="o">=</span> <span class="mf">5.0</span>  <span class="c1"># a3 é do tipo float
-</span><span class="n">s3</span> <span class="o">=</span> <span class="s">'5.0'</span> <span class="c1"># s3 é do tipo string
+</span><span class="n">s3</span> <span class="o">=</span> <span class="sh">'</span><span class="s">5.0</span><span class="sh">'</span> <span class="c1"># s3 é do tipo string
 </span></code></pre></div></div>
 
 <h3 id="tipo-booleano-variáveis-lógicas">Tipo booleano (variáveis lógicas)</h3>
@@ -1479,7 +1479,7 @@
 </h3>
 
 <p>Use os comandos <code class="language-plaintext highlighter-rouge">int()</code> e <code class="language-plaintext highlighter-rouge">float()</code>:</p>
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">s</span> <span class="o">=</span> <span class="s">'45.23'</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">s</span> <span class="o">=</span> <span class="sh">'</span><span class="s">45.23</span><span class="sh">'</span>
 <span class="n">sf</span> <span class="o">=</span> <span class="nf">float</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
 <span class="n">si</span> <span class="o">=</span> <span class="nf">int</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>  <span class="c1"># dá erro! quando for rodar o código, comente esta linha
 </span><span class="n">si</span> <span class="o">=</span> <span class="nf">int</span><span class="p">(</span><span class="n">sf</span><span class="p">)</span>  <span class="c1"># assim funciona

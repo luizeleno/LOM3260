@@ -1,12 +1,12 @@
-I"�<p>Crie um programa que peça ao usuário um número e imprima todos os seus divisores. Se você não lembra o que é um divisor, é um número que divide outro sem deixar resto. Por exemplo, 13 é um divisor de 26 porque 26/13 não tem nenhum resto.</p>
+I"A<p>Crie um programa que peça ao usuário um número e imprima todos os seus divisores. Se você não lembra o que é um divisor, é um número que divide outro sem deixar resto. Por exemplo, 13 é um divisor de 26 porque 26/13 não tem nenhum resto.</p>
 
 <!-- more -->
 
 <h2 id="solução">Solução</h2>
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">n</span> <span class="o">=</span> <span class="nf">int</span><span class="p">(</span><span class="nf">input</span><span class="p">(</span><span class="s">'Digite um número:'</span><span class="p">))</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">n</span> <span class="o">=</span> <span class="nf">int</span><span class="p">(</span><span class="nf">input</span><span class="p">(</span><span class="sh">'</span><span class="s">Digite um número:</span><span class="sh">'</span><span class="p">))</span>
 
-<span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'Divisores de </span><span class="si">{</span><span class="n">n</span><span class="si">}</span><span class="s">:'</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">'</span><span class="s">Divisores de </span><span class="si">{</span><span class="n">n</span><span class="si">}</span><span class="s">:</span><span class="sh">'</span><span class="p">)</span>
 <span class="k">for</span> <span class="n">d</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">n</span> <span class="o">%</span> <span class="n">d</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
         <span class="nf">print</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>

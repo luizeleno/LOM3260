@@ -1,17 +1,17 @@
-I"q)<p class="lead">Como escolher e manipular partes de uma string ou lista usando indexação (<em>indexing</em>) e fatiamento (<em>slicing</em>)</p>
+I"*<p class="lead">Como escolher e manipular partes de uma string ou lista usando indexação (<em>indexing</em>) e fatiamento (<em>slicing</em>)</p>
 
 <p>Quase todos os comandos que veremos a seguir funcionam para objetos do tipo string, lista e tupla. Quando não for o caso, deixaremos indicado.</p>
 
 <h2 id="indexação-indexing">Indexação <em>(Indexing)</em></h2>
 
 <p><strong>Indexing</strong> é a maneira pela qual nos referimos a um elemento de uma lista, string ou tupla. Por exemplo, se temos uma lista <code class="language-plaintext highlighter-rouge">L = [1, 8, 'EEL', 5.43]</code>, cada um dos elementos tem por <strong>índice</strong> um inteiro, começando em zero e sequencialmente aumentando de uma unidade até o último elemento. O primeiro elemento da lista <code class="language-plaintext highlighter-rouge">L</code> é indicado por <code class="language-plaintext highlighter-rouge">L[0]</code>, o segundo por <code class="language-plaintext highlighter-rouge">L[1]</code>, e assim por diante. Acompanhe:</p>
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">L</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="s">'EEL'</span><span class="p">,</span> <span class="mf">5.43</span><span class="p">]</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">L</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="sh">'</span><span class="s">EEL</span><span class="sh">'</span><span class="p">,</span> <span class="mf">5.43</span><span class="p">]</span>
 <span class="n">nL</span> <span class="o">=</span> <span class="nf">len</span><span class="p">(</span><span class="n">L</span><span class="p">)</span>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="n">nL</span><span class="p">):</span>
   <span class="nf">print</span><span class="p">(</span><span class="n">L</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
 </code></pre></div></div>
 <p>Esse código vai imprimir, um a um, todos os elementos de <code class="language-plaintext highlighter-rouge">L</code>. Lembre que <code class="language-plaintext highlighter-rouge">len(L)</code> fornece o tamanho (nesse caso, o número de elementos) de <code class="language-plaintext highlighter-rouge">L</code>, assim como, se <code class="language-plaintext highlighter-rouge">s</code> é uma string, <code class="language-plaintext highlighter-rouge">len(s)</code> fornece o número de caracteres de <code class="language-plaintext highlighter-rouge">s</code> (incluindo possíveis espaços em branco). Mas repare que o código acima poderia ser simplificado fazendo uso das propriedades do operador <code class="language-plaintext highlighter-rouge">in</code>, já visto anteriormente:</p>
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">L</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="s">'EEL'</span><span class="p">,</span> <span class="mf">5.43</span><span class="p">]</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">L</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="sh">'</span><span class="s">EEL</span><span class="sh">'</span><span class="p">,</span> <span class="mf">5.43</span><span class="p">]</span>
 <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">L</span><span class="p">:</span>
   <span class="nf">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 </code></pre></div></div>
@@ -39,7 +39,7 @@
 <p>Valores negativos para <code class="language-plaintext highlighter-rouge">start</code> e <code class="language-plaintext highlighter-rouge">stop</code> são aceitos, de forma parecida com a que vimos para a indexação. Um <code class="language-plaintext highlighter-rouge">step</code> negativo também é possível, assim como no caso do comando <code class="language-plaintext highlighter-rouge">range</code>.</p>
 
 <p>Vejamos alguns exemplos:</p>
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">L</span> <span class="o">=</span> <span class="s">'Eu sou uma string'</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">L</span> <span class="o">=</span> <span class="sh">'</span><span class="s">Eu sou uma string</span><span class="sh">'</span>
 
 <span class="c1"># primeira palavra (Eu)
 </span><span class="nf">print</span><span class="p">(</span><span class="n">L</span><span class="p">[:</span><span class="mi">2</span><span class="p">])</span>

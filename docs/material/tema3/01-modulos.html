@@ -22,7 +22,7 @@
 
 <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>Módulos | LOM3260</title>
-<meta name="generator" content="Jekyll v4.3.2" />
+<meta name="generator" content="Jekyll v4.3.3" />
 <meta property="og:title" content="Módulos" />
 <meta name="author" content="Luiz T. F. Eleno" />
 <meta property="og:locale" content="en_US" />
@@ -1438,7 +1438,7 @@ async      elif       if         or         yield
 <span class="n">a</span> <span class="o">=</span> <span class="mf">5.0</span>
 <span class="n">rqa</span> <span class="o">=</span> <span class="n">numpy</span><span class="p">.</span><span class="nf">sqrt</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
 
-<span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'A raiz quadrada de </span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s"> é </span><span class="si">{</span><span class="n">rqa</span><span class="si">}</span><span class="s">'</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">'</span><span class="s">A raiz quadrada de </span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s"> é </span><span class="si">{</span><span class="n">rqa</span><span class="si">}</span><span class="sh">'</span><span class="p">)</span>
 </code></pre></div></div>
 
 <p>Essa, no entanto, é apenas uma das maneiras de usar o comando <code class="language-plaintext highlighter-rouge">import</code>. Uma outra maneira é dar um “apelido” ao módulo com a palavra chave <code class="language-plaintext highlighter-rouge">as</code> (<em>como</em>):</p>
@@ -1450,7 +1450,7 @@ async      elif       if         or         yield
 <span class="n">a</span> <span class="o">=</span> <span class="mf">5.0</span>
 <span class="n">rqa</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">sqrt</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
 
-<span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'A raiz quadrada de </span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s"> é </span><span class="si">{</span><span class="n">rqa</span><span class="si">}</span><span class="s">'</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">'</span><span class="s">A raiz quadrada de </span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s"> é </span><span class="si">{</span><span class="n">rqa</span><span class="si">}</span><span class="sh">'</span><span class="p">)</span>
 </code></pre></div></div>
 
 <p>Uma terceira maneira de usar o import é a seguinte, usando o método <code class="language-plaintext highlighter-rouge">from</code> (<em>de</em>):</p>
@@ -1459,7 +1459,7 @@ async      elif       if         or         yield
 <span class="n">a</span> <span class="o">=</span> <span class="mf">5.0</span>
 <span class="n">rqa</span> <span class="o">=</span> <span class="nf">sqrt</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
 
-<span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'A raiz quadrada de </span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s"> é </span><span class="si">{</span><span class="n">rqa</span><span class="si">}</span><span class="s">'</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">'</span><span class="s">A raiz quadrada de </span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s"> é </span><span class="si">{</span><span class="n">rqa</span><span class="si">}</span><span class="sh">'</span><span class="p">)</span>
 </code></pre></div></div>
 <p>A linha <code class="language-plaintext highlighter-rouge">from numpy import *</code> diz, literalmente (em inglês), <em>de numpy importe tudo</em>. O caractere <code class="language-plaintext highlighter-rouge">*</code> (asterisco) é chamado de <strong>caractere-coringa</strong> (<em>wildcard</em>, em inglês) pois, em analogia a jogos de cartas, ele tem o valor que você quiser, ou tudo ao mesmo tempo. Repare que, usando essa maneira de importar, as funções são usadas sem nenhuma qualificação de origem, ou seja, usamos diretamente <code class="language-plaintext highlighter-rouge">sqrt(a)</code>, e não <code class="language-plaintext highlighter-rouge">numpy.sqrt(a)</code> ou <code class="language-plaintext highlighter-rouge">np.sqrt(a)</code>. Com a construção <code class="language-plaintext highlighter-rouge">from import</code>, você poderia também importar apenas a função que lhe interessa:</p>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="n">numpy</span> <span class="kn">import</span> <span class="n">sqrt</span>
@@ -1467,7 +1467,7 @@ async      elif       if         or         yield
 <span class="n">a</span> <span class="o">=</span> <span class="mf">5.0</span>
 <span class="n">rqa</span> <span class="o">=</span> <span class="nf">sqrt</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
 
-<span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'A raiz quadrada de </span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s"> é </span><span class="si">{</span><span class="n">rqa</span><span class="si">}</span><span class="s">'</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">'</span><span class="s">A raiz quadrada de </span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s"> é </span><span class="si">{</span><span class="n">rqa</span><span class="si">}</span><span class="sh">'</span><span class="p">)</span>
 </code></pre></div></div>
 <p>Isso tem um certo ganho de eficiência, pois menos funções, métodos e variáveis são criadas pelo seu programa, usando assim menos memória. Mas essa vantagem é contrabalanceada pelo seguinte problema:</p>
 
@@ -1480,7 +1480,7 @@ async      elif       if         or         yield
 <span class="n">a</span> <span class="o">=</span> <span class="mf">5.0</span>
 <span class="n">rqa</span> <span class="o">=</span> <span class="nf">raiz</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
 
-<span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'A raiz quadrada de </span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s"> é </span><span class="si">{</span><span class="n">rqa</span><span class="si">}</span><span class="s">'</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">'</span><span class="s">A raiz quadrada de </span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s"> é </span><span class="si">{</span><span class="n">rqa</span><span class="si">}</span><span class="sh">'</span><span class="p">)</span>
 </code></pre></div></div>
 
 <p>É pouco provável que exista uma função <code class="language-plaintext highlighter-rouge">raiz</code> no numpy, então o problema é contornado — mas sem nenhuma garantia: e se um dos desenvolvedores do <code class="language-plaintext highlighter-rouge">numpy</code> é lusófono e usou a palavra <code class="language-plaintext highlighter-rouge">raiz</code> internamente no código? Por isso, eu não recomendo usar a construção <code class="language-plaintext highlighter-rouge">from</code>, nem mesmo com o uso concomitante do <code class="language-plaintext highlighter-rouge">as</code>. É melhor, por segurança e compatibilidade, importar os módulos completos, com <code class="language-plaintext highlighter-rouge">import numpy</code> ou <code class="language-plaintext highlighter-rouge">import numpy as np</code>.</p>

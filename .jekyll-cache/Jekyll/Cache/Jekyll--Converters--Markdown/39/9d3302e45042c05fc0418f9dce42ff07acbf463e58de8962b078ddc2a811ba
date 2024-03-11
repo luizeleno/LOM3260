@@ -1,15 +1,15 @@
-I"�<p class="lead">Você pode agrupar suas funções e criar seus próprios módulos!</p>
+I"I<p class="lead">Você pode agrupar suas funções e criar seus próprios módulos!</p>
 
 <h2 id="o-módulo-__main__">O módulo <code class="language-plaintext highlighter-rouge">__main__</code></h2>
 
 <p>Voltemos por um momento a uma função simples, aquela que calcula o quadrado de um número, que vimos nas duas últimas lições:</p>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">quadrado</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-  <span class="s">'''
+  <span class="sh">'''</span><span class="s">
     Retorna o quadrado de um número
     - Input:
       - x: um int ou float
     - Output: x*x (que é o mesmo que x ao quadrado) 
-  '''</span>
+  </span><span class="sh">'''</span>
   <span class="k">return</span> <span class="n">x</span> <span class="o">*</span> <span class="n">x</span>
 </code></pre></div></div>
 <p>Use agora <code class="language-plaintext highlighter-rouge">help(quadrado)</code>. O resultado é, como esperávamos, nosso docstring:</p>
@@ -37,21 +37,21 @@ quadrado(x)
   <li>Crie um arquivo chame-o de <code class="language-plaintext highlighter-rouge">meu_modulo.py</code> com o seguinte conteúdo:</li>
 </ul>
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s">'''
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="sh">'''</span><span class="s">
 modulo meu_modulo
 
 Um módulo para calcular algumas propriedades numéricas
 
 Criado por L.T.F.E. em 11/09/2019 (que medo!).
-'''</span>
+</span><span class="sh">'''</span>
 
 <span class="k">def</span> <span class="nf">quadrado</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-  <span class="s">'''
+  <span class="sh">'''</span><span class="s">
     Retorna o quadrado de um número
     - Input:
       - x: um int ou float
     - Output: x * x (que é o mesmo que x ao quadrado) 
-  '''</span>
+  </span><span class="sh">'''</span>
   <span class="k">return</span> <span class="n">x</span> <span class="o">*</span> <span class="n">x</span>
 </code></pre></div></div>
 <ul>
@@ -68,7 +68,7 @@ Criado por L.T.F.E. em 11/09/2019 (que medo!).
 
 <span class="n">z</span> <span class="o">=</span> <span class="mi">5</span>
 <span class="n">y</span> <span class="o">=</span> <span class="n">mm</span><span class="p">.</span><span class="nf">quadrado</span><span class="p">(</span><span class="n">z</span><span class="p">)</span>
-<span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'</span><span class="si">{</span><span class="n">z</span><span class="si">}</span><span class="s">² = </span><span class="si">{</span><span class="n">y</span><span class="si">}</span><span class="s">'</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">'</span><span class="si">{</span><span class="n">z</span><span class="si">}</span><span class="s">² = </span><span class="si">{</span><span class="n">y</span><span class="si">}</span><span class="sh">'</span><span class="p">)</span>
 </code></pre></div></div>
 
 <p>Com isso, deixamos nosso código <em>modularizado</em>, ou seja, compartimentado em unidades menores (os módulos) que são “gerenciados” por um arquivo principal (o de nome <code class="language-plaintext highlighter-rouge">__main__</code>) que comanda a execução do programa.</p>

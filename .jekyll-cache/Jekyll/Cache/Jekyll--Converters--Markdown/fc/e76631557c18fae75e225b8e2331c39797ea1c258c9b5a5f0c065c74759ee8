@@ -1,4 +1,4 @@
-I"�<p class="lead">Como iniciantes interagem com o usuário</p>
+I"!<p class="lead">Como iniciantes interagem com o usuário</p>
 
 <p>Como fazer com que seu código peça informações ao usuário? Em sites e aplicativos, geralmente você fornece informações interagindo com alguma forma de interface gráfica, como os campos de texto, a caixa de verificação e o botão abaixo:</p>
 
@@ -23,17 +23,17 @@
 <p>É possível criar interfaces assim em python! Infelizmente, não temos tempo de chegar a esse nível de sofisticação. Tentei fazer isso na primeira edição do curso, mas o nível de conhecimento exigido é alto demais para chegar nesse ponto em apenas um semestre! <!-- Por isso, neste curso, veremos apenas interfaces gráficas simplificadas usando o módulo `matplotlib.widgets`, bem mais adiante no curso. --></p>
 
 <p>Ainda assim, é possível desde já criar uma interface com o usuário, ainda que simples, chamada <strong>TUI</strong> (<em>text-based user interface</em>, ou interface de texto com o usuário). Ela é feita basicamente usando o comando <code class="language-plaintext highlighter-rouge">input()</code>. Veja o exemplo abaixo:</p>
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="nf">input</span><span class="p">(</span><span class="s">'Digite um número: '</span><span class="p">)</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="nf">input</span><span class="p">(</span><span class="sh">'</span><span class="s">Digite um número: </span><span class="sh">'</span><span class="p">)</span>
 </code></pre></div></div>
 <p>O que esse código faz é pedir um número ao usuário, que recebe como instrução a mensagem <code class="language-plaintext highlighter-rouge">Digite um número: </code>. O usuário digita o número que ele quiser e, assim que pressionar Enter, o python recebe a informação <strong>na forma de uma string</strong> e a atribui à variável <code class="language-plaintext highlighter-rouge">x</code>.</p>
 
 <p class="alert alert-warning">:warning: Em Python 3, a informação recebida do usuário pelo comando <code class="language-plaintext highlighter-rouge">input</code> é sempre do tipo <code class="language-plaintext highlighter-rouge">string</code>. Esse comportamento é diferente em versões anteriores do python!</p>
 
 <p>Se você quiser que o python interprete a informação recebida como uma variável numérica, é preciso convertê-la para o tipo desejado usando, por exemplo, <code class="language-plaintext highlighter-rouge">int()</code> ou <code class="language-plaintext highlighter-rouge">float()</code>:</p>
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="nf">int</span><span class="p">(</span><span class="nf">input</span><span class="p">(</span><span class="s">'Digite um número: '</span><span class="p">))</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="nf">int</span><span class="p">(</span><span class="nf">input</span><span class="p">(</span><span class="sh">'</span><span class="s">Digite um número: </span><span class="sh">'</span><span class="p">))</span>
 </code></pre></div></div>
 <p>Para mais clareza, você poderia separar o comando acima em duas linhas:</p>
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="nf">input</span><span class="p">(</span><span class="s">'Digite um número: '</span><span class="p">)</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="nf">input</span><span class="p">(</span><span class="sh">'</span><span class="s">Digite um número: </span><span class="sh">'</span><span class="p">)</span>
 <span class="n">x</span> <span class="o">=</span> <span class="nf">int</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 </code></pre></div></div>
 

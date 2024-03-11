@@ -1,4 +1,4 @@
-I"�C<p class="lead">Funções podem ter argumentos opcionais com valores pré-definidos</p>
+I"D<p class="lead">Funções podem ter argumentos opcionais com valores pré-definidos</p>
 
 <h2 id="argumentos-opcionais">Argumentos opcionais</h2>
 
@@ -124,7 +124,7 @@ round(...)
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">numpy</span> <span class="k">as</span> <span class="n">np</span>
 
 <span class="k">def</span> <span class="nf">area_pizza</span><span class="p">(</span><span class="n">raio</span><span class="p">,</span> <span class="n">theta</span><span class="o">=</span><span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="p">.</span><span class="n">pi</span><span class="p">):</span>
-  <span class="s">'''
+  <span class="sh">'''</span><span class="s">
     Calcula a área de uma fatia de pizza
 
     Uso:
@@ -136,7 +136,7 @@ round(...)
           Se não for fornecido, calcula a área da pizza inteira.
     saída:
       - a área da fatia (float)
-  '''</span>
+  </span><span class="sh">'''</span>
   <span class="k">return</span> <span class="p">.</span><span class="mi">5</span> <span class="o">*</span> <span class="n">theta</span> <span class="o">*</span> <span class="n">raio</span> <span class="o">*</span> <span class="n">raio</span>
 </code></pre></div></div>
 

@@ -1,4 +1,4 @@
-I"�<p class="lead">Usando sobrecarga de operadores, vamos ver uma maneira de criar listas e strings de maneira fácil e rápida</p>
+I"<p class="lead">Usando sobrecarga de operadores, vamos ver uma maneira de criar listas e strings de maneira fácil e rápida</p>
 
 <p>Imagine que você precise de uma lista de 200 elementos, todos iguais a 1. Você poderia fazer o seguinte:</p>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">L</span> <span class="o">=</span> <span class="p">[]</span>  <span class="c1"># uma lista vazia
@@ -13,11 +13,11 @@
 <span class="nf">print</span><span class="p">(</span><span class="n">L</span><span class="p">)</span>
 </code></pre></div></div>
 <p>O comando <code class="language-plaintext highlighter-rouge">[1] * 200</code> faz exatamente o mesmo que todo o conteúdo do <code class="language-plaintext highlighter-rouge">for</code> do código-exemplo anterior!  Veja que o código funciona com listas contendo elementos de qualquer tipo:</p>
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">L</span> <span class="o">=</span> <span class="p">[</span><span class="s">'Oi'</span><span class="p">]</span> <span class="o">*</span> <span class="mi">200</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">L</span> <span class="o">=</span> <span class="p">[</span><span class="sh">'</span><span class="s">Oi</span><span class="sh">'</span><span class="p">]</span> <span class="o">*</span> <span class="mi">200</span>
 <span class="nf">print</span><span class="p">(</span><span class="n">L</span><span class="p">)</span>
 </code></pre></div></div>
 <p>E funciona também para criar strings com caracteres repetidos:</p>
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">s</span> <span class="o">=</span> <span class="s">'Oi'</span> <span class="o">*</span> <span class="mi">200</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">s</span> <span class="o">=</span> <span class="sh">'</span><span class="s">Oi</span><span class="sh">'</span> <span class="o">*</span> <span class="mi">200</span>
 <span class="nf">print</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
 </code></pre></div></div>
 

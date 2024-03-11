@@ -5,7 +5,7 @@ gem 'jekyll'
 group :jekyll_plugins do
   # gem 'jekyll-feed'
   gem 'jemoji'
-  gem 'jekyll-liquify'
+  #gem 'jekyll-liquify'
   gem 'jekyll-sitemap'
   gem 'jekyll-figure'
   gem 'jekyll-seo-tag'

@@ -1,10 +1,10 @@
-I"J<p>(MIT) Escreva um código para imprimir a maior sequência em ordem estritamente alfabética de uma <em>string</em> <code class="language-plaintext highlighter-rouge">s</code> composta unicamente de letras minúsculas. Por exemplo, se <code class="language-plaintext highlighter-rouge">s = 'azcbobobegghakl'</code>, seu programa deve imprimir <code class="language-plaintext highlighter-rouge">Maior sequência em ordem alfabética: beggh</code>. Em caso de empate, imprima apenas a primeira subsequência. Por exemplo, se <code class="language-plaintext highlighter-rouge">s = 'abcbcd'</code>, seu programa deve imprimir <code class="language-plaintext highlighter-rouge">Maior sequência em ordem alfabética: abc</code>.</p>
+I"�<p>(MIT) Escreva um código para imprimir a maior sequência em ordem estritamente alfabética de uma <em>string</em> <code class="language-plaintext highlighter-rouge">s</code> composta unicamente de letras minúsculas. Por exemplo, se <code class="language-plaintext highlighter-rouge">s = 'azcbobobegghakl'</code>, seu programa deve imprimir <code class="language-plaintext highlighter-rouge">Maior sequência em ordem alfabética: beggh</code>. Em caso de empate, imprima apenas a primeira subsequência. Por exemplo, se <code class="language-plaintext highlighter-rouge">s = 'abcbcd'</code>, seu programa deve imprimir <code class="language-plaintext highlighter-rouge">Maior sequência em ordem alfabética: abc</code>.</p>
 
 <!-- more -->
 
 <h2 id="solução">Solução</h2>
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">s</span><span class="o">=</span><span class="s">'azcbobobegghakl'</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">s</span><span class="o">=</span><span class="sh">'</span><span class="s">azcbobobegghakl</span><span class="sh">'</span>
 
 <span class="n">N</span> <span class="o">=</span> <span class="nf">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
 <span class="n">start</span> <span class="o">=</span> <span class="mi">0</span>
@@ -24,6 +24,6 @@
 
 <span class="n">a</span> <span class="o">=</span> <span class="n">s</span><span class="p">[</span><span class="n">maxstart</span><span class="p">:</span><span class="n">maxstart</span><span class="o">+</span><span class="n">maxsize</span><span class="p">]</span>
 
-<span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'Longest substring in alphabetical order is: </span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s">'</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">'</span><span class="s">Longest substring in alphabetical order is: </span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="sh">'</span><span class="p">)</span>
 </code></pre></div></div>
 :ET

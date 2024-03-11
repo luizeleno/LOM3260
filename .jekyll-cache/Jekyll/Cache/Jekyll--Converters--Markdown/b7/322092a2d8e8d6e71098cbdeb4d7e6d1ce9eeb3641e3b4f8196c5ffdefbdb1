@@ -1,12 +1,12 @@
-I""<p class="lead">Uma poderosa ferramenta para turbinar seu código</p>
+I"a(<p class="lead">Uma poderosa ferramenta para turbinar seu código</p>
 
 <p>Dicionários são uma espécie de lista, em que os índices, ao invés de uma sequência de inteiros começando em zero, são <strong>chaves</strong> que você mesmo fornece. É muito parecido com um dicionário de verdade, com verbetes e suas definições.</p>
 
 <p>Vejemos um exemplo. Vamos criar um dicionário:</p>
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">meu_dicio</span> <span class="o">=</span> <span class="p">{</span><span class="s">'o'</span><span class="p">:</span> <span class="s">'the'</span><span class="p">,</span> <span class="s">'livro'</span><span class="p">:</span> <span class="s">'book'</span><span class="p">,</span> <span class="s">'está'</span><span class="p">:</span> <span class="s">'is'</span><span class="p">,</span> <span class="s">'sobre'</span><span class="p">:</span> <span class="s">'on'</span><span class="p">,</span> <span class="s">'a'</span><span class="p">:</span> <span class="s">'the'</span><span class="p">,</span> <span class="s">'mesa'</span><span class="p">:</span> <span class="s">'table'</span><span class="p">}</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">meu_dicio</span> <span class="o">=</span> <span class="p">{</span><span class="sh">'</span><span class="s">o</span><span class="sh">'</span><span class="p">:</span> <span class="sh">'</span><span class="s">the</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">livro</span><span class="sh">'</span><span class="p">:</span> <span class="sh">'</span><span class="s">book</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">está</span><span class="sh">'</span><span class="p">:</span> <span class="sh">'</span><span class="s">is</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">sobre</span><span class="sh">'</span><span class="p">:</span> <span class="sh">'</span><span class="s">on</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">a</span><span class="sh">'</span><span class="p">:</span> <span class="sh">'</span><span class="s">the</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">mesa</span><span class="sh">'</span><span class="p">:</span> <span class="sh">'</span><span class="s">table</span><span class="sh">'</span><span class="p">}</span>
 </code></pre></div></div>
 <p>A variável <code class="language-plaintext highlighter-rouge">meu_dicio</code> contém o dicionário. Os valores antes dos dois-pontos (<code class="language-plaintext highlighter-rouge">:</code>) são  as <strong>chaves</strong> (<em>keys</em>) e os demais valores são os <strong>itens</strong> (<em>items</em>) indexados pelas chaves. Por exemplo,</p>
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">meu_dicio</span><span class="p">[</span><span class="s">'o'</span><span class="p">]</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">meu_dicio</span><span class="p">[</span><span class="sh">'</span><span class="s">o</span><span class="sh">'</span><span class="p">]</span>
 </code></pre></div></div>
 <p>retorna <code class="language-plaintext highlighter-rouge">the</code>.</p>
 
@@ -19,51 +19,51 @@
 <h2 id="alguns-exemplos-de-como-usar-o-dicionário-na-prática">Alguns exemplos de como usar o dicionário na prática:</h2>
 
 <p>O comando</p>
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">palavra</span><span class="o">=</span><span class="s">'mesa'</span>
-<span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'</span><span class="si">{</span><span class="n">palavra</span><span class="si">}</span><span class="s"> em inglês é </span><span class="si">{</span><span class="n">meu_dicio</span><span class="p">[</span><span class="n">palavra</span><span class="p">]</span><span class="si">}</span><span class="s">'</span><span class="p">)</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">palavra</span><span class="o">=</span><span class="sh">'</span><span class="s">mesa</span><span class="sh">'</span>
+<span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">'</span><span class="si">{</span><span class="n">palavra</span><span class="si">}</span><span class="s"> em inglês é </span><span class="si">{</span><span class="n">meu_dicio</span><span class="p">[</span><span class="n">palavra</span><span class="p">]</span><span class="si">}</span><span class="sh">'</span><span class="p">)</span>
 </code></pre></div></div>
 <p>retorna <code class="language-plaintext highlighter-rouge">mesa em inglês é table</code></p>
 
 <p>Mais um exemplo:</p>
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">palavra_pt</span> <span class="o">=</span> <span class="s">'caderno'</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">palavra_pt</span> <span class="o">=</span> <span class="sh">'</span><span class="s">caderno</span><span class="sh">'</span>
 <span class="k">if</span> <span class="n">palavra_pt</span> <span class="ow">in</span> <span class="n">meu_dicio</span><span class="p">:</span>
     <span class="c1"># o operador in opera recursivamente por todas as chaves em meu_dicio
-</span>    <span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'Eu sei traduzir </span><span class="si">{</span><span class="n">palavra_pt</span><span class="si">}</span><span class="s"> pro inglês: </span><span class="si">{</span><span class="n">meu_dicio</span><span class="p">[</span><span class="n">palavra_pt</span><span class="p">]</span><span class="si">}</span><span class="s">'</span> <span class="p">)</span>
+</span>    <span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">'</span><span class="s">Eu sei traduzir </span><span class="si">{</span><span class="n">palavra_pt</span><span class="si">}</span><span class="s"> pro inglês: </span><span class="si">{</span><span class="n">meu_dicio</span><span class="p">[</span><span class="n">palavra_pt</span><span class="p">]</span><span class="si">}</span><span class="sh">'</span> <span class="p">)</span>
 <span class="k">else</span><span class="p">:</span>
-    <span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'Não faço ideia de como é </span><span class="se">\'</span><span class="si">{</span><span class="n">palavra_pt</span><span class="si">}</span><span class="se">\'</span><span class="s"> em inglês'</span><span class="p">)</span>
+    <span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">'</span><span class="s">Não faço ideia de como é </span><span class="se">\'</span><span class="si">{</span><span class="n">palavra_pt</span><span class="si">}</span><span class="se">\'</span><span class="s"> em inglês</span><span class="sh">'</span><span class="p">)</span>
 </code></pre></div></div>
 <p>Qual é a saída desse código?</p>
 
 <h2 id="tipos-de-dados-para-chaves-e-itens">Tipos de dados para chaves e itens</h2>
 
 <p>As chaves e os itens não precisam necessariamente ser strings. Veja o seguinte exemplo:</p>
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">dicio</span> <span class="o">=</span> <span class="p">{</span><span class="mi">3</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span> <span class="mf">3.141593</span><span class="p">:</span> <span class="s">'pi'</span><span class="p">,</span> <span class="s">'e'</span><span class="p">:</span> <span class="mf">2.718282</span><span class="p">}</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">dicio</span> <span class="o">=</span> <span class="p">{</span><span class="mi">3</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span> <span class="mf">3.141593</span><span class="p">:</span> <span class="sh">'</span><span class="s">pi</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">e</span><span class="sh">'</span><span class="p">:</span> <span class="mf">2.718282</span><span class="p">}</span>
 
 <span class="nf">print</span><span class="p">(</span><span class="n">dicio</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span>
 <span class="nf">print</span><span class="p">(</span><span class="n">dicio</span><span class="p">[</span><span class="mf">3.141593</span><span class="p">])</span>
-<span class="nf">print</span><span class="p">(</span><span class="n">dicio</span><span class="p">[</span><span class="s">'e'</span><span class="p">])</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">dicio</span><span class="p">[</span><span class="sh">'</span><span class="s">e</span><span class="sh">'</span><span class="p">])</span>
 </code></pre></div></div>
 <p>O que esses comandos <code class="language-plaintext highlighter-rouge">print</code> imprimem?</p>
 
 <h2 id="acrescentar-e-alterar-valores">Acrescentar e alterar valores</h2>
 
 <p>Uma vez criado um dicionário, é possível acrescentar, remover ou alterar valores. Veja os exemplos abaixo:</p>
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">dicio</span> <span class="o">=</span> <span class="p">{</span><span class="s">'animal'</span><span class="p">:</span> <span class="s">'cachorro'</span><span class="p">,</span> <span class="s">'fruta'</span><span class="p">:</span> <span class="s">'laranja'</span><span class="p">,</span> <span class="s">'cidade'</span><span class="p">:</span> <span class="s">'Lorena'</span><span class="p">,</span> <span class="s">'cor'</span><span class="p">:</span> <span class="s">'vermelho'</span><span class="p">}</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">dicio</span> <span class="o">=</span> <span class="p">{</span><span class="sh">'</span><span class="s">animal</span><span class="sh">'</span><span class="p">:</span> <span class="sh">'</span><span class="s">cachorro</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">fruta</span><span class="sh">'</span><span class="p">:</span> <span class="sh">'</span><span class="s">laranja</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">cidade</span><span class="sh">'</span><span class="p">:</span> <span class="sh">'</span><span class="s">Lorena</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">cor</span><span class="sh">'</span><span class="p">:</span> <span class="sh">'</span><span class="s">vermelho</span><span class="sh">'</span><span class="p">}</span>
 
 <span class="c1"># Acrescentar um valor:
-</span><span class="n">dicio</span><span class="p">[</span><span class="s">'estado'</span><span class="p">]</span> <span class="o">=</span> <span class="s">'SP'</span>
+</span><span class="n">dicio</span><span class="p">[</span><span class="sh">'</span><span class="s">estado</span><span class="sh">'</span><span class="p">]</span> <span class="o">=</span> <span class="sh">'</span><span class="s">SP</span><span class="sh">'</span>
 
 <span class="c1"># Alterar um valor:
-</span><span class="n">dicio</span><span class="p">[</span><span class="s">'animal'</span><span class="p">]</span> <span class="o">=</span> <span class="s">'gato'</span>
+</span><span class="n">dicio</span><span class="p">[</span><span class="sh">'</span><span class="s">animal</span><span class="sh">'</span><span class="p">]</span> <span class="o">=</span> <span class="sh">'</span><span class="s">gato</span><span class="sh">'</span>
 
 <span class="c1"># Remover um valor
-</span><span class="n">dicio</span><span class="p">.</span><span class="nf">pop</span><span class="p">(</span><span class="s">'cor'</span><span class="p">)</span>
+</span><span class="n">dicio</span><span class="p">.</span><span class="nf">pop</span><span class="p">(</span><span class="sh">'</span><span class="s">cor</span><span class="sh">'</span><span class="p">)</span>
 </code></pre></div></div>
 
 <h2 id="observação">Observação</h2>
 
 <p>Também é possível pesquisar no sentido contrário, apesar de ser um pouco mais complicado (não será usado nesse curso). Para isso, não podem haver chaves repetidas, mas itens repetidos são permitidos (por exemplo, ‘the’ no dicionário <code class="language-plaintext highlighter-rouge">meu_dicio</code>). Um exemplo:</p>
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">palavra_en</span> <span class="o">=</span> <span class="s">'the'</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">palavra_en</span> <span class="o">=</span> <span class="sh">'</span><span class="s">the</span><span class="sh">'</span>
 <span class="p">[</span><span class="n">chave</span> <span class="k">for</span> <span class="n">chave</span><span class="p">,</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">meu_dicio</span><span class="p">.</span><span class="nf">items</span><span class="p">()</span> <span class="k">if</span> <span class="n">item</span> <span class="ow">is</span> <span class="n">palavra_en</span><span class="p">]</span>
 </code></pre></div></div>
 :ET

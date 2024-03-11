@@ -1,4 +1,4 @@
-I"0<div class="float-right col-md-6">
+I"I<div class="float-right col-md-6">
 <div class="text-center">
 <figure class="figure">
   
@@ -72,7 +72,7 @@
 <span class="nf">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
 
 <span class="n">w</span> <span class="o">=</span> <span class="mi">50</span>
-<span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'Tmin=</span><span class="si">{</span><span class="n">w</span><span class="o">*</span><span class="n">a</span><span class="si">}</span><span class="s">, Tmax=</span><span class="si">{</span><span class="n">w</span><span class="o">*</span><span class="p">(</span><span class="n">a</span><span class="o">+</span><span class="mi">20</span><span class="p">)</span><span class="si">}</span><span class="s">'</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">'</span><span class="s">Tmin=</span><span class="si">{</span><span class="n">w</span><span class="o">*</span><span class="n">a</span><span class="si">}</span><span class="s">, Tmax=</span><span class="si">{</span><span class="n">w</span><span class="o">*</span><span class="p">(</span><span class="n">a</span><span class="o">+</span><span class="mi">20</span><span class="p">)</span><span class="si">}</span><span class="sh">'</span><span class="p">)</span>
 </code></pre></div></div>
 
 <p>Obtemos $a=65.5862\,$m. Com isso, as tensões mínima e máxima são</p>

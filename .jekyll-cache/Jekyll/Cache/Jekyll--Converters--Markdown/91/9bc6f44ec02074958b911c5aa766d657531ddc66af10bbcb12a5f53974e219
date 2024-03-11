@@ -1,4 +1,4 @@
-I"*<p class="lead">Um mesmo símbolo pode significar diferentes operadores em python, dependendo dos tipos de dados sobre os quais ele opera</p>
+I"�<p class="lead">Um mesmo símbolo pode significar diferentes operadores em python, dependendo dos tipos de dados sobre os quais ele opera</p>
 
 <p>Imagine que você tenha duas variáveis inteiras e queira calcular a sua soma. Nada mais fácil:</p>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">a</span> <span class="o">=</span> <span class="mi">3</span>
@@ -17,8 +17,8 @@
 <p>Chamamos esse “abuso” de um mesmo símbolo para indicar coisas diferentes de <strong>sobrecarga</strong> (<em>overloading</em>) de operadores e métodos.</p>
 
 <p>Veja outro exemplo de uso do operador <code class="language-plaintext highlighter-rouge">+</code> que você pode usar para resolver muitos problemas práticos:</p>
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">a</span> <span class="o">=</span> <span class="s">'3'</span>
-<span class="n">b</span> <span class="o">=</span> <span class="s">'8'</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">a</span> <span class="o">=</span> <span class="sh">'</span><span class="s">3</span><span class="sh">'</span>
+<span class="n">b</span> <span class="o">=</span> <span class="sh">'</span><span class="s">8</span><span class="sh">'</span>
 <span class="n">c</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
 <span class="nf">print</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
 </code></pre></div></div>
