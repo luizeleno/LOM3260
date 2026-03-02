@@ -3,7 +3,7 @@ title: Cronograma
 parent: sobre
 nav_order: 5
 tags: [aula, trabalho, cronograma, prova, entrega, projeto, datas, semestre]
-timestamp: 10/03/25
+timestamp: 02/03/26
 ---
 
 <div class="w-100">
