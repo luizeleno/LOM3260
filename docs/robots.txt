@@ -1,1 +1,1 @@
-Sitemap: https://computeel.org/LOM3260/sitemap.xml
+Sitemap: http://localhost:4000/LOM3260/sitemap.xml
