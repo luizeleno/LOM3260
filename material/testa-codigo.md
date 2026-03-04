@@ -18,8 +18,8 @@ Use esta página como uma caixa de teste de ideias em python.
 
 *Obs.:* ao final de todas as páginas dos **Temas** há um intérprete python parecido com o visto acima para você testar imediatamente os exemplos e instruções de cada página!
 
-## Repl.it
+<!--## Repl.it
 
 A janela de teste abaixo, usando os recursos do [Repl.it](https://repl.it/){: target="\_blank"}, ainda está em fase de testes, mas você pode tentar usar.
 
-<iframe frameborder="0" width="100%" height="500px" src="https://repl.it/@LuizTadeu/QuirkyLivelyGoals?lite=true"></iframe>
+<iframe frameborder="0" width="100%" height="500px" src="https://repl.it/@LuizTadeu/QuirkyLivelyGoals?lite=true"></iframe>-->
