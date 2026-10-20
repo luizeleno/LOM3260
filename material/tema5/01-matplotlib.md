@@ -13,7 +13,7 @@ O melhor módulo para criar gráficos em python
 
 Além disso, é impossível (para mim, que tenho um tempo limitado e usado para muitas tarefas dentro da universidade!) deixar aqui mais do que algumas recomendações para o seu uso, na forma de alguns *templates* (modelos) de uso de alguns tipos simples de gráfico. Você encontra muitas outras informações na documentação do matplotlib (<https://matplotlib.org/users/index.html>{: target="\_blank"}) e em tutoriais espalhados pela internet (recomendo este: <https://github.com/rougier/matplotlib-tutorial>{: target="\_blank"}).
 
-Nesse curso veremos apenas como fazer gráficos 2D com o módulo `matplotlib.pyplot`. Teste os exemplos abaixo na caixa do trinket.io para ver o que acontece.
+Nesse curso veremos apenas como fazer gráficos 2D com o módulo `matplotlib.pyplot`. Teste os exemplos abaixo na caixa de teste ao final da página para ver o que acontece.
 
 ## Gráficos simples
 

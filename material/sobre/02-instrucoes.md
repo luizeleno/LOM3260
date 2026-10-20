@@ -28,7 +28,7 @@ Um pouco para todo tipo de usuário
   - <span class="badge badge-warning">constr</span> : versão de desenvolvimento, ou seja, página em construção. Contém apenas um esboço do conteúdo.
   - <span class="badge badge-danger">criado</span> : página criada, mas ainda praticamente sem conteúdo.
 - Use o site junto com um interpretador python, pois nem todas as respostas aos códigos-exemplos são dadas aqui! Assim você pode testar os códigos (e variações deles) enquanto vai lendo.
-  - Ao final de todas as páginas nos **Temas** há um intérprete python do [trinket.io](https://trinket.io){: target="\_blank"} para você testar imediatamente exemplos do código! Use-o à vontade!
+  - Ao final de todas as páginas nos **Temas** há um intérprete python do [Coddy](https://coddy.tech/playground/pt/matplotlib){: target="\_blank"}, com NumPy, SciPy, pandas e Matplotlib, para você testar imediatamente exemplos do código! Use-o à vontade!
 
 ## Licença de uso: MIT license
 
