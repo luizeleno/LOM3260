@@ -13,8 +13,11 @@ Use esta página como uma caixa de teste de ideias em python.
 
 ## Trinket.io
 
-<iframe src="https://trinket.io/embed/python3/7fc73aa0a7" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
-<small>Cortesia de <a href="https://trinket.io" target="\_blank">trinket.io</a></small>
+<!-- <iframe src="https://trinket.io/embed/python3/7fc73aa0a7" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe> -->
+<!-- <small>Cortesia de <a href="https://trinket.io" target="\_blank">trinket.io</a></small> -->
+
+<div class="runcode" data-key="4b0e41d3f4f18ea37bb7d6f98f1bd970"></div>
+<script src="https://onlinecompiler.io/widget.js"></script>
 
 *Obs.:* ao final de todas as páginas dos **Temas** há um intérprete python parecido com o visto acima para você testar imediatamente os exemplos e instruções de cada página!
 
